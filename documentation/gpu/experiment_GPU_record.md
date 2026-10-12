@@ -900,3 +900,31 @@ tables/analysis are included by Git file rules. Production guard edits, shared
 depth preprocessing, ERIS deployment tools and other accepted cleanup remain.
 Receipt: `documentation/pipeline/validation/link5-pair-selection-restoration-20261008.json`.
 Local only, not published.
+
+## Approved ERIS MegaSAM intermediate cleanup — 2026-10-08
+
+The user approved removal of only `work_space`, `cache_flow`, `outputs` (earlier
+DROID output), and `reconstructions` beneath per-video `mega_sam` directories in
+the old ablation's four scratch roots: `scratch`, `scratch-short`,
+`scratch-continuation-5677362`, and `scratch-continuation-5677575`.
+The owning result root is
+`/PHShome/zy992/Wilson/deformationdetection/workspace-link5-pair-selection-20261007-v2/results/link5_pair_selection_ablation_v1`.
+All resolved deletion paths were inside `/PHShome_actual/z/zy992/Wilson`;
+symlink traversal was excluded and the deletion used symlink-safe directory removal.
+
+Removed 216 approved directories / 18,087 regular files, accounting for
+50.311943 GiB of allocated file blocks. Verified the same 2,212 protected file
+paths and their inode, size, mtime, ctime and mode before/after; files up to 1 MiB
+also retained their SHA-256. All 41 completed shared-input caches, 41 final CVD
+geometry cases and their geometry receipts remain. Scientific code, masks,
+scores, depth support, replays and provenance remain preserved. No VLM/SAM,
+geometry inference or training was run for this cleanup.
+
+Slurm jobs 5708433 and 5709818 were running at preflight. Read-only GPU process
+inspection found no old-ablation working directories or open files; current
+workers used `Wilson/link5-loop-20261008`. That active project, dependency
+models/environments, source videos and other result roots were excluded.
+Other cleanup candidates, including VLM Finger results, were not deleted.
+
+Server verification receipt, completed 2026-10-09T02:23:17Z (2026-10-08 ET):
+`/PHShome_actual/z/zy992/Wilson/deformationdetection/metadata/cleanup-megasam-intermediates-20261009T022317Z.json`.
