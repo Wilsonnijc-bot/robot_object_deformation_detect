@@ -1,0 +1,8 @@
+dataset,task_id,viewpoint,issue
+Humanoid_Everyday,pick-place-1,third_person,Original filename spells lyft; task_name spells Lift. Preserved without correction.
+Humanoid_Everyday,pick-place-1,first_person,Original filename spells lyft; task_name spells Lift. Preserved without correction.
+Humanoid_Everyday,pick-place-7,third_person,Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified.
+Humanoid_Everyday,pick-place-7,first_person,Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified.
+Humanoid_Everyday,high-precision-8,third_person,Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified.
+Humanoid_Everyday,high-precision-8,first_person,Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified.
+Humanoid_Everyday,human-robot-4,first_person,Original gallery book-handover annotation references a stack-of-plates egocentric filename. Potential task/video mismatch; original association preserved.

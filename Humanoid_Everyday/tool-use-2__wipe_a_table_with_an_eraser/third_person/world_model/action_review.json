@@ -1,0 +1,131 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg",
+    "sheet_004.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 241,
+  "initial_scene": "Front-oblique third-person view of a humanoid behind a tabletop. A green rectangular eraser rests near the central taped patch. The anatomical left hand is initially low on the image-right side; the right hand is extended on the image-left side.",
+  "observed_sequence": [
+    {
+      "source_frame_start": 0,
+      "source_frame_end": 49,
+      "action": "Robot holds its initial seated pose; green eraser rests on the table and both hands are clear of it.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_start": 50,
+      "source_frame_end": 119,
+      "action": "Left forearm rises and extends over the tabletop toward the green eraser, with the hand open. Right arm remains aside.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_start": 120,
+      "source_frame_end": 209,
+      "action": "Left fingers lower near/onto the eraser. The eraser shifts and changes orientation in small movements while the hand makes short adjustments above and against it; no secure enclosing grasp or lift is visible.",
+      "confidence": "medium"
+    },
+    {
+      "source_frame_start": 210,
+      "source_frame_end": 263,
+      "action": "Left hand slides the eraser through additional short wiping movements around the central taped area.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_start": 264,
+      "source_frame_end": 309,
+      "action": "Left arm reaches across the body toward the robot right, pushing the eraser along the tabletop toward the image-left region. The tool remains on the surface.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_start": 310,
+      "source_frame_end": 413,
+      "action": "The left hand reverses direction and slides the eraser back across the tabletop toward the central taped area.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_start": 414,
+      "source_frame_end": 449,
+      "action": "The left hand lifts clear and retracts toward the body, leaving the eraser resting on the table.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_start": 450,
+      "source_frame_end": 480,
+      "action": "Left hand lowers toward the robot lap while the eraser remains at the central taped region. Right arm stays aside.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "left": "Active manipulating hand; lowers near/onto the eraser, pushes/slides it in short movements and a longer cross-body sweep and return, then lifts clear and retracts.",
+    "right": "Remains extended aside without contacting the eraser or providing support.",
+    "coordination": "Single-hand tool sliding; no hand-to-hand transfer or coordinated support."
+  },
+  "anatomical_side_evidence": {
+    "evidence": "The robot face and chest face the camera. The active arm can be traced from the shoulder on the robot left, visible at image right, through the elbow/forearm to the white hand. The other arm attaches to the robot right shoulder at image left. The active left arm crosses in front of the torso during the long sweep.",
+    "confidence": "high",
+    "uncertainty": null
+  },
+  "uncertainties": [
+    "Fine finger contact and applied pressure cannot be resolved continuously at the native 320 x 568 resolution; early hovering/brief contact breaks are possible. The prompt therefore describes sliding, without claiming an enclosing grasp or continuous pressure.",
+    "The visible sequence establishes eraser sliding and withdrawal, but does not establish removal of marks or cleaning efficacy."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    52,
+    100,
+    124,
+    140,
+    180,
+    228,
+    264,
+    286,
+    300,
+    344,
+    384,
+    410,
+    424,
+    448,
+    480
+  ],
+  "selected_execution_status": "success",
+  "execution_status_basis": "The visible wiping/sliding sequence concludes with the tool resting on the tabletop and the active hand withdrawn; success refers to this completed observed manipulation, not verified cleaning efficacy.",
+  "terminal_state": "At source frame 480, the green eraser rests on the central taped area of the tabletop. The left hand is withdrawn and lowered near the lap; the right hand remains aside. The eraser was not lifted or carried away.",
+  "video_id": "tool-use-2",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_tool_use_2",
+  "review_source_video": "Humanoid_Everyday/tool-use-2__wipe_a_table_with_an_eraser/third_person/original/original.mp4",
+  "source_frame_count": 481,
+  "source_fps": 30.0,
+  "native_detail_frames": [
+    52,
+    100,
+    124,
+    140,
+    180,
+    228,
+    264,
+    286,
+    300,
+    344,
+    384,
+    410,
+    424,
+    448,
+    480
+  ],
+  "world_model_prompt": "The robot lowers its left hand onto the green rectangular eraser and slides it over the tabletop in several short wiping movements. It sweeps the eraser across its body toward its right, slides it back to the central taped area, then lifts its hand away, leaving the eraser on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "This task demonstrates cleaning operations where the humanoid robot uses an eraser to wipe a table surface, requiring controlled movements and surface contact.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 481,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "3a6579b78cd37ff1ad9883c699f36e883daccf2394849955aecbeddb4d433e7c",
+  "review_completed_at": "2026-10-13T17:06:12.649227+00:00"
+}

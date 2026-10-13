@@ -1,0 +1,107 @@
+{
+  "video_id": "019",
+  "review_method": "Visual inspection of every second decoded frame across the entire MP4 plus native-resolution transition frames, followed by native initial PNG",
+  "review_source_video": "/tmp/tavp-dense-reviews/019/middle_view.mp4",
+  "source_frame_count": 324,
+  "source_fps": 20.0,
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 162,
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "native_detail_frames": [
+    52,
+    64,
+    80,
+    196,
+    202,
+    210,
+    230,
+    240,
+    280,
+    292,
+    296,
+    323
+  ],
+  "initial_scene": "Only the middle third-person panel is used. An orange-covered tabletop holds a small round green shallow dish near the center and an elongated dark-green cucumber-shaped object to its right. The active white-and-blue robot and open parallel gripper are at the rear; another arm occupies the left foreground and remains inactive. A black curtain forms the background.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame_inclusive": 52,
+      "action": "The active rear robot moves its empty open gripper toward the elongated dark-green object on the right of the green dish. The object and dish remain on the tabletop.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 53,
+      "end_frame_inclusive": 80,
+      "action": "The gripper lowers around the sides of the cucumber-shaped object, reaching a grasping pose while the object remains supported by the tabletop.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 81,
+      "end_frame_inclusive": 195,
+      "action": "The robot holds nearly stationary over the same object for an extended interval. The precise instant of jaw closure is difficult to identify; no independent task or second object interaction occurs.",
+      "confidence": "medium"
+    },
+    {
+      "start_frame": 196,
+      "end_frame_inclusive": 230,
+      "action": "The gripper holds the elongated green object, lifts it off the tabletop, and transfers it leftward until it is suspended over the green dish. Native frames 202 and 210 show the object traveling with the gripper; frame 230 shows it above the destination.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 231,
+      "end_frame_inclusive": 280,
+      "action": "The arm lowers the object onto the green dish and holds the placement pose briefly. The object comes to rest diagonally across the dish.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 281,
+      "end_frame_inclusive": 296,
+      "action": "The gripper opens and lifts clear, visibly leaving the cucumber-shaped object on the dish. By frame 292 the release is complete, and frame 296 shows clear separation.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 297,
+      "end_frame_inclusive": 323,
+      "action": "The empty gripper retracts toward the rear. The elongated object remains resting on the green dish through the final frame.",
+      "confidence": "high"
+    }
+  ],
+  "multi_step": false,
+  "selected_execution_status": "success",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 324,
+    "reason": "The entire video shows one continuous pick-and-place operation, including a prolonged grasp-position hold and final withdrawal. There are no independent later subtasks to remove.",
+    "terminal_state": "The dark-green cucumber-shaped object rests diagonally on the green dish, and the open gripper is clear and retracted toward the rear."
+  },
+  "full_sequence_prompt": "The robotic arm picks up the green cucumber-shaped object and places it onto the green dish. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The robotic arm picks up the green cucumber-shaped object and places it onto the green dish. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "uncertainties": [
+    "The folder task name refers to grape picking, but the visible manipulated target is elongated and cucumber-shaped, not a grape cluster. Its exact identity and material cannot be confirmed from this view.",
+    "The round green destination appears to be a shallow dish; its precise classification as a plate or bowl is uncertain, so the prompt uses dish.",
+    "The exact frame of jaw closure during the long nearly stationary interval is visually ambiguous; the later lifted transport confirms a successful grasp."
+  ],
+  "evidence_frame_indices": [
+    0,
+    64,
+    196,
+    210,
+    240,
+    280,
+    296,
+    323
+  ],
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_source_original_video": "019_dobot_grape_picking_object_generalization_success/original/video.mp4",
+  "review_source_crop_rectangle": {
+    "x": 640,
+    "y": 0,
+    "width": 640,
+    "height": 480
+  }
+}

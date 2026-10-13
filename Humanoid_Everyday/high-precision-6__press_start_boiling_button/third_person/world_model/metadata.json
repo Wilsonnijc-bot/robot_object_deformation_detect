@@ -1,0 +1,59 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "high-precision-6",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid extends its right hand toward the electric kettle and presses the small switch beneath the handle with an outstretched finger. After holding contact briefly, it pulls the hand back, leaving the kettle upright on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/high-precision-6__press_start_boiling_button/third_person/original/original.mp4",
+  "source_video_sha256": "6b0d11d272beede3ac453fcbe17ec74c306f1dee8b74eb97133fbcc927e1659b",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/high-precision/task-6/press_start_boiling_button_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 364,
+  "frame_count": 364,
+  "first_frame_index": 0,
+  "fps": 30.00082419846699,
+  "fps_rational": "364000/12133",
+  "duration_seconds": 12.133,
+  "resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 1913787,
+  "video_sha256": "6b0d11d272beede3ac453fcbe17ec74c306f1dee8b74eb97133fbcc927e1659b",
+  "first_frame_sha256": "b75e65b17951558669b12947f10e9a3ed7db4cd2d39699f495c92e8153f97ee9",
+  "observed_terminal_state": "At frame 363 the right hand has pulled away and is below/near the tabletop edge, clear of the kettle. The kettle remains upright on the tabletop, slightly shifted/turned from its initial pose. No visible boiling or unambiguous indicator change establishes electrical activation.",
+  "arm_hand_roles": {
+    "right": "Active far-side arm: raises toward kettle, positions an extended finger at the lower-handle switch, presses/holds at that control region, then retracts. No kettle grasp or lift.",
+    "left": "Near-side arm remains bent low in the foreground with an open hand; it does not contact, support, or stabilize the kettle.",
+    "coordination": "Single-hand manipulation; no two-hand coordination or hand-to-hand transfer."
+  },
+  "uncertainties": [
+    "The fingertip and small lower-handle switch partially occlude each other, so exact switch travel and applied force cannot be measured visually.",
+    "No clear illuminated indicator, steam, or boiling is visible; successful start-boiling activation remains uncertain despite the completed pressing gesture."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

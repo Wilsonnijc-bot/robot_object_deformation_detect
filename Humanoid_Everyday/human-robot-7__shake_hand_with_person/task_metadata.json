@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "human-robot-7",
+  "task_name": "Shake Hand with Person",
+  "category": "Human-Robot Interaction",
+  "text_description": "Shaking hands with a person, demonstrating social gesture recognition, appropriate grip force, and natural human-robot physical interaction.",
+  "original_gallery_record": {
+    "task_id": "human-robot-7",
+    "task_name": "Shake Hand with Person",
+    "category": "Human-Robot Interaction",
+    "text_description": "Shaking hands with a person, demonstrating social gesture recognition, appropriate grip force, and natural human-robot physical interaction.",
+    "egocentric_video": "./static/data/videos/human-robot/task-7/shake_hand_with_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-7/shake_hand_with_a_person_h1_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "20 seconds",
+    "tags": [
+      "handshake",
+      "social",
+      "gesture",
+      "force-control"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/human-robot/task-7/shake_hand_with_a_person_h1_no_sound.mp4",
+    "first_person": "./static/data/videos/human-robot/task-7/shake_hand_with_a_person_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

@@ -1,0 +1,156 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 60,
+  "initial_scene": "Egocentric forward/downward view over a tabletop. A blue-top, white-and-red-sided Rubik's cube rests on the bottom tray of a three-level wooden shelf. The robot's two forearms enter from the lower corners; its right hand is open beside the shelf and left hand is open at the lower left. A person stands across the shelf.",
+  "observed_sequence": [
+    {
+      "source_frame_interval": [
+        0,
+        14
+      ],
+      "action": "Cube rests on bottom tray; right hand is open to its right, while left hand remains away from the work area.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        15,
+        38
+      ],
+      "action": "Right arm reaches into bottom tray; open right hand surrounds the cube from the right. Cube stays on the tray.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        39,
+        64
+      ],
+      "action": "Right hand closes around opposite sides of the cube and secures it; the cube rotates slightly on the bottom tray before lift. Left hand does not assist.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        65,
+        80
+      ],
+      "action": "Right hand lifts the cube clear of the bottom tray and carries it upward/right. The person reaches into the shelf frame and slides the entire shelf rightward across the table, then removes their hand. No hand-to-hand object transfer occurs.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        81,
+        100
+      ],
+      "action": "Robot raises the held cube above the height of the top shelf, then brings it inward over that surface.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        101,
+        110
+      ],
+      "action": "Right hand lowers the cube onto the top shelf; the cube becomes upright on the surface while the hand remains close around it.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        111,
+        119
+      ],
+      "action": "Right fingers open away from the cube, releasing it upright on the top shelf. Right hand remains above/beside the placed cube, while left hand stays away.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Only manipulating hand: encloses cube, lifts from bottom tray, raises and transports to top level, sets down and opens to release.",
+    "left": "Remains open at the left edge without touching cube or shelf; no supporting or stabilizing role.",
+    "person": "Moves shelf rightward during robot lift by grasping/pushing its frame; does not touch or receive the cube.",
+    "coordination": "Robot maintains its right-hand grasp during person's shelf repositioning, then places cube on the relocated top level. No bimanual manipulation or handoff."
+  },
+  "anatomical_side_evidence": {
+    "description": "Forward egocentric viewpoint shows both robot forearms extending from their respective lower sides toward the table. Active limb can be traced continuously from the lower-right proximal arm/forearm to the hand, with its thumb/opposing digit toward the body midline; opposite open hand/forearm is at lower left. This paired forward-facing arm arrangement establishes robot-relative right and left rather than a front-facing image-side reversal.",
+    "confidence": "high",
+    "limitation": "Torso and shoulder attachment are outside the camera field; evidence is the paired forearm orientation and hand anatomy in the egocentric view."
+  },
+  "terminal_state": "Cube stands upright on the top wooden shelf. Right fingers are open and separated from the cube; right hand remains hovering nearby. Bottom tray is empty, left hand remains uninvolved, and person has moved leftward away from shelf.",
+  "uncertainties": [
+    "Exact instant of bottom-surface separation and initial top-surface contact lies between inspected samples; continuous visible transport and final release are unambiguous."
+  ],
+  "annotation_discrepancies": [
+    "Original instruction correctly identifies right-hand bottom-to-top cube transfer, but omits the person moving the shelf rightward during the lift."
+  ],
+  "evidence_frame_indices": [
+    0,
+    30,
+    48,
+    64,
+    70,
+    78,
+    90,
+    98,
+    104,
+    108,
+    114,
+    116,
+    119
+  ],
+  "selected_execution_status": "success",
+  "inspection_coverage": {
+    "complete_source_frame_range": [
+      0,
+      119
+    ],
+    "contact_sheet_sampled_frame_range": [
+      0,
+      118
+    ],
+    "native_source_initial_png_viewed": true,
+    "native_transition_and_final_frames_viewed": [
+      30,
+      48,
+      64,
+      70,
+      78,
+      90,
+      98,
+      104,
+      108,
+      114,
+      116,
+      119
+    ]
+  },
+  "video_id": "66",
+  "dataset": "NVIDIA_GR1_100",
+  "dedicated_review_agent": "review_gr1_66",
+  "review_source_video": "NVIDIA_GR1_100/66/original/original.mp4",
+  "source_frame_count": 120,
+  "source_fps": 20.0,
+  "native_detail_frames": [
+    30,
+    48,
+    64,
+    70,
+    78,
+    90,
+    98,
+    104,
+    108,
+    114,
+    116,
+    119
+  ],
+  "world_model_prompt": "The robot closes its right hand around the Rubik's cube on the bottom level of the wooden shelf and lifts it clear. As the person shifts the shelf to the right, the robot raises the cube to the top level, lowers it onto the surface, and opens its hand, leaving the cube upright on the shelf. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Use the right hand to pick up rubik's cube from bottom level of brown wooden shelf to top level of brown wooden shelf.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 120,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "ac8207944448ac8e44a40173453299c8dc5255af66df379ab0e960e062e39f0e",
+  "review_completed_at": "2026-10-13T18:24:44.074938+00:00"
+}

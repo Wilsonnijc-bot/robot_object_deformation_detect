@@ -1,0 +1,1 @@
+The robot grasps the green apple on the wooden shelf's top tier with its right hand and lifts it clear. It carries the apple downward to the bottom tier, sets it on the wooden surface, and opens its hand to leave the apple resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,0 +1,7 @@
+2026-10-13 11:42:13,282 INFO Validated Humanoid_Everyday/pick-place-2 third_person 480x360 frames=374
+2026-10-13 11:42:13,289 INFO Validated Humanoid_Everyday/pick-place-1 first_person 640x480 frames=341
+2026-10-13 11:42:13,309 INFO Validated Humanoid_Everyday/pick-place-1 third_person 448x960 frames=293
+2026-10-13 11:42:13,633 INFO Validated Humanoid_Everyday/pick-place-2 first_person 640x480 frames=325
+2026-10-13 11:42:14,981 INFO Validated NVIDIA_GR1_100/1 third_person 1280x800 frames=120
+2026-10-13 11:42:15,027 INFO Validated NVIDIA_GR1_100/2 third_person 1280x800 frames=120
+2026-10-13 11:42:15,832 INFO AUDIT {"humanoid_tasks_with_both_views": 2, "humanoid_videos": 4, "nvidia_videos": 2, "nvidia_metadata_without_video": ["11.mp4", "22.mp4", "28.mp4", "44.mp4", "5.mp4", "7.mp4", "8.mp4", "87.mp4"], "total_output_storage_bytes": 282938931}

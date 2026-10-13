@@ -1,0 +1,115 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 60,
+  "initial_scene": "Two robot forearms extend from the near side of a table. A brown potato-shaped object rests on the blue plate beside the left hand; the yellow plate beside the right hand is empty. A central mint plate holds separate green and pink objects. The seated person across the table does not take part in the manipulation.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 30,
+      "action": "The left hand approaches the potato on the blue plate with fingers open. The right hand remains above the yellow plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 31,
+      "end_frame": 72,
+      "action": "The left palm lowers over the potato and the thumb and fingers close around its sides; the object remains at the near edge of the blue plate while the grasp settles.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 73,
+      "end_frame": 88,
+      "action": "The left hand lifts the potato off the blue plate and carries it rightward toward the yellow plate, maintaining the grasp.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 89,
+      "end_frame": 104,
+      "action": "The left hand carries and lowers the potato over the yellow plate. The right hand shifts toward the table's right edge, leaving the placement area clear; it does not grasp or support the potato.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 105,
+      "end_frame": 112,
+      "action": "The left fingers spread and release the potato onto the yellow plate; the potato remains on the plate as the hand opens.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 113,
+      "end_frame": 119,
+      "action": "The left hand rises open above the yellow plate. The potato remains within the plate, and the right hand stays to its right without object contact.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "left": "Active manipulator: grasps, lifts, transports, lowers and releases the potato, then raises the empty hand.",
+    "right": "Unloaded hand: initially above the destination plate, then moves laterally aside as the left hand places the potato; no supporting contact or hand-to-hand transfer.",
+    "coordination": "The left hand performs the complete transfer while the right hand moves out of the destination area. No bimanual grasp occurs."
+  },
+  "anatomical_side_evidence": {
+    "assessment": "The camera looks along the paired arms from the robot's near side toward the work surface. Both forearms enter from their respective near-side body positions. In the source initial PNG, the left hand's open palm has its opposing thumb on its medial/right side, and the right hand is its mirrored counterpart with the thumb on the medial/left side. This paired forearm and hand anatomy establishes robot-relative left and right, rather than using image position alone. It is consistent with the original left-hand instruction.",
+    "limitation": "The shoulders and torso are outside the field of view; side identification relies on the paired proximal forearms and mirrored thumb/palm arrangement."
+  },
+  "terminal_state": "The potato rests on the yellow plate, fully released. The left hand is open and raised above it; the right hand is beside the destination with no contact. The blue source plate is empty.",
+  "selected_execution_status": "success",
+  "uncertainties": [
+    "The palm partly occludes exact fingertip contacts while closing around the potato, but the sustained lift and complete release are visible.",
+    "The source object has a potato appearance; whether it is actual food or a replica cannot be determined visually."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    30,
+    48,
+    72,
+    88,
+    104,
+    112,
+    119
+  ],
+  "inspection_coverage": {
+    "full_sequence_sampled": "All 60 even-indexed frames from 0 through 118 were visually inspected in sheet_001.jpg.",
+    "native_resolution_frames_viewed": [
+      30,
+      48,
+      72,
+      88,
+      104,
+      112,
+      119
+    ],
+    "source_initial_png_viewed_at_native_resolution": true,
+    "native_resolution": [
+      1280,
+      800
+    ]
+  },
+  "video_id": "12",
+  "dataset": "NVIDIA_GR1_100",
+  "dedicated_review_agent": "review_gr1_12",
+  "review_source_video": "NVIDIA_GR1_100/12/original/original.mp4",
+  "source_frame_count": 120,
+  "source_fps": 20.0,
+  "native_detail_frames": [
+    30,
+    48,
+    72,
+    88,
+    104,
+    112,
+    119
+  ],
+  "world_model_prompt": "The robot uses its left hand to grasp the brown potato on the blue plate and lift it clear. It carries the potato across to the yellow plate, opens its fingers to release it onto the plate, and raises its empty hand. The right hand moves aside to make room for the placement. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Use the left hand to pick up brown potato from dark blue plate to the left to yellow plate to the right.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 120,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "336e12766ff9a7061a3a50b36adc2e4659983524825e415b440f1ff48e0698b1",
+  "review_completed_at": "2026-10-13T17:43:47.810729+00:00"
+}

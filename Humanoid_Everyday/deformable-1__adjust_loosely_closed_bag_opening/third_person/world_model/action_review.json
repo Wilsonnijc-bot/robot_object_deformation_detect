@@ -1,0 +1,160 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 152,
+  "initial_scene": "The robot faces the camera behind a table. A gray fabric bag rests on the table with its rear opening flap raised toward the robot. The right arm is on image left; the left hand is open beside the robot's lap on image right.",
+  "observed_sequence": [
+    {
+      "source_frame_interval": [
+        0,
+        44
+      ],
+      "action": "Bag remains on table with flap raised. Both hands begin low beside the body.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        45,
+        100
+      ],
+      "action": "Right arm lifts and reaches toward the image-left edge of the raised opening flap; the hand descends alongside the fabric edge. Left hand remains open near lap.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        101,
+        160
+      ],
+      "action": "Right fingers take hold of the flap edge and bend the raised fabric down toward the bag. The flap becomes low and nearly horizontal; bag body remains supported by table.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        161,
+        190
+      ],
+      "action": "Maintaining contact with flap edge, right hand raises flap upright again, showing its inner surface. Left hand does not visibly contact or stabilize it.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        191,
+        224
+      ],
+      "action": "Right hand carries flap back toward robot and folds it down on the robot-facing side of the bag opening.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        225,
+        264
+      ],
+      "action": "Right hand releases flattened flap and lifts clear; flap remains low beside opening.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        265,
+        302
+      ],
+      "action": "Right arm retracts to low position and left hand moves slightly outward, with neither hand holding fabric at end. Bag remains on table with flap flat toward robot.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right_hand": "Sole active manipulator: contacts and grasps raised fabric flap, bends it toward the bag, lifts it upright again, folds it back toward body, and releases it.",
+    "left_hand": "Open beside lap throughout manipulation; small late movement away from bag. No visible fabric grasp or stabilizing contact.",
+    "coordination": "No two-hand transfer or coordinated support is visible. Table supports bag while right hand reshapes flap."
+  },
+  "anatomical_side_evidence": {
+    "convention": "Robot-relative anatomical sides; robot faces camera.",
+    "right": "Active arm can be traced continuously from shoulder on image left through upper arm and elbow to the manipulating hand; this is the robot's right arm.",
+    "left": "Idle open hand on image right connects to robot's left shoulder and elbow.",
+    "confidence": "high",
+    "uncertainty": null
+  },
+  "terminal_state": "Bag remains on tabletop. Previously raised opening flap is flattened back toward the robot, beside the opening; right hand has released it and retracted, and left hand remains free.",
+  "uncertainties": [
+    "The dark fabric and flap obscure the interior opening, so exact opening width and whether a closure is fully open or shut cannot be established. No zipper fastening or unfastening is visibly confirmed."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    60,
+    96,
+    126,
+    144,
+    160,
+    170,
+    184,
+    196,
+    208,
+    218,
+    224,
+    240,
+    260,
+    302
+  ],
+  "selected_execution_status": "success",
+  "selected_execution_status_reason": "Visible flap adjustment completes and the flap is released in a changed, flat position. This status refers to observed fabric repositioning rather than an inferred fully opened or fastened bag.",
+  "inspection_coverage": {
+    "complete_clip": "All 152 stride-2 samples across frames 0–302 visually inspected in three contact sheets.",
+    "native_transition_frames": [
+      0,
+      60,
+      96,
+      126,
+      144,
+      160,
+      170,
+      184,
+      196,
+      208,
+      218,
+      224,
+      240,
+      260,
+      302
+    ],
+    "source_initial_png_viewed_at_native_resolution": true,
+    "final_frame_viewed_at_native_resolution": true
+  },
+  "video_id": "deformable-1",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_deformable_1",
+  "review_source_video": "Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/original/original.mp4",
+  "source_frame_count": 303,
+  "source_fps": 30.000990131687516,
+  "native_detail_frames": [
+    0,
+    60,
+    96,
+    126,
+    144,
+    160,
+    170,
+    184,
+    196,
+    208,
+    218,
+    224,
+    240,
+    260,
+    302
+  ],
+  "world_model_prompt": "The robot grasps the raised fabric flap at the bag opening with its right hand, bends it down toward the bag, and lifts it upright again. It folds the flap back toward its body and releases it, leaving the flap resting flat beside the opening while the bag remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Adjusting the opening of a loosely closed bag, requiring understanding of fabric dynamics and gentle manipulation to reshape the bag opening.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 303,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "443be3bc1190e4066621f35e57dacc488839efcf5299f664879d6489161f75a9",
+  "review_completed_at": "2026-10-13T17:26:58.610775+00:00"
+}

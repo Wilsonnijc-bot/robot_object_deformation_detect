@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "62",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot grasps the green cucumber on the round placemat with its left hand, lifts it clear, and carries it across to the cyan plate. It lowers the cucumber onto the plate and opens its fingers, leaving the cucumber lying diagonally on the plate with the left hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/62/original/original.mp4",
+  "source_video_sha256": "dff85e0b641369384dd167c169ca3cbb41b17993b7b9896297e028968f2a8b1a",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/62.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1715679,
+  "video_sha256": "dff85e0b641369384dd167c169ca3cbb41b17993b7b9896297e028968f2a8b1a",
+  "first_frame_sha256": "dd1ed8fa0568117588cdb54f5b9e64cf48b8dccca41da47bb9d5076df5e02fbb",
+  "observed_terminal_state": "Cucumber lies diagonally within the cyan plate after left fingers open. Left hand remains close above/beside the cucumber and the right hand stays open away from the task.",
+  "arm_hand_roles": {
+    "left": "Only manipulating hand: reaches, grasps cucumber with thumb and fingers, lifts, transports, lowers onto plate, and opens fingers for placement.",
+    "right": "Remains open off to robot right, with slight posture changes but no contact or stabilizing role.",
+    "coordination": "Single-handed transfer with left hand; no hand-to-hand exchange or person interaction."
+  },
+  "uncertainties": [
+    "The final left thumb remains immediately beside the cucumber; slight residual thumb contact cannot be excluded. The opened fingers and cucumber resting within the plate are visible, but a subsequent full hand withdrawal is not shown."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "64",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot grasps the dark red apple at the center of the table with its right hand, lifts it, and carries it toward the lower black wire tray. A person slides the tray toward the robot while it holds the apple; the robot lowers the apple among the other produce and opens its hand inside the tray. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/64/original/original.mp4",
+  "source_video_sha256": "2afaaacc46a5c53da58fcf07120fad189132eef745f9b2ad2395cf44ebfb1ab3",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/64.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1396974,
+  "video_sha256": "2afaaacc46a5c53da58fcf07120fad189132eef745f9b2ad2395cf44ebfb1ab3",
+  "first_frame_sha256": "479e2916ecaaf181d1de96e2ef2109f5cf9741cd173da89a630d1d44db51b653",
+  "observed_terminal_state": "Right hand is open inside/over the lower black wire basket among produce. Apple has been lowered beneath the palm and is partly hidden by the hand and produce. Left hand remains open. No withdrawn-hand view verifies its final settled position.",
+  "arm_hand_roles": {
+    "right": "Active grasp, lift, transport and lowering of the apple; fingers and thumb open within the lower basket at the end.",
+    "left": "Open idle hand at the near-left side of the table, without object grasp or tray stabilization.",
+    "person": "Slides the two-tier tray toward the held apple, then withdraws the reaching hand; does not receive the apple."
+  },
+  "uncertainties": [
+    "The apple and basket base are partly occluded at the opening transition; precise final support/contact and settled apple position cannot be verified because the right hand remains in the basket at frame 119."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

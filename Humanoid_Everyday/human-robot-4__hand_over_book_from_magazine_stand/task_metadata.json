@@ -1,0 +1,38 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "human-robot-4",
+  "task_name": "Hand Over Book from Magazine Stand",
+  "category": "Human-Robot Interaction",
+  "text_description": "Grabbing a book from a magazine stand and handing it to a person, requiring careful extraction and stable handover of a heavier object.",
+  "original_gallery_record": {
+    "task_id": "human-robot-4",
+    "task_name": "Hand Over Book from Magazine Stand",
+    "category": "Human-Robot Interaction",
+    "text_description": "Grabbing a book from a magazine stand and handing it to a person, requiring careful extraction and stable handover of a heavier object.",
+    "egocentric_video": "./static/data/videos/human-robot/task-4/h1-grab_a_stack_of_plates_from_the_desk_and_hand_it_to_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-4/h1-grab_a_book_from_a_magazine_stand_and_hand_it_to_a_person_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "30 seconds",
+    "tags": [
+      "handover",
+      "book",
+      "extraction",
+      "weight"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/human-robot/task-4/h1-grab_a_book_from_a_magazine_stand_and_hand_it_to_a_person_nosound.mp4",
+    "first_person": "./static/data/videos/human-robot/task-4/h1-grab_a_stack_of_plates_from_the_desk_and_hand_it_to_a_person_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": [
+    "Original gallery book-handover annotation references a stack-of-plates egocentric filename. Potential task/video mismatch; original association preserved."
+  ]
+}

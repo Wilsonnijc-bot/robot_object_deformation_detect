@@ -1,0 +1,1 @@
+The robotic arm picks up the bunch of red grapes and places it across the far edge of the green plate, then nudges it farther onto the plate with its closed gripper. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

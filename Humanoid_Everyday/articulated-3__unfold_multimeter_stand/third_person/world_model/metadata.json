@@ -1,0 +1,62 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "articulated-3",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot lifts and rolls the red multimeter in its right hand, turning its back and extended stand toward the left hand. The left fingers reposition around the stand’s free end and pivot it inward toward the meter’s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/original/original.mp4",
+  "source_video_sha256": "a8e8e1cd665fcbbc394aa00ded19a607309d69c4c2b04a0bee4ebb6ea83e06bb",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/articulated/task-3/unfold_stand_on_multimeter_no_sound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 467,
+  "frame_count": 467,
+  "first_frame_index": 0,
+  "fps": 29.935897435897434,
+  "fps_rational": "2335/78",
+  "duration_seconds": 15.6,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2557429,
+  "video_sha256": "a8e8e1cd665fcbbc394aa00ded19a607309d69c4c2b04a0bee4ebb6ea83e06bb",
+  "first_frame_sha256": "cb917f82b649750e33381e709c1f7c3de0a33d5d1c2135290f8ba14d1d228571",
+  "observed_terminal_state": "Meter released on tabletop near the original small black patch, front display/control face upward. Both hands withdrawn near the lap; the underside and exact terminal stand angle are hidden.",
+  "arm_hand_roles": {
+    "right_hand": "Dark anatomical right hand, image left: grasps the red housing, bears the meter throughout, lifts/repositions and rolls the entire body to expose the rear stand, stabilizes and tilts the body during left-hand stand engagement, then rolls it away and lowers/releases it. No body handoff occurs.",
+    "left_hand": "White anatomical left hand, image right: approaches with open fingers, briefly contacts the stand end, opens/repositions and closes around the free end, then pivots that end toward the back while the right maintains the housing grasp. It releases before the right returns the meter to the table. It does not visibly grasp or manipulate the front dial.",
+    "coordination": "Body-holding and whole-object orientation belong to the right hand; stand-end engagement/repositioning and hinge actuation belong to the left. During hinge motion both hands move, so the inward pivot is identified from stand-to-housing angle rather than screen-space motion. Left release precedes right-hand return and body release."
+  },
+  "uncertainties": [
+    "Exact left thumb/fingertip opposition at first brief stand contact (237–246) is partly occluded; the clear separation/reposition and later finger closure are recorded without claiming continuous contact.",
+    "Both the housing and stand move during 289–324. Adjacent-frame landmarks establish an inward stand-to-body pivot, but the exact angular displacement cannot be measured reliably from the oblique view.",
+    "The hand/body occlude final hinge seating, so flush closure or latch engagement is not confirmed. The final underside/stand angle is hidden after face-up settling."
+  ],
+  "annotation_discrepancies": [
+    "Source says unfolding the stand. It is already extended initially. Re-review separates right-hand whole-object rolling from left-hand stand-end manipulation; the visible relative stand motion is inward toward the back, not newly unfolding. No successful unfolded elevated final pose is claimed."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

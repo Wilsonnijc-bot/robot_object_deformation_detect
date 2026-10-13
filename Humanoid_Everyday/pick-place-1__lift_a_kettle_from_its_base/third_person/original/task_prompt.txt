@@ -1,0 +1,1 @@
+This task demonstrates basic pick and place operations where the humanoid robot grasps a kettle from its base and places it on the table.

@@ -1,0 +1,62 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "loco-manip-2",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid grasps the black kettle by its handle with its right hand and lifts it from the rear counter. Holding it in the same hand, it steps backward, then walks forward to the round base in front of the sink, sets the kettle upright on the base, and turns its handle toward itself. It releases the handle, makes pressing motions at the small switch below it with its right fingers, and withdraws, leaving the kettle on the base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/loco-manip-2__pick_up_kettle_place_on_base_and_turn_on/third_person/original/original.mp4",
+  "source_video_sha256": "abd99e176a4c5f826eb7ee369917d0b73b3ea3c860b9429edede31ebe998ce5e",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 1239,
+  "frame_count": 1239,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 41.3,
+  "resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "displayed_resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "codec": "h264",
+  "file_size_bytes": 16043500,
+  "video_sha256": "abd99e176a4c5f826eb7ee369917d0b73b3ea3c860b9429edede31ebe998ce5e",
+  "first_frame_sha256": "056ed2356ac9bde3b33cf21d57c77bda919fe449c2092d1a3cea2710e5c5e105",
+  "observed_terminal_state": "Black kettle stands upright on the nearer round base in front of the sink, handle facing the robot. Right hand has withdrawn and lowered; left remains near the torso. Placement is visibly complete; successful electrical activation is not visually established.",
+  "arm_hand_roles": {
+    "right": "Raises toward the kettle, closes around its handle, lifts and supports it throughout backward and forward walking, lowers it onto the round base, adjusts the kettle orientation, releases, and makes lower-switch pressing motions before withdrawing.",
+    "left": "Remains low beside the waist/torso; does not grasp the kettle or base, support the load, or receive a transfer.",
+    "coordination": "Single-hand transport and operation; leg stepping and torso translation move the held kettle to the nearer base. No bimanual support or hand-to-hand transfer is visible."
+  },
+  "uncertainties": [
+    "Right fingers partly occlude the small lower switch during the pressing motions; exact actuation and whether the kettle is powered on cannot be established from the visible clip.",
+    "The robot briefly moves partly outside the left image edge while walking backward, so the complete foot trajectory there is occluded."
+  ],
+  "annotation_discrepancies": [
+    "The source instruction says walking to pick up the kettle; the visible clip begins already beside it and shows the substantial walking after pickup.",
+    "The source instruction asserts turning it on; the observed ending establishes placement and switch-directed pressing motions but no unambiguous electrical activation."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

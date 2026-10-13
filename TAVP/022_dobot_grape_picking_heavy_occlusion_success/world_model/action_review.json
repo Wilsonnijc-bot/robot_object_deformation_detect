@@ -1,0 +1,108 @@
+{
+  "video_id": "022",
+  "review_method": "Visual inspection of every second decoded frame across the entire MP4 plus native-resolution transition frames, followed by native initial PNG",
+  "review_source_video": "/tmp/tavp-dense-reviews/022/middle_view.mp4",
+  "source_frame_count": 175,
+  "source_fps": 20.0,
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 88,
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg"
+  ],
+  "native_detail_frames": [
+    48,
+    60,
+    72,
+    80,
+    84,
+    88,
+    90,
+    96,
+    104,
+    110,
+    112,
+    116,
+    120,
+    174
+  ],
+  "initial_scene": "Middle third-person view: an orange mat holds a bunch of reddish-purple grapes with visible stems on the right and an empty shallow green plate to its left. The active white-and-blue arm is at the rear right with its gripper above the mat; part of another stationary arm crosses the lower-left foreground. A black backdrop and a white object intruding at the upper-right edge are visible. The grapes and plate are identifiable and unobscured in this view.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame_inclusive": 26,
+      "action": "The active arm remains above the rear edge of the orange mat; the grapes and empty green plate remain stationary.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 27,
+      "end_frame_inclusive": 59,
+      "action": "The open gripper advances over the grape bunch and descends until its jaws straddle the bunch.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 60,
+      "end_frame_inclusive": 81,
+      "action": "The jaws close around the grape bunch and hold it low over the orange mat. Exact finger-to-stem contact is partly obscured by the gripper.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 82,
+      "end_frame_inclusive": 103,
+      "action": "The grasped grapes move left toward the green plate with the gripper very low; some grapes or stems may continue contacting the mat during the transfer.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 104,
+      "end_frame_inclusive": 112,
+      "action": "The bunch is positioned on the green plate and the jaws open to release it. The bunch spans the plate with its rightmost grapes near or slightly beyond the rim.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 113,
+      "end_frame_inclusive": 143,
+      "action": "The empty gripper withdraws upward and rearward; the grapes remain on the plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 144,
+      "end_frame_inclusive": 174,
+      "action": "The arm holds at the rear and the released grapes remain settled on the green plate through the last frame.",
+      "confidence": "high"
+    }
+  ],
+  "multi_step": false,
+  "selected_execution_status": "success",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 175,
+    "reason": "The complete source contains one continuous grasp, transfer, and release of a single bunch of grapes, followed only by withdrawal and a stationary hold. Retain the entire single action.",
+    "terminal_state": "The grapes remain on the green plate and the gripper is empty and withdrawn above the rear edge of the mat."
+  },
+  "full_sequence_prompt": "The robotic arm grasps the bunch of grapes and moves it onto the green plate, releasing it there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The robotic arm grasps the bunch of grapes and moves it onto the green plate, releasing it there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "uncertainties": [
+    "The low transfer and grape bunch obscure the exact grasp contact and clearance above the mat; a fully airborne lift cannot be confidently established, so the prompt describes grasping and moving rather than asserting a distinct lift.",
+    "The bunch reaches the green plate, but its outermost right grapes appear at or slightly beyond the rim; the visible result supports placement on the plate rather than full containment.",
+    "The source folder labels this heavy occlusion, but the grapes and plate are unobscured in the required middle camera view; that label is not used as visual evidence."
+  ],
+  "evidence_frame_indices": [
+    0,
+    60,
+    80,
+    96,
+    104,
+    116,
+    120,
+    174
+  ],
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_source_original_video": "022_dobot_grape_picking_heavy_occlusion_success/original/video.mp4",
+  "review_source_crop_rectangle": {
+    "x": 640,
+    "y": 0,
+    "width": 640,
+    "height": 480
+  }
+}

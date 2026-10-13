@@ -1,0 +1,1 @@
+The robot grasps the red glass around its side with its right hand, lifts it from the blue plate, and carries it to the teal plate. It lowers the glass onto the teal plate and loosens its fingers, leaving the glass tilted with the right hand still beside its rim. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

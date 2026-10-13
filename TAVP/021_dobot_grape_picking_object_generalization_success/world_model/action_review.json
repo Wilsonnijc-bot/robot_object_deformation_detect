@@ -1,0 +1,107 @@
+{
+  "video_id": "021",
+  "review_method": "Visual inspection of every second decoded frame across the entire MP4 plus native-resolution transition frames, followed by native initial PNG",
+  "review_source_video": "/tmp/tavp-dense-reviews/021/middle_view.mp4",
+  "source_frame_count": 318,
+  "source_fps": 20.0,
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 159,
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "native_detail_frames": [
+    28,
+    50,
+    60,
+    74,
+    82,
+    100,
+    110,
+    180,
+    220,
+    230,
+    236,
+    244,
+    250,
+    258,
+    262,
+    264,
+    266,
+    272,
+    317
+  ],
+  "initial_scene": "Middle third-person view: an orange-covered tabletop holds an empty shallow circular green dish left of center and one elongated curved green object on the right. The active white-and-blue robot is at the rear right with an open parallel gripper. A second robot arm is stationary in the lower-left foreground; black curtains form the background.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame_inclusive": 27,
+      "action": "The active arm begins with its open gripper above the rear of the tabletop and moves toward the curved green object on the right. The dish is empty.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 28,
+      "end_frame_inclusive": 79,
+      "action": "The open gripper descends around the green object, bringing its fingers onto opposite sides; the object remains at the right-hand pickup location.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 80,
+      "end_frame_inclusive": 233,
+      "action": "The fingers close around the object and maintain a grip during a long low hold with slight gradual leftward movement. The exact instant the object becomes clear of the tabletop is difficult to determine from this oblique view. There is no separate release or new attempt.",
+      "confidence": "medium"
+    },
+    {
+      "start_frame": 234,
+      "end_frame_inclusive": 249,
+      "action": "The gripper carries the same green object leftward to the shallow green dish; by frame 250 the object is positioned over the dish.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 250,
+      "end_frame_inclusive": 261,
+      "action": "The arm sets the object on the green dish and opens the gripper. The object is released, with its thicker portion resting on the dish and its curved tip extending toward the rear rim.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 262,
+      "end_frame_inclusive": 317,
+      "action": "The open gripper rises clear and retreats to the rear. The object remains stably on the dish through the final frame; no second manipulation occurs.",
+      "confidence": "high"
+    }
+  ],
+  "multi_step": false,
+  "selected_execution_status": "success",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 318,
+    "reason": "The complete video contains one continuous pick-and-place task, including its low grasp hold, transfer, release and withdrawal. No independent subtask is present, so retain the whole sequence.",
+    "terminal_state": "The curved green object rests on the shallow green dish, with the gripper open and withdrawn."
+  },
+  "full_sequence_prompt": "The robotic arm picks up the curved green object and places it on the shallow green dish. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The robotic arm picks up the curved green object and places it on the shallow green dish. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "uncertainties": [
+    "The object is elongated, curved, green and irregularly textured; its precise identity cannot be established confidently. It is not visibly a grape bunch, despite the source folder task name. The prompt therefore describes its appearance.",
+    "The exact lift-off frame is obscured by the gripper and oblique camera view during the long low hold. The subsequent transport and successful release on the dish are clear."
+  ],
+  "evidence_frame_indices": [
+    0,
+    60,
+    110,
+    236,
+    250,
+    262,
+    272,
+    317
+  ],
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_source_original_video": "021_dobot_grape_picking_object_generalization_success/original/video.mp4",
+  "review_source_crop_rectangle": {
+    "x": 640,
+    "y": 0,
+    "width": 640,
+    "height": 480
+  }
+}

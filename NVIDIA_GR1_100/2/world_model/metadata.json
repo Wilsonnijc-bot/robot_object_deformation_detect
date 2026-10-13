@@ -1,0 +1,62 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "2",
+  "variant": "full_sequence",
+  "generation_prompt": "After the person turns the Rubik's cube on the top shelf and removes their hand, the robot grasps the cube with its right hand and lifts it clear. It carries the cube down to the bottom shelf, sets it onto the wooden surface, and opens its fingers while keeping the hand beside the cube. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/2/original/original.mp4",
+  "source_video_sha256": "689f5a3ea1bbc2773a4009aa2ade721d26a4bd12c4b74278385fa2b9daae55ee",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/2.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1601054,
+  "video_sha256": "689f5a3ea1bbc2773a4009aa2ade721d26a4bd12c4b74278385fa2b9daae55ee",
+  "first_frame_sha256": "f64827360a1b431ad93105c2562d75d343a2be53e6fe0c1afaa734c9d5b1a6b5",
+  "observed_terminal_state": "Cube is on the lowest wooden shelf with green face upward; right fingers are opening beside it, with thumb and palm still nearby. Complete hand withdrawal is outside the clip.",
+  "arm_hand_roles": {
+    "right": "Only manipulator: reaches to top shelf, grasps cube, lifts, transports downward, lowers onto lowest shelf and begins opening fingers.",
+    "left": "Remains open near initial position throughout; no object contact or stabilization.",
+    "person": "Turns the cube in place during initial frames and withdraws before robot grasp; no person-to-robot handoff.",
+    "coordination": "Single-hand robot manipulation; left hand provides no support, and the person ceases touching the cube before the robot grasp."
+  },
+  "uncertainties": [
+    "Final cube-to-shelf contact is partly obscured by the right hand; lowering, settled position and finger opening support set-down, but complete clearance of all hand contact is not visible.",
+    "Exact initial person finger contact and exact robot grasp closure frame are only resolved to the sampled two-frame intervals."
+  ],
+  "annotation_discrepancies": [
+    "Original instruction correctly identifies right hand and top-to-bottom cube relocation, but omits the person turning the cube before robot contact and the visible terminal finger opening without full hand withdrawal."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

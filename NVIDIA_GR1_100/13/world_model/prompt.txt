@@ -1,0 +1,1 @@
+The robot closes its right hand around the body of the pink mug on the upper shelf and lifts it clear. It carries the mug onto the tan tabletop in front of the shelf, lowers it upright, and opens its hand to release it, leaving the mug standing on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

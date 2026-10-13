@@ -1,0 +1,61 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "deformable-6",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid holds the near edge of the black-and-red plastic bag with its left hand while its right hand gathers the far edge inward, bunching the flexible material between its hands on the tabletop. It opens both hands and withdraws them, leaving the bag loosely crumpled on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/original/original.mp4",
+  "source_video_sha256": "cb2b942b10ca3f13003f044139c19f76ef4e72dcc06e9a363fca2bc4e1103662",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/deformable/task-6/compress_a_plastic_bag_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 427,
+  "frame_count": 427,
+  "first_frame_index": 0,
+  "fps": 29.780309194467048,
+  "fps_rational": "36600/1229",
+  "duration_seconds": 14.338333,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2644482,
+  "video_sha256": "cb2b942b10ca3f13003f044139c19f76ef4e72dcc06e9a363fca2bc4e1103662",
+  "first_frame_sha256": "b327fc59c30fb9cc2d4b6e1ac814fc5baa7121dddfd47543af1381283de4435f",
+  "observed_terminal_state": "Both hands are open and clear of the bag. Black/red bag remains on the tabletop, loosely crumpled and still visibly raised/puffy rather than tightly compressed or folded; no sealed closure or carried placement occurs.",
+  "arm_hand_roles": {
+    "left": "Near-camera arm, continuously traceable from the visible left shoulder. Raises first, lowers to the near red/black edge, holds/gathers that side while the opposite hand draws the far side inward, then opens and withdraws.",
+    "right": "Far-camera arm, partly occluded by the torso/left arm initially. Reaches to the far black side, closes on/gathers material toward the middle and coordinates with the left hand before opening and withdrawing.",
+    "coordination": "Hands approach separate sides, gather the flexible bag between them without a hand-to-hand transfer or full lift, and release together while the tabletop supports the bag. No person interacts and no locomotion occurs."
+  },
+  "uncertainties": [
+    "The exact film pinch points are partly hidden by opaque hand housings and bag folds, although coordinated contact, inward gathering and release are visible.",
+    "Air displacement and lasting reduction in bag volume cannot be confirmed visually; the bag spreads again after release and retains a raised profile."
+  ],
+  "annotation_discrepancies": [
+    "Original instruction describes reducing volume and air displacement. Visible evidence supports gathering/bunching and release, but does not establish lasting volume reduction or measurable air displacement."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

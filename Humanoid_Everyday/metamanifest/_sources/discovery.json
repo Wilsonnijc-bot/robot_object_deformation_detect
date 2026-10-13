@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-13T15:41:25.466128+00:00",
+  "github_revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "nvidia_revision": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "gallery_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "nvidia_metadata_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/metadata.csv",
+  "humanoid_task_count": 49,
+  "nvidia_metadata_rows": 100,
+  "nvidia_video_count": 92,
+  "metadata_without_video": [
+    "11.mp4",
+    "22.mp4",
+    "28.mp4",
+    "44.mp4",
+    "5.mp4",
+    "7.mp4",
+    "8.mp4",
+    "87.mp4"
+  ],
+  "video_without_metadata": []
+}

@@ -1,0 +1,46 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "audited_at": "2026-10-13T17:22:26.948316+00:00",
+  "pilot_only": false,
+  "output_directory": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100",
+  "reports_directory": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/metamanifest",
+  "manifest_paths_relative_to": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/metamanifest",
+  "video_count": 92,
+  "task_count": 92,
+  "download_or_validation_failures": [],
+  "annotation_discrepancies": [],
+  "byte_identical_video_groups": [],
+  "original_video_storage_bytes": 142323121,
+  "quality_summary": {
+    "native_resolutions": {
+      "1280x800": 92
+    },
+    "displayed_resolutions": {
+      "1280x800": 92
+    },
+    "frame_rates": {
+      "20.0": 92
+    },
+    "codecs": {
+      "h264": 92
+    }
+  },
+  "limitations": [
+    "No quality upgrade verified; source-native resolutions retained.",
+    "Semantic instruction correctness is not certified; original annotations are preserved."
+  ],
+  "total_output_storage_bytes": 511650966,
+  "nvidia_videos": 92,
+  "nvidia_metadata_rows": 100,
+  "nvidia_metadata_without_video": [
+    "11.mp4",
+    "22.mp4",
+    "28.mp4",
+    "44.mp4",
+    "5.mp4",
+    "7.mp4",
+    "8.mp4",
+    "87.mp4"
+  ],
+  "nvidia_video_without_metadata": []
+}

@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "15",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the translucent orange cup around its sides and lift it clear of the top shelf. It carries the cup downward to the bottom shelf, sets it upright, and opens its fingers beside the cup. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/15/original/original.mp4",
+  "source_video_sha256": "51f9a8cbea35b81cf60bbf062f6996331f40e782cbaabe7ae68f2fdc52cb2b73",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/15.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1810682,
+  "video_sha256": "51f9a8cbea35b81cf60bbf062f6996331f40e782cbaabe7ae68f2fdc52cb2b73",
+  "first_frame_sha256": "febc87f41c81682227430f3879e9cd01bd9e1f1f68c9a547d6dc0b3dcd8db409",
+  "observed_terminal_state": "The orange cup stands upright on the left portion of the lowest shelf. The right hand is open immediately beside it, with the thumb still near the cup; the left hand remains idle and open. The highest shelf is empty.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: reaches, grasps the cup sides, lifts and transports it to the bottom shelf, then opens fingers beside it.",
+    "left": "Remains open beside the shelf without touching the cup or supporting the shelf.",
+    "coordination": "Single-hand manipulation; no hand-to-hand transfer or bilateral support."
+  },
+  "uncertainties": [
+    "The final thumb-to-cup contact is partly obscured; complete separation of every digit and a subsequent hand withdrawal are not visible. The prompt describes opening beside the cup rather than inferring a clean withdrawn release."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

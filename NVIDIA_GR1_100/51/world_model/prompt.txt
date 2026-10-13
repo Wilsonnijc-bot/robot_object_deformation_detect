@@ -1,0 +1,1 @@
+The robot's left hand closes around the translucent blue glass on the blue plate, lifts it clear, and carries it to the teal plate. It lowers the glass upright onto the teal plate and opens its fingers beside it, leaving the glass standing there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

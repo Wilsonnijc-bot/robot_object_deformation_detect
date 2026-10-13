@@ -1,0 +1,835 @@
+{
+  "pick-place-1": {
+    "task_id": "pick-place-1",
+    "task_name": "Lift a kettle from its base",
+    "category": "Pick and Place",
+    "text_description": "This task demonstrates basic pick and place operations where the humanoid robot grasps a kettle from its base and places it on the table.",
+    "egocentric_video": "./static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-1/pointcloud.ply",
+    "difficulty": "Beginner",
+    "duration": "15 seconds",
+    "tags": [
+      "grasping",
+      "manipulation",
+      "basic",
+      "precision"
+    ]
+  },
+  "pick-place-2": {
+    "task_id": "pick-place-2",
+    "task_name": "Place a cube in a bag",
+    "category": "Pick and Place",
+    "text_description": "This task demonstrates precision pick and place operations where the humanoid robot grasps a cube and carefully places it inside a bag, requiring spatial awareness and gentle manipulation.",
+    "egocentric_video": "./static/data/videos/pick-place/task-2/place_a_cube_in_a_bag_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-2/place_a_cube_in_a_bag_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-2/pointcloud.ply",
+    "difficulty": "Intermediate",
+    "duration": "45 seconds",
+    "tags": [
+      "multi-object",
+      "sorting",
+      "coordination",
+      "planning"
+    ]
+  },
+  "pick-place-3": {
+    "task_id": "pick-place-3",
+    "task_name": "Pick up a tripod and stand it on the desk",
+    "category": "Pick and Place",
+    "text_description": "This task demonstrates complex manipulation where the humanoid robot picks up a tripod and carefully stands it upright on the desk, requiring balance, precision, and spatial reasoning.",
+    "egocentric_video": "./static/data/videos/pick-place/task-3/pick_up_a_tripod_and_stand_it_on_the_desk_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-3/pick_up_a_tripod_and_stand_it_on_the_desk_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-3/pointcloud.ply",
+    "difficulty": "Advanced",
+    "duration": "30 seconds",
+    "tags": [
+      "precision",
+      "delicate",
+      "fine-control",
+      "accuracy"
+    ]
+  },
+  "pick-place-4": {
+    "task_id": "pick-place-4",
+    "task_name": "Pick up an air purify spray and put it inside a container",
+    "category": "Pick and Place",
+    "text_description": "This task involves picking up an air purifier spray bottle and placing it inside a container, demonstrating object manipulation and spatial planning.",
+    "egocentric_video": "./static/data/videos/pick-place/task-4/pick_an_air_purify_spray_and_put_it_inside_a_container_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-4/pick_an_air_purify_spray_and_put_it_inside_a_container_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-4/pointcloud.ply",
+    "difficulty": "Intermediate",
+    "duration": "25 seconds",
+    "tags": [
+      "container",
+      "placement",
+      "spatial",
+      "planning"
+    ]
+  },
+  "pick-place-5": {
+    "task_id": "pick-place-5",
+    "task_name": "Pick a multi-meter and place it in a container",
+    "category": "Pick and Place",
+    "text_description": "This task demonstrates precision handling of electronic equipment, requiring careful manipulation of a multi-meter and placing it in a designated container.",
+    "egocentric_video": "./static/data/videos/pick-place/task-5/pick_a_multi_meter_and_place_it_in_a_container_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-5/pick_a_multi_meter_and_place_it_in_a_container_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-5/pointcloud.ply",
+    "difficulty": "Advanced",
+    "duration": "35 seconds",
+    "tags": [
+      "electronics",
+      "precision",
+      "delicate",
+      "tools"
+    ]
+  },
+  "pick-place-6": {
+    "task_id": "pick-place-6",
+    "task_name": "Pick a 3d printing filament and put it inside the container",
+    "category": "Pick and Place",
+    "text_description": "This task involves handling 3D printing filament, requiring careful manipulation to avoid tangling and precise placement in a container.",
+    "egocentric_video": "./static/data/videos/pick-place/task-6/pick_a_3d_printing_filament_and_put_it_inside_the_container_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-6/pick_a_3d_printing_filament_and_put_it_inside_the_container_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-6/pointcloud.ply",
+    "difficulty": "Intermediate",
+    "duration": "20 seconds",
+    "tags": [
+      "filament",
+      "flexible",
+      "storage",
+      "organization"
+    ]
+  },
+  "pick-place-7": {
+    "task_id": "pick-place-7",
+    "task_name": "Stack a rolls of paper towel on top of the other",
+    "category": "Pick and Place",
+    "text_description": "This task demonstrates stacking operations where the humanoid robot carefully stacks rolls of paper towels, requiring balance and spatial awareness.",
+    "egocentric_video": "./static/data/videos/pick-place/task-7/stack_a_rolls_of_paper_towel_on_top_of_the_other_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-7/stack_a_rolls_of_paper_towel_on_top_of_the_other_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-7/pointcloud.ply",
+    "difficulty": "Beginner",
+    "duration": "18 seconds",
+    "tags": [
+      "stacking",
+      "balance",
+      "organization",
+      "basic"
+    ]
+  },
+  "tool-use-1": {
+    "task_id": "tool-use-1",
+    "task_name": "Pour water from a kettle into a cup",
+    "category": "Tool Use",
+    "text_description": "This task demonstrates tool manipulation where the humanoid robot uses a kettle to pour water into a cup, requiring precise control and coordination.",
+    "egocentric_video": "./static/data/videos/tool-use/task-1/pour_water_from_a_kettle_into_a_cup_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-1/pour_water_from_a_kettle_into_a_cup_no_sound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-1/pointcloud.ply",
+    "difficulty": "Advanced",
+    "duration": "40 seconds",
+    "tags": [
+      "pouring",
+      "precision",
+      "coordination",
+      "tools"
+    ]
+  },
+  "tool-use-2": {
+    "task_id": "tool-use-2",
+    "task_name": "Wipe a table with an eraser",
+    "category": "Tool Use",
+    "text_description": "This task demonstrates cleaning operations where the humanoid robot uses an eraser to wipe a table surface, requiring controlled movements and surface contact.",
+    "egocentric_video": "./static/data/videos/tool-use/task-2/wipe_a_table_with_an_eraser_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-2/wipe_a_table_with_an_eraser_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-2/pointcloud.ply",
+    "difficulty": "Intermediate",
+    "duration": "30 seconds",
+    "tags": [
+      "cleaning",
+      "surface",
+      "contact",
+      "maintenance"
+    ]
+  },
+  "tool-use-3": {
+    "task_id": "tool-use-3",
+    "task_name": "Wipe a monitor with a cloth",
+    "category": "Tool Use",
+    "text_description": "This task involves cleaning a monitor screen with a cloth, requiring gentle pressure and careful surface contact to avoid damage.",
+    "egocentric_video": "./static/data/videos/tool-use/task-3/wipe_a_monitor_with_a_cloth_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-3/wipe_a_monitor_with_a_cloth_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-3/pointcloud.ply",
+    "difficulty": "Advanced",
+    "duration": "25 seconds",
+    "tags": [
+      "cleaning",
+      "delicate",
+      "screen",
+      "precision"
+    ]
+  },
+  "tool-use-4": {
+    "task_id": "tool-use-4",
+    "task_name": "Use a garden tool",
+    "category": "Tool Use",
+    "text_description": "This task demonstrates outdoor tool usage where the humanoid robot uses a garden tool for various gardening tasks, requiring proper grip, motion control, and precision handling for effective outdoor work.",
+    "egocentric_video": "./static/data/videos/tool-use/task-4/use_a_garden_tool_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-4/use_a_garden_tool_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-4/pointcloud.ply",
+    "difficulty": "Advanced",
+    "duration": "45 seconds",
+    "tags": [
+      "garden-tool",
+      "outdoor",
+      "precision",
+      "force-control"
+    ]
+  },
+  "tool-use-5": {
+    "task_id": "tool-use-5",
+    "task_name": "Use a duster to dust the desk",
+    "category": "Tool Use",
+    "text_description": "This task demonstrates cleaning tool usage where the humanoid robot uses a duster to clean a desk surface, requiring proper motion patterns, systematic coverage, and effective dust removal techniques.",
+    "egocentric_video": "./static/data/videos/tool-use/task-5/use_a_duster_to_dust_the_desk_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-5/use_a_duster_to_dust_the_desk_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-5/pointcloud.ply",
+    "difficulty": "Beginner",
+    "duration": "30 seconds",
+    "tags": [
+      "cleaning",
+      "duster",
+      "surface-coverage",
+      "motion-patterns"
+    ]
+  },
+  "tool-use-6": {
+    "task_id": "tool-use-6",
+    "task_name": "Wipe table with cloth",
+    "category": "Tool Use",
+    "text_description": "This task demonstrates cloth-based cleaning where the humanoid robot uses a cloth to wipe a table surface, requiring proper wiping motions, systematic coverage patterns, and effective cleaning techniques.",
+    "egocentric_video": "./static/data/videos/tool-use/task-6/wipe_table_with_cloth_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-6/wipe_table_with_cloth_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-6/pointcloud.ply",
+    "difficulty": "Beginner",
+    "duration": "25 seconds",
+    "tags": [
+      "cleaning",
+      "cloth",
+      "wiping",
+      "surface-coverage"
+    ]
+  },
+  "tool-use-7": {
+    "task_id": "tool-use-7",
+    "task_name": "Click a mouse",
+    "category": "Tool Use",
+    "text_description": "This task demonstrates precise computer interaction where the humanoid robot uses a computer mouse to perform clicking actions, requiring fine motor control, accurate positioning, and proper button activation techniques.",
+    "egocentric_video": "./static/data/videos/tool-use/task-7/click_a_mouse_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-7/click_a_mouse_g1_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-7/pointcloud.ply",
+    "difficulty": "Intermediate",
+    "duration": "20 seconds",
+    "tags": [
+      "mouse",
+      "clicking",
+      "precision",
+      "computer-interaction"
+    ]
+  },
+  "articulated-1": {
+    "task_id": "articulated-1",
+    "task_name": "Rotate Chair",
+    "category": "Articulated Object",
+    "text_description": "Rotating an office chair by manipulating its swivel mechanism, demonstrating understanding of rotational joints and force application for smooth articulated motion.",
+    "egocentric_video": "./static/data/videos/articulated/task-1/rotate_chair_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-1/rotate_chair_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "15 seconds",
+    "tags": [
+      "rotation",
+      "articulated",
+      "chair",
+      "swivel"
+    ]
+  },
+  "articulated-2": {
+    "task_id": "articulated-2",
+    "task_name": "Compress Liquid Hand Soap",
+    "category": "Articulated Object",
+    "text_description": "Compressing a liquid hand soap dispenser into a cup, requiring precise force control and understanding of pump mechanisms for proper liquid dispensing.",
+    "egocentric_video": "./static/data/videos/articulated/task-2/compress_a_liquid_hand_soap_into_a_cup_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-2/compress_a_liquid_hand_soap_into_a_cup_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "20 seconds",
+    "tags": [
+      "pump",
+      "dispenser",
+      "force-control",
+      "liquid"
+    ]
+  },
+  "articulated-3": {
+    "task_id": "articulated-3",
+    "task_name": "Unfold Multimeter Stand",
+    "category": "Articulated Object",
+    "text_description": "Unfolding the stand on a multimeter, demonstrating manipulation of hinged mechanisms and precise positioning for stable device placement.",
+    "egocentric_video": "./static/data/videos/articulated/task-3/unfold_stand_on_multimeter_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-3/unfold_stand_on_multimeter_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "25 seconds",
+    "tags": [
+      "hinge",
+      "unfold",
+      "precision",
+      "stand"
+    ]
+  },
+  "articulated-4": {
+    "task_id": "articulated-4",
+    "task_name": "Compress Air Pumper",
+    "category": "Articulated Object",
+    "text_description": "Compressing an air pumper mechanism, requiring rhythmic force application and understanding of pneumatic systems for effective air compression.",
+    "egocentric_video": "./static/data/videos/articulated/task-4/compress_air_pumper_h1_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-4/compress_air_pumper_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "30 seconds",
+    "tags": [
+      "pump",
+      "compression",
+      "pneumatic",
+      "force"
+    ]
+  },
+  "articulated-5": {
+    "task_id": "articulated-5",
+    "task_name": "Turn On Faucet Handle",
+    "category": "Articulated Object",
+    "text_description": "Turning on a faucet handle, demonstrating rotational manipulation and torque application for water flow control.",
+    "egocentric_video": "./static/data/videos/articulated/task-5/turn_on_the_faucet_handle_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-5/turn_on_the_faucet_handle_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "15 seconds",
+    "tags": [
+      "faucet",
+      "rotation",
+      "torque",
+      "water"
+    ]
+  },
+  "articulated-6": {
+    "task_id": "articulated-6",
+    "task_name": "Press Light Switch",
+    "category": "Articulated Object",
+    "text_description": "Pressing a light switch to toggle illumination, requiring precise finger positioning and appropriate force for switch activation.",
+    "egocentric_video": "./static/data/videos/articulated/task-6/pressing_on_a_light_switch_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-6/pressing_on_a_light_switch_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "10 seconds",
+    "tags": [
+      "switch",
+      "press",
+      "toggle",
+      "electrical"
+    ]
+  },
+  "articulated-7": {
+    "task_id": "articulated-7",
+    "task_name": "Close Cabinet Door",
+    "category": "Articulated Object",
+    "text_description": "Closing a cabinet door smoothly, demonstrating control of hinged mechanisms and gentle force application to avoid slamming.",
+    "egocentric_video": "./static/data/videos/articulated/task-7/close_the_cabinet_door_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-7/close_the_cabinet_door_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "12 seconds",
+    "tags": [
+      "door",
+      "hinge",
+      "cabinet",
+      "gentle-close"
+    ]
+  },
+  "high-precision-1": {
+    "task_id": "high-precision-1",
+    "task_name": "Open a Bottle",
+    "category": "High Precision",
+    "text_description": "Opening a bottle cap with precise grip control and rotational force, demonstrating fine motor skills and torque management for secure cap removal.",
+    "egocentric_video": "./static/data/videos/high-precision/task-1/open_a_bottle_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-1/open_a_bottle_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "20 seconds",
+    "tags": [
+      "bottle",
+      "grip",
+      "rotation",
+      "torque"
+    ]
+  },
+  "high-precision-2": {
+    "task_id": "high-precision-2",
+    "task_name": "Place Soldering Gun in Base",
+    "category": "High Precision",
+    "text_description": "Placing a soldering gun precisely into its base holder, requiring careful alignment and gentle placement to ensure proper docking.",
+    "egocentric_video": "./static/data/videos/high-precision/task-2/place_a_soldering_gun_into_its_base_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-2/place_a_soldering_gun_into_its_base_h1_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "25 seconds",
+    "tags": [
+      "soldering",
+      "alignment",
+      "docking",
+      "precision"
+    ]
+  },
+  "high-precision-3": {
+    "task_id": "high-precision-3",
+    "task_name": "Align Stack of Books",
+    "category": "High Precision",
+    "text_description": "Aligning a stack of books to create a neat arrangement, demonstrating spatial awareness and precise positioning for aesthetic organization.",
+    "egocentric_video": "./static/data/videos/high-precision/task-3/align_a_stack_of_books_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-3/align_a_stack_of_books_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "30 seconds",
+    "tags": [
+      "alignment",
+      "stacking",
+      "organization",
+      "spatial"
+    ]
+  },
+  "high-precision-4": {
+    "task_id": "high-precision-4",
+    "task_name": "Place Kettle on Base",
+    "category": "High Precision",
+    "text_description": "Placing a kettle precisely on its electrical base, requiring careful alignment of contacts and stable positioning for proper connection.",
+    "egocentric_video": "./static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "22 seconds",
+    "tags": [
+      "kettle",
+      "alignment",
+      "electrical",
+      "placement"
+    ]
+  },
+  "high-precision-5": {
+    "task_id": "high-precision-5",
+    "task_name": "Insert Flower into Vase",
+    "category": "High Precision",
+    "text_description": "Inserting a flower delicately into a vase, requiring gentle handling, precise positioning, and careful force control to avoid damaging the stem.",
+    "egocentric_video": "./static/data/videos/high-precision/task-5/insert_flower_into_vase_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-5/Insert_flower_into_vase_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "28 seconds",
+    "tags": [
+      "flower",
+      "delicate",
+      "insertion",
+      "gentle"
+    ]
+  },
+  "high-precision-6": {
+    "task_id": "high-precision-6",
+    "task_name": "Press Start Boiling Button",
+    "category": "High Precision",
+    "text_description": "Pressing the start boiling button on an electric kettle with precise finger placement and appropriate force for button activation.",
+    "egocentric_video": "./static/data/videos/high-precision/task-6/press_start_boiling_button_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-6/press_start_boiling_button_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "15 seconds",
+    "tags": [
+      "button",
+      "press",
+      "kettle",
+      "activation"
+    ]
+  },
+  "high-precision-7": {
+    "task_id": "high-precision-7",
+    "task_name": "Unplug a Charger",
+    "category": "High Precision",
+    "text_description": "Unplugging a charger from an outlet with precise grip and controlled pulling force to safely disconnect without damaging the plug or outlet.",
+    "egocentric_video": "./static/data/videos/high-precision/task-7/unplug_a_charger_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-7/unplug_a_charger_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "18 seconds",
+    "tags": [
+      "unplug",
+      "charger",
+      "electrical",
+      "grip"
+    ]
+  },
+  "high-precision-8": {
+    "task_id": "high-precision-8",
+    "task_name": "Stack Paper Towel Rolls",
+    "category": "High Precision",
+    "text_description": "Stacking rolls of paper towels on top of each other with precise balance and positioning to create a stable tower.",
+    "egocentric_video": "./static/data/videos/high-precision/task-8/stack_a_rolls_of_paper_towel_on_top_of_the_other_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-8/stack_a_rolls_of_paper_towel_on_top_of_the_other_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "25 seconds",
+    "tags": [
+      "stacking",
+      "balance",
+      "tower",
+      "stability"
+    ]
+  },
+  "human-robot-1": {
+    "task_id": "human-robot-1",
+    "task_name": "Hand Over Emotional Support Dumpling",
+    "category": "Human-Robot Interaction",
+    "text_description": "Picking up an emotional support dumpling plush and handing it to a person, demonstrating safe object transfer and human-aware motion planning.",
+    "egocentric_video": "./static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "25 seconds",
+    "tags": [
+      "handover",
+      "plush",
+      "safety",
+      "human-aware"
+    ]
+  },
+  "human-robot-2": {
+    "task_id": "human-robot-2",
+    "task_name": "Hand Over Toilet Paper",
+    "category": "Human-Robot Interaction",
+    "text_description": "Picking up toilet paper and handing it to a person, requiring gentle handling and appropriate handover positioning for easy human grasp.",
+    "egocentric_video": "./static/data/videos/human-robot/task-2/pick_up_a_toilet_paper_and_hand_it_to_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-2/pick_up_a_toilet_paper_and_hand_it_to_a_person_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "20 seconds",
+    "tags": [
+      "handover",
+      "household",
+      "gentle",
+      "positioning"
+    ]
+  },
+  "human-robot-3": {
+    "task_id": "human-robot-3",
+    "task_name": "Hand Over Grey Duster",
+    "category": "Human-Robot Interaction",
+    "text_description": "Picking up a grey duster from the table and handing it to a person, demonstrating tool handover and collaborative task initiation.",
+    "egocentric_video": "./static/data/videos/human-robot/task-3/pick_up_a_duster_from_the_table_and_hand_it_to_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-3/pick_up_a_grey_duster_from_the_table_and_hand_it_to_a_person_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "22 seconds",
+    "tags": [
+      "handover",
+      "tool",
+      "collaboration",
+      "table"
+    ]
+  },
+  "human-robot-4": {
+    "task_id": "human-robot-4",
+    "task_name": "Hand Over Book from Magazine Stand",
+    "category": "Human-Robot Interaction",
+    "text_description": "Grabbing a book from a magazine stand and handing it to a person, requiring careful extraction and stable handover of a heavier object.",
+    "egocentric_video": "./static/data/videos/human-robot/task-4/h1-grab_a_stack_of_plates_from_the_desk_and_hand_it_to_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-4/h1-grab_a_book_from_a_magazine_stand_and_hand_it_to_a_person_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "30 seconds",
+    "tags": [
+      "handover",
+      "book",
+      "extraction",
+      "weight"
+    ]
+  },
+  "human-robot-5": {
+    "task_id": "human-robot-5",
+    "task_name": "Handover Dumpling",
+    "category": "Human-Robot Interaction",
+    "text_description": "Handing over a dumpling plush toy to a person with gentle approach and safe transfer, demonstrating soft object handling in human interaction.",
+    "egocentric_video": "./static/data/videos/human-robot/task-5/handover_dumpling_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-5/Handover_dumpling.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "18 seconds",
+    "tags": [
+      "handover",
+      "plush",
+      "gentle",
+      "soft-object"
+    ]
+  },
+  "human-robot-6": {
+    "task_id": "human-robot-6",
+    "task_name": "Hand Over Flower",
+    "category": "Human-Robot Interaction",
+    "text_description": "Handing over a flower to a person with delicate handling and appropriate presentation angle, demonstrating care for fragile objects in social contexts.",
+    "egocentric_video": "./static/data/videos/human-robot/task-6/hand_over_flower_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-6/hand_over_flower_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "28 seconds",
+    "tags": [
+      "handover",
+      "flower",
+      "delicate",
+      "social"
+    ]
+  },
+  "human-robot-7": {
+    "task_id": "human-robot-7",
+    "task_name": "Shake Hand with Person",
+    "category": "Human-Robot Interaction",
+    "text_description": "Shaking hands with a person, demonstrating social gesture recognition, appropriate grip force, and natural human-robot physical interaction.",
+    "egocentric_video": "./static/data/videos/human-robot/task-7/shake_hand_with_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-7/shake_hand_with_a_person_h1_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "20 seconds",
+    "tags": [
+      "handshake",
+      "social",
+      "gesture",
+      "force-control"
+    ]
+  },
+  "deformable-1": {
+    "task_id": "deformable-1",
+    "task_name": "Adjust Loosely Closed Bag Opening",
+    "category": "Deformable Objects",
+    "text_description": "Adjusting the opening of a loosely closed bag, requiring understanding of fabric dynamics and gentle manipulation to reshape the bag opening.",
+    "egocentric_video": "./static/data/videos/deformable/task-1/adjust_the_opening_of_a_loosely_closed_bag_egocentric.mp4",
+    "third_view_video": "./static/data/videos/deformable/task-1/adjust_the_opening_of_a_loosely_closed_bag_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "25 seconds",
+    "tags": [
+      "bag",
+      "fabric",
+      "reshape",
+      "gentle"
+    ]
+  },
+  "deformable-2": {
+    "task_id": "deformable-2",
+    "task_name": "Fold Towel",
+    "category": "Deformable Objects",
+    "text_description": "Folding a towel into a neat arrangement, demonstrating cloth manipulation, spatial reasoning, and systematic folding techniques.",
+    "egocentric_video": "./static/data/videos/deformable/task-2/fold_towel_egocentric.mp4",
+    "third_view_video": "./static/data/videos/deformable/task-2/Fold_towel_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "40 seconds",
+    "tags": [
+      "towel",
+      "folding",
+      "cloth",
+      "organization"
+    ]
+  },
+  "deformable-3": {
+    "task_id": "deformable-3",
+    "task_name": "Fold Jacket on Desk",
+    "category": "Deformable Objects",
+    "text_description": "Folding a jacket on the desk with proper technique, requiring understanding of garment structure and multi-step folding procedures.",
+    "egocentric_video": "./static/data/videos/deformable/task-3/fold_a_jacket_on_the_desk_egocentric.mp4",
+    "third_view_video": "./static/data/videos/deformable/task-3/fold_a_jacket_on_the_desk_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "45 seconds",
+    "tags": [
+      "jacket",
+      "garment",
+      "folding",
+      "multi-step"
+    ]
+  },
+  "deformable-4": {
+    "task_id": "deformable-4",
+    "task_name": "Fold Toolkit",
+    "category": "Deformable Objects",
+    "text_description": "Folding a flexible toolkit case, demonstrating manipulation of semi-rigid deformable objects and proper storage configuration.",
+    "egocentric_video": "./static/data/videos/deformable/task-4/fold_a_toolkit_egocentric.mp4",
+    "third_view_video": "./static/data/videos/deformable/task-4/fold_a_toolkit_h1_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "30 seconds",
+    "tags": [
+      "toolkit",
+      "case",
+      "folding",
+      "storage"
+    ]
+  },
+  "deformable-5": {
+    "task_id": "deformable-5",
+    "task_name": "Compress Soft Travel Bag",
+    "category": "Deformable Objects",
+    "text_description": "Pressing a soft travel bag to reduce its size for storage, requiring compression techniques and understanding of soft material behavior.",
+    "egocentric_video": "./static/data/videos/deformable/task-5/press_a_soft_travel_bag_to_reduce_its_size_egocentric.mp4",
+    "third_view_video": "./static/data/videos/deformable/task-5/press_a_soft_travel_bag_to_reduce_its_size_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "28 seconds",
+    "tags": [
+      "bag",
+      "compression",
+      "soft",
+      "storage"
+    ]
+  },
+  "deformable-6": {
+    "task_id": "deformable-6",
+    "task_name": "Compress Plastic Bag",
+    "category": "Deformable Objects",
+    "text_description": "Compressing a plastic bag to reduce volume, demonstrating manipulation of thin, flexible materials and air displacement techniques.",
+    "egocentric_video": "./static/data/videos/deformable/task-6/compress_a_plastic_bag_egocentric.mp4",
+    "third_view_video": "./static/data/videos/deformable/task-6/compress_a_plastic_bag_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "20 seconds",
+    "tags": [
+      "plastic",
+      "compression",
+      "flexible",
+      "volume-reduction"
+    ]
+  },
+  "loco-manip-1": {
+    "task_id": "loco-manip-1",
+    "task_name": "Clean the Window",
+    "category": "Loco-Manipulations",
+    "text_description": "Walking to and cleaning a window, combining locomotion with manipulation for reaching and wiping motions at different heights.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-1/clean_the_window_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-1/clean_the_window_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "40 seconds",
+    "tags": [
+      "walking",
+      "cleaning",
+      "reaching",
+      "coordination"
+    ]
+  },
+  "loco-manip-2": {
+    "task_id": "loco-manip-2",
+    "task_name": "Pick Up Kettle, Place on Base and Turn On",
+    "category": "Loco-Manipulations",
+    "text_description": "Walking to pick up a kettle, placing it on its base, and turning it on, demonstrating multi-step mobile manipulation with precise placement.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "50 seconds",
+    "tags": [
+      "walking",
+      "kettle",
+      "placement",
+      "activation"
+    ]
+  },
+  "loco-manip-3": {
+    "task_id": "loco-manip-3",
+    "task_name": "Throw Paper to Trashcan",
+    "category": "Loco-Manipulations",
+    "text_description": "Walking to throw away a piece of paper to a trashcan, combining navigation with throwing motion and target aiming.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-3/throw_away_a_piece_of_paper_to_trashcan_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-3/throw_away_a_piece_of_paper_to_trashcan_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "35 seconds",
+    "tags": [
+      "walking",
+      "throwing",
+      "aiming",
+      "disposal"
+    ]
+  },
+  "loco-manip-4": {
+    "task_id": "loco-manip-4",
+    "task_name": "Walk to Gate Button and Open Gate",
+    "category": "Loco-Manipulations",
+    "text_description": "Walking towards a gate button and pressing it to open the gate, demonstrating navigation to a target and button activation.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-4/walk_towards_a_open_gate_button_and_open_gate_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-4/walk_towards_a_open_gate_button_and_open_gate_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "30 seconds",
+    "tags": [
+      "walking",
+      "button",
+      "gate",
+      "navigation"
+    ]
+  },
+  "loco-manip-5": {
+    "task_id": "loco-manip-5",
+    "task_name": "Pick Up Container, Walk and Stick to Whiteboard",
+    "category": "Loco-Manipulations",
+    "text_description": "Picking up a magnetic container, turning around, walking towards a whiteboard, and sticking it onto the board, demonstrating complex mobile manipulation sequence.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-5/pick_up_a_magnetic_container_turn_around_walk_towards_whiteboard_stick_it_onto_the_board_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-5/pick_up_a_magnetic_container_turn_around_walk_towards_whiteboard_stick_it_onto_the_board_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "55 seconds",
+    "tags": [
+      "walking",
+      "magnetic",
+      "multi-step",
+      "placement"
+    ]
+  },
+  "loco-manip-6": {
+    "task_id": "loco-manip-6",
+    "task_name": "Hold Whiteboard and Walk",
+    "category": "Loco-Manipulations",
+    "text_description": "Holding a whiteboard and walking with it, requiring balance control while carrying a large, flat object during locomotion.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-6/hold_a_whiteboard_and_walk_with_it_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-6/hold_a_whiteboard_and_walk_with_it_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "35 seconds",
+    "tags": [
+      "walking",
+      "carrying",
+      "large-object",
+      "balance"
+    ]
+  },
+  "loco-manip-7": {
+    "task_id": "loco-manip-7",
+    "task_name": "Walk to Fire Extinguisher and Open Door",
+    "category": "Loco-Manipulations",
+    "text_description": "Walking towards a fire extinguisher cabinet and opening its door, demonstrating navigation to emergency equipment and door manipulation.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-7/walk_towards_fire_extinguisher_and_open_door_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-7/walk_towards_fire_extinguisher_and_open_door_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "32 seconds",
+    "tags": [
+      "walking",
+      "door",
+      "emergency",
+      "safety"
+    ]
+  }
+}

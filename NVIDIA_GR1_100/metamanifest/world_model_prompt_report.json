@@ -1,0 +1,12 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "expected": 92,
+  "completed": 92,
+  "pending": [],
+  "completed_source_frame_count": 11040,
+  "inspected_sampled_frame_count": 5520,
+  "inspected_native_detail_frame_count": 792,
+  "distinct_dedicated_review_agents": 92,
+  "protocol": "humanoid_action_v1",
+  "cropping_or_trimming_performed": false
+}

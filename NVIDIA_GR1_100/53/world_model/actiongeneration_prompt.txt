@@ -1,0 +1,1 @@
+The robot uses its right hand to grasp the translucent red cup around its upper sides and lift it from the table. It carries the cup over the light blue plate, lowers it, and opens its fingers to release the cup onto the plate before drawing the hand clear. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

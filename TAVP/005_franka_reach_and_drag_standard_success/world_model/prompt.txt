@@ -1,0 +1,1 @@
+The robotic arm grasps the wooden strip and uses it to sweep the green apple into the gap between the green and red buttons. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

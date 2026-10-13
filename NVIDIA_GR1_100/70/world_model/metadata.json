@@ -1,0 +1,60 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "70",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the red cup around its sides, lift it from the right side of the table, and carry it over the blue plate. It turns the cup sideways while lowering it onto the plate, then opens its fingers with the cup lying across the plate and its hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/70/original/original.mp4",
+  "source_video_sha256": "06c50879f364d7920d9483cb72cd08140bd2f42eb974e14e83e170e1cba10b9a",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/70.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1376119,
+  "video_sha256": "06c50879f364d7920d9483cb72cd08140bd2f42eb974e14e83e170e1cba10b9a",
+  "first_frame_sha256": "b26523ad1b2eda7c630c4b731d9811b6b6673139af4e8ccaf4b04887cfdd9ffc",
+  "observed_terminal_state": "The red cup lies horizontally across the blue plate, with its open rim pointing toward image left. The right fingers are opened above it while the thumb/hand stays adjacent to its side; the left hand remains open and uninvolved.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: surrounds and grasps the cup with thumb opposing fingers, lifts and carries it to the plate, turns it sideways, lowers it and opens the fingers.",
+    "left": "Open hand remains on the left side without supporting the cup, stabilizing the plate or assisting the manipulation.",
+    "coordination": "Single-hand manipulation; no hand-to-hand transfer or human contact with the object."
+  },
+  "uncertainties": [
+    "Exact complete thumb-to-cup separation is not demonstrated at the ending because the thumb remains immediately adjacent and partly occludes the cup. No later hand withdrawal or cup stability beyond the final frame is visible."
+  ],
+  "annotation_discrepancies": [
+    "The source instruction specifies moving the red cup to the blue plate but omits the observed sideways terminal orientation. No contradiction in the active hand, source object or destination is observed."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

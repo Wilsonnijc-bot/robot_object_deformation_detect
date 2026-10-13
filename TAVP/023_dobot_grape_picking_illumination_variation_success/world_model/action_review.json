@@ -1,0 +1,104 @@
+{
+  "video_id": "023",
+  "review_method": "Visual inspection of every second decoded frame across the entire MP4 plus native-resolution transition frames, followed by native initial PNG",
+  "review_source_video": "/tmp/tavp-dense-reviews/023/middle_view.mp4",
+  "source_frame_count": 340,
+  "source_fps": 30.0,
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 170,
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "native_detail_frames": [
+    0,
+    70,
+    110,
+    126,
+    150,
+    180,
+    210,
+    236,
+    244,
+    254,
+    278,
+    300,
+    314,
+    324,
+    332,
+    339
+  ],
+  "initial_scene": "In the native middle third-person view, a white-and-blue arm at the rear of an orange tabletop has its open two-finger gripper above an empty shallow green plate. A reddish-purple grape bunch lies on the tabletop to the plate's right. A second arm occupies the lower-left foreground and remains inactive throughout the manipulation. Metal table borders and a dark background are visible.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame_inclusive": 70,
+      "action": "The active gripper is open above the empty green plate, with a short initial hold and small lifting motion; the grape bunch remains on the tabletop to the right.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 71,
+      "end_frame_inclusive": 126,
+      "action": "The open gripper moves right toward the grape bunch and lowers until the fingers flank the bunch at tabletop level.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 127,
+      "end_frame_inclusive": 236,
+      "action": "The fingers close around the bunch. The wrist/gripper makes small adjustments while staying at the same grape bunch; this is the grasp phase of the single placement, not a separate subtask. The bunch shifts slightly and remains low until the subsequent lift.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 237,
+      "end_frame_inclusive": 278,
+      "action": "The arm lifts the gripped grape bunch clear of the orange tabletop and briefly holds it aloft. No grapes are visibly left at the original position.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 279,
+      "end_frame_inclusive": 323,
+      "action": "The arm carries the bunch left over the green plate and lowers it onto the plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 324,
+      "end_frame_inclusive": 339,
+      "action": "The gripper opens around the bunch, which rests on the green plate; the open fingers remain nearby at the source video's end. No next independent task is shown.",
+      "confidence": "high"
+    }
+  ],
+  "multi_step": false,
+  "selected_execution_status": "success",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 340,
+    "reason": "The source shows a single grape-bunch pick-and-place. Retain the whole reference through the visible release and settled placement rather than cutting the grasp or transport phases.",
+    "terminal_state": "The grape bunch rests on the green plate and the gripper fingers are open around/above it at the final frame."
+  },
+  "full_sequence_prompt": "The robotic arm picks up the bunch of grapes and places it on the green plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The robotic arm picks up the bunch of grapes and places it on the green plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "uncertainties": [
+    "The exact contact points within the grape bunch and the exact first release frame are partly occluded by the fingers; the native late frames show open fingers and the bunch supported on the plate.",
+    "Whether the bunch is real fruit or a prop cannot be established from the video; its visible grape-bunch identity is sufficient for the prompt."
+  ],
+  "evidence_frame_indices": [
+    0,
+    110,
+    126,
+    236,
+    254,
+    300,
+    324,
+    339
+  ],
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_source_original_video": "023_dobot_grape_picking_illumination_variation_success/original/video.mp4",
+  "review_source_crop_rectangle": {
+    "x": 960,
+    "y": 0,
+    "width": 960,
+    "height": 720
+  }
+}

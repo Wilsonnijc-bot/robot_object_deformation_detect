@@ -1,0 +1,57 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "1",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the small green bok choy on the right side of the table and lift it clear of the surface. It carries the bok choy to the lower wire basket, lowers it beside the red fruit, and opens its hand to leave it resting inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/1/original/original.mp4",
+  "source_video_sha256": "ce5b22a55cdd148763a89d3e417bcc12ee1de07c2ebaba16084ee8e448a86903",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/1.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1214617,
+  "video_sha256": "ce5b22a55cdd148763a89d3e417bcc12ee1de07c2ebaba16084ee8e448a86903",
+  "first_frame_sha256": "67742d1bbaa1ac32ab90932c76ff7e7a2fc361b737db6d37b0baa877322cf9e4",
+  "observed_terminal_state": "Bok choy rests inside the lower wire basket beside the red fruit; right hand is open and clear of the bok choy. Left hand remains unused.",
+  "arm_hand_roles": {
+    "right": "Sole manipulator: grasps and lifts bok choy, transports it to lower basket, releases it and retreats.",
+    "left": "Remains open near its initial position without supporting the object or basket."
+  },
+  "uncertainties": [
+    "Robot torso and shoulders are outside the view; anatomical side is established from forward-looking paired-arm perspective and mirrored thumb orientation. Exact botanical identity comes from the annotation, supported by the visible green leaves and white stalk."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

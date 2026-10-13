@@ -1,0 +1,1 @@
+This task demonstrates tool manipulation where the humanoid robot uses a kettle to pour water into a cup, requiring precise control and coordination.

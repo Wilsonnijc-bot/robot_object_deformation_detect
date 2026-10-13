@@ -1,0 +1,1 @@
+The robotic arm picks up the carrot, carries it toward the purple plate, and releases it onto the tabletop beside the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

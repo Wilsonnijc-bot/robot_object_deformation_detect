@@ -1,0 +1,148 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg",
+    "sheet_004.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 242,
+  "inspection_coverage": {
+    "complete_source_interval": [
+      0,
+      482
+    ],
+    "contact_sheet_observations": "All four contact sheets were visually inspected, covering every even source frame from 0 through 482. Native-resolution frames were additionally viewed at grasp, tilt/lift, transport, lowering, release and ending; source initial PNG viewed independently.",
+    "native_dimensions": [
+      592,
+      1280
+    ]
+  },
+  "initial_scene": "A front-facing humanoid stands behind the table. A tan two-flange spool carrying black filament stands on its rim on a black tabletop patch to image left of an empty gray open container. The black articulated hand on the robot anatomical right is near the spool side; the white anatomical left hand rests beside the hip behind the container.",
+  "observed_sequence": [
+    {
+      "source_frame_interval": [
+        0,
+        30
+      ],
+      "action": "Both arms begin near the torso; spool remains upright on the table and gray bin remains empty.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        31,
+        126
+      ],
+      "action": "The robot extends its anatomical right arm outward toward the spool and moves the black articulated hand above the upper flange. Its left hand stays beside the hip.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        127,
+        176
+      ],
+      "action": "The right fingers descend across the near spool flange and close around its upper rim, establishing the grasp while the spool is still upright on the table. Native 140 and 174 show the hand gripping this area.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        177,
+        242
+      ],
+      "action": "Maintaining the right-hand grasp, the robot tilts the spool through a nearly horizontal orientation and starts lifting it clear of the black patch. Native 200 shows an edge-on tilted spool; 238 shows its turned orientation above the patch.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        243,
+        302
+      ],
+      "action": "The right arm raises the spool fully off the table and carries it inward toward the gray container. The near flange faces the camera during the raised phase, and the hand supports its lower edge as the wrist turns. Native 274 clearly shows clearance and secure one-hand carrying.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        303,
+        360
+      ],
+      "action": "The right hand moves the spool over the container and turns it upright as it lowers the spool inside. Native 316 shows it over the opening; native 350 shows the spool standing on its rim inside while the right fingers remain on its upper edge.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        361,
+        378
+      ],
+      "action": "The right fingers open and the hand lifts away, leaving the spool supported by the container floor. Native 370 shows an open hand separated from the upright spool.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        379,
+        482
+      ],
+      "action": "The empty right hand retracts upward toward the chest and then lowers beside the torso. The spool remains standing upright on its rim inside the bin through the final frame; left hand stays near hip without handling the object or bin.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Active black articulated hand performs upper-rim grasp, tilt/reorientation, lift, carry, lowering, finger release and withdrawal. It alone supports the spool during transport.",
+    "left": "White articulated hand remains near the left hip behind the bin; no visible contact with spool or container and no stabilizing role.",
+    "coordination": "Single-hand manipulation with no hand-to-hand transfer or human interaction."
+  },
+  "anatomical_side_evidence": {
+    "convention": "The torso front panel and face point toward the camera. The active black hand is traced through forearm and upper arm to the shoulder on image left, corresponding to the robot anatomical right. The white hand traces to the opposite shoulder, robot anatomical left.",
+    "confidence": "high",
+    "uncertainty": "None about anatomical side."
+  },
+  "terminal_state": "Spool stands upright on its flange rim inside the gray container, fully released. Right hand has returned down beside the body; left hand remains near hip. The tabletop starting patch is empty.",
+  "selected_execution_status": "success",
+  "uncertainties": [
+    "Exact contact-force distribution between fingers and flange is not resolvable, although the upper-rim grasp and maintained transport support are visible. The sampled chronology boundaries have approximately two-frame precision."
+  ],
+  "annotation_discrepancies": [],
+  "source_annotation_assessment": "The caption describes handling 3D printing filament and placing it in a container; the video specifically shows moving the complete filament spool, with a clearly visible successful release. No tangling or untangling action is observed.",
+  "evidence_frame_indices": [
+    0,
+    140,
+    174,
+    200,
+    238,
+    274,
+    316,
+    350,
+    370,
+    384,
+    482
+  ],
+  "video_id": "pick-place-6",
+  "dataset": "Humanoid_Everyday",
+  "review_source_video": "Humanoid_Everyday/pick-place-6__pick_a_3d_printing_filament_and_put_it_inside_the_container/third_person/original/original.mp4",
+  "source_frame_count": 483,
+  "source_fps": 30.000621130872275,
+  "native_detail_frames": [
+    0,
+    140,
+    174,
+    200,
+    238,
+    274,
+    316,
+    350,
+    370,
+    384,
+    482
+  ],
+  "world_model_prompt": "The humanoid uses its right hand to grasp the upper rim of the upright filament spool and lift it from the tabletop, turning the spool as it rises. It carries the spool over the gray open container, turns it upright, and lowers it onto its edge inside. It opens its fingers and withdraws its right hand, leaving the spool standing in the container. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "This task involves handling 3D printing filament, requiring careful manipulation to avoid tangling and precise placement in a container.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 483,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "635bcc2036fb90e17970e7beca1cd96252b3163adf4e2583ee0089eb81233114",
+  "review_completed_at": "2026-10-13T16:49:24.749844+00:00",
+  "dedicated_review_agent": "review_he_pick_place_6"
+}

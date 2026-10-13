@@ -1,0 +1,1 @@
+The robot uses its left hand to grasp the green zucchini protruding from the white mug and lift it completely out. It carries the zucchini over the empty blue plate, lowers it, and opens its fingers to leave it lying on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,0 +1,1 @@
+The robot grasps the orange juice carton on the pink plate with its right hand, lifts it clear, and carries it upright toward the cyan bowl behind the plate. It lowers the carton into the bowl, leaving it upright with the right hand still beside its upper half. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

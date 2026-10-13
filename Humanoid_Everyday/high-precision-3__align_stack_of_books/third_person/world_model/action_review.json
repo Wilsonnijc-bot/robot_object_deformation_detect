@@ -1,0 +1,123 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 192,
+  "initial_scene": "Front-facing humanoid behind a table; green spiral notebook lies diagonally on a visibly offset stack with a purple notebook below. The right arm is extended on image left; the left hand hangs on image right.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 57,
+      "action": "Robot lowers its anatomical right hand toward the green top notebook with fingers extended; the stack remains on the table. Left hand stays beside the body without contacting the stack.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 58,
+      "end_frame": 94,
+      "action": "Right fingers contact the upper cover near the labels and begin pushing the green notebook; it slides over the lower notebook while still diagonally oriented. No enclosing grasp or lift is visible.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 95,
+      "end_frame": 160,
+      "action": "Right hand maintains downward contact while sliding and rotating the top notebook toward the orientation of the lower layers. The green notebook changes from diagonally skewed to nearly squared with the stack.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 161,
+      "end_frame": 294,
+      "action": "Right fingers remain on the cover during small sliding adjustments, bringing the exposed edges closer into alignment. The notebooks remain table-supported; left hand remains idle.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 295,
+      "end_frame": 323,
+      "action": "Right hand lifts clear of the notebook and retracts upward and away. Aligned notebook stack stays on the tabletop.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 324,
+      "end_frame": 382,
+      "action": "Right arm withdraws toward a resting posture beside the robot. Both hands are clear of the books at the ending; the aligned stack remains stationary on the table.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Only manipulating hand: extended fingers press on the green top cover, slide and rotate it into alignment, make small settling adjustments, then withdraw without lifting a notebook.",
+    "left": "Idle hand beside the torso; does not stabilize or manipulate the notebooks.",
+    "coordination": "Single-hand manipulation with table support; no two-hand coordination or hand-to-hand transfer."
+  },
+  "anatomical_side_evidence": {
+    "convention": "Robot faces the camera; its anatomical right shoulder is on image left and its anatomical left shoulder is on image right.",
+    "evidence": "Initial PNG shows a continuous attachment from image-left shoulder through the active elbow/wrist to the black hand contacting the notebook in native frames 60, 90, 125 and 155. Opposite arm remains on image right.",
+    "confidence": "high",
+    "uncertainty": null
+  },
+  "terminal_state": "Green notebook is oriented with the lower notebooks in a substantially aligned stack on the table; both hands have withdrawn. No notebook pickup or removal occurs.",
+  "uncertainties": [
+    "Exact number of stacked notebook layers and millimeter-level edge alignment cannot be determined from the 320x568 source. The visible green and purple notebooks are identifiable and substantially squared by the ending."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    60,
+    90,
+    125,
+    155,
+    230,
+    280,
+    300,
+    320,
+    382
+  ],
+  "selected_execution_status": "success",
+  "execution_status_basis": "The visible skewed green notebook is squared with the lower stack and remains aligned after the right hand withdraws; success refers to this observed alignment, not unmeasurable perfect edge coincidence.",
+  "inspection_coverage": {
+    "all_contact_sheets_visually_viewed": true,
+    "source_initial_png_visually_viewed_at_native_resolution": true,
+    "native_transition_frames_visually_viewed": [
+      60,
+      90,
+      125,
+      155,
+      230,
+      280,
+      300,
+      320,
+      382
+    ],
+    "last_frame_visually_viewed_at_native_resolution": 382,
+    "sampled_sequence": "Every second decoded frame from 0 through 382, including the full task and ending."
+  },
+  "video_id": "high-precision-3",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_high_precision_3",
+  "review_source_video": "Humanoid_Everyday/high-precision-3__align_stack_of_books/third_person/original/original.mp4",
+  "source_frame_count": 383,
+  "source_fps": 30.0,
+  "native_detail_frames": [
+    60,
+    90,
+    125,
+    155,
+    230,
+    280,
+    300,
+    320,
+    382
+  ],
+  "world_model_prompt": "The humanoid robot presses its right hand against the green notebook on top of the uneven stack, sliding and rotating it into alignment with the notebooks underneath. With its fingers resting on the cover, it makes small adjustments, then lifts its hand away, leaving the notebooks aligned in a stack on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Aligning a stack of books to create a neat arrangement, demonstrating spatial awareness and precise positioning for aesthetic organization.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 383,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "fa4316d7ccad9111e8abcbe15dd103be254fe74549f7a3a1adfd25608cd8f7ce",
+  "review_completed_at": "2026-10-13T17:20:41.895756+00:00"
+}

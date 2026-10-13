@@ -1,0 +1,1 @@
+2026-10-13 11:46:59,433 INFO AUDIT {"humanoid_tasks_with_both_views": 49, "humanoid_videos": 98, "nvidia_videos": 92, "nvidia_metadata_without_video": ["11.mp4", "22.mp4", "28.mp4", "44.mp4", "5.mp4", "7.mp4", "8.mp4", "87.mp4"], "total_output_storage_bytes": 555590837}

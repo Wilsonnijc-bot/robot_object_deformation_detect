@@ -1,0 +1,114 @@
+{
+  "complete": true,
+  "expected_videos": 23,
+  "validated_videos": 23,
+  "video_folder_count": 23,
+  "total_video_size_bytes": 78365401,
+  "robot_counts": {
+    "Franka Research 3": 8,
+    "Dobot Nova 2": 15
+  },
+  "execution_status_counts": {
+    "success": 19,
+    "failure": 4
+  },
+  "prompt_provenance_counts": {
+    "published_verbatim": 13,
+    "inferred_from_task_category": 5,
+    "transferred_from_matching_task": 5
+  },
+  "resolution_counts": {
+    "1280x720": 8,
+    "1920x480": 14,
+    "2880x720": 1
+  },
+  "fps_counts": {
+    "30/1": 9,
+    "20/1": 14
+  },
+  "resolution_fps_counts": {
+    "1280x720 @ 30/1 fps": 8,
+    "1920x480 @ 20/1 fps": 14,
+    "2880x720 @ 30/1 fps": 1
+  },
+  "codec_counts": {
+    "h264": 23
+  },
+  "manual_verification_needed_count": 10,
+  "uncertain_annotations": [
+    {
+      "video_id": "014",
+      "prompt_provenance": "inferred_from_task_category",
+      "task_instruction": "Collect the specified fruits from the table and place them in the target container.",
+      "annotation_notes": "The project page identifies a Collect Fruits failure, but gives no video-specific language instruction. Objects and target container may differ from successful example."
+    },
+    {
+      "video_id": "015",
+      "prompt_provenance": "inferred_from_task_category",
+      "task_instruction": "Open the specified drawer and place the designated item inside.",
+      "annotation_notes": "The project page identifies a Put Item in Drawer failure, but no video-specific language instruction."
+    },
+    {
+      "video_id": "016",
+      "prompt_provenance": "transferred_from_matching_task",
+      "task_instruction": "Put the grapes into the green plate.",
+      "annotation_notes": "This uses the instruction published for the standard Dobot Grape Picking success (row 11), not an independently provided robustness-clip instruction. Locations differ."
+    },
+    {
+      "video_id": "017",
+      "prompt_provenance": "transferred_from_matching_task",
+      "task_instruction": "Put the grapes into the green plate.",
+      "annotation_notes": "This uses the instruction published for the standard Dobot Grape Picking success (row 11), not an independently provided robustness-clip instruction. Background differs."
+    },
+    {
+      "video_id": "018",
+      "prompt_provenance": "transferred_from_matching_task",
+      "task_instruction": "Put the grapes into the green plate.",
+      "annotation_notes": "This uses the instruction published for the standard Dobot Grape Picking success (row 11), not an independently provided robustness-clip instruction. Grape instance differs."
+    },
+    {
+      "video_id": "019",
+      "prompt_provenance": "inferred_from_task_category",
+      "task_instruction": "Pick up the designated target object and place it on the target plate.",
+      "annotation_notes": "Unseen-object generalization within Grape Picking; source does not specify the actual object or video-specific instruction. This is NOT a verified prompt."
+    },
+    {
+      "video_id": "020",
+      "prompt_provenance": "inferred_from_task_category",
+      "task_instruction": "Pick up the designated target object and place it on the target plate.",
+      "annotation_notes": "Unseen-object generalization within Grape Picking; source does not specify the actual object or video-specific instruction. This is NOT a verified prompt."
+    },
+    {
+      "video_id": "021",
+      "prompt_provenance": "inferred_from_task_category",
+      "task_instruction": "Pick up the designated target object and place it on the target plate.",
+      "annotation_notes": "Unseen-object generalization within Grape Picking; source does not specify the actual object or video-specific instruction. This is NOT a verified prompt."
+    },
+    {
+      "video_id": "022",
+      "prompt_provenance": "transferred_from_matching_task",
+      "task_instruction": "Put the grapes into the green plate.",
+      "annotation_notes": "This uses the instruction published for the standard Dobot Grape Picking success (row 11), not an independently provided robustness-clip instruction. Scene contains heavy occlusion."
+    },
+    {
+      "video_id": "023",
+      "prompt_provenance": "transferred_from_matching_task",
+      "task_instruction": "Put the grapes into the green plate.",
+      "annotation_notes": "This uses the instruction published for the standard Dobot Grape Picking success (row 11), not an independently provided robustness-clip instruction. Illumination differs."
+    }
+  ],
+  "failures": [],
+  "repository_commit": "fcb05cd3430f238cfe1efd26b1662c309f2d79b8",
+  "source_csv_files": [
+    {
+      "file": "sources/tavp_real_23_with_usable_task_prompts.csv",
+      "sha256": "42bc0664ef276ae5fe7e3526479c31ba1f58db85e49b9a989cc62ef8f93a948f"
+    }
+  ],
+  "validation_time_utc": "2026-10-13T16:20:46.200426+00:00",
+  "validation_mode": "verify_only",
+  "tools": {
+    "ffmpeg": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers"
+  }
+}

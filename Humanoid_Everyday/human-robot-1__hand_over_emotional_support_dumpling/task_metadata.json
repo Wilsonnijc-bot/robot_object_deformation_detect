@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "human-robot-1",
+  "task_name": "Hand Over Emotional Support Dumpling",
+  "category": "Human-Robot Interaction",
+  "text_description": "Picking up an emotional support dumpling plush and handing it to a person, demonstrating safe object transfer and human-aware motion planning.",
+  "original_gallery_record": {
+    "task_id": "human-robot-1",
+    "task_name": "Hand Over Emotional Support Dumpling",
+    "category": "Human-Robot Interaction",
+    "text_description": "Picking up an emotional support dumpling plush and handing it to a person, demonstrating safe object transfer and human-aware motion planning.",
+    "egocentric_video": "./static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_egocentric.mp4",
+    "third_view_video": "./static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "25 seconds",
+    "tags": [
+      "handover",
+      "plush",
+      "safety",
+      "human-aware"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_nosound.mp4",
+    "first_person": "./static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

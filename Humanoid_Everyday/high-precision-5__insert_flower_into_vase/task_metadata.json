@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "high-precision-5",
+  "task_name": "Insert Flower into Vase",
+  "category": "High Precision",
+  "text_description": "Inserting a flower delicately into a vase, requiring gentle handling, precise positioning, and careful force control to avoid damaging the stem.",
+  "original_gallery_record": {
+    "task_id": "high-precision-5",
+    "task_name": "Insert Flower into Vase",
+    "category": "High Precision",
+    "text_description": "Inserting a flower delicately into a vase, requiring gentle handling, precise positioning, and careful force control to avoid damaging the stem.",
+    "egocentric_video": "./static/data/videos/high-precision/task-5/insert_flower_into_vase_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-5/Insert_flower_into_vase_no_sound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "28 seconds",
+    "tags": [
+      "flower",
+      "delicate",
+      "insertion",
+      "gentle"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/high-precision/task-5/Insert_flower_into_vase_no_sound.mp4",
+    "first_person": "./static/data/videos/high-precision/task-5/insert_flower_into_vase_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

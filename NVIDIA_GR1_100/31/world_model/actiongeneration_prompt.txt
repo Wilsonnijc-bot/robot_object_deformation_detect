@@ -1,0 +1,1 @@
+The robot grasps the tall red glass around its sides with its right hand and lifts it from the tabletop. It carries the glass to the blue plate while tipping it sideways, lowers it across the plate, and opens its fingers with the glass lying on its side. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,0 +1,115 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 60,
+  "initial_scene": "Robot-centered elevated view looking outward over two forearms toward the table. A brown paper bag lies open on the left, with its far handle held by the left hand; a pink peach with green leaf rests alone on the upper black shelf to the right. Other fruit remains in the lower white tray.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 14,
+      "observation": "Left hand maintains its hold at the bag handle; right hand is open near the fruit shelf. Peach rests on upper black shelf.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 15,
+      "end_frame": 36,
+      "observation": "Right arm raises its open hand toward the peach and positions fingers on opposing sides. Left remains at the bag.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 37,
+      "end_frame": 77,
+      "observation": "Right hand closes around the peach on the shelf and establishes its grasp, with gradual finger adjustment.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 91,
+      "observation": "Right hand lifts the peach clear of the upper shelf, keeping the fruit enclosed between fingers.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 92,
+      "end_frame": 103,
+      "observation": "Right hand carries the peach inward and leftward toward the bag. Left hand lifts the handle, raising the far bag wall and widening access to the opening.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 104,
+      "end_frame": 116,
+      "observation": "Right hand lowers the peach into the bag while the left continues supporting the lifted handle. The peach approaches the inner paper surface with the right fingers still around it.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 117,
+      "end_frame": 119,
+      "observation": "Right fingers open and peach moves left/down onto the interior paper surface. Final frame shows peach inside the open bag, open right fingers beside it and left hand still holding the raised handle. No right-hand withdrawal occurs.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Grasps the peach, lifts it off upper shelf, transports it into the bag and opens fingers to release it; stays adjacent at the end.",
+    "left": "Holds the far bag handle throughout, then raises it during the peach transport to lift the bag wall and provide access to the opening.",
+    "coordination": "Left provides bag support while right manipulates fruit. No hand-to-hand transfer or human assistance."
+  },
+  "anatomical_side_evidence": {
+    "observation": "The generation view looks forward from behind/above the robot forearms: both forearms originate at the bottom near the camera and extend outward across the table. The arm at the robot-centered lower right reaches to the shelf and is anatomical right; the opposing lower-left arm holds the bag and is anatomical left. Paired hand/forearm orientation supports this body-centered convention, rather than a front-facing reversal.",
+    "confidence": "medium-high",
+    "limitation": "Torso and shoulder attachments are outside the camera crop; the arm side assignment is based on visible paired forearm origins and the egocentric geometry, and agrees with but is not solely derived from the source instruction."
+  },
+  "terminal_state": "Peach is inside the bag on its interior paper surface; right fingers are open beside it, while left hand retains the raised handle. Right hand has not withdrawn. Upper shelf is empty.",
+  "uncertainties": [
+    "The exact left-hand contact on the handle is partly hidden by its hand backplate, although the handle and bag wall follow its upward motion.",
+    "Final release is visible, but no later settling or right-hand withdrawal is shown."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    24,
+    64,
+    84,
+    90,
+    96,
+    100,
+    110,
+    116,
+    117,
+    118,
+    119
+  ],
+  "selected_execution_status": "success",
+  "selected_execution_status_evidence": "The right fingers visibly open at frames 117–119 and the peach remains within the bag opening on the interior paper surface.",
+  "video_id": "96",
+  "dataset": "NVIDIA_GR1_100",
+  "dedicated_review_agent": "review_gr1_96",
+  "review_source_video": "NVIDIA_GR1_100/96/original/original.mp4",
+  "source_frame_count": 120,
+  "source_fps": 20.0,
+  "native_detail_frames": [
+    0,
+    24,
+    64,
+    84,
+    90,
+    96,
+    100,
+    110,
+    116,
+    117,
+    118,
+    119
+  ],
+  "world_model_prompt": "The robot grasps the pink peach on the upper black shelf with its right hand and lifts it clear. Its left hand raises the brown paper bag by a handle to hold the opening accessible while the right hand carries the peach over. The right hand lowers the peach inside the bag and opens its fingers to release it, remaining beside the peach. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Use the right hand to pick up peach from top black shelf to inside brown paper bag.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 120,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "14582b30c97254d30e726ba7b78ae912026b367b2c0f74aca2d2a92854d8b169",
+  "review_completed_at": "2026-10-13T18:42:31.033525+00:00"
+}

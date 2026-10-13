@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "26",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its left hand to grasp the green zucchini protruding from the white mug and lift it completely out. It carries the zucchini over the empty blue plate, lowers it, and opens its fingers to leave it lying on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/26/original/original.mp4",
+  "source_video_sha256": "3a2decf9aac895a9dfa53f51f120a6da8d16d056c8818dadb6915c0956c7e456",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/26.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1937215,
+  "video_sha256": "3a2decf9aac895a9dfa53f51f120a6da8d16d056c8818dadb6915c0956c7e456",
+  "first_frame_sha256": "ba45b5a36ede472c12cc2035884d95bdb87e6a2ff219bd1164e8198d56ac5f6d",
+  "observed_terminal_state": "Zucchini lies horizontally on the blue plate; white mug is upright and empty. Left fingers are open beside the zucchini and the thumb remains nearby; no complete withdrawal is shown. Right hand is still open away from the manipulation.",
+  "arm_hand_roles": {
+    "left": "Only manipulating hand: grasps exposed zucchini, lifts it from the mug, transports it to the blue plate, lowers it and opens its fingers for placement.",
+    "right": "Remains open and away from objects throughout; no grasp, stabilizing contact or transfer.",
+    "coordination": "Single-hand manipulation; the right hand does not assist and no person participates."
+  },
+  "uncertainties": [
+    "The exact final thumb-to-zucchini separation is partly obscured; the fingers visibly open and the zucchini settles on the plate, but full hand withdrawal is not shown."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

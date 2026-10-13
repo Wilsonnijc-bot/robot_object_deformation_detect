@@ -1,0 +1,142 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 147,
+  "inspection_coverage": {
+    "start_frame": 0,
+    "last_frame": 292,
+    "all_contact_sheets_visually_viewed": true,
+    "source_initial_png_viewed_at_native_resolution": true,
+    "native_transition_frames_visually_viewed": [
+      0,
+      42,
+      116,
+      142,
+      152,
+      162,
+      184,
+      192,
+      202,
+      210,
+      218,
+      228,
+      234,
+      248,
+      292
+    ]
+  },
+  "initial_scene": "A front-oblique third-person view shows the humanoid behind a tabletop. A metal kettle sits on its black round wired base in front of the robot; its handle is on the robot-right side. The robot-right hand is dark and rests near the kettle, while the white robot-left hand rests above its lap.",
+  "observed_sequence": [
+    {
+      "frame_interval": [
+        0,
+        30
+      ],
+      "observation": "Kettle remains upright on the round base; robot-right arm starts to approach the handle while the left hand remains idle."
+    },
+    {
+      "frame_interval": [
+        32,
+        138
+      ],
+      "observation": "Right hand reaches around the kettle handle and closes its articulated fingers, making small grasp adjustments while the kettle remains on the base. Native frames 42 and 116 show the arm attachment and handle contact."
+    },
+    {
+      "frame_interval": [
+        140,
+        162
+      ],
+      "observation": "Right arm raises the grasped kettle off the base and transports it toward robot right (image left). The empty circular base becomes fully visible; native 152 and 162 confirm separation."
+    },
+    {
+      "frame_interval": [
+        164,
+        202
+      ],
+      "observation": "Right arm lowers the kettle onto the tabletop beside the base. It settles upright while the right hand continues holding the handle; native 184, 192 and 202 show the lower/settled positions."
+    },
+    {
+      "frame_interval": [
+        204,
+        240
+      ],
+      "observation": "Right fingers open and disengage from the handle; the arm begins moving away while the kettle remains upright on the tabletop. Native 210, 218 and 234 show opening and withdrawal progression."
+    },
+    {
+      "frame_interval": [
+        242,
+        292
+      ],
+      "observation": "Right hand withdraws and lowers back toward the robot. The kettle stays standing beside the empty base through the final frame; no second manipulation occurs."
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Active dark dexterous hand: grasps kettle handle, lifts, transports to robot right, lowers, releases and withdraws.",
+    "left": "White dexterous hand stays near the lap without contacting the kettle or base.",
+    "coordination": "Single-hand manipulation; no hand-to-hand transfer, support from the other hand, or person interaction."
+  },
+  "anatomical_side_evidence": "The initial PNG exposes the robot front (face opening and chest panel). The active dark hand and its forearm trace to the shoulder on the viewer-left side of this frontal body, establishing robot-relative right. The white inactive hand traces to the viewer-right shoulder, establishing robot-relative left. Native frames 42, 116 and 152 corroborate the continuous arm attachment.",
+  "terminal_state": "Kettle stands upright on the tabletop to robot right of the empty round wired base. The robot-right hand is open and withdrawn, and the left hand remains idle.",
+  "selected_execution_status": "success_observed: kettle lifted clear of base, placed upright beside it, released and left stable.",
+  "uncertainties": [
+    "Exact finger-to-handle contact geometry is partly obscured by the dark hand and kettle handle; the continuous supported lift and visible release establish the manipulation outcome.",
+    "Frame interval boundaries describe phases observed at stride 2; they are not claims of exact contact instants."
+  ],
+  "annotation_discrepancies": [],
+  "annotation_verification": "Source instruction says grasp kettle from base and place on table; the full sequence confirms this and additionally establishes active right hand, relocation toward robot right, and release beside the base.",
+  "evidence_frame_indices": [
+    0,
+    42,
+    116,
+    142,
+    152,
+    162,
+    184,
+    192,
+    202,
+    210,
+    218,
+    228,
+    234,
+    248,
+    292
+  ],
+  "video_id": "pick-place-1",
+  "dataset": "Humanoid_Everyday",
+  "review_source_video": "Humanoid_Everyday/pick-place-1__lift_a_kettle_from_its_base/third_person/original/original.mp4",
+  "source_frame_count": 293,
+  "source_fps": 30.001023925731253,
+  "native_detail_frames": [
+    0,
+    42,
+    116,
+    142,
+    152,
+    162,
+    184,
+    192,
+    202,
+    210,
+    218,
+    228,
+    234,
+    248,
+    292
+  ],
+  "world_model_prompt": "The humanoid robot grasps the kettle's handle with its right hand and lifts the kettle clear of its round base. It moves the kettle toward its right and lowers it upright onto the tabletop beside the base. The right hand releases the handle and withdraws, leaving the kettle standing on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "This task demonstrates basic pick and place operations where the humanoid robot grasps a kettle from its base and places it on the table.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 293,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "e39185d15de67f9de6966aa5d55180a8271229d48df21b9abe9dbf756c0e0fa5",
+  "review_completed_at": "2026-10-13T16:42:46.934572+00:00",
+  "dedicated_review_agent": "review_he_pick_place_1"
+}

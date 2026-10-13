@@ -1,0 +1,1 @@
+Walking to and cleaning a window, combining locomotion with manipulation for reaching and wiping motions at different heights.

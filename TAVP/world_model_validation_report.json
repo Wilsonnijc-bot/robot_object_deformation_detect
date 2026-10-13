@@ -1,0 +1,199 @@
+{
+  "complete": true,
+  "expected_videos": 23,
+  "validated_videos": 23,
+  "dedicated_video_review_agents": 23,
+  "robot_counts": {
+    "Franka Research 3": 8,
+    "Dobot Nova 2": 15
+  },
+  "selected_variant_counts": {
+    "first_substep": 10,
+    "full_sequence": 13
+  },
+  "selected_execution_status_counts": {
+    "success": 22,
+    "failure": 1
+  },
+  "selected_view_counts": {
+    "original_single_camera": 8,
+    "middle_third_person": 15
+  },
+  "selected_resolution_fps_counts": {
+    "1280x720 @ 30": 8,
+    "640x480 @ 20": 14,
+    "960x720 @ 30": 1
+  },
+  "visually_inspected_sampled_frames": 8466,
+  "visually_inspected_native_detail_frames": 546,
+  "selected_video_total_bytes": 208621264,
+  "selected_source_seconds": 440.81666499999994,
+  "original_source_seconds": 664.2000000000002,
+  "annotation_uncertainties": [
+    {
+      "video_id": "001",
+      "uncertainties": [
+        "The exact identity of the small yellow-brown oval object is visually ambiguous; it is described by appearance rather than named as a particular fruit.",
+        "The produce appears to be props; the elongated green object is identified by its cucumber-like shape, not confirmed as a real cucumber."
+      ]
+    },
+    {
+      "video_id": "002",
+      "uncertainties": [
+        "The gripper body partly hides the fingers at the initial pinch and final placement. The visible fold and final small wrist lift are clear, but a complete opening/release of the fabric cannot be confirmed."
+      ]
+    },
+    {
+      "video_id": "003",
+      "uncertainties": [
+        "The exact frame of initial jaw contact and final plate contact is partly hidden by the gripper; stage boundaries are approximate. The produce appears to be artificial, but its material cannot be confirmed visually."
+      ]
+    },
+    {
+      "video_id": "004",
+      "uncertainties": [
+        "The buttons' internal electrical activation is not visible; the review identifies presses from fingertip contact, downward motion, held contact, and release. The dome travel is small."
+      ]
+    },
+    {
+      "video_id": "005",
+      "uncertainties": [
+        "The strip-gripper contact is partly occluded by the gripper housing, though subsequent coupled motion clearly shows the strip is held.",
+        "The apple moves under contact with the wooden strip; the video does not clearly distinguish pure sliding from slight rolling.",
+        "The strip appears to shift the green button assembly slightly during the forward sweep; no button press is clearly established."
+      ]
+    },
+    {
+      "video_id": "006",
+      "uncertainties": [
+        "The lavender base object is visibly shallow and plate-like; its exact bowl-versus-plate category is ambiguous."
+      ]
+    },
+    {
+      "video_id": "007",
+      "uncertainties": [
+        "The exact produce identities and whether these objects are real food or props are not established visually; descriptions use visible shape and color.",
+        "The folder labels the complete video as failure, but the first green-object placement visibly succeeds; the subsequent yellow-object grasp is unsuccessful.",
+        "Stage frame boundaries are approximate; the retained endpoint was checked in native frame 756 after release and brief withdrawal."
+      ]
+    },
+    {
+      "video_id": "008",
+      "uncertainties": [
+        "The exact moment the carrot fully clears the table during the initial low grasp is difficult to resolve from this viewpoint; the later lift and retained tip grasp are clearly visible. The carrot material is not identifiable from the video."
+      ]
+    },
+    {
+      "video_id": "009",
+      "uncertainties": [
+        "The exact species of the yellow ridged fruit is not visually certain; the prompt uses its visible appearance.",
+        "Action phase boundaries are approximate except the selected end, which is grounded in native frame 304. Release contact is partly occluded by the gripper, but subsequent clear frames show each object resting inside the bowl."
+      ]
+    },
+    {
+      "video_id": "010",
+      "uncertainties": [
+        "The green receptacle is very shallow and visually resembles a plate; it is described as a bowl to express the visible nesting relation consistently. Exact rim contact and release timing are partly occluded by the gripper, but the settled bowl locations and opened fingers make both successful placements clear."
+      ]
+    },
+    {
+      "video_id": "011",
+      "uncertainties": [
+        "Exact finger closure and initial release timing are partly occluded by the gripper and grape bunch; phase boundaries are approximate. The grape bunch overhangs the plate rim, but the observed retained outcome is supported placement on the plate."
+      ]
+    },
+    {
+      "video_id": "012",
+      "uncertainties": [
+        "Phase start/end indices are approximate except for the deliberately checked selected cutoff. Button travel is partly hidden by the gripper tip; green, blue and yellow activation is supported by visible brightening. Red contact and downward motion are clear, but a distinct red illumination change cannot be confidently established from this middle view."
+      ]
+    },
+    {
+      "video_id": "013",
+      "uncertainties": [
+        "Exact drawer-front grasp contact is partly occluded by the cabinet and drawer front in the middle view.",
+        "The gray object is visibly a rectangular block; its material or specific identity cannot be determined from the view.",
+        "Phase boundaries are approximate except the selected endpoint, which is grounded in native frame 274."
+      ]
+    },
+    {
+      "video_id": "014",
+      "uncertainties": [
+        "Exact yellow and dark object identities are uncertain; appearance-based descriptions are used. The yellow object has a star-like end when rolling; the dark object resembles an eggplant.",
+        "The mechanism of bowl motion before the human hand enters is partially occluded by the gripper/cables; movement is visible but whether fruit, gripper or cable first catches the rim is uncertain.",
+        "Meaningful stage boundaries other than the selected cutoff and carrot release are approximate within the stride-2 overview; native evidence verifies key outcomes.",
+        "The source failure label describes the overall source case, not the selected manipulation: the first carrot placement visibly succeeds. The full sequence contains dropped/missed grasps and human intervention.",
+        "The extra closed-gripper cycle over empty tabletop after the first placement has no visible target; no intended task identity is inferred."
+      ]
+    },
+    {
+      "video_id": "015",
+      "uncertainties": [
+        "The initial drawer-handle contact is partly occluded in the required middle view; successful outward drawer motion is clear.",
+        "The gray object is identified by appearance as a rectangular bar; its material and intended use cannot be determined visually.",
+        "The bar and gripper overlap the drawer front during the failed placement, so the exact contact that drives the drawer inward is ambiguous; the drop outside and final closed drawer are visible."
+      ]
+    },
+    {
+      "video_id": "016",
+      "uncertainties": [
+        "The grapes may be a prop; material cannot be determined visually.",
+        "The final closed-gripper contact appears to nudge the bunch farther onto the plate, but the fingers occlude its exact final support and the clip ends before withdrawal.",
+        "After the first release, part of the bunch extends beyond the far plate rim; the final correction obscures whether every grape is fully within the rim."
+      ]
+    },
+    {
+      "video_id": "017",
+      "uncertainties": [
+        "The middle view does not establish whether the grapes are real or a prop. Finger-to-grape contact is partially occluded, but the lift, transfer, release and stable plate placement are clearly visible. Phase boundaries are approximate within the every-second-frame overview."
+      ]
+    },
+    {
+      "video_id": "018",
+      "uncertainties": [
+        "The video does not establish whether the grape bunch is real fruit or a replica; its visible grape-cluster appearance is clear. The exact instant of finger closure and early lift is partially occluded by the gripper."
+      ]
+    },
+    {
+      "video_id": "019",
+      "uncertainties": [
+        "The folder task name refers to grape picking, but the visible manipulated target is elongated and cucumber-shaped, not a grape cluster. Its exact identity and material cannot be confirmed from this view.",
+        "The round green destination appears to be a shallow dish; its precise classification as a plate or bowl is uncertain, so the prompt uses dish.",
+        "The exact frame of jaw closure during the long nearly stationary interval is visually ambiguous; the later lifted transport confirms a successful grasp."
+      ]
+    },
+    {
+      "video_id": "020",
+      "uncertainties": [
+        "The object is visually banana-shaped; whether it is real fruit or a replica cannot be resolved from this view. The dataset folder mentions grape picking, but no grapes are visible.",
+        "Transfer is low over the mat and complete clearance beneath the object is hard to see; its motion is coupled to the closed gripper and it is deposited on the plate.",
+        "Final recontact may be a small corrective nudge or the start of a regrasp; no further transfer is observed before the source ends. It concerns the same placed object and has no visibly independent completed outcome."
+      ]
+    },
+    {
+      "video_id": "021",
+      "uncertainties": [
+        "The object is elongated, curved, green and irregularly textured; its precise identity cannot be established confidently. It is not visibly a grape bunch, despite the source folder task name. The prompt therefore describes its appearance.",
+        "The exact lift-off frame is obscured by the gripper and oblique camera view during the long low hold. The subsequent transport and successful release on the dish are clear."
+      ]
+    },
+    {
+      "video_id": "022",
+      "uncertainties": [
+        "The low transfer and grape bunch obscure the exact grasp contact and clearance above the mat; a fully airborne lift cannot be confidently established, so the prompt describes grasping and moving rather than asserting a distinct lift.",
+        "The bunch reaches the green plate, but its outermost right grapes appear at or slightly beyond the rim; the visible result supports placement on the plate rather than full containment.",
+        "The source folder labels this heavy occlusion, but the grapes and plate are unobscured in the required middle camera view; that label is not used as visual evidence."
+      ]
+    },
+    {
+      "video_id": "023",
+      "uncertainties": [
+        "The exact contact points within the grape bunch and the exact first release frame are partly occluded by the fingers; the native late frames show open fingers and the bunch supported on the plate.",
+        "Whether the bunch is real fruit or a prop cannot be established from the video; its visible grape-bunch identity is sufficient for the prompt."
+      ]
+    }
+  ],
+  "failures": [],
+  "validation_time_utc": "2026-10-13T16:26:01.966560+00:00",
+  "validation_mode": "build_and_validate"
+}

@@ -1,0 +1,1 @@
+The robot uses its right hand to grasp the translucent orange cup around its sides and lift it clear of the top shelf. It carries the cup downward to the bottom shelf, sets it upright, and opens its fingers beside the cup. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

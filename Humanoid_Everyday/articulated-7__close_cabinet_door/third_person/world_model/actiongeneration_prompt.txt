@@ -1,0 +1,1 @@
+The robot raises its left hand to the outer face of the open cabinet door marked 2D11 and presses it inward, swinging the door shut against the cabinet. It then withdraws and lowers the left hand while remaining in place, leaving the door closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,0 +1,172 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg",
+    "sheet_004.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 228,
+  "inspection_coverage": {
+    "source_frame_interval_inclusive": [
+      0,
+      454
+    ],
+    "sampled_frames": "Every even decoded frame from 0 through 454 was visually inspected on the four contact sheets.",
+    "native_source_initial_png_viewed": true,
+    "native_transition_and_terminal_frames_viewed": [
+      0,
+      176,
+      200,
+      222,
+      238,
+      256,
+      284,
+      310,
+      336,
+      358,
+      360,
+      366,
+      390,
+      398,
+      420,
+      454
+    ]
+  },
+  "initial_scene": "The humanoid faces the camera behind a tabletop. A red-cased multimeter stands on a black square to the image left of an empty open gray basket. Its anatomical right hand is free beside the meter; its anatomical left hand is at the basket far rim.",
+  "observed_sequence": [
+    {
+      "frame_interval_inclusive": [
+        0,
+        47
+      ],
+      "action": "Initial hold with both hands low; the meter remains upright on the tabletop and the basket is empty.",
+      "confidence": "high"
+    },
+    {
+      "frame_interval_inclusive": [
+        48,
+        169
+      ],
+      "action": "The anatomical right arm extends toward the red meter and positions the articulated hand around it. The left hand remains by the basket far rim.",
+      "confidence": "high"
+    },
+    {
+      "frame_interval_inclusive": [
+        170,
+        237
+      ],
+      "action": "The right fingers grasp the meter and turn it from its upright support pose toward a roughly horizontal orientation, drawing it off the tabletop. Native frames 176 and 200 show grasp/contact; frame 222 shows the meter tipped and being raised.",
+      "confidence": "high"
+    },
+    {
+      "frame_interval_inclusive": [
+        238,
+        293
+      ],
+      "action": "The right hand raises the grasped meter clear of the tabletop and carries it inward toward the basket. Frame 256 shows a clear air gap under the meter.",
+      "confidence": "high"
+    },
+    {
+      "frame_interval_inclusive": [
+        294,
+        357
+      ],
+      "action": "The right hand brings the meter over the basket opening and rotates it toward a more upright orientation. The left hand shifts slightly along the far rim without receiving the meter.",
+      "confidence": "high"
+    },
+    {
+      "frame_interval_inclusive": [
+        358,
+        369
+      ],
+      "action": "The right hand opens and releases the meter above the basket interior. Native frame 366 shows the meter falling freely below the open hand inside the basket.",
+      "confidence": "high"
+    },
+    {
+      "frame_interval_inclusive": [
+        370,
+        397
+      ],
+      "action": "The meter rocks/tumbles against the basket interior and settles nearly flat near its nearer wall; the right hand lifts away.",
+      "confidence": "high"
+    },
+    {
+      "frame_interval_inclusive": [
+        398,
+        454
+      ],
+      "action": "The right arm withdraws to a low position beside the torso. The red meter remains inside the basket and the left hand remains at its far rim.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Active manipulation hand: reaches to, grasps, lifts, transports, turns, and releases the red multimeter into the basket, then withdraws.",
+    "left": "Remains at the far basket rim throughout, with a small repositioning during delivery; never grasps or receives the meter. Whether the fingers actively grip or stabilize the rim is not established.",
+    "coordination": "Right hand performs the complete meter manipulation while the left hand stays at the basket rim. There is no hand-to-hand transfer or interaction with a person."
+  },
+  "anatomical_side_evidence": {
+    "description": "The initial PNG shows the front of the humanoid, its face and chest directed toward the camera/table. The arm extending to image left is visibly connected to the shoulder on the robot right side; this right arm traces continuously to the hand that grasps the meter. The opposite shoulder/arm on image right connects to the white left hand beside the basket rim.",
+    "confidence": "high",
+    "uncertainty": null
+  },
+  "terminal_state": "The multimeter is released and settled inside the gray basket near its nearer wall; the right hand is empty and withdrawn, and the left hand remains at the far rim.",
+  "selected_execution_status": "success",
+  "uncertainties": [
+    "The left hand remains at the far basket rim, but the rim occludes some fingertips; active gripping or stabilizing force cannot be established, so the prompt describes only its visible position."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    176,
+    200,
+    222,
+    238,
+    256,
+    284,
+    310,
+    336,
+    358,
+    360,
+    366,
+    390,
+    398,
+    420,
+    454
+  ],
+  "video_id": "pick-place-5",
+  "dataset": "Humanoid_Everyday",
+  "review_source_video": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/original/original.mp4",
+  "source_frame_count": 455,
+  "source_fps": 30.000659355150663,
+  "native_detail_frames": [
+    0,
+    176,
+    200,
+    222,
+    238,
+    256,
+    284,
+    310,
+    336,
+    358,
+    360,
+    366,
+    390,
+    398,
+    420,
+    454
+  ],
+  "world_model_prompt": "The humanoid uses its right hand to grasp the red multimeter on the tabletop, lift it, and carry it over the open basket while its left hand remains at the basket's far rim. The right hand releases the meter into the basket and withdraws, leaving the meter settled inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "This task demonstrates precision handling of electronic equipment, requiring careful manipulation of a multi-meter and placing it in a designated container.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 455,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "a07e5aa5c4cfc77a8f475c124a9c61e773b9e6141188119f806bff1b3f1295bf",
+  "review_completed_at": "2026-10-13T16:49:14.263104+00:00",
+  "dedicated_review_agent": "review_he_pick_place_5"
+}

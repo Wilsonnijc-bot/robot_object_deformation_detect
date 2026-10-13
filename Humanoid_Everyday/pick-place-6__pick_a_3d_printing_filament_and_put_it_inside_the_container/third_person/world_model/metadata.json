@@ -1,0 +1,58 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "pick-place-6",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid uses its right hand to grasp the upper rim of the upright filament spool and lift it from the tabletop, turning the spool as it rises. It carries the spool over the gray open container, turns it upright, and lowers it onto its edge inside. It opens its fingers and withdraws its right hand, leaving the spool standing in the container. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/pick-place-6__pick_a_3d_printing_filament_and_put_it_inside_the_container/third_person/original/original.mp4",
+  "source_video_sha256": "635bcc2036fb90e17970e7beca1cd96252b3163adf4e2583ee0089eb81233114",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/pick-place/task-6/pick_a_3d_printing_filament_and_put_it_inside_the_container_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 483,
+  "frame_count": 483,
+  "first_frame_index": 0,
+  "fps": 30.000621130872275,
+  "fps_rational": "1449000/48299",
+  "duration_seconds": 16.099667,
+  "resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2576757,
+  "video_sha256": "635bcc2036fb90e17970e7beca1cd96252b3163adf4e2583ee0089eb81233114",
+  "first_frame_sha256": "c7a59680d67f04ed33805eb0995a57210cbf14b31f51154b362ccfd99f688c03",
+  "observed_terminal_state": "Spool stands upright on its flange rim inside the gray container, fully released. Right hand has returned down beside the body; left hand remains near hip. The tabletop starting patch is empty.",
+  "arm_hand_roles": {
+    "right": "Active black articulated hand performs upper-rim grasp, tilt/reorientation, lift, carry, lowering, finger release and withdrawal. It alone supports the spool during transport.",
+    "left": "White articulated hand remains near the left hip behind the bin; no visible contact with spool or container and no stabilizing role.",
+    "coordination": "Single-hand manipulation with no hand-to-hand transfer or human interaction."
+  },
+  "uncertainties": [
+    "Exact contact-force distribution between fingers and flange is not resolvable, although the upper-rim grasp and maintained transport support are visible. The sampled chronology boundaries have approximately two-frame precision."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

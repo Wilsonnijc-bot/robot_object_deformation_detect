@@ -1,0 +1,1 @@
+The humanoid uses its right hand to grasp the turquoise spray can around its body, lift it off the black pad, and carry it over the gray open container. It lowers the can into the container and releases it upright, then withdraws its right hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

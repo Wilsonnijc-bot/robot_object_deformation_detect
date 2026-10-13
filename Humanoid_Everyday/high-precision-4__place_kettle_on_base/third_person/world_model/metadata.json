@@ -1,0 +1,59 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "high-precision-4",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid robot grasps the kettle's handle with its right hand, lifts it from the tabletop, and carries it over the separate circular base. It lowers the kettle onto the base, steadies it while it settles, then opens its fingers and withdraws the right hand, leaving the kettle upright on the base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/original/original.mp4",
+  "source_video_sha256": "bd96ba3dc3386aad8b3e0c40e0a58b41b17a57454099a0a2b437cc81ed6e5749",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 629,
+  "frame_count": 629,
+  "first_frame_index": 0,
+  "fps": 30.008778402585175,
+  "fps_rational": "1179375/39301",
+  "duration_seconds": 20.960533,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 6366821,
+  "video_sha256": "bd96ba3dc3386aad8b3e0c40e0a58b41b17a57454099a0a2b437cc81ed6e5749",
+  "first_frame_sha256": "c561e2ae29ede0b8e8a390e6b00487aee39bf61855278f7d776f1ff361b09ad1",
+  "observed_terminal_state": "Kettle sits upright on the round base, with a base rim and wire visible. Right hand has released and withdrawn beside torso; left hand remains on lap. No electrical activation is shown.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: grasps kettle handle, lifts and transfers kettle, lowers and steadies it on base, opens fingers and withdraws.",
+    "left": "Idle hand rests open over left thigh throughout; no grasp, supporting contact or hand-to-hand transfer.",
+    "coordination": "Single-hand placement with no bimanual coordination or person interaction."
+  },
+  "uncertainties": [
+    "Electrical contact alignment and a working electrical connection are not directly visible; success describes stable physical placement only.",
+    "Some individual finger contact points on the dark handle are occluded, but the handle grip, supported lift and later release are visible."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

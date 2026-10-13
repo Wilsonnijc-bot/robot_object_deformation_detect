@@ -1,0 +1,58 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "high-precision-7",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid robot uses its right hand to grasp the white charger plugged into the tabletop power strip and pulls it upward until it separates from the socket. It carries the charger a short distance sideways, sets it upright on the tabletop beside the strip, releases it, and retracts its right arm. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/high-precision-7__unplug_a_charger/third_person/original/original.mp4",
+  "source_video_sha256": "fcf24b2bfe9986b73e7d8103fdaf6b0d4f1b45045f44e9cd6111cfc0e3fd8b35",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/high-precision/task-7/unplug_a_charger_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 338,
+  "frame_count": 338,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 11.266667,
+  "resolution": {
+    "width": 568,
+    "height": 320
+  },
+  "displayed_resolution": {
+    "width": 320,
+    "height": 568
+  },
+  "codec": "h264",
+  "file_size_bytes": 1016090,
+  "video_sha256": "fcf24b2bfe9986b73e7d8103fdaf6b0d4f1b45045f44e9cd6111cfc0e3fd8b35",
+  "first_frame_sha256": "ebf840634a7d2c083adc0764bf0cf891e50d2930bd462fc87f53206ec5e74489",
+  "observed_terminal_state": "At source frame 337 the unplugged charger stands upright on the tabletop beside the power strip. The right hand is clear and retracted toward the torso; the left arm remains low. The charger is not reinserted.",
+  "arm_hand_roles": {
+    "right": "Active arm: reaches, grasps the charger body, pulls it from the socket, carries it aside, sets it upright, opens the fingers to release, and retracts.",
+    "left": "Nearer arm stays extended low and clear of the table; it does not hold the strip, support the charger, or participate in transfer.",
+    "coordination": "Single-hand manipulation; no hand-to-hand transfer or person interaction."
+  },
+  "uncertainties": [
+    "Contact and exact finger purchase are partly occluded by the right hand at native resolution; subsequent upward separation and release establish successful grasp and placement. Phase boundaries are localized from stride-two coverage with selected native transition frames."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "74",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot grasps the Rubik's cube on the bottom level of the wooden shelf with its right hand and lifts it clear. It carries the cube up to the top level, sets it upright on the shelf, and opens its fingers above the standing cube. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/74/original/original.mp4",
+  "source_video_sha256": "135740da1c323d8c1ab69e6a53fb149324e7362a6852974a8f106467a03a9682",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/74.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1832272,
+  "video_sha256": "135740da1c323d8c1ab69e6a53fb149324e7362a6852974a8f106467a03a9682",
+  "first_frame_sha256": "20c1681120fa3e647f34adb8b8bc7a53323c53095677a49537ab1b2c283e93cd",
+  "observed_terminal_state": "The cube stands upright on the top shelf. The right fingers have opened above the cube, but the hand has not fully withdrawn; the left hand remains open in the foreground.",
+  "arm_hand_roles": {
+    "right": "Active hand: encloses the cube, lifts from the lowest shelf, transports upward, sets upright on the top shelf, and opens fingers above it.",
+    "left": "Open and largely stationary throughout; does not contact the cube, shelf, or right hand.",
+    "coordination": "Single-hand transfer; no left-hand stabilization or hand-to-hand transfer."
+  },
+  "uncertainties": [
+    "The top of the cube is partly occluded by the right hand at the ending, so complete separation of every finger from the cube cannot be established; no fully withdrawn hand state is shown."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

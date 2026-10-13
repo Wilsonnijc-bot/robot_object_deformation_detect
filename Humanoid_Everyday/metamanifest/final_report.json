@@ -1,0 +1,130 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "audited_at": "2026-10-13T17:22:26.948316+00:00",
+  "pilot_only": false,
+  "output_directory": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday",
+  "reports_directory": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/metamanifest",
+  "manifest_paths_relative_to": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/metamanifest",
+  "video_count": 98,
+  "task_count": 49,
+  "download_or_validation_failures": [],
+  "annotation_discrepancies": [
+    {
+      "dataset": "Humanoid_Everyday",
+      "task_id": "pick-place-1",
+      "viewpoint": "third_person",
+      "issue": "Original filename spells lyft; task_name spells Lift. Preserved without correction."
+    },
+    {
+      "dataset": "Humanoid_Everyday",
+      "task_id": "pick-place-1",
+      "viewpoint": "first_person",
+      "issue": "Original filename spells lyft; task_name spells Lift. Preserved without correction."
+    },
+    {
+      "dataset": "Humanoid_Everyday",
+      "task_id": "pick-place-7",
+      "viewpoint": "third_person",
+      "issue": "Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified."
+    },
+    {
+      "dataset": "Humanoid_Everyday",
+      "task_id": "pick-place-7",
+      "viewpoint": "first_person",
+      "issue": "Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified."
+    },
+    {
+      "dataset": "Humanoid_Everyday",
+      "task_id": "high-precision-8",
+      "viewpoint": "third_person",
+      "issue": "Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified."
+    },
+    {
+      "dataset": "Humanoid_Everyday",
+      "task_id": "high-precision-8",
+      "viewpoint": "first_person",
+      "issue": "Same third-person Git blob appears under two gallery task IDs; egocentric files differ. Cross-task duplicate and pairing caution; no synchronization verified."
+    },
+    {
+      "dataset": "Humanoid_Everyday",
+      "task_id": "human-robot-4",
+      "viewpoint": "first_person",
+      "issue": "Original gallery book-handover annotation references a stack-of-plates egocentric filename. Potential task/video mismatch; original association preserved."
+    }
+  ],
+  "byte_identical_video_groups": [
+    [
+      "../pick-place-7__stack_a_rolls_of_paper_towel_on_top_of_the_other/third_person/original/original.mp4",
+      "../high-precision-8__stack_paper_towel_rolls/third_person/original/original.mp4"
+    ]
+  ],
+  "original_video_storage_bytes": 252604626,
+  "quality_summary": {
+    "native_resolutions": {
+      "448x960": 4,
+      "640x480": 49,
+      "480x360": 1,
+      "568x320": 11,
+      "720x1280": 18,
+      "592x1280": 8,
+      "1440x1920": 5,
+      "1920x1440": 2
+    },
+    "displayed_resolutions": {
+      "448x960": 4,
+      "640x480": 49,
+      "360x480": 1,
+      "320x568": 11,
+      "720x1280": 18,
+      "592x1280": 8,
+      "1440x1920": 5,
+      "1920x1440": 2
+    },
+    "frame_rates": {
+      "30.001023925731253": 1,
+      "30.0": 33,
+      "29.995989840930356": 1,
+      "29.91643454038997": 1,
+      "30.000659355150663": 1,
+      "30.000621130872275": 1,
+      "30.000622419552272": 2,
+      "29.930715935334874": 1,
+      "29.71719287745025": 1,
+      "29.94392523364486": 1,
+      "25.0": 35,
+      "29.935897435897434": 1,
+      "30.00064656565874": 1,
+      "30.00082419846699": 2,
+      "30.00107917550991": 1,
+      "29.782833505687694": 1,
+      "30.008778402585175": 1,
+      "29.97569866342649": 1,
+      "29.924050632911392": 1,
+      "29.933035714285715": 1,
+      "29.892857142857142": 1,
+      "29.908536585365855": 1,
+      "29.952076677316295": 1,
+      "29.942528735632184": 1,
+      "30.000977230528683": 1,
+      "30.000990131687516": 1,
+      "29.96385542168675": 1,
+      "29.925": 1,
+      "30.000869590422912": 1,
+      "29.780309194467048": 1
+    },
+    "codecs": {
+      "h264": 98
+    }
+  },
+  "limitations": [
+    "No quality upgrade verified; source-native resolutions retained.",
+    "Semantic instruction correctness is not certified; original annotations are preserved.",
+    "Raw lossless PNGs exist in the larger Humanoid corpus but no exact gallery episode correspondence verified.",
+    "Views are associated by the original gallery; physical episode equivalence and temporal synchronization are unverified.",
+    "Published license claims conflict (HF Apache-2.0 versus code README MIT); gallery MP4 asset license is not specified."
+  ],
+  "total_output_storage_bytes": 514915328,
+  "humanoid_tasks_with_both_views": 49,
+  "humanoid_tasks_with_any_view": 49,
+  "humanoid_videos": 98
+}

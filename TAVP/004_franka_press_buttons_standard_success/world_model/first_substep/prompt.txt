@@ -1,0 +1,1 @@
+The robotic arm presses the yellow button with its closed gripper, then lifts just clear of the button. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

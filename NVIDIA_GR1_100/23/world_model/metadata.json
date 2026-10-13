@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "23",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot grasps the red glass around its side with its right hand, lifts it from the blue plate, and carries it to the teal plate. It lowers the glass onto the teal plate and loosens its fingers, leaving the glass tilted with the right hand still beside its rim. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/23/original/original.mp4",
+  "source_video_sha256": "7a5bd5dd08a44f1cfe15735ddc7e277bbc69cce6f7ddbd0fcbf9ae8eda54152e",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/23.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1465798,
+  "video_sha256": "7a5bd5dd08a44f1cfe15735ddc7e277bbc69cce6f7ddbd0fcbf9ae8eda54152e",
+  "first_frame_sha256": "9eec37dff57f60966a0ec80e9e6b2f353cf5e54e8b5872433d3003f31d6dd3bc",
+  "observed_terminal_state": "Red glass has reached the teal plate and is tilted with its base on the plate. Right fingers are opening beside the glass rim/upper side, but the hand has not visibly withdrawn or fully separated. Blue plate is empty; left hand remains open and idle.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: grasps, lifts, carries, lowers, and loosens grip on red glass.",
+    "left": "Stays open and apart on the robot left; does not contact glass or plates.",
+    "coordination": "Single-hand task; no hand-to-hand transfer or supporting role. Person across table holds keyboard but does not interact with glass."
+  },
+  "uncertainties": [
+    "Complete hand disengagement and stable final upright resting of the glass are not shown. Glass is tilted at frame 119 with right hand still near its rim; exact residual finger contact is partly occluded."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,107 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 60,
+  "initial_scene": "An elevated forward-facing view shows both robot forearms over a table. The left hand is already holding the upper edge of an open brown paper bag; the right hand is open beside a two-tier fruit shelf. The sole red spherical tomato on the upper black tray is distinct from the fruit in the lower white tray.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 18,
+      "action": "The left hand holds the bag edge steady while the right hand remains open beside the shelf.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 19,
+      "end_frame": 46,
+      "action": "The right arm raises its open hand toward the red tomato on the upper black tray; the left hand continues holding the bag.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 47,
+      "end_frame": 76,
+      "action": "The right fingers surround and close on the tomato in the upper tray.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 77,
+      "end_frame": 86,
+      "action": "The right hand lifts the tomato fully clear of the black tray.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 87,
+      "end_frame": 100,
+      "action": "The right hand transports the tomato toward the open bag. The left hand raises the bag edge to keep its mouth open.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 101,
+      "end_frame": 110,
+      "action": "The right hand lowers the tomato through the bag opening; the tomato becomes occluded by the bag and hands.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 111,
+      "end_frame": 119,
+      "action": "The right hand opens its fingers within the bag mouth and is visibly empty at the end. The left hand retains the bag edge.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "left_hand": "Grasps and supports the paper bag upper edge throughout, lifting the edge as the right hand approaches and keeping the mouth open during insertion.",
+    "right_hand": "Grasps the tomato from the upper tray, lifts and transports it, lowers it into the bag, then opens its fingers.",
+    "coordination": "The left hand maintains access to the bag interior as the right hand inserts the tomato; no hand-to-hand object transfer occurs."
+  },
+  "anatomical_side_evidence": {
+    "description": "The forward-facing generation view looks outward between paired robot forearms entering from the lower left and lower right. The hand on the robot right enters from lower right and reaches the shelf; the opposite forearm enters from lower left and holds the bag. This paired egocentric arm arrangement establishes robot-relative right and left, rather than a front-facing mirror convention.",
+    "confidence": "medium",
+    "limitation": "The shoulders and central torso are outside the source image, so attachment to the shoulders is not directly visible."
+  },
+  "terminal_state": "The upper black tray is empty. The left hand still holds the bag edge, and the right hand is visibly open and empty at its mouth after lowering the tomato inside. The tomato itself is occluded inside the bag.",
+  "uncertainties": [
+    "The bag wall and hands hide the exact instant the tomato separates from the fingers and its final resting location inside the bag. Its insertion and the empty opened hand are visible.",
+    "Shoulder attachments are outside this forward-facing camera view; anatomical sides are established from the paired egocentric arm arrangement."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    48,
+    72,
+    84,
+    98,
+    106,
+    112,
+    119
+  ],
+  "selected_execution_status": "success",
+  "outcome_basis": "The tomato is visibly lifted from its tray and carried through the bag mouth; the right hand opens and is empty at the ending. Interior settling is occluded.",
+  "inspection_coverage": "Viewed all 60 every-second decoded frames on sheet_001.jpg, the source native initial PNG, and native frames 48, 72, 84, 98, 106, 112, and 119.",
+  "video_id": "16",
+  "dataset": "NVIDIA_GR1_100",
+  "dedicated_review_agent": "review_gr1_16",
+  "review_source_video": "NVIDIA_GR1_100/16/original/original.mp4",
+  "source_frame_count": 120,
+  "source_fps": 20.0,
+  "native_detail_frames": [
+    48,
+    72,
+    84,
+    98,
+    106,
+    112,
+    119
+  ],
+  "world_model_prompt": "The robot holds the brown paper bag open with its left hand while its right hand grasps the red tomato from the upper black tray and lifts it clear. It carries the tomato to the bag, lowers it through the opening, and opens its right hand inside while the left hand continues supporting the bag. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Use the right hand to pick up red tomato from upper black tray of plastic shelf to inside of brown paper bag.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 120,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "5f6e71c140e5bc92800e636f3db3aec64fda500e011b95d5dce18006af399a65",
+  "review_completed_at": "2026-10-13T17:45:47.472021+00:00"
+}

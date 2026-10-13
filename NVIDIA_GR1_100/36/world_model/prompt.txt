@@ -1,0 +1,1 @@
+Using its left hand, the robot grasps the orange on the circular gray mat and lifts it clear. It carries the orange to the light blue box, lowers it beside the yellow fruit, and opens its fingers to release it inside the box. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

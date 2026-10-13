@@ -1,0 +1,1 @@
+Walking towards a gate button and pressing it to open the gate, demonstrating navigation to a target and button activation.

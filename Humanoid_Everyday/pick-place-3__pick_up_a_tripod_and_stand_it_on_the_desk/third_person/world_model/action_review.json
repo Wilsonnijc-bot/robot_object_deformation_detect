@@ -1,0 +1,136 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg",
+    "sheet_004.jpg",
+    "sheet_005.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 263,
+  "inspection_coverage": {
+    "source_frames_inclusive": [
+      0,
+      524
+    ],
+    "all_sampled_frames_visually_reviewed": true,
+    "source_initial_png_inspected_at_native_resolution": true,
+    "native_transition_and_terminal_frames_inspected": true
+  },
+  "initial_scene": "The humanoid stands beside a light desk facing the desk and windows. A black tripod lies tilted on its side across the desk, with its legs already spread; both robot hands initially remain clear.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 20,
+      "observation": "Tripod stays tilted on the desk; foreground left arm is low beside the robot and farther right hand is clear."
+    },
+    {
+      "start_frame": 22,
+      "end_frame": 92,
+      "observation": "Left arm lifts and bends over the near side of the desk, turning its hand toward the near tripod leg; right hand extends toward the farther central assembly."
+    },
+    {
+      "start_frame": 94,
+      "end_frame": 176,
+      "observation": "Left hand closes around the near leg/frame member while the right hand approaches and takes support near the center of the tripod."
+    },
+    {
+      "start_frame": 178,
+      "end_frame": 284,
+      "observation": "Both hands raise the tripod from its resting orientation, with left hand supporting the near leg and right hand controlling the central frame; spread legs shift above the desk."
+    },
+    {
+      "start_frame": 286,
+      "end_frame": 370,
+      "observation": "Hands coordinate an upward rotation: the center column and head rise from diagonal to vertical, while the spread legs move toward an upright stance."
+    },
+    {
+      "start_frame": 372,
+      "end_frame": 432,
+      "observation": "Both hands steady the upright tripod while its three feet settle on the desktop; left hand remains on the near leg and right hand on the central/right side frame."
+    },
+    {
+      "start_frame": 434,
+      "end_frame": 470,
+      "observation": "The left hand opens and moves clear, followed by the right hand moving clear; the upright tripod remains stationary and unsupported on the desk."
+    },
+    {
+      "start_frame": 472,
+      "end_frame": 524,
+      "observation": "Both arms withdraw and lower away from the tripod. Its feet stay planted and its column remains upright through the final frame."
+    }
+  ],
+  "arm_hand_roles": {
+    "left": "Foreground arm grasps the near tripod leg, raises and supports it during rotation, steadies the near side as the feet contact the desk, then releases and lowers away.",
+    "right": "Farther arm takes the central tripod frame/brace, guides and stabilizes its orientation in coordination with the left hand, then releases and withdraws.",
+    "coordination": "A simultaneous two-hand lift/rotation and setting-down of one object. No hand-to-hand transfer, human assistance, or locomotion is visible."
+  },
+  "anatomical_side_evidence": {
+    "convention": "Robot-relative anatomy, not image left/right.",
+    "evidence": "In the source first frame and native frames 70 and110, the robot faces toward the desk/window at image upper-left. The foreground shoulder and arm are attached to the lateral side toward image lower-left, corresponding to the robot left; the farther shoulder/arm lies across the torso toward image upper-right, corresponding to robot right. Continuous shoulder-to-elbow-to-hand attachment is visible.",
+    "foreground_arm": "left",
+    "farther_arm": "right",
+    "confidence": "high"
+  },
+  "evidence_frame_indices": [
+    0,
+    70,
+    110,
+    160,
+    200,
+    280,
+    300,
+    330,
+    360,
+    390,
+    420,
+    434,
+    450,
+    470,
+    524
+  ],
+  "initial_frame_source": "original/first_frame.png",
+  "outcome": "The tripod is placed upright on the desk, both hands visibly release and withdraw, and it stands without hand support until the clip ends.",
+  "terminal_state": "Tripod upright and unsupported on three spread feet on the desktop; both hands clear and arms lowered beside the stationary robot.",
+  "selected_execution_status": "success_observed",
+  "uncertainties": [
+    "Low native resolution and hand/object overlap prevent certainty about the exact individual brace or leg segment inside each grasp; the distinct near-leg and central-frame support roles and successful upright release are visible."
+  ],
+  "annotation_discrepancies": [
+    "No outcome discrepancy: the source instruction to stand the tripod upright on the desk is visibly fulfilled. The tripod is already on the desk initially; the observed action raises and rotates it there rather than transporting it from a separate location."
+  ],
+  "video_id": "pick-place-3",
+  "dataset": "Humanoid_Everyday",
+  "review_source_video": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/original/original.mp4",
+  "source_frame_count": 525,
+  "source_fps": 30.0,
+  "native_detail_frames": [
+    0,
+    70,
+    110,
+    160,
+    200,
+    280,
+    300,
+    330,
+    360,
+    390,
+    420,
+    434,
+    450,
+    470,
+    524
+  ],
+  "world_model_prompt": "The humanoid uses its left hand to grasp a near tripod leg and its right hand to support the central frame. Both hands raise and rotate the tripod from its tilted position into an upright stance, guiding its spread feet onto the desk. It releases the tripod and withdraws both hands, leaving it standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "This task demonstrates complex manipulation where the humanoid robot picks up a tripod and carefully stands it upright on the desk, requiring balance, precision, and spatial reasoning.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 525,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "1eb3480ff0aaafd2acceac9341fe869fbcf668f8e9529172377679877080cc15",
+  "review_completed_at": "2026-10-13T16:43:08.734660+00:00",
+  "dedicated_review_agent": "review_he_pick_place_3"
+}

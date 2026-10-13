@@ -1,0 +1,43 @@
+{
+  "purpose": "Meticulous re-review of coordinated or potentially coordinated hand contact and manipulation following user feedback on multimeter task.",
+  "review_protocol": "humanoid_action_v1",
+  "required_checks": [
+    "Each hand anatomical identity and contact part",
+    "Whole-object reorientation versus mechanism-relative motion",
+    "Support versus proximity and active manipulation",
+    "Engagement, repositioning, release chronology",
+    "Visible terminal state and occlusions"
+  ],
+  "expected": 4,
+  "completed": 0,
+  "reviews": [
+    {
+      "key": "gr1_12",
+      "dedicated_review_agent": "review_gr1_12",
+      "world_model": "NVIDIA_GR1_100/12/world_model",
+      "previous_prompt": "The robot uses its left hand to grasp the brown potato on the blue plate and lift it clear. It carries the potato across to the yellow plate, opens its fingers to release it onto the plate, and raises its empty hand. The right hand moves aside to make room for the placement. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "status": "pending"
+    },
+    {
+      "key": "gr1_16",
+      "dedicated_review_agent": "review_gr1_16",
+      "world_model": "NVIDIA_GR1_100/16/world_model",
+      "previous_prompt": "The robot holds the brown paper bag open with its left hand while its right hand grasps the red tomato from the upper black tray and lifts it clear. It carries the tomato to the bag, lowers it through the opening, and opens its right hand inside while the left hand continues supporting the bag. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "status": "pending"
+    },
+    {
+      "key": "gr1_56",
+      "dedicated_review_agent": "review_gr1_56",
+      "world_model": "NVIDIA_GR1_100/56/world_model",
+      "previous_prompt": "The robot keeps the brown paper bag open with its left hand while its right hand closes around the pink peach on the black shelf and lifts it free. The right hand carries the peach to the bag and lowers it through the opening, remaining at the opening as the left hand steadies the rim. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "status": "pending"
+    },
+    {
+      "key": "gr1_96",
+      "dedicated_review_agent": "review_gr1_96",
+      "world_model": "NVIDIA_GR1_100/96/world_model",
+      "previous_prompt": "The robot grasps the pink peach on the upper black shelf with its right hand and lifts it clear. Its left hand raises the brown paper bag by a handle to hold the opening accessible while the right hand carries the peach over. The right hand lowers the peach inside the bag and opens its fingers to release it, remaining beside the peach. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "status": "pending"
+    }
+  ]
+}

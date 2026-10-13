@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "deformable-6",
+  "task_name": "Compress Plastic Bag",
+  "category": "Deformable Objects",
+  "text_description": "Compressing a plastic bag to reduce volume, demonstrating manipulation of thin, flexible materials and air displacement techniques.",
+  "original_gallery_record": {
+    "task_id": "deformable-6",
+    "task_name": "Compress Plastic Bag",
+    "category": "Deformable Objects",
+    "text_description": "Compressing a plastic bag to reduce volume, demonstrating manipulation of thin, flexible materials and air displacement techniques.",
+    "egocentric_video": "./static/data/videos/deformable/task-6/compress_a_plastic_bag_egocentric.mp4",
+    "third_view_video": "./static/data/videos/deformable/task-6/compress_a_plastic_bag_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "20 seconds",
+    "tags": [
+      "plastic",
+      "compression",
+      "flexible",
+      "volume-reduction"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/deformable/task-6/compress_a_plastic_bag_nosound.mp4",
+    "first_person": "./static/data/videos/deformable/task-6/compress_a_plastic_bag_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

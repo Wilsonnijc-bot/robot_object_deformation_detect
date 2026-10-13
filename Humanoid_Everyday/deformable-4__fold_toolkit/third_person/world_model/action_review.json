@@ -1,0 +1,153 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 133,
+  "initial_scene": "An open blue-bordered flexible toolkit case lies lengthwise on the tabletop with several tools exposed. The humanoid faces the table and the camera obliquely; its right hand is above the outer image-left end, and its left hand is beside the opposite image-right end.",
+  "observed_sequence": [
+    {
+      "source_frame_interval_inclusive": [
+        0,
+        58
+      ],
+      "action": "The right forearm moves down and forward toward the outer image-left end flap of the open case; the left hand stays beside its opposite end.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval_inclusive": [
+        59,
+        92
+      ],
+      "action": "The right fingers contact and close around the outer flap or edge. The main tool-bearing body remains on the table.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval_inclusive": [
+        93,
+        132
+      ],
+      "action": "The right hand lifts the outer end into an upright bent flap while the case remains mostly flat on the table. The left hand remains at the other end without a visible grasp-and-lift.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval_inclusive": [
+        133,
+        164
+      ],
+      "action": "The right hand brings the raised flap inward and down over the adjacent tool section, making a partial fold.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval_inclusive": [
+        165,
+        196
+      ],
+      "action": "The right fingertips stay over and press the folded flap, settling it against the case; the left hand remains near the opposite edge.",
+      "confidence": "medium-high"
+    },
+    {
+      "source_frame_interval_inclusive": [
+        197,
+        225
+      ],
+      "action": "The right fingers open and lift clear. The flap curls upward after the hand leaves; the tool-bearing case remains open.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval_inclusive": [
+        226,
+        264
+      ],
+      "action": "The right arm withdraws above the tabletop. The left hand remains beside the case. The clip ends with the case partly folded rather than fully closed.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Active manipulating hand: grasps the outer flap, lifts it, folds it inward, presses it down, releases and withdraws.",
+    "left": "Remains positioned beside the opposite end throughout the fold; does not visibly lift, transfer or independently fold the case. Exact stabilizing contact is partly obscured, so the usable prompt describes its position without claiming a firm hold.",
+    "coordination": "Right-hand folding occurs while the left hand stays at the other end; no hand-to-hand transfer or separate left-hand fold is visible."
+  },
+  "anatomical_side_evidence": {
+    "description": "The robot faces the camera obliquely across the tabletop. The manipulating arm can be traced from the image-left shoulder attachment through elbow and forearm to the hand at the outer case end, establishing it as the anatomical right arm. The white-backed hand at image right connects to the opposite shoulder and is the anatomical left hand.",
+    "confidence": "high",
+    "uncertainty": "No material side uncertainty; contact between the left fingers and the case is less clear than arm attachment."
+  },
+  "terminal_state": "The right hand is open and withdrawn above the table; the left remains beside the opposite edge. The blue case stays on the table with its outer end partly folded and curled upward, and several tools remain exposed. No complete closure or fastening is observed.",
+  "uncertainties": [
+    "The low native resolution and occlusion at the opposite end prevent confirmation of a firm stabilizing grasp by the left fingers.",
+    "The exact finger pressure during settling is less distinct than the flap lift, fold and final release; the visible hand remains against or immediately above the folded edge."
+  ],
+  "annotation_discrepancies": [
+    "The source instruction describes a proper storage configuration, but the visible ending is only a partial fold with the tools still exposed; no complete enclosed or fastened storage state is shown."
+  ],
+  "evidence_frame_indices": [
+    0,
+    60,
+    75,
+    90,
+    100,
+    110,
+    125,
+    140,
+    145,
+    155,
+    165,
+    180,
+    205,
+    210,
+    215,
+    225,
+    235,
+    264
+  ],
+  "selected_execution_status": "incomplete",
+  "inspection_coverage": {
+    "full_original_clip": true,
+    "all_returned_sheets_visually_viewed": true,
+    "native_source_initial_png_visually_viewed": true,
+    "native_transition_and_final_frames_visually_viewed": true,
+    "frame_count": 265,
+    "sampled_count": 133,
+    "sampling_stride": 2
+  },
+  "video_id": "deformable-4",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_deformable_4",
+  "review_source_video": "Humanoid_Everyday/deformable-4__fold_toolkit/third_person/original/original.mp4",
+  "source_frame_count": 265,
+  "source_fps": 30.0,
+  "native_detail_frames": [
+    0,
+    60,
+    75,
+    90,
+    100,
+    110,
+    125,
+    140,
+    145,
+    155,
+    165,
+    180,
+    205,
+    210,
+    215,
+    225,
+    235,
+    264
+  ],
+  "world_model_prompt": "The robot uses its right hand to grasp and lift the outer flap of the blue toolkit case, then folds it inward over the adjacent tool section while its left hand stays at the opposite edge. It presses the flap down and releases it, leaving the case partly open with the flap curled upward and the tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Folding a flexible toolkit case, demonstrating manipulation of semi-rigid deformable objects and proper storage configuration.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 265,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "bb53bde8110200ba1ab250e81d616a043c0365c671e9a256332a8d192947919d",
+  "review_completed_at": "2026-10-13T17:29:17.855600+00:00"
+}

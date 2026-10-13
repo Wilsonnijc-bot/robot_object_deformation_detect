@@ -1,0 +1,59 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "75",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the tangerine on the large pink plate and lift it clear. It carries the fruit to the small teal plate, lowers it onto the plate, and opens its fingers to release it, leaving the tangerine resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/75/original/original.mp4",
+  "source_video_sha256": "4b788576b1fdebe54b188c29f54109bcb10849a9a7ad62362ffdd91614bfe270",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/75.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1424936,
+  "video_sha256": "4b788576b1fdebe54b188c29f54109bcb10849a9a7ad62362ffdd91614bfe270",
+  "first_frame_sha256": "3055272bd0c350a054a94918686cd37e73f15b099f35eef110916ffe0c594504",
+  "observed_terminal_state": "Tangerine released and resting on the small teal plate. Right hand is open alongside it; the central pink plate is empty and the left hand remains open near the blue plate.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: encloses the fruit, lifts and transports it from pink plate to teal plate, lowers and releases it.",
+    "left": "Remains open near the blue plate throughout; does not contact, support or transfer the fruit.",
+    "coordination": "One-handed transfer; no coordinated bimanual manipulation or human-object interaction."
+  },
+  "uncertainties": [
+    "Shoulders and torso are outside this forward-looking view; anatomical naming relies on near-body bilateral forearm emergence and medial thumb orientation.",
+    "Exact finger contact surfaces and precise plate contact instant are partially occluded by the manipulating hand, but visible opening and the fruit's terminal resting state establish release."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "high-precision-7",
+  "task_name": "Unplug a Charger",
+  "category": "High Precision",
+  "text_description": "Unplugging a charger from an outlet with precise grip and controlled pulling force to safely disconnect without damaging the plug or outlet.",
+  "original_gallery_record": {
+    "task_id": "high-precision-7",
+    "task_name": "Unplug a Charger",
+    "category": "High Precision",
+    "text_description": "Unplugging a charger from an outlet with precise grip and controlled pulling force to safely disconnect without damaging the plug or outlet.",
+    "egocentric_video": "./static/data/videos/high-precision/task-7/unplug_a_charger_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-7/unplug_a_charger_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "18 seconds",
+    "tags": [
+      "unplug",
+      "charger",
+      "electrical",
+      "grip"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/high-precision/task-7/unplug_a_charger_nosound.mp4",
+    "first_person": "./static/data/videos/high-precision/task-7/unplug_a_charger_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

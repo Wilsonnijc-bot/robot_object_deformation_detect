@@ -1,0 +1,1 @@
+This task demonstrates precise computer interaction where the humanoid robot uses a computer mouse to perform clicking actions, requiring fine motor control, accurate positioning, and proper button activation techniques.

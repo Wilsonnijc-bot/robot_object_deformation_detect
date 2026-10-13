@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "loco-manip-2",
+  "task_name": "Pick Up Kettle, Place on Base and Turn On",
+  "category": "Loco-Manipulations",
+  "text_description": "Walking to pick up a kettle, placing it on its base, and turning it on, demonstrating multi-step mobile manipulation with precise placement.",
+  "original_gallery_record": {
+    "task_id": "loco-manip-2",
+    "task_name": "Pick Up Kettle, Place on Base and Turn On",
+    "category": "Loco-Manipulations",
+    "text_description": "Walking to pick up a kettle, placing it on its base, and turning it on, demonstrating multi-step mobile manipulation with precise placement.",
+    "egocentric_video": "./static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_egocentric.mp4",
+    "third_view_video": "./static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Advanced",
+    "duration": "50 seconds",
+    "tags": [
+      "walking",
+      "kettle",
+      "placement",
+      "activation"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_nosound.mp4",
+    "first_person": "./static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

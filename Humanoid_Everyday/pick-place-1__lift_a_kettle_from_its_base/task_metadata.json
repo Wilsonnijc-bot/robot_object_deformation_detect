@@ -1,0 +1,38 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "pick-place-1",
+  "task_name": "Lift a kettle from its base",
+  "category": "Pick and Place",
+  "text_description": "This task demonstrates basic pick and place operations where the humanoid robot grasps a kettle from its base and places it on the table.",
+  "original_gallery_record": {
+    "task_id": "pick-place-1",
+    "task_name": "Lift a kettle from its base",
+    "category": "Pick and Place",
+    "text_description": "This task demonstrates basic pick and place operations where the humanoid robot grasps a kettle from its base and places it on the table.",
+    "egocentric_video": "./static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_egocentric.mp4",
+    "third_view_video": "./static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/pick-place/task-1/pointcloud.ply",
+    "difficulty": "Beginner",
+    "duration": "15 seconds",
+    "tags": [
+      "grasping",
+      "manipulation",
+      "basic",
+      "precision"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_nosound.mp4",
+    "first_person": "./static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": [
+    "Original filename spells lyft; task_name spells Lift. Preserved without correction."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "56",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot keeps the brown paper bag open with its left hand while its right hand closes around the pink peach on the black shelf and lifts it free. The right hand carries the peach to the bag and lowers it through the opening, remaining at the opening as the left hand steadies the rim. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/56/original/original.mp4",
+  "source_video_sha256": "a29a8dac464fb3e5798b2e170a04bc8169dcb485e6497fe07883414fe2c08626",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/56.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1728580,
+  "video_sha256": "a29a8dac464fb3e5798b2e170a04bc8169dcb485e6497fe07883414fe2c08626",
+  "first_frame_sha256": "85f330d51971cd237f0c4c6b082d845b3aa1ad5716f1b4ff4653c2cb9c8412e1",
+  "observed_terminal_state": "The peach has been lowered through the brown bag opening and is no longer visible. The left hand still steadies the raised rim, and the right hand remains at the opening beneath the left wrist. Release from the right fingers and the peach's resting contact inside the bag are occluded and cannot be confirmed.",
+  "arm_hand_roles": {
+    "left": "Holds and steadies the brown paper bag rim throughout, lifting the edge as the peach approaches to maintain an accessible opening.",
+    "right": "Reaches for the peach, closes articulated fingers around it, lifts it from the shelf, carries it to the bag, and lowers it through the opening.",
+    "coordination": "Left hand maintains and raises the bag opening while the right hand delivers the peach; no hand-to-hand object transfer or task interaction with a person occurs."
+  },
+  "uncertainties": [
+    "The bag wall and left forearm occlude the final finger-object contact; the sequence does not clearly show whether the right hand has released the peach or whether the peach is independently resting inside the bag.",
+    "The peach is identifiable as the annotated pink peach-shaped task object, but its material and whether it is real fruit are not visually established."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

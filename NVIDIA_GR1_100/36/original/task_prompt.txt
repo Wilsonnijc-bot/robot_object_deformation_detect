@@ -1,0 +1,1 @@
+Use the left hand to pick up orange from circular gray mat to light blue box.

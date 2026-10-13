@@ -1,0 +1,58 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "loco-manip-5",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid grasps the black container on the table with its left hand and lifts it clear. Holding the container, it steps away from the table, turns to face the whiteboard, and walks up to it. It reaches its left hand across its body to press the container onto the board, then opens its fingers and lowers the empty hand, leaving the container attached. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/loco-manip-5__pick_up_container_walk_and_stick_to_whiteboard/third_person/original/original.mp4",
+  "source_video_sha256": "b3730b876cd84c7a38d523262c299f3cc5cab658a047b055707543a803891048",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/loco-manip/task-5/pick_up_a_magnetic_container_turn_around_walk_towards_whiteboard_stick_it_onto_the_board_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 792,
+  "frame_count": 792,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 26.4,
+  "resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "displayed_resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "codec": "h264",
+  "file_size_bytes": 11042849,
+  "video_sha256": "b3730b876cd84c7a38d523262c299f3cc5cab658a047b055707543a803891048",
+  "first_frame_sha256": "cd82c96b5318cae563e22d5d90292c41dfe8fca715c46d33f3c8fa6abfcfe8cb",
+  "observed_terminal_state": "The black container remains attached to the whiteboard near shoulder height, with its open compartment visible. Both hands are lowered and empty; the robot stands facing the board. The container does not fall or move away after the left hand withdraws.",
+  "arm_hand_roles": {
+    "left": "Sole manipulating hand: reaches to grasp the container, lifts and carries it during locomotion, reaches across the body to press it onto the whiteboard, opens to release it, and withdraws empty.",
+    "right": "Remains lowered and empty throughout the task; does not stabilize the container or board and does not receive a transfer.",
+    "coordination": "Single-hand transport and attachment with stepping, turning, and approach to the board. No two-hand object coordination or human interaction occurs."
+  },
+  "uncertainties": [
+    "Exact finger contact and the instant of initial whiteboard contact are partly occluded by the torso during the cross-body placement; the left-hand opening, empty withdrawal, and unsupported final attachment are visible. The attachment mechanism itself is not directly visible, although the original annotation calls the container magnetic."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

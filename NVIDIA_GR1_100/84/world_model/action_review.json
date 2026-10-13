@@ -1,0 +1,140 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 60,
+  "observed_sequence": [
+    {
+      "source_frame_interval": [
+        0,
+        24
+      ],
+      "action": "Both forearms extend forward from the bottom of the robot-view image; hands are open and mango lies at the table right in front of the lower shelf tray.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        25,
+        63
+      ],
+      "action": "The right arm advances toward the mango with thumb and fingers spread around its sides; left hand stays raised and clear of the objects.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        64,
+        78
+      ],
+      "action": "The right fingers and opposing thumb close around the mango, securing it and beginning to lift it from the tabletop.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        79,
+        105
+      ],
+      "action": "The right hand lifts and carries the mango forward and right toward the lower white tray, maintaining the grasp.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        106,
+        113
+      ],
+      "action": "The right hand moves the mango into the tray at its right/front end and lowers it while still holding it.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        114,
+        119
+      ],
+      "action": "The right thumb and fingers spread, releasing the mango into the tray. At the ending the mango is inside the tray and the open right hand remains close above/beside it.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: grasps, lifts, transports, lowers into the lower white tray, then opens fingers to release the mango.",
+    "left": "Remains open and raised without contacting mango, shelf, or other objects; provides no visible support."
+  },
+  "anatomical_side_evidence": {
+    "description": "Robot-facing-forward view looks down over both own forearms entering from the lower edge. The paired hand anatomy establishes side: the image-right palm has its opposing thumb on the inward/image-left side, and the image-left palm has its thumb on the inward/image-right side. Continuity of wrist/forearm attachment and this bilateral hand orientation identify the active image-right hand as robot-relative right.",
+    "confidence": "high",
+    "uncertainty": "Shoulders and torso are outside the view; assignment is established from own-arm viewpoint and paired hand/forearm anatomy rather than a visible shoulder."
+  },
+  "initial_scene": "Two open dexterous robot hands extend over a table of fruit-shaped objects. The target is the smooth elongated yellow mango at the table right, directly in front of the shelf lower white tray; it is distinct from the ridged yellow object farther left.",
+  "evidence_frame_indices": [
+    0,
+    28,
+    56,
+    64,
+    76,
+    84,
+    90,
+    106,
+    112,
+    116,
+    118,
+    119
+  ],
+  "initial_png_inspected_at_native_resolution": true,
+  "inspection_coverage": {
+    "complete_source_frame_range": [
+      0,
+      119
+    ],
+    "sampled_frames": "Every second decoded source frame, 0 through 118, across the sole returned contact sheet.",
+    "native_transition_frames": [
+      28,
+      56,
+      64,
+      76,
+      84,
+      90,
+      106,
+      112,
+      116,
+      118,
+      119
+    ],
+    "source_initial_png": "Inspected at native 1280 x 800 resolution."
+  },
+  "terminal_state": "Yellow mango is left inside the lower white tray at its front/right end as right fingers open. Right hand remains immediately adjacent; left hand remains open and clear. No subsequent withdrawal or long-term settling is shown.",
+  "selected_execution_status": "success",
+  "uncertainties": [
+    "Exact mango-to-tray floor contact is partly obscured by the hand and tray rim during lowering; final finger opening and mango remaining within the tray establish placement. Later settling and full hand withdrawal are outside the visible sequence.",
+    "Source viewpoint changes orientation during transport; the images do not establish whether this is robot head/body rotation or another camera movement, and no locomotion is inferred."
+  ],
+  "annotation_discrepancies": [],
+  "video_id": "84",
+  "dataset": "NVIDIA_GR1_100",
+  "dedicated_review_agent": "review_gr1_84",
+  "review_source_video": "NVIDIA_GR1_100/84/original/original.mp4",
+  "source_frame_count": 120,
+  "source_fps": 20.0,
+  "native_detail_frames": [
+    28,
+    56,
+    64,
+    76,
+    84,
+    90,
+    106,
+    112,
+    116,
+    118,
+    119
+  ],
+  "world_model_prompt": "The robot uses its right hand to grasp the yellow mango on the right side of the table and lift it. It carries the mango into the shelf's lower white tray and opens its fingers, leaving the mango in the tray with its hand still nearby. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Use the right hand to pick up yellow mango from right side of table to lower white tray of plastic shelf.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 120,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "ae30ae5c260431056305155df0bf20d7f6846d9731c291c2e967487c9fecfed1",
+  "review_completed_at": "2026-10-13T18:36:22.480603+00:00"
+}

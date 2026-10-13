@@ -1,0 +1,153 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg",
+    "sheet_004.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 225,
+  "initial_scene": "The humanoid faces the table from a rear oblique view. An upright black kettle is behind a red cup on the tabletop; the far-side right hand is at the kettle handle, and the nearer left arm hangs away from the tabletop.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 139,
+      "action": "The right hand contacts and secures the upright kettle handle while the kettle remains on the table; the left hand remains lowered away from the task.",
+      "confidence": "high for handle contact; moderate for exact finger closure timing"
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 199,
+      "action": "The right arm lifts the kettle from the tabletop and brings its spout toward the red cup, beginning to tilt the body.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 200,
+      "end_frame": 329,
+      "action": "The right hand rotates and holds the kettle in a pronounced pouring posture with the spout pointed downward over the red cup. The cup remains standing on the table without assistance from the left hand.",
+      "confidence": "high for tool posture and cup position; liquid transfer is not visually established"
+    },
+    {
+      "start_frame": 330,
+      "end_frame": 389,
+      "action": "The right hand rotates the kettle back upright and lowers it to the tabletop beside and slightly behind the red cup.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 390,
+      "end_frame": 448,
+      "action": "The upright kettle remains supported by the table. The right hand releases the handle and retracts away toward the robot, leaving the kettle and cup standing on the tabletop.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Active manipulation hand: grasps the kettle handle, lifts and tilts the kettle over the red cup, returns it upright, sets it down, and releases it.",
+    "left": "Nearer foreground arm hangs down and does not touch the kettle or cup; no stabilizing, supporting, or transferring role is visible.",
+    "coordination": "Single-hand kettle manipulation; the cup stays on the table throughout, and the other hand does not participate."
+  },
+  "anatomical_side_evidence": {
+    "description": "The robot faces away from the camera toward the table/window. The visible shoulder attachments establish the nearer shoulder on the rear-view left side of the torso as its left shoulder, with that arm descending into the foreground. The active arm attaches to the opposite, farther right shoulder beside the head and reaches over the table to the handle; its hand is therefore robot-relative right, despite appearing leftward in the image.",
+    "confidence": "high",
+    "uncertainty": "The oblique camera view partially occludes the far upper arm, but its attachment and the distinct lowered opposite arm are visible."
+  },
+  "terminal_state": "The kettle is upright on the tabletop behind and beside the red cup. The robot right hand has withdrawn from the handle; the left arm stays lowered. The cup remains upright. Whether water entered the cup is not resolved by the visible frames.",
+  "uncertainties": [
+    "No clear liquid stream or change of cup contents is visible at the source resolution; the prompt describes the observed pouring posture without claiming verified water transfer.",
+    "The source camera shifts during the clip; the required fixed-camera constraint is retained verbatim for generation."
+  ],
+  "annotation_discrepancies": [
+    "The source task says the robot pours water into a cup. The visible kettle manipulation matches that intended action, but actual water transfer cannot be verified from the imagery."
+  ],
+  "evidence_frame_indices": [
+    0,
+    50,
+    100,
+    140,
+    160,
+    180,
+    200,
+    220,
+    240,
+    280,
+    320,
+    340,
+    360,
+    380,
+    400,
+    420,
+    430,
+    448
+  ],
+  "selected_execution_status": "uncertain",
+  "selected_execution_status_reason": "The kettle lift, pouring posture, upright return, placement, and release complete visibly; the annotation-level result of water entering the cup is unverified.",
+  "inspection_coverage": {
+    "full_source_frame_interval": [
+      0,
+      448
+    ],
+    "all_stride_two_samples_actually_viewed": true,
+    "sample_count": 225,
+    "source_initial_png_viewed_at_native_resolution": true,
+    "native_display_dimensions": [
+      320,
+      568
+    ],
+    "native_transition_and_terminal_frames_actually_viewed": [
+      0,
+      50,
+      100,
+      140,
+      160,
+      180,
+      200,
+      220,
+      240,
+      280,
+      320,
+      340,
+      360,
+      380,
+      400,
+      420,
+      430,
+      448
+    ]
+  },
+  "video_id": "tool-use-1",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_tool_use_1",
+  "review_source_video": "Humanoid_Everyday/tool-use-1__pour_water_from_a_kettle_into_a_cup/third_person/original/original.mp4",
+  "source_frame_count": 449,
+  "source_fps": 30.0,
+  "native_detail_frames": [
+    0,
+    50,
+    100,
+    140,
+    160,
+    180,
+    200,
+    220,
+    240,
+    280,
+    320,
+    340,
+    360,
+    380,
+    400,
+    420,
+    430,
+    448
+  ],
+  "world_model_prompt": "The humanoid robot grasps the black kettle's handle with its right hand, lifts it from the table, and tilts it with the spout directed downward over the red cup. It holds this pouring pose, then turns the kettle upright, sets it back on the table beside the cup, and releases the handle. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "This task demonstrates tool manipulation where the humanoid robot uses a kettle to pour water into a cup, requiring precise control and coordination.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 449,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "955f472133c775805bba4d47871f1275800635fa5451b67f19205b7094ac1a2a",
+  "review_completed_at": "2026-10-13T16:53:51.043325+00:00"
+}

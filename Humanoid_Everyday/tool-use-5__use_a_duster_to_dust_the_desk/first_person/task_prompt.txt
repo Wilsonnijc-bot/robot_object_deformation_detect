@@ -1,0 +1,1 @@
+This task demonstrates cleaning tool usage where the humanoid robot uses a duster to clean a desk surface, requiring proper motion patterns, systematic coverage, and effective dust removal techniques.

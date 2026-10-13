@@ -1,0 +1,1 @@
+The robot closes its right hand around the red apple on the pink plate, lifts it clear, and carries it over to the teal plate. It lowers the apple onto the teal plate and opens its fingers, leaving the apple on the plate with the hand still nearby. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

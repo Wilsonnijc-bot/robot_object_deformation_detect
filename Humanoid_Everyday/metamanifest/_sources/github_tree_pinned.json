@@ -1,0 +1,2002 @@
+{
+  "sha": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "tree": [
+    {
+      "path": "cloud_evaluation_coming_soon.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f00d5039e41e0be216952d6282e57085eb3cd413",
+      "size": 1749,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/f00d5039e41e0be216952d6282e57085eb3cd413"
+    },
+    {
+      "path": "data_viewer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3f5db6108e806734f3d940a6e7436bd2d6a7b6f",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/b3f5db6108e806734f3d940a6e7436bd2d6a7b6f"
+    },
+    {
+      "path": "data_viewer/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc7d9a33178bbc3ba76dc66958270fab2a3afa81",
+      "size": 2230,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/fc7d9a33178bbc3ba76dc66958270fab2a3afa81"
+    },
+    {
+      "path": "data_viewer/data_viewer_page.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7cd09489d1927bb4f47ec839e5e49f698d66220",
+      "size": 70895,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c7cd09489d1927bb4f47ec839e5e49f698d66220"
+    },
+    {
+      "path": "data_viewer/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e237af863fa17951954ee6fdb83b6c18bd39d50",
+      "size": 385,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4e237af863fa17951954ee6fdb83b6c18bd39d50"
+    },
+    {
+      "path": "data_viewer/static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3abda3e846ed4178af5d3392b346873f9536535d",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/3abda3e846ed4178af5d3392b346873f9536535d"
+    },
+    {
+      "path": "data_viewer/static/css",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "952d8a8d2adf3a598482d2d0e4602468523c99ec",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/952d8a8d2adf3a598482d2d0e4602468523c99ec"
+    },
+    {
+      "path": "data_viewer/static/css/bulma.min.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "503b27dd37bcf369703f6e1eaa97b26215c90b1c",
+      "size": 5298,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/503b27dd37bcf369703f6e1eaa97b26215c90b1c"
+    },
+    {
+      "path": "data_viewer/static/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "275b56522d8c8034ae3bf2068e189ebdf0f6f4cb",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/275b56522d8c8034ae3bf2068e189ebdf0f6f4cb"
+    },
+    {
+      "path": "data_viewer/static/data/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55d50a447e16f98d3e0385f9f5bd82303772b3e1",
+      "size": 4294,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/55d50a447e16f98d3e0385f9f5bd82303772b3e1"
+    },
+    {
+      "path": "data_viewer/static/data/task-index.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0494d9099342609dd27154c988ca2cb35d8f0f9f",
+      "size": 1867,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/0494d9099342609dd27154c988ca2cb35d8f0f9f"
+    },
+    {
+      "path": "data_viewer/static/data/videos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39c068056780776ba4045f16db88f21b3b9899e8",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/39c068056780776ba4045f16db88f21b3b9899e8"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a329d1ccd962e1d3a4ab32452fac24491ed8ca71",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/a329d1ccd962e1d3a4ab32452fac24491ed8ca71"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8dea0b83386ac274a4a29160d3c120de337ce7e5",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/8dea0b83386ac274a4a29160d3c120de337ce7e5"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-1/rotate_chair_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "975596222fb220dc08fb3fe2f8b770010e93372c",
+      "size": 415882,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/975596222fb220dc08fb3fe2f8b770010e93372c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-1/rotate_chair_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15a9112c1bb09b6b316e713992f992a54d8fb427",
+      "size": 2702199,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/15a9112c1bb09b6b316e713992f992a54d8fb427"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db0bc0436a588968e7f2ee7e0e6f38ae69a3e54a",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/db0bc0436a588968e7f2ee7e0e6f38ae69a3e54a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-2/compress_a_liquid_hand_soap_into_a_cup_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d025b16107dad97a9d2ef311a325d44b4514bf19",
+      "size": 644203,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d025b16107dad97a9d2ef311a325d44b4514bf19"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-2/compress_a_liquid_hand_soap_into_a_cup_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e81abd8099f306f487648c3ab973893602b9db2c",
+      "size": 2684173,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/e81abd8099f306f487648c3ab973893602b9db2c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9fce083a0d2c8dfa9f38ae68c81e62720fe0b059",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/9fce083a0d2c8dfa9f38ae68c81e62720fe0b059"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-3/unfold_stand_on_multimeter_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7688854f316ee4f53d5d86a761e4889a6d82011b",
+      "size": 1530345,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/7688854f316ee4f53d5d86a761e4889a6d82011b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-3/unfold_stand_on_multimeter_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a15ddcfe7919157fddc34c7d71e551271d84aab5",
+      "size": 2557429,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/a15ddcfe7919157fddc34c7d71e551271d84aab5"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd3fc9cf1c5ca6f57221e80379c07f2b21418b98",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/bd3fc9cf1c5ca6f57221e80379c07f2b21418b98"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-4/compress_air_pumper_h1_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e573d470037c577086d83fe9988120b7acf72a",
+      "size": 947026,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/19e573d470037c577086d83fe9988120b7acf72a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-4/compress_air_pumper_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "735b560467abfa3f90f39a63e3e4517bb9520ebf",
+      "size": 2743746,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/735b560467abfa3f90f39a63e3e4517bb9520ebf"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca4575d8f07bdfcf522ec2cc927d751a6dda221c",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/ca4575d8f07bdfcf522ec2cc927d751a6dda221c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-5/turn_on_the_faucet_handle_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29f48c8eb9d9e32e18a2c4a78254edcf94531f47",
+      "size": 786720,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/29f48c8eb9d9e32e18a2c4a78254edcf94531f47"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-5/turn_on_the_faucet_handle_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d485d5fd3aefd7f470a5d46634241c8ebf9de2dc",
+      "size": 1802839,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d485d5fd3aefd7f470a5d46634241c8ebf9de2dc"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "410ac28f20de13c28e63f0b81885d1d87e5fd760",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/410ac28f20de13c28e63f0b81885d1d87e5fd760"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-6/pressing_on_a_light_switch_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2941c8cc12ff51352102edfa1acaa947cc9b5b64",
+      "size": 515342,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/2941c8cc12ff51352102edfa1acaa947cc9b5b64"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-6/pressing_on_a_light_switch_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adab140f5a6ef08ee899e8c4d99de89def3eaa6b",
+      "size": 1420003,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/adab140f5a6ef08ee899e8c4d99de89def3eaa6b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f4a40ba014e5d5b1659de6a4f634135d6a93bae",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/6f4a40ba014e5d5b1659de6a4f634135d6a93bae"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-7/close_the_cabinet_door_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99200c2feb44cc0bd167095b286672ee5087d30d",
+      "size": 357801,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/99200c2feb44cc0bd167095b286672ee5087d30d"
+    },
+    {
+      "path": "data_viewer/static/data/videos/articulated/task-7/close_the_cabinet_door_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18a4be4fe4a7e706f3f78a959c515853f7d8ca6b",
+      "size": 726391,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/18a4be4fe4a7e706f3f78a959c515853f7d8ca6b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ebc869f72ac62477ff0120cb66b710f41da0f3c4",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/ebc869f72ac62477ff0120cb66b710f41da0f3c4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e5fcf3ec5e5dc0f382e5f3f29dc5dcfb1d3b53e",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/6e5fcf3ec5e5dc0f382e5f3f29dc5dcfb1d3b53e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-1/adjust_the_opening_of_a_loosely_closed_bag_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ea5bc074d8d5de18f26ff7908e42651a6ca341",
+      "size": 555696,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/30ea5bc074d8d5de18f26ff7908e42651a6ca341"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-1/adjust_the_opening_of_a_loosely_closed_bag_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc0d10db09def532e4cd29e4850d9dd369c5562e",
+      "size": 1544794,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/cc0d10db09def532e4cd29e4850d9dd369c5562e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87839762a72d357415509b79f2e958fb6f2ba9bd",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/87839762a72d357415509b79f2e958fb6f2ba9bd"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-2/Fold_towel_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a37a1ef27c3773368d586e68cb048896714dbff",
+      "size": 3947033,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4a37a1ef27c3773368d586e68cb048896714dbff"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-2/fold_towel_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794d98eed50ff2142d9866139fbb3ef669eae4a4",
+      "size": 1121002,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/794d98eed50ff2142d9866139fbb3ef669eae4a4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b68070b9d84dc6a457edb69fd3ade8b0d2c32d9",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/7b68070b9d84dc6a457edb69fd3ade8b0d2c32d9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-3/fold_a_jacket_on_the_desk_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d499d1d880093f1d9b2447d2b7fb08058089635e",
+      "size": 978752,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d499d1d880093f1d9b2447d2b7fb08058089635e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-3/fold_a_jacket_on_the_desk_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34fed7a502ba512b772764984b73f1fcde8d7089",
+      "size": 2368909,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/34fed7a502ba512b772764984b73f1fcde8d7089"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2a36c851fea5e929201569f70029906f5eb30e07",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/2a36c851fea5e929201569f70029906f5eb30e07"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-4/fold_a_toolkit_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "933b5f5c6e90cd661f0c0848fa336f52cad05da9",
+      "size": 570883,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/933b5f5c6e90cd661f0c0848fa336f52cad05da9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-4/fold_a_toolkit_h1_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94294b97eb2bde8ae551a75e638edf226f0ee2e0",
+      "size": 807440,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/94294b97eb2bde8ae551a75e638edf226f0ee2e0"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0403ca73938a17130dde848069cbe48ab68dda6",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/b0403ca73938a17130dde848069cbe48ab68dda6"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-5/press_a_soft_travel_bag_to_reduce_its_size_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a237c6c941ddea8b32a5c9e6da1954388cccb2b4",
+      "size": 720852,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/a237c6c941ddea8b32a5c9e6da1954388cccb2b4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-5/press_a_soft_travel_bag_to_reduce_its_size_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f1c984ab98edfbecc0c76bdc6519486e6a39d06",
+      "size": 1738089,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/1f1c984ab98edfbecc0c76bdc6519486e6a39d06"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f30df2eb480ba9d1440c9bed7a5bab56ea5c616",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/3f30df2eb480ba9d1440c9bed7a5bab56ea5c616"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-6/compress_a_plastic_bag_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf38d0146f56399eea6ebddd74c76413107301e0",
+      "size": 644496,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/cf38d0146f56399eea6ebddd74c76413107301e0"
+    },
+    {
+      "path": "data_viewer/static/data/videos/deformable/task-6/compress_a_plastic_bag_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eb208224534d6fbce80df1bd14009407c15e07b",
+      "size": 2644482,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/3eb208224534d6fbce80df1bd14009407c15e07b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b13b33a88d72ce690c2b9935d8eb85daff197e3",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/7b13b33a88d72ce690c2b9935d8eb85daff197e3"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/adjust_the_opening_of_a_loosely_closed_bag_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ea5bc074d8d5de18f26ff7908e42651a6ca341",
+      "size": 555696,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/30ea5bc074d8d5de18f26ff7908e42651a6ca341"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/align_a_stack_of_books_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c53f9bd3dd5fd38ecd1216a2624304f1e387dfb7",
+      "size": 1077549,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c53f9bd3dd5fd38ecd1216a2624304f1e387dfb7"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/clean_the_window_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5de75af976471195fa8c1835732c70860af173",
+      "size": 3423948,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/fc5de75af976471195fa8c1835732c70860af173"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/close_the_cabinet_door_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99200c2feb44cc0bd167095b286672ee5087d30d",
+      "size": 357801,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/99200c2feb44cc0bd167095b286672ee5087d30d"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/compress_a_liquid_hand_soap_into_a_cup_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d025b16107dad97a9d2ef311a325d44b4514bf19",
+      "size": 644203,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d025b16107dad97a9d2ef311a325d44b4514bf19"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/compress_a_plastic_bag_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf38d0146f56399eea6ebddd74c76413107301e0",
+      "size": 644496,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/cf38d0146f56399eea6ebddd74c76413107301e0"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/compress_air_pumper_h1_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e573d470037c577086d83fe9988120b7acf72a",
+      "size": 947026,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/19e573d470037c577086d83fe9988120b7acf72a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/fold_a_jacket_on_the_desk_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d499d1d880093f1d9b2447d2b7fb08058089635e",
+      "size": 978752,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d499d1d880093f1d9b2447d2b7fb08058089635e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/fold_a_toolkit_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "933b5f5c6e90cd661f0c0848fa336f52cad05da9",
+      "size": 570883,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/933b5f5c6e90cd661f0c0848fa336f52cad05da9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/fold_towel_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794d98eed50ff2142d9866139fbb3ef669eae4a4",
+      "size": 1121002,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/794d98eed50ff2142d9866139fbb3ef669eae4a4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/h1-grab_a_stack_of_plates_from_the_desk_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05cc12fdae4cfe74c352edd045bb24add9c58401",
+      "size": 620099,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/05cc12fdae4cfe74c352edd045bb24add9c58401"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/h1-take_a_notebook_from_a_person_and_put_it_in_the_file_tray_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2b757b2f2e8658108a6c5588b7975139f38db9e",
+      "size": 1841419,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/a2b757b2f2e8658108a6c5588b7975139f38db9e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/hand_over_flower_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88ad98692a1ec99ef5f05760b11fa638f18dd4ba",
+      "size": 1216607,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/88ad98692a1ec99ef5f05760b11fa638f18dd4ba"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/handover_dumpling_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a4688d32c890d9100cc67866f4c96d348df6171",
+      "size": 797320,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8a4688d32c890d9100cc67866f4c96d348df6171"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/hold_a_whiteboard_and_walk_with_it_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f4fd27f0fe3a9805c9e5f85c4c960aab286855",
+      "size": 1562942,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/b1f4fd27f0fe3a9805c9e5f85c4c960aab286855"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/insert_flower_into_vase_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbd04be654514994efaca79eca9505b5ed1d9084",
+      "size": 1076906,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/cbd04be654514994efaca79eca9505b5ed1d9084"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/open_a_bottle_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf6b345d656499f521e5ec00073aba5e01b1cd0",
+      "size": 1245585,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/3cf6b345d656499f521e5ec00073aba5e01b1cd0"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/pick_up_a_duster_from_the_table_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c06e958079f31056e06cfa3f759f970163ac282",
+      "size": 678676,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8c06e958079f31056e06cfa3f759f970163ac282"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c32a2824bcc162c381eb147a18aa311c18a5bb56",
+      "size": 780579,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c32a2824bcc162c381eb147a18aa311c18a5bb56"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/pick_up_a_kettle_place_it_on_base_and_turn_on_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "082a148b773e7a85886e94967d45bc19a5825d5a",
+      "size": 3379628,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/082a148b773e7a85886e94967d45bc19a5825d5a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/pick_up_a_magnetic_container_turn_around_walk_towards_whiteboard_stick_it_onto_the_board_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "170466f2f8744e75854502876b41139e35f75dfb",
+      "size": 15251435,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/170466f2f8744e75854502876b41139e35f75dfb"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/pick_up_a_toilet_paper_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f9326feb210f8f65ab412cbca0909e136b992d2",
+      "size": 967612,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/9f9326feb210f8f65ab412cbca0909e136b992d2"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/place_a_soldering_gun_into_its_base_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57060a86b55c976a2c865200a4059f3f7de31dea",
+      "size": 1763639,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/57060a86b55c976a2c865200a4059f3f7de31dea"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/place_the_kettle_on_its_base_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b165e147bd5df4309de711927178ab1644965c2",
+      "size": 1112625,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/1b165e147bd5df4309de711927178ab1644965c2"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/press_a_soft_travel_bag_to_reduce_its_size_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a237c6c941ddea8b32a5c9e6da1954388cccb2b4",
+      "size": 720852,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/a237c6c941ddea8b32a5c9e6da1954388cccb2b4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/press_start_boiling_button_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4beeaa2a9f33598a3b90093ef8c029f400e587c7",
+      "size": 705945,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4beeaa2a9f33598a3b90093ef8c029f400e587c7"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/pressing_on_a_light_switch_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2941c8cc12ff51352102edfa1acaa947cc9b5b64",
+      "size": 515342,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/2941c8cc12ff51352102edfa1acaa947cc9b5b64"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/rotate_chair_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "975596222fb220dc08fb3fe2f8b770010e93372c",
+      "size": 415882,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/975596222fb220dc08fb3fe2f8b770010e93372c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/shake_hand_with_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4643488c7af03ed63479ff45763f075e78cd2468",
+      "size": 1142445,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4643488c7af03ed63479ff45763f075e78cd2468"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/stack_a_rolls_of_paper_towel_on_top_of_the_other_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c28fb4f5eec25632633367cb998309420d377d",
+      "size": 1076100,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/29c28fb4f5eec25632633367cb998309420d377d"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/throw_away_a_piece_of_paper_to_trashcan_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "061cd4e009699fefd2525bcb09258ea35c8719a9",
+      "size": 1805632,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/061cd4e009699fefd2525bcb09258ea35c8719a9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/turn_on_the_faucet_handle_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29f48c8eb9d9e32e18a2c4a78254edcf94531f47",
+      "size": 786720,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/29f48c8eb9d9e32e18a2c4a78254edcf94531f47"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/unfold_stand_on_multimeter_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7688854f316ee4f53d5d86a761e4889a6d82011b",
+      "size": 1530345,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/7688854f316ee4f53d5d86a761e4889a6d82011b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/unplug_a_charger_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cbdefe691d4f36cb7685e2049715c105f08f11c",
+      "size": 692346,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/6cbdefe691d4f36cb7685e2049715c105f08f11c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/use_joystick_on_controller_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ccb4201ac68d7d63260b00ef1f592061656ea32",
+      "size": 369231,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/6ccb4201ac68d7d63260b00ef1f592061656ea32"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/walk_towards_a_open_gate_button_and_open_gate_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8857a1b8f6e1a77b652db3b32be4570be5799bad",
+      "size": 660425,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8857a1b8f6e1a77b652db3b32be4570be5799bad"
+    },
+    {
+      "path": "data_viewer/static/data/videos/egocentric_videos/walk_towards_fire_extinguisher_and_open_door_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dee324c37d362ae9414ee951b1b2ef93abac3ad3",
+      "size": 904568,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/dee324c37d362ae9414ee951b1b2ef93abac3ad3"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2510f727c794348c393bed5aba952b84a2c43151",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/2510f727c794348c393bed5aba952b84a2c43151"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6adc2d3e378c2d356a54e79da334ffe5bedcd3fe",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/6adc2d3e378c2d356a54e79da334ffe5bedcd3fe"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-1/open_a_bottle_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf6b345d656499f521e5ec00073aba5e01b1cd0",
+      "size": 1245585,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/3cf6b345d656499f521e5ec00073aba5e01b1cd0"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-1/open_a_bottle_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81dd37f78c45c7dc1ee6111f4fd2ee1bff6b479e",
+      "size": 2753801,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/81dd37f78c45c7dc1ee6111f4fd2ee1bff6b479e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cc3e8b11c16590c65d0bd28f5ecb6fe5d2dc351",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/2cc3e8b11c16590c65d0bd28f5ecb6fe5d2dc351"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-2/place_a_soldering_gun_into_its_base_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57060a86b55c976a2c865200a4059f3f7de31dea",
+      "size": 1763639,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/57060a86b55c976a2c865200a4059f3f7de31dea"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-2/place_a_soldering_gun_into_its_base_h1_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c3bf7e104104bbd1ff3b520fac764a5068c4ca",
+      "size": 1771344,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/e5c3bf7e104104bbd1ff3b520fac764a5068c4ca"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00ea0480c6a1cf1147e0d07588fc86d85aba29f6",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/00ea0480c6a1cf1147e0d07588fc86d85aba29f6"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-3/align_a_stack_of_books_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c53f9bd3dd5fd38ecd1216a2624304f1e387dfb7",
+      "size": 1077549,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c53f9bd3dd5fd38ecd1216a2624304f1e387dfb7"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-3/align_a_stack_of_books_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53e5dba38ca20546cea81e9570bf35c3ebb3d3c9",
+      "size": 1142047,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/53e5dba38ca20546cea81e9570bf35c3ebb3d3c9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da7443d9714db0349abf86cd198b3bc3ee089e32",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/da7443d9714db0349abf86cd198b3bc3ee089e32"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b165e147bd5df4309de711927178ab1644965c2",
+      "size": 1112625,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/1b165e147bd5df4309de711927178ab1644965c2"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0dd60d49c286ea9302bbac90334ac000d824378",
+      "size": 6366821,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d0dd60d49c286ea9302bbac90334ac000d824378"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a85c142e2519e5c15dae2f41448ba9a3ceaf28a",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/5a85c142e2519e5c15dae2f41448ba9a3ceaf28a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-5/Insert_flower_into_vase_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "640c1da1c71a800954dd33476414e08db319a709",
+      "size": 11310980,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/640c1da1c71a800954dd33476414e08db319a709"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-5/insert_flower_into_vase_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbd04be654514994efaca79eca9505b5ed1d9084",
+      "size": 1076906,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/cbd04be654514994efaca79eca9505b5ed1d9084"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9cfca336257bc2001f4ad0cbbe2b8847db2bd7b4",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/9cfca336257bc2001f4ad0cbbe2b8847db2bd7b4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-6/press_start_boiling_button_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4beeaa2a9f33598a3b90093ef8c029f400e587c7",
+      "size": 705945,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4beeaa2a9f33598a3b90093ef8c029f400e587c7"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-6/press_start_boiling_button_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc3223f69d35aa96df046f9a750379cf26b4b1de",
+      "size": 1913787,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/bc3223f69d35aa96df046f9a750379cf26b4b1de"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89e7a82ae2d24983eae9bb95e13e6d7af95cea07",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/89e7a82ae2d24983eae9bb95e13e6d7af95cea07"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-7/unplug_a_charger_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cbdefe691d4f36cb7685e2049715c105f08f11c",
+      "size": 692346,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/6cbdefe691d4f36cb7685e2049715c105f08f11c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-7/unplug_a_charger_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f5a45cd09950c27e39738398841eb0e23e00a7b",
+      "size": 1016090,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/0f5a45cd09950c27e39738398841eb0e23e00a7b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-8",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc2de154a8b303f501d8f6f35e2045fff3b9f7b4",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/fc2de154a8b303f501d8f6f35e2045fff3b9f7b4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-8/stack_a_rolls_of_paper_towel_on_top_of_the_other_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c28fb4f5eec25632633367cb998309420d377d",
+      "size": 1076100,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/29c28fb4f5eec25632633367cb998309420d377d"
+    },
+    {
+      "path": "data_viewer/static/data/videos/high-precision/task-8/stack_a_rolls_of_paper_towel_on_top_of_the_other_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8f62a07b0574407e4467504d77b6d904805754",
+      "size": 2526222,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/9b8f62a07b0574407e4467504d77b6d904805754"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "445ee9de00967e72c6e894af7c7f115fb3c4a849",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/445ee9de00967e72c6e894af7c7f115fb3c4a849"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d6273b0156841f3127892567f849cbd51c0cb907",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/d6273b0156841f3127892567f849cbd51c0cb907"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c32a2824bcc162c381eb147a18aa311c18a5bb56",
+      "size": 780579,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c32a2824bcc162c381eb147a18aa311c18a5bb56"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27a4ff6195278747dd18945cb379e7c137049aa5",
+      "size": 3308448,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/27a4ff6195278747dd18945cb379e7c137049aa5"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f95ce1de3b5a9426eb40850a3765070db45d40a2",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/f95ce1de3b5a9426eb40850a3765070db45d40a2"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-2/pick_up_a_toilet_paper_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f9326feb210f8f65ab412cbca0909e136b992d2",
+      "size": 967612,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/9f9326feb210f8f65ab412cbca0909e136b992d2"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-2/pick_up_a_toilet_paper_and_hand_it_to_a_person_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "090e692a056f801c1956f6cda1ab740f3d27eea2",
+      "size": 3728916,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/090e692a056f801c1956f6cda1ab740f3d27eea2"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73d80eeccd00af9a63c23970fa93f08bb0ac9559",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/73d80eeccd00af9a63c23970fa93f08bb0ac9559"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-3/pick_up_a_duster_from_the_table_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c06e958079f31056e06cfa3f759f970163ac282",
+      "size": 678676,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8c06e958079f31056e06cfa3f759f970163ac282"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-3/pick_up_a_grey_duster_from_the_table_and_hand_it_to_a_person_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db36b0cad72e2da7a61e99aa6f64a19ae3ef7b27",
+      "size": 2373477,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/db36b0cad72e2da7a61e99aa6f64a19ae3ef7b27"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "beb6a47d5dbce32ea89becde143b4d14e3476a85",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/beb6a47d5dbce32ea89becde143b4d14e3476a85"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-4/h1-grab_a_book_from_a_magazine_stand_and_hand_it_to_a_person_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78fb438c999cc1cfcba4a3fa4fb23a7e5def1ba8",
+      "size": 2743837,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/78fb438c999cc1cfcba4a3fa4fb23a7e5def1ba8"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-4/h1-grab_a_stack_of_plates_from_the_desk_and_hand_it_to_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05cc12fdae4cfe74c352edd045bb24add9c58401",
+      "size": 620099,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/05cc12fdae4cfe74c352edd045bb24add9c58401"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1532d01f42432dc3314c30bfd71865acb95f3c06",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/1532d01f42432dc3314c30bfd71865acb95f3c06"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-5/Handover_dumpling.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12ce8930ab664c0b9ba4022869d579d423e7e349",
+      "size": 5708097,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/12ce8930ab664c0b9ba4022869d579d423e7e349"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-5/handover_dumpling_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a4688d32c890d9100cc67866f4c96d348df6171",
+      "size": 797320,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8a4688d32c890d9100cc67866f4c96d348df6171"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb5b074026de2a2bbc646a72d2ae51c03936a5dc",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/cb5b074026de2a2bbc646a72d2ae51c03936a5dc"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-6/hand_over_flower_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88ad98692a1ec99ef5f05760b11fa638f18dd4ba",
+      "size": 1216607,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/88ad98692a1ec99ef5f05760b11fa638f18dd4ba"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-6/hand_over_flower_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20b287d09324a8d5686feb865018682fb2dc371a",
+      "size": 2203621,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/20b287d09324a8d5686feb865018682fb2dc371a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9189103be79de597eb7fcf6a46a40abee7d8eea0",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/9189103be79de597eb7fcf6a46a40abee7d8eea0"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-7/shake_hand_with_a_person_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4643488c7af03ed63479ff45763f075e78cd2468",
+      "size": 1142445,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4643488c7af03ed63479ff45763f075e78cd2468"
+    },
+    {
+      "path": "data_viewer/static/data/videos/human-robot/task-7/shake_hand_with_a_person_h1_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6419d424bd72381f3b8720bc6179ee156fe771",
+      "size": 1641657,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/7d6419d424bd72381f3b8720bc6179ee156fe771"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bf16f7775fbe2a65bbe4ea46fba8119f92d356e",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/3bf16f7775fbe2a65bbe4ea46fba8119f92d356e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d8c1619fd46fa25d35e2c7acedea1be5f55c94e7",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/d8c1619fd46fa25d35e2c7acedea1be5f55c94e7"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-1/clean_the_window_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5de75af976471195fa8c1835732c70860af173",
+      "size": 3423948,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/fc5de75af976471195fa8c1835732c70860af173"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-1/clean_the_window_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "559ed6f2022f9a31eef8e365f5ec7dca2bd76a7a",
+      "size": 24834734,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/559ed6f2022f9a31eef8e365f5ec7dca2bd76a7a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aee6ef43bea6d1e5edd760e0d435e1c697eebef7",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/aee6ef43bea6d1e5edd760e0d435e1c697eebef7"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "082a148b773e7a85886e94967d45bc19a5825d5a",
+      "size": 3379628,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/082a148b773e7a85886e94967d45bc19a5825d5a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-2/pick_up_a_kettle_place_it_on_base_and_turn_on_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c13e5c0419af45e64ce681a434034e6030013f34",
+      "size": 16043500,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c13e5c0419af45e64ce681a434034e6030013f34"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "676b9cae38742f1127ce0f3240e6c90cc1d3f0e3",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/676b9cae38742f1127ce0f3240e6c90cc1d3f0e3"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-3/throw_away_a_piece_of_paper_to_trashcan_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "061cd4e009699fefd2525bcb09258ea35c8719a9",
+      "size": 1805632,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/061cd4e009699fefd2525bcb09258ea35c8719a9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-3/throw_away_a_piece_of_paper_to_trashcan_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794da4a0ce2532bb094dbe1b3ab404eb43807dbe",
+      "size": 12159158,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/794da4a0ce2532bb094dbe1b3ab404eb43807dbe"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0cae9cc36680cc5b34a1cbd5ee37f531e6ebb608",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/0cae9cc36680cc5b34a1cbd5ee37f531e6ebb608"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-4/walk_towards_a_open_gate_button_and_open_gate_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8857a1b8f6e1a77b652db3b32be4570be5799bad",
+      "size": 660425,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8857a1b8f6e1a77b652db3b32be4570be5799bad"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-4/walk_towards_a_open_gate_button_and_open_gate_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21f3a9a6526ce70ee3e172983a3b2d2d3841a062",
+      "size": 6306923,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/21f3a9a6526ce70ee3e172983a3b2d2d3841a062"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d47541613096a5a2ac6d893c599e5a324d0e266a",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/d47541613096a5a2ac6d893c599e5a324d0e266a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-5/pick_up_a_magnetic_container_turn_around_walk_towards_whiteboard_stick_it_onto_the_board_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "170466f2f8744e75854502876b41139e35f75dfb",
+      "size": 15251435,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/170466f2f8744e75854502876b41139e35f75dfb"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-5/pick_up_a_magnetic_container_turn_around_walk_towards_whiteboard_stick_it_onto_the_board_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efd801e8e019d16d6c981bec227b04208eb4a71a",
+      "size": 11042849,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/efd801e8e019d16d6c981bec227b04208eb4a71a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e387634e10465a877f48c8cf2c719dbf3ef5c5e",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/1e387634e10465a877f48c8cf2c719dbf3ef5c5e"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-6/hold_a_whiteboard_and_walk_with_it_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f4fd27f0fe3a9805c9e5f85c4c960aab286855",
+      "size": 1562942,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/b1f4fd27f0fe3a9805c9e5f85c4c960aab286855"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-6/hold_a_whiteboard_and_walk_with_it_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ebdb4149ec9b250c41eb4bf39ab6fd9cb0e21e2",
+      "size": 8683237,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/3ebdb4149ec9b250c41eb4bf39ab6fd9cb0e21e2"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cdc4d059bf64e35906653b6038f34c8533697069",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/cdc4d059bf64e35906653b6038f34c8533697069"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-7/walk_towards_fire_extinguisher_and_open_door_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dee324c37d362ae9414ee951b1b2ef93abac3ad3",
+      "size": 904568,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/dee324c37d362ae9414ee951b1b2ef93abac3ad3"
+    },
+    {
+      "path": "data_viewer/static/data/videos/loco-manip/task-7/walk_towards_fire_extinguisher_and_open_door_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be191394300095d58770085266bbf67ba10e0573",
+      "size": 6864516,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/be191394300095d58770085266bbf67ba10e0573"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5537e0849374b44fd2fa199bc40bf36fb8ef62f",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/c5537e0849374b44fd2fa199bc40bf36fb8ef62f"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e36052ecbf5aee1002e12c1427bf63d1e8b4f3bc",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/e36052ecbf5aee1002e12c1427bf63d1e8b4f3bc"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3908ad74f0b0ad617106033638329a3bc6700fcf",
+      "size": 639318,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/3908ad74f0b0ad617106033638329a3bc6700fcf"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-1/lyft_a_kettle_from_base_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b32819677fe62efcaf9d4f3697950dfe812b31",
+      "size": 1555318,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/e7b32819677fe62efcaf9d4f3697950dfe812b31"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e3a1fd5669fd9669a79271ea1d2f7e12ac76a37",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/8e3a1fd5669fd9669a79271ea1d2f7e12ac76a37"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-2/place_a_cube_in_a_bag_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f8c89e3dc950d91686d75bd241e6b5207711ec5",
+      "size": 415061,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4f8c89e3dc950d91686d75bd241e6b5207711ec5"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-2/place_a_cube_in_a_bag_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b790e88922fbf2b817120e4237bb75be611c6d66",
+      "size": 1115827,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/b790e88922fbf2b817120e4237bb75be611c6d66"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "170e8995011557073738b3ea22cada6c86e7cfe5",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/170e8995011557073738b3ea22cada6c86e7cfe5"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-3/pick_up_a_tripod_and_stand_it_on_the_desk_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceb38e541f915e47f5d3aabe5e72b0388b4d38ff",
+      "size": 1535291,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/ceb38e541f915e47f5d3aabe5e72b0388b4d38ff"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-3/pick_up_a_tripod_and_stand_it_on_the_desk_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5035635acafd58a5adb2935790018dc6585e876",
+      "size": 1574594,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/f5035635acafd58a5adb2935790018dc6585e876"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49eaccc429285cc84e8e37fe90498e89c5927915",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/49eaccc429285cc84e8e37fe90498e89c5927915"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-4/pick_an_air_purify_spray_and_put_it_inside_a_container_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e016ce99644b406b22ef1ec2086adaf0a2fd916c",
+      "size": 571292,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/e016ce99644b406b22ef1ec2086adaf0a2fd916c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-4/pick_an_air_purify_spray_and_put_it_inside_a_container_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6394004793d8752effa2fecf5a3ed22594be53af",
+      "size": 1886029,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/6394004793d8752effa2fecf5a3ed22594be53af"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b5e1701561b8d49f3f82a84ef4ecec4e60538205",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/b5e1701561b8d49f3f82a84ef4ecec4e60538205"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-5/pick_a_multi_meter_and_place_it_in_a_container_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d76ea9d72a1fc67834644c7c506a8ce0628bd3cb",
+      "size": 835399,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d76ea9d72a1fc67834644c7c506a8ce0628bd3cb"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-5/pick_a_multi_meter_and_place_it_in_a_container_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf08b78cfad9b760deb1a0cb7b9140948cfe49b",
+      "size": 2555080,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/6cf08b78cfad9b760deb1a0cb7b9140948cfe49b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "163ea695b7031e486f42497a2733ac5a799848a5",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/163ea695b7031e486f42497a2733ac5a799848a5"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-6/pick_a_3d_printing_filament_and_put_it_inside_the_container_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a01d2d1dbeccc13aefa6d08b8df8cdefa81b97f1",
+      "size": 1271163,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/a01d2d1dbeccc13aefa6d08b8df8cdefa81b97f1"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-6/pick_a_3d_printing_filament_and_put_it_inside_the_container_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a106694ed3a6641bcce88d6b082808ae628b0376",
+      "size": 2576757,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/a106694ed3a6641bcce88d6b082808ae628b0376"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fccdea3d05e6f2eae0bf31d844fb0038561d4c19",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/fccdea3d05e6f2eae0bf31d844fb0038561d4c19"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-7/stack_a_rolls_of_paper_towel_on_top_of_the_other_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "762ac616db62c19e2c38423a72d16292a814d550",
+      "size": 939338,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/762ac616db62c19e2c38423a72d16292a814d550"
+    },
+    {
+      "path": "data_viewer/static/data/videos/pick-place/task-7/stack_a_rolls_of_paper_towel_on_top_of_the_other_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8f62a07b0574407e4467504d77b6d904805754",
+      "size": 2526222,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/9b8f62a07b0574407e4467504d77b6d904805754"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b67458eee9f7d8a16d60476cd70fe993ca62c89",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/8b67458eee9f7d8a16d60476cd70fe993ca62c89"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bf48dfcbfcb48f3a5e006fd5bbf7f94d744e6ee",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/8bf48dfcbfcb48f3a5e006fd5bbf7f94d744e6ee"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-1/pour_water_from_a_kettle_into_a_cup_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "193b1960a1fb9e8ac98becb8f27bdfec2637279a",
+      "size": 733883,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/193b1960a1fb9e8ac98becb8f27bdfec2637279a"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-1/pour_water_from_a_kettle_into_a_cup_no_sound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f89456956dc863d96f56783caa11c608b8419b0",
+      "size": 1348727,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4f89456956dc863d96f56783caa11c608b8419b0"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5eb5a1c5a3f4d58eb575eb69fde58f4abfc66ed6",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/5eb5a1c5a3f4d58eb575eb69fde58f4abfc66ed6"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-2/wipe_a_table_with_an_eraser_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d272be01a66fd6effa25a79c754aab36a8371b1",
+      "size": 785476,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8d272be01a66fd6effa25a79c754aab36a8371b1"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-2/wipe_a_table_with_an_eraser_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bae1d81232889a797897fd4f9815202b29f5c36",
+      "size": 1423119,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/6bae1d81232889a797897fd4f9815202b29f5c36"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1e5642c2d6aa33bdc24ffa14b35c9416e9181ff",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/c1e5642c2d6aa33bdc24ffa14b35c9416e9181ff"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-3/wipe_a_monitor_with_a_cloth_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f31365af117576095cbfddf3548094b892c3c908",
+      "size": 1252500,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/f31365af117576095cbfddf3548094b892c3c908"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-3/wipe_a_monitor_with_a_cloth_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec498f0735613a26f476cd1876e735ec880c253f",
+      "size": 1714276,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/ec498f0735613a26f476cd1876e735ec880c253f"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68d8d0eb75425a88472186dbd4fdbf02ed6621f9",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/68d8d0eb75425a88472186dbd4fdbf02ed6621f9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-4/use_a_garden_tool_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79af9734e15f45cec9b507e214af14d3b68fa24c",
+      "size": 616251,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/79af9734e15f45cec9b507e214af14d3b68fa24c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-4/use_a_garden_tool_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59738dbf5f0d8265be8faeaff54d397681f1d47d",
+      "size": 1499263,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/59738dbf5f0d8265be8faeaff54d397681f1d47d"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a097703ce8e3984abf0adf7541f43b4ebc154c4",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/7a097703ce8e3984abf0adf7541f43b4ebc154c4"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-5/use_a_duster_to_dust_the_desk_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5edd099a6a9b36927b031604356c25c9e5faed4b",
+      "size": 866399,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/5edd099a6a9b36927b031604356c25c9e5faed4b"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-5/use_a_duster_to_dust_the_desk_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ffd79c483a3f6ef181cdb9f1736f55ba59e6d56",
+      "size": 2350203,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/3ffd79c483a3f6ef181cdb9f1736f55ba59e6d56"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca19b6f7936d7cb2d1c6de9ccc285a71dd18681c",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/ca19b6f7936d7cb2d1c6de9ccc285a71dd18681c"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-6/wipe_table_with_cloth_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c9005fc343103b068eeb0bba7793fce491893f9",
+      "size": 1097649,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/0c9005fc343103b068eeb0bba7793fce491893f9"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-6/wipe_table_with_cloth_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f13b411731c0d1848d0c5008b0e89ea68a8e424f",
+      "size": 1831044,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/f13b411731c0d1848d0c5008b0e89ea68a8e424f"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3759a509c6b362081ca538aa0978ec354a2402ad",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/3759a509c6b362081ca538aa0978ec354a2402ad"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-7/click_a_mouse_egocentric.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9e6197ed8d74aac61f478588fde6196b21706cd",
+      "size": 293140,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/a9e6197ed8d74aac61f478588fde6196b21706cd"
+    },
+    {
+      "path": "data_viewer/static/data/videos/tool-use/task-7/click_a_mouse_g1_nosound.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d88fd1aef7c22dbe56496a5f447151279a9f07a8",
+      "size": 932807,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/d88fd1aef7c22dbe56496a5f447151279a9f07a8"
+    },
+    {
+      "path": "data_viewer/static/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e61817d69317ba82ba27a516f0e38e4187846970",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/e61817d69317ba82ba27a516f0e38e4187846970"
+    },
+    {
+      "path": "data_viewer/static/images/favicon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46c12b413e1806a50cd053b4d04abdbcd397e283",
+      "size": 232,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/46c12b413e1806a50cd053b4d04abdbcd397e283"
+    },
+    {
+      "path": "file",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c322d77d445cd833f800614a431eb149a1264606",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/c322d77d445cd833f800614a431eb149a1264606"
+    },
+    {
+      "path": "file/humanoid_everyday_arxiv.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74120fdd95826ec2a993ee90750b4c4e2e0fc251",
+      "size": 3657434,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/74120fdd95826ec2a993ee90750b4c4e2e0fc251"
+    },
+    {
+      "path": "index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aa7b12fd2d11573c2b372303d4363e54e69c750",
+      "size": 20446,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8aa7b12fd2d11573c2b372303d4363e54e69c750"
+    },
+    {
+      "path": "static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b9cfd283669e1a9a2ef541c22e8abee87e9dbfd",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/8b9cfd283669e1a9a2ef541c22e8abee87e9dbfd"
+    },
+    {
+      "path": "static/css",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1a96990dd22b465cdc2272549a92716a50c62ea",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/a1a96990dd22b465cdc2272549a92716a50c62ea"
+    },
+    {
+      "path": "static/css/bulma-carousel.min.css",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4d4b7d103e0013f64e4dedd2ad0b2947cc0d11a5",
+      "size": 3645,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4d4b7d103e0013f64e4dedd2ad0b2947cc0d11a5"
+    },
+    {
+      "path": "static/css/bulma-slider.min.css",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "09b4aeb2fb19d7d883a0b01cb1982cb382992f95",
+      "size": 13782,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/09b4aeb2fb19d7d883a0b01cb1982cb382992f95"
+    },
+    {
+      "path": "static/css/bulma.css.map.txt",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ed3a9d377ba3c30e6eb8b2a35e08e8dc814a0725",
+      "size": 96528,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/ed3a9d377ba3c30e6eb8b2a35e08e8dc814a0725"
+    },
+    {
+      "path": "static/css/bulma.min.css",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "24c322c7c0c2ff01757759e02e097ee9c856dfc2",
+      "size": 204030,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/24c322c7c0c2ff01757759e02e097ee9c856dfc2"
+    },
+    {
+      "path": "static/css/fontawesome.all.min.css",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "656a50745f7224b3eca827869677851c705b26c9",
+      "size": 59344,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/656a50745f7224b3eca827869677851c705b26c9"
+    },
+    {
+      "path": "static/css/index.css",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "dff1a488ca49660c176ef4d1150f0900d9962af0",
+      "size": 4403,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/dff1a488ca49660c176ef4d1150f0900d9962af0"
+    },
+    {
+      "path": "static/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "781cce1a5513a82cba1a96ebba58fa3aba5f0bcd",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/781cce1a5513a82cba1a96ebba58fa3aba5f0bcd"
+    },
+    {
+      "path": "static/images/arxiv.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e60f635739993fa0a64bbd2fdaf8458ad87780a",
+      "size": 874,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/0e60f635739993fa0a64bbd2fdaf8458ad87780a"
+    },
+    {
+      "path": "static/images/block-2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b29c5fd5170607c5af7080c7f7ea1eb0b34c5bed",
+      "size": 1168305,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/b29c5fd5170607c5af7080c7f7ea1eb0b34c5bed"
+    },
+    {
+      "path": "static/images/colab.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfcd5015ec67b4404047227403eb515a14b9a206",
+      "size": 1060,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/bfcd5015ec67b4404047227403eb515a14b9a206"
+    },
+    {
+      "path": "static/images/datacollection.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8092a4a709fc5345477fdb586e40aa23cea4b5d2",
+      "size": 65439,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8092a4a709fc5345477fdb586e40aa23cea4b5d2"
+    },
+    {
+      "path": "static/images/datacollection.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "922f073e878bd468dd4d154c24a1fe958abbc8ad",
+      "size": 155418,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/922f073e878bd468dd4d154c24a1fe958abbc8ad"
+    },
+    {
+      "path": "static/images/espresso-and-latte.jpeg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b4ceca93477054dca87f7e34a7eca35e1e330fa",
+      "size": 220860,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/2b4ceca93477054dca87f7e34a7eca35e1e330fa"
+    },
+    {
+      "path": "static/images/experiments.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9d1fc2694402f2c5cbde8840995febe88e30d42",
+      "size": 501592,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/f9d1fc2694402f2c5cbde8840995febe88e30d42"
+    },
+    {
+      "path": "static/images/humanoid_prior_ablation.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de092810b86b3bfca469d986aa73acf87b9eebe8",
+      "size": 77626,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/de092810b86b3bfca469d986aa73acf87b9eebe8"
+    },
+    {
+      "path": "static/images/intervention_eval.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a73ff340e08813c4a9f64e60cb186222dd4d9d2",
+      "size": 140943,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/9a73ff340e08813c4a9f64e60cb186222dd4d9d2"
+    },
+    {
+      "path": "static/images/operation.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc837fbf8259598c7a02cc7ea7a04096c231aa8b",
+      "size": 17961,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/cc837fbf8259598c7a02cc7ea7a04096c231aa8b"
+    },
+    {
+      "path": "static/images/operation.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f036f4369226f07acd6ec471904ea7682e3ee51",
+      "size": 13932,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/3f036f4369226f07acd6ec471904ea7682e3ee51"
+    },
+    {
+      "path": "static/images/pdf.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aef2cb7cab1b65573f035015dd3635e2af32876e",
+      "size": 1808,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/aef2cb7cab1b65573f035015dd3635e2af32876e"
+    },
+    {
+      "path": "static/images/platform.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e6276c9732633c4b07bffce27881135b14a21d3",
+      "size": 959745,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4e6276c9732633c4b07bffce27881135b14a21d3"
+    },
+    {
+      "path": "static/images/results.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c60a38c6a808b2eb1171986a0d0b9a6afcd99505",
+      "size": 329511,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c60a38c6a808b2eb1171986a0d0b9a6afcd99505"
+    },
+    {
+      "path": "static/images/task_distribution.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0304e12256c4b15d616d7bbf155753d82d33672",
+      "size": 440466,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/e0304e12256c4b15d616d7bbf155753d82d33672"
+    },
+    {
+      "path": "static/images/teaser.svg",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ba8db0763fc1a29fcba7dc1a314a0018ab25407d",
+      "size": 316437,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/ba8db0763fc1a29fcba7dc1a314a0018ab25407d"
+    },
+    {
+      "path": "static/images/youtube.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "953b63f34c2a3bb94dd1b152faea08e0c9b2bdda",
+      "size": 450,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/953b63f34c2a3bb94dd1b152faea08e0c9b2bdda"
+    },
+    {
+      "path": "static/js",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abf6d584bf89dbec72f35561630d3973bda9e0cc",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/abf6d584bf89dbec72f35561630d3973bda9e0cc"
+    },
+    {
+      "path": "static/js/bulma-carousel.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "229edba242bb190698662cdce6bdacde9f0769fe",
+      "size": 82823,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/229edba242bb190698662cdce6bdacde9f0769fe"
+    },
+    {
+      "path": "static/js/bulma-carousel.min.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5fff0695f00cf9da60dd87aa72c51367b00e92ff",
+      "size": 40723,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/5fff0695f00cf9da60dd87aa72c51367b00e92ff"
+    },
+    {
+      "path": "static/js/bulma-slider.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c6718de5c5ae59d2c22141a147f5afba41af9cbb",
+      "size": 16404,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c6718de5c5ae59d2c22141a147f5afba41af9cbb"
+    },
+    {
+      "path": "static/js/bulma-slider.min.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7e62685763cf7668cfa8857fac0b27af2c277286",
+      "size": 6926,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/7e62685763cf7668cfa8857fac0b27af2c277286"
+    },
+    {
+      "path": "static/js/fontawesome.all.min.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9ee22fdb7753983bae3986b2436bdd167730cd5b",
+      "size": 1194960,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/9ee22fdb7753983bae3986b2436bdd167730cd5b"
+    },
+    {
+      "path": "static/umi-on-legs.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "284eb75cad7ee9794a9ad33370745968b390e95e",
+      "size": 5057804,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/284eb75cad7ee9794a9ad33370745968b390e95e"
+    },
+    {
+      "path": "static/videos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fbf33163a0c5f146abaa38b94faa7c6c07dae563",
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/trees/fbf33163a0c5f146abaa38b94faa7c6c07dae563"
+    },
+    {
+      "path": "static/videos/teaser.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e009903a7f24365104ddb45b8ee0644b249162bc",
+      "size": 28396700,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/e009903a7f24365104ddb45b8ee0644b249162bc"
+    },
+    {
+      "path": "static/videos/teaser_mobile.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f64cb4f269c0d457e743ee0d1923f510dee9afa3",
+      "size": 11944120,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/f64cb4f269c0d457e743ee0d1923f510dee9afa3"
+    },
+    {
+      "path": "static/videos/video1-cropped.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ba7eb5a91de8580613ed09748b71be6e423486",
+      "size": 957921,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/19ba7eb5a91de8580613ed09748b71be6e423486"
+    },
+    {
+      "path": "static/videos/video1-ezgif.com-crop.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee4b5e49993a310f1f921ab388b4e56b9b372b8a",
+      "size": 1510833,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/ee4b5e49993a310f1f921ab388b4e56b9b372b8a"
+    },
+    {
+      "path": "static/videos/video1.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d3ce12d54974ad20fec57e9878c208900521baa",
+      "size": 1516736,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/2d3ce12d54974ad20fec57e9878c208900521baa"
+    },
+    {
+      "path": "static/videos/video2-ezgif.com-crop.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0740480968587503422f11b79b6d14fe18771a55",
+      "size": 1778641,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/0740480968587503422f11b79b6d14fe18771a55"
+    },
+    {
+      "path": "static/videos/video2.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8b30d3984817442289876ccc21127b2793e3ebf",
+      "size": 1779400,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/c8b30d3984817442289876ccc21127b2793e3ebf"
+    },
+    {
+      "path": "static/videos/video3-ezgif.com-crop.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14e62011f0fe8e7a63b1bb297d80946984bd1821",
+      "size": 1901450,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/14e62011f0fe8e7a63b1bb297d80946984bd1821"
+    },
+    {
+      "path": "static/videos/video3.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2289682c08da2255ed8ccb72afaa4790d3c32fd1",
+      "size": 1902165,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/2289682c08da2255ed8ccb72afaa4790d3c32fd1"
+    },
+    {
+      "path": "static/videos/video4-ezgif.com-crop.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40c0c1a0255e21d516ae2281d0dd2a0e09eb542f",
+      "size": 1691489,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/40c0c1a0255e21d516ae2281d0dd2a0e09eb542f"
+    },
+    {
+      "path": "static/videos/video4.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50bfb005a39b597364bc3760639d75e9b71a4643",
+      "size": 1692243,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/50bfb005a39b597364bc3760639d75e9b71a4643"
+    },
+    {
+      "path": "static/videos/video5-ezgif.com-crop.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e580ea0d000eb38101b068044c66189d5182c5de",
+      "size": 1810553,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/e580ea0d000eb38101b068044c66189d5182c5de"
+    },
+    {
+      "path": "static/videos/video5.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f916fc677cc75d4b65bf2f7742b17dffd095ec4b",
+      "size": 1811235,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/f916fc677cc75d4b65bf2f7742b17dffd095ec4b"
+    },
+    {
+      "path": "static/videos/video6-ezgif.com-crop.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ca45239ba158fe1265e41edaa9a1fd6da17179b",
+      "size": 2000233,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/8ca45239ba158fe1265e41edaa9a1fd6da17179b"
+    },
+    {
+      "path": "static/videos/video6.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4be5fd4bf26a92eef88c0d1e87146a9e1a52274b",
+      "size": 2000868,
+      "url": "https://api.github.com/repos/HumanoidEveryday/humanoideveryday.github.io/git/blobs/4be5fd4bf26a92eef88c0d1e87146a9e1a52274b"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,1 @@
+The robotic arm opens the upper drawer, picks up the gray rectangular block and places it inside, then closes the drawer with the block inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

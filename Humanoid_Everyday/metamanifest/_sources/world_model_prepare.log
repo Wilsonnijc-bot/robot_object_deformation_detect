@@ -1,0 +1,4086 @@
+{
+  "key": "he_pick-place-4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-4__pick_up_an_air_purify_spray_and_put_it_inside_a_container/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-4__pick_up_an_air_purify_spray_and_put_it_inside_a_container/third_person/original/first_frame.png",
+  "frame_count": 358,
+  "fps": 29.91643454038997,
+  "frame_stride": 2,
+  "sample_count": 179,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-4/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-4/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 356,
+      "sample_count": 51
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_pick-place-5",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/original/first_frame.png",
+  "frame_count": 455,
+  "fps": 30.000659355150663,
+  "frame_stride": 2,
+  "sample_count": 228,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-5/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-5/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-5/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-5/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 454,
+      "sample_count": 36
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_pick-place-7",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-7__stack_a_rolls_of_paper_towel_on_top_of_the_other/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-7__stack_a_rolls_of_paper_towel_on_top_of_the_other/third_person/original/first_frame.png",
+  "frame_count": 482,
+  "fps": 30.000622419552272,
+  "frame_stride": 2,
+  "sample_count": 241,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-7/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-7/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-7/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-7/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 480,
+      "sample_count": 49
+    }
+  ],
+  "native_dimensions": [
+    448,
+    960
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_pick-place-6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-6__pick_a_3d_printing_filament_and_put_it_inside_the_container/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/pick-place-6__pick_a_3d_printing_filament_and_put_it_inside_the_container/third_person/original/first_frame.png",
+  "frame_count": 483,
+  "fps": 30.000621130872275,
+  "frame_stride": 2,
+  "sample_count": 242,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-6/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-6/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-6/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 482,
+      "sample_count": 50
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_tool-use-1",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-1__pour_water_from_a_kettle_into_a_cup/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-1__pour_water_from_a_kettle_into_a_cup/third_person/original/first_frame.png",
+  "frame_count": 449,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 225,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-1/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-1/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-1/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-1/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 448,
+      "sample_count": 33
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_tool-use-2",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-2__wipe_a_table_with_an_eraser/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-2__wipe_a_table_with_an_eraser/third_person/original/first_frame.png",
+  "frame_count": 481,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 241,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-2/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-2/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-2/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-2/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 480,
+      "sample_count": 49
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_tool-use-4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-4__use_a_garden_tool/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-4__use_a_garden_tool/third_person/original/first_frame.png",
+  "frame_count": 500,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 250,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-4/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-4/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-4/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 498,
+      "sample_count": 58
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_tool-use-3",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-3__wipe_a_monitor_with_a_cloth/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-3__wipe_a_monitor_with_a_cloth/third_person/original/first_frame.png",
+  "frame_count": 579,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 290,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-3/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-3/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-3/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-3/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-3/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 578,
+      "sample_count": 34
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_tool-use-6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-6__wipe_table_with_cloth/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-6__wipe_table_with_cloth/third_person/original/first_frame.png",
+  "frame_count": 331,
+  "fps": 29.71719287745025,
+  "frame_stride": 2,
+  "sample_count": 166,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-6/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-6/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 330,
+      "sample_count": 38
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_tool-use-5",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-5__use_a_duster_to_dust_the_desk/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-5__use_a_duster_to_dust_the_desk/third_person/original/first_frame.png",
+  "frame_count": 432,
+  "fps": 29.930715935334874,
+  "frame_stride": 2,
+  "sample_count": 216,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-5/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-5/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-5/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-5/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 430,
+      "sample_count": 24
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_tool-use-7",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-7__click_a_mouse/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/tool-use-7__click_a_mouse/third_person/original/first_frame.png",
+  "frame_count": 311,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 156,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-7/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-7/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-7/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 310,
+      "sample_count": 28
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_articulated-1",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-1__rotate_chair/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-1__rotate_chair/third_person/original/first_frame.png",
+  "frame_count": 534,
+  "fps": 29.94392523364486,
+  "frame_stride": 2,
+  "sample_count": 267,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-1/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-1/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-1/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-1/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-1/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 532,
+      "sample_count": 11
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_articulated-2",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-2__compress_liquid_hand_soap/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-2__compress_liquid_hand_soap/third_person/original/first_frame.png",
+  "frame_count": 401,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 201,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-2/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-2/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-2/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-2/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 400,
+      "sample_count": 9
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_articulated-3",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/original/first_frame.png",
+  "frame_count": 467,
+  "fps": 29.935897435897434,
+  "frame_stride": 2,
+  "sample_count": 234,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-3/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-3/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-3/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-3/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 466,
+      "sample_count": 42
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_articulated-4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-4__compress_air_pumper/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-4__compress_air_pumper/third_person/original/first_frame.png",
+  "frame_count": 464,
+  "fps": 30.00064656565874,
+  "frame_stride": 2,
+  "sample_count": 232,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-4/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-4/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-4/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 462,
+      "sample_count": 40
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_articulated-6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-6__press_light_switch/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-6__press_light_switch/third_person/original/first_frame.png",
+  "frame_count": 278,
+  "fps": 30.00107917550991,
+  "frame_stride": 2,
+  "sample_count": 139,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-6/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-6/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 276,
+      "sample_count": 11
+    }
+  ],
+  "native_dimensions": [
+    448,
+    960
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_articulated-5",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-5__turn_on_faucet_handle/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-5__turn_on_faucet_handle/third_person/original/first_frame.png",
+  "frame_count": 364,
+  "fps": 30.00082419846699,
+  "frame_stride": 2,
+  "sample_count": 182,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-5/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-5/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-5/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 362,
+      "sample_count": 54
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_articulated-7",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/original/first_frame.png",
+  "frame_count": 144,
+  "fps": 29.782833505687694,
+  "frame_stride": 2,
+  "sample_count": 72,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-7/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-7/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 142,
+      "sample_count": 8
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-2",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-2__place_soldering_gun_in_base/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-2__place_soldering_gun_in_base/third_person/original/first_frame.png",
+  "frame_count": 598,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 299,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-2/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-2/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-2/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-2/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-2/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 596,
+      "sample_count": 43
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-1",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/original/first_frame.png",
+  "frame_count": 927,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 464,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 894,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1/sheet_008.jpg",
+      "first_frame": 896,
+      "last_frame": 926,
+      "sample_count": 16
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-3",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-3__align_stack_of_books/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-3__align_stack_of_books/third_person/original/first_frame.png",
+  "frame_count": 383,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 192,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-3/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-3/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-3/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/original/first_frame.png",
+  "frame_count": 629,
+  "fps": 30.008778402585175,
+  "frame_stride": 2,
+  "sample_count": 315,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-4/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-4/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-4/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-4/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 628,
+      "sample_count": 59
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-6__press_start_boiling_button/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-6__press_start_boiling_button/third_person/original/first_frame.png",
+  "frame_count": 364,
+  "fps": 30.00082419846699,
+  "frame_stride": 2,
+  "sample_count": 182,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-6/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-6/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 362,
+      "sample_count": 54
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-7",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-7__unplug_a_charger/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-7__unplug_a_charger/third_person/original/first_frame.png",
+  "frame_count": 338,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 169,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-7/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-7/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-7/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 336,
+      "sample_count": 41
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-8",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-8__stack_paper_towel_rolls/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-8__stack_paper_towel_rolls/third_person/original/first_frame.png",
+  "frame_count": 482,
+  "fps": 30.000622419552272,
+  "frame_stride": 2,
+  "sample_count": 241,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-8/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-8/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-8/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-8/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 480,
+      "sample_count": 49
+    }
+  ],
+  "native_dimensions": [
+    448,
+    960
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_human-robot-1",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-1__hand_over_emotional_support_dumpling/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-1__hand_over_emotional_support_dumpling/third_person/original/first_frame.png",
+  "frame_count": 394,
+  "fps": 29.924050632911392,
+  "frame_stride": 2,
+  "sample_count": 197,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-1/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-1/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-1/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-1/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 392,
+      "sample_count": 5
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_high-precision-5",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-5__insert_flower_into_vase/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/high-precision-5__insert_flower_into_vase/third_person/original/first_frame.png",
+  "frame_count": 2467,
+  "fps": 29.97569866342649,
+  "frame_stride": 2,
+  "sample_count": 1234,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 894,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_008.jpg",
+      "first_frame": 896,
+      "last_frame": 1022,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_009.jpg",
+      "first_frame": 1024,
+      "last_frame": 1150,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_010.jpg",
+      "first_frame": 1152,
+      "last_frame": 1278,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_011.jpg",
+      "first_frame": 1280,
+      "last_frame": 1406,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_012.jpg",
+      "first_frame": 1408,
+      "last_frame": 1534,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_013.jpg",
+      "first_frame": 1536,
+      "last_frame": 1662,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_014.jpg",
+      "first_frame": 1664,
+      "last_frame": 1790,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_015.jpg",
+      "first_frame": 1792,
+      "last_frame": 1918,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_016.jpg",
+      "first_frame": 1920,
+      "last_frame": 2046,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_017.jpg",
+      "first_frame": 2048,
+      "last_frame": 2174,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_018.jpg",
+      "first_frame": 2176,
+      "last_frame": 2302,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_019.jpg",
+      "first_frame": 2304,
+      "last_frame": 2430,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5/sheet_020.jpg",
+      "first_frame": 2432,
+      "last_frame": 2466,
+      "sample_count": 18
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_human-robot-2",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/original/first_frame.png",
+  "frame_count": 447,
+  "fps": 29.933035714285715,
+  "frame_stride": 2,
+  "sample_count": 224,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-2/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-2/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-2/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-2/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 446,
+      "sample_count": 32
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_human-robot-3",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/original/first_frame.png",
+  "frame_count": 279,
+  "fps": 29.892857142857142,
+  "frame_stride": 2,
+  "sample_count": 140,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-3/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-3/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-3/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 278,
+      "sample_count": 12
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_human-robot-4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/original/first_frame.png",
+  "frame_count": 327,
+  "fps": 29.908536585365855,
+  "frame_stride": 2,
+  "sample_count": 164,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-4/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-4/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 326,
+      "sample_count": 36
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_human-robot-6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-6__hand_over_flower/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-6__hand_over_flower/third_person/original/first_frame.png",
+  "frame_count": 521,
+  "fps": 29.942528735632184,
+  "frame_stride": 2,
+  "sample_count": 261,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-6/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-6/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-6/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-6/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 520,
+      "sample_count": 5
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_human-robot-7",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/original/first_frame.png",
+  "frame_count": 307,
+  "fps": 30.000977230528683,
+  "frame_stride": 2,
+  "sample_count": 154,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-7/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-7/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-7/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 306,
+      "sample_count": 26
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_human-robot-5",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-5__handover_dumpling/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/human-robot-5__handover_dumpling/third_person/original/first_frame.png",
+  "frame_count": 1250,
+  "fps": 29.952076677316295,
+  "frame_stride": 2,
+  "sample_count": 625,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 894,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_008.jpg",
+      "first_frame": 896,
+      "last_frame": 1022,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_009.jpg",
+      "first_frame": 1024,
+      "last_frame": 1150,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5/sheet_010.jpg",
+      "first_frame": 1152,
+      "last_frame": 1248,
+      "sample_count": 49
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_deformable-1",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/original/first_frame.png",
+  "frame_count": 303,
+  "fps": 30.000990131687516,
+  "frame_stride": 2,
+  "sample_count": 152,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-1/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-1/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-1/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 302,
+      "sample_count": 24
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_deformable-3",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/original/first_frame.png",
+  "frame_count": 399,
+  "fps": 29.925,
+  "frame_stride": 2,
+  "sample_count": 200,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-3/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-3/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-3/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-3/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 398,
+      "sample_count": 8
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_deformable-4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-4__fold_toolkit/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-4__fold_toolkit/third_person/original/first_frame.png",
+  "frame_count": 265,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 133,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-4/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-4/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 264,
+      "sample_count": 5
+    }
+  ],
+  "native_dimensions": [
+    320,
+    568
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_deformable-2",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-2__fold_towel/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-2__fold_towel/third_person/original/first_frame.png",
+  "frame_count": 829,
+  "fps": 29.96385542168675,
+  "frame_stride": 2,
+  "sample_count": 415,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 828,
+      "sample_count": 31
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_deformable-5",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/original/first_frame.png",
+  "frame_count": 345,
+  "fps": 30.000869590422912,
+  "frame_stride": 2,
+  "sample_count": 173,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-5/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-5/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-5/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 344,
+      "sample_count": 45
+    }
+  ],
+  "native_dimensions": [
+    592,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_deformable-6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/original/first_frame.png",
+  "frame_count": 427,
+  "fps": 29.780309194467048,
+  "frame_stride": 2,
+  "sample_count": 214,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-6/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-6/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-6/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 426,
+      "sample_count": 22
+    }
+  ],
+  "native_dimensions": [
+    720,
+    1280
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_loco-manip-2",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-2__pick_up_kettle_place_on_base_and_turn_on/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-2__pick_up_kettle_place_on_base_and_turn_on/third_person/original/first_frame.png",
+  "frame_count": 1239,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 620,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 894,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_008.jpg",
+      "first_frame": 896,
+      "last_frame": 1022,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_009.jpg",
+      "first_frame": 1024,
+      "last_frame": 1150,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2/sheet_010.jpg",
+      "first_frame": 1152,
+      "last_frame": 1238,
+      "sample_count": 44
+    }
+  ],
+  "native_dimensions": [
+    1440,
+    1920
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_loco-manip-1",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/original/first_frame.png",
+  "frame_count": 1092,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 546,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 894,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_008.jpg",
+      "first_frame": 896,
+      "last_frame": 1022,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1/sheet_009.jpg",
+      "first_frame": 1024,
+      "last_frame": 1090,
+      "sample_count": 34
+    }
+  ],
+  "native_dimensions": [
+    1440,
+    1920
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_loco-manip-4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-4__walk_to_gate_button_and_open_gate/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-4__walk_to_gate_button_and_open_gate/third_person/original/first_frame.png",
+  "frame_count": 494,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 247,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-4/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-4/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-4/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 492,
+      "sample_count": 55
+    }
+  ],
+  "native_dimensions": [
+    1920,
+    1440
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_loco-manip-3",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-3__throw_paper_to_trashcan/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-3__throw_paper_to_trashcan/third_person/original/first_frame.png",
+  "frame_count": 816,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 408,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 814,
+      "sample_count": 24
+    }
+  ],
+  "native_dimensions": [
+    1440,
+    1920
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_loco-manip-5",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-5__pick_up_container_walk_and_stick_to_whiteboard/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-5__pick_up_container_walk_and_stick_to_whiteboard/third_person/original/first_frame.png",
+  "frame_count": 792,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 396,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 766,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5/sheet_007.jpg",
+      "first_frame": 768,
+      "last_frame": 790,
+      "sample_count": 12
+    }
+  ],
+  "native_dimensions": [
+    1440,
+    1920
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_loco-manip-6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-6__hold_whiteboard_and_walk/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-6__hold_whiteboard_and_walk/third_person/original/first_frame.png",
+  "frame_count": 655,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 328,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-6/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-6/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-6/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-6/sheet_005.jpg",
+      "first_frame": 512,
+      "last_frame": 638,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-6/sheet_006.jpg",
+      "first_frame": 640,
+      "last_frame": 654,
+      "sample_count": 8
+    }
+  ],
+  "native_dimensions": [
+    1920,
+    1440
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_1",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/1/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/1/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_1/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_10",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/10/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/10/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_10/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_100",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/100/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/100/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_100/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "he_loco-manip-7",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-7__walk_to_fire_extinguisher_and_open_door/third_person/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/loco-manip-7__walk_to_fire_extinguisher_and_open_door/third_person/original/first_frame.png",
+  "frame_count": 511,
+  "fps": 30.0,
+  "frame_stride": 2,
+  "sample_count": 256,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-7/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 126,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-7/sheet_002.jpg",
+      "first_frame": 128,
+      "last_frame": 254,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-7/sheet_003.jpg",
+      "first_frame": 256,
+      "last_frame": 382,
+      "sample_count": 64
+    },
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-7/sheet_004.jpg",
+      "first_frame": 384,
+      "last_frame": 510,
+      "sample_count": 64
+    }
+  ],
+  "native_dimensions": [
+    1440,
+    1920
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_12",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/12/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/12/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_12/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_13",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/13/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/13/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_13/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_14",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/14/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/14/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_14/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_15",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/15/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/15/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_15/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_16",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/16/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/16/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_16/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_17",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/17/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/17/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_17/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_18",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/18/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/18/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_18/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_19",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/19/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/19/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_19/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_2",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/2/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/2/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_2/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_20",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/20/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/20/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_20/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_21",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/21/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/21/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_21/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_23",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/23/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/23/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_23/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_24",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/24/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/24/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_24/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_25",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/25/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/25/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_25/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_26",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/26/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/26/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_26/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_27",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/27/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/27/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_27/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_29",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/29/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/29/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_29/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_3",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/3/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/3/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_3/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_30",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/30/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/30/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_30/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_31",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/31/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/31/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_31/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_32",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/32/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/32/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_32/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_33",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/33/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/33/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_33/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_34",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/34/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/34/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_34/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_35",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/35/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/35/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_35/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_36",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/36/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/36/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_36/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_37",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/37/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/37/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_37/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_38",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/38/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/38/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_38/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_39",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/39/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/39/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_39/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_4",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/4/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/4/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_4/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_40",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/40/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/40/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_40/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_41",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/41/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/41/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_41/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_42",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/42/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/42/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_42/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_43",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/43/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/43/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_43/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_45",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/45/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/45/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_45/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_46",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/46/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/46/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_46/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_47",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/47/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/47/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_47/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_48",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/48/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/48/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_48/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_49",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/49/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/49/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_49/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_50",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/50/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/50/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_50/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_51",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/51/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/51/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_51/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_52",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/52/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/52/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_52/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_53",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/53/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/53/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_53/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_54",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/54/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/54/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_54/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_55",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/55/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/55/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_55/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_56",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/56/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/56/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_56/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_57",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/57/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/57/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_57/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_58",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/58/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/58/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_58/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_59",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/59/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/59/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_59/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_6",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/6/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/6/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_6/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_61",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/61/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/61/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_61/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_60",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/60/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/60/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_60/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_63",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/63/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/63/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_63/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_62",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/62/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/62/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_62/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_64",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/64/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/64/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_64/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_65",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/65/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/65/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_65/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_66",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/66/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/66/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_66/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_67",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/67/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/67/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_67/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_68",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/68/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/68/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_68/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_69",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/69/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/69/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_69/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_70",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/70/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/70/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_70/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_71",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/71/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/71/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_71/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_72",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/72/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/72/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_72/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_73",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/73/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/73/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_73/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_74",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/74/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/74/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_74/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_75",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/75/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/75/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_75/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_76",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/76/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/76/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_76/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_77",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/77/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/77/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_77/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_78",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/78/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/78/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_78/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_79",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/79/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/79/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_79/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_80",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/80/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/80/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_80/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_81",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/81/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/81/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_81/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_83",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/83/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/83/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_83/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_82",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/82/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/82/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_82/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_84",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/84/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/84/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_84/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_85",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/85/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/85/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_85/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_86",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/86/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/86/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_86/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_88",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/88/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/88/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_88/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_89",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/89/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/89/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_89/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_9",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/9/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/9/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_9/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_90",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/90/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/90/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_90/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_91",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/91/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/91/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_91/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_92",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/92/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/92/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_92/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_93",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/93/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/93/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_93/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_94",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/94/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/94/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_94/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_95",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/95/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/95/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_95/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_96",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/96/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/96/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_96/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_97",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/97/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/97/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_97/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_99",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/99/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/99/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_99/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}
+{
+  "key": "gr1_98",
+  "source_video": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/98/original/original.mp4",
+  "source_first_frame": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/98/original/first_frame.png",
+  "frame_count": 120,
+  "fps": 20.0,
+  "frame_stride": 2,
+  "sample_count": 60,
+  "sheets": [
+    {
+      "path": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_98/sheet_001.jpg",
+      "first_frame": 0,
+      "last_frame": 118,
+      "sample_count": 60
+    }
+  ],
+  "native_dimensions": [
+    1280,
+    800
+  ],
+  "native_detail_frames": []
+}

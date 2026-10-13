@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "case": "range",
+      "byte_identical": true,
+      "validated_original_skipped_without_network": true,
+      "download_timestamp": "2026-10-13T15:44:29.268444+00:00",
+      "reused": false,
+      "resumed": true,
+      "http_etag": "\"fixture-v1\"",
+      "http_content_length": 639318
+    },
+    {
+      "case": "ignore_range",
+      "byte_identical": true,
+      "validated_original_skipped_without_network": true,
+      "download_timestamp": "2026-10-13T15:44:29.277614+00:00",
+      "reused": false,
+      "resumed": false,
+      "http_etag": "\"fixture-v1\"",
+      "http_content_length": 639318
+    }
+  ],
+  "http_requests": [
+    {
+      "path": "/range",
+      "range": "bytes=319659-"
+    },
+    {
+      "path": "/ignore_range",
+      "range": "bytes=319659-"
+    }
+  ],
+  "passed": true
+}

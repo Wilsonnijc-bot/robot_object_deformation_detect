@@ -1,0 +1,58 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "pick-place-5",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid uses its right hand to grasp the red multimeter on the tabletop, lift it, and carry it over the open basket while its left hand remains at the basket's far rim. The right hand releases the meter into the basket and withdraws, leaving the meter settled inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/original/original.mp4",
+  "source_video_sha256": "a07e5aa5c4cfc77a8f475c124a9c61e773b9e6141188119f806bff1b3f1295bf",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/pick-place/task-5/pick_a_multi_meter_and_place_it_in_a_container_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 455,
+  "frame_count": 455,
+  "first_frame_index": 0,
+  "fps": 30.000659355150663,
+  "fps_rational": "1365000/45499",
+  "duration_seconds": 15.166333,
+  "resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2555080,
+  "video_sha256": "a07e5aa5c4cfc77a8f475c124a9c61e773b9e6141188119f806bff1b3f1295bf",
+  "first_frame_sha256": "806d908b7204c0356aef0f7cc930548c87cc392cfa62fceb16c5786644682971",
+  "observed_terminal_state": "The multimeter is released and settled inside the gray basket near its nearer wall; the right hand is empty and withdrawn, and the left hand remains at the far rim.",
+  "arm_hand_roles": {
+    "right": "Active manipulation hand: reaches to, grasps, lifts, transports, turns, and releases the red multimeter into the basket, then withdraws.",
+    "left": "Remains at the far basket rim throughout, with a small repositioning during delivery; never grasps or receives the meter. Whether the fingers actively grip or stabilize the rim is not established.",
+    "coordination": "Right hand performs the complete meter manipulation while the left hand stays at the basket rim. There is no hand-to-hand transfer or interaction with a person."
+  },
+  "uncertainties": [
+    "The left hand remains at the far basket rim, but the rim occludes some fingertips; active gripping or stabilizing force cannot be established, so the prompt describes only its visible position."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

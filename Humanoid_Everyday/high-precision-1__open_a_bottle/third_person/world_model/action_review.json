@@ -1,0 +1,201 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg",
+    "sheet_004.jpg",
+    "sheet_005.jpg",
+    "sheet_006.jpg",
+    "sheet_007.jpg",
+    "sheet_008.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 464,
+  "initial_scene": "A capped white bottle stands on the table in front of the humanoid. Both hands initially hang clear of the bottle. The camera views the robot from above its left side, with its face directed toward the table at image left.",
+  "observed_sequence": [
+    {
+      "source_frame_interval": [
+        0,
+        26
+      ],
+      "observation": "Robot and upright bottle remain still; both arms are down.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        27,
+        112
+      ],
+      "observation": "Left arm rises toward the bottle body; right arm rises with hand open above the future cap position.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        113,
+        214
+      ],
+      "observation": "Left hand closes around the bottle body and establishes its grip while the bottle remains upright at the table. Right hand remains above and clear.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        215,
+        254
+      ],
+      "observation": "Left hand lifts the bottle off the table and tilts it slightly toward the right hand; right hand approaches the cap.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        255,
+        508
+      ],
+      "observation": "Right fingers grip the cap and turn with repeated wrist/finger adjustments while left hand supports the bottle body and resists rotation.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        509,
+        548
+      ],
+      "observation": "Right hand briefly lifts away, changes its finger pose, then returns toward the cap; no detached cap is clearly established in this intermediate motion. Left hand keeps holding bottle.",
+      "confidence": "medium"
+    },
+    {
+      "source_frame_interval": [
+        549,
+        777
+      ],
+      "observation": "Right hand regrips the cap and continues repeated twisting while left hand holds the bottle steady.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        778,
+        806
+      ],
+      "observation": "Right hand separates upward from the bottle neck holding a small white cap; a visible gap opens between cap and bottle.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        807,
+        853
+      ],
+      "observation": "Both hands lower toward the table. Right hand lowers the detached cap beside the bottle and opens, leaving cap on tabletop; left hand lowers bottle.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        854,
+        883
+      ],
+      "observation": "Left hand opens and withdraws from the bottle. The released bottle tips/settles onto its side, with the small detached cap resting separately nearby.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        884,
+        926
+      ],
+      "observation": "Both hands retreat clear of the objects; left arm lowers. Bottle remains lying on its side and cap remains separate on the table.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "left": "Near-camera arm, traced from visible left shoulder through elbow to hand: grasps/lifts the bottle body, stabilizes it against right-hand cap rotation, then lowers/releases it on the table.",
+    "right": "Far-side arm, traced behind the torso to the hand above the bottle: grips/twists/regrips the cap, lifts the detached cap free, then deposits it on the table.",
+    "coordination": "Left hand supports and counterholds the bottle throughout right-hand cap manipulation; right hand handles the cap independently after separation. No hand-to-hand object transfer or person interaction occurs."
+  },
+  "anatomical_side_evidence": {
+    "description": "The cyan-edged face and front chest point toward image left. Camera sees the robot from its left side; the unobstructed near shoulder/upper arm leads to the bottle-holding hand. The opposite shoulder/forearm runs behind the torso to the cap-manipulating hand. Thus near bottle hand is anatomical left and far cap hand is anatomical right, based on body orientation/attachment rather than image hand position.",
+    "confidence": "high",
+    "evidence_frame_indices": [
+      0,
+      210,
+      238,
+      280,
+      784,
+      926
+    ]
+  },
+  "evidence_frame_indices": [
+    0,
+    210,
+    238,
+    280,
+    360,
+    480,
+    514,
+    640,
+    772,
+    784,
+    800,
+    812,
+    828,
+    840,
+    858,
+    868,
+    876,
+    886,
+    926
+  ],
+  "initial_png_inspected_at_native_resolution": true,
+  "inspection_coverage": {
+    "complete_stride_2_sequence": true,
+    "source_frame_range": [
+      0,
+      926
+    ],
+    "native_detail_frame_count": 19,
+    "native_resolution": [
+      320,
+      568
+    ],
+    "native_transition_focus": "Bottle lift; cap grip/twisting; intermediate regrip; final detached cap; cap placement; bottle release/tipping; final table state."
+  },
+  "terminal_state": "Bottle is uncapped and lies on its side on the tabletop, with detached white cap resting separately beside it. Both hands are clear; the left arm lowers at the end.",
+  "selected_execution_status": "success",
+  "uncertainties": [
+    "Exact intermediate wrist twist direction and the count of partial turns cannot be determined reliably at this resolution; final cap separation and separate table placement are visible."
+  ],
+  "annotation_discrepancies": [],
+  "video_id": "high-precision-1",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_high_precision_1",
+  "review_source_video": "Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/original/original.mp4",
+  "source_frame_count": 927,
+  "source_fps": 30.0,
+  "native_detail_frames": [
+    0,
+    210,
+    238,
+    280,
+    360,
+    480,
+    514,
+    640,
+    772,
+    784,
+    800,
+    812,
+    828,
+    840,
+    858,
+    868,
+    876,
+    886,
+    926
+  ],
+  "world_model_prompt": "The humanoid grasps the white bottle with its left hand and lifts it from the table, holding its body steady while its right hand grips and repeatedly twists the cap. The right hand lifts off the loosened cap and places it on the tabletop; the left hand lowers and releases the bottle, which comes to rest on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Opening a bottle cap with precise grip control and rotational force, demonstrating fine motor skills and torque management for secure cap removal.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 927,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "b7842a91d509d7bbeec00b3538011dd5f2dbf81594951702acdaf5498b3b7e2d",
+  "review_completed_at": "2026-10-13T17:14:25.620921+00:00"
+}

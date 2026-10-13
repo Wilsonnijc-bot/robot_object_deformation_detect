@@ -1,0 +1,61 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "deformable-3",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid steadies one edge of the jacket with its left hand while its right hand grasps the opposite side. The left hand opens clear as the right hand lifts the grasped section and folds it inward over the rest of the jacket. The right hand releases and withdraws, leaving the jacket partially folded and bunched on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/original/original.mp4",
+  "source_video_sha256": "6cff0ae3f1d8ab0fb34b3b870388284ee99bd1594f4def3fc49d413adbffa550",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/deformable/task-3/fold_a_jacket_on_the_desk_no_sound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 399,
+  "frame_count": 399,
+  "first_frame_index": 0,
+  "fps": 29.925,
+  "fps_rational": "1197/40",
+  "duration_seconds": 13.333333,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2368909,
+  "video_sha256": "6cff0ae3f1d8ab0fb34b3b870388284ee99bd1594f4def3fc49d413adbffa550",
+  "first_frame_sha256": "9df7199247a07ef070a6fedcd196e03568bbaef887b921a4d5950545cc077371",
+  "observed_terminal_state": "Jacket remains on the desk in a loose, bunched, partial fold with overlapping fabric and a sleeve/cuff still projecting toward image right. Right hand has released the lifted fabric and returned beside the garment; left hand is open and clear. No neatly squared final fold is visible.",
+  "arm_hand_roles": {
+    "right": "Primary manipulating hand: reaches to the image-left edge, grasps fabric, lifts a broad section, carries it inward over the remaining garment, releases, and withdraws.",
+    "left": "Initially contacts/steadies the image-right jacket edge near a sleeve/cuff. Opens and clears the fabric as the right hand starts lifting, then remains open beside the garment; does not receive or fold the raised section.",
+    "coordination": "The left-side contact accompanies right-hand grasp establishment, then the left fingers release clearance while the right hand performs the lift and inward fold. There is no hand-to-hand transfer or simultaneous two-edge lift."
+  },
+  "uncertainties": [
+    "The exact garment panel seized by the right fingers is obscured by the initially overlapping jacket; it is safely described as a side/section rather than a specific sleeve or collar.",
+    "Initial left finger contact is visible, but grip force and whether this contact strongly anchors the jacket cannot be determined visually."
+  ],
+  "annotation_discrepancies": [
+    "The source instruction describes proper technique and multi-step jacket folding. The visible sequence contains one broad lift and inward fold, ending with bunched fabric rather than a neatly completed multi-step fold."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,1 @@
+This task demonstrates cloth-based cleaning where the humanoid robot uses a cloth to wipe a table surface, requiring proper wiping motions, systematic coverage patterns, and effective cleaning techniques.

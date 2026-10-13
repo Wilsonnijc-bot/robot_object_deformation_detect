@@ -1,0 +1,1 @@
+This task involves handling 3D printing filament, requiring careful manipulation to avoid tangling and precise placement in a container.

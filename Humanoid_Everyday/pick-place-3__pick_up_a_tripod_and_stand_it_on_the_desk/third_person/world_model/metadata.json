@@ -1,0 +1,60 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "pick-place-3",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid uses its left hand to grasp a near tripod leg and its right hand to support the central frame. Both hands raise and rotate the tripod from its tilted position into an upright stance, guiding its spread feet onto the desk. It releases the tripod and withdraws both hands, leaving it standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/original/original.mp4",
+  "source_video_sha256": "1eb3480ff0aaafd2acceac9341fe869fbcf668f8e9529172377679877080cc15",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/pick-place/task-3/pick_up_a_tripod_and_stand_it_on_the_desk_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 525,
+  "frame_count": 525,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 17.5,
+  "resolution": {
+    "width": 568,
+    "height": 320
+  },
+  "displayed_resolution": {
+    "width": 320,
+    "height": 568
+  },
+  "codec": "h264",
+  "file_size_bytes": 1574594,
+  "video_sha256": "1eb3480ff0aaafd2acceac9341fe869fbcf668f8e9529172377679877080cc15",
+  "first_frame_sha256": "2938dcf6a71e851bf316b46c7f468d31f29f2ca567a32f5c68c069bd7d9b9b10",
+  "observed_terminal_state": "Tripod upright and unsupported on three spread feet on the desktop; both hands clear and arms lowered beside the stationary robot.",
+  "arm_hand_roles": {
+    "left": "Foreground arm grasps the near tripod leg, raises and supports it during rotation, steadies the near side as the feet contact the desk, then releases and lowers away.",
+    "right": "Farther arm takes the central tripod frame/brace, guides and stabilizes its orientation in coordination with the left hand, then releases and withdraws.",
+    "coordination": "A simultaneous two-hand lift/rotation and setting-down of one object. No hand-to-hand transfer, human assistance, or locomotion is visible."
+  },
+  "uncertainties": [
+    "Low native resolution and hand/object overlap prevent certainty about the exact individual brace or leg segment inside each grasp; the distinct near-leg and central-frame support roles and successful upright release are visible."
+  ],
+  "annotation_discrepancies": [
+    "No outcome discrepancy: the source instruction to stand the tripod upright on the desk is visibly fulfilled. The tripod is already on the desk initially; the observed action raises and rotates it there rather than transporting it from a separate location."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

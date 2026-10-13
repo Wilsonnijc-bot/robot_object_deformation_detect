@@ -1,0 +1,12 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "expected": 49,
+  "completed": 49,
+  "pending": [],
+  "completed_source_frame_count": 26585,
+  "inspected_sampled_frame_count": 13307,
+  "inspected_native_detail_frame_count": 717,
+  "distinct_dedicated_review_agents": 49,
+  "protocol": "humanoid_action_v1",
+  "cropping_or_trimming_performed": false
+}

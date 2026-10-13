@@ -1,0 +1,61 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "articulated-2",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid lowers its open right hand onto the soap dispenser's pump behind the red cup and presses the pump downward while the bottle stays upright on the table. It then lifts its hand off the pump and retracts the right arm, leaving the dispenser and cup standing in place. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/articulated-2__compress_liquid_hand_soap/third_person/original/original.mp4",
+  "source_video_sha256": "ef497f60139b80d857eecf5ff67c75b39fa9ab475c911e277b64101edbd665d7",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/articulated/task-2/compress_a_liquid_hand_soap_into_a_cup_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 401,
+  "frame_count": 401,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 13.366667,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2684173,
+  "video_sha256": "ef497f60139b80d857eecf5ff67c75b39fa9ab475c911e277b64101edbd665d7",
+  "first_frame_sha256": "fcd622c79e233d4bc77053e691b5d4c30ec2a3b33a4df375067c7219a3e563e0",
+  "observed_terminal_state": "At frame 400 the right arm is retracted with hand open, the left hand remains clear, and the pump dispenser and red cup are upright in their original tabletop positions.",
+  "arm_hand_roles": {
+    "right": "The dark articulated hand approaches palm-down, contacts and presses the soap pump, then releases contact and retracts. It does not pick up the dispenser or cup.",
+    "left": "The white articulated hand remains near the torso at image right and does not contact, support, transfer or stabilize the objects.",
+    "coordination": "Single-hand manipulation; no bimanual coordination or person interaction is visible."
+  },
+  "uncertainties": [
+    "A liquid stream, liquid quantity and delivery into the cup are not resolved at native resolution; the cup and hand partly occlude the dispenser spout.",
+    "The exact depth of pump depression and any very small repeated strokes during sustained contact cannot be determined reliably."
+  ],
+  "annotation_discrepancies": [
+    "The source describes proper liquid dispensing into a cup. The frames verify pump contact and withdrawal but do not visibly establish liquid entering the cup; the prompt therefore describes only the observed manipulation and end state."
+  ],
+  "relative_video_path": "video.mp4",
+  "relative_first_frame_path": "first_frame.png",
+  "relative_prompt_path": "actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

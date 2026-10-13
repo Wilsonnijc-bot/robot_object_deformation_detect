@@ -1,0 +1,1 @@
+The robotic arm picks up the orange carrot and places it on the purple plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

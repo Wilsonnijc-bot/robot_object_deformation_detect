@@ -1,0 +1,181 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "original_id": "14",
+  "task_id": "14",
+  "original_filename": "14.mp4",
+  "instruction": "Use the right hand to pick up red apple from yellow plate to tan bowl.",
+  "task_name": null,
+  "category": null,
+  "viewpoint": "third_person",
+  "download_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/14.mp4",
+  "repository_file_path": "gr1/14.mp4",
+  "repository": "nvidia/PhysicalAI-Robotics-GR00T-GR1",
+  "revision": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "metadata_source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/metadata.csv",
+  "official_dataset_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1",
+  "robot_model": "Fourier GR1-T2",
+  "robot_model_evidence": "Official NVIDIA dataset card",
+  "exact_task_instruction": "Use the right hand to pick up red apple from yellow plate to tan bowl.",
+  "official_gallery_url": null,
+  "download_timestamp": "2026-10-13T15:43:51.294631+00:00",
+  "download_transport": {
+    "download_timestamp": "2026-10-13T15:43:51.294631+00:00",
+    "reused": false,
+    "resumed": false,
+    "http_etag": "\"d1cc437c8b5d9e36d62cd6e1811d19534292c6efdce6b7142d35b3dcfa80069d\"",
+    "http_content_length": 1635005
+  },
+  "quality_assessment_cache_used": false,
+  "video_properties": {
+    "width": 1280,
+    "height": 800,
+    "display_width": 1280,
+    "display_height": 800,
+    "rotation_degrees": 0.0,
+    "fps": 20.0,
+    "fps_rational": "20/1",
+    "nominal_fps_rational": "20/1",
+    "duration_seconds": 6.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "video_bitrate": 2176962,
+    "frame_count": 120,
+    "sample_aspect_ratio": null,
+    "color_space": null,
+    "color_range": null,
+    "file_size_bytes": 1635005,
+    "stream_index": 0,
+    "ffprobe_raw": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1280,
+          "height": 800,
+          "coded_width": 1280,
+          "coded_height": 800,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 32,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "20/1",
+          "avg_frame_rate": "20/1",
+          "time_base": "1/10240",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 61440,
+          "duration": "6.000000",
+          "bit_rate": "2176962",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "120",
+          "extradata_size": 42,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/Users/nijiachen/Downloads/Robotvideo/NVIDIA_GR1_100/14/original/original.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "6.000000",
+        "size": "1635005",
+        "bit_rate": "2180006",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf58.29.100"
+        }
+      }
+    },
+    "sha256": "bf64693a7cd74811c81b11c6e3d6c1ae9ee5d8addf362e3d8dede705a51def77",
+    "git_blob_sha1": "0225c8c81de2fe7a6c7fddf86eae84cd4c2e01aa",
+    "decoded_frame_count": 120
+  },
+  "published_dataset_license": "CC-BY-4.0",
+  "quality": {
+    "selected_quality_source": "Original MP4 in official NVIDIA Hugging Face gr1/ repository directory",
+    "variants_considered": [
+      {
+        "source": "Hugging Face viewer previews",
+        "selected": false,
+        "assessment": "Derived viewer representations are not original assets."
+      }
+    ],
+    "quality_upgrade_verified": false,
+    "selection_explanation": "Original repository MP4 at pinned revision with publisher LFS SHA-256 verification; no re-encoding, upscaling, or interpolation."
+  },
+  "validation": {
+    "download_success": true,
+    "source_integrity_success": true,
+    "ffprobe_success": true,
+    "full_decode_success": true,
+    "validated_at": "2026-10-13T15:43:51.631638+00:00",
+    "decoded_frame_count": 120,
+    "source_integrity_evidence": {
+      "size": 1635005,
+      "sha256": "bf64693a7cd74811c81b11c6e3d6c1ae9ee5d8addf362e3d8dede705a51def77"
+    },
+    "reused_after_checksum_validation": false
+  },
+  "first_frame": {
+    "success": true,
+    "frame_index": 0,
+    "lossless_png": true,
+    "autorotation_applied": true,
+    "width": 1280,
+    "height": 800,
+    "pixel_equality_to_independent_frame_zero_decode": true,
+    "sha256": "fb152b30ab6d549ccd1b409d1eeb8edfdab3af23ec5a4d1757c0b6a3533a06e2"
+  },
+  "task_video_mapping": {
+    "confidence": "exact original annotation lookup",
+    "evidence": "CSV file_name exactly equals repository MP4 basename; never row order",
+    "annotation_available": true,
+    "semantic_content_verified": false
+  },
+  "annotation_discrepancies": [],
+  "official_gallery_associates_views": false,
+  "same_physical_demonstration_independently_verified": null,
+  "temporal_synchronization_verified": null,
+  "viewpoint_evidence": "Official NVIDIA dataset card describes third person perspective; physical camera placement is not independently verified."
+}

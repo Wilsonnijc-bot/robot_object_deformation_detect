@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "tool-use-4",
+  "task_name": "Use a garden tool",
+  "category": "Tool Use",
+  "text_description": "This task demonstrates outdoor tool usage where the humanoid robot uses a garden tool for various gardening tasks, requiring proper grip, motion control, and precision handling for effective outdoor work.",
+  "original_gallery_record": {
+    "task_id": "tool-use-4",
+    "task_name": "Use a garden tool",
+    "category": "Tool Use",
+    "text_description": "This task demonstrates outdoor tool usage where the humanoid robot uses a garden tool for various gardening tasks, requiring proper grip, motion control, and precision handling for effective outdoor work.",
+    "egocentric_video": "./static/data/videos/tool-use/task-4/use_a_garden_tool_egocentric.mp4",
+    "third_view_video": "./static/data/videos/tool-use/task-4/use_a_garden_tool_nosound.mp4",
+    "point_cloud": "./static/data/point-clouds/tool-use/task-4/pointcloud.ply",
+    "difficulty": "Advanced",
+    "duration": "45 seconds",
+    "tags": [
+      "garden-tool",
+      "outdoor",
+      "precision",
+      "force-control"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/tool-use/task-4/use_a_garden_tool_nosound.mp4",
+    "first_person": "./static/data/videos/tool-use/task-4/use_a_garden_tool_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

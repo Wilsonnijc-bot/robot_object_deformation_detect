@@ -1,0 +1,1 @@
+The robotic arm places the green cucumber-shaped object inside the blue bowl, then picks up the yellow-brown oval object and places it in the same bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

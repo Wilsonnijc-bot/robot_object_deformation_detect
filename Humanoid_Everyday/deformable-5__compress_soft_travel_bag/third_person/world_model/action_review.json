@@ -1,0 +1,125 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 173,
+  "initial_scene": "Front three-quarter view of a seated humanoid facing the table. A single dark soft rectangular travel bag with a top handle and tan patch is on the table in front of it. Both hands initially rest near the lap, clear of the bag.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 31,
+      "action": "Robot remains seated with both hands near its lap; travel bag remains upright and uncompressed on the table.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 32,
+      "end_frame": 91,
+      "action": "Both arms lift and extend forward, opening the hands above the bag. The white anatomical left hand and darker anatomical right hand approach separate areas of the top.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 92,
+      "end_frame": 143,
+      "action": "Hands descend toward the top of the bag. The left hand approaches the portion near the tan patch; the right hand approaches the opposite portion near the handle. Both prepare downward contact rather than lifting the bag.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 144,
+      "end_frame": 233,
+      "action": "Both hands press down together on separate areas of the bag, visibly reducing its height and spreading the soft sides outward against the table; pressure is held briefly.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 234,
+      "end_frame": 278,
+      "action": "The right hand lifts clear first and the left hand also rises from the bag. As pressure is released, the bag visibly regains a fuller shape without leaving the tabletop.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 279,
+      "end_frame": 344,
+      "action": "Both arms retract and hands lower toward the lap. The bag stays on the tabletop in an expanded form with its top handle visible; no storage or relocation occurs.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "right": "Darker hand attached to the robot’s anatomical right shoulder, on image left. It descends onto the top area opposite the left hand and presses down, sharing compression; it clears the bag slightly earlier during release.",
+    "left": "White hand attached to the robot’s anatomical left shoulder, on image right. It descends onto the top near the tan patch and pushes downward with the right hand, then lifts away and returns toward the lap.",
+    "coordination": "Two hands press separate top areas simultaneously to flatten the same bag. Neither hand holds the bag for transport; both release the compressive contact and withdraw. No hand-to-hand transfer or person interaction."
+  },
+  "anatomical_side_evidence": {
+    "confidence": "high",
+    "evidence": "The initial PNG shows the robot’s face and frontal torso facing toward the table/camera. Each arm is continuously visible from shoulder to hand. The white hand follows the arm attached to the shoulder on image right, establishing anatomical left; the darker hand follows the shoulder on image left, establishing anatomical right. This attachment convention remains traceable through the raised, pressing, and final poses.",
+    "uncertainty": null
+  },
+  "terminal_state": "Robot remains seated with both hands returned near its lap. The bag stays on the tabletop and has rebounded substantially from its flattened pressed state; no lasting compact storage arrangement or relocation is visible.",
+  "uncertainties": [
+    "The degree of any lasting size reduction cannot be measured from this oblique view. The visible result is temporary flattening followed by substantial rebound; exact equality with the initial volume is not claimed.",
+    "Individual fingertip pressure and the exact first contact frame are partly obscured by the hands and dark bag; the two-hand downward compression is clear."
+  ],
+  "annotation_discrepancies": [
+    "The source instruction frames compression as reducing size for storage. Downward compression is visible, but the bag rebounds after release and is not stored in the clip; no permanent size reduction is asserted."
+  ],
+  "evidence_frame_indices": [
+    0,
+    78,
+    100,
+    132,
+    144,
+    160,
+    200,
+    246,
+    252,
+    258,
+    278,
+    300,
+    344
+  ],
+  "selected_execution_status": "success",
+  "selected_execution_status_rationale": "The single visible compression manipulation completes: the bag is flattened under two-handed pressure and both hands release. Success here means execution of the compression, not persistent size reduction or storage.",
+  "inspection_coverage": {
+    "all_contact_sheets_visually_viewed": true,
+    "sampled_source_frame_range": [
+      0,
+      344
+    ],
+    "native_initial_png_visually_viewed": true,
+    "native_transition_and_final_images_visually_viewed": true,
+    "source_clip_retained_in_full": true
+  },
+  "video_id": "deformable-5",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_deformable_5",
+  "review_source_video": "Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/original/original.mp4",
+  "source_frame_count": 345,
+  "source_fps": 30.000869590422912,
+  "native_detail_frames": [
+    0,
+    78,
+    100,
+    132,
+    144,
+    160,
+    200,
+    246,
+    252,
+    258,
+    278,
+    300,
+    344
+  ],
+  "world_model_prompt": "The humanoid robot places its right hand on one side of the soft travel bag’s top and its left hand on the other side. It presses downward with both hands together, flattening the bag against the tabletop, then lifts both hands away and returns them toward its lap. The bag stays on the table and expands back toward its original shape after the pressure is removed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Pressing a soft travel bag to reduce its size for storage, requiring compression techniques and understanding of soft material behavior.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 345,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "f65e69e22d7b2139f7863d2972b781a84ea600cd67ceb6a601d1cd73805fef7e",
+  "review_completed_at": "2026-10-13T17:32:16.067512+00:00"
+}

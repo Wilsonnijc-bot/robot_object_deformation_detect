@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "high-precision-4",
+  "task_name": "Place Kettle on Base",
+  "category": "High Precision",
+  "text_description": "Placing a kettle precisely on its electrical base, requiring careful alignment of contacts and stable positioning for proper connection.",
+  "original_gallery_record": {
+    "task_id": "high-precision-4",
+    "task_name": "Place Kettle on Base",
+    "category": "High Precision",
+    "text_description": "Placing a kettle precisely on its electrical base, requiring careful alignment of contacts and stable positioning for proper connection.",
+    "egocentric_video": "./static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_egocentric.mp4",
+    "third_view_video": "./static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Intermediate",
+    "duration": "22 seconds",
+    "tags": [
+      "kettle",
+      "alignment",
+      "electrical",
+      "placement"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_nosound.mp4",
+    "first_person": "./static/data/videos/high-precision/task-4/place_the_kettle_on_its_base_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

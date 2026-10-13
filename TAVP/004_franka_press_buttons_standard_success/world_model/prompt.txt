@@ -1,0 +1,1 @@
+The robotic arm presses the yellow, blue, red, and green buttons in that order with its closed gripper, lifting clear between presses, then withdraws and opens the gripper. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

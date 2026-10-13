@@ -1,0 +1,36 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "task_id": "articulated-7",
+  "task_name": "Close Cabinet Door",
+  "category": "Articulated Object",
+  "text_description": "Closing a cabinet door smoothly, demonstrating control of hinged mechanisms and gentle force application to avoid slamming.",
+  "original_gallery_record": {
+    "task_id": "articulated-7",
+    "task_name": "Close Cabinet Door",
+    "category": "Articulated Object",
+    "text_description": "Closing a cabinet door smoothly, demonstrating control of hinged mechanisms and gentle force application to avoid slamming.",
+    "egocentric_video": "./static/data/videos/articulated/task-7/close_the_cabinet_door_egocentric.mp4",
+    "third_view_video": "./static/data/videos/articulated/task-7/close_the_cabinet_door_nosound.mp4",
+    "point_cloud": "",
+    "difficulty": "Beginner",
+    "duration": "12 seconds",
+    "tags": [
+      "door",
+      "hinge",
+      "cabinet",
+      "gentle-close"
+    ]
+  },
+  "official_gallery_url": "https://humanoideveryday.github.io/data_viewer/data_viewer_page.html",
+  "metadata_source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/data_viewer_page.html",
+  "repository": "HumanoidEveryday/humanoideveryday.github.io",
+  "revision": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "associated_viewpoints": {
+    "third_person": "./static/data/videos/articulated/task-7/close_the_cabinet_door_nosound.mp4",
+    "first_person": "./static/data/videos/articulated/task-7/close_the_cabinet_door_egocentric.mp4"
+  },
+  "official_gallery_associates_views": true,
+  "same_physical_demonstration_independently_verified": false,
+  "temporal_synchronization_verified": false,
+  "annotation_discrepancies": []
+}

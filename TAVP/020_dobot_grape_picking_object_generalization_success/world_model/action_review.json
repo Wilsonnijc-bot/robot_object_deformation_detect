@@ -1,0 +1,118 @@
+{
+  "video_id": "020",
+  "review_method": "Visual inspection of every second decoded frame across the entire MP4 plus native-resolution transition frames, followed by native initial PNG",
+  "review_source_video": "/tmp/tavp-dense-reviews/020/middle_view.mp4",
+  "source_frame_count": 133,
+  "source_fps": 20.0,
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 67,
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg"
+  ],
+  "native_detail_frames": [
+    30,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    68,
+    72,
+    80,
+    82,
+    84,
+    86,
+    88,
+    96,
+    110,
+    116,
+    120,
+    126,
+    128,
+    129,
+    130,
+    131,
+    132
+  ],
+  "initial_scene": "Middle third-person view: an orange mat on a worktable has a small shallow green circular plate on the left and a yellow curved banana-shaped object on the right. The active white-and-blue arm has an open gripper suspended above the back-right of the mat; a second arm remains stationary in the left foreground. A black curtain is behind the table.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame_inclusive": 28,
+      "action": "The active gripper holds above the mat; banana-shaped object and green plate remain separate and stationary.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 29,
+      "end_frame_inclusive": 48,
+      "action": "The active arm approaches and lowers its open gripper around the banana-shaped object on the right.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 49,
+      "end_frame_inclusive": 54,
+      "action": "Gripper closes around the narrow right end of the yellow object; the object begins moving with the gripper.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 55,
+      "end_frame_inclusive": 72,
+      "action": "The arm transfers the held yellow object leftward at low height, positioning it over the green plate; at frame 68 its curved body lies across the plate, then it settles farther across the plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 73,
+      "end_frame_inclusive": 86,
+      "action": "The object rests across the green plate; the gripper opens and begins lifting away, leaving it visibly on the plate by frame 86.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 87,
+      "end_frame_inclusive": 112,
+      "action": "The empty open gripper withdraws above and behind the plate; the placed yellow object remains on the plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 113,
+      "end_frame_inclusive": 132,
+      "action": "The arm returns to the same placed object and lowers the gripper near its right end. Final frames show a small leftward settling shift or nudge while the object remains on the plate; no second object or completed new transfer appears.",
+      "confidence": "medium"
+    }
+  ],
+  "multi_step": false,
+  "selected_execution_status": "success",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 133,
+    "reason": "One meaningful banana-shaped-object placement, followed by a brief return/contact with the same placement. Retain the whole single task, including the same-placement adjustment, rather than inventing an independent subtask.",
+    "terminal_state": "The yellow banana-shaped object rests across the green plate, with the gripper low near its right end following a small final adjustment."
+  },
+  "full_sequence_prompt": "The robotic arm picks up the yellow banana-shaped object and places it on the green plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The robotic arm picks up the yellow banana-shaped object and places it on the green plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "uncertainties": [
+    "The object is visually banana-shaped; whether it is real fruit or a replica cannot be resolved from this view. The dataset folder mentions grape picking, but no grapes are visible.",
+    "Transfer is low over the mat and complete clearance beneath the object is hard to see; its motion is coupled to the closed gripper and it is deposited on the plate.",
+    "Final recontact may be a small corrective nudge or the start of a regrasp; no further transfer is observed before the source ends. It concerns the same placed object and has no visibly independent completed outcome."
+  ],
+  "evidence_frame_indices": [
+    0,
+    48,
+    56,
+    68,
+    86,
+    110,
+    128,
+    132
+  ],
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_source_original_video": "020_dobot_grape_picking_object_generalization_success/original/video.mp4",
+  "review_source_crop_rectangle": {
+    "x": 640,
+    "y": 0,
+    "width": 640,
+    "height": 480
+  }
+}

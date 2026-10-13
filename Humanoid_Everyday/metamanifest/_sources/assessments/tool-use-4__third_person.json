@@ -1,0 +1,268 @@
+{
+  "selected_quality_source": "Untouched original official gallery MP4 at pinned GitHub revision",
+  "selected_video_properties": {
+    "width": 568,
+    "height": 320,
+    "display_width": 320,
+    "display_height": 568,
+    "rotation_degrees": -90.0,
+    "fps": 30.0,
+    "fps_rational": "30/1",
+    "nominal_fps_rational": "30/1",
+    "duration_seconds": 16.666667,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "video_bitrate": 716293,
+    "frame_count": 500,
+    "sample_aspect_ratio": null,
+    "color_space": "bt709",
+    "color_range": "tv",
+    "file_size_bytes": 1499263,
+    "stream_index": 0,
+    "ffprobe_raw": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 568,
+          "height": 320,
+          "coded_width": 568,
+          "coded_height": 320,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 30,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/19200",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 320000,
+          "duration": "16.666667",
+          "bit_rate": "716293",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "500",
+          "extradata_size": 30,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "Core Media Video",
+            "vendor_id": "[0][0][0][0]"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     20971520           0  1073741824\n",
+              "rotation": -90
+            }
+          ]
+        }
+      ],
+      "format": {
+        "filename": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/metamanifest/_sources/quality_candidates/tool-use-4__third_person.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "16.666667",
+        "size": "1499263",
+        "bit_rate": "719646",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf61.7.100",
+          "location-eng": "+34.0218-118.2905+60.426987/",
+          "location": "+34.0218-118.2905+60.426987/"
+        }
+      }
+    }
+  },
+  "gallery_asset_url": "https://humanoideveryday.github.io/data_viewer/static/data/videos/tool-use/task-4/use_a_garden_tool_nosound.mp4",
+  "variants_considered": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/du8zrkc5z30cqbxkndhh3/use_a_garden_tool_nosound.mp4?rlkey=vpih97ln73iohcgisn0r1vhbe&st=ezbvk3sr&dl=1",
+      "sheet_task_name": "use_a_garden_tool",
+      "sheet_robot": "g1",
+      "sheet_description": "A garden tool is kept on the righthand side and a container is kept on the lefthand side on a desk infront of the robot. the robot uses its right hand to pick up the garden tool and makes a scooping motion inside the container",
+      "source": "Publisher-linked Dropbox MP4",
+      "video_properties": {
+        "width": 568,
+        "height": 320,
+        "display_width": 320,
+        "display_height": 568,
+        "rotation_degrees": -90.0,
+        "fps": 30.0,
+        "fps_rational": "30/1",
+        "nominal_fps_rational": "30/1",
+        "duration_seconds": 16.666667,
+        "codec": "h264",
+        "pixel_format": "yuv420p",
+        "video_bitrate": 716293,
+        "frame_count": 500,
+        "sample_aspect_ratio": null,
+        "color_space": "bt709",
+        "color_range": "tv",
+        "file_size_bytes": 1499263,
+        "stream_index": 0,
+        "ffprobe_raw": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "width": 568,
+              "height": 320,
+              "coded_width": 568,
+              "coded_height": 320,
+              "has_b_frames": 2,
+              "pix_fmt": "yuv420p",
+              "level": 30,
+              "color_range": "tv",
+              "color_space": "bt709",
+              "color_transfer": "bt709",
+              "color_primaries": "bt709",
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "refs": 1,
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "time_base": "1/19200",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 320000,
+              "duration": "16.666667",
+              "bit_rate": "716293",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "500",
+              "extradata_size": 30,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "Core Media Video",
+                "vendor_id": "[0][0][0][0]"
+              },
+              "side_data_list": [
+                {
+                  "side_data_type": "Display Matrix",
+                  "displaymatrix": "\n00000000:            0       65536           0\n00000001:       -65536           0           0\n00000002:     20971520           0  1073741824\n",
+                  "rotation": -90
+                }
+              ]
+            }
+          ],
+          "format": {
+            "filename": "/Users/nijiachen/Downloads/Robotvideo/Humanoid_Everyday/metamanifest/_sources/quality_candidates/dropbox_bc66eefc2730398395ef.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "16.666667",
+            "size": "1499263",
+            "bit_rate": "719646",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf61.7.100",
+              "location-eng": "+34.0218-118.2905+60.426987/",
+              "location": "+34.0218-118.2905+60.426987/"
+            }
+          }
+        }
+      },
+      "sha256": "0896f2f466be823fa7547e1666e72c920661e7d26b55eb8d6ef8c6bc06622ea1",
+      "byte_identical": true,
+      "same_recording_verified": true,
+      "assessment": "Byte-identical to gallery MP4; no quality upgrade."
+    }
+  ],
+  "quality_upgrade_verified": false,
+  "selection_explanation": "Highest native pixel quality identifiable for this exact gallery recording among inspected published assets. Identical copies provide no upgrade. No verified gallery-to-raw/LeRobot episode mapping; no bitrate-only quality inference.",
+  "raw_option": {
+    "available_in_published_corpus": true,
+    "format": "lossless 640x480 RGB PNG image sequences in task archives",
+    "exact_gallery_recording_match_verified": false,
+    "downloaded": false,
+    "source_url": "https://raw.githubusercontent.com/physical-superintelligence-lab/Humanoid-Everyday/master/README.md",
+    "task_archive_index_url": "https://docs.google.com/spreadsheets/d/158Wzf8Xywky3aHJSCfp3OZxf4bkhzAJdcG94eHf8gVc/export?format=csv&gid=1307250382"
+  },
+  "lerobot_option": {
+    "repository": "USC-PSI-Lab/humanoid-everyday",
+    "revision": "71f6210e91c2a7e8b8e4d47db0147444a1a0640e",
+    "published_resolution": [
+      640,
+      480
+    ],
+    "published_fps": 30,
+    "exact_gallery_recording_match_verified": false,
+    "evidence": "Episodes use numeric episode_index and instructions; gallery has task IDs and MP4 names, without episode IDs. Task similarity alone cannot map a demonstration."
+  }
+}

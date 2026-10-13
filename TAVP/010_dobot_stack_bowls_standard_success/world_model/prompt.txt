@@ -1,0 +1,1 @@
+The robotic arm sets the gray bowl on the green plate, then picks up the pink bowl and nests it inside the gray bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

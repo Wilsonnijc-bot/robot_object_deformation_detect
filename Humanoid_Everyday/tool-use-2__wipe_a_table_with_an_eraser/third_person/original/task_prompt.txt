@@ -1,0 +1,1 @@
+This task demonstrates cleaning operations where the humanoid robot uses an eraser to wipe a table surface, requiring controlled movements and surface contact.

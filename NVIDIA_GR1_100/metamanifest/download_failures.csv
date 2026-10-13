@@ -1,0 +1,9 @@
+dataset,task_id,viewpoint,url,error,timestamp
+NVIDIA_GR1_100,11,third_person,,Original metadata row exists but no repository MP4: 11.mp4,2026-10-13T17:22:26.947796+00:00
+NVIDIA_GR1_100,22,third_person,,Original metadata row exists but no repository MP4: 22.mp4,2026-10-13T17:22:26.948278+00:00
+NVIDIA_GR1_100,28,third_person,,Original metadata row exists but no repository MP4: 28.mp4,2026-10-13T17:22:26.948286+00:00
+NVIDIA_GR1_100,44,third_person,,Original metadata row exists but no repository MP4: 44.mp4,2026-10-13T17:22:26.948292+00:00
+NVIDIA_GR1_100,5,third_person,,Original metadata row exists but no repository MP4: 5.mp4,2026-10-13T17:22:26.948296+00:00
+NVIDIA_GR1_100,7,third_person,,Original metadata row exists but no repository MP4: 7.mp4,2026-10-13T17:22:26.948303+00:00
+NVIDIA_GR1_100,8,third_person,,Original metadata row exists but no repository MP4: 8.mp4,2026-10-13T17:22:26.948310+00:00
+NVIDIA_GR1_100,87,third_person,,Original metadata row exists but no repository MP4: 87.mp4,2026-10-13T17:22:26.948314+00:00
