@@ -28,7 +28,7 @@ The official NVIDIA dataset license is CC-BY-4.0.
 
 Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `world_model/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; `prompt.txt` is an identical compatibility copy. `video.mp4` retains the complete original bytes. `action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
 
-`world_model_prompts.csv` indexes completed prompts, and `world_model_prompt_report.json` records completed and pending reviews. The project `AGENTS.md` and this folder's `REVIEW_WORKFLOW.md` define the protocol. No cropping or shortening is used for these single-task references.
+`world_model_prompts.csv` indexes completed prompts, and `world_model_prompt_report.json` records completed and pending reviews. `bimanual_second_review_report.json` records the focused second pass on coordinated or potentially coordinated hand actions, including prompt corrections and detailed contact evidence. The project `AGENTS.md` and this folder's `REVIEW_WORKFLOW.md` define the protocol. No cropping or shortening is used for these single-task references.
 
 ## Quality and verification
 

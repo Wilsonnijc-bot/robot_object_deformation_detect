@@ -13,44 +13,50 @@
     {
       "start_frame": 0,
       "end_frame": 31,
-      "action": "Robot remains seated with both hands near its lap; travel bag remains upright and uncompressed on the table.",
+      "action": "Robot and bag remain at rest; both hands are near the lap.",
       "confidence": "high"
     },
     {
       "start_frame": 32,
       "end_frame": 91,
-      "action": "Both arms lift and extend forward, opening the hands above the bag. The white anatomical left hand and darker anatomical right hand approach separate areas of the top.",
+      "action": "Both open hands rise and extend forward above the bag.",
       "confidence": "high"
     },
     {
       "start_frame": 92,
-      "end_frame": 143,
-      "action": "Hands descend toward the top of the bag. The left hand approaches the portion near the tan patch; the right hand approaches the opposite portion near the handle. Both prepare downward contact rather than lifting the bag.",
+      "end_frame": 137,
+      "action": "Right hand descends toward the top beside the handle, left hand toward the top near the tan patch; exact first contacts are partly occluded.",
+      "confidence": "medium"
+    },
+    {
+      "start_frame": 138,
+      "end_frame": 179,
+      "action": "Both hands descend on their respective top areas while the bag visibly collapses downward against the tabletop.",
       "confidence": "high"
     },
     {
-      "start_frame": 144,
-      "end_frame": 233,
-      "action": "Both hands press down together on separate areas of the bag, visibly reducing its height and spreading the soft sides outward against the table; pressure is held briefly.",
+      "start_frame": 180,
+      "end_frame": 228,
+      "action": "Both hands remain against the low top surface while the bag is flattened.",
       "confidence": "high"
     },
     {
-      "start_frame": 234,
-      "end_frame": 278,
-      "action": "The right hand lifts clear first and the left hand also rises from the bag. As pressure is released, the bag visibly regains a fuller shape without leaving the tabletop.",
+      "start_frame": 229,
+      "end_frame": 264,
+      "action": "Right hand starts withdrawing slightly ahead of left; both rise and the bag visibly rebounds.",
       "confidence": "high"
     },
     {
-      "start_frame": 279,
+      "start_frame": 265,
       "end_frame": 344,
-      "action": "Both arms retract and hands lower toward the lap. The bag stays on the tabletop in an expanded form with its top handle visible; no storage or relocation occurs.",
+      "action": "Both hands retract to lap; bag remains on table in a fuller shape.",
       "confidence": "high"
     }
   ],
   "arm_hand_roles": {
-    "right": "Darker hand attached to the robot’s anatomical right shoulder, on image left. It descends onto the top area opposite the left hand and presses down, sharing compression; it clears the bag slightly earlier during release.",
-    "left": "White hand attached to the robot’s anatomical left shoulder, on image right. It descends onto the top near the tan patch and pushes downward with the right hand, then lifts away and returns toward the lap.",
-    "coordination": "Two hands press separate top areas simultaneously to flatten the same bag. Neither hand holds the bag for transport; both release the compressive contact and withdraw. No hand-to-hand transfer or person interaction."
+    "right": "Anatomical right, darker hand attached to image-left shoulder: downward compression on top beside the handle, then withdrawal slightly ahead of left. No handle grasp, object lift, or transport is demonstrated.",
+    "left": "Anatomical left, white hand attached to image-right shoulder: downward compression on the top near the tan patch, synchronized with right. It withdraws just behind right; mere lower proximity during withdrawal is not treated as continued stabilizing pressure.",
+    "coordination": "Both compress separate areas of the same deformable top against tabletop support. Hand/finger orientations follow the collapsing surface; no distinct release-and-regrasp, side squeeze, object transfer, or mechanism actuation is visible. Both ultimately lift clear."
   },
   "anatomical_side_evidence": {
     "confidence": "high",
@@ -59,8 +65,9 @@
   },
   "terminal_state": "Robot remains seated with both hands returned near its lap. The bag stays on the tabletop and has rebounded substantially from its flattened pressed state; no lasting compact storage arrangement or relocation is visible.",
   "uncertainties": [
-    "The degree of any lasting size reduction cannot be measured from this oblique view. The visible result is temporary flattening followed by substantial rebound; exact equality with the initial volume is not claimed.",
-    "Individual fingertip pressure and the exact first contact frame are partly obscured by the hands and dark bag; the two-hand downward compression is clear."
+    "Exact first and last contact frames for individual fingertips and each hand’s palm-versus-fingertip pressure distribution are hidden by the oblique view and dark material. Intervals describe visible engagement/deformation and separation rather than inferred force onset.",
+    "The left hand remains lower than the right during initial withdrawal, but continuing stabilizing pressure cannot be established from proximity alone.",
+    "Any lasting size reduction is not measurable. Visible temporary flattening and subsequent rebound do not establish permanent compression or successful storage."
   ],
   "annotation_discrepancies": [
     "The source instruction frames compression as reducing size for storage. Downward compression is visible, but the bag rebounds after release and is not stored in the clip; no permanent size reduction is asserted."
@@ -68,20 +75,38 @@
   "evidence_frame_indices": [
     0,
     78,
+    94,
     100,
+    110,
+    124,
+    125,
+    126,
     132,
+    138,
+    139,
     144,
+    150,
     160,
+    162,
+    180,
     200,
+    220,
+    228,
+    232,
+    233,
+    234,
+    240,
+    241,
     246,
     252,
     258,
+    264,
     278,
     300,
     344
   ],
   "selected_execution_status": "success",
-  "selected_execution_status_rationale": "The single visible compression manipulation completes: the bag is flattened under two-handed pressure and both hands release. Success here means execution of the compression, not persistent size reduction or storage.",
+  "selected_execution_status_rationale": "Completed visible two-hand pressing and withdrawal, with temporary bag flattening. This status is scoped to the visible manipulation and does not claim permanent size reduction or storage.",
   "inspection_coverage": {
     "all_contact_sheets_visually_viewed": true,
     "sampled_source_frame_range": [
@@ -101,19 +126,37 @@
   "native_detail_frames": [
     0,
     78,
+    94,
     100,
+    110,
+    124,
+    125,
+    126,
     132,
+    138,
+    139,
     144,
+    150,
     160,
+    162,
+    180,
     200,
+    220,
+    228,
+    232,
+    233,
+    234,
+    240,
+    241,
     246,
     252,
     258,
+    264,
     278,
     300,
     344
   ],
-  "world_model_prompt": "The humanoid robot places its right hand on one side of the soft travel bag’s top and its left hand on the other side. It presses downward with both hands together, flattening the bag against the tabletop, then lifts both hands away and returns them toward its lap. The bag stays on the table and expands back toward its original shape after the pressure is removed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The humanoid robot brings its right hand onto the soft travel bag’s top beside the handle and its left hand onto the top near the tan patch. Both hands press downward together, flattening the bag against the tabletop. It lifts the right hand slightly ahead of the left and returns both hands toward its lap, leaving the bag on the table as it rebounds to a fuller shape. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "original_task_instruction": "Pressing a soft travel bag to reduce its size for storage, requiring compression techniques and understanding of soft material behavior.",
   "selected_segment": {
     "start_frame": 0,
@@ -121,5 +164,281 @@
     "reason": "Complete original single-task reference; no cropping or trimming requested."
   },
   "source_video_sha256": "f65e69e22d7b2139f7863d2972b781a84ea600cd67ceb6a601d1cd73805fef7e",
-  "review_completed_at": "2026-10-13T17:32:16.067512+00:00"
+  "review_completed_at": "2026-10-13T19:05:47.781589+00:00",
+  "contact_chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        91
+      ],
+      "right_hand": "Initially at lap, then rises with open fingers above the bag without demonstrated contact.",
+      "left_hand": "Initially at lap, then rises with open fingers above the bag without demonstrated contact.",
+      "object_response": "Bag stays supported by tabletop with fuller side walls and oval handle visible.",
+      "evidence_frames": [
+        0,
+        78,
+        94
+      ],
+      "confidence": "high for approach; no support contact claimed"
+    },
+    {
+      "source_frames_inclusive": [
+        92,
+        137
+      ],
+      "right_hand": "Descends with fingers angled downward toward the image-left portion of the top next to the handle; fingertips increasingly overlap the top/upper edge in projection.",
+      "left_hand": "Descends toward the top on the tan-patch side, with extended fingers oriented down and forward; fingertips overlap the upper surface by the end of this interval.",
+      "object_response": "Little large-scale height change yet; contact initiation cannot be pinned to one decoded frame because lower finger surfaces are hidden.",
+      "evidence_frames": [
+        94,
+        110,
+        124,
+        125,
+        126,
+        132
+      ],
+      "confidence": "medium for first-contact timing; high for contact target"
+    },
+    {
+      "source_frames_inclusive": [
+        138,
+        179
+      ],
+      "right_hand": "Fingers remain on the top beside the handle as the wrist and hand descend; no handle enclosure or carrying grasp is visible.",
+      "left_hand": "Extended fingers descend across the top near the tan patch and upper edge; hand orientation adjusts with the collapsing surface, without a lift-and-regrasp.",
+      "object_response": "Top lowers and side walls collapse while the bottom stays on the tabletop. The two downward hand motions are synchronized with deformation.",
+      "evidence_frames": [
+        138,
+        139,
+        144,
+        150,
+        160,
+        162
+      ],
+      "confidence": "high for coordinated compression; exact palm/fingertip pressure distribution hidden"
+    },
+    {
+      "source_frames_inclusive": [
+        180,
+        228
+      ],
+      "right_hand": "Maintains downward contact on its portion of the top beside the handle; digits remain extended/angled along the lowered surface.",
+      "left_hand": "Maintains downward contact near the tan patch; no stabilizing side grasp is independently established.",
+      "object_response": "Bag is visibly flattened, with low collapsed walls. Handle remains part of the same deforming top, rather than a separately actuated mechanism.",
+      "evidence_frames": [
+        180,
+        200,
+        220,
+        228
+      ],
+      "confidence": "high"
+    },
+    {
+      "source_frames_inclusive": [
+        229,
+        264
+      ],
+      "right_hand": "Begins raising and backing away slightly ahead of the left; by frames 240–241 there is a visible gap beneath its extended fingers.",
+      "left_hand": "Also raises from the patch-side top, staying lower and closer to the bag than the right during early withdrawal; continued pressure after the right clears is not established from proximity.",
+      "object_response": "Side walls and top rise as compression is relieved. The handle and patch remain on the upper surface; bag is not lifted or transferred.",
+      "evidence_frames": [
+        228,
+        232,
+        233,
+        234,
+        240,
+        241,
+        246,
+        252,
+        258,
+        264
+      ],
+      "confidence": "high for withdrawal order and rebound; medium for individual last-contact instants"
+    },
+    {
+      "source_frames_inclusive": [
+        265,
+        344
+      ],
+      "right_hand": "Clearly away from bag and retracts toward lap.",
+      "left_hand": "Clearly away from bag and retracts toward lap.",
+      "object_response": "Bag remains on tabletop and fuller than under pressure. Final shape is not claimed equal to its initial volume.",
+      "evidence_frames": [
+        278,
+        300,
+        344
+      ],
+      "confidence": "high"
+    }
+  ],
+  "bimanual_second_review": {
+    "completed_at": "2026-10-13T19:05:47.661883+00:00",
+    "reviewer": "review_he_deformable_5",
+    "rules_applied": "Current AGENTS.md: trace each hand separately through every contact change at native resolution; avoid support/contact inference from proximity.",
+    "reviewed_contact_sheets": [
+      "sheet_001.jpg",
+      "sheet_002.jpg",
+      "sheet_003.jpg"
+    ],
+    "inspected_sampled_frame_count": 173,
+    "source_initial_png_visually_reinspected": true,
+    "native_frames_visually_reinspected": [
+      94,
+      110,
+      124,
+      125,
+      126,
+      138,
+      139,
+      150,
+      162,
+      180,
+      220,
+      228,
+      232,
+      233,
+      234,
+      240,
+      241,
+      264,
+      278,
+      344
+    ],
+    "adjacent_frame_comparisons": [
+      [
+        124,
+        125
+      ],
+      [
+        138,
+        139
+      ],
+      [
+        232,
+        233
+      ],
+      [
+        240,
+        241
+      ]
+    ],
+    "object_relative_landmarks": "Compared oval top handle, tan patch, sidewall height, and tabletop-supported base. Compression is deformation of the bag body, not handle actuation or whole-object lifting.",
+    "findings": [
+      "Top contact targets refined to right beside handle and left near tan patch.",
+      "Both downward hand motions accompany visible collapse; no carrying grasp or independently stabilizing side contact is established.",
+      "Right withdrawal begins slightly ahead of left; prompt preserves this visible order.",
+      "Bag rebounds; no permanent compression or storage success claimed."
+    ],
+    "contact_chronology": [
+      {
+        "source_frames_inclusive": [
+          0,
+          91
+        ],
+        "right_hand": "Initially at lap, then rises with open fingers above the bag without demonstrated contact.",
+        "left_hand": "Initially at lap, then rises with open fingers above the bag without demonstrated contact.",
+        "object_response": "Bag stays supported by tabletop with fuller side walls and oval handle visible.",
+        "evidence_frames": [
+          0,
+          78,
+          94
+        ],
+        "confidence": "high for approach; no support contact claimed"
+      },
+      {
+        "source_frames_inclusive": [
+          92,
+          137
+        ],
+        "right_hand": "Descends with fingers angled downward toward the image-left portion of the top next to the handle; fingertips increasingly overlap the top/upper edge in projection.",
+        "left_hand": "Descends toward the top on the tan-patch side, with extended fingers oriented down and forward; fingertips overlap the upper surface by the end of this interval.",
+        "object_response": "Little large-scale height change yet; contact initiation cannot be pinned to one decoded frame because lower finger surfaces are hidden.",
+        "evidence_frames": [
+          94,
+          110,
+          124,
+          125,
+          126,
+          132
+        ],
+        "confidence": "medium for first-contact timing; high for contact target"
+      },
+      {
+        "source_frames_inclusive": [
+          138,
+          179
+        ],
+        "right_hand": "Fingers remain on the top beside the handle as the wrist and hand descend; no handle enclosure or carrying grasp is visible.",
+        "left_hand": "Extended fingers descend across the top near the tan patch and upper edge; hand orientation adjusts with the collapsing surface, without a lift-and-regrasp.",
+        "object_response": "Top lowers and side walls collapse while the bottom stays on the tabletop. The two downward hand motions are synchronized with deformation.",
+        "evidence_frames": [
+          138,
+          139,
+          144,
+          150,
+          160,
+          162
+        ],
+        "confidence": "high for coordinated compression; exact palm/fingertip pressure distribution hidden"
+      },
+      {
+        "source_frames_inclusive": [
+          180,
+          228
+        ],
+        "right_hand": "Maintains downward contact on its portion of the top beside the handle; digits remain extended/angled along the lowered surface.",
+        "left_hand": "Maintains downward contact near the tan patch; no stabilizing side grasp is independently established.",
+        "object_response": "Bag is visibly flattened, with low collapsed walls. Handle remains part of the same deforming top, rather than a separately actuated mechanism.",
+        "evidence_frames": [
+          180,
+          200,
+          220,
+          228
+        ],
+        "confidence": "high"
+      },
+      {
+        "source_frames_inclusive": [
+          229,
+          264
+        ],
+        "right_hand": "Begins raising and backing away slightly ahead of the left; by frames 240–241 there is a visible gap beneath its extended fingers.",
+        "left_hand": "Also raises from the patch-side top, staying lower and closer to the bag than the right during early withdrawal; continued pressure after the right clears is not established from proximity.",
+        "object_response": "Side walls and top rise as compression is relieved. The handle and patch remain on the upper surface; bag is not lifted or transferred.",
+        "evidence_frames": [
+          228,
+          232,
+          233,
+          234,
+          240,
+          241,
+          246,
+          252,
+          258,
+          264
+        ],
+        "confidence": "high for withdrawal order and rebound; medium for individual last-contact instants"
+      },
+      {
+        "source_frames_inclusive": [
+          265,
+          344
+        ],
+        "right_hand": "Clearly away from bag and retracts toward lap.",
+        "left_hand": "Clearly away from bag and retracts toward lap.",
+        "object_response": "Bag remains on tabletop and fuller than under pressure. Final shape is not claimed equal to its initial volume.",
+        "evidence_frames": [
+          278,
+          300,
+          344
+        ],
+        "confidence": "high"
+      }
+    ],
+    "uncertainties": [
+      "Exact first and last contact frames for individual fingertips and each hand’s palm-versus-fingertip pressure distribution are hidden by the oblique view and dark material. Intervals describe visible engagement/deformation and separation rather than inferred force onset.",
+      "The left hand remains lower than the right during initial withdrawal, but continuing stabilizing pressure cannot be established from proximity alone.",
+      "Any lasting size reduction is not measurable. Visible temporary flattening and subsequent rebound do not establish permanent compression or successful storage."
+    ]
+  }
 }

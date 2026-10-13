@@ -2,7 +2,7 @@
   "dataset": "Humanoid_Everyday",
   "video_id": "deformable-4",
   "variant": "full_sequence",
-  "generation_prompt": "The robot uses its right hand to grasp and lift the outer flap of the blue toolkit case, then folds it inward over the adjacent tool section while its left hand stays at the opposite edge. It presses the flap down and releases it, leaving the case partly open with the flap curled upward and the tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "generation_prompt": "The robot grasps the outer flap of the blue toolkit case with its right hand and lifts it upright, then bends it inward over the adjacent tool section while the rest of the case rests on the table. It lowers the bent flap and releases it, leaving the case partly open with the flap curled upward and tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "prompt_protocol": "humanoid_action_v1",
   "prompt_provenance": "visually_authored_from_video_and_initial_frame",
   "source_video": "Humanoid_Everyday/deformable-4__fold_toolkit/third_person/original/original.mp4",
@@ -32,15 +32,16 @@
   "file_size_bytes": 807440,
   "video_sha256": "bb53bde8110200ba1ab250e81d616a043c0365c671e9a256332a8d192947919d",
   "first_frame_sha256": "d7db46bf1fe75f0481a71c5f1130b70bb0cf31c13b3844991074ae0feb283689",
-  "observed_terminal_state": "The right hand is open and withdrawn above the table; the left remains beside the opposite edge. The blue case stays on the table with its outer end partly folded and curled upward, and several tools remain exposed. No complete closure or fastening is observed.",
+  "observed_terminal_state": "The right hand is open and withdrawn; the left stays near the opposite end. The case remains table-supported and partly folded, with its outer blue-trimmed flap curled upward and several tools exposed. No complete closure or fastening is shown.",
   "arm_hand_roles": {
-    "right": "Active manipulating hand: grasps the outer flap, lifts it, folds it inward, presses it down, releases and withdraws.",
-    "left": "Remains positioned beside the opposite end throughout the fold; does not visibly lift, transfer or independently fold the case. Exact stabilizing contact is partly obscured, so the usable prompt describes its position without claiming a firm hold.",
-    "coordination": "Right-hand folding occurs while the left hand stays at the other end; no hand-to-hand transfer or separate left-hand fold is visible."
+    "right": "Active flap manipulation: engages its outer blue-trimmed edge, lifts it upright, bends and lowers it inward over the adjacent tool section, then opens and withdraws. The table bears the main tool-bearing case throughout.",
+    "left": "Stays beside the opposite end with little visible finger or forearm change. No confirmed edge pinch, weight-bearing support, stabilization, transfer, fold or release is visible. Proximity alone is not treated as support.",
+    "coordination": "No verified bimanual contact sequence. The right hand folds the flap while the case body is table-supported; the left hand remains nearby. The unused left-hand position is retained as evidence in the review and omitted from the usable prompt because its active contribution is unestablished."
   },
   "uncertainties": [
-    "The low native resolution and occlusion at the opposite end prevent confirmation of a firm stabilizing grasp by the left fingers.",
-    "The exact finger pressure during settling is less distinct than the flap lift, fold and final release; the visible hand remains against or immediately above the folded edge."
+    "The left fingers partly overlap the opposite edge in projection, but resolution and occlusion do not establish a supporting grasp or force.",
+    "Exact right-hand finger contacts during the lowered-flap hold are hidden or only a few pixels wide; a firm press or discrete regrasp cannot be established.",
+    "The right release occurs during opening and separation in frames 197–225, but the precise last-contact frame is not resolved."
   ],
   "annotation_discrepancies": [
     "The source instruction describes a proper storage configuration, but the visible ending is only a partial fold with the tools still exposed; no complete enclosed or fastened storage state is shown."

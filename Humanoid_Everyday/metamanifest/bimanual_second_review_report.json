@@ -9,91 +9,2026 @@
     "Visible terminal state and occlusions"
   ],
   "expected": 12,
-  "completed": 0,
+  "completed": 12,
   "reviews": [
     {
       "key": "he_pick-place-3",
       "dedicated_review_agent": "review_he_pick_place_3",
       "world_model": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/world_model",
       "previous_prompt": "The humanoid uses its left hand to grasp a near tripod leg and its right hand to support the central frame. Both hands raise and rotate the tripod from its tilted position into an upright stance, guiding its spread feet onto the desk. It releases the tripod and withdraws both hands, leaving it standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid grasps one tripod leg with its left hand and lifts the tripod from its tilted position. Keeping the left-hand hold, it brings its right hand underneath another leg, repositions that grip, and uses both hands to rotate the tripod upright and lower its spread feet onto the desk. It opens both hands and withdraws, leaving the tripod standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T18:55:30.614907+00:00",
+        "method": "Same dedicated agent re-viewed all full-sequence stride-2 contact sheets, the original native first-frame PNG, final native frame and closely spaced native frames around contact changes; compared each hand separately against tripod hub, feet, leg segments and column/head landmarks.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg",
+          "sheet_005.jpg"
+        ],
+        "inspected_frame_stride": 2,
+        "inspected_sampled_frame_count": 263,
+        "native_frames_viewed_this_pass": [
+          86,
+          92,
+          100,
+          106,
+          120,
+          130,
+          150,
+          170,
+          176,
+          182,
+          188,
+          194,
+          208,
+          220,
+          230,
+          240,
+          244,
+          248,
+          250,
+          252,
+          256,
+          260,
+          264,
+          268,
+          270,
+          290,
+          310,
+          320,
+          340,
+          350,
+          370,
+          400,
+          410,
+          416,
+          418,
+          420,
+          422,
+          424,
+          426,
+          428,
+          430,
+          432,
+          436,
+          438,
+          440,
+          442,
+          446,
+          454,
+          462,
+          524
+        ],
+        "previous_prompt": "The humanoid uses its left hand to grasp a near tripod leg and its right hand to support the central frame. Both hands raise and rotate the tripod from its tilted position into an upright stance, guiding its spread feet onto the desk. It releases the tripod and withdraws both hands, leaving it standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "changes": [
+          "Corrected initial engagement to left-hand lift before right-hand engagement.",
+          "Replaced general central-frame right-hand role with under-leg engagement and a separate-leg grasp, including visible grip repositioning.",
+          "Removed unsupported strict release order and noted overlapping opening/withdrawal.",
+          "Confirmed whole-tripod reorientation, with no demonstrated mechanism adjustment or unfolding."
+        ],
+        "contact_evidence": [
+          {
+            "start_frame": 0,
+            "end_frame": 84,
+            "left_hand": "Initially clear; raises toward the near-side tripod leg.",
+            "right_hand": "Open and clear near the tripod head/column; proximity is not treated as contact.",
+            "object_motion": "Tripod remains tilted on the desktop."
+          },
+          {
+            "start_frame": 86,
+            "end_frame": 120,
+            "left_hand": "Moves onto a leg member extending leftward from the hub and closes over it; the exact first closure lies within this interval.",
+            "right_hand": "Open fingers remain beside the head/column without a demonstrated grasp.",
+            "object_motion": "Tripod initially remains close to the desktop."
+          },
+          {
+            "start_frame": 122,
+            "end_frame": 176,
+            "left_hand": "Maintains the grasp and begins raising the tripod; leg and hub follow left hand upward.",
+            "right_hand": "Remains visibly open near the head, then starts shifting down toward the legs; no early stabilizing role is claimed.",
+            "object_motion": "Whole tripod lifts and becomes more horizontal; spread-leg configuration remains visible."
+          },
+          {
+            "start_frame": 178,
+            "end_frame": 230,
+            "left_hand": "Continues bearing the tripod by the same leg, maintaining object-relative hand placement.",
+            "right_hand": "Moves underneath another leg/frame member and curls toward it; by208\u2013220 hand and that member co-move and support contact is evident.",
+            "object_motion": "Tripod held above the desk, center column nearly horizontal; no independent head mechanism is manipulated."
+          },
+          {
+            "start_frame": 232,
+            "end_frame": 270,
+            "left_hand": "Maintains its hold while the right hand changes orientation and finger closure.",
+            "right_hand": "Repositions from a flatter under-leg support toward a more enclosing grasp on a separate leg; visible change in palm orientation and finger arrangement across240,244,248,252,256,260,264,268. Complete loss of contact is occluded and not claimed.",
+            "object_motion": "Tripod remains supported; modest whole-object orientation change accompanies the adjustment."
+          },
+          {
+            "start_frame": 272,
+            "end_frame": 370,
+            "left_hand": "Retains the near-side leg grip and controls the lower/near portion as the tripod rises.",
+            "right_hand": "Encircles the separate farther leg near its middle; fingers visibly surround the member at340\u2013350 and co-move with it through rotation.",
+            "object_motion": "Center column/head and leg assembly rotate upward together into vertical orientation. Already-spread legs stay open; no leg-extension, unfolding, dial, or head adjustment is established."
+          },
+          {
+            "start_frame": 372,
+            "end_frame": 398,
+            "left_hand": "Maintains near-leg grasp while feet settle.",
+            "right_hand": "Maintains separate-leg grasp while feet settle.",
+            "object_motion": "Tripod lowered into three-foot stance on desk."
+          },
+          {
+            "start_frame": 400,
+            "end_frame": 446,
+            "left_hand": "Fingers open around416\u2013424; hand remains near the leg briefly, then moves clear by446.",
+            "right_hand": "Fingers open around400\u2013410; remains alongside its leg briefly, then moves clear around442\u2013446. Support is not inferred once open solely from proximity.",
+            "object_motion": "Tripod remains upright; hand opening and spatial withdrawal overlap, so no strict release order is asserted."
+          },
+          {
+            "start_frame": 448,
+            "end_frame": 524,
+            "left_hand": "Withdraws and lowers away with visibly empty open hand.",
+            "right_hand": "Withdraws toward robot with visibly empty hand.",
+            "object_motion": "Tripod remains stationary and unsupported on three spread feet through final frame."
+          }
+        ],
+        "uncertainties": [
+          "At320x568 native resolution, overlapping fingers, legs and braces obscure the exact segment inside the early right-hand contact. A separate-leg grasp is clearest after rotation, at340\u2013370; no central mechanism grasp is asserted.",
+          "The right-hand adjustment at240\u2013268 changes finger enclosure and palm orientation, but any complete momentary loss of contact is occluded. The prompt describes repositioning, not a full release and regrasp.",
+          "Both hands open and withdraw in an overlapping release phase. Exact last contact times and an absolute release order cannot be established from finger/object overlap.",
+          "Load distribution cannot be measured visually. Left-hand bearing before right engagement is supported by tripod motion with the left grip while the right remains open; later two-hand contact is supported by enclosure and co-motion, not mere adjacency."
+        ],
+        "confirmed_terminal_state": "Both hands clear; tripod upright and unsupported on the desk through frame524.",
+        "source_media_modified": false
+      },
+      "review_completed_at": "2026-10-13T18:55:30.754501+00:00"
     },
     {
       "key": "he_pick-place-5",
       "dedicated_review_agent": "review_he_pick_place_5",
       "world_model": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/world_model",
       "previous_prompt": "The humanoid uses its right hand to grasp the red multimeter on the tabletop, lift it, and carry it over the open basket while its left hand remains at the basket's far rim. The right hand releases the meter into the basket and withdraws, leaving the meter settled inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid grasps the body of the red multimeter with its right hand, lifts it from the tabletop, and carries it over the open basket. Its left hand shifts beside the far rim as the basket turns slightly beneath the meter; the right hand opens and releases the meter into the basket, where it tumbles and settles. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T18:58:30.261403+00:00",
+        "protocol": "Separate hand contact tracing at native resolution under the updated humanoid_action_v1 instruction.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg"
+        ],
+        "inspected_sampled_frame_count": 228,
+        "inspected_frame_stride": 2,
+        "source_frame_interval_inclusive": [
+          0,
+          454
+        ],
+        "source_initial_png_viewed_at_native_resolution": true,
+        "native_frames_actually_viewed_this_pass": [
+          164,
+          176,
+          190,
+          206,
+          222,
+          238,
+          286,
+          294,
+          302,
+          310,
+          318,
+          330,
+          348,
+          356,
+          360,
+          364,
+          368,
+          398,
+          454
+        ],
+        "right_hand_contact_trace": [
+          {
+            "frames": [
+              154,
+              205
+            ],
+            "contact": "Articulated fingers contact and wrap the multimeter body near its red-cased edge and black face. Device initially also supported by tabletop. Exact opposing finger placements are partially hidden.",
+            "evidence_frames": [
+              164,
+              176,
+              190
+            ]
+          },
+          {
+            "frames": [
+              206,
+              249
+            ],
+            "contact": "Body grasp maintained while meter reorients and leaves the table. Red shell and black face rotate together, demonstrating whole-object motion.",
+            "evidence_frames": [
+              206,
+              222,
+              238
+            ]
+          },
+          {
+            "frames": [
+              250,
+              357
+            ],
+            "contact": "Right hand bears the whole meter alone; fingers remain wrapped around body through transport/reorientation above basket. No left-hand receipt or visible support change.",
+            "evidence_frames": [
+              286,
+              294,
+              302,
+              310,
+              318,
+              330,
+              348,
+              356
+            ]
+          },
+          {
+            "frames": [
+              358,
+              368
+            ],
+            "contact": "Fingers open, meter separates and descends freely into basket; right hand no longer bears it.",
+            "evidence_frames": [
+              356,
+              360,
+              364,
+              368
+            ]
+          },
+          {
+            "frames": [
+              398,
+              454
+            ],
+            "contact": "Right hand stays empty and withdraws.",
+            "evidence_frames": [
+              398,
+              454
+            ]
+          }
+        ],
+        "left_hand_contact_trace": [
+          {
+            "frames": [
+              0,
+              285
+            ],
+            "contact": "Hand beside far-right rim; initial PNG and native grasp frames show white palm/wrist near basket corner, but far wall hides the fingertips and no firm wrap can be verified.",
+            "evidence_frames": [
+              0,
+              164,
+              176,
+              190,
+              206,
+              222,
+              238
+            ]
+          },
+          {
+            "frames": [
+              286,
+              330
+            ],
+            "contact": "Hand moves inward beside far rim while basket turns slightly. Fingers overlap far handle-slot/rim edge in projected view; precise rim/handle contact and applied force remain occluded.",
+            "evidence_frames": [
+              286,
+              294,
+              302,
+              310,
+              318,
+              330
+            ]
+          },
+          {
+            "frames": [
+              348,
+              454
+            ],
+            "contact": "Hand remains beside far rim during right release, meter landing and right withdrawal. No contact with meter or clearly visible left-finger release from a firm basket grasp.",
+            "evidence_frames": [
+              348,
+              356,
+              360,
+              364,
+              368,
+              398,
+              454
+            ]
+          }
+        ],
+        "object_relative_landmarks": "Multimeter red case outline and black front panel move together throughout right-hand rotations; no dial, handle, cap or flap motion relative to the meter is established. Basket near/far walls and handle slots change orientation modestly across 286\u2013318 while the tabletop black square provides a comparison landmark. Camera drift limits exact geometric attribution.",
+        "findings": [
+          "Right hand carries and releases the complete multimeter; no transfer or left support of the device.",
+          "Left hand is visibly repositioned beside the far rim while the basket turns slightly; first-pass wording that it only remains stationary at the rim was incomplete.",
+          "No continuous stabilizing grip, exact left contact surface, internal mechanism action, or directed basket pull is claimed.",
+          "Release and successful inside-basket terminal state remain confirmed."
+        ],
+        "prompt_changes": "Added body-grasp specificity, left-hand reposition and concurrent basket turn, and meter tumbling/settling. Replaced stationary at-rim wording with beside-rim movement to avoid unsupported contact.",
+        "uncertainties": [
+          "The far basket wall occludes the left fingertips. Projected overlap with the rim and handle-slot edge, plus coincident hand/basket movement, does not establish the exact gripping surface or continuous stabilizing contact. The prompt describes visible hand movement beside the rim and the basket turn without asserting a brace or firm grasp.",
+          "The source camera drifts slightly. The modest basket turn is identified from changing basket-wall and handle-slot orientation across frames 286\u2013318; its exact translation, turn angle and force source are not established."
+        ],
+        "selected_execution_status": "success"
+      },
+      "review_completed_at": "2026-10-13T18:58:30.391374+00:00"
     },
     {
       "key": "he_articulated-1",
       "dedicated_review_agent": "review_he_articulated_1",
       "world_model": "Humanoid_Everyday/articulated-1__rotate_chair/third_person/world_model",
       "previous_prompt": "With its left hand bracing the far side of the backrest, the humanoid grasps the near edge with its right hand and turns the office chair on its swivel. It releases its right-hand grasp and lowers that arm, leaving the chair at the new angle and its left hand behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid uses its right hand to grasp the near side edge of the office chair's backrest and turn the backrest, seat, and armrests together to a new angle. It opens its right hand and lowers the arm, leaving the chair turned while its left arm remains behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T18:58:09.586083+00:00",
+        "review_trigger": "Meticulous separate-hand contact review under strengthened coordinated-manipulation instructions.",
+        "full_contact_sheets_reviewed": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg",
+          "sheet_005.jpg"
+        ],
+        "stride": 2,
+        "sample_count": 267,
+        "source_initial_png_reinspected": true,
+        "native_frames_actually_viewed_this_pass": [
+          128,
+          164,
+          200,
+          220,
+          224,
+          228,
+          236,
+          252,
+          260,
+          280,
+          304,
+          366,
+          378,
+          384,
+          394,
+          400,
+          410,
+          420,
+          436,
+          533
+        ],
+        "superseded_prompt": "With its left hand bracing the far side of the backrest, the humanoid grasps the near edge with its right hand and turns the office chair on its swivel. It releases its right-hand grasp and lowers that arm, leaving the chair at the new angle and its left hand behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "corrections": [
+          "Removed unsupported left-hand bracing claim.",
+          "Replaced direct swivel-mechanism wording with confirmed whole-chair-assembly reorientation.",
+          "Separated right-hand finger opening from subsequent withdrawal and corrected the opening interval to 367-378, with full separation established by 436."
+        ],
+        "hand_contact_checks": {
+          "right": [
+            {
+              "frames": [
+                128,
+                164,
+                200
+              ],
+              "part": "Near side backrest edge and adjacent perforated front face",
+              "evidence": "Extended fingers at 128/164 become bent against the surface by 200; edge remains within the hand contact region."
+            },
+            {
+              "frames": [
+                220,
+                224,
+                228,
+                236,
+                252,
+                260,
+                280,
+                304
+              ],
+              "part": "Same side edge",
+              "evidence": "Contact region moves with changing chair pose; no isolated part or mechanism is manipulated."
+            },
+            {
+              "frames": [
+                366,
+                378,
+                384,
+                394,
+                400,
+                410,
+                420,
+                436
+              ],
+              "part": "Same edge/front surface, then free space",
+              "evidence": "Curled fingers at 366 straighten by 378; the open hand later retreats and is visibly separated by 436."
+            }
+          ],
+          "left": [
+            {
+              "frames": [
+                0,
+                128,
+                164,
+                200,
+                220,
+                224,
+                228,
+                236
+              ],
+              "part": "Behind and beside far side backrest edge",
+              "evidence": "Forearm enters behind backrest; visible finger portions remain beside the outer edge. Opposing palm contact/clamping is not resolved, so brace is not asserted."
+            },
+            {
+              "frames": [
+                252,
+                260,
+                280,
+                304,
+                366,
+                378,
+                384,
+                394,
+                400,
+                410,
+                420,
+                436,
+                533
+              ],
+              "part": "Occluded behind backrest",
+              "evidence": "Chair hides hand contact surfaces. The pale shape visible through the oval hole is insufficient to establish a hand grip or contact change. No left regrasp or release can be claimed."
+            }
+          ]
+        },
+        "object_relative_landmark_comparison": {
+          "frame_pairs": [
+            [
+              220,
+              224
+            ],
+            [
+              224,
+              228
+            ],
+            [
+              228,
+              236
+            ],
+            [
+              236,
+              252
+            ],
+            [
+              252,
+              260
+            ],
+            [
+              260,
+              280
+            ],
+            [
+              280,
+              304
+            ]
+          ],
+          "landmarks": [
+            "Oval backrest hole",
+            "Perforation rows and side outline",
+            "Near armrest axis",
+            "Visible seat outline"
+          ],
+          "finding": "These landmarks change perspective together as the right-hand edge contact moves. The near armrest changes from a diagonal projection to a more forward-facing projection, showing assembly reorientation. No movement of a separate hinged backrest, dial, cap or control is seen; exact swivel pivot and incidental translation remain unverified."
+        },
+        "final_state_confirmed_at_frame": 533,
+        "prompt_contact_claim_policy": "Describe confirmed right grip, chair rotation and right release. Describe left-arm disposition without asserting stabilization or continuous contact."
+      },
+      "review_completed_at": "2026-10-13T18:58:09.708147+00:00"
     },
     {
       "key": "he_articulated-3",
       "dedicated_review_agent": "review_he_articulated_3",
       "world_model": "Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/world_model",
       "previous_prompt": "The robot grasps the red multimeter with its right hand and lifts it from the table toward its chest. While the right hand supports the device, the left hand folds the extended black hinged stand back toward the meter. The right hand lowers and releases the multimeter onto the tabletop, where it tips and settles face-up, then both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The robot grasps the red multimeter\u2019s body with its right hand, then lifts and rolls it, turning its back and extended stand toward the left hand. The left fingers reposition around the stand\u2019s free end and pivot it inward toward the meter\u2019s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "inspected_transition_frames": [
+          158,
+          162,
+          166,
+          170,
+          174,
+          178,
+          182,
+          186,
+          190,
+          194,
+          198,
+          202,
+          206,
+          210,
+          214,
+          218,
+          222,
+          226,
+          230,
+          234,
+          238,
+          242,
+          246,
+          250,
+          254,
+          258,
+          262,
+          266,
+          270,
+          274,
+          278,
+          282,
+          286,
+          290,
+          294,
+          298,
+          302,
+          306,
+          310,
+          314,
+          318,
+          322,
+          326,
+          330,
+          334,
+          338,
+          340
+        ],
+        "closer_contact_and_hinge_frames": [
+          230,
+          232,
+          234,
+          236,
+          238,
+          240,
+          242,
+          244,
+          246,
+          248,
+          250,
+          252,
+          254,
+          256,
+          258,
+          260,
+          262,
+          264,
+          266,
+          268,
+          270,
+          272,
+          274,
+          276,
+          278,
+          280,
+          282,
+          284,
+          286,
+          288,
+          290,
+          292,
+          294,
+          296,
+          298,
+          300,
+          302,
+          304,
+          306,
+          308,
+          310,
+          312,
+          314,
+          316,
+          318,
+          320,
+          322,
+          324,
+          326,
+          328,
+          330
+        ],
+        "full_native_frames_revisited": [
+          214,
+          226,
+          266,
+          292,
+          304,
+          328,
+          466
+        ],
+        "initial_png_revisited": true,
+        "specific_correction": "The prior prompt omitted active right-hand rolling/tilting and left-hand contact repositioning; these are now explicit. The stand pivot direction remains inward after comparison in device coordinates, while closure/latching remains uncertain. The initial right-hand body grasp is explicitly retained before lifting/rolling.",
+        "confirmed_hand_contact_chronology": [
+          "Right grasps and bears red body throughout lift/reorientation; left stays separate initially (158\u2013236).",
+          "Right rolls body to present its rear stand; left makes brief stand-tip contact (237\u2013246), separates/repositions (247\u2013262), and curls around its free end (263\u2013288).",
+          "Left changes orientation and pivots stand end inward while right simultaneously retains and tilts body (289\u2013324); device-relative landmarks distinguish hinge actuation from rolling.",
+          "Left releases/separates (325\u2013340); right alone rolls, transports, lowers and releases the body (341\u2013398). No handoff or front-control actuation is visibly established."
+        ],
+        "residual_uncertainties": [
+          "Exact left thumb/fingertip opposition at first brief stand contact (237\u2013246) is partly occluded; the clear separation/reposition and later finger closure are recorded without claiming continuous contact.",
+          "Both the housing and stand move during 289\u2013324. Adjacent-frame landmarks establish an inward stand-to-body pivot, but the exact angular displacement cannot be measured reliably from the oblique view.",
+          "The hand/body occlude final hinge seating, so flush closure or latch engagement is not confirmed. The final underside/stand angle is hidden after face-up settling."
+        ],
+        "visual_confidence": "High for anatomical sides, body-bearing hand, active right-hand reorientation, stand-end engagement, inward relative pivot and final face-up released rest; medium for occluded first fingertip opposition and final hinge seating.",
+        "revised_prompt": "The robot grasps the red multimeter\u2019s body with its right hand, then lifts and rolls it, turning its back and extended stand toward the left hand. The left fingers reposition around the stand\u2019s free end and pivot it inward toward the meter\u2019s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing."
+      },
+      "review_completed_at": "2026-10-13T18:52:41.019826+00:00"
     },
     {
       "key": "he_articulated-4",
       "dedicated_review_agent": "review_he_articulated_4",
       "world_model": "Humanoid_Everyday/articulated-4__compress_air_pumper/third_person/world_model",
       "previous_prompt": "The robot grasps the air pump\u2019s cylindrical barrel with its right hand, lifts it from the table, and holds it horizontally in front of its torso. While the right hand stabilizes the barrel, the left hand pushes the T-shaped handle inward, shortening the exposed plunger shaft. The left hand disengages, and the right hand lays the pump on the black mat and releases it before both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The robot grasps the air pump\u2019s cylindrical barrel with its right hand, lifts it from the table, and holds it horizontally in front of its torso. The right hand supports the barrel as the left hand presses the T-shaped handle toward it; the hands move toward each other and shorten the exposed plunger shaft. The left hand disengages, and the right hand lays the pump on the black mat and releases it before both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T18:50:48.448885+00:00",
+        "status": "refined",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg"
+        ],
+        "inspected_frame_stride": 2,
+        "inspected_sampled_frame_count": 232,
+        "native_frames_actually_viewed": [
+          110,
+          132,
+          168,
+          190,
+          198,
+          214,
+          228,
+          244,
+          258,
+          274,
+          290,
+          304,
+          388,
+          400,
+          408,
+          463
+        ],
+        "source_initial_png_viewed": true,
+        "previous_prompt": "The robot grasps the air pump\u2019s cylindrical barrel with its right hand, lifts it from the table, and holds it horizontally in front of its torso. While the right hand stabilizes the barrel, the left hand pushes the T-shaped handle inward, shortening the exposed plunger shaft. The left hand disengages, and the right hand lays the pump on the black mat and releases it before both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "revised_prompt": "The robot grasps the air pump\u2019s cylindrical barrel with its right hand, lifts it from the table, and holds it horizontally in front of its torso. The right hand supports the barrel as the left hand presses the T-shaped handle toward it; the hands move toward each other and shorten the exposed plunger shaft. The left hand disengages, and the right hand lays the pump on the black mat and releases it before both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "correction": "The initial description assigned the correct parts and anatomical hands, but could suggest a stationary right-held barrel. Native temporal comparison shows that the right barrel support also moves inward while the left handle press progresses. The prompt now explicitly describes converging hands.",
+        "contact_trace": [
+          {
+            "frames": [
+              52,
+              119
+            ],
+            "right": "Closes around cylindrical barrel, with fingers at its sides and opposite thumb.",
+            "left": "Near lap, no object contact."
+          },
+          {
+            "frames": [
+              120,
+              197
+            ],
+            "right": "Continuous barrel grasp bears the pump and reorients the whole device horizontally.",
+            "left": "Begins approaching, without demonstrated support."
+          },
+          {
+            "frames": [
+              198,
+              219
+            ],
+            "right": "Retains barrel grasp.",
+            "left": "Open hand approaches the T-handle; by 214 fingers overlap the handle region."
+          },
+          {
+            "frames": [
+              220,
+              299
+            ],
+            "right": "Supports barrel and moves it toward the left hand.",
+            "left": "Presses handle toward barrel, fingers largely extended; shaft shortens between distinct barrel mouth and handle landmarks."
+          },
+          {
+            "frames": [
+              300,
+              333
+            ],
+            "right": "Retains barrel grasp and starts return.",
+            "left": "Separates from handle; 304 makes disengagement visible."
+          },
+          {
+            "frames": [
+              334,
+              399
+            ],
+            "right": "Places barrel/pump on black mat while retaining grasp.",
+            "left": "Near lap, no stabilizing contact."
+          },
+          {
+            "frames": [
+              400,
+              463
+            ],
+            "right": "Opens and clears the released pump, then settles near lap.",
+            "left": "Remains withdrawn; final pump resting without hand contact."
+          }
+        ],
+        "mechanism_evidence": "Before engagement the rod spans a large gap from the circular barrel mouth to the transverse T-handle (198/214). During converging-hand motion this gap reduces (228/244/258/274/290), with no comparable change in cylinder length. After left disengagement the right hand holds a shortened device and the final released pump remains shortened. This supports one inward plunger stroke; air output and full insertion are not asserted.",
+        "contact_ambiguities": [
+          "Air pressure, airflow, and effective pneumatic compression cannot be verified visually; the review establishes a visible inward mechanical plunger stroke only.",
+          "The T-handle is partly occluded by the left fingers during pressing; exact individual finger contact and any hidden palm contact cannot be determined. The left hand is visibly largely open, so a closed handle grasp is not claimed.",
+          "The exact instant and depth of final plunger insertion are hidden between the hands; the shrinking exposed shaft and the shortened released pump establish inward relative motion, not measured full insertion."
+        ],
+        "ending_confirmed": "Native 388 to 400/408 shows right-hand opening and clear separation from the mat-supported pump; frame 463 shows both hands withdrawn.",
+        "prior_claims_confirmed": [
+          "Anatomical right picks up and bears barrel; anatomical left presses handle.",
+          "No hand-to-hand transfer.",
+          "One inward stroke; no repeated rhythmic pumping asserted.",
+          "Right hand places and releases pump on black mat."
+        ],
+        "source_media_unchanged": true
+      },
+      "review_completed_at": "2026-10-13T18:50:48.642352+00:00"
     },
     {
       "key": "he_high-precision-1",
       "dedicated_review_agent": "review_he_high_precision_1",
       "world_model": "Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/world_model",
       "previous_prompt": "The humanoid grasps the white bottle with its left hand and lifts it from the table, holding its body steady while its right hand grips and repeatedly twists the cap. The right hand lifts off the loosened cap and places it on the tabletop; the left hand lowers and releases the bottle, which comes to rest on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid grasps and lifts the white bottle with its left hand, tilting it toward the right hand while holding the bottle body. The right hand grips and turns the cap, lets go and repositions, then regrips and turns it again while the left hand continues supporting the bottle. The right hand lifts the detached cap away and releases it onto the table; the left hand lowers and releases the bottle, which settles on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T18:55:34.942034+00:00",
+        "review_scope": "Same dedicated reviewer rechecked entire source sequence under strengthened coordinated-manipulation instruction.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg",
+          "sheet_005.jpg",
+          "sheet_006.jpg",
+          "sheet_007.jpg",
+          "sheet_008.jpg"
+        ],
+        "inspected_sampled_frame_count": 464,
+        "inspected_frame_stride": 2,
+        "source_initial_png_inspected_at_native_resolution": true,
+        "native_frames_viewed_this_pass": [
+          112,
+          160,
+          194,
+          196,
+          200,
+          206,
+          214,
+          220,
+          238,
+          258,
+          270,
+          284,
+          300,
+          334,
+          356,
+          388,
+          416,
+          450,
+          476,
+          494,
+          506,
+          514,
+          526,
+          546,
+          566,
+          586,
+          610,
+          630,
+          646,
+          650,
+          664,
+          682,
+          720,
+          758,
+          770,
+          774,
+          776,
+          778,
+          780,
+          784,
+          800,
+          816,
+          832,
+          842,
+          846,
+          848,
+          854,
+          856,
+          860,
+          870,
+          880,
+          926
+        ],
+        "native_frames_viewed_this_pass_count": 52,
+        "separate_hand_contact_trace": [
+          {
+            "source_frame_interval": [
+              0,
+              112
+            ],
+            "left_hand": "Initially down; raises with open fingers toward bottle body.",
+            "right_hand": "Raises open, staying above and clear of bottle cap.",
+            "object_motion": "Bottle stays upright on table.",
+            "evidence_frame_indices": [
+              0,
+              112
+            ],
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              113,
+              200
+            ],
+            "left_hand": "Moves open fingers around lower/middle bottle body; beside/around bottle is not yet proof of a load-bearing grip.",
+            "right_hand": "Open and clear above bottle; does not support it.",
+            "object_motion": "Bottle remains upright on tabletop.",
+            "evidence_frame_indices": [
+              112,
+              160,
+              194,
+              196,
+              200
+            ],
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              201,
+              258
+            ],
+            "left_hand": "Fingers enclose bottle body by 206\u2013214 and carry it up; wrist tilts the entire bottle toward right hand.",
+            "right_hand": "Waits above bottle, then lowers fingers toward cap.",
+            "object_motion": "Whole bottle rises and tilts; this is distinct from cap rotation.",
+            "evidence_frame_indices": [
+              206,
+              214,
+              220,
+              238,
+              258
+            ],
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              259,
+              506
+            ],
+            "left_hand": "Continues enclosing and bearing bottle body, keeping neck presented toward opposite hand.",
+            "right_hand": "Fingers engage cap by 270\u2013284; wrist/hand changes orientation around neck while fingers stay at cap.",
+            "object_motion": "Bottle body stays at a similar tilted angle while right hand turns at its upper cap; the featureless cap and fingers hide exact angular movement.",
+            "evidence_frame_indices": [
+              258,
+              270,
+              284,
+              300,
+              334,
+              356,
+              388,
+              416,
+              450,
+              476,
+              494,
+              506
+            ],
+            "confidence": "high for contact/turning action; medium for amount of cap-relative rotation"
+          },
+          {
+            "source_frame_interval": [
+              507,
+              610
+            ],
+            "left_hand": "Maintains enclosing grip and bears bottle throughout right-hand absence.",
+            "right_hand": "Releases cap and lifts clear, opens/repositions fingers and changes wrist orientation; visible air gap separates hand from cap.",
+            "object_motion": "Cap remains on neck; no separate white part is seen in raised right hand.",
+            "evidence_frame_indices": [
+              506,
+              514,
+              526,
+              546,
+              566,
+              586,
+              610
+            ],
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              611,
+              776
+            ],
+            "left_hand": "Keeps holding bottle body; no hand-to-hand transfer and no left release.",
+            "right_hand": "Returns fingers to cap during 611\u2013664, encloses it by 664\u2013682, then turns at cap again with larger palm orientation change near 720\u2013758.",
+            "object_motion": "Body remains left-held and tilted. A white cap remains at neck until right hand begins pulling it away.",
+            "evidence_frame_indices": [
+              610,
+              630,
+              646,
+              650,
+              664,
+              682,
+              720,
+              758,
+              770,
+              774,
+              776
+            ],
+            "confidence": "high for resumed contact; exact onset within 611\u2013664 is partly occluded"
+          },
+          {
+            "source_frame_interval": [
+              777,
+              806
+            ],
+            "left_hand": "Continues bearing bottle body independently, with open neck held away from right hand.",
+            "right_hand": "Lifts small white cap upward away from neck, holding it separately.",
+            "object_motion": "Distinct white cap separates from white bottle neck; cap-hand gap from neck expands at 778\u2013784 and persists at 800.",
+            "evidence_frame_indices": [
+              774,
+              776,
+              778,
+              780,
+              784,
+              800
+            ],
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              807,
+              853
+            ],
+            "left_hand": "Lowers bottle body to tabletop, retaining its enclosing grip during lowering.",
+            "right_hand": "Lowers detached cap beside bottle and opens fingers near table, leaving cap resting separately by 848.",
+            "object_motion": "Bottle and cap descend independently; right hand does not return cap onto bottle or take bottle from left hand.",
+            "evidence_frame_indices": [
+              800,
+              816,
+              832,
+              842,
+              846,
+              848
+            ],
+            "confidence": "high; exact cap-table contact obscured by fingers"
+          },
+          {
+            "source_frame_interval": [
+              854,
+              883
+            ],
+            "left_hand": "Opens fingers and withdraws from bottle; body no longer follows hand and tips/settles to side.",
+            "right_hand": "Already open above table, no renewed object contact visible.",
+            "object_motion": "Bottle rotates as a whole onto its side; separate cap remains on table.",
+            "evidence_frame_indices": [
+              854,
+              856,
+              860,
+              870,
+              880
+            ],
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              884,
+              926
+            ],
+            "left_hand": "Moves fully clear and lowers.",
+            "right_hand": "Retracts clear with open fingers.",
+            "object_motion": "Bottle remains on its side and cap stays separate on tabletop.",
+            "evidence_frame_indices": [
+              880,
+              926
+            ],
+            "confidence": "high"
+          }
+        ],
+        "object_relative_landmark_assessment": "Bottle body/neck axis stays tilted in enclosing left fingers during right-hand cap turning. Right wrist/palm orientation changes around neck without matching gross bottle-axis change; this supports cap turning but textureless white cap precludes measured direction. At 778\u2013800 a white piece travels with right fingers, leaving a distinct bottle neck and air gap; final separate piece on table confirms cap removal. Whole-bottle lift/tilt and final sideways settling are tracked separately from cap manipulation.",
+        "prior_review_corrections": [
+          "Earlier 113\u2013214 interval overstated grip establishment; open left fingers beside body persist near frame 200, definite enclosing/load-bearing grip is observed at 206\u2013214 and subsequent lift.",
+          "Earlier second engagement was stated from frame 549; right hand remains visibly clear through 610 and resumes cap contact during 611\u2013664. Prompt now preserves the intermediate let-go/reposition/regrasp explicitly."
+        ],
+        "anatomical_roles_rechecked": "Initial face direction, front chest, near shoulder-to-elbow-to-hand trace and far forearm attachment confirm left bottle/right cap assignment.",
+        "outcome_rechecked": "Cap removal succeeds; cap released separately on table first, then bottle released and settles on its side; both hands end clear.",
+        "uncertainties": [
+          "White cap has few usable orientation landmarks and right fingers partially occlude it. Right-hand turning at the cap while bottle remains left-held is visible, but exact cap-relative angular excursion, clockwise/counterclockwise direction and partial-turn count are not reliable; none are specified in the prompt.",
+          "Exact first cap contact during approach and second cap re-engagement during frames 611\u2013664 are partially obscured by fingers. Enclosing cap contact before turning and the complete intermediate disengagement are established.",
+          "The right fingers briefly obscure cap-table contact during release; the cap resting separately on the table after opening is visible."
+        ],
+        "media_preservation": "Complete source video and initial PNG retained byte-for-byte; only prompt/review/metadata outputs edited."
+      },
+      "review_completed_at": "2026-10-13T18:55:35.187581+00:00"
     },
     {
       "key": "he_deformable-1",
       "dedicated_review_agent": "review_he_deformable_1",
       "world_model": "Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/world_model",
       "previous_prompt": "The robot grasps the raised fabric flap at the bag opening with its right hand, bends it down toward the bag, and lifts it upright again. It folds the flap back toward its body and releases it, leaving the flap resting flat beside the opening while the bag remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The robot bends the raised fabric flap down toward the bag with its right hand, then lifts it upright again while holding its edge. Keeping hold of the flap, it lowers it back toward its body and releases it, leaving the flap flat on the robot-facing side of the opening while the bag remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "review_completed_at": "2026-10-13T19:04:19.175567+00:00",
+        "review_reason": "Meticulous second pass under explicit native-resolution contact-tracing rule; check for overlooked left participation and challenge force/mechanism claims.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg"
+        ],
+        "inspected_sampled_frame_count": 152,
+        "inspected_frame_stride": 2,
+        "source_initial_png_viewed_at_native_resolution": true,
+        "native_frames_viewed_this_pass": [
+          90,
+          110,
+          128,
+          148,
+          158,
+          166,
+          180,
+          192,
+          204,
+          214,
+          228,
+          244,
+          302
+        ],
+        "contact_chronology": [
+          {
+            "source_frame_interval": [
+              0,
+              89
+            ],
+            "right_hand": "Starts free beside body, raises and approaches flap side edge without moving fabric yet.",
+            "left_hand": "Open by lap; no bag contact.",
+            "object_relative_evidence": "Raised flap has buckle/edge above the bag; body side seam and orange loop remain fixed relative to table.",
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              90,
+              128
+            ],
+            "right_hand": "Fingers descend along image-left side of raised flap and turn inward against edge; the thumb/opposing fabric face is hidden. Side-edge contact is visible; secure pinch at first instant is not fully observable.",
+            "left_hand": "Open fingers remain to image right of bag rim, with clear space before fingertips; no gripping or support.",
+            "object_relative_evidence": "Flap edge begins descending while main body contour and side loop remain on table.",
+            "confidence": "high for contact and motion; moderate for grasp form"
+          },
+          {
+            "source_frame_interval": [
+              129,
+              160
+            ],
+            "right_hand": "Hand moves down/inward with flap until flap is almost horizontal toward bag body. Thumb and fabric overlap obscure distinction between edge holding and pushing.",
+            "left_hand": "Maintains open hand near lap; no coordinated inward pressure or fabric deformation at fingertips.",
+            "object_relative_evidence": "Flap tilt changes relative to main bag side seam; this is flexible flap bending, not whole-bag lift or rigid-hinge operation.",
+            "confidence": "high for flap bending"
+          },
+          {
+            "source_frame_interval": [
+              161,
+              192
+            ],
+            "right_hand": "Fingers curl around flap edge, with opposing thumb region across edge; hand lifts flap upright. Flap follows hand, establishing edge holding during lift. No visible release into left hand.",
+            "left_hand": "Open and free beside rim; not bearing flap or bag.",
+            "object_relative_evidence": "Printed inner flap surface becomes visible as free edge rises, while flap attachment remains beside stable bag body.",
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              193,
+              228
+            ],
+            "right_hand": "Maintains contact around free flap edge and lowers it toward torso, bending flap to robot-facing side. Fingers finish near low fabric edge; exact fabric beneath fingers is partly hidden.",
+            "left_hand": "Closest apparent proximity is near final lowering; fingers remain open. Rim does not visibly move with left hand, and no encirclement or supporting grasp occurs.",
+            "object_relative_evidence": "Printed inner surface tilts down toward robot; main bag contour remains on tabletop. No zipper pull, cap, or latch operation visible.",
+            "confidence": "high for lowering direction; moderate for exact final fingertip contact"
+          },
+          {
+            "source_frame_interval": [
+              229,
+              264
+            ],
+            "right_hand": "Hand opens/lifts clear; native 244 shows separation from flattened flap. Flap stays down as hand withdraws.",
+            "left_hand": "Remains near lap, still without confirmed fabric contact.",
+            "object_relative_evidence": "Flap rests flat on robot-facing side rather than rising with right hand; release is visibly confirmed.",
+            "confidence": "high"
+          },
+          {
+            "source_frame_interval": [
+              265,
+              302
+            ],
+            "right_hand": "Retracts to low resting position with no fabric held.",
+            "left_hand": "Moves slightly outward/downward; empty hand remains free.",
+            "object_relative_evidence": "Bag body remains on table, flap flat toward robot. Interior opening and closure functionality are not resolved.",
+            "confidence": "high"
+          }
+        ],
+        "object_bearing": "Table supports bag body throughout; only right hand bears/guides raised flap. Left bearing is not established.",
+        "landmark_comparison": "Flap free edge/buckle and printed inner surface change inclination relative to flap attachment, main bag contour, diagonal seam and orange side loop. These landmarks support flap bending and reversal while bag stays on table; no rigid hinge or closure mechanism is identified.",
+        "regrasp_assessment": "No complete release/regrasp or hand-to-hand transfer is visible before terminal release. Right finger posture changes as flap tilts, but hidden thumb contact prevents a precise grip-onset claim.",
+        "left_support_assessment": "No visible grip or stabilizing support. Brief light contact cannot be categorically excluded due to close projected proximity, so no support role is written into prompt.",
+        "previous_prompt": "The robot grasps the raised fabric flap at the bag opening with its right hand, bends it down toward the bag, and lifts it upright again. It folds the flap back toward its body and releases it, leaving the flap resting flat beside the opening while the bag remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "changes": "Replaced categorical early grasps claim with bends wording; explicitly confines holding claim to upright lift; retained lowering reversal and confirmed release; specified final robot-facing flap location.",
+        "uncertainties": [
+          "The right thumb and flap edge are partly occluded during first contact and initial lowering, so an exact push-versus-pinch classification and precise grip onset cannot be established. Edge holding is clearer during the subsequent lift.",
+          "The dark fabric and flap obscure the interior opening, so exact opening width and whether a closure is fully open or shut cannot be established. No zipper fastening or unfastening is visibly confirmed.",
+          "Left fingertips approach the bag rim in projection during final lowering, but no grip or stabilizing contact is visible; a momentary light touch cannot be excluded from this view."
+        ],
+        "outcome": "Observed fabric repositioning is complete; opening width and fastening state remain undetermined."
+      },
+      "review_completed_at": "2026-10-13T19:04:19.340360+00:00"
     },
     {
       "key": "he_deformable-2",
       "dedicated_review_agent": "review_he_deformable_2",
       "world_model": "Humanoid_Everyday/deformable-2__fold_towel/third_person/world_model",
       "previous_prompt": "The humanoid robot grasps the checkered towel\u2019s edge on its left with its left hand and lifts that half while the other half stays on the table. It carries the raised half across to its right, lowers and releases it over the remaining half, leaving a smaller, slightly offset folded stack on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid robot grasps the checkered towel\u2019s edge on its left with its left hand and lifts that half while the other half rests on the table. It draws the raised half across to its right, then opens its hand and releases the edge, letting the fabric fall over the remaining half into a smaller, slightly offset folded stack. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T19:06:15.622449+00:00",
+        "scope": "Complete source clip, with explicit separate hand tracing and challenge of support/contact/force claims.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg",
+          "sheet_005.jpg",
+          "sheet_006.jpg",
+          "sheet_007.jpg"
+        ],
+        "native_evidence_frame_indices": [
+          0,
+          300,
+          390,
+          410,
+          420,
+          476,
+          490,
+          524,
+          530,
+          532,
+          534,
+          536,
+          540,
+          568,
+          828
+        ],
+        "source_initial_png_viewed": true,
+        "bimanual_participation": "not observed",
+        "findings": [
+          "Active arm is anatomical left, continuously traceable to image-right shoulder of the front-facing torso.",
+          "The right arm remains lowered throughout; a cropped hand cannot be promoted to an unseen supporting role.",
+          "The towel folds robot-left half over robot-right half. Checkered grid and stacked hems show flap bending relative to the lower half, with sliding of the lower half along the table.",
+          "The left hand releases the edge above the table, allowing it to fall; there is no demonstrated controlled lowering all the way to tabletop contact, pressing, or regrasp."
+        ],
+        "contact_chronology": [
+          {
+            "frame_interval": [
+              0,
+              300
+            ],
+            "left": "Initially lowered, then open hand approaches above the robot-left edge; at 300 fingers remain above fabric.",
+            "right": "Shoulder and arm stay lowered; no visible contact with towel.",
+            "object_contact": "Layered towel rests flat on table.",
+            "native_evidence": [
+              0,
+              300
+            ],
+            "confidence": "high"
+          },
+          {
+            "frame_interval": [
+              301,
+              414
+            ],
+            "left": "Digits descend onto the robot-left edge and close; exact finger-to-layer surfaces are occluded.",
+            "right": "Remains below and away from tabletop, no visible stabilization.",
+            "object_contact": "Towel initially stays substantially flat; edge retained as lifting begins.",
+            "native_evidence": [
+              390,
+              410
+            ],
+            "confidence": "high for grasp, medium for onset/configuration"
+          },
+          {
+            "frame_interval": [
+              415,
+              485
+            ],
+            "left": "Maintains grasp on elevated short end and lifts robot-left half into a flap.",
+            "right": "No change toward object or support contact.",
+            "object_contact": "Remaining half rests on table; flap rises relative to it.",
+            "native_evidence": [
+              420,
+              476
+            ],
+            "confidence": "high"
+          },
+          {
+            "frame_interval": [
+              486,
+              527
+            ],
+            "left": "Same retained edge drawn across toward robot right, no regrasp evident.",
+            "right": "No visible bearing or stabilizing role.",
+            "object_contact": "Lower half slides on table while raised flap bends across it, demonstrated by grid and hem landmarks.",
+            "native_evidence": [
+              490,
+              524
+            ],
+            "confidence": "high"
+          },
+          {
+            "frame_interval": [
+              528,
+              534
+            ],
+            "left": "Digits open with edge still elevated, releasing fabric; hand/fabric gap visible at 532.",
+            "right": "No intervention.",
+            "object_contact": "Released flap falls onto lower half and settles; no hand presses it down.",
+            "native_evidence": [
+              530,
+              532,
+              534
+            ],
+            "confidence": "high"
+          },
+          {
+            "frame_interval": [
+              535,
+              828
+            ],
+            "left": "Open hand clear above stack, then withdraws and lowers; no new contact.",
+            "right": "Remains lowered, hand mostly outside frame.",
+            "object_contact": "Slightly offset folded stack remains on table.",
+            "native_evidence": [
+              536,
+              540,
+              568,
+              828
+            ],
+            "confidence": "high"
+          }
+        ],
+        "revisions": [
+          "Corrected controlled-lowering wording: edge is released while elevated and falls onto remaining half.",
+          "Refined first-contact interval and distinguished open-hand proximity from established contact.",
+          "Made lower-half table sliding explicit in metadata, avoiding a fixed/stabilized-half claim.",
+          "Removed a subjective source-caption discrepancy; the broad annotation does not contradict the observed fold."
+        ],
+        "uncertainties": [
+          "Exact digit-to-fabric contacts and number of towel layers caught in the left-hand grasp are partly occluded. Coupled hand/fabric lifting establishes edge retention without proving a particular pinch configuration.",
+          "The inactive anatomical right hand is mostly cropped. No visible right-arm approach or contact with the towel supports a second-hand stabilization claim.",
+          "The exact first-contact frame is not resolved between the open hand above the cloth at frame 300 and visible edge contact at 390."
+        ],
+        "source_preservation": "Complete original source retained; no media mutations."
+      },
+      "review_completed_at": "2026-10-13T19:06:15.836670+00:00"
     },
     {
       "key": "he_deformable-3",
       "dedicated_review_agent": "review_he_deformable_3",
       "world_model": "Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/world_model",
       "previous_prompt": "The humanoid steadies one edge of the jacket with its left hand while its right hand grasps the opposite side. The left hand opens clear as the right hand lifts the grasped section and folds it inward over the rest of the jacket. The right hand releases and withdraws, leaving the jacket partially folded and bunched on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid grasps the jacket's far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "review_completed_at": "2026-10-13T19:01:44.889328+00:00",
+        "protocol_focus": "Native-resolution separate hand contact tracing and object-relative garment landmarks under updated AGENTS.md.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg"
+        ],
+        "sampled_coverage": {
+          "stride": 2,
+          "sample_count": 200,
+          "source_frames_inclusive": [
+            0,
+            398
+          ]
+        },
+        "native_initial_source_png_viewed": true,
+        "native_frames_visually_viewed": [
+          60,
+          86,
+          100,
+          126,
+          156,
+          168,
+          180,
+          184,
+          188,
+          192,
+          196,
+          204,
+          236,
+          252,
+          286,
+          294,
+          298,
+          302,
+          306,
+          312,
+          398
+        ],
+        "previous_prompt": "The humanoid steadies one edge of the jacket with its left hand while its right hand grasps the opposite side. The left hand opens clear as the right hand lifts the grasped section and folds it inward over the rest of the jacket. The right hand releases and withdraws, leaving the jacket partially folded and bunched on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "findings": [
+          "Earlier claims that left hand steadies the jacket and opens to release were unsupported. Comparing closely spaced native frames shows the fabric moves away while the left hand remains open and nearly stationary.",
+          "Right grasp established by fabric co-motion after finger closure, with right hand carrying the raised section through the fold and releasing around frames 300\u2013306.",
+          "Orange emblem and white lettering identify the lifted section; sleeve/lower cloth remain desk-supported during the inward fold toward robot-left.",
+          "No hand-to-hand transfer, left supporting grasp, second folding step or neat final fold is visible."
+        ],
+        "contact_trace": {
+          "left": [
+            {
+              "frames": [
+                0,
+                188
+              ],
+              "part": "Sleeve edge beside anatomical-left hand",
+              "evidence": "Fabric partly occludes fingertips; no visible closure or load-bearing co-motion.",
+              "interpretation": "Possible incidental contact, not established stabilization or grasp."
+            },
+            {
+              "frames": [
+                188,
+                204
+              ],
+              "part": "Same sleeve edge",
+              "evidence": "Cloth edge moves away as right lifts; fingers remain nearly unchanged; clearance visible by 196.",
+              "interpretation": "Fabric clearance, not demonstrated intentional left release."
+            },
+            {
+              "frames": [
+                205,
+                398
+              ],
+              "part": "No established grasp",
+              "evidence": "Open hand beside sleeve through folding; later slight backward motion.",
+              "interpretation": "Idle/open clearance; no transfer or regrasp."
+            }
+          ],
+          "right": [
+            {
+              "frames": [
+                0,
+                125
+              ],
+              "part": "Far anatomical-right edge near white lettering",
+              "evidence": "Open approach, then contact/partial fingertip occlusion.",
+              "interpretation": "Approach and grasp establishment."
+            },
+            {
+              "frames": [
+                126,
+                244
+              ],
+              "part": "Far edge of broad section carrying emblem",
+              "evidence": "Fingers close and garment follows as hand rises.",
+              "interpretation": "Established grasp; raised section borne by right hand."
+            },
+            {
+              "frames": [
+                245,
+                300
+              ],
+              "part": "Same grasped edge/section",
+              "evidence": "Continuous fabric-to-hand co-motion into overlapping folds; no intervening free hand.",
+              "interpretation": "Inward fold and settling without established regrasp."
+            },
+            {
+              "frames": [
+                301,
+                312
+              ],
+              "part": "Former grasped edge",
+              "evidence": "Fingers lift and open; garment no longer follows.",
+              "interpretation": "Release and withdrawal."
+            }
+          ]
+        },
+        "uncertainties": [
+          "Initial fabric overlap obscures the left fingertips, so incidental contact is possible but a grasp, active stabilization and intentional left release cannot be established. The idle left hand is omitted from the usable prompt; detailed pose and clearance evidence is preserved in the review.",
+          "The right-hand fabric grasp near white lettering and orange emblem is clear, but overlapping garment layers prevent confident naming of the exact seam/panel; it is described as the far edge/side.",
+          "No neat completed-jacket fold is visible; whether the loose single fold satisfies any external success rubric is unknown."
+        ],
+        "revised_prompt": "The humanoid grasps the jacket's far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "media_changed": false,
+        "idle_hand_prompt_decision": "Omit left hand because native tracing does not establish assistance or any essential left-hand contact transition; its occlusion and nearly stationary open pose remain documented."
+      },
+      "review_completed_at": "2026-10-13T19:02:06.580631+00:00"
     },
     {
       "key": "he_deformable-4",
       "dedicated_review_agent": "review_he_deformable_4",
       "world_model": "Humanoid_Everyday/deformable-4__fold_toolkit/third_person/world_model",
       "previous_prompt": "The robot uses its right hand to grasp and lift the outer flap of the blue toolkit case, then folds it inward over the adjacent tool section while its left hand stays at the opposite edge. It presses the flap down and releases it, leaving the case partly open with the flap curled upward and the tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The robot grasps the outer flap of the blue toolkit case with its right hand and lifts it upright, then bends it inward over the adjacent tool section while the rest of the case rests on the table. It lowers the bent flap and releases it, leaving the case partly open with the flap curled upward and tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T19:01:48.370393+00:00",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg"
+        ],
+        "inspected_sampled_frame_count": 133,
+        "source_initial_png_visually_viewed": true,
+        "native_frames_visually_viewed_this_pass": [
+          54,
+          55,
+          68,
+          69,
+          88,
+          89,
+          96,
+          97,
+          128,
+          129,
+          138,
+          139,
+          154,
+          155,
+          194,
+          195,
+          206,
+          207,
+          218,
+          219,
+          264
+        ],
+        "adjacent_native_frame_comparisons": [
+          [
+            54,
+            55
+          ],
+          [
+            68,
+            69
+          ],
+          [
+            88,
+            89
+          ],
+          [
+            96,
+            97
+          ],
+          [
+            128,
+            129
+          ],
+          [
+            138,
+            139
+          ],
+          [
+            154,
+            155
+          ],
+          [
+            194,
+            195
+          ],
+          [
+            206,
+            207
+          ],
+          [
+            218,
+            219
+          ]
+        ],
+        "object_relative_landmarks": "The blue perimeter of the outer flap rises relative to the neighboring stitched/tool-bearing panel, then bends inward and descends over that panel. The tool slots and opposite end remain table-supported while the body shifts slightly. This establishes flap deformation rather than whole-case lifting, rigid hinging, or fastening.",
+        "contact_chronology": {
+          "right": [
+            {
+              "frames_inclusive": [
+                0,
+                68
+              ],
+              "part": "Outer blue-trimmed flap edge",
+              "contact": "Approaches; exact first contact unresolved",
+              "evidence": [
+                54,
+                55,
+                68,
+                69
+              ]
+            },
+            {
+              "frames_inclusive": [
+                69,
+                132
+              ],
+              "part": "Outer flap edge/top of raised end panel",
+              "contact": "Fingertips engage and bear the flap during lift; raised edge follows right hand",
+              "evidence": [
+                88,
+                89,
+                96,
+                97,
+                128,
+                129
+              ]
+            },
+            {
+              "frames_inclusive": [
+                133,
+                164
+              ],
+              "part": "Same flap as it bends over adjacent tool section",
+              "contact": "Hand carries edge inward/down and changes finger orientation; discrete release-and-regrasp not established",
+              "evidence": [
+                138,
+                139,
+                154,
+                155
+              ]
+            },
+            {
+              "frames_inclusive": [
+                165,
+                196
+              ],
+              "part": "Lowered flap edge",
+              "contact": "Hand stays close to edge; pressure and continued pinch not fully resolved",
+              "evidence": [
+                194,
+                195
+              ]
+            },
+            {
+              "frames_inclusive": [
+                197,
+                225
+              ],
+              "part": "Flap edge",
+              "contact": "Fingers open and separate upward; flap curls up as hand departs",
+              "evidence": [
+                206,
+                207,
+                218,
+                219
+              ]
+            },
+            {
+              "frames_inclusive": [
+                226,
+                264
+              ],
+              "part": null,
+              "contact": "Withdrawn, no further engagement",
+              "evidence": [
+                264
+              ]
+            }
+          ],
+          "left": [
+            {
+              "frames_inclusive": [
+                0,
+                97
+              ],
+              "part": "Beside opposite end of case",
+              "contact": "No clear finger closure or case-bearing engagement",
+              "evidence": [
+                54,
+                55,
+                68,
+                69,
+                88,
+                89,
+                96,
+                97
+              ]
+            },
+            {
+              "frames_inclusive": [
+                98,
+                196
+              ],
+              "part": "Beside opposite end; fingers partly occluded near blue edge",
+              "contact": "No resolved contact change, grasp, independent fold, or load-bearing support",
+              "evidence": [
+                128,
+                129,
+                138,
+                139,
+                154,
+                155,
+                194,
+                195
+              ]
+            },
+            {
+              "frames_inclusive": [
+                197,
+                264
+              ],
+              "part": "Beside opposite end",
+              "contact": "Pose remains nearby; no transfer or release event established",
+              "evidence": [
+                206,
+                207,
+                218,
+                219,
+                264
+              ]
+            }
+          ]
+        },
+        "findings": [
+          "Right-hand flap lift, inward bending, lowering and release confirmed.",
+          "Main case body is table-supported; its minor sliding does not prove left-hand stabilization.",
+          "Left contribution unconfirmed, so idle proximity was removed from the prompt.",
+          "Earlier firm pressing wording exceeded the visible evidence and was replaced with lowering.",
+          "Final partial fold and exposed tools confirmed."
+        ],
+        "previous_prompt": "The robot uses its right hand to grasp and lift the outer flap of the blue toolkit case, then folds it inward over the adjacent tool section while its left hand stays at the opposite edge. It presses the flap down and releases it, leaving the case partly open with the flap curled upward and the tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+        "prompt_changed": true,
+        "media_changes": false,
+        "uncertainties": [
+          "The left fingers partly overlap the opposite edge in projection, but resolution and occlusion do not establish a supporting grasp or force.",
+          "Exact right-hand finger contacts during the lowered-flap hold are hidden or only a few pixels wide; a firm press or discrete regrasp cannot be established.",
+          "The right release occurs during opening and separation in frames 197\u2013225, but the precise last-contact frame is not resolved."
+        ]
+      },
+      "review_completed_at": "2026-10-13T19:01:48.574212+00:00"
     },
     {
       "key": "he_deformable-5",
       "dedicated_review_agent": "review_he_deformable_5",
       "world_model": "Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/world_model",
       "previous_prompt": "The humanoid robot places its right hand on one side of the soft travel bag\u2019s top and its left hand on the other side. It presses downward with both hands together, flattening the bag against the tabletop, then lifts both hands away and returns them toward its lap. The bag stays on the table and expands back toward its original shape after the pressure is removed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid robot brings its right hand onto the soft travel bag\u2019s top beside the handle and its left hand onto the top near the tan patch. Both hands press downward together, flattening the bag against the tabletop. It lifts the right hand slightly ahead of the left and returns both hands toward its lap, leaving the bag on the table as it rebounds to a fuller shape. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T19:05:47.661883+00:00",
+        "reviewer": "review_he_deformable_5",
+        "rules_applied": "Current AGENTS.md: trace each hand separately through every contact change at native resolution; avoid support/contact inference from proximity.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg"
+        ],
+        "inspected_sampled_frame_count": 173,
+        "source_initial_png_visually_reinspected": true,
+        "native_frames_visually_reinspected": [
+          94,
+          110,
+          124,
+          125,
+          126,
+          138,
+          139,
+          150,
+          162,
+          180,
+          220,
+          228,
+          232,
+          233,
+          234,
+          240,
+          241,
+          264,
+          278,
+          344
+        ],
+        "adjacent_frame_comparisons": [
+          [
+            124,
+            125
+          ],
+          [
+            138,
+            139
+          ],
+          [
+            232,
+            233
+          ],
+          [
+            240,
+            241
+          ]
+        ],
+        "object_relative_landmarks": "Compared oval top handle, tan patch, sidewall height, and tabletop-supported base. Compression is deformation of the bag body, not handle actuation or whole-object lifting.",
+        "findings": [
+          "Top contact targets refined to right beside handle and left near tan patch.",
+          "Both downward hand motions accompany visible collapse; no carrying grasp or independently stabilizing side contact is established.",
+          "Right withdrawal begins slightly ahead of left; prompt preserves this visible order.",
+          "Bag rebounds; no permanent compression or storage success claimed."
+        ],
+        "contact_chronology": [
+          {
+            "source_frames_inclusive": [
+              0,
+              91
+            ],
+            "right_hand": "Initially at lap, then rises with open fingers above the bag without demonstrated contact.",
+            "left_hand": "Initially at lap, then rises with open fingers above the bag without demonstrated contact.",
+            "object_response": "Bag stays supported by tabletop with fuller side walls and oval handle visible.",
+            "evidence_frames": [
+              0,
+              78,
+              94
+            ],
+            "confidence": "high for approach; no support contact claimed"
+          },
+          {
+            "source_frames_inclusive": [
+              92,
+              137
+            ],
+            "right_hand": "Descends with fingers angled downward toward the image-left portion of the top next to the handle; fingertips increasingly overlap the top/upper edge in projection.",
+            "left_hand": "Descends toward the top on the tan-patch side, with extended fingers oriented down and forward; fingertips overlap the upper surface by the end of this interval.",
+            "object_response": "Little large-scale height change yet; contact initiation cannot be pinned to one decoded frame because lower finger surfaces are hidden.",
+            "evidence_frames": [
+              94,
+              110,
+              124,
+              125,
+              126,
+              132
+            ],
+            "confidence": "medium for first-contact timing; high for contact target"
+          },
+          {
+            "source_frames_inclusive": [
+              138,
+              179
+            ],
+            "right_hand": "Fingers remain on the top beside the handle as the wrist and hand descend; no handle enclosure or carrying grasp is visible.",
+            "left_hand": "Extended fingers descend across the top near the tan patch and upper edge; hand orientation adjusts with the collapsing surface, without a lift-and-regrasp.",
+            "object_response": "Top lowers and side walls collapse while the bottom stays on the tabletop. The two downward hand motions are synchronized with deformation.",
+            "evidence_frames": [
+              138,
+              139,
+              144,
+              150,
+              160,
+              162
+            ],
+            "confidence": "high for coordinated compression; exact palm/fingertip pressure distribution hidden"
+          },
+          {
+            "source_frames_inclusive": [
+              180,
+              228
+            ],
+            "right_hand": "Maintains downward contact on its portion of the top beside the handle; digits remain extended/angled along the lowered surface.",
+            "left_hand": "Maintains downward contact near the tan patch; no stabilizing side grasp is independently established.",
+            "object_response": "Bag is visibly flattened, with low collapsed walls. Handle remains part of the same deforming top, rather than a separately actuated mechanism.",
+            "evidence_frames": [
+              180,
+              200,
+              220,
+              228
+            ],
+            "confidence": "high"
+          },
+          {
+            "source_frames_inclusive": [
+              229,
+              264
+            ],
+            "right_hand": "Begins raising and backing away slightly ahead of the left; by frames 240\u2013241 there is a visible gap beneath its extended fingers.",
+            "left_hand": "Also raises from the patch-side top, staying lower and closer to the bag than the right during early withdrawal; continued pressure after the right clears is not established from proximity.",
+            "object_response": "Side walls and top rise as compression is relieved. The handle and patch remain on the upper surface; bag is not lifted or transferred.",
+            "evidence_frames": [
+              228,
+              232,
+              233,
+              234,
+              240,
+              241,
+              246,
+              252,
+              258,
+              264
+            ],
+            "confidence": "high for withdrawal order and rebound; medium for individual last-contact instants"
+          },
+          {
+            "source_frames_inclusive": [
+              265,
+              344
+            ],
+            "right_hand": "Clearly away from bag and retracts toward lap.",
+            "left_hand": "Clearly away from bag and retracts toward lap.",
+            "object_response": "Bag remains on tabletop and fuller than under pressure. Final shape is not claimed equal to its initial volume.",
+            "evidence_frames": [
+              278,
+              300,
+              344
+            ],
+            "confidence": "high"
+          }
+        ],
+        "uncertainties": [
+          "Exact first and last contact frames for individual fingertips and each hand\u2019s palm-versus-fingertip pressure distribution are hidden by the oblique view and dark material. Intervals describe visible engagement/deformation and separation rather than inferred force onset.",
+          "The left hand remains lower than the right during initial withdrawal, but continuing stabilizing pressure cannot be established from proximity alone.",
+          "Any lasting size reduction is not measurable. Visible temporary flattening and subsequent rebound do not establish permanent compression or successful storage."
+        ]
+      },
+      "review_completed_at": "2026-10-13T19:05:47.781589+00:00"
     },
     {
       "key": "he_deformable-6",
       "dedicated_review_agent": "review_he_deformable_6",
       "world_model": "Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/world_model",
       "previous_prompt": "The humanoid holds the near edge of the black-and-red plastic bag with its left hand while its right hand gathers the far edge inward, bunching the flexible material between its hands on the tabletop. It opens both hands and withdraws them, leaving the bag loosely crumpled on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
-      "status": "pending"
+      "status": "complete",
+      "revised_prompt": "The humanoid brings its right hand against the far side of the black-and-red plastic bag and its left hand against the near side, then moves both hands inward to gather and squeeze the material while the bag rests on the table. The left hand moves clear as the right briefly raises the far side and releases it. Both hands withdraw, leaving the bag loosely crumpled on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+      "second_review": {
+        "completed_at": "2026-10-13T19:04:10.639003+00:00",
+        "review_scope": "Same dedicated source video only; complete four contact sheets re-viewed, source initial PNG re-viewed, native temporal details traced per hand.",
+        "reviewed_contact_sheets": [
+          "sheet_001.jpg",
+          "sheet_002.jpg",
+          "sheet_003.jpg",
+          "sheet_004.jpg"
+        ],
+        "native_frames_viewed_this_pass": [
+          184,
+          192,
+          196,
+          200,
+          204,
+          208,
+          216,
+          224,
+          232,
+          240,
+          248,
+          280,
+          296,
+          300,
+          304,
+          308,
+          312,
+          320,
+          324,
+          328,
+          332,
+          336,
+          344,
+          426
+        ],
+        "contact_chronology": [
+          {
+            "source_frame_interval": [
+              144,
+              195
+            ],
+            "left_hand": "Descends open to the tabletop in front of the near bag edge; a visible gap/clear space remains, so no stabilizing hold is assigned.",
+            "right_hand": "Descends toward the far black bag edge; fingers straddle or contact its outer side by native 192\u2013196.",
+            "object_support": "Table supports the entire bag.",
+            "evidence_frames": [
+              184,
+              192,
+              196
+            ],
+            "confidence": "High for hand locations; medium for precise first right contact."
+          },
+          {
+            "source_frame_interval": [
+              196,
+              223
+            ],
+            "left_hand": "Moves inward from outside the near side; upper finger/hand contacts the black/red boundary region by 208\u2013216, with the contact surface partly hidden.",
+            "right_hand": "Remains at the far black side and moves inward toward the other hand, gathering a black fold.",
+            "object_support": "Broad red opening remains on the table while side material creases and rises.",
+            "evidence_frames": [
+              196,
+              200,
+              204,
+              208,
+              216
+            ],
+            "confidence": "High for convergence and deformation; medium for exact pinch/contact onset."
+          },
+          {
+            "source_frame_interval": [
+              224,
+              295
+            ],
+            "left_hand": "Continues actively moving the near side inward toward the right hand. Near red/black side lies against the hand/tips; this is active gathering rather than a stationary stabilizer.",
+            "right_hand": "Gathering contact at the far black side continues as both hands converge around the bag section nearest the robot.",
+            "object_support": "Central black surface rises into a mound, red near panel narrows and wrinkles, and the rest remains supported on the table. No full-bag lift occurs.",
+            "evidence_frames": [
+              224,
+              232,
+              240,
+              248,
+              280
+            ],
+            "confidence": "High for both-hand gathering; medium for pinching versus pressing because opaque hands and film folds hide interfaces."
+          },
+          {
+            "source_frame_interval": [
+              296,
+              307
+            ],
+            "left_hand": "Opens/separates outward and downward from the near side; by 304 there is a clear open gap below the loosened near edge.",
+            "right_hand": "Keeps the far black section engaged while beginning to raise it slightly and move it outward.",
+            "object_support": "Table supports most of the bag; right hand bears only a raised side section as left contact disengages.",
+            "evidence_frames": [
+              296,
+              300,
+              304
+            ],
+            "confidence": "High for left clearing earlier and right-side material following the right hand; medium for exact left last-contact frame."
+          },
+          {
+            "source_frame_interval": [
+              308,
+              329
+            ],
+            "left_hand": "Open below and clear of the near side, then begins raising clear. No new grasp or supporting contact is visible.",
+            "right_hand": "Briefly retains the far black side above the tabletop while separating outward; bag film remains drawn to the hand at 308/312/320/324, then starts settling at 328.",
+            "object_support": "Whole bag remains table-supported apart from the temporarily raised far side.",
+            "evidence_frames": [
+              308,
+              312,
+              320,
+              324,
+              328
+            ],
+            "confidence": "High for raised-side retention; medium for exact last pinch frame."
+          },
+          {
+            "source_frame_interval": [
+              330,
+              344
+            ],
+            "left_hand": "Open and raised away from the near side.",
+            "right_hand": "Opens and clears the far side; native 332/336 show visible free fingertips and separation from the settling black panel.",
+            "object_support": "Bag spreads and settles onto the table in a loose raised/wrinkled shape.",
+            "evidence_frames": [
+              332,
+              336,
+              344
+            ],
+            "confidence": "High for release and both hands clear."
+          },
+          {
+            "source_frame_interval": [
+              345,
+              426
+            ],
+            "left_hand": "Withdraws toward torso and remains open, clear of bag.",
+            "right_hand": "Withdraws with left hand and remains clear.",
+            "object_support": "Bag remains on table, loose and still puffy.",
+            "evidence_frames": [
+              426
+            ],
+            "confidence": "High."
+          }
+        ],
+        "landmark_comparisons": "Near red/black boundary advances into the left hand as the near hand translates inward; far black corner follows the right hand inward. White logo becomes more upright and central black panel rises as opposite sides converge. During separation the near red edge settles away from the open left hand while the far black corner remains drawn upward to the right hand, then detaches by 332\u2013336 and settles. Deformation occurs within the film, not rigid whole-object rotation or a hinge/mechanism.",
+        "prior_claims_corrected": [
+          "Replaced stationary left holding versus right-only gathering with active inward gathering by both hands.",
+          "Replaced simultaneous release with left clearing followed by right retaining/raising and releasing the far-side section.",
+          "Avoided specific rim grasps because pinch surfaces are occluded."
+        ],
+        "anatomical_mapping": "Near-camera left arm and far-camera right arm retain the initial/body-attachment mapping established in the first review.",
+        "uncertainties": [
+          "Exact film pinch surfaces and the first/last contact frames are partly hidden by opaque hands and bag folds. Contact/gather wording describes visible film deformation and hand-relative motion without asserting a secure rim grasp.",
+          "The side regions can be identified as near black/red and far black material, but a specific rim, seam, handle or bag layer being pinched cannot be established.",
+          "Air displacement and lasting volume reduction cannot be confirmed. The released bag spreads again and retains a raised/puffy profile."
+        ],
+        "media_policy": "All 427 source frames retained; original media bytes unchanged."
+      },
+      "review_completed_at": "2026-10-13T19:04:10.782367+00:00"
     }
-  ]
+  ],
+  "pending": [],
+  "validation_status": "passed",
+  "audit_completed_at": "2026-10-13T19:11:31.745949+00:00"
 }

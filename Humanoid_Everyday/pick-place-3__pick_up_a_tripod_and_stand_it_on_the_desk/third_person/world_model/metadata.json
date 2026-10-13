@@ -2,7 +2,7 @@
   "dataset": "Humanoid_Everyday",
   "video_id": "pick-place-3",
   "variant": "full_sequence",
-  "generation_prompt": "The humanoid uses its left hand to grasp a near tripod leg and its right hand to support the central frame. Both hands raise and rotate the tripod from its tilted position into an upright stance, guiding its spread feet onto the desk. It releases the tripod and withdraws both hands, leaving it standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "generation_prompt": "The humanoid grasps one tripod leg with its left hand and lifts the tripod from its tilted position. Keeping the left-hand hold, it brings its right hand underneath another leg, repositions that grip, and uses both hands to rotate the tripod upright and lower its spread feet onto the desk. It opens both hands and withdraws, leaving the tripod standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "prompt_protocol": "humanoid_action_v1",
   "prompt_provenance": "visually_authored_from_video_and_initial_frame",
   "source_video": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/original/original.mp4",
@@ -34,12 +34,15 @@
   "first_frame_sha256": "2938dcf6a71e851bf316b46c7f468d31f29f2ca567a32f5c68c069bd7d9b9b10",
   "observed_terminal_state": "Tripod upright and unsupported on three spread feet on the desktop; both hands clear and arms lowered beside the stationary robot.",
   "arm_hand_roles": {
-    "left": "Foreground arm grasps the near tripod leg, raises and supports it during rotation, steadies the near side as the feet contact the desk, then releases and lowers away.",
-    "right": "Farther arm takes the central tripod frame/brace, guides and stabilizes its orientation in coordination with the left hand, then releases and withdraws.",
-    "coordination": "A simultaneous two-hand lift/rotation and setting-down of one object. No hand-to-hand transfer, human assistance, or locomotion is visible."
+    "left": "Foreground anatomical left hand grasps one leg first, starts lifting before right engagement, maintains that hold through right-hand repositioning and whole-tripod rotation, helps lower the spread feet, then opens and withdraws.",
+    "right": "Farther anatomical right hand starts open beside the head without established contact, moves underneath a separate leg, repositions into an enclosing leg grip while left keeps holding, helps rotate and set down the tripod, then opens and withdraws.",
+    "coordination": "Sequential left-first engagement followed by right under-leg contact and grip repositioning; two-hand whole-object rotation/placement. No hand-to-hand transfer, human interaction, or visible mechanism adjustment."
   },
   "uncertainties": [
-    "Low native resolution and hand/object overlap prevent certainty about the exact individual brace or leg segment inside each grasp; the distinct near-leg and central-frame support roles and successful upright release are visible."
+    "At320x568 native resolution, overlapping fingers, legs and braces obscure the exact segment inside the early right-hand contact. A separate-leg grasp is clearest after rotation, at340–370; no central mechanism grasp is asserted.",
+    "The right-hand adjustment at240–268 changes finger enclosure and palm orientation, but any complete momentary loss of contact is occluded. The prompt describes repositioning, not a full release and regrasp.",
+    "Both hands open and withdraw in an overlapping release phase. Exact last contact times and an absolute release order cannot be established from finger/object overlap.",
+    "Load distribution cannot be measured visually. Left-hand bearing before right engagement is supported by tripod motion with the left grip while the right remains open; later two-hand contact is supported by enclosure and co-motion, not mere adjacency."
   ],
   "annotation_discrepancies": [
     "No outcome discrepancy: the source instruction to stand the tripod upright on the desk is visibly fulfilled. The tripod is already on the desk initially; the observed action raises and rotates it there rather than transporting it from a separate location."

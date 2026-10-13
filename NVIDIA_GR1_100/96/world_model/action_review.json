@@ -6,83 +6,115 @@
   ],
   "inspected_frame_stride": 2,
   "inspected_sampled_frame_count": 60,
-  "initial_scene": "Robot-centered elevated view looking outward over two forearms toward the table. A brown paper bag lies open on the left, with its far handle held by the left hand; a pink peach with green leaf rests alone on the upper black shelf to the right. Other fruit remains in the lower white tray.",
+  "initial_scene": "Robot-centered elevated view looking outward along the paired forearms toward a table. Brown paper bag lies open on the left, with a far handle extending behind the closed left hand. A pink peach with green leaf rests on the upper black shelf to the right; right hand is initially open near the fruit stand.",
   "observed_sequence": [
     {
       "start_frame": 0,
-      "end_frame": 14,
-      "observation": "Left hand maintains its hold at the bag handle; right hand is open near the fruit shelf. Peach rests on upper black shelf.",
+      "end_frame": 15,
+      "observation": "Left hand is already closed at the bag handle, whose visible cord disappears behind the hand. Bag is open. Right hand open below the upper shelf; peach remains on the shelf.",
+      "confidence": "high for visible arrangement; medium-high for occluded handle support"
+    },
+    {
+      "start_frame": 16,
+      "end_frame": 51,
+      "observation": "Right hand raises and reorients toward the peach with digits apart. Left hand retains its position and the handle has no visible disengagement.",
       "confidence": "high"
     },
     {
-      "start_frame": 15,
-      "end_frame": 36,
-      "observation": "Right arm raises its open hand toward the peach and positions fingers on opposing sides. Left remains at the bag.",
+      "start_frame": 52,
+      "end_frame": 75,
+      "observation": "Right front digit contacts/crosses the peach and opposing digits close around its body. Fruit remains at shelf height while grasp establishes. Left remains closed at handle.",
+      "confidence": "high for grasp; exact back-side fingertip contact occluded"
+    },
+    {
+      "start_frame": 76,
+      "end_frame": 88,
+      "observation": "Right hand raises peach; fruit and hand move together and peach clears the shelf. Left still holds handle without visible regrasp.",
       "confidence": "high"
     },
     {
-      "start_frame": 37,
-      "end_frame": 77,
-      "observation": "Right hand closes around the peach on the shelf and establishes its grasp, with gradual finger adjustment.",
-      "confidence": "high"
+      "start_frame": 89,
+      "end_frame": 108,
+      "observation": "Right carries peach inward toward bag. Left raises the handle continuously: cord segment and far-wall attachment rise with hand, and the far bag wall lifts relative to the near wall. Right lowers peach through opening while its digits remain opposed around it.",
+      "confidence": "high for coordinated motion; exact left digit-handle interface occluded"
     },
     {
-      "start_frame": 78,
-      "end_frame": 91,
-      "observation": "Right hand lifts the peach clear of the upper shelf, keeping the fruit enclosed between fingers.",
-      "confidence": "high"
-    },
-    {
-      "start_frame": 92,
-      "end_frame": 103,
-      "observation": "Right hand carries the peach inward and leftward toward the bag. Left hand lifts the handle, raising the far bag wall and widening access to the opening.",
-      "confidence": "high"
-    },
-    {
-      "start_frame": 104,
+      "start_frame": 109,
       "end_frame": 116,
-      "observation": "Right hand lowers the peach into the bag while the left continues supporting the lifted handle. The peach approaches the inner paper surface with the right fingers still around it.",
-      "confidence": "high"
+      "observation": "Right hand and enclosed peach descend farther inside bag. Left retains raised handle. The inner paper surface is visible beneath fruit, but direct fruit-support contact is not established from projection alone.",
+      "confidence": "high for interior location and hand pose"
     },
     {
       "start_frame": 117,
       "end_frame": 119,
-      "observation": "Right fingers open and peach moves left/down onto the interior paper surface. Final frame shows peach inside the open bag, open right fingers beside it and left hand still holding the raised handle. No right-hand withdrawal occurs.",
-      "confidence": "high"
+      "observation": "Right digits spread, upper opposing digits separate from peach, and peach shifts down/left relative to hand and turns its leaf out of view. A front fingertip still overlaps peach in final frame, so complete contact loss is not established. Left retains raised handle; no withdrawal or subsequent settling is visible.",
+      "confidence": "high for opening and relative motion; uncertain for complete release"
     }
   ],
   "arm_hand_roles": {
-    "right": "Grasps the peach, lifts it off upper shelf, transports it into the bag and opens fingers to release it; stays adjacent at the end.",
-    "left": "Holds the far bag handle throughout, then raises it during the peach transport to lift the bag wall and provide access to the opening.",
-    "coordination": "Left provides bag support while right manipulates fruit. No hand-to-hand transfer or human assistance."
+    "right": "Closes around peach body, bears it during shelf lift and transport, lowers it into bag, then opens digits around it. Complete release cannot be confirmed because final front fingertip overlaps fruit.",
+    "left": "Continuously holds/supports one bag handle from beginning, lifts handle and its attached bag wall during transport/insertion, retains it at final frame. No observed release or regrasp. Exact finger-handle pinch is hidden behind hand.",
+    "coordination": "Left moves handle/far wall to keep bag opening accessible while right independently bears and lowers peach. No hand-to-hand fruit transfer. Left never touches fruit, and no human assists."
   },
   "anatomical_side_evidence": {
     "observation": "The generation view looks forward from behind/above the robot forearms: both forearms originate at the bottom near the camera and extend outward across the table. The arm at the robot-centered lower right reaches to the shelf and is anatomical right; the opposing lower-left arm holds the bag and is anatomical left. Paired hand/forearm orientation supports this body-centered convention, rather than a front-facing reversal.",
     "confidence": "medium-high",
     "limitation": "Torso and shoulder attachments are outside the camera crop; the arm side assignment is based on visible paired forearm origins and the egocentric geometry, and agrees with but is not solely derived from the source instruction."
   },
-  "terminal_state": "Peach is inside the bag on its interior paper surface; right fingers are open beside it, while left hand retains the raised handle. Right hand has not withdrawn. Upper shelf is empty.",
+  "terminal_state": "Peach lies within the visible bag opening, with right digits spreading around it and front fingertip still overlapping it. Left retains raised handle; the upper black shelf is empty. Complete release, transfer of weight to the bag interior, settling and right-hand withdrawal are not established.",
   "uncertainties": [
-    "The exact left-hand contact on the handle is partly hidden by its hand backplate, although the handle and bag wall follow its upward motion.",
-    "Final release is visible, but no later settling or right-hand withdrawal is shown."
+    "Exact left-hand finger/handle contact is hidden behind its hand backplate; handle support is supported by continuous cord-to-hand proximity and coupled rise of handle attachment and bag wall. No rim pinch is visibly established.",
+    "At final frame the right front fingertip overlaps peach; complete release and absence of residual contact cannot be confirmed.",
+    "Peach-to-interior paper support and post-release settling cannot be established from the available depth/projection and ending.",
+    "Torso/shoulders are cropped out; anatomical naming follows visible paired forearm origins in the robot-centered outward-looking view."
   ],
   "annotation_discrepancies": [],
   "evidence_frame_indices": [
     0,
+    16,
     24,
+    28,
+    36,
+    46,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
     64,
+    76,
+    80,
+    82,
     84,
+    88,
     90,
+    91,
+    92,
+    93,
+    94,
+    95,
     96,
+    97,
+    98,
+    99,
     100,
+    101,
+    103,
+    104,
+    106,
+    108,
     110,
+    112,
+    114,
+    115,
     116,
     117,
     118,
     119
   ],
-  "selected_execution_status": "success",
-  "selected_execution_status_evidence": "The right fingers visibly open at frames 117–119 and the peach remains within the bag opening on the interior paper surface.",
+  "selected_execution_status": "uncertain",
+  "selected_execution_status_evidence": "Shelf pickup and insertion are demonstrated, but final 117–119 finger opening does not establish complete hand-fruit separation or independent support by the bag.",
   "video_id": "96",
   "dataset": "NVIDIA_GR1_100",
   "dedicated_review_agent": "review_gr1_96",
@@ -91,19 +123,49 @@
   "source_fps": 20.0,
   "native_detail_frames": [
     0,
+    16,
     24,
+    28,
+    36,
+    46,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
     64,
+    76,
+    80,
+    82,
     84,
+    88,
     90,
+    91,
+    92,
+    93,
+    94,
+    95,
     96,
+    97,
+    98,
+    99,
     100,
+    101,
+    103,
+    104,
+    106,
+    108,
     110,
+    112,
+    114,
+    115,
     116,
     117,
     118,
     119
   ],
-  "world_model_prompt": "The robot grasps the pink peach on the upper black shelf with its right hand and lifts it clear. Its left hand raises the brown paper bag by a handle to hold the opening accessible while the right hand carries the peach over. The right hand lowers the peach inside the bag and opens its fingers to release it, remaining beside the peach. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The robot grasps the pink peach on the upper black shelf with its right hand and lifts it clear. Its left hand keeps hold of a handle of the brown paper bag and raises that side of the opening while the right hand carries the peach toward it. The right hand lowers the peach inside the bag and begins opening its fingers around it, remaining beside the peach. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "original_task_instruction": "Use the right hand to pick up peach from top black shelf to inside brown paper bag.",
   "selected_segment": {
     "start_frame": 0,
@@ -111,5 +173,132 @@
     "reason": "Complete original single-task reference; no cropping or trimming requested."
   },
   "source_video_sha256": "14582b30c97254d30e726ba7b78ae912026b367b2c0f74aca2d2a92854d8b169",
-  "review_completed_at": "2026-10-13T18:42:31.033525+00:00"
+  "review_completed_at": "2026-10-13T19:10:40.654984+00:00",
+  "bimanual_second_review": {
+    "completed_at": "2026-10-13T19:10:40.346044+00:00",
+    "reviewed_contact_sheets": [
+      "sheet_001.jpg"
+    ],
+    "inspected_sampled_frame_count": 60,
+    "source_initial_png_inspected_at_native_resolution": true,
+    "native_evidence_frame_indices": [
+      0,
+      16,
+      28,
+      36,
+      46,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      76,
+      80,
+      82,
+      88,
+      91,
+      92,
+      93,
+      94,
+      95,
+      97,
+      98,
+      99,
+      101,
+      103,
+      104,
+      106,
+      108,
+      112,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "contact_chronology": {
+      "left": [
+        {
+          "frames": [
+            0,
+            88
+          ],
+          "part": "far bag handle",
+          "evidence": "Handle cord visibly emerges at the right side of hand backplate and ends at far-wall attachment; closed pose persists. No engagement shown because hold exists initially.",
+          "occlusion": "Finger-level pinch hidden."
+        },
+        {
+          "frames": [
+            89,
+            108
+          ],
+          "part": "same handle",
+          "evidence": "Across 91–95 and 97–104, hand rises, visible cord attachment rises and far wall raises while near wall remains lower. Same closed pose; no disengagement/regrasp.",
+          "occlusion": "Cord-to-digit interface remains behind hand."
+        },
+        {
+          "frames": [
+            109,
+            119
+          ],
+          "part": "same handle",
+          "evidence": "Raised hand and elevated handle/far wall persist throughout right insertion and digit opening.",
+          "occlusion": "Exact grip remains hidden."
+        }
+      ],
+      "right": [
+        {
+          "frames": [
+            0,
+            51
+          ],
+          "part": "none then peach approach",
+          "evidence": "Open hand stays apart from fruit until front digit reaches peach around 52."
+        },
+        {
+          "frames": [
+            52,
+            75
+          ],
+          "part": "peach body",
+          "evidence": "Native 52/54/56/58/60/62 show front digit covering/contacting peach and opposing side closing; no grasp of leaf or shelf claimed."
+        },
+        {
+          "frames": [
+            76,
+            88
+          ],
+          "part": "peach body",
+          "evidence": "Peach rises with closed hand, clearing shelf. Hand bears fruit."
+        },
+        {
+          "frames": [
+            89,
+            116
+          ],
+          "part": "peach body",
+          "evidence": "Fruit remains between opposing digits throughout travel and lowering; leaf/body landmarks track same grasp, with whole fruit rotation accompanying hand rather than any mechanism."
+        },
+        {
+          "frames": [
+            117,
+            119
+          ],
+          "part": "peach body; opening transition",
+          "evidence": "Adjacent 115–119 show spreading digits and peach moving left/down relative to hand; leaf disappears with fruit rotation. Opposing upper digit leaves fruit, front fingertip remains projected across fruit.",
+          "occlusion": "Complete front contact loss and fruit-paper support not established."
+        }
+      ]
+    },
+    "corrected_first_review_assertions": [
+      "Replaced complete-release claim with visible opening of right digits around peach inside bag.",
+      "Removed assertion of peach resting on interior paper surface and changed placement status from success to uncertain.",
+      "Refined left action to retained handle support lifting one bag wall; no invented digit-level grip or rim contact.",
+      "Refined grasp chronology: right approach persists through 51, contact/closure develops from 52; did not treat all 37–77 as established grasp."
+    ],
+    "source_annotation_comparison": "Right-hand peach pickup and intended bag destination match. Annotation omits left handle support. It does not establish the filmed final support/release outcome.",
+    "media_preservation": "Complete original media retained unchanged."
+  }
 }

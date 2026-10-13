@@ -18,96 +18,169 @@
     {
       "source_frame_interval": [
         0,
-        26
-      ],
-      "observation": "Robot and upright bottle remain still; both arms are down.",
-      "confidence": "high"
-    },
-    {
-      "source_frame_interval": [
-        27,
         112
       ],
-      "observation": "Left arm rises toward the bottle body; right arm rises with hand open above the future cap position.",
-      "confidence": "high"
+      "observation": "Left hand: Initially down; raises with open fingers toward bottle body. Right hand: Raises open, staying above and clear of bottle cap. Object: Bottle stays upright on table.",
+      "confidence": "high",
+      "evidence_frame_indices": [
+        0,
+        112
+      ]
     },
     {
       "source_frame_interval": [
         113,
-        214
+        200
       ],
-      "observation": "Left hand closes around the bottle body and establishes its grip while the bottle remains upright at the table. Right hand remains above and clear.",
-      "confidence": "high"
+      "observation": "Left hand: Moves open fingers around lower/middle bottle body; beside/around bottle is not yet proof of a load-bearing grip. Right hand: Open and clear above bottle; does not support it. Object: Bottle remains upright on tabletop.",
+      "confidence": "high",
+      "evidence_frame_indices": [
+        112,
+        160,
+        194,
+        196,
+        200
+      ]
     },
     {
       "source_frame_interval": [
-        215,
-        254
+        201,
+        258
       ],
-      "observation": "Left hand lifts the bottle off the table and tilts it slightly toward the right hand; right hand approaches the cap.",
-      "confidence": "high"
+      "observation": "Left hand: Fingers enclose bottle body by 206–214 and carry it up; wrist tilts the entire bottle toward right hand. Right hand: Waits above bottle, then lowers fingers toward cap. Object: Whole bottle rises and tilts; this is distinct from cap rotation.",
+      "confidence": "high",
+      "evidence_frame_indices": [
+        206,
+        214,
+        220,
+        238,
+        258
+      ]
     },
     {
       "source_frame_interval": [
-        255,
-        508
+        259,
+        506
       ],
-      "observation": "Right fingers grip the cap and turn with repeated wrist/finger adjustments while left hand supports the bottle body and resists rotation.",
-      "confidence": "high"
+      "observation": "Left hand: Continues enclosing and bearing bottle body, keeping neck presented toward opposite hand. Right hand: Fingers engage cap by 270–284; wrist/hand changes orientation around neck while fingers stay at cap. Object: Bottle body stays at a similar tilted angle while right hand turns at its upper cap; the featureless cap and fingers hide exact angular movement.",
+      "confidence": "high for contact/turning action; medium for amount of cap-relative rotation",
+      "evidence_frame_indices": [
+        258,
+        270,
+        284,
+        300,
+        334,
+        356,
+        388,
+        416,
+        450,
+        476,
+        494,
+        506
+      ]
     },
     {
       "source_frame_interval": [
-        509,
-        548
+        507,
+        610
       ],
-      "observation": "Right hand briefly lifts away, changes its finger pose, then returns toward the cap; no detached cap is clearly established in this intermediate motion. Left hand keeps holding bottle.",
-      "confidence": "medium"
+      "observation": "Left hand: Maintains enclosing grip and bears bottle throughout right-hand absence. Right hand: Releases cap and lifts clear, opens/repositions fingers and changes wrist orientation; visible air gap separates hand from cap. Object: Cap remains on neck; no separate white part is seen in raised right hand.",
+      "confidence": "high",
+      "evidence_frame_indices": [
+        506,
+        514,
+        526,
+        546,
+        566,
+        586,
+        610
+      ]
     },
     {
       "source_frame_interval": [
-        549,
-        777
+        611,
+        776
       ],
-      "observation": "Right hand regrips the cap and continues repeated twisting while left hand holds the bottle steady.",
-      "confidence": "high"
+      "observation": "Left hand: Keeps holding bottle body; no hand-to-hand transfer and no left release. Right hand: Returns fingers to cap during 611–664, encloses it by 664–682, then turns at cap again with larger palm orientation change near 720–758. Object: Body remains left-held and tilted. A white cap remains at neck until right hand begins pulling it away.",
+      "confidence": "high for resumed contact; exact onset within 611–664 is partly occluded",
+      "evidence_frame_indices": [
+        610,
+        630,
+        646,
+        650,
+        664,
+        682,
+        720,
+        758,
+        770,
+        774,
+        776
+      ]
     },
     {
       "source_frame_interval": [
-        778,
+        777,
         806
       ],
-      "observation": "Right hand separates upward from the bottle neck holding a small white cap; a visible gap opens between cap and bottle.",
-      "confidence": "high"
+      "observation": "Left hand: Continues bearing bottle body independently, with open neck held away from right hand. Right hand: Lifts small white cap upward away from neck, holding it separately. Object: Distinct white cap separates from white bottle neck; cap-hand gap from neck expands at 778–784 and persists at 800.",
+      "confidence": "high",
+      "evidence_frame_indices": [
+        774,
+        776,
+        778,
+        780,
+        784,
+        800
+      ]
     },
     {
       "source_frame_interval": [
         807,
         853
       ],
-      "observation": "Both hands lower toward the table. Right hand lowers the detached cap beside the bottle and opens, leaving cap on tabletop; left hand lowers bottle.",
-      "confidence": "high"
+      "observation": "Left hand: Lowers bottle body to tabletop, retaining its enclosing grip during lowering. Right hand: Lowers detached cap beside bottle and opens fingers near table, leaving cap resting separately by 848. Object: Bottle and cap descend independently; right hand does not return cap onto bottle or take bottle from left hand.",
+      "confidence": "high; exact cap-table contact obscured by fingers",
+      "evidence_frame_indices": [
+        800,
+        816,
+        832,
+        842,
+        846,
+        848
+      ]
     },
     {
       "source_frame_interval": [
         854,
         883
       ],
-      "observation": "Left hand opens and withdraws from the bottle. The released bottle tips/settles onto its side, with the small detached cap resting separately nearby.",
-      "confidence": "high"
+      "observation": "Left hand: Opens fingers and withdraws from bottle; body no longer follows hand and tips/settles to side. Right hand: Already open above table, no renewed object contact visible. Object: Bottle rotates as a whole onto its side; separate cap remains on table.",
+      "confidence": "high",
+      "evidence_frame_indices": [
+        854,
+        856,
+        860,
+        870,
+        880
+      ]
     },
     {
       "source_frame_interval": [
         884,
         926
       ],
-      "observation": "Both hands retreat clear of the objects; left arm lowers. Bottle remains lying on its side and cap remains separate on the table.",
-      "confidence": "high"
+      "observation": "Left hand: Moves fully clear and lowers. Right hand: Retracts clear with open fingers. Object: Bottle remains on its side and cap stays separate on tabletop.",
+      "confidence": "high",
+      "evidence_frame_indices": [
+        880,
+        926
+      ]
     }
   ],
   "arm_hand_roles": {
-    "left": "Near-camera arm, traced from visible left shoulder through elbow to hand: grasps/lifts the bottle body, stabilizes it against right-hand cap rotation, then lowers/releases it on the table.",
-    "right": "Far-side arm, traced behind the torso to the hand above the bottle: grips/twists/regrips the cap, lifts the detached cap free, then deposits it on the table.",
-    "coordination": "Left hand supports and counterholds the bottle throughout right-hand cap manipulation; right hand handles the cap independently after separation. No hand-to-hand object transfer or person interaction occurs."
+    "left": "Anatomical left, near-camera arm: closes around the white bottle body, lifts and tilts whole bottle toward right hand, bears its weight continuously through two right-hand cap engagements and intervening disengagement, then lowers/releases bottle on table. Bottle settles onto side after release.",
+    "right": "Anatomical right, far-side arm: first engages cap and turns at neck; disengages fully and repositions open fingers/wrist while left retains bottle; regrips cap, turns again, lifts detached cap free, lowers and releases cap separately onto tabletop.",
+    "coordination": "Distinct body versus cap grips. Left hand bears bottle during right-hand cap work and throughout right-hand disengagement. After separation each hand lowers its own piece; right cap release occurs before left bottle release. No transfer between hands or person interaction."
   },
   "anatomical_side_evidence": {
     "description": "The cyan-edged face and front chest point toward image left. Camera sees the robot from its left side; the unobstructed near shoulder/upper arm leads to the bottle-holding hand. The opposite shoulder/forearm runs behind the torso to the cap-manipulating hand. Thus near bottle hand is anatomical left and far cap hand is anatomical right, based on body orientation/attachment rather than image hand position.",
@@ -123,22 +196,69 @@
   },
   "evidence_frame_indices": [
     0,
+    112,
+    160,
+    194,
+    196,
+    200,
+    206,
     210,
+    214,
+    220,
     238,
+    258,
+    270,
     280,
+    284,
+    300,
+    334,
+    356,
     360,
+    388,
+    416,
+    450,
+    476,
     480,
+    494,
+    506,
     514,
+    526,
+    546,
+    566,
+    586,
+    610,
+    630,
     640,
+    646,
+    650,
+    664,
+    682,
+    720,
+    758,
+    770,
     772,
+    774,
+    776,
+    778,
+    780,
     784,
     800,
     812,
+    816,
     828,
+    832,
     840,
+    842,
+    846,
+    848,
+    854,
+    856,
     858,
+    860,
     868,
+    870,
     876,
+    880,
     886,
     926
   ],
@@ -149,17 +269,73 @@
       0,
       926
     ],
-    "native_detail_frame_count": 19,
+    "native_detail_frame_count": 66,
     "native_resolution": [
       320,
       568
     ],
-    "native_transition_focus": "Bottle lift; cap grip/twisting; intermediate regrip; final detached cap; cap placement; bottle release/tipping; final table state."
+    "native_transition_focus": "Bottle lift; cap grip/twisting; intermediate regrip; final detached cap; cap placement; bottle release/tipping; final table state.",
+    "second_review_native_frames_viewed": [
+      112,
+      160,
+      194,
+      196,
+      200,
+      206,
+      214,
+      220,
+      238,
+      258,
+      270,
+      284,
+      300,
+      334,
+      356,
+      388,
+      416,
+      450,
+      476,
+      494,
+      506,
+      514,
+      526,
+      546,
+      566,
+      586,
+      610,
+      630,
+      646,
+      650,
+      664,
+      682,
+      720,
+      758,
+      770,
+      774,
+      776,
+      778,
+      780,
+      784,
+      800,
+      816,
+      832,
+      842,
+      846,
+      848,
+      854,
+      856,
+      860,
+      870,
+      880,
+      926
+    ]
   },
   "terminal_state": "Bottle is uncapped and lies on its side on the tabletop, with detached white cap resting separately beside it. Both hands are clear; the left arm lowers at the end.",
   "selected_execution_status": "success",
   "uncertainties": [
-    "Exact intermediate wrist twist direction and the count of partial turns cannot be determined reliably at this resolution; final cap separation and separate table placement are visible."
+    "White cap has few usable orientation landmarks and right fingers partially occlude it. Right-hand turning at the cap while bottle remains left-held is visible, but exact cap-relative angular excursion, clockwise/counterclockwise direction and partial-turn count are not reliable; none are specified in the prompt.",
+    "Exact first cap contact during approach and second cap re-engagement during frames 611–664 are partially obscured by fingers. Enclosing cap contact before turning and the complete intermediate disengagement are established.",
+    "The right fingers briefly obscure cap-table contact during release; the cap resting separately on the table after opening is visible."
   ],
   "annotation_discrepancies": [],
   "video_id": "high-precision-1",
@@ -170,26 +346,73 @@
   "source_fps": 30.0,
   "native_detail_frames": [
     0,
+    112,
+    160,
+    194,
+    196,
+    200,
+    206,
     210,
+    214,
+    220,
     238,
+    258,
+    270,
     280,
+    284,
+    300,
+    334,
+    356,
     360,
+    388,
+    416,
+    450,
+    476,
     480,
+    494,
+    506,
     514,
+    526,
+    546,
+    566,
+    586,
+    610,
+    630,
     640,
+    646,
+    650,
+    664,
+    682,
+    720,
+    758,
+    770,
     772,
+    774,
+    776,
+    778,
+    780,
     784,
     800,
     812,
+    816,
     828,
+    832,
     840,
+    842,
+    846,
+    848,
+    854,
+    856,
     858,
+    860,
     868,
+    870,
     876,
+    880,
     886,
     926
   ],
-  "world_model_prompt": "The humanoid grasps the white bottle with its left hand and lifts it from the table, holding its body steady while its right hand grips and repeatedly twists the cap. The right hand lifts off the loosened cap and places it on the tabletop; the left hand lowers and releases the bottle, which comes to rest on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The humanoid grasps and lifts the white bottle with its left hand, tilting it toward the right hand while holding the bottle body. The right hand grips and turns the cap, lets go and repositions, then regrips and turns it again while the left hand continues supporting the bottle. The right hand lifts the detached cap away and releases it onto the table; the left hand lowers and releases the bottle, which settles on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "original_task_instruction": "Opening a bottle cap with precise grip control and rotational force, demonstrating fine motor skills and torque management for secure cap removal.",
   "selected_segment": {
     "start_frame": 0,
@@ -197,5 +420,273 @@
     "reason": "Complete original single-task reference; no cropping or trimming requested."
   },
   "source_video_sha256": "b7842a91d509d7bbeec00b3538011dd5f2dbf81594951702acdaf5498b3b7e2d",
-  "review_completed_at": "2026-10-13T17:14:25.620921+00:00"
+  "review_completed_at": "2026-10-13T18:55:35.187581+00:00",
+  "bimanual_second_review": {
+    "completed_at": "2026-10-13T18:55:34.942034+00:00",
+    "review_scope": "Same dedicated reviewer rechecked entire source sequence under strengthened coordinated-manipulation instruction.",
+    "reviewed_contact_sheets": [
+      "sheet_001.jpg",
+      "sheet_002.jpg",
+      "sheet_003.jpg",
+      "sheet_004.jpg",
+      "sheet_005.jpg",
+      "sheet_006.jpg",
+      "sheet_007.jpg",
+      "sheet_008.jpg"
+    ],
+    "inspected_sampled_frame_count": 464,
+    "inspected_frame_stride": 2,
+    "source_initial_png_inspected_at_native_resolution": true,
+    "native_frames_viewed_this_pass": [
+      112,
+      160,
+      194,
+      196,
+      200,
+      206,
+      214,
+      220,
+      238,
+      258,
+      270,
+      284,
+      300,
+      334,
+      356,
+      388,
+      416,
+      450,
+      476,
+      494,
+      506,
+      514,
+      526,
+      546,
+      566,
+      586,
+      610,
+      630,
+      646,
+      650,
+      664,
+      682,
+      720,
+      758,
+      770,
+      774,
+      776,
+      778,
+      780,
+      784,
+      800,
+      816,
+      832,
+      842,
+      846,
+      848,
+      854,
+      856,
+      860,
+      870,
+      880,
+      926
+    ],
+    "native_frames_viewed_this_pass_count": 52,
+    "separate_hand_contact_trace": [
+      {
+        "source_frame_interval": [
+          0,
+          112
+        ],
+        "left_hand": "Initially down; raises with open fingers toward bottle body.",
+        "right_hand": "Raises open, staying above and clear of bottle cap.",
+        "object_motion": "Bottle stays upright on table.",
+        "evidence_frame_indices": [
+          0,
+          112
+        ],
+        "confidence": "high"
+      },
+      {
+        "source_frame_interval": [
+          113,
+          200
+        ],
+        "left_hand": "Moves open fingers around lower/middle bottle body; beside/around bottle is not yet proof of a load-bearing grip.",
+        "right_hand": "Open and clear above bottle; does not support it.",
+        "object_motion": "Bottle remains upright on tabletop.",
+        "evidence_frame_indices": [
+          112,
+          160,
+          194,
+          196,
+          200
+        ],
+        "confidence": "high"
+      },
+      {
+        "source_frame_interval": [
+          201,
+          258
+        ],
+        "left_hand": "Fingers enclose bottle body by 206–214 and carry it up; wrist tilts the entire bottle toward right hand.",
+        "right_hand": "Waits above bottle, then lowers fingers toward cap.",
+        "object_motion": "Whole bottle rises and tilts; this is distinct from cap rotation.",
+        "evidence_frame_indices": [
+          206,
+          214,
+          220,
+          238,
+          258
+        ],
+        "confidence": "high"
+      },
+      {
+        "source_frame_interval": [
+          259,
+          506
+        ],
+        "left_hand": "Continues enclosing and bearing bottle body, keeping neck presented toward opposite hand.",
+        "right_hand": "Fingers engage cap by 270–284; wrist/hand changes orientation around neck while fingers stay at cap.",
+        "object_motion": "Bottle body stays at a similar tilted angle while right hand turns at its upper cap; the featureless cap and fingers hide exact angular movement.",
+        "evidence_frame_indices": [
+          258,
+          270,
+          284,
+          300,
+          334,
+          356,
+          388,
+          416,
+          450,
+          476,
+          494,
+          506
+        ],
+        "confidence": "high for contact/turning action; medium for amount of cap-relative rotation"
+      },
+      {
+        "source_frame_interval": [
+          507,
+          610
+        ],
+        "left_hand": "Maintains enclosing grip and bears bottle throughout right-hand absence.",
+        "right_hand": "Releases cap and lifts clear, opens/repositions fingers and changes wrist orientation; visible air gap separates hand from cap.",
+        "object_motion": "Cap remains on neck; no separate white part is seen in raised right hand.",
+        "evidence_frame_indices": [
+          506,
+          514,
+          526,
+          546,
+          566,
+          586,
+          610
+        ],
+        "confidence": "high"
+      },
+      {
+        "source_frame_interval": [
+          611,
+          776
+        ],
+        "left_hand": "Keeps holding bottle body; no hand-to-hand transfer and no left release.",
+        "right_hand": "Returns fingers to cap during 611–664, encloses it by 664–682, then turns at cap again with larger palm orientation change near 720–758.",
+        "object_motion": "Body remains left-held and tilted. A white cap remains at neck until right hand begins pulling it away.",
+        "evidence_frame_indices": [
+          610,
+          630,
+          646,
+          650,
+          664,
+          682,
+          720,
+          758,
+          770,
+          774,
+          776
+        ],
+        "confidence": "high for resumed contact; exact onset within 611–664 is partly occluded"
+      },
+      {
+        "source_frame_interval": [
+          777,
+          806
+        ],
+        "left_hand": "Continues bearing bottle body independently, with open neck held away from right hand.",
+        "right_hand": "Lifts small white cap upward away from neck, holding it separately.",
+        "object_motion": "Distinct white cap separates from white bottle neck; cap-hand gap from neck expands at 778–784 and persists at 800.",
+        "evidence_frame_indices": [
+          774,
+          776,
+          778,
+          780,
+          784,
+          800
+        ],
+        "confidence": "high"
+      },
+      {
+        "source_frame_interval": [
+          807,
+          853
+        ],
+        "left_hand": "Lowers bottle body to tabletop, retaining its enclosing grip during lowering.",
+        "right_hand": "Lowers detached cap beside bottle and opens fingers near table, leaving cap resting separately by 848.",
+        "object_motion": "Bottle and cap descend independently; right hand does not return cap onto bottle or take bottle from left hand.",
+        "evidence_frame_indices": [
+          800,
+          816,
+          832,
+          842,
+          846,
+          848
+        ],
+        "confidence": "high; exact cap-table contact obscured by fingers"
+      },
+      {
+        "source_frame_interval": [
+          854,
+          883
+        ],
+        "left_hand": "Opens fingers and withdraws from bottle; body no longer follows hand and tips/settles to side.",
+        "right_hand": "Already open above table, no renewed object contact visible.",
+        "object_motion": "Bottle rotates as a whole onto its side; separate cap remains on table.",
+        "evidence_frame_indices": [
+          854,
+          856,
+          860,
+          870,
+          880
+        ],
+        "confidence": "high"
+      },
+      {
+        "source_frame_interval": [
+          884,
+          926
+        ],
+        "left_hand": "Moves fully clear and lowers.",
+        "right_hand": "Retracts clear with open fingers.",
+        "object_motion": "Bottle remains on its side and cap stays separate on tabletop.",
+        "evidence_frame_indices": [
+          880,
+          926
+        ],
+        "confidence": "high"
+      }
+    ],
+    "object_relative_landmark_assessment": "Bottle body/neck axis stays tilted in enclosing left fingers during right-hand cap turning. Right wrist/palm orientation changes around neck without matching gross bottle-axis change; this supports cap turning but textureless white cap precludes measured direction. At 778–800 a white piece travels with right fingers, leaving a distinct bottle neck and air gap; final separate piece on table confirms cap removal. Whole-bottle lift/tilt and final sideways settling are tracked separately from cap manipulation.",
+    "prior_review_corrections": [
+      "Earlier 113–214 interval overstated grip establishment; open left fingers beside body persist near frame 200, definite enclosing/load-bearing grip is observed at 206–214 and subsequent lift.",
+      "Earlier second engagement was stated from frame 549; right hand remains visibly clear through 610 and resumes cap contact during 611–664. Prompt now preserves the intermediate let-go/reposition/regrasp explicitly."
+    ],
+    "anatomical_roles_rechecked": "Initial face direction, front chest, near shoulder-to-elbow-to-hand trace and far forearm attachment confirm left bottle/right cap assignment.",
+    "outcome_rechecked": "Cap removal succeeds; cap released separately on table first, then bottle released and settles on its side; both hands end clear.",
+    "uncertainties": [
+      "White cap has few usable orientation landmarks and right fingers partially occlude it. Right-hand turning at the cap while bottle remains left-held is visible, but exact cap-relative angular excursion, clockwise/counterclockwise direction and partial-turn count are not reliable; none are specified in the prompt.",
+      "Exact first cap contact during approach and second cap re-engagement during frames 611–664 are partially obscured by fingers. Enclosing cap contact before turning and the complete intermediate disengagement are established.",
+      "The right fingers briefly obscure cap-table contact during release; the cap resting separately on the table after opening is visible."
+    ],
+    "media_preservation": "Complete source video and initial PNG retained byte-for-byte; only prompt/review/metadata outputs edited."
+  }
 }

@@ -2,7 +2,7 @@
   "dataset": "Humanoid_Everyday",
   "video_id": "high-precision-1",
   "variant": "full_sequence",
-  "generation_prompt": "The humanoid grasps the white bottle with its left hand and lifts it from the table, holding its body steady while its right hand grips and repeatedly twists the cap. The right hand lifts off the loosened cap and places it on the tabletop; the left hand lowers and releases the bottle, which comes to rest on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "generation_prompt": "The humanoid grasps and lifts the white bottle with its left hand, tilting it toward the right hand while holding the bottle body. The right hand grips and turns the cap, lets go and repositions, then regrips and turns it again while the left hand continues supporting the bottle. The right hand lifts the detached cap away and releases it onto the table; the left hand lowers and releases the bottle, which settles on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "prompt_protocol": "humanoid_action_v1",
   "prompt_provenance": "visually_authored_from_video_and_initial_frame",
   "source_video": "Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/original/original.mp4",
@@ -34,12 +34,14 @@
   "first_frame_sha256": "3dc5337333d9d1abf13b4eb5994ed98ff6dba82a527a4b6765addadb47c4bfaf",
   "observed_terminal_state": "Bottle is uncapped and lies on its side on the tabletop, with detached white cap resting separately beside it. Both hands are clear; the left arm lowers at the end.",
   "arm_hand_roles": {
-    "left": "Near-camera arm, traced from visible left shoulder through elbow to hand: grasps/lifts the bottle body, stabilizes it against right-hand cap rotation, then lowers/releases it on the table.",
-    "right": "Far-side arm, traced behind the torso to the hand above the bottle: grips/twists/regrips the cap, lifts the detached cap free, then deposits it on the table.",
-    "coordination": "Left hand supports and counterholds the bottle throughout right-hand cap manipulation; right hand handles the cap independently after separation. No hand-to-hand object transfer or person interaction occurs."
+    "left": "Anatomical left, near-camera arm: closes around the white bottle body, lifts and tilts whole bottle toward right hand, bears its weight continuously through two right-hand cap engagements and intervening disengagement, then lowers/releases bottle on table. Bottle settles onto side after release.",
+    "right": "Anatomical right, far-side arm: first engages cap and turns at neck; disengages fully and repositions open fingers/wrist while left retains bottle; regrips cap, turns again, lifts detached cap free, lowers and releases cap separately onto tabletop.",
+    "coordination": "Distinct body versus cap grips. Left hand bears bottle during right-hand cap work and throughout right-hand disengagement. After separation each hand lowers its own piece; right cap release occurs before left bottle release. No transfer between hands or person interaction."
   },
   "uncertainties": [
-    "Exact intermediate wrist twist direction and the count of partial turns cannot be determined reliably at this resolution; final cap separation and separate table placement are visible."
+    "White cap has few usable orientation landmarks and right fingers partially occlude it. Right-hand turning at the cap while bottle remains left-held is visible, but exact cap-relative angular excursion, clockwise/counterclockwise direction and partial-turn count are not reliable; none are specified in the prompt.",
+    "Exact first cap contact during approach and second cap re-engagement during frames 611–664 are partially obscured by fingers. Enclosing cap contact before turning and the complete intermediate disengagement are established.",
+    "The right fingers briefly obscure cap-table contact during release; the cap resting separately on the table after opening is visible."
   ],
   "annotation_discrepancies": [],
   "relative_video_path": "video.mp4",

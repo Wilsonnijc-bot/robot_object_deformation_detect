@@ -2,7 +2,7 @@
   "dataset": "Humanoid_Everyday",
   "video_id": "pick-place-5",
   "variant": "full_sequence",
-  "generation_prompt": "The humanoid uses its right hand to grasp the red multimeter on the tabletop, lift it, and carry it over the open basket while its left hand remains at the basket's far rim. The right hand releases the meter into the basket and withdraws, leaving the meter settled inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "generation_prompt": "The humanoid grasps the body of the red multimeter with its right hand, lifts it from the tabletop, and carries it over the open basket. Its left hand shifts beside the far rim as the basket turns slightly beneath the meter; the right hand opens and releases the meter into the basket, where it tumbles and settles. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "prompt_protocol": "humanoid_action_v1",
   "prompt_provenance": "visually_authored_from_video_and_initial_frame",
   "source_video": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/original/original.mp4",
@@ -32,14 +32,15 @@
   "file_size_bytes": 2555080,
   "video_sha256": "a07e5aa5c4cfc77a8f475c124a9c61e773b9e6141188119f806bff1b3f1295bf",
   "first_frame_sha256": "806d908b7204c0356aef0f7cc930548c87cc392cfa62fceb16c5786644682971",
-  "observed_terminal_state": "The multimeter is released and settled inside the gray basket near its nearer wall; the right hand is empty and withdrawn, and the left hand remains at the far rim.",
+  "observed_terminal_state": "The released multimeter lies settled inside the gray basket near its nearer wall; the right hand is empty and withdrawn, and the left hand remains beside the far rim.",
   "arm_hand_roles": {
-    "right": "Active manipulation hand: reaches to, grasps, lifts, transports, turns, and releases the red multimeter into the basket, then withdraws.",
-    "left": "Remains at the far basket rim throughout, with a small repositioning during delivery; never grasps or receives the meter. Whether the fingers actively grip or stabilize the rim is not established.",
-    "coordination": "Right hand performs the complete meter manipulation while the left hand stays at the basket rim. There is no hand-to-hand transfer or interaction with a person."
+    "right": "Grasps the multimeter body, including its red-cased edge near the black face, reorients and bears the entire meter alone during lift/transport, then opens the fingers to release it over the basket. No separate dial, flap, cap, or other mechanism actuation is visible.",
+    "left": "Starts beside the far-right basket rim. Moves inward alongside the far rim during frames 286–330 while the basket turns slightly. Fingertips project onto the rim/handle-slot area but exact contact is partly occluded. Remains near that rim during release and afterward; never visibly grasps, receives or supports the meter.",
+    "coordination": "Right hand bears the meter throughout. Left hand and basket reposition concurrently while the right delivers the meter over the opening. No hand-to-hand transfer, demonstrated continuous brace, or person interaction."
   },
   "uncertainties": [
-    "The left hand remains at the far basket rim, but the rim occludes some fingertips; active gripping or stabilizing force cannot be established, so the prompt describes only its visible position."
+    "The far basket wall occludes the left fingertips. Projected overlap with the rim and handle-slot edge, plus coincident hand/basket movement, does not establish the exact gripping surface or continuous stabilizing contact. The prompt describes visible hand movement beside the rim and the basket turn without asserting a brace or firm grasp.",
+    "The source camera drifts slightly. The modest basket turn is identified from changing basket-wall and handle-slot orientation across frames 286–318; its exact translation, turn angle and force source are not established."
   ],
   "annotation_discrepancies": [],
   "relative_video_path": "video.mp4",

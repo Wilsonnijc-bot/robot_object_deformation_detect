@@ -289,7 +289,7 @@
     396,
     466
   ],
-  "world_model_prompt": "The robot lifts and rolls the red multimeter in its right hand, turning its back and extended stand toward the left hand. The left fingers reposition around the stand’s free end and pivot it inward toward the meter’s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The robot grasps the red multimeter’s body with its right hand, then lifts and rolls it, turning its back and extended stand toward the left hand. The left fingers reposition around the stand’s free end and pivot it inward toward the meter’s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "original_task_instruction": "Unfolding the stand on a multimeter, demonstrating manipulation of hinged mechanisms and precise positioning for stable device placement.",
   "selected_segment": {
     "start_frame": 0,
@@ -297,7 +297,7 @@
     "reason": "Complete original single-task reference; no cropping or trimming requested."
   },
   "source_video_sha256": "a8e8e1cd665fcbbc394aa00ded19a607309d69c4c2b04a0bee4ebb6ea83e06bb",
-  "review_completed_at": "2026-10-13T18:51:15.578485+00:00",
+  "review_completed_at": "2026-10-13T18:52:41.019826+00:00",
   "mechanism_assessment": {
     "landmarks_compared": "Red molded rear/battery region, long black rear panel, yellow hinge at stand base, black plate free end and its light rectangular marking.",
     "whole_object_reorientation": "The housing rolls before left contact, especially frames 190–236, and again after left release at 326–340; the right hand is actively reorienting rather than passively supporting.",
@@ -533,7 +533,7 @@
       466
     ],
     "initial_png_revisited": true,
-    "specific_correction": "The prior prompt omitted active right-hand rolling/tilting and left-hand contact repositioning; these are now explicit. The stand pivot direction remains inward after comparison in device coordinates, while closure/latching remains uncertain.",
+    "specific_correction": "The prior prompt omitted active right-hand rolling/tilting and left-hand contact repositioning; these are now explicit. The stand pivot direction remains inward after comparison in device coordinates, while closure/latching remains uncertain. The initial right-hand body grasp is explicitly retained before lifting/rolling.",
     "confirmed_hand_contact_chronology": [
       "Right grasps and bears red body throughout lift/reorientation; left stays separate initially (158–236).",
       "Right rolls body to present its rear stand; left makes brief stand-tip contact (237–246), separates/repositions (247–262), and curls around its free end (263–288).",
@@ -545,6 +545,7 @@
       "Both the housing and stand move during 289–324. Adjacent-frame landmarks establish an inward stand-to-body pivot, but the exact angular displacement cannot be measured reliably from the oblique view.",
       "The hand/body occlude final hinge seating, so flush closure or latch engagement is not confirmed. The final underside/stand angle is hidden after face-up settling."
     ],
-    "visual_confidence": "High for anatomical sides, body-bearing hand, active right-hand reorientation, stand-end engagement, inward relative pivot and final face-up released rest; medium for occluded first fingertip opposition and final hinge seating."
+    "visual_confidence": "High for anatomical sides, body-bearing hand, active right-hand reorientation, stand-end engagement, inward relative pivot and final face-up released rest; medium for occluded first fingertip opposition and final hinge seating.",
+    "revised_prompt": "The robot grasps the red multimeter’s body with its right hand, then lifts and rolls it, turning its back and extended stand toward the left hand. The left fingers reposition around the stand’s free end and pivot it inward toward the meter’s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing."
   }
 }

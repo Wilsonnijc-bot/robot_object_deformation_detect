@@ -22,15 +22,15 @@
     },
     {
       "start_frame": 32,
-      "end_frame": 269,
-      "description": "Anatomical left arm raises and extends over the robot-left/image-right end of the towel, opening the hand and bringing the digits toward the fabric. Right arm remains lowered.",
+      "end_frame": 300,
+      "description": "Anatomical left arm raises and extends over the robot-left/image-right end of the towel. The fingers are open and still above the towel at native frame 300. Right arm remains lowered.",
       "confidence": "high"
     },
     {
-      "start_frame": 270,
+      "start_frame": 301,
       "end_frame": 414,
-      "description": "Left hand descends onto the robot-left towel edge and closes around fabric. The towel stays substantially flat during the contact and grasp setup; exact digit contact is partly hidden by the hand.",
-      "confidence": "high for hand contact and subsequent grasp; medium for precise finger contact"
+      "description": "Left hand descends and closes on the robot-left towel edge. Native frames 390 and 410 show the digits against the edge; the first exact contact frame is not resolved. Subsequent coupled lifting establishes a grasp. The opposite half remains on the table, without visible right-hand contact.",
+      "confidence": "high for edge grasp; medium for precise onset and digit contact configuration"
     },
     {
       "start_frame": 415,
@@ -40,14 +40,14 @@
     },
     {
       "start_frame": 486,
-      "end_frame": 529,
-      "description": "Left arm carries the lifted flap across the towel toward the robot’s right/image left, bending the towel into a half fold. The opposite half remains supported by the table, with some overall sliding of the fabric.",
+      "end_frame": 527,
+      "description": "Left arm draws the held robot-left flap toward robot right/image left. The flap bends relative to the lower half rather than the whole towel simply rotating. The lower half slides along the table during this motion; it is not fixed or held by the other hand.",
       "confidence": "high"
     },
     {
-      "start_frame": 530,
+      "start_frame": 528,
       "end_frame": 541,
-      "description": "Left hand opens and releases the raised flap, which falls onto the other half. The resulting layered stack is smaller and the upper folded portion is slightly offset.",
+      "description": "Left hand opens while the held edge remains elevated. Native frame 530 shows opening and falling fabric; frame 532 shows a visible gap between the free fabric and hand. The released flap falls onto the lower half and has settled by frame 534, producing a smaller, slightly offset stack.",
       "confidence": "high"
     },
     {
@@ -64,9 +64,9 @@
     }
   ],
   "arm_hand_roles": {
-    "left": "Only active manipulation hand: grasps robot-left edge, lifts and carries that half across to robot right, opens to release the flap, and withdraws.",
-    "right": "Visible shoulder and upper arm remain lowered at image left. The hand is largely outside the camera field and never visibly reaches the towel or supports it.",
-    "coordination": "No visible two-hand coordination, transfer, human interaction, or locomotion. The tabletop supports the stationary towel half during the one-handed fold."
+    "left": "Only visibly active manipulation hand: closes on the robot-left towel edge, lifts that flap, draws it toward robot right, opens while the edge remains elevated, and releases it to fall onto the underlying half. No visible regrasp, support change, or pressing after release.",
+    "right": "Visible shoulder, upper arm and forearm remain lowered at image left, below and away from the towel. The right hand is largely cropped; no approach to the towel, grasp, bearing of the fabric, stabilization, or transfer is visible.",
+    "coordination": "No visible bimanual participation. One half rests and slides on the table while the left hand raises and folds the other half. Table contact is observed; an applied stabilizing force from the right hand is not established."
   },
   "anatomical_side_evidence": {
     "description": "The robot faces the camera with its chest and face visible. The moving arm is continuously traceable from the shoulder on image right through elbow and wrist, identifying the robot-relative left arm. The shoulder at image left belongs to the anatomical right arm and stays lowered. Native initial PNG and frames 270, 382, 448, 500, 538 and 828 confirm this attachment convention.",
@@ -75,23 +75,35 @@
   },
   "terminal_state": "One extra half fold is complete: a smaller layered checkered towel stack rests on the tabletop, with the upper fold slightly offset from the underlying layers. The anatomical left hand has released the fabric and lowered clear; no subsequent manipulation is visible.",
   "uncertainties": [
-    "The exact digit-to-fabric grasp configuration is partly occluded; maintained grasp is established by the fabric moving with the left hand.",
-    "The inactive anatomical right hand is mostly outside the frame; no right-arm movement toward or contact with the towel is visible."
+    "Exact digit-to-fabric contacts and number of towel layers caught in the left-hand grasp are partly occluded. Coupled hand/fabric lifting establishes edge retention without proving a particular pinch configuration.",
+    "The inactive anatomical right hand is mostly cropped. No visible right-arm approach or contact with the towel supports a second-hand stabilization claim.",
+    "The exact first-contact frame is not resolved between the open hand above the cloth at frame 300 and visible edge contact at 390."
   ],
-  "annotation_discrepancies": [
-    "The source caption describes a neat arrangement and systematic folding techniques broadly; this clip visibly contains one additional one-handed half fold, ending with slightly offset layers rather than perfect edge alignment."
-  ],
+  "annotation_discrepancies": [],
   "evidence_frame_indices": [
     0,
     270,
+    300,
     382,
+    390,
+    410,
     416,
+    420,
     448,
+    476,
     486,
+    490,
     500,
+    524,
     528,
+    530,
+    532,
+    534,
+    536,
     538,
+    540,
     566,
+    568,
     590,
     828
   ],
@@ -99,7 +111,8 @@
   "selected_execution_status_basis": "The visible half fold completes and fabric is released onto the remaining half, then the hand withdraws. Success means the observed fold completed, not precise edge alignment.",
   "inspection_coverage": {
     "full_sequence": "All seven contact sheets visually viewed, covering every second decoded frame from 0 through 828 inclusive.",
-    "native_resolution": "Native transitions at 270, 382, 416, 448, 486, 500, 528, 538, 566 and 590 plus final 828 visually viewed. Source initial PNG visually viewed at native resolution."
+    "native_resolution": "Native transitions at 270, 382, 416, 448, 486, 500, 528, 538, 566 and 590 plus final 828 visually viewed. Source initial PNG visually viewed at native resolution.",
+    "second_pass": "All seven sheets visually re-viewed (415 stride-2 samples over frames 0–828). Native frames 0, 300, 390, 410, 420, 476, 490, 524, 530, 532, 534, 536, 540, 568, 828 visually viewed, along with the native source initial PNG."
   },
   "video_id": "deformable-2",
   "dataset": "Humanoid_Everyday",
@@ -108,19 +121,33 @@
   "source_frame_count": 829,
   "source_fps": 29.96385542168675,
   "native_detail_frames": [
+    0,
     270,
+    300,
     382,
+    390,
+    410,
     416,
+    420,
     448,
+    476,
     486,
+    490,
     500,
+    524,
     528,
+    530,
+    532,
+    534,
+    536,
     538,
+    540,
     566,
+    568,
     590,
     828
   ],
-  "world_model_prompt": "The humanoid robot grasps the checkered towel’s edge on its left with its left hand and lifts that half while the other half stays on the table. It carries the raised half across to its right, lowers and releases it over the remaining half, leaving a smaller, slightly offset folded stack on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "world_model_prompt": "The humanoid robot grasps the checkered towel’s edge on its left with its left hand and lifts that half while the other half rests on the table. It draws the raised half across to its right, then opens its hand and releases the edge, letting the fabric fall over the remaining half into a smaller, slightly offset folded stack. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "original_task_instruction": "Folding a towel into a neat arrangement, demonstrating cloth manipulation, spatial reasoning, and systematic folding techniques.",
   "selected_segment": {
     "start_frame": 0,
@@ -128,5 +155,145 @@
     "reason": "Complete original single-task reference; no cropping or trimming requested."
   },
   "source_video_sha256": "81f18099819437eff036c4cb167a99dc4bafd7684ef13ca8646420c865797197",
-  "review_completed_at": "2026-10-13T17:30:33.013916+00:00"
+  "review_completed_at": "2026-10-13T19:06:15.836670+00:00",
+  "annotation_notes": "The broad source caption is consistent with a fold. It supplies no specific hand roles or fold count; the prompt specifies the single observed extra half fold and slightly offset terminal stack rather than inferring systematic additional folds.",
+  "bimanual_second_review": {
+    "completed_at": "2026-10-13T19:06:15.622449+00:00",
+    "scope": "Complete source clip, with explicit separate hand tracing and challenge of support/contact/force claims.",
+    "reviewed_contact_sheets": [
+      "sheet_001.jpg",
+      "sheet_002.jpg",
+      "sheet_003.jpg",
+      "sheet_004.jpg",
+      "sheet_005.jpg",
+      "sheet_006.jpg",
+      "sheet_007.jpg"
+    ],
+    "native_evidence_frame_indices": [
+      0,
+      300,
+      390,
+      410,
+      420,
+      476,
+      490,
+      524,
+      530,
+      532,
+      534,
+      536,
+      540,
+      568,
+      828
+    ],
+    "source_initial_png_viewed": true,
+    "bimanual_participation": "not observed",
+    "findings": [
+      "Active arm is anatomical left, continuously traceable to image-right shoulder of the front-facing torso.",
+      "The right arm remains lowered throughout; a cropped hand cannot be promoted to an unseen supporting role.",
+      "The towel folds robot-left half over robot-right half. Checkered grid and stacked hems show flap bending relative to the lower half, with sliding of the lower half along the table.",
+      "The left hand releases the edge above the table, allowing it to fall; there is no demonstrated controlled lowering all the way to tabletop contact, pressing, or regrasp."
+    ],
+    "contact_chronology": [
+      {
+        "frame_interval": [
+          0,
+          300
+        ],
+        "left": "Initially lowered, then open hand approaches above the robot-left edge; at 300 fingers remain above fabric.",
+        "right": "Shoulder and arm stay lowered; no visible contact with towel.",
+        "object_contact": "Layered towel rests flat on table.",
+        "native_evidence": [
+          0,
+          300
+        ],
+        "confidence": "high"
+      },
+      {
+        "frame_interval": [
+          301,
+          414
+        ],
+        "left": "Digits descend onto the robot-left edge and close; exact finger-to-layer surfaces are occluded.",
+        "right": "Remains below and away from tabletop, no visible stabilization.",
+        "object_contact": "Towel initially stays substantially flat; edge retained as lifting begins.",
+        "native_evidence": [
+          390,
+          410
+        ],
+        "confidence": "high for grasp, medium for onset/configuration"
+      },
+      {
+        "frame_interval": [
+          415,
+          485
+        ],
+        "left": "Maintains grasp on elevated short end and lifts robot-left half into a flap.",
+        "right": "No change toward object or support contact.",
+        "object_contact": "Remaining half rests on table; flap rises relative to it.",
+        "native_evidence": [
+          420,
+          476
+        ],
+        "confidence": "high"
+      },
+      {
+        "frame_interval": [
+          486,
+          527
+        ],
+        "left": "Same retained edge drawn across toward robot right, no regrasp evident.",
+        "right": "No visible bearing or stabilizing role.",
+        "object_contact": "Lower half slides on table while raised flap bends across it, demonstrated by grid and hem landmarks.",
+        "native_evidence": [
+          490,
+          524
+        ],
+        "confidence": "high"
+      },
+      {
+        "frame_interval": [
+          528,
+          534
+        ],
+        "left": "Digits open with edge still elevated, releasing fabric; hand/fabric gap visible at 532.",
+        "right": "No intervention.",
+        "object_contact": "Released flap falls onto lower half and settles; no hand presses it down.",
+        "native_evidence": [
+          530,
+          532,
+          534
+        ],
+        "confidence": "high"
+      },
+      {
+        "frame_interval": [
+          535,
+          828
+        ],
+        "left": "Open hand clear above stack, then withdraws and lowers; no new contact.",
+        "right": "Remains lowered, hand mostly outside frame.",
+        "object_contact": "Slightly offset folded stack remains on table.",
+        "native_evidence": [
+          536,
+          540,
+          568,
+          828
+        ],
+        "confidence": "high"
+      }
+    ],
+    "revisions": [
+      "Corrected controlled-lowering wording: edge is released while elevated and falls onto remaining half.",
+      "Refined first-contact interval and distinguished open-hand proximity from established contact.",
+      "Made lower-half table sliding explicit in metadata, avoiding a fixed/stabilized-half claim.",
+      "Removed a subjective source-caption discrepancy; the broad annotation does not contradict the observed fold."
+    ],
+    "uncertainties": [
+      "Exact digit-to-fabric contacts and number of towel layers caught in the left-hand grasp are partly occluded. Coupled hand/fabric lifting establishes edge retention without proving a particular pinch configuration.",
+      "The inactive anatomical right hand is mostly cropped. No visible right-arm approach or contact with the towel supports a second-hand stabilization claim.",
+      "The exact first-contact frame is not resolved between the open hand above the cloth at frame 300 and visible edge contact at 390."
+    ],
+    "source_preservation": "Complete original source retained; no media mutations."
+  }
 }
