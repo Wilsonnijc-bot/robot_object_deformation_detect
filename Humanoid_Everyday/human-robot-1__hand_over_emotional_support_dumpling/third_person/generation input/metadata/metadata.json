@@ -1,0 +1,59 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "human-robot-1",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot grasps the dumpling plush in the orange bowl with its right hand and lifts it clear of the bowl. It carries the plush toward a person's outstretched palm, lowers it into the palm, and opens its fingers so the person can take it away. The robot then retracts its empty right hand toward its lap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/human-robot-1__hand_over_emotional_support_dumpling/third_person/original/original.mp4",
+  "source_video_sha256": "bb3e205f47c27d5a7bafa496e92b854b950e91dd95b98d0834e65e21d5a3b9a0",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/human-robot/task-1/pick_up_a_emotional_support_dumplings_and_hand_it_to_a_person_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 394,
+  "frame_count": 394,
+  "first_frame_index": 0,
+  "fps": 29.924050632911392,
+  "fps_rational": "2364/79",
+  "duration_seconds": 13.166667,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 3308448,
+  "video_sha256": "bb3e205f47c27d5a7bafa496e92b854b950e91dd95b98d0834e65e21d5a3b9a0",
+  "first_frame_sha256": "f66bcc84ce3bb83e22c4a8bd73eeb74cf0a7053d1c826644e4abcd5f2001d99b",
+  "observed_terminal_state": "Person has taken the plush out of view; orange bowl remains empty on the table. Robot's empty right hand is lowered beside its lap and left hand remains at lap. No dropped object is visible.",
+  "arm_hand_roles": {
+    "right": "Active throughout: reaches to bowl, grasps and lifts plush, carries it to the person's receiving palm, opens fingers for release, retracts empty hand.",
+    "left": "Inactive in the manipulation: remains open near the lap and provides no visible support, transfer, or bowl stabilization.",
+    "person": "Extends a palm-up receiving hand beneath the plush, supports it as robot opens fingers, then carries it away.",
+    "coordination": "One robot hand and the person's hand overlap in contact at transfer; robot lowers plush onto palm before opening fingers. No robot hand-to-hand transfer."
+  },
+  "uncertainties": [
+    "The source annotation's claim about human-aware motion planning describes an internal control property that cannot be established from the visible video; the prompt describes only the observed transfer."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

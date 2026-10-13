@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "71",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid uses its right hand to grasp the tan potato near the front center of the table between its thumb and fingers, then lifts it. It carries the potato to the lower white shelf tray, lowers it inside, and opens its fingers to release it, with the right hand remaining above the potato. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/71/original/original.mp4",
+  "source_video_sha256": "86e35ef11daf2de8e4d8b5cd9bd65101fa912094cea736181d2acf2b3e2d4aac",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/71.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1470392,
+  "video_sha256": "86e35ef11daf2de8e4d8b5cd9bd65101fa912094cea736181d2acf2b3e2d4aac",
+  "first_frame_sha256": "7d025e487f37a2f9e87edff6949767cab60af09deec87f570d0d6963e95ac29b",
+  "observed_terminal_state": "The potato has been released downward inside the lower white tray. The right hand is open above it and the left hand remains raised open. The fingers partly occlude the final potato/tray contact; later settling and hand withdrawal are not visible.",
+  "arm_hand_roles": {
+    "right": "Active throughout the manipulation: grasps the potato, lifts and transports it, lowers it inside the lower tray, and opens to release.",
+    "left": "Remains raised open beside the table; does not grasp, support, transfer, or contact the potato or shelf.",
+    "coordination": "Single-hand manipulation. No hand-to-hand transfer or assisting contact; the visible person does not participate."
+  },
+  "uncertainties": [
+    "The open right thumb partly occludes the final potato/tray contact; the exact resting orientation and later settling after release are not visible."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,59 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "pick-place-5",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid grasps the body of the red multimeter with its right hand, lifts it from the tabletop, and carries it over the open basket. Its left hand shifts beside the far rim as the basket turns slightly beneath the meter; the right hand opens and releases the meter into the basket, where it tumbles and settles. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/original/original.mp4",
+  "source_video_sha256": "a07e5aa5c4cfc77a8f475c124a9c61e773b9e6141188119f806bff1b3f1295bf",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/pick-place/task-5/pick_a_multi_meter_and_place_it_in_a_container_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 455,
+  "frame_count": 455,
+  "first_frame_index": 0,
+  "fps": 30.000659355150663,
+  "fps_rational": "1365000/45499",
+  "duration_seconds": 15.166333,
+  "resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2555080,
+  "video_sha256": "a07e5aa5c4cfc77a8f475c124a9c61e773b9e6141188119f806bff1b3f1295bf",
+  "first_frame_sha256": "806d908b7204c0356aef0f7cc930548c87cc392cfa62fceb16c5786644682971",
+  "observed_terminal_state": "The released multimeter lies settled inside the gray basket near its nearer wall; the right hand is empty and withdrawn, and the left hand remains beside the far rim.",
+  "arm_hand_roles": {
+    "right": "Grasps the multimeter body, including its red-cased edge near the black face, reorients and bears the entire meter alone during lift/transport, then opens the fingers to release it over the basket. No separate dial, flap, cap, or other mechanism actuation is visible.",
+    "left": "Starts beside the far-right basket rim. Moves inward alongside the far rim during frames 286–330 while the basket turns slightly. Fingertips project onto the rim/handle-slot area but exact contact is partly occluded. Remains near that rim during release and afterward; never visibly grasps, receives or supports the meter.",
+    "coordination": "Right hand bears the meter throughout. Left hand and basket reposition concurrently while the right delivers the meter over the opening. No hand-to-hand transfer, demonstrated continuous brace, or person interaction."
+  },
+  "uncertainties": [
+    "The far basket wall occludes the left fingertips. Projected overlap with the rim and handle-slot edge, plus coincident hand/basket movement, does not establish the exact gripping surface or continuous stabilizing contact. The prompt describes visible hand movement beside the rim and the basket turn without asserting a brace or firm grasp.",
+    "The source camera drifts slightly. The modest basket turn is identified from changing basket-wall and handle-slot orientation across frames 286–318; its exact translation, turn angle and force source are not established."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,62 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "human-robot-5",
+  "variant": "full_sequence",
+  "generation_prompt": "A person presents the pink dumpling plush on an open palm, and the humanoid reaches with its left hand and closes its fingers around the toy. After the person withdraws their supporting hand, the robot lifts the plush, carries it toward its left, and releases it just above the tabletop, where it settles beside the tape cross. The left hand retracts empty while the plush remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/human-robot-5__handover_dumpling/third_person/original/original.mp4",
+  "source_video_sha256": "175f03c5613d9fed3763515da150ede335356bd125a39395bc7a9fd0f1c406d5",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/human-robot/task-5/Handover_dumpling.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 1250,
+  "frame_count": 1250,
+  "first_frame_index": 0,
+  "fps": 29.952076677316295,
+  "fps_rational": "9375/313",
+  "duration_seconds": 41.733333,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 5708097,
+  "video_sha256": "175f03c5613d9fed3763515da150ede335356bd125a39395bc7a9fd0f1c406d5",
+  "first_frame_sha256": "01b34db64639491cf6e96198052c2e679865021a6ef2c31926c0f76606e7eeb4",
+  "observed_terminal_state": "The pink dumpling plush rests on the tabletop immediately beside the tape cross, toward the robot left (viewer right). Both robot arms have returned down; the person has withdrawn. The plush was released above the surface and visibly settled after a short drop.",
+  "arm_hand_roles": {
+    "left": "Receives the toy from the person: reaches above it, encloses it with fingers while the person supports its underside, retains it after the person withdraws, lifts and carries it outward to robot left, lowers and releases it just above the table, then retracts empty.",
+    "right": "Remains down beside the torso throughout; no grasp, support, object transfer or manipulation.",
+    "person": "Introduces the dumpling plush on an open palm from image left and continues supporting it while robot left fingers grasp. Withdraws the supporting hand after the robot has secured the toy.",
+    "coordination": "Human-to-robot transfer with a period of simultaneous human underside support and robot left-hand grasp, followed by human withdrawal. No robot hand-to-hand transfer or robot two-hand coordination."
+  },
+  "uncertainties": [
+    "The target toy is absent from initial frame 0 and is introduced by the person during the clip; the prompt identifies the incoming offered object rather than inventing an initially visible target.",
+    "The precise source intention behind the elevated release is not visible; the review records release, short fall and tabletop resting state without inferring whether that release was planned."
+  ],
+  "annotation_discrepancies": [
+    "Original instruction describes handing a dumpling plush to a person. Video shows the opposite transfer direction: the person offers the toy, robot receives it with left hand, then releases it onto the table. No robot-to-person handover occurs."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

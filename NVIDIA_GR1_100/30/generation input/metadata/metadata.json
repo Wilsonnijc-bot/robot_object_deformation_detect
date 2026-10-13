@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "30",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot grasps the Rubik's cube on the top level of the wooden shelf with its right hand and lifts it clear. It carries the cube downward to the bottom level, lowers it onto the wooden surface, and opens its fingers with the hand remaining beside the cube. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/30/original/original.mp4",
+  "source_video_sha256": "03a3fd9d8a93ce3fbb8889ad8726a51f899a178355a27bb65c9e5cf7c0d52de8",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/30.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1542712,
+  "video_sha256": "03a3fd9d8a93ce3fbb8889ad8726a51f899a178355a27bb65c9e5cf7c0d52de8",
+  "first_frame_sha256": "61d3d4713a0b12543b0cdcb48e860528560550b5b3fe3158f34ec8d6f4c80a79",
+  "observed_terminal_state": "The cube has reached the bottom wooden platform and the right fingers are opening around it. The right hand is still immediately beside and partly surrounding the tilted cube; a fully separated, settled placement is not shown. The top platform is empty and the left hand remains uninvolved.",
+  "arm_hand_roles": {
+    "right": "Only manipulating hand: reaches the highest shelf, encloses the cube, lifts it, carries it downward, lowers it to the bottom shelf, and opens around it.",
+    "left": "Held open apart from the work area throughout; no supporting grasp or stabilizing contact.",
+    "coordination": "Single-hand manipulation; no hand-to-hand transfer, bilateral support, or person-robot object exchange."
+  },
+  "uncertainties": [
+    "Complete release and stable unsupported settling cannot be confirmed because the right hand remains adjacent to the cube and partly obscures its support/contact at the ending."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -432,7 +432,7 @@ def source_frame_path(root, record):
     generation = root / record['relative_folder_path'] / 'generation input'
     if record['robot_type'].startswith('Dobot'):
         return generation / 'source_first_frame.png'
-    review_path = generation / 'action_review.json'
+    review_path = generation / 'metadata/action_review.json'
     if review_path.exists():
         review = read_json(review_path)
         if review['selected_segment']['end_frame_exclusive'] < review['source_frame_count']:
@@ -447,7 +447,9 @@ def process(root, record, args):
     video, frame = folder / "video.mp4", source_frame_path(root, record)
     if not args.verify_only:
         frame.parent.mkdir(parents=True, exist_ok=True)
-    prompt, metadata_path = folder / "task_prompt.txt", folder / "metadata.json"
+    prompt, metadata_path = folder / "task_prompt.txt", folder / "metadata/metadata.json"
+    if not args.verify_only:
+        metadata_path.parent.mkdir(parents=True, exist_ok=True)
     if args.verify_only:
         if not original_integrity(video, record):
             raise ValueError("MP4 missing or differs from pinned original")
@@ -471,7 +473,7 @@ def process(root, record, args):
         relative_video_path=record["relative_folder_path"] + "/original/video.mp4",
         relative_first_frame_path=frame.relative_to(root).as_posix(),
         relative_task_prompt_path=record["relative_folder_path"] + "/original/task_prompt.txt",
-        relative_metadata_path=record["relative_folder_path"] + "/original/metadata.json",
+        relative_metadata_path=record["relative_folder_path"] + "/original/metadata/metadata.json",
         download_status=download_status, validation_status="passed", validation_errors=[],
         validation={"original_git_blob_verified": True, "full_video_decode": True,
                     "png_readable": True, "png_original_dimensions": True, "frame_zero_pixels_match": True},
@@ -577,7 +579,7 @@ def main():
                 failure = dict(record, download_status="failed_or_unverified", validation_status="failed", validation_errors=[str(exc)])
                 for key, filename in [("relative_video_path", "video.mp4"), ("relative_first_frame_path", "first_frame.png"),
                                       ("relative_task_prompt_path", "task_prompt.txt"), ("relative_metadata_path", "metadata.json")]:
-                    failure[key] = record["relative_folder_path"] + "/original/" + filename
+                    failure[key] = record["relative_folder_path"] + "/original/" + ("metadata/" if key == "relative_metadata_path" else "") + filename
                 failure['relative_first_frame_path'] = source_frame_path(root, record).relative_to(root).as_posix()
                 results[record["video_id"]] = failure
                 failures.append({"video_id": record["video_id"], "folder": record["relative_folder_path"], "error": str(exc)})

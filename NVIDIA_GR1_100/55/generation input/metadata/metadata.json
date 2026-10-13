@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "55",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot closes its right-hand fingers around the bunch of grapes on the table and lifts it off the surface. It carries the bunch to the shelf’s bottom white tray, lowers it among the other produce, and opens its fingers, leaving the grapes in the tray with its hand still above them. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/55/original/original.mp4",
+  "source_video_sha256": "4e4590a6aa009dff0f9bac6995ca56fa72e4bc1d76d33cd6072859a92cc1e7c1",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/55.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1726470,
+  "video_sha256": "4e4590a6aa009dff0f9bac6995ca56fa72e4bc1d76d33cd6072859a92cc1e7c1",
+  "first_frame_sha256": "931858f7c5372156ca0e86b312f0bc6eb3d73e1811ef8ce0734f876462c96cee",
+  "observed_terminal_state": "The grape bunch is in the shelf’s lower white tray among other produce. The right hand has opened above the bunch and remains close to it; the left hand stays open and uninvolved. No retreat after placement is visible.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: grasps the grape bunch, lifts and transports it, lowers it into the white tray, and opens its fingers over the deposited bunch.",
+    "left": "Remains open and raised over the left part of the table; does not touch, stabilize, support, or receive the grapes.",
+    "coordination": "Single-hand manipulation without hand-to-hand transfer or assistance from the left hand."
+  },
+  "uncertainties": [
+    "The right palm, the black shelf edge, and other produce partly occlude the exact final finger-to-grape and grape-to-tray contact points. Finger opening and the bunch descending into the tray are visible; no later hand withdrawal is observed."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

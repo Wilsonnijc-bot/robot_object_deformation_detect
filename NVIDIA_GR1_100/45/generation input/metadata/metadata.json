@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "45",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot grasps the green apple on the wooden shelf's top tier with its right hand and lifts it clear. It carries the apple downward to the bottom tier, sets it on the wooden surface, and opens its hand to leave the apple resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/45/original/original.mp4",
+  "source_video_sha256": "8863f331c87b11bdb67889669c7d50a23d98446b284a9a54e1e9b72908759bfe",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/45.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1432329,
+  "video_sha256": "8863f331c87b11bdb67889669c7d50a23d98446b284a9a54e1e9b72908759bfe",
+  "first_frame_sha256": "47d9ba3ee850179970ce7f57fc1666c9a791187e2451181d18b0744c05cd6e1c",
+  "observed_terminal_state": "The apple rests on the bottom tier. The right thumb is spread away and the fingers are opening beside/above the apple, establishing release without a complete arm withdrawal. The left hand stays open below the shelf.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: closes around the apple, lifts it from the top tier, carries and lowers it to the bottom tier, then opens to release it.",
+    "left": "Remains open and low; does not support the apple or shelf and does not assist the manipulation.",
+    "coordination": "Single-hand manipulation; no transfer or shared grasp. A person walks into the background but does not interact with the robot or apple."
+  },
+  "uncertainties": [
+    "Exact first frame of bottom-tier surface contact is partially occluded by the right hand. Some final fingertips overlap the apple in projection, but the final open hand and stable apple on the shelf support release; complete withdrawal is not shown."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

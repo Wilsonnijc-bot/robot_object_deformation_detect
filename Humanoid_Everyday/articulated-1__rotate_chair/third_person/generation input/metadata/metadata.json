@@ -1,0 +1,62 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "articulated-1",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid uses its right hand to grasp the near side edge of the office chair's backrest and turn the backrest, seat, and armrests together to a new angle. It opens its right hand and lowers the arm, leaving the chair turned while its left arm remains behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/articulated-1__rotate_chair/third_person/original/original.mp4",
+  "source_video_sha256": "d31c00ed0adecce0f431684dde5b8e2e40a6af9911fdeed1b1f52331cd17baa0",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/articulated/task-1/rotate_chair_no_sound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 534,
+  "frame_count": 534,
+  "first_frame_index": 0,
+  "fps": 29.94392523364486,
+  "fps_rational": "3204/107",
+  "duration_seconds": 17.833333,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2702199,
+  "video_sha256": "d31c00ed0adecce0f431684dde5b8e2e40a6af9911fdeed1b1f52331cd17baa0",
+  "first_frame_sha256": "8a7474e086e744d708207fef325904d773fcf7e14d79750e54d3b6fcb0f13434",
+  "observed_terminal_state": "The office chair remains turned to a new angle, with the near armrest and backrest edge displaced from the initial orientation. Right hand has released the backrest and hangs beside the right thigh. Left arm remains behind the backrest, and a left-hand release is not visible.",
+  "arm_hand_roles": {
+    "right": "Confirmed manipulating hand: engages the near side edge of the backrest, curls fingers to grip, rotates the chair assembly, straightens fingers to release and withdraws downward. No mechanism, lever, seat underside or swivel joint is contacted visibly.",
+    "left": "Positioned behind the opposite backrest side. Open finger portions are visible beside the far edge before the rotating backrest occludes them. An opposing brace, force contribution, uninterrupted contact, regrasp or release is not established.",
+    "coordination": "Only the right-hand chair manipulation is confirmed. The left arm stays behind the backrest, but its partly visible proximity does not establish active coordinated support.",
+    "load_bearing": "Chair remains supported by its floor/base. No lift or hand-to-hand load transfer occurs."
+  },
+  "uncertainties": [
+    "Left fingers beside the far backrest edge do not establish firm bracing contact. The palm/opposing contact surfaces are partly hidden; the hand becomes obscured during rotation, so its force contribution, uninterrupted contact and release cannot be determined.",
+    "The chair base/swivel is mostly below or obscured by the visible chair. Backrest, seat and armrest landmarks confirm rotation of the chair assembly, but the exact pivot, any simultaneous floor translation and manipulation of a separate swivel control cannot be established."
+  ],
+  "annotation_discrepancies": [
+    "The source describes manipulating the swivel mechanism. Visible manipulation is a right-hand grip on the backrest edge; no separate mechanism/control is visibly operated."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

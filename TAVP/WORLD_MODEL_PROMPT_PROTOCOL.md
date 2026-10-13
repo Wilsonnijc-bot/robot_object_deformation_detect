@@ -43,7 +43,7 @@ Keep a necessary motion distinction: â€œfolds the left half over the right halfâ
 
 1. A dedicated agent inspects the complete video, sampling every second decoded frame and examining native-resolution transition frames.
 2. The agent inspects the initial PNG in the generation camera view. For Dobot, this is only the middle third-person panel.
-3. The agent records the full observed chronology and any ambiguity in `action_review.json`.
+3. The agent records the full observed chronology and any ambiguity in `metadata/action_review.json`.
 4. If there are independent subtasks, retain the first complete manipulation or first complete failed attempt, starting at original frame 0 and ending before the next subtask. Keep the action sentence within that endpoint.
    A brief corrective nudge or settling adjustment of the same placement remains part of that single task; ordinary action phases do not justify a split.
 5. Write the two-sentence preferred prompt. Write a separate concise full-sequence prompt for the original video. If a first-substep branch is retained, keep that branch plus the full-sequence prompt and action review; omit duplicated full-video media and derivative metadata.

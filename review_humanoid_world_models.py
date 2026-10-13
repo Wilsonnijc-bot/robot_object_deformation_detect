@@ -59,9 +59,10 @@ def init():
         base = PROJECT / r['folder']
         original = base / 'original'
         original.mkdir(exist_ok=True)
-        for name in ['original.mp4', 'task_prompt.txt', 'metadata.json']:
+        for name in ['original.mp4', 'task_prompt.txt', 'metadata/metadata.json']:
             source = base / name
             destination = original / name
+            destination.parent.mkdir(parents=True, exist_ok=True)
             if source.exists():
                 if destination.exists():
                     if sha(source) != sha(destination):
@@ -71,7 +72,7 @@ def init():
                     source.replace(destination)
             if not destination.exists():
                 raise RuntimeError('Missing original artifact: ' + str(destination))
-        metadata = json.loads((original / 'metadata.json').read_text())
+        metadata = json.loads((original / 'metadata/metadata.json').read_text())
         assert sha(original / 'original.mp4') == metadata['video_properties']['sha256']
         key = ('he_' + r['task_id']) if r['dataset'] == 'Humanoid_Everyday' else ('gr1_' + r['original_id'])
         world = base / 'generation input'
@@ -99,7 +100,7 @@ def init():
             'task_name': r['task_name'], 'base': str(base.relative_to(PROJECT)),
             'source_video': str((original / 'original.mp4').relative_to(PROJECT)),
             'source_first_frame': str(image.relative_to(PROJECT)),
-            'source_metadata': str((original / 'metadata.json').relative_to(PROJECT)),
+            'source_metadata': str((original / 'metadata/metadata.json').relative_to(PROJECT)),
             'original_task_prompt': r['instruction'], 'frame_count': metadata['video_properties']['decoded_frame_count'],
             'fps': metadata['video_properties']['fps'], 'duration_seconds': metadata['video_properties']['duration_seconds'],
             'source_video_sha256': metadata['video_properties']['sha256'], 'world_model': str(world.relative_to(PROJECT)),
@@ -193,7 +194,7 @@ def native(key, indices):
 def finalize(key):
     job = get_job(key)
     world = PROJECT / job['world_model']
-    review = json.loads((world / 'action_review.json').read_text())
+    review = json.loads((world / 'metadata/action_review.json').read_text())
     prompt_path = world / 'actiongeneration_prompt.txt'
     prompt = prompt_path.read_text().strip()
     inspection = json.loads((Path(job['inspection_directory']) / 'inspection.json').read_text())
@@ -226,7 +227,7 @@ def finalize(key):
         'selected_segment': {'start_frame': 0, 'end_frame_exclusive': job['frame_count'],
                              'reason': 'Complete original single-task reference; no cropping or trimming requested.'},
         'source_video_sha256': job['source_video_sha256'], 'review_completed_at': datetime.now(timezone.utc).isoformat()})
-    write_json(world / 'action_review.json', review)
+    write_json(world / 'metadata/action_review.json', review)
     source_metadata = json.loads((PROJECT / job['source_metadata']).read_text())
     props = source_metadata['video_properties']
     metadata = {'dataset': job['dataset'], 'video_id': job['original_id'], 'variant': 'full_sequence',
@@ -244,13 +245,13 @@ def finalize(key):
         'video_sha256': sha(world / 'video.mp4'), 'first_frame_sha256': sha(world / 'first_frame.png'),
         'observed_terminal_state': review['terminal_state'], 'arm_hand_roles': review['arm_hand_roles'],
         'uncertainties': review['uncertainties'], 'annotation_discrepancies': review.get('annotation_discrepancies', []),
-        'relative_video_path': 'video.mp4', 'relative_first_frame_path': 'first_frame.png',
-        'relative_prompt_path': 'actiongeneration_prompt.txt', 'action_review_path': 'action_review.json',
+        'relative_video_path': '../video.mp4', 'relative_first_frame_path': '../first_frame.png',
+        'relative_prompt_path': '../actiongeneration_prompt.txt', 'action_review_path': 'action_review.json',
         'validation': {'original_bytes_unchanged': True, 'first_frame_source_copy_exact': True,
             'full_sequence_retained': True, 'full_source_decode_previously_passed': source_metadata['validation']['full_decode_success'],
             'complete_sampled_frame_coverage_recorded': True, 'prompt_constraint_exact': True},
         'validation_status': 'passed'}
-    write_json(world / 'metadata.json', metadata)
+    write_json(world / 'metadata/metadata.json', metadata)
     print(json.dumps({'key': key, 'words': len(prompt.split()), 'status': 'complete', 'prompt': prompt}, indent=2))
 
 
@@ -262,12 +263,12 @@ def audit():
                 for dataset in ['Humanoid_Everyday', 'NVIDIA_GR1_100']}
     for job in all_jobs:
         world = PROJECT / job['world_model']
-        required = ['video.mp4', 'first_frame.png', 'actiongeneration_prompt.txt', 'action_review.json', 'metadata.json']
+        required = ['video.mp4', 'first_frame.png', 'actiongeneration_prompt.txt', 'metadata/action_review.json', 'metadata/metadata.json']
         if not all((world / f).is_file() for f in required):
             missing.append(job['key'])
             continue
-        m = json.loads((world / 'metadata.json').read_text())
-        review = json.loads((world / 'action_review.json').read_text())
+        m = json.loads((world / 'metadata/metadata.json').read_text())
+        review = json.loads((world / 'metadata/action_review.json').read_text())
         prompt = (world / 'actiongeneration_prompt.txt').read_text().strip()
         if m['validation_status'] != 'passed' or sha(world / 'video.mp4') != job['source_video_sha256']:
             raise ValueError('Invalid world-model reference: ' + job['key'])
@@ -291,7 +292,7 @@ def audit():
             'prompt': m['generation_prompt'], 'relative_prompt_path': os.path.relpath(world / 'actiongeneration_prompt.txt', manifest_root),
             'relative_first_frame_path': os.path.relpath(world / 'first_frame.png', manifest_root),
             'relative_video_path': os.path.relpath(world / 'video.mp4', manifest_root),
-            'relative_review_path': os.path.relpath(world / 'action_review.json', manifest_root),
+            'relative_review_path': os.path.relpath(world / 'metadata/action_review.json', manifest_root),
             'source_video_sha256': job['source_video_sha256'], 'protocol': 'humanoid_action_v1', 'status': 'passed'})
     completed_keys = {r['key'] for r in complete}
     job_document = json.loads(JOBS_PATH.read_text())

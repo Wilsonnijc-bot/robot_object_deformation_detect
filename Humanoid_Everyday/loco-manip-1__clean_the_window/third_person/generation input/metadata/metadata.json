@@ -1,0 +1,60 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "loco-manip-1",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid grasps the gray duster's handle with its right hand, lifts it from the ledge, and turns with short steps to face the window. It raises the duster and sweeps its head across the window in repeated sideways and downward wiping strokes at different heights. Still holding the handle, it turns and steps back to the ledge, lays the duster down, releases it, and lowers its empty right hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/original/original.mp4",
+  "source_video_sha256": "47f0cc0213aa3c1ef60ffe1dda45d86c5cdc5d7a3ce3712f38bc1fad11e8b1d5",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/loco-manip/task-1/clean_the_window_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 1092,
+  "frame_count": 1092,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 36.4,
+  "resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "displayed_resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "codec": "h264",
+  "file_size_bytes": 24834734,
+  "video_sha256": "47f0cc0213aa3c1ef60ffe1dda45d86c5cdc5d7a3ce3712f38bc1fad11e8b1d5",
+  "first_frame_sha256": "daee3ffaf2c86a9fa3915333256d819d5683fdbdf4d37dbbb91c042441b24ceb",
+  "observed_terminal_state": "Duster rests on the original light-colored ledge to image right, no longer held. The right hand is empty and lowered beside the robot; the left hand remains empty. The robot stands next to the ledge after completing the tool-use and return sequence.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: grasps the projecting handle, lifts and carries the duster, performs raised sideways/downward wiping strokes, puts it back onto the ledge, and releases it.",
+    "left": "Empty, nonparticipating hand; stays beside the torso through turn, wiping and return. It neither supports the duster nor touches the window.",
+    "coordination": "Single-hand tool use coordinated with whole-body stepping and turning to face the window and return to the ledge. No hand-to-hand transfer or person interaction is visible."
+  },
+  "uncertainties": [
+    "The frontal/rear projection cannot establish uninterrupted duster-to-glass contact throughout every sweep; the head follows clear wiping movements across the window plane, and portions are briefly occluded by the robot.",
+    "Visible dirt removal or final cleanliness cannot be established. Success denotes the observed grasp, wiping-motion sequence and completed tool return/release, not a verified clean surface.",
+    "The robot is partially out of view during the lateral/backward stepping phase around frames 736-798; the held duster and parts of the body remain visible and re-entry confirms retained possession."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

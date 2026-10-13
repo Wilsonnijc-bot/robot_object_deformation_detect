@@ -419,7 +419,7 @@ def refine_quality_pixel_evidence(summary):
             else:
                 variant['assessment'] += ' Full native decoded pixel sequences differ; no pixel-quality upgrade established.'
         write_json(p / 'assessments' / (task_id + '__' + view + '.json'), assessment)
-        metadata_path = source_artifact_dir(folder) / 'metadata.json'
+        metadata_path = source_artifact_dir(folder) / 'metadata/metadata.json'
         if metadata_path.exists():
             m = read_json(metadata_path)
             m['quality'] = assessment
@@ -536,7 +536,7 @@ def process_record(r):
     folder.mkdir(parents=True, exist_ok=True)
     video = folder / 'original.mp4'
     quality = quality_for(r)
-    prior = read_json(folder / 'metadata.json') if (folder / 'metadata.json').exists() else {}
+    prior = read_json(folder / 'metadata/metadata.json') if (folder / 'metadata/metadata.json').exists() else {}
     reused_cache = False
     cache = source_dir() / 'quality_candidates' / (r['task_id'] + '__' + r['viewpoint'] + '.mp4')
     if r['dataset'] == 'Humanoid_Everyday' and not video.exists() and cache.exists():
@@ -562,7 +562,7 @@ def process_record(r):
     if r.get('task_folder'):
         task_folder = DATA_ROOT / r['task_folder']
         (task_folder / 'task_prompt.txt').write_bytes(r['instruction'].encode('utf-8'))
-        write_json(task_folder / 'task_metadata.json', {'dataset': r['dataset'], 'task_id': r['task_id'],
+        write_json(task_folder / 'metadata/task_metadata.json', {'dataset': r['dataset'], 'task_id': r['task_id'],
             'task_name': r['task_name'], 'category': r['category'], 'text_description': r['instruction'],
             'original_gallery_record': r['source_record'], 'official_gallery_url': GALLERY,
             'metadata_source_url': r['metadata_source_url'], 'repository': r['repository'], 'revision': r['revision'],
@@ -585,7 +585,7 @@ def process_record(r):
         'official_gallery_associates_views': r['dataset'] == 'Humanoid_Everyday',
         'same_physical_demonstration_independently_verified': False if r['dataset'] == 'Humanoid_Everyday' else None,
         'temporal_synchronization_verified': False if r['dataset'] == 'Humanoid_Everyday' else None})
-    write_json(folder / 'metadata.json', metadata)
+    write_json(folder / 'metadata/metadata.json', metadata)
     logging.info('Validated %s/%s %s %dx%d frames=%d', r['dataset'], r['original_id'], r['viewpoint'], props['width'], props['height'], props['decoded_frame_count'])
     return metadata
 
@@ -638,12 +638,12 @@ def audit(pilot=False):
     hashes_to_records = collections.defaultdict(list)
     for r in all_records:
         folder = source_artifact_dir(r['folder'])
-        if not (folder / 'metadata.json').exists():
+        if not (folder / 'metadata/metadata.json').exists():
             if not pilot:
                 errors.append({'dataset': r['dataset'], 'task_id': r['task_id'], 'viewpoint': r['viewpoint'], 'url': r['download_url'], 'error': 'Video/metadata not successfully completed', 'timestamp': now()})
             continue
         try:
-            m = read_json(folder / 'metadata.json')
+            m = read_json(folder / 'metadata/metadata.json')
             h = check_identity(folder / 'original.mp4', r['expected'])
             if h['sha256'] != m['video_properties']['sha256']:
                 raise ValueError('Metadata checksum mismatch')
@@ -655,7 +655,7 @@ def audit(pilot=False):
                 t = DATA_ROOT / r['task_folder']
                 if (t / 'task_prompt.txt').read_bytes() != r['instruction'].encode('utf-8'):
                     raise ValueError('Task-level prompt differs from original field')
-                if read_json(t / 'task_metadata.json')['original_gallery_record'] != r['source_record']:
+                if read_json(t / 'metadata/task_metadata.json')['original_gallery_record'] != r['source_record']:
                     raise ValueError('Task-level original entry differs from source')
             props = probe(folder / 'original.mp4')
             if (props['width'], props['height']) != (m['video_properties']['width'], m['video_properties']['height']):
@@ -752,7 +752,7 @@ def audit(pilot=False):
             source = f'https://huggingface.co/datasets/{HF_REPO}'
             revision = d['nvidia_revision']
             metadata_url = d['nvidia_metadata_url']
-            layout = '`<original-video-id>/original/` contains original.mp4, task_prompt.txt and metadata.json. The sibling `generation input/` contains the complete unchanged generation video, first frame, visually authored actiongeneration_prompt.txt, action_review.json and generation metadata. IDs remain unchanged, including numbering gaps. The downloader supports both direct and original/ source layouts.'
+            layout = '`<original-video-id>/original/` contains original.mp4, task_prompt.txt and metadata/metadata.json. The sibling `generation input/` contains the complete unchanged generation video, first frame, visually authored actiongeneration_prompt.txt, metadata/action_review.json and metadata/metadata.json. IDs remain unchanged, including numbering gaps. The downloader supports both direct and original/ source layouts.'
             license_text = 'The official NVIDIA dataset license is CC-BY-4.0.'
             mapping = 'Prompts use the exact text field whose file_name equals the original repository MP4 basename. CSV row order is never used for matching.'
             count_details = f"Metadata rows: {d['nvidia_metadata_rows']}. Metadata without repository video: {', '.join(d['metadata_without_video']) or 'none'}. Videos without instructions: {', '.join(d['video_without_metadata']) or 'none'}."
@@ -786,7 +786,7 @@ Original metadata source: {metadata_url}
 
 ## Humanoid world-model action prompts
 
-Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `generation input/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; it is the sole generation prompt file. `video.mp4` retains the complete original bytes. `action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
+Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `generation input/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; it is the sole generation prompt file. `video.mp4` retains the complete original bytes. `metadata/action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`. JSON reviews and metadata live under the containing folder's `metadata/` subfolder; task-level metadata uses `metadata/task_metadata.json`.
 
 `world_model_prompts.csv` indexes completed prompts, and `world_model_prompt_report.json` records completed and pending reviews. `bimanual_second_review_report.json` records the focused second pass on coordinated or potentially coordinated hand actions, including prompt corrections and detailed contact evidence. The project `AGENTS.md` and this folder's `REVIEW_WORKFLOW.md` define the protocol. No cropping or shortening is used for these single-task references.
 

@@ -1,0 +1,61 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "24",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the red translucent tumbler around its sides and lift it from the tabletop. It carries the tumbler toward the blue plate, turns it nearly horizontal, and lowers it onto its side across the plate. The right fingers open while the hand remains over the tumbler. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/24/original/original.mp4",
+  "source_video_sha256": "4b5971a96c10125950043930703b8f3f20d2c44061da9fd9bed5026043b69932",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/24.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1118668,
+  "video_sha256": "4b5971a96c10125950043930703b8f3f20d2c44061da9fd9bed5026043b69932",
+  "first_frame_sha256": "0d5a25f4635802b32da0a9e23882264d73b3d5447c19bf9685b5cf32e75cbb0a",
+  "observed_terminal_state": "Tumbler lies nearly horizontal across the blue plate, open rim toward robot left and projecting beyond the plate edge. Right fingers are open but the hand remains over/around the tumbler. Left hand remains idle.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: approaches, grasps the tumbler by its sides, lifts, transports, turns sideways, lowers across plate, and opens its fingers at the end.",
+    "left": "Remains open and approximately stationary above the robot-left side of the table; provides no object or plate support.",
+    "coordination": "Single-hand manipulation, with no hand-to-hand transfer or person-object interaction."
+  },
+  "uncertainties": [
+    "The last frame does not show the right hand withdrawn clear of the tumbler; complete fingertip separation and an independently settled resting state after withdrawal are not established.",
+    "The visible translucent tumbler does not establish whether its material is glass or plastic."
+  ],
+  "annotation_discrepancies": [
+    "The source instruction identifies the object as a red glass; visual evidence supports a red translucent tumbler without establishing its material. The observed destination pose is sideways across the plate, and the clip ends with the right hand still immediately over the object rather than a withdrawn hand."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,58 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "human-robot-2",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid robot grasps the toilet-paper roll on the tabletop with its right hand, lifts it, and turns it sideways for handover. It lowers the roll into a person's outstretched palm and keeps holding it while the person closes their hand around it. The robot opens its right hand to release the roll, then retracts its empty arm as the person carries the roll away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/original/original.mp4",
+  "source_video_sha256": "b0f81e79371126724200a3441b8f86caaff54cf71e744c0c55f3f7cdb818d739",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/human-robot/task-2/pick_up_a_toilet_paper_and_hand_it_to_a_person_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 447,
+  "frame_count": 447,
+  "first_frame_index": 0,
+  "fps": 29.933035714285715,
+  "fps_rational": "6705/224",
+  "duration_seconds": 14.933333,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 3728916,
+  "video_sha256": "b0f81e79371126724200a3441b8f86caaff54cf71e744c0c55f3f7cdb818d739",
+  "first_frame_sha256": "d01afcfcbc7c2c6dea07be4e03f0c841b1a709efd1ba3e33fa8d53bb46bb89c5",
+  "observed_terminal_state": "Successful robot-to-person transfer is visibly complete. Person has carried roll out of frame at image left; original tabletop location is empty, and robot right hand is empty and retracted toward lap.",
+  "arm_hand_roles": {
+    "right": "Sole robot manipulating hand: reaches, grasps roll near its central core/exterior, tilts and lifts, presents and lowers into human palm, retains hold until the human grasps, releases and retracts.",
+    "left": "Remains near lap with minor passive pose variation, does not grasp or support roll or contact person.",
+    "person": "One visible hand approaches palm upward from image left, supports bottom/exterior of roll, wraps around it during shared hold, and withdraws carrying it after robot release."
+  },
+  "uncertainties": [
+    "Precise individual digit force/contact on the hidden side of the roll is not visible; gross grasp, lift and release are clear. Human anatomical hand side cannot be established from the visible forearm/hand alone and is not specified."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -10,16 +10,16 @@ TAVP/
     original/
       video.mp4                       # original source, unchanged
       task_prompt.txt                 # original dataset task annotation, unchanged
-      metadata.json                   # source metadata with updated artifact paths
+      metadata/metadata.json          # source metadata with updated artifact paths
     generation input/
       prompt for original multi step action(reproducing the original video).txt
                                       # full original-sequence generation prompt
-      action_review.json              # dedicated reviewer's detailed observations
+      metadata/action_review.json     # dedicated reviewer's detailed observations
       first_substep/                  # selected shorter complete first action
         video.mp4
         first_frame.png
         prompt.txt                    # generation prompt ends at the retained action
-        metadata.json
+        metadata/metadata.json
   world_model_manifest.csv            # one preferred generation reference per source video
   world_model_validation_report.json
   build_world_model_dataset.py
@@ -27,7 +27,7 @@ TAVP/
 
 Dobot folders also retain `generation input/source_first_frame.png`, the unchanged full-panel source image. Source-frame PNGs are stored here rather than under `original/`.
 
-The layout above applies to the ten simplified cases. For the thirteen videos without a shorter first-substep branch, `generation input/` contains the single generation reference directly: `video.mp4`, `first_frame.png`, `prompt.txt`, `metadata.json`, and `action_review.json`. Simplified cases retain no additional full-video MP4, duplicate initial PNG or full-reference metadata under `generation input/`.
+The layout above applies to the ten simplified cases. For the thirteen videos without a shorter first-substep branch, `generation input/` contains the single generation reference directly: `video.mp4`, `first_frame.png`, `prompt.txt`, `metadata/metadata.json`, and `metadata/action_review.json`. Simplified cases retain no additional full-video MP4, duplicate initial PNG or full-reference metadata under `generation input/`.
 
 Use `world_model_manifest.csv` for generation benchmarking. Its relative MP4, PNG and prompt paths select `first_substep/` when present; otherwise they select the complete single action in `generation input/`. For shortened references, `full_reference_prompt_path` points to `prompt for original multi step action(reproducing the original video).txt`, which describes the full original video. For complete single-task references, it points to the selected `prompt.txt`. The complete source video remains under `original/`. The selected MP4 and PNG are the reference motion and conditioning image; `generation_prompt` and the selected `prompt.txt` contain the same instruction.
 
@@ -45,7 +45,7 @@ Generation prompts follow `concise_action_v1` in the project [AGENTS.md](../AGEN
 
 New prompts have provenance `visually_authored_from_video_and_initial_frame`. This is independent of the earlier author-published/transferred/inferred task-instruction labels, which remain in the source metadata. The visible geometry, color, relative position, gripper interaction, motion sequence and terminal state guide the new prompts. Visually ambiguous identities are described by appearance. A claim that cannot be confirmed because of occlusion is recorded under `uncertainties`; technical validation does not erase that limitation.
 
-`action_review.json` contains full `observed_sequence` stages, `initial_scene`, inspected native frame indices, dense-sheet coverage, selected frame interval, `terminal_state`, both prompts, and uncertainty notes. Inspection images are temporary; no evidence-frame directory is retained or recreated under `generation input/`. The conditioning `first_frame.png` remains in each generation reference. The manifest distinguishes `selected_execution_status` from `original_execution_status`; a successful first action may come from an overall failed source clip. The source frame interval uses a half-open range: `[source_frame_start, source_frame_end_exclusive)`.
+`metadata/action_review.json` contains full `observed_sequence` stages, `initial_scene`, inspected native frame indices, dense-sheet coverage, selected frame interval, `terminal_state`, both prompts, and uncertainty notes. Inspection images are temporary; no evidence-frame directory is retained or recreated under `generation input/`. The conditioning `first_frame.png` remains in each generation reference. The manifest distinguishes `selected_execution_status` from `original_execution_status`; a successful first action may come from an overall failed source clip. The source frame interval uses a half-open range: `[source_frame_start, source_frame_end_exclusive)`.
 
 ## Rebuild and validation
 

@@ -1,0 +1,60 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "loco-manip-6",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid robot grasps the whiteboard's nearby vertical frame with its left hand at about waist height. Keeping that hold, it walks forward alongside the board and pushes it ahead on its caster wheels, then stops with the board upright. It releases the frame and lowers its left arm, leaving the whiteboard standing at its new position. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/loco-manip-6__hold_whiteboard_and_walk/third_person/original/original.mp4",
+  "source_video_sha256": "34526017bf410a9169b3c10a3a9aa9f6ae3626069a62c63f61ded8af31a5c53d",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/loco-manip/task-6/hold_a_whiteboard_and_walk_with_it_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 655,
+  "frame_count": 655,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 21.833333,
+  "resolution": {
+    "width": 1920,
+    "height": 1440
+  },
+  "displayed_resolution": {
+    "width": 1920,
+    "height": 1440
+  },
+  "codec": "h264",
+  "file_size_bytes": 8683237,
+  "video_sha256": "34526017bf410a9169b3c10a3a9aa9f6ae3626069a62c63f61ded8af31a5c53d",
+  "first_frame_sha256": "64932ac4eddf547729db03f41a4d28e35a0d72713394e4ade2badbc5015555ca",
+  "observed_terminal_state": "The whiteboard stands upright on its caster base in a new position toward image left. Robot stands beside it with both arms lowered; left hand is clear of the frame and no further movement is visible.",
+  "arm_hand_roles": {
+    "left": "Active hand: reaches for and grips the near vertical whiteboard frame, maintains contact to push and guide the wheeled board during forward walking, then opens and lowers after stopping.",
+    "right": "Inactive for manipulation: stays by the hip/body, intermittently occluded, with no observed whiteboard contact or support.",
+    "coordination": "Single-hand manipulation coordinated with alternating forward steps and a stable torso; caster base supports the board. No hand-to-hand transfer or human interaction."
+  },
+  "uncertainties": [
+    "Exact first contact and release instants are bounded by two-frame sampling; chronology intervals describe visually observed phases rather than subframe contact timing."
+  ],
+  "annotation_discrepancies": [
+    "Original instruction describes carrying a large flat object. In the visible sequence the whiteboard is held at its vertical frame and pushed/rolled on its caster base; it is not lifted or carried off the floor."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

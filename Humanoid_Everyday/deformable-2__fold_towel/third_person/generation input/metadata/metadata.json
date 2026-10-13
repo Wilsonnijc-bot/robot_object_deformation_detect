@@ -1,0 +1,60 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "deformable-2",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid robot grasps the checkered towel’s edge on its left with its left hand and lifts that half while the other half rests on the table. It draws the raised half across to its right, then opens its hand and releases the edge, letting the fabric fall over the remaining half into a smaller, slightly offset folded stack. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/deformable-2__fold_towel/third_person/original/original.mp4",
+  "source_video_sha256": "81f18099819437eff036c4cb167a99dc4bafd7684ef13ca8646420c865797197",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/deformable/task-2/Fold_towel_no_sound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 829,
+  "frame_count": 829,
+  "first_frame_index": 0,
+  "fps": 29.96385542168675,
+  "fps_rational": "2487/83",
+  "duration_seconds": 27.666667,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 3947033,
+  "video_sha256": "81f18099819437eff036c4cb167a99dc4bafd7684ef13ca8646420c865797197",
+  "first_frame_sha256": "8a6f6f2f8293916f1d8ab3d83bda215ad9a94dc6f0aad37c8838a34145b09c3f",
+  "observed_terminal_state": "One extra half fold is complete: a smaller layered checkered towel stack rests on the tabletop, with the upper fold slightly offset from the underlying layers. The anatomical left hand has released the fabric and lowered clear; no subsequent manipulation is visible.",
+  "arm_hand_roles": {
+    "left": "Only visibly active manipulation hand: closes on the robot-left towel edge, lifts that flap, draws it toward robot right, opens while the edge remains elevated, and releases it to fall onto the underlying half. No visible regrasp, support change, or pressing after release.",
+    "right": "Visible shoulder, upper arm and forearm remain lowered at image left, below and away from the towel. The right hand is largely cropped; no approach to the towel, grasp, bearing of the fabric, stabilization, or transfer is visible.",
+    "coordination": "No visible bimanual participation. One half rests and slides on the table while the left hand raises and folds the other half. Table contact is observed; an applied stabilizing force from the right hand is not established."
+  },
+  "uncertainties": [
+    "Exact digit-to-fabric contacts and number of towel layers caught in the left-hand grasp are partly occluded. Coupled hand/fabric lifting establishes edge retention without proving a particular pinch configuration.",
+    "The inactive anatomical right hand is mostly cropped. No visible right-arm approach or contact with the towel supports a second-hand stabilization claim.",
+    "The exact first-contact frame is not resolved between the open hand above the cloth at frame 300 and visible edge contact at 390."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

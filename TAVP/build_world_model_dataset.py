@@ -25,6 +25,7 @@ def read_json(path):
 
 
 def write_text(path, text):
+    path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_name(path.name+'.tmp')
     temp.write_text(text,encoding='utf-8')
     temp.replace(path)
@@ -121,7 +122,7 @@ def make_variant(folder, target, original, review, count, prompt, variant, verif
     video=target/'video.mp4'
     image=target/'first_frame.png'
     prompt_path=target/'prompt.txt'
-    metadata_path=target/'metadata.json'
+    metadata_path=target/'metadata/metadata.json'
     if not verify_only:
         target.mkdir(parents=True,exist_ok=True)
         prior=read_json(metadata_path) if metadata_path.exists() else {}
@@ -169,7 +170,7 @@ def make_variant(folder, target, original, review, count, prompt, variant, verif
         'observed_terminal_state':review['selected_segment']['terminal_state'] if variant=='first_substep' else review['observed_sequence'][-1]['action'],
         'selection_reason':review['selected_segment']['reason'] if variant=='first_substep' else 'Complete original filmed sequence in the generation view',
         'uncertainties':review['uncertainties'],'manual_annotation_review_needed':bool(review['uncertainties']),
-        'action_review_path':str((folder/'generation input/action_review.json').relative_to(ROOT)),
+        'action_review_path':str((folder/'generation input/metadata/action_review.json').relative_to(ROOT)),
         'relative_video_path':str(video.relative_to(ROOT)),
         'relative_first_frame_path':str(image.relative_to(ROOT)),
         'relative_prompt_path':str(prompt_path.relative_to(ROOT)),
@@ -193,8 +194,8 @@ def eval_fraction(value):
 
 
 def process(folder, verify_only):
-    original=read_json(folder/'original/metadata.json')
-    review=read_json(folder/'generation input/action_review.json')
+    original=read_json(folder/'original/metadata/metadata.json')
+    review=read_json(folder/'generation input/metadata/action_review.json')
     validate_review(review,original)
     assert digest(folder/'original/video.mp4')==original['sha256'],'Original MP4 integrity failed'
     target=folder/'generation input'
@@ -207,7 +208,7 @@ def process(folder, verify_only):
         else:
             write_text(full_prompt,review['full_sequence_prompt'].strip()+'\n')
         # Keep the selected reference plus full-sequence text; omit redundant full media.
-        for name in ['video.mp4','first_frame.png','metadata.json']:
+        for name in ['video.mp4','first_frame.png','metadata/metadata.json']:
             redundant=target/name
             if verify_only:
                 assert not redundant.exists(), f'Redundant full-reference artifact: {redundant}'
@@ -242,7 +243,7 @@ def main():
     parser.add_argument('--workers',type=int,default=3)
     parser.add_argument('--verify-only',action='store_true')
     args=parser.parse_args()
-    folders=sorted(p.parent.parent for p in ROOT.glob('[0-9][0-9][0-9]_*/original/metadata.json'))
+    folders=sorted(p.parent.parent.parent for p in ROOT.glob('[0-9][0-9][0-9]_*/original/metadata/metadata.json'))
     if args.ids:
         folders=[p for p in folders if p.name[:3] in args.ids]
     results=[]

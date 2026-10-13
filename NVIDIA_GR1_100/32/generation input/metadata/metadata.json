@@ -1,0 +1,61 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "32",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the Rubik's cube on the top shelf and lift it clear. While it carries the cube downward, the person moves the three-tier shelf to the robot's right. The robot lowers the cube onto the bottom shelf and opens its right hand, leaving the cube on that shelf with the hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/32/original/original.mp4",
+  "source_video_sha256": "849bf0337514dba1b025f5bed8ea7d6a892ab9bc724f2a6181d9a81ab65a9b3e",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/32.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1548980,
+  "video_sha256": "849bf0337514dba1b025f5bed8ea7d6a892ab9bc724f2a6181d9a81ab65a9b3e",
+  "first_frame_sha256": "04da0eba82a05dc2ff6098925dc8538c09fcf39450830b9aa1e9ef6bed0b86e0",
+  "observed_terminal_state": "The cube is released on the bottom shelf after the person shifts the shelf rightward. The robot's right hand is open immediately beside the cube; the left hand remains near the table edge. No subsequent arm withdrawal is shown.",
+  "arm_hand_roles": {
+    "right": "Active manipulator: reaches to the top tier, grasps and lifts the cube, carries it downward and to the repositioned bottom tier, then opens to release it.",
+    "left": "Remains near the table edge and does not touch the cube or support the shelf; minor finger posture changes do not participate in the task.",
+    "person": "Holds the upper shelf tier and translates the entire shelf to the robot's right during the robot's cube transport, then releases the shelf.",
+    "coordination": "Single robot hand manipulates the cube. The person relocates the destination shelf during transport; no hand-to-hand cube transfer occurs."
+  },
+  "uncertainties": [
+    "The ending shows the release and cube tipping onto the bottom tier, but does not show later settling or subsequent arm withdrawal."
+  ],
+  "annotation_discrepancies": [
+    "The original instruction omits the person moving the entire shelf during the robot's transport; the shelf relocation is clearly visible and changes the destination position."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

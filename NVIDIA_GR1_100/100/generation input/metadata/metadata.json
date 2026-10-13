@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "100",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot reaches to the top level of the wooden shelf with its right hand, closes its fingers around the Rubik's cube, and lifts it clear. It carries the cube down to the bottom shelf and opens its fingers, leaving the cube on that shelf with its hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/100/original/original.mp4",
+  "source_video_sha256": "3c2f5f20271f3eab8bdbdd6cdf627d6b0da7b5d8cc934bbe12a86904740a4f1a",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/100.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1511982,
+  "video_sha256": "3c2f5f20271f3eab8bdbdd6cdf627d6b0da7b5d8cc934bbe12a86904740a4f1a",
+  "first_frame_sha256": "f6aee67eb672778b13b68f26b694ed741b92732f3e18d53943b9c4ea6a079adb",
+  "observed_terminal_state": "The cube has reached the bottom wooden shelf. At the final frame the right fingers are visibly spread apart beside it; the hand has not withdrawn. The cube is slightly tilted with its red face on top, and the left hand remains idle.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating arm: reaches, grasps, lifts, carries, lowers, and opens around the cube on the bottom shelf.",
+    "left": "Remains open at the lower-left throughout; provides no support or transfer.",
+    "coordination": "Single-hand transfer with no hand-to-hand exchange or human participation."
+  },
+  "uncertainties": [
+    "The cube base and shelf contact are partly hidden by the right fingers during lowering; the exact first frame of shelf support cannot be isolated from this view. The final fingers are visibly open, but the clip ends before the hand fully withdraws or longer-term settling can be observed."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

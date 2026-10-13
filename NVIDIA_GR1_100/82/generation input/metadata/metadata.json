@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "82",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the multicolored cube on the bottom wooden shelf, closing its fingers and thumb around opposite sides and lifting it clear. It carries the cube up to the top shelf, lowers it onto the wood, and opens its hand, leaving the cube standing there with the hand beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/82/original/original.mp4",
+  "source_video_sha256": "fce762bab9d3af0160ef4cd2bd629c28adce2d84261108949997adcd40623fc7",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/82.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1733854,
+  "video_sha256": "fce762bab9d3af0160ef4cd2bd629c28adce2d84261108949997adcd40623fc7",
+  "first_frame_sha256": "93ed1bcd0c1c37db905cdeffd2eaf6e34a4aea3a59c4bd9104c2140dd2c950ec",
+  "observed_terminal_state": "The multicolored cube stands upright on the highest wooden shelf. The right hand is open immediately beside it, with no full withdrawal shown; the lower shelf is empty and left hand remains idle.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: surrounds, grasps, lifts, transports and releases the cube on the highest shelf.",
+    "left": "Open idle hand beside the table throughout; no supporting contact or transfer."
+  },
+  "uncertainties": [
+    "Torso and shoulder attachment are outside the body-aligned camera view; anatomical sides are grounded in paired arm origins and hand orientation.",
+    "Some far-side finger contact and the exact bottom contact point during lowering are occluded by the right hand; terminal release and upright shelf placement are visible."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -1,0 +1,61 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "loco-manip-3",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid grasps the crumpled white paper on the table with its right hand and lifts it, holding it near its chest while stepping away and turning toward the waste station. It walks up to the compost compartment, extends its right arm, and opens its hand to release the paper through the front opening. It withdraws its empty right hand and steps back from the bin. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/loco-manip-3__throw_paper_to_trashcan/third_person/original/original.mp4",
+  "source_video_sha256": "6a8702173f8340e2fb24fcfb16506f6ffb48d294e9b535e58bdd2a49705a4771",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/loco-manip/task-3/throw_away_a_piece_of_paper_to_trashcan_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 816,
+  "frame_count": 816,
+  "first_frame_index": 0,
+  "fps": 30.0,
+  "fps_rational": "30/1",
+  "duration_seconds": 27.2,
+  "resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "displayed_resolution": {
+    "width": 1440,
+    "height": 1920
+  },
+  "codec": "h264",
+  "file_size_bytes": 12159158,
+  "video_sha256": "6a8702173f8340e2fb24fcfb16506f6ffb48d294e9b535e58bdd2a49705a4771",
+  "first_frame_sha256": "0a1af390f2fdf6d7d2a07b006023ffc861c8ebee41bf0e26baef75e7924e85c5",
+  "observed_terminal_state": "The crumpled paper has disappeared through the compost opening, and the right hand is visibly empty. The humanoid has withdrawn its right arm and stepped back; the left hand remains lowered and empty. The paper's resting position within the enclosed bin is not visible.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: reaches for and grasps the wad, lifts and carries it near the chest during locomotion, extends to the compost opening, releases it, and withdraws empty.",
+    "left": "Remains free and lowered alongside the body; no grasp, support, stabilization, transfer, or contact with the paper/bin is visible.",
+    "coordination": "One-handed manipulation coordinated with whole-body stepping and turning; no two-hand coordination or hand-to-hand transfer."
+  },
+  "uncertainties": [
+    "The interior of the compost bin is occluded, so the exact resting position after release cannot be observed.",
+    "The white wad visually resembles crumpled paper or tissue; precise material cannot be established from appearance alone."
+  ],
+  "annotation_discrepancies": [
+    "The original instruction describes throwing motion and target aiming; the visible execution instead carries the wad close to the compost opening and releases it there, with no distinct free-flight throw visible."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

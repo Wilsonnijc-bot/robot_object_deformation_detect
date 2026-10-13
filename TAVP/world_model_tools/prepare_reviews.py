@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def prepare(folder, output):
-    metadata = json.loads((folder / 'original/metadata.json').read_text())
+    metadata = json.loads((folder / 'original/metadata/metadata.json').read_text())
     work = output / metadata['video_id']
     work.mkdir(parents=True, exist_ok=True)
     source = folder / 'original/video.mp4'
@@ -94,7 +94,7 @@ if __name__=='__main__':
     parser.add_argument('--output',type=Path,default=Path('/tmp/tavp-dense-reviews'))
     parser.add_argument('--ids',nargs='*')
     args=parser.parse_args()
-    folders=sorted(p.parent.parent for p in ROOT.glob('[0-9][0-9][0-9]_*/original/metadata.json'))
+    folders=sorted(p.parent.parent.parent for p in ROOT.glob('[0-9][0-9][0-9]_*/original/metadata/metadata.json'))
     for folder in folders:
         if not args.ids or folder.name[:3] in args.ids:
             prepare(folder,args.output)

@@ -23,8 +23,8 @@ and validation details, and [AGENTS.md](AGENTS.md) for the prompt protocols.
 
 Humanoid Everyday third-person and NVIDIA GR1 generation inputs use
 `generation input/` beside `original/`. Each generation folder contains
-`actiongeneration_prompt.txt`, `first_frame.png`, `video.mp4`, `action_review.json`,
-and `metadata.json`. There is no duplicate `prompt.txt` in these two datasets.
+`actiongeneration_prompt.txt`, `first_frame.png`, `video.mp4`, `metadata/action_review.json`,
+and `metadata/metadata.json`. There is no duplicate `prompt.txt` in these two datasets.
 Their `metamanifest/world_model_prompts.csv` files select the current input paths.
 TAVP retains its existing `generation input/` layout and prompt filenames.
 
@@ -37,3 +37,5 @@ The local Python environment, caches, incomplete downloads, and credentials
 are excluded. Consult each dataset's source metadata for provenance.
 
 TAVP shortened references keep their selected prompt in `first_substep/prompt.txt`. The full-video prompt is named `prompt for original multi step action(reproducing the original video).txt` in the parent generation folder.
+
+Every per-video review and metadata JSON lives in a `metadata/` subfolder of its original containing directory. For example, generation inputs use `metadata/action_review.json` and `metadata/metadata.json`; source metadata uses `original/metadata/metadata.json`. Task-level metadata likewise uses `metadata/task_metadata.json`.

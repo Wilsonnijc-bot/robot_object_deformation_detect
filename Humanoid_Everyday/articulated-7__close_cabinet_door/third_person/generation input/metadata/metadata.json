@@ -1,0 +1,58 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "articulated-7",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot raises its left hand to the outer face of the open cabinet door marked 2D11 and presses it inward, swinging the door shut against the cabinet. It then withdraws and lowers the left hand while remaining in place, leaving the door closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/original/original.mp4",
+  "source_video_sha256": "98ca324a461d544ba906270dcc5f1d397f13a80bc779b53a175c03856aac19a7",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/articulated/task-7/close_the_cabinet_door_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 144,
+  "frame_count": 144,
+  "first_frame_index": 0,
+  "fps": 29.782833505687694,
+  "fps_rational": "28800/967",
+  "duration_seconds": 4.835,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 726391,
+  "video_sha256": "98ca324a461d544ba906270dcc5f1d397f13a80bc779b53a175c03856aac19a7",
+  "first_frame_sha256": "c86b4cce17983e5c941463fc71fd347043f570133cd0705f3f6e82418cabcd2f",
+  "observed_terminal_state": "The 2D11 cabinet door is flush with the cabinet and remains closed at frame 143; both hands are lowered and the robot stands in the same location.",
+  "arm_hand_roles": {
+    "left": "Active camera-near arm: raises the open hand, presses the broad outer door face to swing it shut, then withdraws and lowers. No handle grasp, object lifting or transfer is observed.",
+    "right": "Far arm remains lowered near the waist/side; does not contact, stabilize or manipulate the door.",
+    "coordination": "Single-hand door closure. Robot maintains its planted, slightly bent-knee stance; no hand-to-hand transfer or person interaction."
+  },
+  "uncertainties": [
+    "Internal latch engagement is not visible; success refers to the visibly closed door, not a verified latched or locked state. Exact contact force and the source caption's gentle-force/avoid-slamming characterization cannot be established from visual frames."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

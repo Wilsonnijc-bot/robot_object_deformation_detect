@@ -1,0 +1,58 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "53",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot uses its right hand to grasp the translucent red cup around its upper sides and lift it from the table. It carries the cup over the light blue plate, lowers it, and opens its fingers to release the cup onto the plate before drawing the hand clear. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/53/original/original.mp4",
+  "source_video_sha256": "d3468483dc38c4aeff674bc957d37c16a10d114ca068b897901f7ebbe928ffba",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/53.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1826595,
+  "video_sha256": "d3468483dc38c4aeff674bc957d37c16a10d114ca068b897901f7ebbe928ffba",
+  "first_frame_sha256": "12afdf1eee0d3a181a33b46e3ec1a5bd032a9fb0d8db07f79658fe5d5041f0ba",
+  "observed_terminal_state": "The right hand is open and separated from the red cup, which is on the blue plate. The cup changes apparent tilt after release; the short ending does not establish long-term settled stability.",
+  "arm_hand_roles": {
+    "right": "Sole manipulating hand: reaches, encloses cup with thumb and fingers, lifts and carries it to plate, lowers, opens to release, and moves clear.",
+    "left": "Open, held clear to the left throughout; no object contact, support, transfer, or coordination with the right hand."
+  },
+  "uncertainties": [
+    "Precise contact between individual fingertips and cup is partly obscured by the right hand.",
+    "The final short interval does not establish whether the cup remains stably upright after its release and settling motion."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

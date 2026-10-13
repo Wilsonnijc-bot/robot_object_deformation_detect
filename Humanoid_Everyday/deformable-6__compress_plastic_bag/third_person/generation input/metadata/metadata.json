@@ -1,0 +1,62 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "deformable-6",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid brings its right hand against the far side of the black-and-red plastic bag and its left hand against the near side, then moves both hands inward to gather and squeeze the material while the bag rests on the table. The left hand moves clear as the right briefly raises the far side and releases it. Both hands withdraw, leaving the bag loosely crumpled on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/original/original.mp4",
+  "source_video_sha256": "cb2b942b10ca3f13003f044139c19f76ef4e72dcc06e9a363fca2bc4e1103662",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/deformable/task-6/compress_a_plastic_bag_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 427,
+  "frame_count": 427,
+  "first_frame_index": 0,
+  "fps": 29.780309194467048,
+  "fps_rational": "36600/1229",
+  "duration_seconds": 14.338333,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2644482,
+  "video_sha256": "cb2b942b10ca3f13003f044139c19f76ef4e72dcc06e9a363fca2bc4e1103662",
+  "first_frame_sha256": "b327fc59c30fb9cc2d4b6e1ac814fc5baa7121dddfd47543af1381283de4435f",
+  "observed_terminal_state": "Both hands are open and clear. The black/red bag lies loosely crumpled on the table with red panel exposed and black upper surface still raised/puffy; no sealed closure or lasting tight compression is visible.",
+  "arm_hand_roles": {
+    "left": "Near-camera anatomical left arm actively gathers the near black/red side inward in coordination with the right. It is not a stationary stabilizer. Left hand opens and clears below the near side during separation, before the far-side material is released by the right, then withdraws.",
+    "right": "Far-camera anatomical right arm contacts the far black side slightly earlier, gathers that side inward with the left, then briefly bears/raises the far-side section after the left clears. It opens and releases that section back to the table before withdrawing.",
+    "coordination": "Both hands contact separate side regions near the bag end closest to the robot, converge to bunch/squeeze the film, then separate. Left clears first while right briefly retains a raised section, then right releases. The table supports the bulk throughout; no transfer, full-bag lift, regrasp, person interaction or locomotion is visible."
+  },
+  "uncertainties": [
+    "Exact film pinch surfaces and the first/last contact frames are partly hidden by opaque hands and bag folds. Contact/gather wording describes visible film deformation and hand-relative motion without asserting a secure rim grasp.",
+    "The side regions can be identified as near black/red and far black material, but a specific rim, seam, handle or bag layer being pinched cannot be established.",
+    "Air displacement and lasting volume reduction cannot be confirmed. The released bag spreads again and retains a raised/puffy profile."
+  ],
+  "annotation_discrepancies": [
+    "Original instruction describes reducing volume and air displacement. Visible evidence supports gathering/bunching and release, but does not establish lasting volume reduction or measurable air displacement."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

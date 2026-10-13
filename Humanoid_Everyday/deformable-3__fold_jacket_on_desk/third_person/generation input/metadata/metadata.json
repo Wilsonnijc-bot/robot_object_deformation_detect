@@ -1,0 +1,62 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "deformable-3",
+  "variant": "full_sequence",
+  "generation_prompt": "The humanoid grasps the jacket's far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/original/original.mp4",
+  "source_video_sha256": "6cff0ae3f1d8ab0fb34b3b870388284ee99bd1594f4def3fc49d413adbffa550",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/deformable/task-3/fold_a_jacket_on_the_desk_no_sound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 399,
+  "frame_count": 399,
+  "first_frame_index": 0,
+  "fps": 29.925,
+  "fps_rational": "1197/40",
+  "duration_seconds": 13.333333,
+  "resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 720,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 2368909,
+  "video_sha256": "6cff0ae3f1d8ab0fb34b3b870388284ee99bd1594f4def3fc49d413adbffa550",
+  "first_frame_sha256": "9df7199247a07ef070a6fedcd196e03568bbaef887b921a4d5950545cc077371",
+  "observed_terminal_state": "The right hand has released the raised jacket section onto the desk and returned beside it. Left hand is open and clear of the sleeve. Jacket remains in loose overlapping folds and bunches with a cuff/sleeve still extended; no neatly completed fold or smoothing is visible.",
+  "arm_hand_roles": {
+    "right": "Sole established load-bearing manipulating hand: reaches to far anatomical-right jacket edge near white lettering/orange emblem, closes on fabric, lifts a broad side, brings it inward toward its left over the remaining garment, settles it, releases and withdraws. No clear regrasp between lift and release.",
+    "left": "Open, nearly stationary hand beside the opposite sleeve area. Fabric initially occludes fingertips; as the right hand pulls, fabric slides clear without visible left-hand closure or intentional release. Neither stabilizing force nor a grasp is established. It remains open beside the sleeve through the fold and later moves slightly back.",
+    "coordination": "The only demonstrated grasp/lift/fold is right-handed. Left hand pose provides clearance rather than established support; no two-handed lifting, stabilizing grasp, hand-to-hand transfer or second fold is visible."
+  },
+  "uncertainties": [
+    "Initial fabric overlap obscures the left fingertips, so incidental contact is possible but a grasp, active stabilization and intentional left release cannot be established. The idle left hand is omitted from the usable prompt; detailed pose and clearance evidence is preserved in the review.",
+    "The right-hand fabric grasp near white lettering and orange emblem is clear, but overlapping garment layers prevent confident naming of the exact seam/panel; it is described as the far edge/side.",
+    "No neat completed-jacket fold is visible; whether the loose single fold satisfies any external success rubric is unknown."
+  ],
+  "annotation_discrepancies": [
+    "The source instruction describes proper technique and multi-step jacket folding. The visible sequence contains one broad lift and inward fold, ending with bunched fabric rather than a neatly completed multi-step fold."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

@@ -16,7 +16,7 @@ Each of the 23 numerically prefixed video directories contains two folders: `ori
 
 - `video.mp4`: exact original repository bytes, verified against repository file size and Git blob SHA-1, with a separately calculated SHA-256. No re-encoding, resizing, cropping, or recompression occurred.
 - `task_prompt.txt`: one action instruction, with no metadata or commentary.
-- `metadata.json`: source identity, instruction provenance, original caption, execution status, scenario/robustness type, original CSV records, video technical metadata, checksums, paths, and validation results. Unknown fields are JSON `null`.
+- `metadata/metadata.json`: source identity, instruction provenance, original caption, execution status, scenario/robustness type, original CSV records, video technical metadata, checksums, paths, and validation results. Unknown fields are JSON `null`.
 
 First-frame PNGs live under `generation input/`, beside the generation prompt
 (or inside `first_substep/`). The source manifest's `relative_first_frame_path`

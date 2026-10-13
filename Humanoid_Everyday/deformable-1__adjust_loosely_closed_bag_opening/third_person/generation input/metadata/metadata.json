@@ -1,0 +1,60 @@
+{
+  "dataset": "Humanoid_Everyday",
+  "video_id": "deformable-1",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot bends the raised fabric flap down toward the bag with its right hand, then lifts it upright again while holding its edge. Keeping hold of the flap, it lowers it back toward its body and releases it, leaving the flap flat on the robot-facing side of the opening while the bag remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/original/original.mp4",
+  "source_video_sha256": "443be3bc1190e4066621f35e57dacc488839efcf5299f664879d6489161f75a9",
+  "source_url": "https://raw.githubusercontent.com/HumanoidEveryday/humanoideveryday.github.io/85c82f5bfc85a669e039b43fefc2d5cd21232250/data_viewer/static/data/videos/deformable/task-1/adjust_the_opening_of_a_loosely_closed_bag_nosound.mp4",
+  "source_repository_commit": "85c82f5bfc85a669e039b43fefc2d5cd21232250",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 303,
+  "frame_count": 303,
+  "first_frame_index": 0,
+  "fps": 30.000990131687516,
+  "fps_rational": "909000/30299",
+  "duration_seconds": 10.099667,
+  "resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "displayed_resolution": {
+    "width": 592,
+    "height": 1280
+  },
+  "codec": "h264",
+  "file_size_bytes": 1544794,
+  "video_sha256": "443be3bc1190e4066621f35e57dacc488839efcf5299f664879d6489161f75a9",
+  "first_frame_sha256": "145a34e4f72b9b376a127e56130b1683aca0a5e7e5d99d6a22b0d7224de8b0b6",
+  "observed_terminal_state": "Bag remains on tabletop. Previously raised opening flap rests flat on the robot-facing side of the opening. Right hand has visibly released it and retracted; left hand is free. No conclusion is made about exact opening width or fastening state.",
+  "arm_hand_roles": {
+    "right_hand": "Sole visible manipulator: contacts side edge and bends raised fabric flap down toward bag, lifts flap upright while holding its edge, lowers it back toward body, and releases it. Exact early thumb contact is occluded; no mechanism operation is asserted.",
+    "left_hand": "Remains open beside lap near image-right rim; native frames show no encirclement of fabric, visible grip, or synchronized fabric response. No stabilizing support or transfer is confirmed. Moves slightly away near end.",
+    "coordination": "No bimanual manipulation is established after separate contact tracing. Right hand manipulates flap while table supports bag body; left proximity is not treated as stabilizing contact."
+  },
+  "uncertainties": [
+    "The right thumb and flap edge are partly occluded during first contact and initial lowering, so an exact push-versus-pinch classification and precise grip onset cannot be established. Edge holding is clearer during the subsequent lift.",
+    "The dark fabric and flap obscure the interior opening, so exact opening width and whether a closure is fully open or shut cannot be established. No zipper fastening or unfastening is visibly confirmed.",
+    "Left fingertips approach the bag rim in projection during final lowering, but no grip or stabilizing contact is visible; a momentary light touch cannot be excluded from this view."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

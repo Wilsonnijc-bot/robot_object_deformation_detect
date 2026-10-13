@@ -1,0 +1,60 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "56",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot's left hand holds one side of the brown paper bag's opening while its right hand grasps the pink peach on the black shelf and lifts it free. As the right hand carries the peach toward the bag, the left hand raises the held side to keep the mouth open. The right hand lowers the peach inside and stays at the opening while the left hand maintains its hold. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/56/original/original.mp4",
+  "source_video_sha256": "a29a8dac464fb3e5798b2e170a04bc8169dcb485e6497fe07883414fe2c08626",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/56.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1728580,
+  "video_sha256": "a29a8dac464fb3e5798b2e170a04bc8169dcb485e6497fe07883414fe2c08626",
+  "first_frame_sha256": "85f330d51971cd237f0c4c6b082d845b3aa1ad5716f1b4ff4653c2cb9c8412e1",
+  "observed_terminal_state": "The peach has entered the brown bag and is hidden by the left wrist and bag walls. The left hand keeps the upper bag side raised; the right hand remains at the opening after a small outward adjustment. Finger-object separation and independently supported peach placement cannot be confirmed.",
+  "arm_hand_roles": {
+    "left": "Maintains an already established hold at the far upper side of the bag opening, then raises that side as the peach approaches and keeps it raised during insertion. Coupled bag-edge/cord motion proves support. Exact thumb/palm pinch is occluded; a cord handle is visible beside the thumb, so a direct paper-rim pinch is not established.",
+    "right": "Closes thumb and opposing articulated fingers around the peach at shelf level, bears it through lift and transport, and lowers it into the bag beneath the left wrist. Final contact and release are hidden; it remains at the opening.",
+    "coordination": "The right hand bears the peach while the left raises and supports one upper bag side to provide an opening. The bag retains table support. No hand-to-hand transfer, new left-hand regrasp, or interaction with a person is demonstrated."
+  },
+  "uncertainties": [
+    "The left palm/thumb contact is occluded. A pale cord handle lies beneath or along the thumb side and the bag moves with the hand, but handle-only versus paper-edge engagement cannot be resolved; the prompt describes holding and raising the upper bag side without specifying a direct rim pinch.",
+    "The right hand enters beneath the left wrist and bag wall. Final finger-object separation, peach contact with the bag interior, and independently supported placement remain hidden despite consecutive final-frame inspection.",
+    "The object is identifiable as the annotated pink peach-shaped target; whether it is real fruit or a prop is not visually established."
+  ],
+  "annotation_discrepancies": [],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

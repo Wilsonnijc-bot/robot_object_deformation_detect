@@ -1,0 +1,60 @@
+{
+  "dataset": "NVIDIA_GR1_100",
+  "video_id": "10",
+  "variant": "full_sequence",
+  "generation_prompt": "The robot closes its right hand around the bunch of green grapes in the central black tray and lifts it clear. It carries the bunch to the white circular mat on its right, opens its fingers, and releases the grapes above the mat. The grapes descend beneath its open right hand toward the mat. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "source_video": "NVIDIA_GR1_100/10/original/original.mp4",
+  "source_video_sha256": "d2a9e981656c315921bbb32ca8b1d9370da9007c96ce8073b0b4ead3bd9a8a3f",
+  "source_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-GR1/resolve/b114c39c0d93393d86bbe875be8bf17b75b85082/gr1/10.mp4",
+  "source_repository_commit": "b114c39c0d93393d86bbe875be8bf17b75b85082",
+  "view": "third_person",
+  "crop_rectangle": null,
+  "spatial_resize": false,
+  "encoding": "original_bytes_copied",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 120,
+  "frame_count": 120,
+  "first_frame_index": 0,
+  "fps": 20.0,
+  "fps_rational": "20/1",
+  "duration_seconds": 6.0,
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "displayed_resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "codec": "h264",
+  "file_size_bytes": 1485614,
+  "video_sha256": "d2a9e981656c315921bbb32ca8b1d9370da9007c96ce8073b0b4ead3bd9a8a3f",
+  "first_frame_sha256": "97cefebe00b347f8a7b9ea94fb9fd819259d923b24d3532550eda1b6f27464d6",
+  "observed_terminal_state": "At source frame 119 the right hand is open above the white mat. The grape bunch is detached and visibly descending below the hand, with motion blur; its stable resting position and mat contact are not shown. The source tray no longer contains that bunch, and the left hand remains open near the tray.",
+  "arm_hand_roles": {
+    "right": "Only manipulating hand: closes thumb and fingers around the green grape bunch, lifts and transports it from the black tray to above the white mat, then opens and releases it.",
+    "left": "Remains open near the near-left edge of the black tray; slight pose changes occur but it does not touch, support, receive, or manipulate the bunch.",
+    "coordination": "Single right-hand execution, with no two-hand coordination, hand-to-hand transfer, or interaction with a person."
+  },
+  "uncertainties": [
+    "The bunch is released above the mat, but the final frame precedes a visible settled landing; successful final placement cannot be confirmed."
+  ],
+  "annotation_discrepancies": [
+    "The original instruction specifies moving grapes to the white mat; the observed clip shows the correct right-hand pickup and release above that destination but ends before the bunch is visibly resting on it."
+  ],
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "validation": {
+    "original_bytes_unchanged": true,
+    "first_frame_source_copy_exact": true,
+    "full_sequence_retained": true,
+    "full_source_decode_previously_passed": true,
+    "complete_sampled_frame_coverage_recorded": true,
+    "prompt_constraint_exact": true
+  },
+  "validation_status": "passed"
+}

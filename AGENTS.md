@@ -16,8 +16,8 @@ For every Humanoid Everyday **third-person** video and every NVIDIA GR1 video, u
 - Prefer **two or three action sentences plus the shared constraint sentence**, usually **55–100 words total**; fewer words are fine for a simple action, and essential coordination may justify more. Keep descriptions direct and specific, without a scene inventory, frame numbers or uncertainty commentary in the usable prompt.
 - Append the existing shared constraint sentence exactly: “Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.” Treat humanoid finger articulation as part of physically valid hand motion; do not describe a dexterous hand as a parallel-jaw gripper in the action sentences.
 - These references retain the **complete original single-task clip**. Do not crop, shorten, resize, re-encode, split into first_substep, or add generated frames. Ordinary phases of the same task remain together.
-- Organize each reviewed Humanoid Everyday third-person and NVIDIA GR1 video folder with `original/` for the unchanged source MP4, original task prompt and metadata, and `generation input/` containing `video.mp4` (an unchanged source copy), `first_frame.png`, `actiongeneration_prompt.txt`, `action_review.json` and `metadata.json`. Use only `actiongeneration_prompt.txt`; do not recreate the redundant `prompt.txt` alias. All three datasets use this generation-folder naming. TAVP retains its `prompt.txt` filenames and `first_substep/` branches. Humanoid first-person source files are outside this review scope and stay intact.
-- In `action_review.json`, record full-sequence chronology with frame indices, anatomical-side evidence, each arm's role, coordination, outcome, uncertainties, source annotation discrepancies and inspection coverage. Save `prompt_protocol: "humanoid_action_v1"` and `prompt_provenance: "visually_authored_from_video_and_initial_frame"`.
+- Organize each reviewed Humanoid Everyday third-person and NVIDIA GR1 video folder with `original/` for the unchanged source MP4, original task prompt and metadata, and `generation input/` containing `video.mp4` (an unchanged source copy), `first_frame.png`, `actiongeneration_prompt.txt`, `metadata/action_review.json` and `metadata/metadata.json`. Use only `actiongeneration_prompt.txt`; do not recreate the redundant `prompt.txt` alias. All three datasets use this generation-folder naming. TAVP retains its `prompt.txt` filenames and `first_substep/` branches. Humanoid first-person source media stay intact; their JSON metadata follows the metadata-folder convention.
+- In `metadata/action_review.json`, record full-sequence chronology with frame indices, anatomical-side evidence, each arm's role, coordination, outcome, uncertainties, source annotation discrepancies and inspection coverage. Save `prompt_protocol: "humanoid_action_v1"` and `prompt_provenance: "visually_authored_from_video_and_initial_frame"`.
 - Temporary contact sheets may cover every second decoded frame; inspect transitions and the initial PNG at native resolution. Do not save evidence-frame directories under `generation input/`. Each source video must receive its own dedicated agent; concurrency is bounded by the session's available agent slots.
 
 ### Inspect before writing
@@ -26,7 +26,7 @@ For every Humanoid Everyday **third-person** video and every NVIDIA GR1 video, u
 - Inspect the entire MP4 closely. Sampling every second decoded frame is acceptable; inspect action transitions and proposed clip boundaries at native resolution.
 - After understanding the whole sequence, inspect the initial PNG in the generation camera view. Do not substitute the author caption for visual evidence.
 - For Dobot, inspect and use only the **middle third-person panel**. Generation MP4s, initial PNGs, temporary inspection images and prompts must all refer to that view.
-- Preserve detailed chronology, frame indices, ambiguity and observed outcomes in `action_review.json`. Keep that detail out of the generation prompt.
+- Preserve detailed chronology, frame indices, ambiguity and observed outcomes in `metadata/action_review.json`. Keep that detail out of the generation prompt.
 
 ### Write a concise prompt
 
@@ -77,9 +77,9 @@ Before saving, confirm that the target is identifiable from the initial frame, t
 
 Save `prompt_protocol: "concise_action_v1"` and `prompt_provenance: "visually_authored_from_video_and_initial_frame"` in the action review. Store the usable prompt alone in `prompt.txt`. Keep downloaded source artifacts under each video's `original/` directory, preserving the media bytes; save cropped and shortened generation references under the sibling `generation input/` directory. Use frame-accurate, lossless derivatives and validate their decoding, dimensions, FPS and source-frame correspondence.
 
-Keep each video folder organized as `original/` and `generation input/` only. Do not export or recreate evidence-frame directories under `generation input/`; use temporary inspection images and retain frame indices/observations in `action_review.json`.
+Keep each video folder organized as `original/` and `generation input/` only. Do not export or recreate evidence-frame directories under `generation input/`; use temporary inspection images and retain frame indices/observations in `metadata/action_review.json`.
 
-When a TAVP first-substep reference exists, retain `first_substep/`, the full-sequence `prompt for original multi step action(reproducing the original video).txt`, and `action_review.json` under `generation input/`, plus the distinct Dobot source frame where applicable. Do not retain or recreate an additional full-video MP4, initial PNG or derivative metadata there. For single-task videos without a shortened branch, retain the one complete generation reference directly under `generation input/`.
+When a TAVP first-substep reference exists, retain `first_substep/`, the full-sequence `prompt for original multi step action(reproducing the original video).txt`, and `metadata/action_review.json` under `generation input/`, plus the distinct Dobot source frame where applicable. Do not retain or recreate an additional full-video MP4, initial PNG or derivative metadata there. For single-task videos without a shortened branch, retain the one complete generation reference directly under `generation input/`.
 
 Additional examples and rationale: [TAVP/WORLD_MODEL_PROMPT_PROTOCOL.md](TAVP/WORLD_MODEL_PROMPT_PROTOCOL.md).
 
@@ -91,5 +91,16 @@ Do not retain another identical PNG under `original/`. For Dobot, keep the
 distinct full-panel source frame as `generation input/source_first_frame.png`;
 `first_frame.png` remains the middle-view conditioning image. The distinct source
 PNG is permitted alongside a `first_substep/` branch. Keep first-frame checksums
-and paths in metadata and manifests current. Humanoid first-person files retain
-their existing source layout.
+and paths in metadata and manifests current. Humanoid first-person media retain
+their existing source layout; their JSON metadata lives in `metadata/`.
+
+### Metadata storage
+
+Store every `action_review.json`, `metadata.json`, and `task_metadata.json` in
+a `metadata/` subfolder of its former containing directory. This includes
+`original/`, `generation input/`, TAVP `first_substep/`, Humanoid first-person
+source folders, and task-level metadata. Keep prompts, MP4s and PNGs in their
+existing input/source folders. Update all script and manifest references. For
+Humanoid and GR1 generation metadata, media/prompt paths are relative to the
+metadata JSON directory (for example, `../first_frame.png`); TAVP metadata retains
+its documented dataset-root-relative paths.
