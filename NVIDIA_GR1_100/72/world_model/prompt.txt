@@ -1,1 +1,0 @@
-After the person releases the white clock on the lower shelf, the robot grasps the clock's case with its left hand and lifts it clear of the shelf. It carries the clock toward the middle of the table and holds it upright there, still grasped in the left hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

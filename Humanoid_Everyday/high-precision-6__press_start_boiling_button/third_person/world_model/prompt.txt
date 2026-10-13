@@ -1,1 +1,0 @@
-The humanoid extends its right hand toward the electric kettle and presses the small switch beneath the handle with an outstretched finger. After holding contact briefly, it pulls the hand back, leaving the kettle upright on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

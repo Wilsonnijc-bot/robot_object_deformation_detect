@@ -1,1 +1,0 @@
-The robot reaches inward with its left hand and closes its fingers and thumb around the orange on the blue plate. It lifts the orange, carries it leftward to the pale turquoise plate, then lowers and releases it onto the plate by opening its hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

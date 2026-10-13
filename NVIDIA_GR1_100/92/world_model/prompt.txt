@@ -1,1 +1,0 @@
-The robot grasps the cube on the lowest shelf with its right hand, closes its fingers around the sides, and lifts it clear. It carries the cube up to the highest shelf, sets it upright, and opens its hand to leave it resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

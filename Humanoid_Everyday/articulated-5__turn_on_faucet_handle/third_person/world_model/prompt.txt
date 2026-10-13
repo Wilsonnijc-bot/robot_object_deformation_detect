@@ -1,1 +1,0 @@
-The humanoid uses its right hand to contact the faucet handle on its right and rotate the lever outward toward its right. It disengages its hand and retracts the right arm beside its body, leaving the handle in its turned position. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

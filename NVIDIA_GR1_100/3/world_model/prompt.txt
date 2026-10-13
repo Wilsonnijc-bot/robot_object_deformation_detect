@@ -1,1 +1,0 @@
-The robot closes its right hand around the yellow banana on the teal plate and lifts it clear. It carries the banana leftward to the bare wooden tabletop beside the plate, lowers it, and opens its fingers, leaving the banana beneath the open hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

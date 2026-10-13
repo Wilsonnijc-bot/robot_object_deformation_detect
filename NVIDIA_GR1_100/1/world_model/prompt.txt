@@ -1,1 +1,0 @@
-The robot uses its right hand to grasp the small green bok choy on the right side of the table and lift it clear of the surface. It carries the bok choy to the lower wire basket, lowers it beside the red fruit, and opens its hand to leave it resting inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

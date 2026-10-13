@@ -1,1 +1,0 @@
-The robot grasps the white clock at the center of the table with its left hand and lifts it clear. It carries the clock into the wooden shelf's lower compartment, lowers it onto the slatted base, and opens its fingers to leave the clock lying inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,1 +1,0 @@
-The robot closes its left hand around the dragonfruit on the pink plate, lifts it, and carries it to the teal plate. It lowers the fruit onto the teal plate and opens its fingers, leaving the fruit lying on its side with the left hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

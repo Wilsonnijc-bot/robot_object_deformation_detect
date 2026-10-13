@@ -16,7 +16,7 @@
       "fps": 30.001023925731253,
       "duration_seconds": 9.766333,
       "source_video_sha256": "e39185d15de67f9de6966aa5d55180a8271229d48df21b9abe9dbf756c0e0fa5",
-      "world_model": "Humanoid_Everyday/pick-place-1__lift_a_kettle_from_its_base/third_person/world_model",
+      "world_model": "Humanoid_Everyday/pick-place-1__lift_a_kettle_from_its_base/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-1",
       "status": "complete"
     },
@@ -34,7 +34,7 @@
       "fps": 29.995989840930356,
       "duration_seconds": 12.468333,
       "source_video_sha256": "42aae8b50bfefff10186280ed3902dfe940892981602916db7b02311b12d4484",
-      "world_model": "Humanoid_Everyday/pick-place-2__place_a_cube_in_a_bag/third_person/world_model",
+      "world_model": "Humanoid_Everyday/pick-place-2__place_a_cube_in_a_bag/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-2",
       "status": "complete"
     },
@@ -52,7 +52,7 @@
       "fps": 30.0,
       "duration_seconds": 17.5,
       "source_video_sha256": "1eb3480ff0aaafd2acceac9341fe869fbcf668f8e9529172377679877080cc15",
-      "world_model": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/world_model",
+      "world_model": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-3",
       "status": "complete"
     },
@@ -70,7 +70,7 @@
       "fps": 29.91643454038997,
       "duration_seconds": 11.966667,
       "source_video_sha256": "d6a00d4b85479b60da83a4c8b7eff2913169f29ab30b11b045a987a483fdba44",
-      "world_model": "Humanoid_Everyday/pick-place-4__pick_up_an_air_purify_spray_and_put_it_inside_a_container/third_person/world_model",
+      "world_model": "Humanoid_Everyday/pick-place-4__pick_up_an_air_purify_spray_and_put_it_inside_a_container/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-4",
       "status": "complete"
     },
@@ -88,7 +88,7 @@
       "fps": 30.000659355150663,
       "duration_seconds": 15.166333,
       "source_video_sha256": "a07e5aa5c4cfc77a8f475c124a9c61e773b9e6141188119f806bff1b3f1295bf",
-      "world_model": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/world_model",
+      "world_model": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-5",
       "status": "complete"
     },
@@ -106,7 +106,7 @@
       "fps": 30.000621130872275,
       "duration_seconds": 16.099667,
       "source_video_sha256": "635bcc2036fb90e17970e7beca1cd96252b3163adf4e2583ee0089eb81233114",
-      "world_model": "Humanoid_Everyday/pick-place-6__pick_a_3d_printing_filament_and_put_it_inside_the_container/third_person/world_model",
+      "world_model": "Humanoid_Everyday/pick-place-6__pick_a_3d_printing_filament_and_put_it_inside_the_container/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-6",
       "status": "complete"
     },
@@ -124,7 +124,7 @@
       "fps": 30.000622419552272,
       "duration_seconds": 16.066333,
       "source_video_sha256": "aceba790c77a87fd531c87b92b72f5f2e5efdb758047d2c7b4538eb37d1e736f",
-      "world_model": "Humanoid_Everyday/pick-place-7__stack_a_rolls_of_paper_towel_on_top_of_the_other/third_person/world_model",
+      "world_model": "Humanoid_Everyday/pick-place-7__stack_a_rolls_of_paper_towel_on_top_of_the_other/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_pick-place-7",
       "status": "complete"
     },
@@ -142,7 +142,7 @@
       "fps": 30.0,
       "duration_seconds": 14.966667,
       "source_video_sha256": "955f472133c775805bba4d47871f1275800635fa5451b67f19205b7094ac1a2a",
-      "world_model": "Humanoid_Everyday/tool-use-1__pour_water_from_a_kettle_into_a_cup/third_person/world_model",
+      "world_model": "Humanoid_Everyday/tool-use-1__pour_water_from_a_kettle_into_a_cup/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-1",
       "status": "complete"
     },
@@ -160,7 +160,7 @@
       "fps": 30.0,
       "duration_seconds": 16.033333,
       "source_video_sha256": "3a6579b78cd37ff1ad9883c699f36e883daccf2394849955aecbeddb4d433e7c",
-      "world_model": "Humanoid_Everyday/tool-use-2__wipe_a_table_with_an_eraser/third_person/world_model",
+      "world_model": "Humanoid_Everyday/tool-use-2__wipe_a_table_with_an_eraser/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-2",
       "status": "complete"
     },
@@ -178,7 +178,7 @@
       "fps": 30.0,
       "duration_seconds": 19.3,
       "source_video_sha256": "7aa30396974f6a2f4dcbdc05464f219a0ea29d363a03d34462b4bca7b95e9543",
-      "world_model": "Humanoid_Everyday/tool-use-3__wipe_a_monitor_with_a_cloth/third_person/world_model",
+      "world_model": "Humanoid_Everyday/tool-use-3__wipe_a_monitor_with_a_cloth/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-3",
       "status": "complete"
     },
@@ -196,7 +196,7 @@
       "fps": 30.0,
       "duration_seconds": 16.666667,
       "source_video_sha256": "0896f2f466be823fa7547e1666e72c920661e7d26b55eb8d6ef8c6bc06622ea1",
-      "world_model": "Humanoid_Everyday/tool-use-4__use_a_garden_tool/third_person/world_model",
+      "world_model": "Humanoid_Everyday/tool-use-4__use_a_garden_tool/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-4",
       "status": "complete"
     },
@@ -214,7 +214,7 @@
       "fps": 29.930715935334874,
       "duration_seconds": 14.433333,
       "source_video_sha256": "9d7646388dffb680cdab29a03ea57f2cf6f39baec1ca3191fdd3ceb07bf579c6",
-      "world_model": "Humanoid_Everyday/tool-use-5__use_a_duster_to_dust_the_desk/third_person/world_model",
+      "world_model": "Humanoid_Everyday/tool-use-5__use_a_duster_to_dust_the_desk/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-5",
       "status": "complete"
     },
@@ -232,7 +232,7 @@
       "fps": 29.71719287745025,
       "duration_seconds": 11.138333,
       "source_video_sha256": "800cf16a5fe55364df4f9d8e294a7f772a5ad2b0228c51ef814cad0dba46ca17",
-      "world_model": "Humanoid_Everyday/tool-use-6__wipe_table_with_cloth/third_person/world_model",
+      "world_model": "Humanoid_Everyday/tool-use-6__wipe_table_with_cloth/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-6",
       "status": "complete"
     },
@@ -250,7 +250,7 @@
       "fps": 30.0,
       "duration_seconds": 10.366667,
       "source_video_sha256": "f956b582f171f7b6cefb5676f75c3838adc4155a471b26cf9f66b9eb135f26fa",
-      "world_model": "Humanoid_Everyday/tool-use-7__click_a_mouse/third_person/world_model",
+      "world_model": "Humanoid_Everyday/tool-use-7__click_a_mouse/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_tool-use-7",
       "status": "complete"
     },
@@ -268,7 +268,7 @@
       "fps": 29.94392523364486,
       "duration_seconds": 17.833333,
       "source_video_sha256": "d31c00ed0adecce0f431684dde5b8e2e40a6af9911fdeed1b1f52331cd17baa0",
-      "world_model": "Humanoid_Everyday/articulated-1__rotate_chair/third_person/world_model",
+      "world_model": "Humanoid_Everyday/articulated-1__rotate_chair/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-1",
       "status": "complete"
     },
@@ -286,7 +286,7 @@
       "fps": 30.0,
       "duration_seconds": 13.366667,
       "source_video_sha256": "ef497f60139b80d857eecf5ff67c75b39fa9ab475c911e277b64101edbd665d7",
-      "world_model": "Humanoid_Everyday/articulated-2__compress_liquid_hand_soap/third_person/world_model",
+      "world_model": "Humanoid_Everyday/articulated-2__compress_liquid_hand_soap/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-2",
       "status": "complete"
     },
@@ -304,7 +304,7 @@
       "fps": 29.935897435897434,
       "duration_seconds": 15.6,
       "source_video_sha256": "a8e8e1cd665fcbbc394aa00ded19a607309d69c4c2b04a0bee4ebb6ea83e06bb",
-      "world_model": "Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/world_model",
+      "world_model": "Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-3",
       "status": "complete"
     },
@@ -322,7 +322,7 @@
       "fps": 30.00064656565874,
       "duration_seconds": 15.466333,
       "source_video_sha256": "b1e73b6d99dee2372191427887a32be2d72286429c68339b353a2ae0fe452aa4",
-      "world_model": "Humanoid_Everyday/articulated-4__compress_air_pumper/third_person/world_model",
+      "world_model": "Humanoid_Everyday/articulated-4__compress_air_pumper/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-4",
       "status": "complete"
     },
@@ -340,7 +340,7 @@
       "fps": 30.00082419846699,
       "duration_seconds": 12.133,
       "source_video_sha256": "8a4355fd240b1406dce7eac8d724234e044d4c1dc6f233eddf1ecba6df84b749",
-      "world_model": "Humanoid_Everyday/articulated-5__turn_on_faucet_handle/third_person/world_model",
+      "world_model": "Humanoid_Everyday/articulated-5__turn_on_faucet_handle/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-5",
       "status": "complete"
     },
@@ -358,7 +358,7 @@
       "fps": 30.00107917550991,
       "duration_seconds": 9.266333,
       "source_video_sha256": "0fad9ee90d334d3d8db97c65b5dbe942db9b92e0d93a045148f5c884c1f4f6b0",
-      "world_model": "Humanoid_Everyday/articulated-6__press_light_switch/third_person/world_model",
+      "world_model": "Humanoid_Everyday/articulated-6__press_light_switch/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-6",
       "status": "complete"
     },
@@ -376,7 +376,7 @@
       "fps": 29.782833505687694,
       "duration_seconds": 4.835,
       "source_video_sha256": "98ca324a461d544ba906270dcc5f1d397f13a80bc779b53a175c03856aac19a7",
-      "world_model": "Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/world_model",
+      "world_model": "Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_articulated-7",
       "status": "complete"
     },
@@ -394,7 +394,7 @@
       "fps": 30.0,
       "duration_seconds": 30.9,
       "source_video_sha256": "b7842a91d509d7bbeec00b3538011dd5f2dbf81594951702acdaf5498b3b7e2d",
-      "world_model": "Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-1",
       "status": "complete"
     },
@@ -412,7 +412,7 @@
       "fps": 30.0,
       "duration_seconds": 19.933333,
       "source_video_sha256": "a667b0a9a1aa51f8f45eee6f6584bd50618c28f13d2b71280ed40309676c8ac4",
-      "world_model": "Humanoid_Everyday/high-precision-2__place_soldering_gun_in_base/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-2__place_soldering_gun_in_base/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-2",
       "status": "complete"
     },
@@ -430,7 +430,7 @@
       "fps": 30.0,
       "duration_seconds": 12.766667,
       "source_video_sha256": "fa4316d7ccad9111e8abcbe15dd103be254fe74549f7a3a1adfd25608cd8f7ce",
-      "world_model": "Humanoid_Everyday/high-precision-3__align_stack_of_books/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-3__align_stack_of_books/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-3",
       "status": "complete"
     },
@@ -448,7 +448,7 @@
       "fps": 30.008778402585175,
       "duration_seconds": 20.960533,
       "source_video_sha256": "bd96ba3dc3386aad8b3e0c40e0a58b41b17a57454099a0a2b437cc81ed6e5749",
-      "world_model": "Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-4",
       "status": "complete"
     },
@@ -466,7 +466,7 @@
       "fps": 29.97569866342649,
       "duration_seconds": 82.3,
       "source_video_sha256": "3fb31937f8614f69cd1c055d1081bec44c04b5416694bb74a8b705db949dec08",
-      "world_model": "Humanoid_Everyday/high-precision-5__insert_flower_into_vase/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-5__insert_flower_into_vase/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-5",
       "status": "complete"
     },
@@ -484,7 +484,7 @@
       "fps": 30.00082419846699,
       "duration_seconds": 12.133,
       "source_video_sha256": "6b0d11d272beede3ac453fcbe17ec74c306f1dee8b74eb97133fbcc927e1659b",
-      "world_model": "Humanoid_Everyday/high-precision-6__press_start_boiling_button/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-6__press_start_boiling_button/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-6",
       "status": "complete"
     },
@@ -502,7 +502,7 @@
       "fps": 30.0,
       "duration_seconds": 11.266667,
       "source_video_sha256": "fcf24b2bfe9986b73e7d8103fdaf6b0d4f1b45045f44e9cd6111cfc0e3fd8b35",
-      "world_model": "Humanoid_Everyday/high-precision-7__unplug_a_charger/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-7__unplug_a_charger/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-7",
       "status": "complete"
     },
@@ -520,7 +520,7 @@
       "fps": 30.000622419552272,
       "duration_seconds": 16.066333,
       "source_video_sha256": "aceba790c77a87fd531c87b92b72f5f2e5efdb758047d2c7b4538eb37d1e736f",
-      "world_model": "Humanoid_Everyday/high-precision-8__stack_paper_towel_rolls/third_person/world_model",
+      "world_model": "Humanoid_Everyday/high-precision-8__stack_paper_towel_rolls/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_high-precision-8",
       "status": "complete"
     },
@@ -538,7 +538,7 @@
       "fps": 29.924050632911392,
       "duration_seconds": 13.166667,
       "source_video_sha256": "bb3e205f47c27d5a7bafa496e92b854b950e91dd95b98d0834e65e21d5a3b9a0",
-      "world_model": "Humanoid_Everyday/human-robot-1__hand_over_emotional_support_dumpling/third_person/world_model",
+      "world_model": "Humanoid_Everyday/human-robot-1__hand_over_emotional_support_dumpling/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-1",
       "status": "complete"
     },
@@ -556,7 +556,7 @@
       "fps": 29.933035714285715,
       "duration_seconds": 14.933333,
       "source_video_sha256": "b0f81e79371126724200a3441b8f86caaff54cf71e744c0c55f3f7cdb818d739",
-      "world_model": "Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/world_model",
+      "world_model": "Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-2",
       "status": "complete"
     },
@@ -574,7 +574,7 @@
       "fps": 29.892857142857142,
       "duration_seconds": 9.333333,
       "source_video_sha256": "f9506e2c0c326f3e15186f0693eb850750401f625bfe4bfda63b48cc0acd8ee9",
-      "world_model": "Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/world_model",
+      "world_model": "Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-3",
       "status": "complete"
     },
@@ -592,7 +592,7 @@
       "fps": 29.908536585365855,
       "duration_seconds": 10.933333,
       "source_video_sha256": "a37e87deb5ada2df11359d183a102d0b4fb71253db2cff8bb51ece48e4736851",
-      "world_model": "Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/world_model",
+      "world_model": "Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-4",
       "status": "complete"
     },
@@ -610,7 +610,7 @@
       "fps": 29.952076677316295,
       "duration_seconds": 41.733333,
       "source_video_sha256": "175f03c5613d9fed3763515da150ede335356bd125a39395bc7a9fd0f1c406d5",
-      "world_model": "Humanoid_Everyday/human-robot-5__handover_dumpling/third_person/world_model",
+      "world_model": "Humanoid_Everyday/human-robot-5__handover_dumpling/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-5",
       "status": "complete"
     },
@@ -628,7 +628,7 @@
       "fps": 29.942528735632184,
       "duration_seconds": 17.4,
       "source_video_sha256": "f132440c008bafde45b8dfff63551a61ed308789152adb84b71a1faae3d80278",
-      "world_model": "Humanoid_Everyday/human-robot-6__hand_over_flower/third_person/world_model",
+      "world_model": "Humanoid_Everyday/human-robot-6__hand_over_flower/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-6",
       "status": "complete"
     },
@@ -646,7 +646,7 @@
       "fps": 30.000977230528683,
       "duration_seconds": 10.233,
       "source_video_sha256": "02cf6af69c66c2c3b8584bf15fa1dc8fc4ee6a896c11ca7502d9e2278891dc48",
-      "world_model": "Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/world_model",
+      "world_model": "Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_human-robot-7",
       "status": "complete"
     },
@@ -664,7 +664,7 @@
       "fps": 30.000990131687516,
       "duration_seconds": 10.099667,
       "source_video_sha256": "443be3bc1190e4066621f35e57dacc488839efcf5299f664879d6489161f75a9",
-      "world_model": "Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/world_model",
+      "world_model": "Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-1",
       "status": "complete"
     },
@@ -682,7 +682,7 @@
       "fps": 29.96385542168675,
       "duration_seconds": 27.666667,
       "source_video_sha256": "81f18099819437eff036c4cb167a99dc4bafd7684ef13ca8646420c865797197",
-      "world_model": "Humanoid_Everyday/deformable-2__fold_towel/third_person/world_model",
+      "world_model": "Humanoid_Everyday/deformable-2__fold_towel/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-2",
       "status": "complete"
     },
@@ -700,7 +700,7 @@
       "fps": 29.925,
       "duration_seconds": 13.333333,
       "source_video_sha256": "6cff0ae3f1d8ab0fb34b3b870388284ee99bd1594f4def3fc49d413adbffa550",
-      "world_model": "Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/world_model",
+      "world_model": "Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-3",
       "status": "complete"
     },
@@ -718,7 +718,7 @@
       "fps": 30.0,
       "duration_seconds": 8.833333,
       "source_video_sha256": "bb53bde8110200ba1ab250e81d616a043c0365c671e9a256332a8d192947919d",
-      "world_model": "Humanoid_Everyday/deformable-4__fold_toolkit/third_person/world_model",
+      "world_model": "Humanoid_Everyday/deformable-4__fold_toolkit/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-4",
       "status": "complete"
     },
@@ -736,7 +736,7 @@
       "fps": 30.000869590422912,
       "duration_seconds": 11.499667,
       "source_video_sha256": "f65e69e22d7b2139f7863d2972b781a84ea600cd67ceb6a601d1cd73805fef7e",
-      "world_model": "Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/world_model",
+      "world_model": "Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-5",
       "status": "complete"
     },
@@ -754,7 +754,7 @@
       "fps": 29.780309194467048,
       "duration_seconds": 14.338333,
       "source_video_sha256": "cb2b942b10ca3f13003f044139c19f76ef4e72dcc06e9a363fca2bc4e1103662",
-      "world_model": "Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/world_model",
+      "world_model": "Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_deformable-6",
       "status": "complete"
     },
@@ -772,7 +772,7 @@
       "fps": 30.0,
       "duration_seconds": 36.4,
       "source_video_sha256": "47f0cc0213aa3c1ef60ffe1dda45d86c5cdc5d7a3ce3712f38bc1fad11e8b1d5",
-      "world_model": "Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/world_model",
+      "world_model": "Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-1",
       "status": "complete"
     },
@@ -790,7 +790,7 @@
       "fps": 30.0,
       "duration_seconds": 41.3,
       "source_video_sha256": "abd99e176a4c5f826eb7ee369917d0b73b3ea3c860b9429edede31ebe998ce5e",
-      "world_model": "Humanoid_Everyday/loco-manip-2__pick_up_kettle_place_on_base_and_turn_on/third_person/world_model",
+      "world_model": "Humanoid_Everyday/loco-manip-2__pick_up_kettle_place_on_base_and_turn_on/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-2",
       "status": "complete"
     },
@@ -808,7 +808,7 @@
       "fps": 30.0,
       "duration_seconds": 27.2,
       "source_video_sha256": "6a8702173f8340e2fb24fcfb16506f6ffb48d294e9b535e58bdd2a49705a4771",
-      "world_model": "Humanoid_Everyday/loco-manip-3__throw_paper_to_trashcan/third_person/world_model",
+      "world_model": "Humanoid_Everyday/loco-manip-3__throw_paper_to_trashcan/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-3",
       "status": "complete"
     },
@@ -826,7 +826,7 @@
       "fps": 30.0,
       "duration_seconds": 16.466667,
       "source_video_sha256": "5286ca1d6cf35ba3c5f9579644c8c11d12119be57f9015d04c9ea1a79b0f4350",
-      "world_model": "Humanoid_Everyday/loco-manip-4__walk_to_gate_button_and_open_gate/third_person/world_model",
+      "world_model": "Humanoid_Everyday/loco-manip-4__walk_to_gate_button_and_open_gate/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-4",
       "status": "complete"
     },
@@ -844,7 +844,7 @@
       "fps": 30.0,
       "duration_seconds": 26.4,
       "source_video_sha256": "b3730b876cd84c7a38d523262c299f3cc5cab658a047b055707543a803891048",
-      "world_model": "Humanoid_Everyday/loco-manip-5__pick_up_container_walk_and_stick_to_whiteboard/third_person/world_model",
+      "world_model": "Humanoid_Everyday/loco-manip-5__pick_up_container_walk_and_stick_to_whiteboard/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-5",
       "status": "complete"
     },
@@ -862,7 +862,7 @@
       "fps": 30.0,
       "duration_seconds": 21.833333,
       "source_video_sha256": "34526017bf410a9169b3c10a3a9aa9f6ae3626069a62c63f61ded8af31a5c53d",
-      "world_model": "Humanoid_Everyday/loco-manip-6__hold_whiteboard_and_walk/third_person/world_model",
+      "world_model": "Humanoid_Everyday/loco-manip-6__hold_whiteboard_and_walk/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-6",
       "status": "complete"
     },
@@ -880,7 +880,7 @@
       "fps": 30.0,
       "duration_seconds": 17.033333,
       "source_video_sha256": "3117fd5fa2cdf96831d48d41f28c50dbf54403e92b344eb8a0eee04e820650cc",
-      "world_model": "Humanoid_Everyday/loco-manip-7__walk_to_fire_extinguisher_and_open_door/third_person/world_model",
+      "world_model": "Humanoid_Everyday/loco-manip-7__walk_to_fire_extinguisher_and_open_door/third_person/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/he_loco-manip-7",
       "status": "complete"
     },
@@ -898,7 +898,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "ce5b22a55cdd148763a89d3e417bcc12ee1de07c2ebaba16084ee8e448a86903",
-      "world_model": "NVIDIA_GR1_100/1/world_model",
+      "world_model": "NVIDIA_GR1_100/1/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_1",
       "status": "complete"
     },
@@ -916,7 +916,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "d2a9e981656c315921bbb32ca8b1d9370da9007c96ce8073b0b4ead3bd9a8a3f",
-      "world_model": "NVIDIA_GR1_100/10/world_model",
+      "world_model": "NVIDIA_GR1_100/10/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_10",
       "status": "complete"
     },
@@ -934,7 +934,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "3c2f5f20271f3eab8bdbdd6cdf627d6b0da7b5d8cc934bbe12a86904740a4f1a",
-      "world_model": "NVIDIA_GR1_100/100/world_model",
+      "world_model": "NVIDIA_GR1_100/100/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_100",
       "status": "complete"
     },
@@ -952,7 +952,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "336e12766ff9a7061a3a50b36adc2e4659983524825e415b440f1ff48e0698b1",
-      "world_model": "NVIDIA_GR1_100/12/world_model",
+      "world_model": "NVIDIA_GR1_100/12/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_12",
       "status": "complete"
     },
@@ -970,7 +970,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "9e1823c4a94640fac799f61c16a10e0fb1ca1a63459ec1f8801d8a49b1b341b4",
-      "world_model": "NVIDIA_GR1_100/13/world_model",
+      "world_model": "NVIDIA_GR1_100/13/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_13",
       "status": "complete"
     },
@@ -988,7 +988,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "bf64693a7cd74811c81b11c6e3d6c1ae9ee5d8addf362e3d8dede705a51def77",
-      "world_model": "NVIDIA_GR1_100/14/world_model",
+      "world_model": "NVIDIA_GR1_100/14/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_14",
       "status": "complete"
     },
@@ -1006,7 +1006,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "51f9a8cbea35b81cf60bbf062f6996331f40e782cbaabe7ae68f2fdc52cb2b73",
-      "world_model": "NVIDIA_GR1_100/15/world_model",
+      "world_model": "NVIDIA_GR1_100/15/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_15",
       "status": "complete"
     },
@@ -1024,7 +1024,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "5f6e71c140e5bc92800e636f3db3aec64fda500e011b95d5dce18006af399a65",
-      "world_model": "NVIDIA_GR1_100/16/world_model",
+      "world_model": "NVIDIA_GR1_100/16/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_16",
       "status": "complete"
     },
@@ -1042,7 +1042,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "736d5d11d0d121e6f61d7723b27be86d6e63dac692270a467b7d7859f86ec482",
-      "world_model": "NVIDIA_GR1_100/17/world_model",
+      "world_model": "NVIDIA_GR1_100/17/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_17",
       "status": "complete"
     },
@@ -1060,7 +1060,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "5fdc6f54defd901112d8ec1a321bc6a1bfed35be75c18f6f0543e7b206965a6b",
-      "world_model": "NVIDIA_GR1_100/18/world_model",
+      "world_model": "NVIDIA_GR1_100/18/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_18",
       "status": "complete"
     },
@@ -1078,7 +1078,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "b4ff94b4b25eb52ac5fc4ca8113263826cec9eb8508822c8c62edc48aa772b2b",
-      "world_model": "NVIDIA_GR1_100/19/world_model",
+      "world_model": "NVIDIA_GR1_100/19/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_19",
       "status": "complete"
     },
@@ -1096,7 +1096,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "689f5a3ea1bbc2773a4009aa2ade721d26a4bd12c4b74278385fa2b9daae55ee",
-      "world_model": "NVIDIA_GR1_100/2/world_model",
+      "world_model": "NVIDIA_GR1_100/2/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_2",
       "status": "complete"
     },
@@ -1114,7 +1114,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "d11bb49e50511717cf7c62a0da2c54018b64efc1a051ee5d16a7ca826e43364f",
-      "world_model": "NVIDIA_GR1_100/20/world_model",
+      "world_model": "NVIDIA_GR1_100/20/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_20",
       "status": "complete"
     },
@@ -1132,7 +1132,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "10dbccc79272acfc3f1d89e42c97c78f2b2075970d599db7adae753b6dff3049",
-      "world_model": "NVIDIA_GR1_100/21/world_model",
+      "world_model": "NVIDIA_GR1_100/21/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_21",
       "status": "complete"
     },
@@ -1150,7 +1150,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "7a5bd5dd08a44f1cfe15735ddc7e277bbc69cce6f7ddbd0fcbf9ae8eda54152e",
-      "world_model": "NVIDIA_GR1_100/23/world_model",
+      "world_model": "NVIDIA_GR1_100/23/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_23",
       "status": "complete"
     },
@@ -1168,7 +1168,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "4b5971a96c10125950043930703b8f3f20d2c44061da9fd9bed5026043b69932",
-      "world_model": "NVIDIA_GR1_100/24/world_model",
+      "world_model": "NVIDIA_GR1_100/24/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_24",
       "status": "complete"
     },
@@ -1186,7 +1186,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "443d004aea0b3322ea354a2614a7b8ab8d86189df175e80442a2d0608dbae9c8",
-      "world_model": "NVIDIA_GR1_100/25/world_model",
+      "world_model": "NVIDIA_GR1_100/25/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_25",
       "status": "complete"
     },
@@ -1204,7 +1204,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "3a2decf9aac895a9dfa53f51f120a6da8d16d056c8818dadb6915c0956c7e456",
-      "world_model": "NVIDIA_GR1_100/26/world_model",
+      "world_model": "NVIDIA_GR1_100/26/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_26",
       "status": "complete"
     },
@@ -1222,7 +1222,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "f8167d4555df46242449687246e6a4755d5e81d785bd10f8326c73ccee4cd584",
-      "world_model": "NVIDIA_GR1_100/27/world_model",
+      "world_model": "NVIDIA_GR1_100/27/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_27",
       "status": "complete"
     },
@@ -1240,7 +1240,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "223e0afbc00eb05289c5c9cb1f16786a224abbeb1cf9cd5a2cdad1e3300d2641",
-      "world_model": "NVIDIA_GR1_100/29/world_model",
+      "world_model": "NVIDIA_GR1_100/29/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_29",
       "status": "complete"
     },
@@ -1258,7 +1258,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "cfed4d9cb0f5ba061cf72b9df2178e06a2621d6b0325049b02e58d2bbdd9588f",
-      "world_model": "NVIDIA_GR1_100/3/world_model",
+      "world_model": "NVIDIA_GR1_100/3/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_3",
       "status": "complete"
     },
@@ -1276,7 +1276,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "03a3fd9d8a93ce3fbb8889ad8726a51f899a178355a27bb65c9e5cf7c0d52de8",
-      "world_model": "NVIDIA_GR1_100/30/world_model",
+      "world_model": "NVIDIA_GR1_100/30/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_30",
       "status": "complete"
     },
@@ -1294,7 +1294,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "a18bbfd5884d198a29b7ac6196949244fd52099ec1ef10c5dceb587c93d80703",
-      "world_model": "NVIDIA_GR1_100/31/world_model",
+      "world_model": "NVIDIA_GR1_100/31/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_31",
       "status": "complete"
     },
@@ -1312,7 +1312,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "849bf0337514dba1b025f5bed8ea7d6a892ab9bc724f2a6181d9a81ab65a9b3e",
-      "world_model": "NVIDIA_GR1_100/32/world_model",
+      "world_model": "NVIDIA_GR1_100/32/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_32",
       "status": "complete"
     },
@@ -1330,7 +1330,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "572dc96bcaaf73c9fd48691ef870b84b161bb2d420f0a3956d1ad9b352b91d46",
-      "world_model": "NVIDIA_GR1_100/33/world_model",
+      "world_model": "NVIDIA_GR1_100/33/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_33",
       "status": "complete"
     },
@@ -1348,7 +1348,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "d9435abaa88db08fd3c2db3d1603dd4304ff95caeb81ae4dad21365a75a5e8c1",
-      "world_model": "NVIDIA_GR1_100/34/world_model",
+      "world_model": "NVIDIA_GR1_100/34/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_34",
       "status": "complete"
     },
@@ -1366,7 +1366,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "1388c0e2f27dd2e956580b4a16523c6f68079e283f18fe5634947775e916ebf9",
-      "world_model": "NVIDIA_GR1_100/35/world_model",
+      "world_model": "NVIDIA_GR1_100/35/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_35",
       "status": "complete"
     },
@@ -1384,7 +1384,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "d21ee96076aba57c1fffd3fb41ea738a7bae9d52e22095362483af29bf19d016",
-      "world_model": "NVIDIA_GR1_100/36/world_model",
+      "world_model": "NVIDIA_GR1_100/36/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_36",
       "status": "complete"
     },
@@ -1402,7 +1402,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "615c6f2c15a8b719e5100059f5357b02d5a424225f13ef68442c645dd07d6d83",
-      "world_model": "NVIDIA_GR1_100/37/world_model",
+      "world_model": "NVIDIA_GR1_100/37/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_37",
       "status": "complete"
     },
@@ -1420,7 +1420,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "b68e0dba225f56240d11af118bf71e65a0e6afbceaa303fc9501078dffa504df",
-      "world_model": "NVIDIA_GR1_100/38/world_model",
+      "world_model": "NVIDIA_GR1_100/38/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_38",
       "status": "complete"
     },
@@ -1438,7 +1438,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "bf509ae1cbfdff0b5decab3b82d55180e2ab7ba1d8c48336a3d812a52d2e061a",
-      "world_model": "NVIDIA_GR1_100/39/world_model",
+      "world_model": "NVIDIA_GR1_100/39/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_39",
       "status": "complete"
     },
@@ -1456,7 +1456,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "e9aa2518403a995b6fe1a22f3c7b1aa8f23170e52360e91d9f0a95f6804db09c",
-      "world_model": "NVIDIA_GR1_100/4/world_model",
+      "world_model": "NVIDIA_GR1_100/4/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_4",
       "status": "complete"
     },
@@ -1474,7 +1474,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "01655568e925517c76089b1de7bf27e4ed265c05d9028593e4e7ae9971c03225",
-      "world_model": "NVIDIA_GR1_100/40/world_model",
+      "world_model": "NVIDIA_GR1_100/40/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_40",
       "status": "complete"
     },
@@ -1492,7 +1492,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "3d9a309bd339e36925267339a8643f4e4c0d9e3891146f2ad1079a17bdef2229",
-      "world_model": "NVIDIA_GR1_100/41/world_model",
+      "world_model": "NVIDIA_GR1_100/41/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_41",
       "status": "complete"
     },
@@ -1510,7 +1510,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "35e4ffa35fc5e1a2c222695969ce75465490c464ae46a00b99c3264714d5cc86",
-      "world_model": "NVIDIA_GR1_100/42/world_model",
+      "world_model": "NVIDIA_GR1_100/42/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_42",
       "status": "complete"
     },
@@ -1528,7 +1528,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "94880e404ec9554b853c7bc21ba83f3e511563f6831a644ede8beb8caf75626a",
-      "world_model": "NVIDIA_GR1_100/43/world_model",
+      "world_model": "NVIDIA_GR1_100/43/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_43",
       "status": "complete"
     },
@@ -1546,7 +1546,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "8863f331c87b11bdb67889669c7d50a23d98446b284a9a54e1e9b72908759bfe",
-      "world_model": "NVIDIA_GR1_100/45/world_model",
+      "world_model": "NVIDIA_GR1_100/45/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_45",
       "status": "complete"
     },
@@ -1564,7 +1564,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "c81e8a5c2609c9ead1be512625224c1f80639207a0552823b4ac83f3cfac16c8",
-      "world_model": "NVIDIA_GR1_100/46/world_model",
+      "world_model": "NVIDIA_GR1_100/46/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_46",
       "status": "complete"
     },
@@ -1582,7 +1582,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "e173e4951d6bc4227b8edd495f533709995d2e5e24040f1c9c157889a038ae2d",
-      "world_model": "NVIDIA_GR1_100/47/world_model",
+      "world_model": "NVIDIA_GR1_100/47/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_47",
       "status": "complete"
     },
@@ -1600,7 +1600,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "4708fefcf66fc4f6041dd0a1ae86d0a87eb360e3af112cd49ab6d33f8c4609d1",
-      "world_model": "NVIDIA_GR1_100/48/world_model",
+      "world_model": "NVIDIA_GR1_100/48/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_48",
       "status": "complete"
     },
@@ -1618,7 +1618,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "56a8b84e5ba4940a2e968ec5a7f6bd5cfc878bc76d03f81e35712885a47d0fac",
-      "world_model": "NVIDIA_GR1_100/49/world_model",
+      "world_model": "NVIDIA_GR1_100/49/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_49",
       "status": "complete"
     },
@@ -1636,7 +1636,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "89d278f8096b39740c90d903e278fdca05ae4157fa9c978fd299d5857ea38224",
-      "world_model": "NVIDIA_GR1_100/50/world_model",
+      "world_model": "NVIDIA_GR1_100/50/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_50",
       "status": "complete"
     },
@@ -1654,7 +1654,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "a182da4edb653c4491fc0e91ed6d344253919a1e53c4d330937ed1361892baba",
-      "world_model": "NVIDIA_GR1_100/51/world_model",
+      "world_model": "NVIDIA_GR1_100/51/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_51",
       "status": "complete"
     },
@@ -1672,7 +1672,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "afe5b50f35f9bcaa468076f5ac5b0b40a8cd82fb24b37a78a5b15985eabed5a5",
-      "world_model": "NVIDIA_GR1_100/52/world_model",
+      "world_model": "NVIDIA_GR1_100/52/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_52",
       "status": "complete"
     },
@@ -1690,7 +1690,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "d3468483dc38c4aeff674bc957d37c16a10d114ca068b897901f7ebbe928ffba",
-      "world_model": "NVIDIA_GR1_100/53/world_model",
+      "world_model": "NVIDIA_GR1_100/53/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_53",
       "status": "complete"
     },
@@ -1708,7 +1708,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "7152da3242736da255ad4a3f2e2dadd7c16c89771c17db101d56ae13ceb9edef",
-      "world_model": "NVIDIA_GR1_100/54/world_model",
+      "world_model": "NVIDIA_GR1_100/54/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_54",
       "status": "complete"
     },
@@ -1726,7 +1726,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "4e4590a6aa009dff0f9bac6995ca56fa72e4bc1d76d33cd6072859a92cc1e7c1",
-      "world_model": "NVIDIA_GR1_100/55/world_model",
+      "world_model": "NVIDIA_GR1_100/55/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_55",
       "status": "complete"
     },
@@ -1744,7 +1744,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "a29a8dac464fb3e5798b2e170a04bc8169dcb485e6497fe07883414fe2c08626",
-      "world_model": "NVIDIA_GR1_100/56/world_model",
+      "world_model": "NVIDIA_GR1_100/56/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_56",
       "status": "complete"
     },
@@ -1762,7 +1762,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "51296b5d7e987b91dd3a5ace68be477beb48a629e1f7d5d2ed38387660f160d0",
-      "world_model": "NVIDIA_GR1_100/57/world_model",
+      "world_model": "NVIDIA_GR1_100/57/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_57",
       "status": "complete"
     },
@@ -1780,7 +1780,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "0bcadc0b3f9afaf032ef515235dfeeecdc6e3b9b241f530660509869126f3af8",
-      "world_model": "NVIDIA_GR1_100/58/world_model",
+      "world_model": "NVIDIA_GR1_100/58/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_58",
       "status": "complete"
     },
@@ -1798,7 +1798,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "b0866a1d56bf9a9263c3733aae2e2a34d9b0f0bf00b8fc4d36ecb7c29d01b064",
-      "world_model": "NVIDIA_GR1_100/59/world_model",
+      "world_model": "NVIDIA_GR1_100/59/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_59",
       "status": "complete"
     },
@@ -1816,7 +1816,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "666ecd2e5bcaab8847a880413e579e15ebdc0b0efcb2ec8653135aa08b329124",
-      "world_model": "NVIDIA_GR1_100/6/world_model",
+      "world_model": "NVIDIA_GR1_100/6/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_6",
       "status": "complete"
     },
@@ -1834,7 +1834,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "b5553da7b606b1ad3d1420b2ad508949342febf4f3c87bee3962072a64414357",
-      "world_model": "NVIDIA_GR1_100/60/world_model",
+      "world_model": "NVIDIA_GR1_100/60/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_60",
       "status": "complete"
     },
@@ -1852,7 +1852,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "e6ff99086a8968656199dd33862e7a281e1b0c15ef22d6dc1c742d5f0c1ff887",
-      "world_model": "NVIDIA_GR1_100/61/world_model",
+      "world_model": "NVIDIA_GR1_100/61/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_61",
       "status": "complete"
     },
@@ -1870,7 +1870,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "dff85e0b641369384dd167c169ca3cbb41b17993b7b9896297e028968f2a8b1a",
-      "world_model": "NVIDIA_GR1_100/62/world_model",
+      "world_model": "NVIDIA_GR1_100/62/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_62",
       "status": "complete"
     },
@@ -1888,7 +1888,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "e54c50f6b7636e17074d5bb760849feeecc5fa90cf068b502037d278e7cb661e",
-      "world_model": "NVIDIA_GR1_100/63/world_model",
+      "world_model": "NVIDIA_GR1_100/63/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_63",
       "status": "complete"
     },
@@ -1906,7 +1906,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "2afaaacc46a5c53da58fcf07120fad189132eef745f9b2ad2395cf44ebfb1ab3",
-      "world_model": "NVIDIA_GR1_100/64/world_model",
+      "world_model": "NVIDIA_GR1_100/64/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_64",
       "status": "complete"
     },
@@ -1924,7 +1924,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "93d2df4796d5ff81ea2dc661c23b40edaff4be2fe4a598b83358ca7123e4d442",
-      "world_model": "NVIDIA_GR1_100/65/world_model",
+      "world_model": "NVIDIA_GR1_100/65/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_65",
       "status": "complete"
     },
@@ -1942,7 +1942,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "ac8207944448ac8e44a40173453299c8dc5255af66df379ab0e960e062e39f0e",
-      "world_model": "NVIDIA_GR1_100/66/world_model",
+      "world_model": "NVIDIA_GR1_100/66/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_66",
       "status": "complete"
     },
@@ -1960,7 +1960,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "6477e2307443ea759b274ba6ed555e49e0ea441722452e29c41dcb21e6812f58",
-      "world_model": "NVIDIA_GR1_100/67/world_model",
+      "world_model": "NVIDIA_GR1_100/67/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_67",
       "status": "complete"
     },
@@ -1978,7 +1978,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "d2b447b734dae1bbc86fd3c7766ae3c4662914b0df02e694344fc484cbf7090a",
-      "world_model": "NVIDIA_GR1_100/68/world_model",
+      "world_model": "NVIDIA_GR1_100/68/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_68",
       "status": "complete"
     },
@@ -1996,7 +1996,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "13e225a6dd35d8262d8e50f19982ca7c6eb9fbd96c9c3d842b4c3e3666a2c80b",
-      "world_model": "NVIDIA_GR1_100/69/world_model",
+      "world_model": "NVIDIA_GR1_100/69/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_69",
       "status": "complete"
     },
@@ -2014,7 +2014,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "06c50879f364d7920d9483cb72cd08140bd2f42eb974e14e83e170e1cba10b9a",
-      "world_model": "NVIDIA_GR1_100/70/world_model",
+      "world_model": "NVIDIA_GR1_100/70/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_70",
       "status": "complete"
     },
@@ -2032,7 +2032,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "86e35ef11daf2de8e4d8b5cd9bd65101fa912094cea736181d2acf2b3e2d4aac",
-      "world_model": "NVIDIA_GR1_100/71/world_model",
+      "world_model": "NVIDIA_GR1_100/71/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_71",
       "status": "complete"
     },
@@ -2050,7 +2050,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "f225f85f0256ec668acaa38db60a3f08bd828961bb781fbb10ce85e3f550de82",
-      "world_model": "NVIDIA_GR1_100/72/world_model",
+      "world_model": "NVIDIA_GR1_100/72/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_72",
       "status": "complete"
     },
@@ -2068,7 +2068,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "578118020d469fea416da30a3a44d1cfc434d8f88d43156bfbd0b9e2315375f1",
-      "world_model": "NVIDIA_GR1_100/73/world_model",
+      "world_model": "NVIDIA_GR1_100/73/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_73",
       "status": "complete"
     },
@@ -2086,7 +2086,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "135740da1c323d8c1ab69e6a53fb149324e7362a6852974a8f106467a03a9682",
-      "world_model": "NVIDIA_GR1_100/74/world_model",
+      "world_model": "NVIDIA_GR1_100/74/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_74",
       "status": "complete"
     },
@@ -2104,7 +2104,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "4b788576b1fdebe54b188c29f54109bcb10849a9a7ad62362ffdd91614bfe270",
-      "world_model": "NVIDIA_GR1_100/75/world_model",
+      "world_model": "NVIDIA_GR1_100/75/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_75",
       "status": "complete"
     },
@@ -2122,7 +2122,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "fa8e5c158dea35e062eb1a7d913bc47455d04292c9de1eca428618bc1c8bd038",
-      "world_model": "NVIDIA_GR1_100/76/world_model",
+      "world_model": "NVIDIA_GR1_100/76/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_76",
       "status": "complete"
     },
@@ -2140,7 +2140,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "d442f756025e95d4742c5bd882e7326fb09745f546b9fdeb6c48e485902ce236",
-      "world_model": "NVIDIA_GR1_100/77/world_model",
+      "world_model": "NVIDIA_GR1_100/77/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_77",
       "status": "complete"
     },
@@ -2158,7 +2158,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "338dbf438e49566e109ebcc93acf8866416ec2209250f9450de598d4a1a5c118",
-      "world_model": "NVIDIA_GR1_100/78/world_model",
+      "world_model": "NVIDIA_GR1_100/78/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_78",
       "status": "complete"
     },
@@ -2176,7 +2176,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "87e11dd28664c79dd8dd7c0e8e994d37b0b03e39bab5dcbf44067d29f7f4c2d8",
-      "world_model": "NVIDIA_GR1_100/79/world_model",
+      "world_model": "NVIDIA_GR1_100/79/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_79",
       "status": "complete"
     },
@@ -2194,7 +2194,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "1476a6868bea3c73713dc51ba6f6935c18213f9b10249c6ac63c78ac2c642f29",
-      "world_model": "NVIDIA_GR1_100/80/world_model",
+      "world_model": "NVIDIA_GR1_100/80/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_80",
       "status": "complete"
     },
@@ -2212,7 +2212,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "e0a14c7ef56812ffef6b3bc904b19bb294bb34e77b7bf9a4f9df43abf0c287d0",
-      "world_model": "NVIDIA_GR1_100/81/world_model",
+      "world_model": "NVIDIA_GR1_100/81/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_81",
       "status": "complete"
     },
@@ -2230,7 +2230,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "fce762bab9d3af0160ef4cd2bd629c28adce2d84261108949997adcd40623fc7",
-      "world_model": "NVIDIA_GR1_100/82/world_model",
+      "world_model": "NVIDIA_GR1_100/82/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_82",
       "status": "complete"
     },
@@ -2248,7 +2248,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "a5bec2750265d6f5f394a8a0151ea9c84cd162235bdb9ddee86dea9e6b491278",
-      "world_model": "NVIDIA_GR1_100/83/world_model",
+      "world_model": "NVIDIA_GR1_100/83/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_83",
       "status": "complete"
     },
@@ -2266,7 +2266,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "ae30ae5c260431056305155df0bf20d7f6846d9731c291c2e967487c9fecfed1",
-      "world_model": "NVIDIA_GR1_100/84/world_model",
+      "world_model": "NVIDIA_GR1_100/84/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_84",
       "status": "complete"
     },
@@ -2284,7 +2284,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "c7a17f59628c872e3f44486467220e1a419765508f2a6175a69e921de1a0fba9",
-      "world_model": "NVIDIA_GR1_100/85/world_model",
+      "world_model": "NVIDIA_GR1_100/85/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_85",
       "status": "complete"
     },
@@ -2302,7 +2302,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "14cb7a82303a885e2767aa4ec2d656b5bc1bbf94652030189f45951fc41399f7",
-      "world_model": "NVIDIA_GR1_100/86/world_model",
+      "world_model": "NVIDIA_GR1_100/86/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_86",
       "status": "complete"
     },
@@ -2320,7 +2320,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "8a9fb635be3ca7f2e9796bdd4a80d91285ad1cb24adec641b3a1a2a54d5595b4",
-      "world_model": "NVIDIA_GR1_100/88/world_model",
+      "world_model": "NVIDIA_GR1_100/88/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_88",
       "status": "complete"
     },
@@ -2338,7 +2338,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "4d1ee5b4a515a84c96695ceaaf66bab76b8362de76d8a4518b2872f16ead4cad",
-      "world_model": "NVIDIA_GR1_100/89/world_model",
+      "world_model": "NVIDIA_GR1_100/89/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_89",
       "status": "complete"
     },
@@ -2356,7 +2356,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "01b4b9cf362c04fbf0b9fa0c89d3442a989220709985bb6ff4fd6ca6e3438cdf",
-      "world_model": "NVIDIA_GR1_100/9/world_model",
+      "world_model": "NVIDIA_GR1_100/9/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_9",
       "status": "complete"
     },
@@ -2374,7 +2374,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "082de181642b526a42d193e9cba834869e2f2d88ca8326a7df987ce7578f462f",
-      "world_model": "NVIDIA_GR1_100/90/world_model",
+      "world_model": "NVIDIA_GR1_100/90/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_90",
       "status": "complete"
     },
@@ -2392,7 +2392,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "2b7db4523dd76fd7c5077cd6e537346bfc3c6bd8cc56d192a9411dc920235ff8",
-      "world_model": "NVIDIA_GR1_100/91/world_model",
+      "world_model": "NVIDIA_GR1_100/91/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_91",
       "status": "complete"
     },
@@ -2410,7 +2410,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "e9affd3ee3a979bbb4c6a9c973a86958bc26204e14f4873e777e087b2ce41b12",
-      "world_model": "NVIDIA_GR1_100/92/world_model",
+      "world_model": "NVIDIA_GR1_100/92/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_92",
       "status": "complete"
     },
@@ -2428,7 +2428,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "9361b13d81281d8727774ab0a7f75ebed41056a06b85265c1806657abc09c492",
-      "world_model": "NVIDIA_GR1_100/93/world_model",
+      "world_model": "NVIDIA_GR1_100/93/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_93",
       "status": "complete"
     },
@@ -2446,7 +2446,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "f1cf4df6e66557ccf47b7266c995e4f495f08da29bcaf900e8c46668e2fb2d77",
-      "world_model": "NVIDIA_GR1_100/94/world_model",
+      "world_model": "NVIDIA_GR1_100/94/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_94",
       "status": "complete"
     },
@@ -2464,7 +2464,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "b32eb1d0bbcf259a369fafbe9f14ba2720e7c4c51ddc8959fa6fcd1dab5049a6",
-      "world_model": "NVIDIA_GR1_100/95/world_model",
+      "world_model": "NVIDIA_GR1_100/95/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_95",
       "status": "complete"
     },
@@ -2482,7 +2482,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "14582b30c97254d30e726ba7b78ae912026b367b2c0f74aca2d2a92854d8b169",
-      "world_model": "NVIDIA_GR1_100/96/world_model",
+      "world_model": "NVIDIA_GR1_100/96/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_96",
       "status": "complete"
     },
@@ -2500,7 +2500,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "c993f999ce3ddb289b3bcd648634c6f3bb97c4807ae91bfbe44d36ef6660918c",
-      "world_model": "NVIDIA_GR1_100/97/world_model",
+      "world_model": "NVIDIA_GR1_100/97/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_97",
       "status": "complete"
     },
@@ -2518,7 +2518,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "83529d0c8e5b092c5bb22528e33f8b8570a6d2af7c2aa45aa2cdb8db75965148",
-      "world_model": "NVIDIA_GR1_100/98/world_model",
+      "world_model": "NVIDIA_GR1_100/98/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_98",
       "status": "complete"
     },
@@ -2536,7 +2536,7 @@
       "fps": 20.0,
       "duration_seconds": 6.0,
       "source_video_sha256": "9486a40959b15d4d33c252a3a91bedd07a53cf51408136d96626103207bb3178",
-      "world_model": "NVIDIA_GR1_100/99/world_model",
+      "world_model": "NVIDIA_GR1_100/99/generation prompt",
       "inspection_directory": "/var/folders/r9/y5dsw3w97zgg3xts8fnl6g2c0000gn/T/robotvideo_humanoid_action_review/gr1_99",
       "status": "complete"
     }

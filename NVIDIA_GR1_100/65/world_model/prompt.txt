@@ -1,1 +1,0 @@
-The robot closes its right hand around the dark blue clock on the pink plate and lifts it clear. It carries the clock to the light green plate, lowers it upright, and opens its fingers with the hand still alongside the clock. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

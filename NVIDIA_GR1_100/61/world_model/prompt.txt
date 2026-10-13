@@ -1,1 +1,0 @@
-The robot uses its right hand to grasp the green glass around its side and lift it from the tabletop. It carries the glass upright over the light blue plate, lowers it onto the plate, and opens its fingers to release it, leaving the glass standing upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

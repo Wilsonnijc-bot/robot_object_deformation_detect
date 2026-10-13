@@ -1,1 +1,0 @@
-The robot reaches up with its right hand, closes its fingers around the Rubik's cube on the top wooden shelf, and lifts it clear. It carries the cube down to the bottom wooden shelf, sets it upright, and opens its hand to leave the cube resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

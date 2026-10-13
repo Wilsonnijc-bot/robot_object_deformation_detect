@@ -10,7 +10,7 @@ Download or validation failures: 0.
 Original MP4 storage: 142,323,121 bytes.
 Dataset and metadata logical storage at audit: 511,650,966 bytes.
 
-`<original-video-id>/original/` contains original.mp4, task_prompt.txt, first_frame.png and metadata.json. The sibling `world_model/` contains the complete unchanged generation video, first frame, visually authored actiongeneration_prompt.txt (also prompt.txt), action_review.json and generation metadata. IDs remain unchanged, including numbering gaps. The downloader supports both direct and original/ source layouts.
+`<original-video-id>/original/` contains original.mp4, task_prompt.txt, first_frame.png and metadata.json. The sibling `generation prompt/` contains the complete unchanged generation video, first frame, visually authored actiongeneration_prompt.txt, action_review.json and generation metadata. IDs remain unchanged, including numbering gaps. The downloader supports both direct and original/ source layouts.
 
 `metamanifest/nvidia_gr1_100_manifest.csv` has one row per validated downloaded video. Each relative_file_path resolves relative to `metamanifest/` and points to that video's unchanged original MP4. `quality_audit.csv`, `download_failures.csv` and `annotation_discrepancies.csv` contain only this dataset's rows. `final_report.json` contains this dataset's counts, storage, quality distribution and limitations. Source snapshots, inventories, assessments and execution evidence are under `_sources/`.
 
@@ -26,7 +26,7 @@ The official NVIDIA dataset license is CC-BY-4.0.
 
 ## Humanoid world-model action prompts
 
-Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `world_model/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; `prompt.txt` is an identical compatibility copy. `video.mp4` retains the complete original bytes. `action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
+Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `generation prompt/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; it is the sole generation prompt file. `video.mp4` retains the complete original bytes. `action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
 
 `world_model_prompts.csv` indexes completed prompts, and `world_model_prompt_report.json` records completed and pending reviews. `bimanual_second_review_report.json` records the focused second pass on coordinated or potentially coordinated hand actions, including prompt corrections and detailed contact evidence. The project `AGENTS.md` and this folder's `REVIEW_WORKFLOW.md` define the protocol. No cropping or shortening is used for these single-task references.
 

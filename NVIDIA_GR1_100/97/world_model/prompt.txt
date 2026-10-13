@@ -1,1 +1,0 @@
-The robot uses its right hand to grasp the dark green avocado on the right side of the table and lifts it from the tabletop. It carries the avocado to the wire fruit basket's lower tier, lowers it inside, and opens its fingers to leave the avocado in the basket. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

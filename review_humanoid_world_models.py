@@ -74,7 +74,7 @@ def init():
         metadata = json.loads((original / 'metadata.json').read_text())
         assert sha(original / 'original.mp4') == metadata['video_properties']['sha256']
         key = ('he_' + r['task_id']) if r['dataset'] == 'Humanoid_Everyday' else ('gr1_' + r['original_id'])
-        world = base / 'world_model'
+        world = base / 'generation prompt'
         world.mkdir(exist_ok=True)
         for source, target in [('original.mp4', 'video.mp4'), ('first_frame.png', 'first_frame.png')]:
             src, dst = original / source, world / target
@@ -205,7 +205,6 @@ def finalize(key):
     if sha(world / 'first_frame.png') != sha(PROJECT / job['source_first_frame']):
         raise ValueError('Initial PNG differs from source')
     prompt_path.write_text(prompt + '\n')
-    (world / 'prompt.txt').write_text(prompt + '\n')
     review.update({'video_id': job['original_id'], 'dataset': job['dataset'],
         'dedicated_review_agent': 'review_' + key.replace('-', '_'),
         'review_source_video': job['source_video'], 'source_frame_count': job['frame_count'], 'source_fps': job['fps'],
@@ -250,7 +249,7 @@ def audit():
                 for dataset in ['Humanoid_Everyday', 'NVIDIA_GR1_100']}
     for job in all_jobs:
         world = PROJECT / job['world_model']
-        required = ['video.mp4', 'first_frame.png', 'actiongeneration_prompt.txt', 'prompt.txt', 'action_review.json', 'metadata.json']
+        required = ['video.mp4', 'first_frame.png', 'actiongeneration_prompt.txt', 'action_review.json', 'metadata.json']
         if not all((world / f).is_file() for f in required):
             missing.append(job['key'])
             continue
@@ -259,8 +258,6 @@ def audit():
         prompt = (world / 'actiongeneration_prompt.txt').read_text().strip()
         if m['validation_status'] != 'passed' or sha(world / 'video.mp4') != job['source_video_sha256']:
             raise ValueError('Invalid world-model reference: ' + job['key'])
-        if (world / 'prompt.txt').read_bytes() != (world / 'actiongeneration_prompt.txt').read_bytes():
-            raise ValueError('Prompt aliases differ: ' + job['key'])
         if not prompt.endswith(CONSTRAINT) or prompt != m['generation_prompt'] or prompt != review['world_model_prompt']:
             raise ValueError('Prompt protocol or recorded prompt differs: ' + job['key'])
         if sha(world / 'first_frame.png') != sha(PROJECT / job['source_first_frame']):

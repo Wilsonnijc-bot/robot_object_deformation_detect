@@ -1,1 +1,0 @@
-The robot grasps the green cup near its rim with its right hand and lifts it from the tabletop. It carries the cup to the teal plate, lowers it onto the plate, and opens its fingers, leaving the cup on the plate with the hand beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

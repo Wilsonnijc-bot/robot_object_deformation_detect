@@ -21,6 +21,13 @@ thirteen use `world_model/` directly. Preserve those paths when uploading.
 See [TAVP/WORLD_MODEL_README.md](TAVP/WORLD_MODEL_README.md) for input semantics
 and validation details, and [AGENTS.md](AGENTS.md) for the prompt protocols.
 
+Humanoid Everyday third-person and NVIDIA GR1 generation inputs use
+`generation prompt/` beside `original/`. Each generation folder contains
+`actiongeneration_prompt.txt`, `first_frame.png`, `video.mp4`, `action_review.json`,
+and `metadata.json`. There is no duplicate `prompt.txt` in these two datasets.
+Their `metamanifest/world_model_prompts.csv` files select the current input paths.
+TAVP retains its existing `world_model/` layout and prompt filenames.
+
 This commit is a snapshot of the local project. Humanoid and GR1 review files
 may be updated by ongoing review work; their presence alone does not establish
 that the latest protocol review is complete. Dataset sources and original

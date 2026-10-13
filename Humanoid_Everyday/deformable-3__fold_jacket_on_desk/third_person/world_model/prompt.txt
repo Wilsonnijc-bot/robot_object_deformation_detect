@@ -1,1 +1,0 @@
-The humanoid grasps the jacket's far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

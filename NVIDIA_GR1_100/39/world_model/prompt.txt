@@ -1,1 +1,0 @@
-The robot grasps the yellow mustard bottle with its left hand and lifts it upright from the tabletop. It carries the bottle to the white shelf's middle level, lowers it onto the shelf, and begins opening its hand while keeping the bottle upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

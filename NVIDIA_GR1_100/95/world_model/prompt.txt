@@ -1,1 +1,0 @@
-The robot uses its left hand to grasp the Rubik's cube between its thumb and fingers on the yellow plate, then lifts it clear. It carries the cube to the gray plate, lowers it, and opens its fingers to leave the cube resting on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
