@@ -163,7 +163,7 @@
   "first_frame_sha256": "572e06fb680a9101230cf28787e7ead91f646c538a0022babdb847bdae4abcea",
   "first_frame_rgb24_sha256": "1d49a9890707b9ef3e43ce5ef940a3913a7b44fea459f7a0db0e8a21b81bdd94",
   "relative_video_path": "014_dobot_collect_fruits_failure_case_failure/original/video.mp4",
-  "relative_first_frame_path": "014_dobot_collect_fruits_failure_case_failure/original/first_frame.png",
+  "relative_first_frame_path": "014_dobot_collect_fruits_failure_case_failure/generation input/source_first_frame.png",
   "relative_task_prompt_path": "014_dobot_collect_fruits_failure_case_failure/original/task_prompt.txt",
   "relative_metadata_path": "014_dobot_collect_fruits_failure_case_failure/original/metadata.json",
   "download_status": "skipped_verified",

@@ -59,7 +59,7 @@ def init():
         base = PROJECT / r['folder']
         original = base / 'original'
         original.mkdir(exist_ok=True)
-        for name in ['original.mp4', 'first_frame.png', 'task_prompt.txt', 'metadata.json']:
+        for name in ['original.mp4', 'task_prompt.txt', 'metadata.json']:
             source = base / name
             destination = original / name
             if source.exists():
@@ -74,9 +74,21 @@ def init():
         metadata = json.loads((original / 'metadata.json').read_text())
         assert sha(original / 'original.mp4') == metadata['video_properties']['sha256']
         key = ('he_' + r['task_id']) if r['dataset'] == 'Humanoid_Everyday' else ('gr1_' + r['original_id'])
-        world = base / 'generation prompt'
+        world = base / 'generation input'
         world.mkdir(exist_ok=True)
-        for source, target in [('original.mp4', 'video.mp4'), ('first_frame.png', 'first_frame.png')]:
+        image = world / 'first_frame.png'
+        for prior_image in [base / 'first_frame.png', original / 'first_frame.png']:
+            if prior_image.exists():
+                if image.exists():
+                    if sha(prior_image) != sha(image):
+                        raise RuntimeError('Conflicting first frames: ' + str(prior_image))
+                    prior_image.unlink()
+                else:
+                    prior_image.replace(image)
+        downloader.first_frame(original / 'original.mp4', image, metadata['video_properties'])
+        if sha(image) != metadata['first_frame']['sha256']:
+            raise RuntimeError('First frame differs from source metadata: ' + str(image))
+        for source, target in [('original.mp4', 'video.mp4')]:
             src, dst = original / source, world / target
             if dst.exists():
                 if sha(src) != sha(dst):
@@ -86,7 +98,7 @@ def init():
         result.append({'key': key, 'dataset': r['dataset'], 'original_id': r['original_id'],
             'task_name': r['task_name'], 'base': str(base.relative_to(PROJECT)),
             'source_video': str((original / 'original.mp4').relative_to(PROJECT)),
-            'source_first_frame': str((original / 'first_frame.png').relative_to(PROJECT)),
+            'source_first_frame': str(image.relative_to(PROJECT)),
             'source_metadata': str((original / 'metadata.json').relative_to(PROJECT)),
             'original_task_prompt': r['instruction'], 'frame_count': metadata['video_properties']['decoded_frame_count'],
             'fps': metadata['video_properties']['fps'], 'duration_seconds': metadata['video_properties']['duration_seconds'],
@@ -109,6 +121,7 @@ def prepare(key):
     if manifest_path.exists():
         inspection = json.loads(manifest_path.read_text())
         inspection.update({'world_model_directory': str(PROJECT / job['world_model']),
+                           'source_first_frame': str(PROJECT / job['source_first_frame']),
                            'original_task_instruction': job['original_task_prompt']})
         print(json.dumps(inspection, indent=2))
         return
@@ -202,7 +215,7 @@ def finalize(key):
         raise ValueError('Native transition or final-frame inspection missing')
     if sha(world / 'video.mp4') != job['source_video_sha256']:
         raise ValueError('Generation reference was altered')
-    if sha(world / 'first_frame.png') != sha(PROJECT / job['source_first_frame']):
+    if sha(world / 'first_frame.png') != json.loads((PROJECT / job['source_metadata']).read_text())['first_frame']['sha256']:
         raise ValueError('Initial PNG differs from source')
     prompt_path.write_text(prompt + '\n')
     review.update({'video_id': job['original_id'], 'dataset': job['dataset'],
@@ -260,7 +273,7 @@ def audit():
             raise ValueError('Invalid world-model reference: ' + job['key'])
         if not prompt.endswith(CONSTRAINT) or prompt != m['generation_prompt'] or prompt != review['world_model_prompt']:
             raise ValueError('Prompt protocol or recorded prompt differs: ' + job['key'])
-        if sha(world / 'first_frame.png') != sha(PROJECT / job['source_first_frame']):
+        if sha(world / 'first_frame.png') != json.loads((PROJECT / job['source_metadata']).read_text())['first_frame']['sha256']:
             raise ValueError('First frame differs: ' + job['key'])
         if m['frame_count'] != job['frame_count'] or m['source_frame_start'] != 0 or m['source_frame_end_exclusive'] != job['frame_count']:
             raise ValueError('Complete source sequence not retained: ' + job['key'])

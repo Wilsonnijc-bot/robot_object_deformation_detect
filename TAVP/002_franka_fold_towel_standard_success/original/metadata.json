@@ -162,7 +162,7 @@
   "first_frame_sha256": "49820a3340cf7b1844f71982f70454c5bb0062a5e1e342fa639f1fd3de6c3e96",
   "first_frame_rgb24_sha256": "b273144d5d71839a97e1c3afe991287a146e11905a94b0595261a9f68443a0fc",
   "relative_video_path": "002_franka_fold_towel_standard_success/original/video.mp4",
-  "relative_first_frame_path": "002_franka_fold_towel_standard_success/original/first_frame.png",
+  "relative_first_frame_path": "002_franka_fold_towel_standard_success/generation input/first_frame.png",
   "relative_task_prompt_path": "002_franka_fold_towel_standard_success/original/task_prompt.txt",
   "relative_metadata_path": "002_franka_fold_towel_standard_success/original/metadata.json",
   "download_status": "skipped_verified",

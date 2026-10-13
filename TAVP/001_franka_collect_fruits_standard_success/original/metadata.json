@@ -162,7 +162,7 @@
   "first_frame_sha256": "484a99c17d86331f444b902f43f716d4bf092deaae09a91219a46be93ea83275",
   "first_frame_rgb24_sha256": "5cc2515bd21bbb7b3868cb816390d5ca0eb42fbdb8bae84ecfe461299c4ff714",
   "relative_video_path": "001_franka_collect_fruits_standard_success/original/video.mp4",
-  "relative_first_frame_path": "001_franka_collect_fruits_standard_success/original/first_frame.png",
+  "relative_first_frame_path": "001_franka_collect_fruits_standard_success/generation input/first_substep/first_frame.png",
   "relative_task_prompt_path": "001_franka_collect_fruits_standard_success/original/task_prompt.txt",
   "relative_metadata_path": "001_franka_collect_fruits_standard_success/original/metadata.json",
   "download_status": "skipped_verified",

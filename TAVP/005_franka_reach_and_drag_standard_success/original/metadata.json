@@ -162,7 +162,7 @@
   "first_frame_sha256": "4ad465dde30528895311d4be6efc83e6dc9f8e1ab812bb6b2d81f3450cace63d",
   "first_frame_rgb24_sha256": "dc7068489f46dd0c37e848593816e5645abad41e75c529d46a7472bc582dcc84",
   "relative_video_path": "005_franka_reach_and_drag_standard_success/original/video.mp4",
-  "relative_first_frame_path": "005_franka_reach_and_drag_standard_success/original/first_frame.png",
+  "relative_first_frame_path": "005_franka_reach_and_drag_standard_success/generation input/first_frame.png",
   "relative_task_prompt_path": "005_franka_reach_and_drag_standard_success/original/task_prompt.txt",
   "relative_metadata_path": "005_franka_reach_and_drag_standard_success/original/metadata.json",
   "download_status": "skipped_verified",

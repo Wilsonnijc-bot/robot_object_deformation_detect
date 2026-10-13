@@ -12,12 +12,17 @@ The upstream page currently calls the method TVVE; the requested local dataset n
 
 ## Contents
 
-Each of the 23 numerically prefixed video directories contains two folders: `original/` for source data and `world_model/` for generation references. The files under `original/` are:
+Each of the 23 numerically prefixed video directories contains two folders: `original/` for source data and `generation input/` for generation references. The files under `original/` are:
 
 - `video.mp4`: exact original repository bytes, verified against repository file size and Git blob SHA-1, with a separately calculated SHA-256. No re-encoding, resizing, cropping, or recompression occurred.
 - `task_prompt.txt`: one action instruction, with no metadata or commentary.
-- `first_frame.png`: lossless RGB PNG of decoded frame index 0 at original resolution. Its pixels are checked against a fresh FFmpeg decode of frame 0.
 - `metadata.json`: source identity, instruction provenance, original caption, execution status, scenario/robustness type, original CSV records, video technical metadata, checksums, paths, and validation results. Unknown fields are JSON `null`.
+
+First-frame PNGs live under `generation input/`, beside the generation prompt
+(or inside `first_substep/`). The source manifest's `relative_first_frame_path`
+selects the unchanged full source-view frame: for Franka this is the conditioning
+PNG; for Dobot it is `generation input/source_first_frame.png`, distinct from the
+cropped middle-view conditioning PNG. No first-frame PNG remains under `original/`.
 
 Dataset-wide files:
 

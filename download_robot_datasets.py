@@ -223,6 +223,7 @@ def validate(path, expected):
 
 
 def first_frame(video, png, props):
+    png.parent.mkdir(parents=True, exist_ok=True)
     cmd = ['ffmpeg', '-hide_banner', '-v', 'error', '-threads', '2', '-i', str(video), '-map', '0:v:0',
            '-an', '-vf', 'select=eq(n\\,0)', '-frames:v', '1', '-fps_mode', 'passthrough', '-pix_fmt', 'rgb24']
     if not png.exists():
@@ -251,6 +252,13 @@ def report_dir(dataset):
 def source_artifact_dir(folder):
     base = DATA_ROOT / folder
     return base / 'original' if (base / 'original').is_dir() else base
+
+
+def source_frame_path(record):
+    base = DATA_ROOT / record['folder']
+    if record['dataset'] == 'NVIDIA_GR1_100' or record['viewpoint'] == 'third_person':
+        return base / 'generation input' / 'first_frame.png'
+    return base / 'first_frame.png'
 
 
 def source_dir(dataset='Humanoid_Everyday'):
@@ -548,7 +556,7 @@ def process_record(r):
         validation = {'download_success': True, 'source_integrity_success': True, 'ffprobe_success': True,
                       'full_decode_success': True, 'validated_at': now(), 'decoded_frame_count': props['decoded_frame_count'],
                       'source_integrity_evidence': r['expected'], 'reused_after_checksum_validation': False}
-    frame = first_frame(video, folder / 'first_frame.png', props)
+    frame = first_frame(video, source_frame_path(r), props)
     if r['instruction'] is not None:
         (folder / 'task_prompt.txt').write_bytes(r['instruction'].encode('utf-8'))
     if r.get('task_folder'):
@@ -652,7 +660,7 @@ def audit(pilot=False):
             props = probe(folder / 'original.mp4')
             if (props['width'], props['height']) != (m['video_properties']['width'], m['video_properties']['height']):
                 raise ValueError('Video dimensions differ from metadata')
-            first_frame(folder / 'original.mp4', folder / 'first_frame.png', props)
+            first_frame(folder / 'original.mp4', source_frame_path(r), props)
             if not m['validation']['full_decode_success']:
                 raise ValueError('Missing full decode validation')
             row = {'dataset': r['dataset'], 'task_id': r['task_id'], 'original_video_id': r['original_id'],
@@ -732,7 +740,7 @@ def audit(pilot=False):
             source = GALLERY
             revision = d['github_revision']
             metadata_url = d['gallery_source_url']
-            layout = '`<official-task-id>__<sanitized-task-name>/` contains the task prompt and task metadata, plus `third_person/` and `first_person/`. Reviewed third-person clips store unchanged source artifacts under `third_person/original/` and full generation references plus visually authored action prompts under `third_person/generation prompt/`. First-person source artifacts remain intact in `first_person/`. The downloader supports both direct and original/ source layouts.'
+            layout = '`<official-task-id>__<sanitized-task-name>/` contains the task prompt and task metadata, plus `third_person/` and `first_person/`. Reviewed third-person clips store unchanged source artifacts under `third_person/original/` and full generation references plus visually authored action prompts under `third_person/generation input/`. First-person source artifacts remain intact in `first_person/`. The downloader supports both direct and original/ source layouts.'
             license_text = 'The Humanoid HF card says Apache-2.0 and the official code README says MIT; the gallery repository has no explicit video asset license. Both claims are retained without inferring that either applies to the gallery MP4s.'
             mapping = 'Prompts use the exact text_description field. Both viewpoints are associated in the same original taskData entry. Each view has its own unchanged copy of the instruction.'
             count_details = f"Tasks with both views: {summary['humanoid_tasks_with_both_views']}."
@@ -744,7 +752,7 @@ def audit(pilot=False):
             source = f'https://huggingface.co/datasets/{HF_REPO}'
             revision = d['nvidia_revision']
             metadata_url = d['nvidia_metadata_url']
-            layout = '`<original-video-id>/original/` contains original.mp4, task_prompt.txt, first_frame.png and metadata.json. The sibling `generation prompt/` contains the complete unchanged generation video, first frame, visually authored actiongeneration_prompt.txt, action_review.json and generation metadata. IDs remain unchanged, including numbering gaps. The downloader supports both direct and original/ source layouts.'
+            layout = '`<original-video-id>/original/` contains original.mp4, task_prompt.txt and metadata.json. The sibling `generation input/` contains the complete unchanged generation video, first frame, visually authored actiongeneration_prompt.txt, action_review.json and generation metadata. IDs remain unchanged, including numbering gaps. The downloader supports both direct and original/ source layouts.'
             license_text = 'The official NVIDIA dataset license is CC-BY-4.0.'
             mapping = 'Prompts use the exact text field whose file_name equals the original repository MP4 basename. CSV row order is never used for matching.'
             count_details = f"Metadata rows: {d['nvidia_metadata_rows']}. Metadata without repository video: {', '.join(d['metadata_without_video']) or 'none'}. Videos without instructions: {', '.join(d['video_without_metadata']) or 'none'}."
@@ -778,7 +786,7 @@ Original metadata source: {metadata_url}
 
 ## Humanoid world-model action prompts
 
-Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `generation prompt/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; it is the sole generation prompt file. `video.mp4` retains the complete original bytes. `action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
+Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `generation input/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; it is the sole generation prompt file. `video.mp4` retains the complete original bytes. `action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
 
 `world_model_prompts.csv` indexes completed prompts, and `world_model_prompt_report.json` records completed and pending reviews. `bimanual_second_review_report.json` records the focused second pass on coordinated or potentially coordinated hand actions, including prompt corrections and detailed contact evidence. The project `AGENTS.md` and this folder's `REVIEW_WORKFLOW.md` define the protocol. No cropping or shortening is used for these single-task references.
 

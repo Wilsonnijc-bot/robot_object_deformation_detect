@@ -14,7 +14,7 @@
     {
       "key": "he_pick-place-3",
       "dedicated_review_agent": "review_he_pick_place_3",
-      "world_model": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/pick-place-3__pick_up_a_tripod_and_stand_it_on_the_desk/third_person/generation input",
       "previous_prompt": "The humanoid uses its left hand to grasp a near tripod leg and its right hand to support the central frame. Both hands raise and rotate the tripod from its tilted position into an upright stance, guiding its spread feet onto the desk. It releases the tripod and withdraws both hands, leaving it standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid grasps one tripod leg with its left hand and lifts the tripod from its tilted position. Keeping the left-hand hold, it brings its right hand underneath another leg, repositions that grip, and uses both hands to rotate the tripod upright and lower its spread feet onto the desk. It opens both hands and withdraws, leaving the tripod standing unsupported. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -168,7 +168,7 @@
     {
       "key": "he_pick-place-5",
       "dedicated_review_agent": "review_he_pick_place_5",
-      "world_model": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/pick-place-5__pick_a_multi_meter_and_place_it_in_a_container/third_person/generation input",
       "previous_prompt": "The humanoid uses its right hand to grasp the red multimeter on the tabletop, lift it, and carry it over the open basket while its left hand remains at the basket's far rim. The right hand releases the meter into the basket and withdraws, leaving the meter settled inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid grasps the body of the red multimeter with its right hand, lifts it from the tabletop, and carries it over the open basket. Its left hand shifts beside the far rim as the basket turns slightly beneath the meter; the right hand opens and releases the meter into the basket, where it tumbles and settles. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -344,7 +344,7 @@
     {
       "key": "he_articulated-1",
       "dedicated_review_agent": "review_he_articulated_1",
-      "world_model": "Humanoid_Everyday/articulated-1__rotate_chair/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/articulated-1__rotate_chair/third_person/generation input",
       "previous_prompt": "With its left hand bracing the far side of the backrest, the humanoid grasps the near edge with its right hand and turns the office chair on its swivel. It releases its right-hand grasp and lowers that arm, leaving the chair at the new angle and its left hand behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid uses its right hand to grasp the near side edge of the office chair's backrest and turn the backrest, seat, and armrests together to a new angle. It opens its right hand and lowers the arm, leaving the chair turned while its left arm remains behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -512,7 +512,7 @@
     {
       "key": "he_articulated-3",
       "dedicated_review_agent": "review_he_articulated_3",
-      "world_model": "Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/generation input",
       "previous_prompt": "The robot grasps the red multimeter with its right hand and lifts it from the table toward its chest. While the right hand supports the device, the left hand folds the extended black hinged stand back toward the meter. The right hand lowers and releases the multimeter onto the tabletop, where it tips and settles face-up, then both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The robot grasps the red multimeter’s body with its right hand, then lifts and rolls it, turning its back and extended stand toward the left hand. The left fingers reposition around the stand’s free end and pivot it inward toward the meter’s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -649,7 +649,7 @@
     {
       "key": "he_articulated-4",
       "dedicated_review_agent": "review_he_articulated_4",
-      "world_model": "Humanoid_Everyday/articulated-4__compress_air_pumper/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/articulated-4__compress_air_pumper/third_person/generation input",
       "previous_prompt": "The robot grasps the air pump’s cylindrical barrel with its right hand, lifts it from the table, and holds it horizontally in front of its torso. While the right hand stabilizes the barrel, the left hand pushes the T-shaped handle inward, shortening the exposed plunger shaft. The left hand disengages, and the right hand lays the pump on the black mat and releases it before both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The robot grasps the air pump’s cylindrical barrel with its right hand, lifts it from the table, and holds it horizontally in front of its torso. The right hand supports the barrel as the left hand presses the T-shaped handle toward it; the hands move toward each other and shorten the exposed plunger shaft. The left hand disengages, and the right hand lays the pump on the black mat and releases it before both hands withdraw. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -764,7 +764,7 @@
     {
       "key": "he_high-precision-1",
       "dedicated_review_agent": "review_he_high_precision_1",
-      "world_model": "Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/high-precision-1__open_a_bottle/third_person/generation input",
       "previous_prompt": "The humanoid grasps the white bottle with its left hand and lifts it from the table, holding its body steady while its right hand grips and repeatedly twists the cap. The right hand lifts off the loosened cap and places it on the tabletop; the left hand lowers and releases the bottle, which comes to rest on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid grasps and lifts the white bottle with its left hand, tilting it toward the right hand while holding the bottle body. The right hand grips and turns the cap, lets go and repositions, then regrips and turns it again while the left hand continues supporting the bottle. The right hand lifts the detached cap away and releases it onto the table; the left hand lowers and releases the bottle, which settles on its side beside the cap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -1041,7 +1041,7 @@
     {
       "key": "he_deformable-1",
       "dedicated_review_agent": "review_he_deformable_1",
-      "world_model": "Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/deformable-1__adjust_loosely_closed_bag_opening/third_person/generation input",
       "previous_prompt": "The robot grasps the raised fabric flap at the bag opening with its right hand, bends it down toward the bag, and lifts it upright again. It folds the flap back toward its body and releases it, leaving the flap resting flat beside the opening while the bag remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The robot bends the raised fabric flap down toward the bag with its right hand, then lifts it upright again while holding its edge. Keeping hold of the flap, it lowers it back toward its body and releases it, leaving the flap flat on the robot-facing side of the opening while the bag remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -1161,7 +1161,7 @@
     {
       "key": "he_deformable-2",
       "dedicated_review_agent": "review_he_deformable_2",
-      "world_model": "Humanoid_Everyday/deformable-2__fold_towel/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/deformable-2__fold_towel/third_person/generation input",
       "previous_prompt": "The humanoid robot grasps the checkered towel’s edge on its left with its left hand and lifts that half while the other half stays on the table. It carries the raised half across to its right, lowers and releases it over the remaining half, leaving a smaller, slightly offset folded stack on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid robot grasps the checkered towel’s edge on its left with its left hand and lifts that half while the other half rests on the table. It draws the raised half across to its right, then opens its hand and releases the edge, letting the fabric fall over the remaining half into a smaller, slightly offset folded stack. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -1309,7 +1309,7 @@
     {
       "key": "he_deformable-3",
       "dedicated_review_agent": "review_he_deformable_3",
-      "world_model": "Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/generation input",
       "previous_prompt": "The humanoid steadies one edge of the jacket with its left hand while its right hand grasps the opposite side. The left hand opens clear as the right hand lifts the grasped section and folds it inward over the rest of the jacket. The right hand releases and withdraws, leaving the jacket partially folded and bunched on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid grasps the jacket's far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -1444,7 +1444,7 @@
     {
       "key": "he_deformable-4",
       "dedicated_review_agent": "review_he_deformable_4",
-      "world_model": "Humanoid_Everyday/deformable-4__fold_toolkit/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/deformable-4__fold_toolkit/third_person/generation input",
       "previous_prompt": "The robot uses its right hand to grasp and lift the outer flap of the blue toolkit case, then folds it inward over the adjacent tool section while its left hand stays at the opposite edge. It presses the flap down and releases it, leaving the case partly open with the flap curled upward and the tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The robot grasps the outer flap of the blue toolkit case with its right hand and lifts it upright, then bends it inward over the adjacent tool section while the rest of the case rests on the table. It lowers the bent flap and releases it, leaving the case partly open with the flap curled upward and tools still exposed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -1682,7 +1682,7 @@
     {
       "key": "he_deformable-5",
       "dedicated_review_agent": "review_he_deformable_5",
-      "world_model": "Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/deformable-5__compress_soft_travel_bag/third_person/generation input",
       "previous_prompt": "The humanoid robot places its right hand on one side of the soft travel bag’s top and its left hand on the other side. It presses downward with both hands together, flattening the bag against the tabletop, then lifts both hands away and returns them toward its lap. The bag stays on the table and expands back toward its original shape after the pressure is removed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid robot brings its right hand onto the soft travel bag’s top beside the handle and its left hand onto the top near the tan patch. Both hands press downward together, flattening the bag against the tabletop. It lifts the right hand slightly ahead of the left and returns both hands toward its lap, leaving the bag on the table as it rebounds to a fuller shape. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
@@ -1861,7 +1861,7 @@
     {
       "key": "he_deformable-6",
       "dedicated_review_agent": "review_he_deformable_6",
-      "world_model": "Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/generation prompt",
+      "world_model": "Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/generation input",
       "previous_prompt": "The humanoid holds the near edge of the black-and-red plastic bag with its left hand while its right hand gathers the far edge inward, bunching the flexible material between its hands on the tabletop. It opens both hands and withdraws them, leaving the bag loosely crumpled on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
       "status": "complete",
       "revised_prompt": "The humanoid brings its right hand against the far side of the black-and-red plastic bag and its left hand against the near side, then moves both hands inward to gather and squeeze the material while the bag rests on the table. The left hand moves clear as the right briefly raises the far side and releases it. Both hands withdraw, leaving the bag loosely crumpled on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",

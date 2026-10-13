@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+FULL_SEQUENCE_PROMPT_FILENAME = 'prompt for original multi step action(reproducing the original video).txt'
 
 
 def read_json(path):
@@ -168,7 +169,7 @@ def make_variant(folder, target, original, review, count, prompt, variant, verif
         'observed_terminal_state':review['selected_segment']['terminal_state'] if variant=='first_substep' else review['observed_sequence'][-1]['action'],
         'selection_reason':review['selected_segment']['reason'] if variant=='first_substep' else 'Complete original filmed sequence in the generation view',
         'uncertainties':review['uncertainties'],'manual_annotation_review_needed':bool(review['uncertainties']),
-        'action_review_path':str((folder/'world_model/action_review.json').relative_to(ROOT)),
+        'action_review_path':str((folder/'generation input/action_review.json').relative_to(ROOT)),
         'relative_video_path':str(video.relative_to(ROOT)),
         'relative_first_frame_path':str(image.relative_to(ROOT)),
         'relative_prompt_path':str(prompt_path.relative_to(ROOT)),
@@ -193,14 +194,14 @@ def eval_fraction(value):
 
 def process(folder, verify_only):
     original=read_json(folder/'original/metadata.json')
-    review=read_json(folder/'world_model/action_review.json')
+    review=read_json(folder/'generation input/action_review.json')
     validate_review(review,original)
     assert digest(folder/'original/video.mp4')==original['sha256'],'Original MP4 integrity failed'
-    target=folder/'world_model'
+    target=folder/'generation input'
     selected_count=review['selected_segment']['end_frame_exclusive']
+    full_prompt=target/(FULL_SEQUENCE_PROMPT_FILENAME if selected_count<original['decoded_frame_count'] else 'prompt.txt')
     if selected_count<original['decoded_frame_count']:
         selected=make_variant(folder,target/'first_substep',original,review,selected_count,review['world_model_prompt'],'first_substep',verify_only)
-        full_prompt=target/'prompt.txt'
         if verify_only:
             assert full_prompt.read_text(encoding='utf-8').strip()==review['full_sequence_prompt'].strip(), 'Full-sequence prompt mismatch'
         else:
@@ -217,7 +218,7 @@ def process(folder, verify_only):
         selected=make_variant(folder,target,original,review,selected_count,review['world_model_prompt'],'full_sequence',verify_only)
     print(f"[{original['video_id']}] validated {selected['variant']}: {selected_count}/{original['decoded_frame_count']} frames, {selected['view']}",flush=True)
     return {'selected':selected,'review':review,'original':original,
-            'full_reference_prompt_path':str((target/'prompt.txt').relative_to(ROOT))}
+            'full_reference_prompt_path':str(full_prompt.relative_to(ROOT))}
 
 
 FIELDS=['video_id','robot_type','original_task_name','original_execution_status','selected_execution_status','variant','view','generation_prompt','prompt_protocol',

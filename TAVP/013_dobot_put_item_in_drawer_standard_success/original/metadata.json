@@ -162,7 +162,7 @@
   "first_frame_sha256": "53c1531d744a61593e0849f03899d5c60a013276472bf6c0ded3f8dcc675d853",
   "first_frame_rgb24_sha256": "9a82042133970292bb820de6d6eb9e3e63cef1003c9876420048db107be50818",
   "relative_video_path": "013_dobot_put_item_in_drawer_standard_success/original/video.mp4",
-  "relative_first_frame_path": "013_dobot_put_item_in_drawer_standard_success/original/first_frame.png",
+  "relative_first_frame_path": "013_dobot_put_item_in_drawer_standard_success/generation input/source_first_frame.png",
   "relative_task_prompt_path": "013_dobot_put_item_in_drawer_standard_success/original/task_prompt.txt",
   "relative_metadata_path": "013_dobot_put_item_in_drawer_standard_success/original/metadata.json",
   "download_status": "skipped_verified",

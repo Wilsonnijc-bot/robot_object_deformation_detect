@@ -163,7 +163,7 @@
   "first_frame_sha256": "e117f2decd5800effb42952ef26657d2391397cea18fca20f46796d71656313d",
   "first_frame_rgb24_sha256": "60f653c16f61e1540ea21e984b72c729569582c99c86be5f1cdbfd9e5d8d7545",
   "relative_video_path": "021_dobot_grape_picking_object_generalization_success/original/video.mp4",
-  "relative_first_frame_path": "021_dobot_grape_picking_object_generalization_success/original/first_frame.png",
+  "relative_first_frame_path": "021_dobot_grape_picking_object_generalization_success/generation input/source_first_frame.png",
   "relative_task_prompt_path": "021_dobot_grape_picking_object_generalization_success/original/task_prompt.txt",
   "relative_metadata_path": "021_dobot_grape_picking_object_generalization_success/original/metadata.json",
   "download_status": "skipped_verified",

@@ -162,7 +162,7 @@
   "first_frame_sha256": "6e2539ebd7c1e9abf25b9ba47b1a70e22ea60b8f881a20164c420786be7acf27",
   "first_frame_rgb24_sha256": "d53fb5cf5bded6250c35d70d8df94c9fd17c95f449b62604af25072e0c9c58e8",
   "relative_video_path": "009_dobot_collect_fruits_standard_success/original/video.mp4",
-  "relative_first_frame_path": "009_dobot_collect_fruits_standard_success/original/first_frame.png",
+  "relative_first_frame_path": "009_dobot_collect_fruits_standard_success/generation input/source_first_frame.png",
   "relative_task_prompt_path": "009_dobot_collect_fruits_standard_success/original/task_prompt.txt",
   "relative_metadata_path": "009_dobot_collect_fruits_standard_success/original/metadata.json",
   "download_status": "skipped_verified",

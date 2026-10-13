@@ -428,11 +428,25 @@ def extract_frame(video, image, timeout):
     temp.replace(image)
 
 
+def source_frame_path(root, record):
+    generation = root / record['relative_folder_path'] / 'generation input'
+    if record['robot_type'].startswith('Dobot'):
+        return generation / 'source_first_frame.png'
+    review_path = generation / 'action_review.json'
+    if review_path.exists():
+        review = read_json(review_path)
+        if review['selected_segment']['end_frame_exclusive'] < review['source_frame_count']:
+            return generation / 'first_substep' / 'first_frame.png'
+    return generation / 'first_frame.png'
+
+
 def process(root, record, args):
     folder = root / record["relative_folder_path"] / "original"
     if not args.verify_only:
         folder.mkdir(parents=True, exist_ok=True)
-    video, frame = folder / "video.mp4", folder / "first_frame.png"
+    video, frame = folder / "video.mp4", source_frame_path(root, record)
+    if not args.verify_only:
+        frame.parent.mkdir(parents=True, exist_ok=True)
     prompt, metadata_path = folder / "task_prompt.txt", folder / "metadata.json"
     if args.verify_only:
         if not original_integrity(video, record):
@@ -455,7 +469,7 @@ def process(root, record, args):
         decoded_frame_count=frame_count, first_frame_index=0,
         first_frame_sha256=sha256(frame), first_frame_rgb24_sha256=pixel_hash,
         relative_video_path=record["relative_folder_path"] + "/original/video.mp4",
-        relative_first_frame_path=record["relative_folder_path"] + "/original/first_frame.png",
+        relative_first_frame_path=frame.relative_to(root).as_posix(),
         relative_task_prompt_path=record["relative_folder_path"] + "/original/task_prompt.txt",
         relative_metadata_path=record["relative_folder_path"] + "/original/metadata.json",
         download_status=download_status, validation_status="passed", validation_errors=[],
@@ -564,6 +578,7 @@ def main():
                 for key, filename in [("relative_video_path", "video.mp4"), ("relative_first_frame_path", "first_frame.png"),
                                       ("relative_task_prompt_path", "task_prompt.txt"), ("relative_metadata_path", "metadata.json")]:
                     failure[key] = record["relative_folder_path"] + "/original/" + filename
+                failure['relative_first_frame_path'] = source_frame_path(root, record).relative_to(root).as_posix()
                 results[record["video_id"]] = failure
                 failures.append({"video_id": record["video_id"], "folder": record["relative_folder_path"], "error": str(exc)})
     ordered = [results[r["video_id"]] for r in records]

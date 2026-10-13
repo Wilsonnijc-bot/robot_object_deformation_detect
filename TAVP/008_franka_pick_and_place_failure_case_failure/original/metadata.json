@@ -162,7 +162,7 @@
   "first_frame_sha256": "51b45abb8e875a786733c08146638d4fa0da1ff29c7171bf4a41b83070a32c09",
   "first_frame_rgb24_sha256": "44c950c6ee9bc2dcc01d47246d404543556a9d06e392cda1295ba13575a7328c",
   "relative_video_path": "008_franka_pick_and_place_failure_case_failure/original/video.mp4",
-  "relative_first_frame_path": "008_franka_pick_and_place_failure_case_failure/original/first_frame.png",
+  "relative_first_frame_path": "008_franka_pick_and_place_failure_case_failure/generation input/first_frame.png",
   "relative_task_prompt_path": "008_franka_pick_and_place_failure_case_failure/original/task_prompt.txt",
   "relative_metadata_path": "008_franka_pick_and_place_failure_case_failure/original/metadata.json",
   "download_status": "skipped_verified",

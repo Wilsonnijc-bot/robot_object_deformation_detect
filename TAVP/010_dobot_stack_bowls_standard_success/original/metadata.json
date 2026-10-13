@@ -162,7 +162,7 @@
   "first_frame_sha256": "cbcfe5d67276990b6834c9991f3c9bbbb52b4688eaefed520dfc2cb3a574ae35",
   "first_frame_rgb24_sha256": "0fd35f3d49f7313f3533c07296205dd4a382d16aa0adb79cd51cbf9805216ed2",
   "relative_video_path": "010_dobot_stack_bowls_standard_success/original/video.mp4",
-  "relative_first_frame_path": "010_dobot_stack_bowls_standard_success/original/first_frame.png",
+  "relative_first_frame_path": "010_dobot_stack_bowls_standard_success/generation input/source_first_frame.png",
   "relative_task_prompt_path": "010_dobot_stack_bowls_standard_success/original/task_prompt.txt",
   "relative_metadata_path": "010_dobot_stack_bowls_standard_success/original/metadata.json",
   "download_status": "skipped_verified",

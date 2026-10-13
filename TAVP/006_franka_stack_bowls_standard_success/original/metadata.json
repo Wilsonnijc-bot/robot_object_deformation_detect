@@ -162,7 +162,7 @@
   "first_frame_sha256": "9d263cc394527c8cce17257930c696d72814da52e20b6668c0ccd3945041cef6",
   "first_frame_rgb24_sha256": "aea77abc30f0337195509584b48651d6051248b7ea1463b0ef391ce19f2be6f5",
   "relative_video_path": "006_franka_stack_bowls_standard_success/original/video.mp4",
-  "relative_first_frame_path": "006_franka_stack_bowls_standard_success/original/first_frame.png",
+  "relative_first_frame_path": "006_franka_stack_bowls_standard_success/generation input/first_substep/first_frame.png",
   "relative_task_prompt_path": "006_franka_stack_bowls_standard_success/original/task_prompt.txt",
   "relative_metadata_path": "006_franka_stack_bowls_standard_success/original/metadata.json",
   "download_status": "skipped_verified",
