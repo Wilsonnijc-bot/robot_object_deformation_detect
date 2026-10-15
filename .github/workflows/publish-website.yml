@@ -31,6 +31,18 @@ jobs:
         uses: actions/checkout@v7.0.1
       - name: Verify published files
         run: python3 documentation/publication/build.py
+      - name: Check out Robotvideo dataset viewer
+        uses: actions/checkout@v7.0.1
+        with:
+          ref: data/robotvideo
+          path: robotvideo-branch
+          sparse-checkout: site
+          lfs: false
+      - name: Add dataset viewer at /robotvideo/
+        run: |
+          rm -rf documentation/website/robotvideo
+          cp -R robotvideo-branch/site documentation/website/robotvideo
+          rm -rf robotvideo-branch
       - name: Configure Pages
         uses: actions/configure-pages@v6.0.0
       - name: Upload website
