@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reg2Inv frame-0 error replay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="index.html">Reg2Inv <span>· frame-0 reference</span></a>
+  <div class="navlinks"><a href="#replay" aria-current="page">Replay</a><a class="minor" href="#scoring">How it is scored</a><a class="minor" href="#index">All videos</a></div>
+</div></nav>
+
+<main>
+  <header class="hero"><div class="wrap">
+    <h1>Frame-0 error replay</h1>
+    <p class="lede">Each video's <b>frame 0 is its normal reference</b>, drawn as small <b>blue dots</b>. Every frame's
+      observed Link2 and Link5 points are aligned onto it with Reg2Inv's own registration and coloured by their own
+      anomaly score: <b>white is normal, redder is more error</b>. Frame 0 is scored too, against itself, so it starts white.</p>
+    <ul class="facts" id="herofacts"></ul>
+  </div></header>
+
+  <section id="replay"><div class="wrap">
+    <div class="sighead"><h2 id="title">Loading…</h2><ul class="facts" id="facts"></ul></div>
+    <div class="segwrap"><div class="seg" id="view" role="group" aria-label="Coordinates">
+      <button data-v="aligned" aria-pressed="true">Aligned to frame 0</button>
+      <button data-v="camera" aria-pressed="false">As observed</button>
+    </div></div>
+    <p class="vnote" id="vnote"></p>
+    <div class="howwrap"><button class="howbutton" id="howbutton" type="button">How is each point scored? <span aria-hidden="true">↓</span></button></div>
+    <div class="panel">
+      <div class="viewer" id="viewer">
+        <canvas id="scene" aria-label="Interactive 3D frame-0 error replay"></canvas>
+        <div class="pip" id="pip"><video id="video" muted playsinline preload="auto"></video></div>
+        <div class="layers" id="layers">
+          <h4>Layers</h4>
+          <label title="The frozen frame-0 cloud each link is scored against."><input type="checkbox" data-layer="reference" checked>Frame-0 reference</label>
+          <label title="The frames Reg2Inv scored, on the same clock."><input type="checkbox" id="pipbox" checked>Input video</label>
+          <hr>
+          <label title="Upper arm."><input type="checkbox" data-link="link2" checked>Link2 points</label>
+          <label title="Forearm."><input type="checkbox" data-link="link5" checked>Link5 points</label>
+        </div>
+        <div class="colorkey" id="colorkey"></div>
+        <div class="status" id="status" role="status">Loading…</div>
+        <div class="inspector" id="inspector" hidden></div>
+        <div class="pbar">
+          <button id="play" aria-label="Play or pause">&#10074;&#10074;</button>
+          <input type="range" id="slider" min="0" max="1" step="0.01" value="0" aria-label="Time">
+          <span class="ptime" id="time">0.0 / 0.0 s</span>
+        </div>
+      </div>
+      <ul class="markkey" id="markkey" aria-label="What the marks on the replay mean"></ul>
+      <div class="chartwrap">
+        <div class="charthead"><div class="serieskey" id="serieskey"></div>
+          <div class="jumps" id="jumps"></div></div>
+        <div class="chartbox"><svg id="chart" role="img" aria-label="Per-frame Reg2Inv score"></svg><div class="tip" id="tip" hidden></div></div>
+        <p class="note">Per frame: Reg2Inv's frame score for each link (largest 64-neighbour pooled patch score). Click or
+          drag on the chart to move through time; click a point in 3D to inspect it.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="scoring"><div class="wrap">
+    <h2>How Reg2Inv scores against frame 0</h2>
+    <p class="lede">Open one to see what is compared with what, and how the point, frame and video values are computed.</p>
+    <div class="explain">
+      <details id="about-reference">
+        <summary><span class="sname">The normal reference</span><span class="sunit">frame 0, per video and link</span></summary>
+        <div class="sbody">
+          <p><b>What it is.</b> The video's own frame-0 observed cloud of the link, frozen before any later frame is seen.
+            No CAD model, mesh or later-frame point enters it. Frame 0 is assumed normal; it is not verified healthy geometry.</p>
+          <p><b>How it is made.</b> MegaSAM depth inside the link mask is back-projected and filtered by the shared Link5
+            ray-normalized density filter. Link2 then drops detached mask islands whose median depth differs from the main
+            island's by more than 0.25 m: background seen through gaps in the mask. Every later Link2 frame gets the same filter.</p>
+          <p><b>What Reg2Inv keeps from it.</b> The cloud's radius and centre normalize every query frame. Reg2Inv's pretrained
+            network turns it into feature points; all of them (the coreset limit is the feature count) form the memory bank of
+            normal patches.</p>
+        </div>
+      </details>
+      <details id="about-point">
+        <summary><span class="sname">Point score</span><span class="sunit">the colour of each dot</span></summary>
+        <div class="sbody">
+          <p><b>Registration.</b> Each frame's cloud is registered to the reference by Reg2Inv's RANSAC over feature
+            correspondences (50,000 iterations, float64 GPU evaluation). <i>Aligned to frame 0</i> draws the points with that transform.</p>
+          <p><b>Patch score.</b> For each feature point, the feature is its registered position (divided by the reference's
+            position norm) joined with Reg2Inv's 32-dimensional invariant shape feature (divided by the shape norm). Its patch
+            score is the distance to the nearest feature in the memory bank.</p>
+          <p class="formula">s(p) = mean of the patch scores of the 16 feature points nearest to p</p>
+          <p><b>In the replay.</b> White is about 0; the red end is the 95th percentile of all point scores after frame 0, shared
+            by every video and both links. The replay shows one point of every 2 × 2 depth-grid block; scores are not altered.</p>
+        </div>
+      </details>
+      <details id="about-frame">
+        <summary><span class="sname">Frame and video score</span><span class="sunit">the chart and the index</span></summary>
+        <div class="sbody">
+          <p><b>Frame score.</b> Average each feature point's patch score over its 64 nearest feature points, then take the
+            largest. This is the chart. A frame with fewer than 64 selected feature points has no score.</p>
+          <p><b>Video score.</b> The mean of the link's frame scores over the clip, including frame 0. The index also lists the
+            largest frame score and where it occurs. AUROC uses the video mean.</p>
+          <p><b>What it can miss.</b> The score measures change from frame 0. A deformation already present at frame 0 is part of
+            the normal reference, and surfaces that only become visible later have no reference coverage.</p>
+        </div>
+      </details>
+    </div>
+  </div></section>
+
+  <section id="index"><div class="wrap">
+    <h2>All videos</h2>
+    <p class="lede" id="aurocline"></p>
+    <div class="panel"><div class="table-scroll"><table id="cases"></table></div>
+      <p class="note" id="labelnote"></p></div>
+  </div></section>
+</main>
+<footer class="site"><div class="wrap">Scores from the official pretrained Reg2Inv checkpoint and scorer, with each video's
+  frame 0 as the normal reference. Viewer reused from the MoSE3 error-signal replay. The scores are diagnostics,
+  not a validated deformation detector.</div></footer>
+<script src="assets/three.min.js"></script>
+<script src="assets/OrbitControls.js"></script>
+<script src="assets/LineSegmentsGeometry.js"></script>
+<script src="assets/LineMaterial.js"></script>
+<script src="assets/LineSegments2.js"></script>
+<script src="data.js"></script>
+<script src="common3d.js"></script>
+<script src="replay.js"></script>
+</body>
+</html>
