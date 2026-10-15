@@ -5,7 +5,9 @@ MegaSAM geometry, exact-group CoTracker initialization, and refined Link5 depth 
 
 Main targets are link2–link7. Preprocessing owns segmentation, link5 refinement and the active persistent link7 implementation. Shared adapters provide MegaSAM geometry and CoTracker tracking; `workflows/` coordinates the existing stages. `scoring/metrics.py` contains the unchanged metric calculation, and `replay/` owns pipeline-specific review generation while `infrastructure/shared/replay/` owns reusable interactive viewers.
 
-Retained experiments: link5 Simple3D; link7 TAPIP3D, depth filter v2 and tracker/filter comparisons; masking-trial results. Historical palm trial code and obsolete fixed-batch launchers are under `robot/archive/`.
+Link2 and Link5 have two rigidity paths of equal standing: PDI's fixed point pairs (CoTracker3 + MegaSAM, `workflows/pipeline.py`, `scoring/metrics.py`) and the [MoSE3 tracking path](workflows/mose3/README.md) (`workflows/mose3/`, `scoring/mose3/`, `replay/mose3/`), which tracks the same PDI-initialized points with MoSE3 and scores rigid residuals, rigidity discrepancy and slice seams.
+
+Retained experiments: link5 Simple3D; link7 TAPIP3D, depth filter v2 and tracker/filter comparisons; masking-trial results; Reg2Inv with a frame-0 reference (`experiments/reg2inv_frame0/`). Historical palm trial code and obsolete fixed-batch launchers are under `robot/archive/`.
 
 Use `python -m deformation_detect list` and the `links.*` interfaces. Python imports use `robot.preprocessing`, `robot.scoring`, and `robot.workflows`. Current run selection remains in `documentation/publication/release.json`. Existing result replays can still be served through the original `results/<run-id>` URLs.
 

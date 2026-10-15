@@ -29,6 +29,48 @@
     "environment": "analysis",
     "description": "Interactive replay from saved evidence"
   },
+  "links.mose3-queries": {
+    "module": "robot.workflows.mose3.initialize_queries",
+    "category": "main",
+    "environment": "geometry",
+    "description": "MoSE3 path: PDI frame-zero Link2/Link5 query initialization (CPU)"
+  },
+  "links.mose3-track": {
+    "module": "robot.workflows.mose3.run_gpu_batch",
+    "category": "main",
+    "environment": "mose3",
+    "description": "MoSE3 path: 3D tracks, visibility, per-point SE(3), rigidity embeddings and link-mask fields on one shared H200"
+  },
+  "links.mose3-collect": {
+    "module": "robot.workflows.mose3.collect",
+    "category": "main",
+    "environment": "analysis",
+    "description": "MoSE3 path: verify transferred cases against their receipts"
+  },
+  "links.mose3-signals": {
+    "module": "robot.scoring.mose3.signals",
+    "category": "main",
+    "environment": "analysis",
+    "description": "MoSE3 path: rigidity discrepancy, rigid residuals (MoSE3 SE(3), visible refit, dense mask fit) and slice seams"
+  },
+  "links.mose3-auroc": {
+    "module": "robot.analysis.mose3_label_auroc",
+    "category": "main",
+    "environment": "analysis",
+    "description": "MoSE3 path: signal AUROC against the selected-45 labels, with moderate labels kept three ways"
+  },
+  "links.mose3-views": {
+    "module": "robot.replay.mose3.render_views",
+    "category": "main",
+    "environment": "analysis",
+    "description": "MoSE3 path: 2D replay views with the upstream renderers"
+  },
+  "links.mose3-replay": {
+    "module": "robot.replay.mose3.build_replay",
+    "category": "main",
+    "environment": "analysis",
+    "description": "MoSE3 path: interactive 3D tracking and error-signal replay"
+  },
   "objects.mask": {
     "module": "object.preprocessing.segmentation.segment",
     "category": "main",

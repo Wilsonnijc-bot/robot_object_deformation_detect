@@ -10,6 +10,7 @@ Extracted from the repository's installation scripts, wrappers and requirement f
 | Simple3D | Extends the CUDA 11.8 geometry environment | Pointnet2 ops, knn_cuda, Open3D, tifffile 2025.5.10, trimesh 5.1.1, pycollada 0.9.3, ninja |
 | Local VLM | Separate Qwen environment; exact pins not recovered | Current configuration points VLM1 to Qwen3.5-9B; cloud roles retain their configured APIs |
 | TAPIP3D | Separate interpreter/repository/checkpoint; exact pins not recovered | Torch, NumPy, OpenCV and official TAPIP3D source environment |
+| MoSE3 | Python 3.10; Torch 2.6.0; CUDA 12.6 (upstream-tested) | NumPy 1.26.4, OpenCV headless 4.11.0.86, safetensors, huggingface-hub, imageio; pinned MoSE3 source on `PYTHONPATH`, no CUDA extension |
 | Analysis/replay | CPU environment | NumPy, scipy, Pillow, OpenCV (regular or headless), matplotlib, openpyxl, BeautifulSoup, PyYAML, rich; pytest for validation |
 
 The standard-library CSV analysis and orchestration interface does not require the GPU packages. Interactive replay export may import shared scientific packages; its existing CPU tests were run in the temporary test environment.

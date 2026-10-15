@@ -10,6 +10,7 @@ These are the sources present in this workspace, checked locally on 2026-10-04. 
 | Simple3D | `infrastructure/vendor/Simple3D/` | Vendored source tracked by this repository; its README identifies `hustCYQ/MiniShift-Simple3D`. No independent Git metadata is present, so an upstream revision is not inferred. |
 | FoundationPose | `infrastructure/vendor/FoundationPose/` | Upstream `NVlabs/FoundationPose`; pinned at `a1b694b83e633c2cb6115b9063d940a687759392` |
 | Shape-Anomaly-Codebook | `infrastructure/vendor/Shape-Anomaly-Codebook/` | Upstream `alexandor91/Shape-Anomaly-Codebook`; pinned at `1b8de121de8e8801dd99b796127026c7dd279a10` |
+| MoSE3 | `infrastructure/vendor/MoSE3/` | Upstream `mose3-tracker/MoSE3`; pinned at `c39ef00f7198515d709f40c668688d4f869255ae` (BSD-3 code; some third-party files non-commercial). Weights `mose3-tracker/MoSE3` revision `5280ca2ea4c8cf41ac174645fd3aada430af7f40`, CC BY-NC 4.0, provisioned outside the workspace by the `mose3` ERIS profile |
 | Edited PDI-Bench implementation | `robot/`, `object/`, and `infrastructure/shared/` | This workspace's adapted implementation, previously under `PDI-Bench-edited/`; preserved import namespaces and resource aliases now live under `infrastructure/compat/PDI-Bench-edited/`. It is not an additional standalone Git submodule. |
 
 The original PDI-Bench submodule also contains a populated dependency tree, preserved in place:

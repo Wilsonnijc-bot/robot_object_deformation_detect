@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoSE3 on robot links</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="index.html">MoSE3 <span>· PDI points</span></a>
+  <div class="navlinks"><a href="signals.html">Error signals</a><a href="videos.html">Tracking + SE(3)</a></div>
+</div></nav>
+
+<main>
+  <header class="hero"><div class="wrap">
+    <h1>MoSE3 on robot links</h1>
+    <p class="lede">MoSE3 tracks the points PDI's CoTracker initialization picks on Link2 and Link5 through 45 robot
+      videos. There are two replays of the same tracking. <b>Choose which to look at first</b>; the top bar switches
+      between them at any time.</p>
+    <ul class="facts" id="facts"></ul>
+  </div></header>
+
+  <section class="choose"><div class="wrap">
+    <div class="choices">
+      <article class="choice">
+        <div class="clip"><video src="previews/error_signal.mp4" poster="previews/error_signal.jpg" muted loop playsinline autoplay
+             aria-label="Preview of the error-signal replay"></video></div>
+        <div class="choicebody">
+          <h2>Error-signal replay</h2>
+          <p>Each tracked point coloured by its own error, frame by frame: white is rigid, redder is more error. Blue rings
+            mark where a rigid motion would put each point. A per-frame chart, every video ranked by its peak error, and
+            how each of the four error signals is measured.</p>
+          <a class="choosebutton" href="signals.html">Look at the error signals first &rarr;</a>
+        </div>
+      </article>
+      <article class="choice">
+        <div class="clip"><video src="views/COSMOS2.5_0001/combo.mp4" poster="views/COSMOS2.5_0001/poster.jpg" muted loop playsinline autoplay
+             aria-label="Preview of the tracking and SE(3) replay"></video></div>
+        <div class="choicebody">
+          <h2>Tracking + SE(3) replay</h2>
+          <p>MoSE3's 3D point tracks and per-point SE(3) frames for every video, in seven views from the input video to
+            the rigidity embedding. Each video opens an interactive 3D replay where you can follow any point.</p>
+          <a class="choosebutton" href="videos.html">Look at tracking + SE(3) first &rarr;</a>
+        </div>
+      </article>
+    </div>
+    <p class="note choosenote">Both previews show COSMOS2.5_0001, where Link2 and Link5 are labelled severely deformed.</p>
+  </div></section>
+</main>
+<footer class="site"><div class="wrap">Tracks, per-point SE(3) and rigidity embeddings from
+  <a href="https://mose3-tracker.github.io/">MoSE3</a> (Cheng et al., NeurIPS 2026); its weights include π³ and are
+  CC BY-NC 4.0, so this replay is for non-commercial research. Points come from PDI's CoTracker initialization.
+  The error signals are diagnostics, not validated deformation detectors.</div></footer>
+<script src="data.js"></script>
+<script>
+  (() => {
+    const cases = window.MOSE3_INDEX.cases.filter(c => c.status === 'complete');
+    const frames = cases.reduce((a, c) => a + c.frames, 0);
+    document.querySelector('#facts').innerHTML = [`<b>${cases.length}</b> videos`, `<b>${frames.toLocaleString()}</b> frames`,
+      '<b>256</b> Link2 + <b>100</b> Link5 points each', '<b>3</b> error signals'].map(t => `<li>${t}</li>`).join('');
+  })();
+</script>
+</body>
+</html>

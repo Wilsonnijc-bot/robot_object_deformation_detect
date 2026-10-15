@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoSE3 tracking + SE(3) replay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="index.html">MoSE3 <span>· PDI points</span></a>
+  <div class="navlinks"><a href="signals.html">Error signals</a><a href="videos.html" aria-current="page">Tracking + SE(3)</a><a class="minor" href="#table">Scores</a><a class="minor" href="#method">Method</a></div>
+</div></nav>
+
+<main>
+  <header class="hero"><div class="wrap">
+    <h1>Tracking + SE(3) replay</h1>
+    <p class="lede">World-space 3D tracks, per-point SE(3) and rigidity embeddings for the points PDI's
+      CoTracker initialization picks on Link2 and Link5, in every selected video. Pick a view, then open
+      a video for its interactive 3D replay.</p>
+    <ul class="facts" id="facts"></ul>
+  </div></header>
+
+  <section id="videos"><div class="wrap">
+    <h2>Videos</h2>
+    <div class="panel">
+      <div class="segwrap"><div class="seg" id="view" role="group" aria-label="View"></div></div>
+      <p class="vnote" id="vnote"></p>
+      <div class="toolbar">
+        <div class="seg" id="group" role="group" aria-label="Generator"></div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <label>Points <select id="subset">
+            <option value="interior">Away from depth edges</option>
+            <option value="all">All PDI points</option>
+          </select></label>
+          <label>Sort <select id="sort"></select></label>
+        </div>
+      </div>
+      <div class="rgrid" id="rgrid" style="margin-top:16px"></div>
+      <div class="pager"><button id="prev" aria-label="Previous page">&#8249;</button>
+        <span id="page"></span><button id="next" aria-label="Next page">&#8250;</button></div>
+    </div>
+  </div></section>
+
+  <section id="table"><div class="wrap">
+    <h2>Scores</h2>
+    <p class="lede">Means over frames 1…T−1 for the points chosen above. Click a column to sort, a video to open it.</p>
+    <div class="panel"><div class="table-scroll"><table id="scores"></table></div>
+      <p class="note">Rigid fit: RMS distance from one rigid motion of the link, relative to its radius. SE(3) spread:
+        median angle between each point's rotation and the link's mean rotation. Pair MAD: PDI's distance-ratio
+        formula over all visible pairs. Emb. spread: dispersion of the points' rigidity embeddings. These are
+        diagnostics from MoSE3 outputs, not validated deformation detectors.</p>
+    </div>
+  </div></section>
+
+  <section id="method"><div class="wrap">
+    <h2>Method</h2>
+    <div class="cols">
+      <div><h3>Points</h3><p>PDI's unchanged sampler (<code>TrackWrapper.prepare_multi</code>): SIFT, Shi–Tomasi and
+        grid candidates inside each frame-0 mask, spread by farthest-point selection. 256 Link2 and 100 Link5 points per video; no pair graph.</p></div>
+      <div><h3>Tracking</h3><p>MoSE3 (pinned <code>c39ef00</code>) sees every original frame in one pass. Its dense fields are read at each
+        point, and each point gets its own SE(3) from the same weighted Horn fit as upstream.</p></div>
+      <div><h3>Coordinates</h3><p>3D values are in MoSE3's first-camera frame and scale (x right, y down, z forward), not MegaSAM's.
+        Points touching a MoSE3 depth edge are tracked and drawn, and can be left out of the scores.</p></div>
+    </div>
+  </div></section>
+</main>
+<footer class="site"><div class="wrap">Tracks, per-point SE(3) and rigidity embeddings from
+  <a href="https://mose3-tracker.github.io/">MoSE3</a> (Cheng et al., NeurIPS 2026); its weights include π³ and are
+  CC BY-NC 4.0, so this replay is for non-commercial research. Points come from PDI's CoTracker initialization.
+  The error signals are diagnostics, not validated deformation detectors.</div></footer>
+<script src="data.js"></script>
+<script src="videos.js"></script>
+</body>
+</html>

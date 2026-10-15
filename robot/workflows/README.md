@@ -2,7 +2,7 @@
 
 For autonomous link7 plus object runs, optionally including link2, use the [resumable coordinator](../../documentation/pipeline/COORDINATOR.md). `coordination.py` adapts explicit video/reference inputs to the existing persistent-masking and V1 scoring functions. The experiment interfaces below remain available for historical workflows.
 
-The native pipeline is `robot.workflows.pipeline`. This package owns frozen selection, input verification, persistent masking, V1 scoring, status, and replay exports. Run commands from the repository root.
+The native pipeline is `robot.workflows.pipeline`. The parallel MoSE3 tracking path for Link2/Link5 lives in [`mose3/`](mose3/README.md). This package owns frozen selection, input verification, persistent masking, V1 scoring, status, and replay exports. Run commands from the repository root.
 
 ## Ten-video persistent-mask experiment
 

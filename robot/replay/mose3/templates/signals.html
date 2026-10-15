@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoSE3 error-signal replay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="index.html">MoSE3 <span>· PDI points</span></a>
+  <div class="navlinks"><a href="signals.html" aria-current="page">Error signals</a><a href="videos.html">Tracking + SE(3)</a><a class="minor" href="#signals">How each is measured</a><a class="minor" href="#index">All videos</a></div>
+  <div class="stepper"><a id="videolink" href="#">3D replay of this video &#8250;</a></div>
+</div></nav>
+
+<main>
+  <header class="hero"><div class="wrap">
+    <h1>Error-signal replay</h1>
+    <p class="lede">Each <b>small dot</b> is a tracked point, coloured by its own error at the current frame: white is
+      rigid, redder is more error. For the rigid residuals, each <b>large blue ring</b> is that point's rigid prediction,
+      where a rigid motion of its link would put it, and a line joins the ring to the dot. A dot inside its ring is moving
+      rigidly. The legend on the replay names every mark.</p>
+  </div></header>
+
+  <section id="replay"><div class="wrap">
+    <div class="sighead"><h2 id="title">Loading…</h2><ul class="facts" id="facts"></ul></div>
+    <div class="segwrap"><div class="seg" id="signal" role="group" aria-label="Error signal"></div></div>
+    <p class="vnote" id="snote"></p>
+    <div class="howwrap"><button class="howbutton" id="howbutton" type="button"></button></div>
+    <div class="panel">
+      <div class="viewer" id="viewer">
+        <canvas id="scene" aria-label="Interactive 3D error-signal replay"></canvas>
+        <div class="pip" id="pip"><video id="video" muted playsinline preload="auto"></video></div>
+        <div class="layers" id="layers">
+          <h4>Layers</h4>
+          <label id="predictionlabel" title="Rings at the rigid prediction; lines to where each point went."><input type="checkbox" data-layer="prediction" checked>Rigid prediction</label>
+          <label title="The last 12 frames of each point's track, in its signal colour."><input type="checkbox" data-layer="trails">Trajectories</label>
+          <label title="The scene MoSE3 reconstructs, in dim grey."><input type="checkbox" data-layer="scene">Scene cloud</label>
+          <label title="The frames MoSE3 saw, on the same clock."><input type="checkbox" id="pipbox" checked>Input video</label>
+          <hr>
+          <label title="Points sampled in the frame-zero Link2 mask."><input type="checkbox" data-link="link2" checked>Link2 points</label>
+          <label title="Points sampled in the frame-zero Link5 mask."><input type="checkbox" data-link="link5" checked>Link5 points</label>
+        </div>
+        <div class="colorkey" id="colorkey"></div>
+        <div class="status" id="status" role="status">Loading…</div>
+        <div class="inspector" id="inspector" hidden></div>
+        <div class="pbar">
+          <button id="play" aria-label="Play or pause">&#10074;&#10074;</button>
+          <input type="range" id="slider" min="0" max="1" step="0.01" value="0" aria-label="Time">
+          <span class="ptime" id="time">0.0 / 0.0 s</span>
+        </div>
+      </div>
+      <ul class="markkey" id="markkey" aria-label="What the marks on the replay mean"></ul>
+      <div class="chartwrap">
+        <div class="charthead"><div class="serieskey" id="serieskey"></div>
+          <div class="jumps" id="jumps"></div></div>
+        <div class="chartbox"><svg id="chart" role="img" aria-label="Per-frame error signal"></svg><div class="tip" id="tip" hidden></div></div>
+        <p class="note">Per frame: the 90th percentile over the link's scored points. Click or drag on the chart to move
+          through time; click a point in 3D to add its own curve.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="signals"><div class="wrap">
+    <h2>The four error signals</h2>
+    <p class="lede">Open one to see what it measures, how it is derived from MoSE3's outputs, and how the per-frame and
+      per-video values are computed.</p>
+    <div class="explain">
+      <details id="about-rigid_residual">
+        <summary><span class="sname">Rigid residual</span><span class="sunit">fraction of link length</span></summary>
+        <div class="sbody">
+          <p><b>What it measures.</b> How far each tracked point is from where MoSE3's own rigid motion puts it. MoSE3's
+            rigidity head chooses which pixels form one rigid body; its track head says where each point went. If the link
+            stays rigid, every track lands on that body's motion.</p>
+          <p><b>How it is derived.</b> For point <i>i</i>, MoSE3's SE(3) (R<sub>i</sub>(t), t<sub>i</sub>(t)) is fitted
+            exactly as upstream <code>fit_per_pixel_se3</code> does:</p>
+          <ol>
+            <li>Draw 12,000 random pixels from the whole first frame (the same pool for every point of a video).</li>
+            <li>Weight each pool pixel <i>j</i> by softmax of cos(e<sub>i</sub>, e<sub>j</sub>) / 0.01, using the first-frame
+              rigidity embeddings; pixels with nearly the same embedding dominate.</li>
+            <li>Fit the weighted rigid motion (Horn's closed form) that carries the pool's first-frame positions to their
+              frame-<i>t</i> positions from MoSE3's tracks.</li>
+          </ol>
+          <p class="formula">P<sub>i</sub>(t) = R<sub>i</sub>(t) x<sub>i</sub>(0) + t<sub>i</sub>(t)</p>
+          <p><b>How it is measured.</b> r<sub>i</sub>(t) = ‖P<sub>i</sub>(t) − x<sub>i</sub>(t)‖ / L, with x<sub>i</sub>(t)
+            the point's own MoSE3 track and L the link's length. Points count when MoSE3 sees them at frame <i>t</i>,
+            the fit is well conditioned (<code>se3_valid</code>), and they are not on a depth edge or a depth outlier.
+            Each frame's value is the 90th percentile over at least 5 such points; a video's value is the largest frame
+            value after frame 0.</p>
+          <p><b>In the replay.</b> Blue rings are P<sub>i</sub>(t), dots are x<sub>i</sub>(t), and the line between them is
+            the residual. AUROC (severe vs none): Link2 <span data-auroc="rigid_residual:link2"></span>, Link5
+            <span data-auroc="rigid_residual:link5"></span>.</p>
+        </div>
+      </details>
+      <details id="about-rigid_residual_refit">
+        <summary><span class="sname">Rigid residual, visible refit</span><span class="sunit">fraction of link length</span></summary>
+        <div class="sbody">
+          <p><b>What it measures.</b> How far the link's visible points are from moving as a single rigid body, with no use
+            of MoSE3's rigidity embedding or its SE(3).</p>
+          <p><b>How it is derived.</b> At each frame, take this link's scored points that MoSE3 sees, and fit one rotation
+            and translation by least squares (Kabsch) from their first-frame positions to their frame-<i>t</i> positions:</p>
+          <p class="formula">P<sub>i</sub>(t) = R(t) x<sub>i</sub>(0) + t(t)</p>
+          <p>Every visible point weighs the same; occluded points are left out of that frame's fit; at least 5 are needed.
+            Every point is also part of the fit it is measured against.</p>
+          <p><b>How it is measured.</b> The same r<sub>i</sub>(t) = ‖P<sub>i</sub>(t) − x<sub>i</sub>(t)‖ / L, 90th
+            percentile per frame, and largest frame value per video.</p>
+          <p><b>In the replay.</b> Blue rings show the single fitted motion. AUROC: Link2
+            <span data-auroc="rigid_residual_refit:link2"></span>, Link5 <span data-auroc="rigid_residual_refit:link5"></span>.
+            The method section below compares the rigid residuals in detail.</p>
+        </div>
+      </details>
+      <details id="about-rigid_residual_dense">
+        <summary><span class="sname">Rigid residual, dense mask fit</span><span class="sunit">fraction of link length</span></summary>
+        <div class="sbody">
+          <p><b>What it measures.</b> The same question as the visible refit, how far the link's points are from moving as
+            one rigid body, but the rigid motion comes from every pixel of the link's mask instead of from the points
+            being scored.</p>
+          <p><b>How it is derived.</b> MoSE3 tracks every pixel of the first frame, so the link's frame-0 SAM mask is
+            followed into every frame. The mask is resized to MoSE3's 294 × 518 grid (a pixel is in when the mask covers at
+            least half of it). At each frame <i>t</i>:</p>
+          <ol>
+            <li>Keep mask pixels more than 2 pixels inside the mask border, not on a MoSE3 depth edge, whose frame-0 depth
+              is not an outlier, and that MoSE3 sees at frame <i>t</i>. A fit uses a median of about 4,850 pixels on Link2
+              and 6,060 on Link5, against roughly 60–200 PDI points.</li>
+            <li>Fit one rotation and translation from their frame-0 positions to their frame-<i>t</i> positions by weighted
+              least squares (Kabsch), reweighting 10 times with w = 1 / (1 + (r / 3·median r)<sup>2</sup>). Pixels far off
+              the common motion, for example where the mask spills onto another surface, lose their pull; a median 96% of
+              pixels keep a weight of at least 0.5.</li>
+            <li>Leave the frame without a value when fewer than 200 pixels or 30% of them are visible, or the visible
+              ones span less than half the link.</li>
+          </ol>
+          <p class="formula">P<sub>i</sub>(t) = R(t) x<sub>i</sub>(0) + t(t)</p>
+          <p>The scored PDI points are only 1–3% of the fitted pixels, so a point barely moves the fit it is measured
+            against.</p>
+          <p><b>How it is measured.</b> The same r<sub>i</sub>(t) = ‖P<sub>i</sub>(t) − x<sub>i</sub>(t)‖ / L at the same
+            scored PDI points, with L measured on the fitted pixels instead (a median 0.99 of the PDI-point length). 90th
+            percentile per frame, largest frame value per video.</p>
+          <p><b>In the replay.</b> Blue rings show the dense fit's single motion. AUROC: Link2
+            <span data-auroc="rigid_residual_dense:link2"></span>, Link5 <span data-auroc="rigid_residual_dense:link5"></span>.
+            It ranks the videos almost exactly as the visible refit does (rank correlation 0.97–0.99), and the AUROC
+            difference from the refit is within noise: Link2 −0.03 (95% interval −0.08 to +0.01), Link5 +0.00 (−0.05 to
+            +0.06).</p>
+        </div>
+      </details>
+      <details id="about-rigidity_discrepancy">
+        <summary><span class="sname">Rigidity discrepancy</span><span class="sunit">1 − cos</span></summary>
+        <div class="sbody">
+          <p><b>What it measures.</b> Whether MoSE3 still treats the link as one rigid body: how far each point's rigidity
+            vector is from the link's typical one. Pixels on one rigid part share nearly the same vector, so a part that
+            starts to move on its own drifts away from the rest.</p>
+          <p><b>How it is derived.</b> MoSE3 predicts a 16-dimensional rigidity embedding for every pixel of every frame.
+            For point <i>i</i> at frame <i>t</i>, read frame <i>t</i>'s embedding at the point's tracked pixel and scale it
+            to unit length: e<sub>i</sub>(t). The link's typical vector m(t) is the normalized mean over its points that
+            are visible and inside the frame.</p>
+          <p class="formula">d<sub>i</sub>(t) = 1 − cos(e<sub>i</sub>(t), m(t))</p>
+          <p><b>How it is measured.</b> 0 means the same direction as the link's mean. Each frame's value is the 90th
+            percentile of d<sub>i</sub>(t) over at least 5 such points; a video's value is the largest frame value after
+            frame 0. Unlike the residuals, frame 0 is not zero by construction.</p>
+          <p><b>In the replay.</b> No rings: this signal has no rigid prediction. AUROC: Link2
+            <span data-auroc="rigidity_discrepancy:link2"></span>, Link5 <span data-auroc="rigidity_discrepancy:link5"></span>.</p>
+        </div>
+      </details>
+    </div>
+  </div></section>
+
+  <section id="index"><div class="wrap">
+    <h2>All videos</h2>
+    <p class="lede" id="aurocline"></p>
+    <div class="panel"><div class="table-scroll"><table id="cases"></table></div>
+      <p class="note" id="labelnote"></p></div>
+  </div></section>
+
+  <section id="method"><div class="wrap">
+    <h2>Method: the three rigid residuals</h2>
+    <p class="lede">All three residuals ask the same question: how far is each tracked point from where a rigid motion of
+      its link would put it? They differ only in which rigid motion is used.</p>
+
+    <div class="panel prose">
+      <h3>What all three share</h3>
+      <p class="formula">r<sub>i</sub>(t) = ‖ P<sub>i</sub>(t) − x<sub>i</sub>(t) ‖ / L</p>
+      <ul>
+        <li><b>x<sub>i</sub>(t)</b>: MoSE3's 3D track of PDI point <i>i</i> at frame <i>t</i>, in the first camera's coordinates and MoSE3's scale. Frame 0 is the query frame.</li>
+        <li><b>P<sub>i</sub>(t)</b>: the rigid prediction, i.e. where a rigid motion moves the point's frame-0 position x<sub>i</sub>(0). This is the only part that differs.</li>
+        <li><b>L</b>: the link length. Take the first principal direction of the scored points' frame-0 positions, project the points onto it, and use the distance between the 2nd and 98th percentiles. The dense mask fit does the same with its fitted pixels.</li>
+        <li><b>Scored points</b>: the link's PDI points that do not touch a MoSE3 depth edge, whose frame-0 depth is not an outlier, and that MoSE3 marks visible at frame <i>t</i> (visibility logit &gt; 0).</li>
+        <li><b>Per frame</b>: S(t) is the 90th percentile of r<sub>i</sub>(t) over at least 5 scored points; this is the chart. <b>Per video</b>: the maximum of S(t) over frames 1…T−1; this is the index and the AUROC. Frame 0 is 0 for all three, because P<sub>i</sub>(0) = x<sub>i</sub>(0).</li>
+      </ul>
+
+      <h3>Where they differ</h3>
+      <div class="table-scroll"><table class="compare">
+        <thead><tr><th></th><th>Rigid residual (MoSE3 SE(3))</th><th>Rigid residual, visible refit</th><th>Rigid residual, dense mask fit</th></tr></thead>
+        <tbody>
+          <tr><td>Rigid prediction</td><td>P<sub>i</sub>(t) = R<sub>i</sub>(t) x<sub>i</sub>(0) + t<sub>i</sub>(t), MoSE3's per-point SE(3)</td>
+              <td>P<sub>i</sub>(t) = R(t) x<sub>i</sub>(0) + t(t), one transform for the link at frame <i>t</i></td>
+              <td>P<sub>i</sub>(t) = R(t) x<sub>i</sub>(0) + t(t), one transform for the link at frame <i>t</i></td></tr>
+          <tr><td>How the transform is made</td><td>Upstream <code>fit_per_pixel_se3</code>, evaluated at the point: a weighted Horn fit (closed-form quaternion) of a pixel pool's frame-0 positions to their frame-<i>t</i> positions</td>
+              <td>Kabsch (unweighted least squares by SVD) of the link's visible scored points: frame-0 positions to frame-<i>t</i> positions</td>
+              <td>Kabsch with robust weights (Cauchy, 10 reweightings) of the link's visible mask pixels: frame-0 positions to frame-<i>t</i> positions</td></tr>
+          <tr><td>Which samples define it</td><td>12,000 pixels drawn at random from the <i>whole</i> query frame (the same pool for every point of a video), not just the link; 420–670 of them fall on a link (median 470 for Link2, 580 for Link5)</td>
+              <td>Only this link's PDI points that are visible at frame <i>t</i> (≈60–200); at least 5 are required</td>
+              <td>Every grid pixel of the link's frame-0 mask more than 2 px inside its border, off depth edges, not a depth outlier and visible at frame <i>t</i> (median about 4,850 for Link2, 6,060 for Link5)</td></tr>
+          <tr><td>Weights</td><td>softmax over the pool of cos(e<sub>i</sub>, e<sub>j</sub>) / 0.01, using frame-0 rigidity embeddings only (the point's own embedding is interpolated at its pixel). A cosine gap of 0.05 changes a weight about 150×, so the fit comes from pixels with nearly the same embedding: MoSE3's rigid body for that point</td>
+              <td>Equal weight for every visible link point; no embedding is used</td>
+              <td>w = 1 / (1 + (r / 3·median r)<sup>2</sup>): near equal on a rigid link, near zero for pixels far off the common motion; no embedding is used</td></tr>
+          <tr><td>Occluded samples</td><td>Count at full weight: MoSE3 still predicts their positions</td>
+              <td>Excluded at that frame</td>
+              <td>Excluded at that frame</td></tr>
+          <tr><td>Region</td><td>Defined by the embedding. It can include neighbouring parts or background that MoSE3 groups with the link, and it ignores the SAM mask</td>
+              <td>Defined by the SAM mask, through the PDI points sampled in it</td>
+              <td>Defined by the SAM mask directly, shrunk by 2 px</td></tr>
+          <tr><td>Is the point itself in the fit?</td><td>Effectively no: the transform comes from the pool, so the point is checked against a body it barely influences</td>
+              <td>Yes: every scored point helps fit the transform it is then measured against (in-sample)</td>
+              <td>Barely: the scored points are 1–3% of the fitted pixels</td></tr>
+          <tr><td>Validity</td><td>Requires <code>se3_valid</code> (Horn's top two eigenvalues distinct)</td>
+              <td>Requires at least 5 visible points</td>
+              <td>Requires at least 200 visible pixels and 30% of the fitted ones, spanning half the link</td></tr>
+          <tr><td>It measures</td><td>Whether MoSE3's track head agrees with the rigid body its rigidity head chose</td>
+              <td>How far the link's visible points are from moving as any single rigid body</td>
+              <td>The same, with a motion that the scored points barely influence</td></tr>
+          <tr><td>AUROC (max over clip)</td><td>Link2 <span data-auroc="rigid_residual:link2"></span> · Link5 <span data-auroc="rigid_residual:link5"></span></td>
+              <td>Link2 <span data-auroc="rigid_residual_refit:link2"></span> · Link5 <span data-auroc="rigid_residual_refit:link5"></span></td>
+              <td>Link2 <span data-auroc="rigid_residual_dense:link2"></span> · Link5 <span data-auroc="rigid_residual_dense:link5"></span></td></tr>
+          <tr><td>C-index with moderate kept</td><td>Link2 <span data-auroc="rigid_residual:link2:ordinal"></span> · Link5 <span data-auroc="rigid_residual:link5:ordinal"></span></td>
+              <td>Link2 <span data-auroc="rigid_residual_refit:link2:ordinal"></span> · Link5 <span data-auroc="rigid_residual_refit:link5:ordinal"></span></td>
+              <td>Link2 <span data-auroc="rigid_residual_dense:link2:ordinal"></span> · Link5 <span data-auroc="rigid_residual_dense:link5:ordinal"></span></td></tr>
+        </tbody>
+      </table></div>
+
+      <h3>When they disagree</h3>
+      <ul>
+        <li><b>Self-occlusion.</b> Occluded pool pixels keep full weight in MoSE3's fit, so its transform can drift when much of the link is hidden. The refit uses only visible points.</li>
+        <li><b>The embedding over-merges.</b> If MoSE3 gives the link the same embedding as a neighbouring link or as static background, its SE(3) is the motion of that larger group. The residual then reflects the mismatch between the link and the group, not only the link's own shape change. The refit stays inside the link.</li>
+        <li><b>The embedding splits the link.</b> If MoSE3 already separates a deforming end, each piece gets its own SE(3) and the MoSE3 residual drops. The refit still sees two motions inside one link. The rigidity discrepancy flags this case directly.</li>
+        <li><b>A few bad tracks.</b> The refit is an unweighted least-squares fit, so a few large track errors pull the whole fit and raise residuals across the link. MoSE3's transform comes from hundreds of pool pixels and is barely affected by one point's track.</li>
+        <li><b>Sample size.</b> MoSE3's transform and the dense mask fit use dense pixels. The refit uses only PDI points, which cluster at textured spots near mask borders. All three score the same PDI points.</li>
+        <li><b>Dense mask fit vs visible refit.</b> On this run they agree closely. The dense fit can differ where the PDI points are few (Link5 has about 80 scored points per video), where a few bad tracks would pull an unweighted fit, or where the mask spills onto another surface. Its pixels come from one network's smooth output, so neighbouring pixels' errors are correlated: thousands of pixels are not thousands of independent measurements.</li>
+      </ul>
+      <p class="note">On a rigid link, every point lands on its prediction in all three versions (all rings filled). They diverge
+        only through the cases above. These are diagnostics on 35 labelled videos per link (43 and 45 with moderate kept), not validated detectors.</p>
+    </div>
+  </div></section>
+</main>
+<footer class="site"><div class="wrap">Tracks, per-point SE(3) and rigidity embeddings from
+  <a href="https://mose3-tracker.github.io/">MoSE3</a> (Cheng et al., NeurIPS 2026); its weights include π³ and are
+  CC BY-NC 4.0, so this replay is for non-commercial research. Points come from PDI's CoTracker initialization.
+  The error signals are diagnostics, not validated deformation detectors.</div></footer>
+<script src="assets/three.min.js"></script>
+<script src="assets/OrbitControls.js"></script>
+<script src="assets/LineSegmentsGeometry.js"></script>
+<script src="assets/LineMaterial.js"></script>
+<script src="assets/LineSegments2.js"></script>
+<script src="data.js"></script>
+<script src="common3d.js"></script>
+<script src="signals.js"></script>
+</body>
+</html>

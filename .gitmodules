@@ -14,3 +14,6 @@
 [submodule "Shape-Anomaly-Codebook"]
 	path = infrastructure/vendor/Shape-Anomaly-Codebook
 	url = https://github.com/alexandor91/Shape-Anomaly-Codebook
+[submodule "infrastructure/vendor/MoSE3"]
+	path = infrastructure/vendor/MoSE3
+	url = https://github.com/mose3-tracker/MoSE3

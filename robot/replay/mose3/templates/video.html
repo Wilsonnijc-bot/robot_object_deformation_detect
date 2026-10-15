@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoSE3 replay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="index.html">MoSE3 <span>· PDI points</span></a>
+  <div class="stepper"><a href="videos.html">&larr; All videos</a><a id="signalslink" href="signals.html">Error signals</a><a id="prevcase" href="#">&#8249; Previous</a><a id="nextcase" href="#">Next &#8250;</a></div>
+</div></nav>
+
+<main>
+  <header class="hero"><div class="wrap">
+    <h1 id="title">Loading…</h1>
+    <p class="lede">Drag to rotate, scroll to zoom, scrub the bar to move through time. Click a point to follow it.</p>
+    <ul class="facts" id="facts"></ul>
+  </div></header>
+
+  <section id="explore"><div class="wrap">
+    <h2>Explore in 3D</h2>
+    <div class="panel">
+      <div class="viewer" id="viewer">
+        <canvas id="scene" aria-label="Interactive 3D viewer"></canvas>
+        <div class="pip" id="pip"><video id="video" muted playsinline preload="auto"></video></div>
+        <div class="layers" id="layers">
+          <h4>Layers</h4>
+          <label title="The scene as MoSE3 reconstructs it, in image colour."><input type="radio" name="cloud" value="rgb" checked>Point cloud</label>
+          <label title="The same points coloured by which parts move together (PCA of the rigidity embedding)."><input type="radio" name="cloud" value="pca">Rigidity embedding</label>
+          <label title="Hide the scene; show only the tracked Link2 and Link5 points."><input type="radio" name="cloud" value="none">Points only</label>
+          <hr>
+          <label title="Each point's SE(3), as a moving x/y/z frame, on 24 spread-out points per link."><input type="checkbox" data-layer="axes" checked>SE(3) axes</label>
+          <label title="The last 12 frames of each tracked point's 3D track."><input type="checkbox" data-layer="trails" checked>Trajectories</label>
+          <label title="The frames MoSE3 saw, on the same clock."><input type="checkbox" id="pipbox" checked>Input video</label>
+          <hr>
+          <label title="Points sampled in the frame-zero Link2 mask."><input type="checkbox" data-link="link2" checked>Link2 points</label>
+          <label title="Points sampled in the frame-zero Link5 mask."><input type="checkbox" data-link="link5" checked>Link5 points</label>
+        </div>
+        <div class="status" id="status" role="status">Loading…</div>
+        <div class="hint" id="hint">Click a point to follow it</div>
+        <div class="inspector" id="inspector" hidden></div>
+        <div class="pbar">
+          <button id="play" aria-label="Play or pause">&#10074;&#10074;</button>
+          <input type="range" id="slider" min="0" max="1" step="0.01" value="0" aria-label="Time">
+          <span class="ptime" id="time">0.0 / 0.0 s</span>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="views"><div class="wrap">
+    <h2>Views</h2>
+    <div class="panel">
+      <div class="segwrap"><div class="seg" id="view" role="group" aria-label="View"></div></div>
+      <p class="vnote" id="vnote"></p>
+      <div class="player"><video id="clip" muted loop playsinline autoplay preload="auto"></video></div>
+    </div>
+  </div></section>
+
+  <section id="rigidity"><div class="wrap">
+    <div class="panel">
+      <div class="scorehead">
+        <h2>Rigidity</h2>
+        <label class="toolbar" style="margin:0">Points <select id="subset">
+          <option value="interior">Away from depth edges</option>
+          <option value="all">All PDI points</option>
+        </select></label>
+        <label class="toolbar" style="margin:0">Series <select id="metric">
+          <option value="rigid_fit_residual">Rigid fit</option>
+          <option value="se3_rotation_spread_deg">SE(3) spread (°)</option>
+          <option value="pair_ratio_mad">Pair MAD</option>
+          <option value="embedding_dispersion">Embedding spread</option>
+        </select></label>
+      </div>
+      <div class="table-scroll"><table id="scoretable"></table></div>
+      <canvas id="spark" height="140" aria-label="Per-frame rigidity series"></canvas>
+      <p class="note">Means over frames 1…T−1; the line follows the time cursor. These diagnostics come from MoSE3 outputs on
+        these points and are not validated deformation detectors.</p>
+    </div>
+  </div></section>
+</main>
+<footer class="site"><div class="wrap">Tracks, per-point SE(3) and rigidity embeddings from
+  <a href="https://mose3-tracker.github.io/">MoSE3</a> (Cheng et al., NeurIPS 2026); its weights include π³ and are
+  CC BY-NC 4.0, so this replay is for non-commercial research. Points come from PDI's CoTracker initialization.
+  The error signals are diagnostics, not validated deformation detectors.</div></footer>
+<script src="assets/three.min.js"></script>
+<script src="assets/OrbitControls.js"></script>
+<script src="assets/LineSegmentsGeometry.js"></script>
+<script src="assets/LineMaterial.js"></script>
+<script src="assets/LineSegments2.js"></script>
+<script src="data.js"></script>
+<script src="common3d.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>

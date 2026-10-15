@@ -13,6 +13,12 @@ samples the geometry at those tracked locations and measures changes in distance
 between selected pairs. The VLM helps establish masks, not 3D coordinates or the
 final pair graph.
 
+**Two rigidity paths.** For Link2 and Link5, the PDI pair path above has a parallel
+path of equal standing, the **MoSE3 tracking path** (section 9). It starts from the same
+frame-zero masks and the same PDI query sampler. MoSE3 then provides 3D tracks,
+visibility, rigidity embeddings and SE(3) from RGB alone, and the path scores rigid
+residuals, rigidity discrepancy and slice seams instead of pair distance ratios.
+
 ## 1. End-to-end architecture
 
 ```mermaid
@@ -45,6 +51,12 @@ flowchart TD
     X --> R
     C --> R
     R --> O["Temporal score, pair evidence, synchronized replay"]
+    Q --> MQ["MoSE3 path (Link2 / Link5): same PDI queries"]
+    V --> MF["MoSE3: dense 3D tracks, visibility, rigidity embedding, camera poses"]
+    MQ --> MS["Fields at each query; per-point SE(3); link-mask fields"]
+    MF --> MS
+    M --> MS
+    MS --> MO["Rigid residuals, rigidity discrepancy, slice seams; MoSE3 replay"]
 ```
 
 This is a data-dependency diagram. In the shared implementation,
@@ -457,6 +469,41 @@ The code entry points remain separate: Link2/Link7 use the shared scorer, while
 the Link5 path described here uses `score_depth_v2.py` with
 `pair_method="refine_v1"`. The generic shared scorer does not automatically enable
 this Link5 policy.
+
+## 9. MoSE3 tracking path (Link2 and Link5)
+
+[MoSE3](https://mose3-tracker.github.io/) predicts, for every pixel of the query frame, a
+world-space 3D track, a visibility logit and a 16-D rigidity embedding, from monocular RGB
+alone. No MegaSAM geometry or CoTracker tracks are used. The path:
+
+1. **Queries:** PDI's own sampler (`TrackWrapper.prepare_multi`, SIFT + Shi–Tomasi + grid) on
+   the frame-zero Link2/Link5 masks; 256 Link2 and 100 Link5 points (`configs/default.yaml`).
+2. **Tracking:** one MoSE3 pass over every frame (pinned `infrastructure/vendor/MoSE3`, CC BY-NC
+   weights). Fields are read bilinearly at each query, avoiding depth edges. Each query gets
+   upstream's per-pixel SE(3) (embedding-weighted Horn fit). MoSE3's fields over the link's
+   frame-zero mask plus a 4 px band are cached for CPU-only fits.
+3. **Signals:** with `L` the link length,
+   - *rigid residual*: `||R(t) x_i(0) + t(t) − x_i(t)|| / L`, 90th percentile per frame. R, t come
+     from MoSE3's per-point SE(3), from one Kabsch refit of the visible points, or from one
+     robust (Cauchy IRLS) fit of every visible mask pixel (*dense mask fit*);
+   - *rigidity discrepancy*: `1 − cos` to the link's mean embedding, 90th percentile;
+   - *slice seams*: stretch, shear, bend and twist between Kabsch fits of four slices.
+   A video's value is the maximum over frames 1…T−1.
+4. **Evaluation and replay:** AUROC against the selected-45 labels (severe vs none, plus the
+   C-index with moderate kept), and a MoSE3-style 3D tracking, SE(3) and error-signal replay.
+
+| Responsibility | Code |
+| --- | --- |
+| Frozen inputs, PDI queries, single-H200 scheduling, MoSE3 worker, field sampling | [`workflows/mose3/`](workflows/mose3/README.md) |
+| Signals and rigidity diagnostics | [`scoring/mose3/`](scoring/mose3/signals.py) |
+| Label AUROC | [`analysis/mose3_label_auroc.py`](analysis/mose3_label_auroc.py) |
+| Replay builder, 2D views, page templates | [`replay/mose3/`](replay/mose3/build_replay.py) |
+| Runs | `robot/results/mose3/<run>` |
+
+Interfaces: `links.mose3-queries`, `-track`, `-collect`, `-signals`, `-auroc`, `-views`,
+`-replay` (`python -m deformation_detect list`). The resumable coordinator does not yet
+schedule this path; it runs through `workflows/mose3/eris_pipeline.sh` (track, then signals)
+on one shared H200. None of its signals is a validated deformation detector.
 
 For future GPU execution, follow [`agent.md`](../agent.md): share one H200 across
 independent videos, configure worker concurrency separately from GPU count, and

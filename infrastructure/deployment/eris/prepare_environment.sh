@@ -43,6 +43,22 @@ case "$profile" in
     export HF_HOME="$dependency/cache/huggingface" HF_HUB_DISABLE_TELEMETRY=1
     "$py" "$(dirname "$0")/download_models.py" "$dependency"
     ;;
+  mose3)
+    # MoSE3 tracking path (robot/workflows/mose3); upstream tested Torch 2.6.0 with CUDA 12.6.
+    test -x "$dependency/env/mose3/bin/python" || conda create -y -p "$dependency/env/mose3" python=3.10 pip
+    py="$dependency/env/mose3/bin/python"
+    "$py" -m pip install 'torch==2.6.0' --index-url https://download.pytorch.org/whl/cu126
+    "$py" -m pip install 'numpy==1.26.4' 'opencv-python-headless==4.11.0.86' imageio imageio-ffmpeg safetensors huggingface-hub psutil
+    source="$dependency/source/MoSE3"
+    test -d "$source/.git" || "$dependency/bin/git" clone https://github.com/mose3-tracker/MoSE3 "$source"
+    "$dependency/bin/git" -C "$source" checkout --detach c39ef00f7198515d709f40c668688d4f869255ae
+    test -z "$("$dependency/bin/git" -C "$source" status --porcelain)"
+    # Weights include pi3 and are CC BY-NC 4.0; keep them outside every workspace.
+    HF_HOME="$dependency/cache/huggingface" HF_HUB_DISABLE_TELEMETRY=1 "$py" -c 'import sys
+from huggingface_hub import snapshot_download
+print(snapshot_download("mose3-tracker/MoSE3", revision="5280ca2ea4c8cf41ac174645fd3aada430af7f40", local_dir=sys.argv[1]))' "$dependency/models/mose3"
+    "$py" -m pip freeze > "$dependency/metadata/mose3-packages.txt"
+    ;;
   *) echo "Unknown profile: $profile" >&2; exit 2;;
 esac
 printf 'PREPARATION_COMPLETE %s\n' "$profile"

@@ -6,7 +6,7 @@ The top level separates `robot/`, `object/`, shared runtime `infrastructure/`, a
 
 ## Pipeline boundaries
 
-- **Robot links:** link2–link7 segmentation, link5 guard/refinement, link7 persistent masks, orchestration of shared MegaSAM/CoTracker, rigidity/PDI scoring and interactive replay.
+- **Robot links:** link2–link7 segmentation, link5 guard/refinement, link7 persistent masks, orchestration of shared MegaSAM/CoTracker, rigidity/PDI scoring and interactive replay. Link2/Link5 also have the parallel MoSE3 tracking path (`robot/workflows/mose3`, `robot/scoring/mose3`, `robot/replay/mose3`).
 - **Objects:** grounding and object masks, saved object-track consumers, occlusion, visible-pixel mapping, crop selection/normalization, AnomalyDINO scoring and replay/gallery export.
 - **Shared:** actual reused model adapters, numerical routines, archive contracts, reference localization and replay infrastructure. Similar-looking DINO implementations retain separate identities until an intentional equivalence review.
 - **Experiments:** link5 Simple3D, link7 TAPIP3D, link7 depth filtering and tracker/filter comparisons, object rigidity and object Simple3D. Shared Simple3D code has one implementation; per-track outputs are physically pipeline-owned.

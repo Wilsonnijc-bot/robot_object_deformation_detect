@@ -181,6 +181,32 @@
           "opencv-python-headless"
         ]
       }
+    },
+    "mose3": {
+      "python": "3.10",
+      "cuda": "12.6",
+      "packages": {
+        "torch": "==2.6.0",
+        "numpy": "==1.26.4",
+        "opencv-python-headless": "==4.11.0.86",
+        "imageio": "",
+        "imageio-ffmpeg": "",
+        "safetensors": "",
+        "huggingface-hub": "",
+        "psutil": ""
+      },
+      "modules": [
+        "mose3"
+      ],
+      "source": [
+        "infrastructure/deployment/eris/prepare_environment.sh",
+        "robot/workflows/mose3/worker.py"
+      ],
+      "notes": [
+        "MoSE3 source c39ef00f7198515d709f40c668688d4f869255ae (infrastructure/vendor/MoSE3) on PYTHONPATH; no CUDA extension.",
+        "Weights mose3-tracker/MoSE3 revision 5280ca2ea4c8cf41ac174645fd3aada430af7f40, CC BY-NC 4.0 (include pi3).",
+        "Upstream tested Torch 2.6.0 with CUDA 12.6; keep separate from the CUDA 11.8 geometry profile."
+      ]
     }
   }
 }
