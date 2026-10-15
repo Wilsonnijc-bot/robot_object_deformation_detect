@@ -1,0 +1,1 @@
+The robotic arm grasps the top drawer handle and pulls the drawer open, then picks up the red apple, places it inside the open drawer, and pushes the drawer closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,0 +1,51 @@
+{
+  "dataset": "ActionNet",
+  "episode_id": "01JHF8YGPVVKAXY7FK",
+  "variant": "full_sequence",
+  "view": "top",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_video": "../../original/top/rgb.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "encoding": "original_bytes_copied",
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 421,
+  "frame_count": 421,
+  "fps_rational": "30/1",
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "duration_seconds": 14.033333,
+  "codec": "h264",
+  "video_sha256": "2d127703ef58dd2164440fbf2720d8c548f576ab3a2b8f309f0a0eef01b6cc76",
+  "first_frame_sha256": "c139e540078ccfd74037d352fc07353c03f361a2d6684fc5f4e481322f26ab67",
+  "source_annotation": {
+    "id": "01JHF8YGPVVKAXY7FK",
+    "prompt": "Take the croissant and put it on the second shelf",
+    "task": "shelf",
+    "machine_id": "T1"
+  },
+  "validation": {
+    "source_and_generation_bytes_identical": true,
+    "full_sequence_retained": true
+  },
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_status": "complete",
+  "generation_prompt": "The robot uses the hand entering from the lower-right edge to close its fingers and thumb around the croissant-shaped pastry on the checkered tablecloth and lift it. It carries the pastry to the white stacked shelf, slides it into the middle shelf compartment, and opens its hand to release it there, then withdraws, leaving the pastry resting on the middle shelf. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "1280x704",
+    "upscale_factor": 1.0,
+    "sharpness": 363.5,
+    "threshold": 60,
+    "result": "pass"
+  }
+}

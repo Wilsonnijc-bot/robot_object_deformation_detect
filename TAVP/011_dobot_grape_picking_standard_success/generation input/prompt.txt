@@ -1,1 +1,0 @@
-The robotic arm picks up the bunch of purple grapes and places it on the green plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

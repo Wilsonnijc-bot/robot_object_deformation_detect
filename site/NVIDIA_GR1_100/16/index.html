@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 16 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 16</p>
+<h1>Video 16</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot keeps the brown paper bag open with its left hand while its right hand grasps the red tomato from the upper black tray and lifts it clear. As the right hand carries the tomato to the opening, the left hand raises the side of the bag it holds. The right hand lowers the tomato below the rim and opens inside the bag while the left hand maintains its hold. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up red tomato from upper black tray of plastic shelf to inside of brown paper bag.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 803.8 vs threshold 60">Pass<b>804</b></span><p>Sharpness <b>803.8</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/16">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/16/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/16/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/16/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;A forward-facing view shows paired forearms over the table. The left fingers are already curled at one upper side of the open brown paper bag, with a loop handle visible below the palm and the other handle free on the near wall. The right hand is open beside the shelf; a single red spherical tomato rests in the upper black tray.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 18,
+      &quot;action&quot;: &quot;The left fingers are curled at one upper side of the bag mouth; the bag is open and its opposite handle is free. The right hand is open beside the shelf.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 19,
+      &quot;end_frame&quot;: 50,
+      &quot;action&quot;: &quot;The right hand moves open toward the tomato. The left hand preserves its closed hold at the bag mouth with no visible release or regrasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 51,
+      &quot;end_frame&quot;: 76,
+      &quot;action&quot;: &quot;The right thumb and opposing fingers close around the tomato while it remains in the black tray; the left hold remains unchanged.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 77,
+      &quot;end_frame&quot;: 83,
+      &quot;action&quot;: &quot;The right hand lifts the tomato clear of the tray, bearing the fruit alone.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 84,
+      &quot;end_frame&quot;: 95,
+      &quot;action&quot;: &quot;The right hand carries the tomato toward the bag. Simultaneously the left hand raises its held side, and the bag wall and adjacent handle move upward with it, widening access to the mouth; no left regrasp is visible.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 96,
+      &quot;end_frame&quot;: 103,
+      &quot;action&quot;: &quot;The right hand brings the tomato over the opening and lowers it below the upper rim. At frames 100 and 102 the tomato remains enclosed by the fingers below the rim; the left hand keeps its raised hold.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 104,
+      &quot;end_frame&quot;: 114,
+      &quot;action&quot;: &quot;The tomato and most right-finger contact are hidden in the bag interior. The right wrist remains within the mouth while the left keeps the bag side raised.&quot;,
+      &quot;confidence&quot;: &quot;high for positions; occluded fruit contact&quot;
+    },
+    {
+      &quot;start_frame&quot;: 115,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;The right fingers progressively open inside the mouth; at 118 and 119 they are visibly spread and empty. The left fingers stay closed at the same upper side of the bag and the right hand has not fully withdrawn.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;left_hand&quot;: &quot;Maintains a closed hold at one upper side of the bag mouth from the start, raises that side during right-hand transport, then holds it raised throughout insertion and right-finger opening. No release or regrasp is visible.&quot;,
+    &quot;right_hand&quot;: &quot;Closes thumb and opposing fingers around the tomato, bears it alone during lift and transport, lowers it below the bag rim, then opens its fingers inside the mouth.&quot;,
+    &quot;coordination&quot;: &quot;Left support precedes the right grasp. The left side rises while the right carries the fruit; it remains held while the right lowers and opens. The left never receives or touches the fruit, and there is no hand-to-hand transfer.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;description&quot;: &quot;The forward-facing generation view looks outward between paired robot forearms entering from the lower left and lower right. The hand on the robot right enters from lower right and reaches the shelf; the opposite forearm enters from lower left and holds the bag. This paired egocentric arm arrangement establishes robot-relative right and left, rather than a front-facing mirror convention.&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;limitation&quot;: &quot;The shoulders and central torso are outside the source image, so attachment to the shoulders is not directly visible.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;The upper tray is empty; the left hand retains its raised hold on one side of the bag mouth. The right hand remains inside the opening with fingers visibly spread and empty. The tomato is hidden below the rim; its exact resting location and contact with the bag bottom are not visible.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The left palm and curled fingers occlude the exact grasp interface. The grip is at the upper bag-mouth side, and an adjacent loop handle is visible below the palm; the images do not establish whether paper alone, handle alone, or both are caught. The prompt therefore names the held side rather than asserting a handle grip.&quot;,
+    &quot;The bag wall and hands hide the exact tomato separation and final resting location, including contact with the bag bottom. Insertion and empty spread right fingers at the ending are visible.&quot;,
+    &quot;Shoulder attachments are outside the forward-facing view; anatomical sides are grounded in the paired egocentric arm arrangement.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    46,
+    48,
+    52,
+    66,
+    72,
+    74,
+    78,
+    82,
+    84,
+    88,
+    92,
+    96,
+    98,
+    100,
+    102,
+    104,
+    106,
+    108,
+    110,
+    112,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;uncertain&quot;,
+  &quot;outcome_basis&quot;: &quot;Pickup and insertion below the rim are visible, as is subsequent right-finger opening with no visible tomato between the fingers. Placement in the bag is consistent with this evidence, but the exact release and final resting location are occluded, so fully settled placement is not directly confirmed.&quot;,
+  &quot;inspection_coverage&quot;: &quot;Second review visually revisited the entire 60-sample sheet_001.jpg and source initial PNG, and inspected native frames 0, 46, 52, 66, 74, 78, 82, 88, 92, 96, 100, 102, 104, 108, 110, 114, 116, 118, 119. First-review native inspections remain recorded; temporary unresized crops of the left contact at frames 0, 88, 92, 104 and 119 were also viewed.&quot;,
+  &quot;video_id&quot;: &quot;16&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_16&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/16/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    0,
+    46,
+    48,
+    52,
+    66,
+    72,
+    74,
+    78,
+    82,
+    84,
+    88,
+    92,
+    96,
+    98,
+    100,
+    102,
+    104,
+    106,
+    108,
+    110,
+    112,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot keeps the brown paper bag open with its left hand while its right hand grasps the red tomato from the upper black tray and lifts it clear. As the right hand carries the tomato to the opening, the left hand raises the side of the bag it holds. The right hand lowers the tomato below the rim and opens inside the bag while the left hand maintains its hold. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up red tomato from upper black tray of plastic shelf to inside of brown paper bag.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;5f6e71c140e5bc92800e636f3db3aec64fda500e011b95d5dce18006af399a65&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T19:06:43.583094+00:00&quot;,
+  &quot;bimanual_second_review&quot;: {
+    &quot;completed&quot;: true,
+    &quot;method&quot;: &quot;Separate per-hand contact tracing at native resolution with close temporal comparisons, full contact-sheet revisit, and native source initial PNG.&quot;,
+    &quot;reviewed_contact_sheets&quot;: [
+      &quot;sheet_001.jpg&quot;
+    ],
+    &quot;native_frames_viewed&quot;: [
+      0,
+      46,
+      52,
+      66,
+      74,
+      78,
+      82,
+      88,
+      92,
+      96,
+      100,
+      102,
+      104,
+      108,
+      110,
+      114,
+      116,
+      118,
+      119
+    ],
+    &quot;unresized_contact_crops_viewed&quot;: [
+      0,
+      88,
+      92,
+      104,
+      119
+    ],
+    &quot;contact_chronology&quot;: {
+      &quot;left&quot;: [
+        {
+          &quot;frames&quot;: [
+            0,
+            83
+          ],
+          &quot;contact&quot;: &quot;Closed hold already established at the upper mouth-side; exact paper/handle interface hidden.&quot;,
+          &quot;evidence&quot;: [
+            0,
+            46,
+            52,
+            66,
+            74,
+            78,
+            82
+          ]
+        },
+        {
+          &quot;frames&quot;: [
+            84,
+            103
+          ],
+          &quot;contact&quot;: &quot;Same closed grip maintained while side wall and adjacent loop rise together with the hand. No open-hand interval or regrasp visible.&quot;,
+          &quot;evidence&quot;: [
+            88,
+            92,
+            96,
+            100,
+            102
+          ]
+        },
+        {
+          &quot;frames&quot;: [
+            104,
+            119
+          ],
+          &quot;contact&quot;: &quot;Continued raised hold, fingers still curled; no left release.&quot;,
+          &quot;evidence&quot;: [
+            104,
+            108,
+            110,
+            114,
+            116,
+            118,
+            119
+          ]
+        }
+      ],
+      &quot;right&quot;: [
+        {
+          &quot;frames&quot;: [
+            0,
+            50
+          ],
+          &quot;contact&quot;: &quot;Open, no fruit contact initially; approaches upper tray.&quot;,
+          &quot;evidence&quot;: [
+            0,
+            46
+          ]
+        },
+        {
+          &quot;frames&quot;: [
+            51,
+            76
+          ],
+          &quot;contact&quot;: &quot;Thumb/opposing fingers surround tomato, then close on it in tray.&quot;,
+          &quot;evidence&quot;: [
+            52,
+            66,
+            74
+          ]
+        },
+        {
+          &quot;frames&quot;: [
+            77,
+            95
+          ],
+          &quot;contact&quot;: &quot;Closed grip bears fruit clear of tray and during transport.&quot;,
+          &quot;evidence&quot;: [
+            78,
+            82,
+            88,
+            92
+          ]
+        },
+        {
+          &quot;frames&quot;: [
+            96,
+            103
+          ],
+          &quot;contact&quot;: &quot;Maintains fruit grip while lowering through bag mouth; fruit still visible below rim.&quot;,
+          &quot;evidence&quot;: [
+            96,
+            100,
+            102
+          ]
+        },
+        {
+          &quot;frames&quot;: [
+            104,
+            114
+          ],
+          &quot;contact&quot;: &quot;Fruit-finger interface occluded in interior; contact with bottom cannot be established.&quot;,
+          &quot;evidence&quot;: [
+            104,
+            108,
+            110,
+            114
+          ]
+        },
+        {
+          &quot;frames&quot;: [
+            115,
+            119
+          ],
+          &quot;contact&quot;: &quot;Fingers open progressively, visibly spread and empty at final frames; exact fruit separation hidden.&quot;,
+          &quot;evidence&quot;: [
+            116,
+            118,
+            119
+          ]
+        }
+      ]
+    },
+    &quot;support_evidence&quot;: &quot;The left-held bag side and attached loop rise with the still-curled left fingers while the opposite handle stays free. This coupled motion establishes load-bearing contact beyond proximity, while the exact interface remains hidden.&quot;,
+    &quot;changes_from_first_review&quot;: [
+      &quot;Added left-hand raising during transport and sustained hold to the prompt.&quot;,
+      &quot;Replaced overly early right-opening interval with native-evidenced late opening, and documented occluded contact interval.&quot;,
+      &quot;Changed execution status to uncertain because exact release/settled placement is not directly visible.&quot;,
+      &quot;Recorded left rim-versus-handle grasp ambiguity explicitly.&quot;
+    ]
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/15/index.html">← Video 15</a><a rel="next" href="../../NVIDIA_GR1_100/17/index.html">Video 17 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compress plastic bag · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · deformable-6__compress_plastic_bag</p>
+<h1>Compress plastic bag</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 427 frames · 14.34 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid brings its right hand against the far side of the black-and-red plastic bag and its left hand against the near side, then moves both hands inward to gather and squeeze the material while the bag rests on the table. The left hand moves clear as the right briefly raises the far side and releases it. Both hands withdraw, leaving the bag loosely crumpled on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Compressing a plastic bag to reduce volume, demonstrating manipulation of thin, flexible materials and air displacement techniques.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 522.8 vs threshold 120">Pass<b>523</b></span><p>Sharpness <b>522.8</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>427</dd><dt>Frame rate</dt><dd>29.78 fps</dd><dt>Duration</dt><dd>14.34 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 214,
+  &quot;initial_scene&quot;: &quot;Humanoid standing beside a white table, facing the black plastic bag with a broad red opening/inner panel. The bag lies broad and puffed on the table. Both hands initially hang below the tabletop.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval&quot;: [
+        0,
+        46
+      ],
+      &quot;action&quot;: &quot;Robot stands beside untouched bag, hands lowered.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        47,
+        143
+      ],
+      &quot;action&quot;: &quot;Left arm rises first, followed by the far right arm, both open hands extending toward opposite bag sides; body remains stationary.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        144,
+        195
+      ],
+      &quot;action&quot;: &quot;Left: Descends open to the tabletop in front of the near bag edge; a visible gap/clear space remains, so no stabilizing hold is assigned. Right: Descends toward the far black bag edge; fingers straddle or contact its outer side by native 192–196. Support: Table supports the entire bag.&quot;,
+      &quot;confidence&quot;: &quot;High for hand locations; medium for precise first right contact.&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        196,
+        223
+      ],
+      &quot;action&quot;: &quot;Left: Moves inward from outside the near side; upper finger/hand contacts the black/red boundary region by 208–216, with the contact surface partly hidden. Right: Remains at the far black side and moves inward toward the other hand, gathering a black fold. Support: Broad red opening remains on the table while side material creases and rises.&quot;,
+      &quot;confidence&quot;: &quot;High for convergence and deformation; medium for exact pinch/contact onset.&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        224,
+        295
+      ],
+      &quot;action&quot;: &quot;Left: Continues actively moving the near side inward toward the right hand. Near red/black side lies against the hand/tips; this is active gathering rather than a stationary stabilizer. Right: Gathering contact at the far black side continues as both hands converge around the bag section nearest the robot. Support: Central black surface rises into a mound, red near panel narrows and wrinkles, and the rest remains supported on the table. No full-bag lift occurs.&quot;,
+      &quot;confidence&quot;: &quot;High for both-hand gathering; medium for pinching versus pressing because opaque hands and film folds hide interfaces.&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        296,
+        307
+      ],
+      &quot;action&quot;: &quot;Left: Opens/separates outward and downward from the near side; by 304 there is a clear open gap below the loosened near edge. Right: Keeps the far black section engaged while beginning to raise it slightly and move it outward. Support: Table supports most of the bag; right hand bears only a raised side section as left contact disengages.&quot;,
+      &quot;confidence&quot;: &quot;High for left clearing earlier and right-side material following the right hand; medium for exact left last-contact frame.&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        308,
+        329
+      ],
+      &quot;action&quot;: &quot;Left: Open below and clear of the near side, then begins raising clear. No new grasp or supporting contact is visible. Right: Briefly retains the far black side above the tabletop while separating outward; bag film remains drawn to the hand at 308/312/320/324, then starts settling at 328. Support: Whole bag remains table-supported apart from the temporarily raised far side.&quot;,
+      &quot;confidence&quot;: &quot;High for raised-side retention; medium for exact last pinch frame.&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        330,
+        344
+      ],
+      &quot;action&quot;: &quot;Left: Open and raised away from the near side. Right: Opens and clears the far side; native 332/336 show visible free fingertips and separation from the settling black panel. Support: Bag spreads and settles onto the table in a loose raised/wrinkled shape.&quot;,
+      &quot;confidence&quot;: &quot;High for release and both hands clear.&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        345,
+        426
+      ],
+      &quot;action&quot;: &quot;Left: Withdraws toward torso and remains open, clear of bag. Right: Withdraws with left hand and remains clear. Support: Bag remains on table, loose and still puffy.&quot;,
+      &quot;confidence&quot;: &quot;High.&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;left&quot;: &quot;Near-camera anatomical left arm actively gathers the near black/red side inward in coordination with the right. It is not a stationary stabilizer. Left hand opens and clears below the near side during separation, before the far-side material is released by the right, then withdraws.&quot;,
+    &quot;right&quot;: &quot;Far-camera anatomical right arm contacts the far black side slightly earlier, gathers that side inward with the left, then briefly bears/raises the far-side section after the left clears. It opens and releases that section back to the table before withdrawing.&quot;,
+    &quot;coordination&quot;: &quot;Both hands contact separate side regions near the bag end closest to the robot, converge to bunch/squeeze the film, then separate. Left clears first while right briefly retains a raised section, then right releases. The table supports the bulk throughout; no transfer, full-bag lift, regrasp, person interaction or locomotion is visible.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;convention&quot;: &quot;Robot-relative anatomical sides, independent of image left/right.&quot;,
+    &quot;evidence&quot;: &quot;In the source initial PNG and native frames, cyan front face profile and front torso point toward image left; rear backpack/straps are behind the torso toward image right. Camera views the robot from its left side: prominent near shoulder and its continuous upper-arm/elbow/wrist chain are the left arm. The opposite arm appears beyond the front torso and is the right arm. Native 100/144/158 and later withdrawal frames expose both attachments and preserve the same mapping.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;
+  },
+  &quot;terminal_state&quot;: &quot;Both hands are open and clear. The black/red bag lies loosely crumpled on the table with red panel exposed and black upper surface still raised/puffy; no sealed closure or lasting tight compression is visible.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Exact film pinch surfaces and the first/last contact frames are partly hidden by opaque hands and bag folds. Contact/gather wording describes visible film deformation and hand-relative motion without asserting a secure rim grasp.&quot;,
+    &quot;The side regions can be identified as near black/red and far black material, but a specific rim, seam, handle or bag layer being pinched cannot be established.&quot;,
+    &quot;Air displacement and lasting volume reduction cannot be confirmed. The released bag spreads again and retains a raised/puffy profile.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [
+    &quot;Original instruction describes reducing volume and air displacement. Visible evidence supports gathering/bunching and release, but does not establish lasting volume reduction or measurable air displacement.&quot;
+  ],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    100,
+    144,
+    158,
+    184,
+    190,
+    192,
+    196,
+    200,
+    204,
+    208,
+    210,
+    216,
+    218,
+    224,
+    228,
+    232,
+    236,
+    240,
+    248,
+    254,
+    280,
+    296,
+    300,
+    304,
+    308,
+    310,
+    312,
+    318,
+    320,
+    324,
+    328,
+    330,
+    332,
+    336,
+    342,
+    344,
+    366,
+    388,
+    426
+  ],
+  &quot;selected_execution_status&quot;: &quot;uncertain&quot;,
+  &quot;execution_status_rationale&quot;: &quot;The gathering and release are complete, but success of the source objective of reducing bag volume is not visually established.&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;source_frames&quot;: [
+      0,
+      426
+    ],
+    &quot;all_returned_contact_sheets_visually_viewed&quot;: true,
+    &quot;native_initial_png_viewed&quot;: true,
+    &quot;native_transition_and_terminal_images_visually_viewed&quot;: true,
+    &quot;full_sequence_retained&quot;: true
+  },
+  &quot;video_id&quot;: &quot;deformable-6&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_deformable_6&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/deformable-6__compress_plastic_bag/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 427,
+  &quot;source_fps&quot;: 29.780309194467048,
+  &quot;native_detail_frames&quot;: [
+    0,
+    100,
+    144,
+    158,
+    184,
+    190,
+    192,
+    196,
+    200,
+    204,
+    208,
+    210,
+    216,
+    218,
+    224,
+    228,
+    232,
+    236,
+    240,
+    248,
+    254,
+    280,
+    296,
+    300,
+    304,
+    308,
+    310,
+    312,
+    318,
+    320,
+    324,
+    328,
+    330,
+    332,
+    336,
+    342,
+    344,
+    366,
+    388,
+    426
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid brings its right hand against the far side of the black-and-red plastic bag and its left hand against the near side, then moves both hands inward to gather and squeeze the material while the bag rests on the table. The left hand moves clear as the right briefly raises the far side and releases it. Both hands withdraw, leaving the bag loosely crumpled on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Compressing a plastic bag to reduce volume, demonstrating manipulation of thin, flexible materials and air displacement techniques.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 427,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;cb2b942b10ca3f13003f044139c19f76ef4e72dcc06e9a363fca2bc4e1103662&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T19:04:10.782367+00:00&quot;,
+  &quot;bimanual_second_review&quot;: {
+    &quot;completed_at&quot;: &quot;2026-10-13T19:04:10.639003+00:00&quot;,
+    &quot;review_scope&quot;: &quot;Same dedicated source video only; complete four contact sheets re-viewed, source initial PNG re-viewed, native temporal details traced per hand.&quot;,
+    &quot;reviewed_contact_sheets&quot;: [
+      &quot;sheet_001.jpg&quot;,
+      &quot;sheet_002.jpg&quot;,
+      &quot;sheet_003.jpg&quot;,
+      &quot;sheet_004.jpg&quot;
+    ],
+    &quot;native_frames_viewed_this_pass&quot;: [
+      184,
+      192,
+      196,
+      200,
+      204,
+      208,
+      216,
+      224,
+      232,
+      240,
+      248,
+      280,
+      296,
+      300,
+      304,
+      308,
+      312,
+      320,
+      324,
+      328,
+      332,
+      336,
+      344,
+      426
+    ],
+    &quot;contact_chronology&quot;: [
+      {
+        &quot;source_frame_interval&quot;: [
+          144,
+          195
+        ],
+        &quot;left_hand&quot;: &quot;Descends open to the tabletop in front of the near bag edge; a visible gap/clear space remains, so no stabilizing hold is assigned.&quot;,
+        &quot;right_hand&quot;: &quot;Descends toward the far black bag edge; fingers straddle or contact its outer side by native 192–196.&quot;,
+        &quot;object_support&quot;: &quot;Table supports the entire bag.&quot;,
+        &quot;evidence_frames&quot;: [
+          184,
+          192,
+          196
+        ],
+        &quot;confidence&quot;: &quot;High for hand locations; medium for precise first right contact.&quot;
+      },
+      {
+        &quot;source_frame_interval&quot;: [
+          196,
+          223
+        ],
+        &quot;left_hand&quot;: &quot;Moves inward from outside the near side; upper finger/hand contacts the black/red boundary region by 208–216, with the contact surface partly hidden.&quot;,
+        &quot;right_hand&quot;: &quot;Remains at the far black side and moves inward toward the other hand, gathering a black fold.&quot;,
+        &quot;object_support&quot;: &quot;Broad red opening remains on the table while side material creases and rises.&quot;,
+        &quot;evidence_frames&quot;: [
+          196,
+          200,
+          204,
+          208,
+          216
+        ],
+        &quot;confidence&quot;: &quot;High for convergence and deformation; medium for exact pinch/contact onset.&quot;
+      },
+      {
+        &quot;source_frame_interval&quot;: [
+          224,
+          295
+        ],
+        &quot;left_hand&quot;: &quot;Continues actively moving the near side inward toward the right hand. Near red/black side lies against the hand/tips; this is active gathering rather than a stationary stabilizer.&quot;,
+        &quot;right_hand&quot;: &quot;Gathering contact at the far black side continues as both hands converge around the bag section nearest the robot.&quot;,
+        &quot;object_support&quot;: &quot;Central black surface rises into a mound, red near panel narrows and wrinkles, and the rest remains supported on the table. No full-bag lift occurs.&quot;,
+        &quot;evidence_frames&quot;: [
+          224,
+          232,
+          240,
+          248,
+          280
+        ],
+        &quot;confidence&quot;: &quot;High for both-hand gathering; medium for pinching versus pressing because opaque hands and film folds hide interfaces.&quot;
+      },
+      {
+        &quot;source_frame_interval&quot;: [
+          296,
+          307
+        ],
+        &quot;left_hand&quot;: &quot;Opens/separates outward and downward from the near side; by 304 there is a clear open gap below the loosened near edge.&quot;,
+        &quot;right_hand&quot;: &quot;Keeps the far black section engaged while beginning to raise it slightly and move it outward.&quot;,
+        &quot;object_support&quot;: &quot;Table supports most of the bag; right hand bears only a raised side section as left contact disengages.&quot;,
+        &quot;evidence_frames&quot;: [
+          296,
+          300,
+          304
+        ],
+        &quot;confidence&quot;: &quot;High for left clearing earlier and right-side material following the right hand; medium for exact left last-contact frame.&quot;
+      },
+      {
+        &quot;source_frame_interval&quot;: [
+          308,
+          329
+        ],
+        &quot;left_hand&quot;: &quot;Open below and clear of the near side, then begins raising clear. No new grasp or supporting contact is visible.&quot;,
+        &quot;right_hand&quot;: &quot;Briefly retains the far black side above the tabletop while separating outward; bag film remains drawn to the hand at 308/312/320/324, then starts settling at 328.&quot;,
+        &quot;object_support&quot;: &quot;Whole bag remains table-supported apart from the temporarily raised far side.&quot;,
+        &quot;evidence_frames&quot;: [
+          308,
+          312,
+          320,
+          324,
+          328
+        ],
+        &quot;confidence&quot;: &quot;High for raised-side retention; medium for exact last pinch frame.&quot;
+      },
+      {
+        &quot;source_frame_interval&quot;: [
+          330,
+          344
+        ],
+        &quot;left_hand&quot;: &quot;Open and raised away from the near side.&quot;,
+        &quot;right_hand&quot;: &quot;Opens and clears the far side; native 332/336 show visible free fingertips and separation from the settling black panel.&quot;,
+        &quot;object_support&quot;: &quot;Bag spreads and settles onto the table in a loose raised/wrinkled shape.&quot;,
+        &quot;evidence_frames&quot;: [
+          332,
+          336,
+          344
+        ],
+        &quot;confidence&quot;: &quot;High for release and both hands clear.&quot;
+      },
+      {
+        &quot;source_frame_interval&quot;: [
+          345,
+          426
+        ],
+        &quot;left_hand&quot;: &quot;Withdraws toward torso and remains open, clear of bag.&quot;,
+        &quot;right_hand&quot;: &quot;Withdraws with left hand and remains clear.&quot;,
+        &quot;object_support&quot;: &quot;Bag remains on table, loose and still puffy.&quot;,
+        &quot;evidence_frames&quot;: [
+          426
+        ],
+        &quot;confidence&quot;: &quot;High.&quot;
+      }
+    ],
+    &quot;landmark_comparisons&quot;: &quot;Near red/black boundary advances into the left hand as the near hand translates inward; far black corner follows the right hand inward. White logo becomes more upright and central black panel rises as opposite sides converge. During separation the near red edge settles away from the open left hand while the far black corner remains drawn upward to the right hand, then detaches by 332–336 and settles. Deformation occurs within the film, not rigid whole-object rotation or a hinge/mechanism.&quot;,
+    &quot;prior_claims_corrected&quot;: [
+      &quot;Replaced stationary left holding versus right-only gathering with active inward gathering by both hands.&quot;,
+      &quot;Replaced simultaneous release with left clearing followed by right retaining/raising and releasing the far-side section.&quot;,
+      &quot;Avoided specific rim grasps because pinch surfaces are occluded.&quot;
+    ],
+    &quot;anatomical_mapping&quot;: &quot;Near-camera left arm and far-camera right arm retain the initial/body-attachment mapping established in the first review.&quot;,
+    &quot;uncertainties&quot;: [
+      &quot;Exact film pinch surfaces and the first/last contact frames are partly hidden by opaque hands and bag folds. Contact/gather wording describes visible film deformation and hand-relative motion without asserting a secure rim grasp.&quot;,
+      &quot;The side regions can be identified as near black/red and far black material, but a specific rim, seam, handle or bag layer being pinched cannot be established.&quot;,
+      &quot;Air displacement and lasting volume reduction cannot be confirmed. The released bag spreads again and retains a raised/puffy profile.&quot;
+    ],
+    &quot;media_policy&quot;: &quot;All 427 source frames retained; original media bytes unchanged.&quot;
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/deformable-3__fold_jacket_on_desk/index.html">← Fold jacket on desk</a><a rel="next" href="../../Humanoid_Everyday/high-precision-4__place_kettle_on_base/index.html">Place kettle on base →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

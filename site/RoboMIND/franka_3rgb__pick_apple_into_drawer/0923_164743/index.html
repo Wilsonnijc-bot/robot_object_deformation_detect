@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pick apple into drawer · RoboMIND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../../RoboMIND/index.html">RoboMIND</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">RoboMIND · franka_3rgb__pick_apple_into_drawer/0923_164743</p>
+<h1>Pick apple into drawer</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 210 frames · 7 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+<figure class="media media--secondary"><video controls playsinline preload="none" poster="frame.jpg" src="full.mp4"></video>
+<figcaption>Complete source video. The generation input above is its first 210 frames.</figcaption></figure>
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robotic arm grasps the handle of the top drawer, pulls the drawer open, then releases the handle and lifts clear. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Full-sequence prompt</h2><p>The robotic arm grasps the top drawer handle and pulls the drawer open, then picks up the red apple, places it inside the open drawer, and pushes the drawer closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--fail" title="Sharpness 27.3 vs threshold 120">Fail<b>27</b></span><p>Sharpness <b>27.3</b> against 120
+(third-person). Measured on the 960 × 704 model view,
+upscale 1.50×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>210</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>7 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>first complete manipulation</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164743">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164743/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164743/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164743/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;concise_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;x-humanoid-robomind/RoboMIND&quot;,
+  &quot;task&quot;: &quot;pick_apple_into_drawer&quot;,
+  &quot;episode_id&quot;: &quot;0923_164743&quot;,
+  &quot;source_video&quot;: &quot;../../original/data/trajectory.hdf5&quot;,
+  &quot;generation_camera&quot;: &quot;camera_right&quot;,
+  &quot;source_frame_count&quot;: 600,
+  &quot;source_resolution&quot;: [
+    640,
+    480
+  ],
+  &quot;source_fps&quot;: null,
+  &quot;source_fps_note&quot;: &quot;FPS is not recorded in the source HDF5; 30 FPS is only a nominal playback rate, so no real-time durations are claimed.&quot;,
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 210,
+  &quot;selected_frame_count&quot;: 210,
+  &quot;selection_reason&quot;: &quot;The episode contains three independent subtasks (open the top drawer, move the apple into the drawer, push the drawer closed). The first complete meaningful manipulation is opening the top drawer: the gripper closes on the handle, pulls the drawer out, opens to release the handle (gripper telemetry falls from 0.83 at frame 180 to about 0.08 at frame 200) and lifts off it. The selection ends at frame 209, a few frames after the release and before the arm base swings toward the apple (joint 0 starts changing at about frame 205-210; the descent toward the apple is visible from about frame 216). The apple is untouched on the table throughout.&quot;,
+  &quot;usable_prompt&quot;: &quot;The robotic arm grasps the handle of the top drawer, pulls the drawer open, then releases the handle and lifts clear. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;full_sequence_prompt&quot;: &quot;The robotic arm grasps the top drawer handle and pulls the drawer open, then picks up the red apple, places it inside the open drawer, and pushes the drawer closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;selected_action_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;description&quot;: &quot;The top drawer starts closed (frames 0-136), the gripper holds its handle (closing at about frames 100-130), the drawer is pulled out toward the camera and image left (about frames 138-170) to a partly open position that then stays constant, the gripper opens (about frames 185-200) and lifts off the handle (about 196-209). The drawer remains open and empty; the apple is untouched on the table through frame 209. The gripper is still close to the open drawer&#x27;s front edge at frame 209, not far away.&quot;
+  },
+  &quot;source_overall_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;source_quality_label&quot;: null,
+    &quot;description&quot;: &quot;After opening the drawer, the arm swings to the apple (about frames 210-250), lowers over it and closes the gripper (telemetry about 0.1 from frame 290), lifts and carries it (about 300-360), lowers it into the open drawer and releases it (apple resting in the drawer by about frame 392-396), withdraws up and left, returns to the handle (about 430-470) and pushes the drawer closed (closed by about frame 486-490). The gripper then opens (telemetry falls from about frame 540) and the arm withdraws to near its start pose by about frame 560-599. The apple is no longer visible at the end; it is inferred to remain in the closed drawer because it was seen in the drawer until closure and never seen leaving.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;visible_description&quot;: &quot;Single Franka Emika Panda arm with a parallel-jaw gripper; its base is off-frame to image left and the arm enters from the left edge in the camera_right view, reaching toward the drawer cabinet on the right. Only one arm exists.&quot;,
+    &quot;source_annotation&quot;: &quot;No publisher language instruction (task_prompt.txt) exists for this episode; the task name comes only from the folder name.&quot;,
+    &quot;visual_certainty&quot;: &quot;Not a humanoid or dual-arm robot; left/right anatomy is not needed. The prompts refer to the single visible robotic arm.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;active_visible_arm&quot;: &quot;Single arm grips the top drawer handle and pulls the drawer open, releases and lifts off; later picks up the apple, places it in the drawer and pushes the drawer closed.&quot;,
+    &quot;other_arm&quot;: &quot;None.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single arm acts alone; no second arm, hand transfer or human interaction.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        20
+      ],
+      &quot;observation&quot;: &quot;Arm held above the table at left of the wooden two-drawer cabinet with gripper open; red apple on the table at the bottom edge of the image; drawers closed.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        22,
+        60
+      ],
+      &quot;observation&quot;: &quot;Arm swings toward the cabinet; the gripper moves in front of the top drawer handle (blue wrist light visible from about frame 50).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        62,
+        100
+      ],
+      &quot;observation&quot;: &quot;Arm extends and the gripper reaches the top drawer handle; at frame 104 the gripper is at the handle with the drawer still closed.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        100,
+        130
+      ],
+      &quot;observation&quot;: &quot;Gripper closes on the handle (telemetry gripper value rises from 0.01 at frame 100 to 0.83 at frame 130); drawer still closed at frames 128 and 136.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        138,
+        170
+      ],
+      &quot;observation&quot;: &quot;Arm pulls back toward image left and the top drawer slides out toward the camera; clearly open at frame 144 and at its final extension by about frame 168-170.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        172,
+        184
+      ],
+      &quot;observation&quot;: &quot;Drawer stays open and static; the gripper still holds the handle.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        185,
+        209
+      ],
+      &quot;observation&quot;: &quot;Gripper value falls from 0.83 (frame 180) to about 0.08 (frame 200) as the fingers open; the gripper lifts off the handle (frames 190-206) while staying near the drawer front. Selected clip ends at frame 209, before the arm base swings toward the apple.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        210,
+        240
+      ],
+      &quot;observation&quot;: &quot;Arm swings left and down toward the apple on the table (frames 216-236 viewed).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        242,
+        288
+      ],
+      &quot;observation&quot;: &quot;Gripper lowers over the apple; telemetry gripper value rises to about 0.1 at frame 290, consistent with closing on the apple (frame 290 viewed: gripper at the apple).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        290,
+        360
+      ],
+      &quot;observation&quot;: &quot;Apple held in the gripper (frame 330 viewed), lifted and carried up and right to the open drawer.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        360,
+        392
+      ],
+      &quot;observation&quot;: &quot;Apple held over the open drawer and lowered into it (frame 388 viewed); gripper value falls to 0 at about frame 390.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        394,
+        430
+      ],
+      &quot;observation&quot;: &quot;Apple rests inside the open drawer (frame 396 viewed); gripper withdraws up and to the left.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        430,
+        470
+      ],
+      &quot;observation&quot;: &quot;Gripper returns to the front of the drawer near the handle and closes (telemetry 0.18 at 430, 0.99 from 450); apple still visible in the open drawer (frames 440, 476 viewed).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        472,
+        490
+      ],
+      &quot;observation&quot;: &quot;Arm pushes the drawer in; drawer closed by about frame 486-490 (frame 486 viewed: nearly closed), apple no longer visible.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        490,
+        540
+      ],
+      &quot;observation&quot;: &quot;Gripper stays at the closed drawer handle, then the arm begins to retract.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        540,
+        599
+      ],
+      &quot;observation&quot;: &quot;Gripper opens (telemetry falls from about 540 to 0 by 560); arm withdraws up and left and settles near the starting pose above the table; drawer closed, table clear.&quot;
+    }
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Whether the closed gripper holds the handle bar by pinching or hooking behind it is not resolvable at this resolution; the prompt uses &#x27;grasps the handle&#x27; based on the gripper telemetry rising and the drawer following the gripper.&quot;,
+    &quot;The boundary at frame 210 is a judgement: the gripper only gradually lifts off the handle (frames 190-206) and stays near the drawer front until about frame 216, while the arm base swing toward the apple starts at about frame 205-210; the selected clip ends at the start of that swing.&quot;,
+    &quot;The apple&#x27;s presence inside the closed drawer at the end is inferred (seen inside until closure, never seen leaving), not directly visible.&quot;,
+    &quot;FPS is not recorded in the source; frame indices are authoritative, not time.&quot;,
+    &quot;Gripper telemetry polarity (higher value = more closed) was inferred from video and used only as supporting evidence.&quot;
+  ],
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;There is no publisher language instruction for this episode; the task name &#x27;pick_apple_into_drawer&#x27; comes only from the folder name.&quot;,
+    &quot;The folder name describes picking the apple into the drawer, but the video also contains opening the drawer first and pushing it closed after placement. The selected shorter clip covers only the drawer opening; the full-sequence prompt covers all three phases.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;entire_sequence_reviewed&quot;: true,
+    &quot;sampled_decoded_frame_indices&quot;: [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240,
+      242,
+      244,
+      246,
+      248,
+      250,
+      252,
+      254,
+      256,
+      258,
+      260,
+      262,
+      264,
+      266,
+      268,
+      270,
+      272,
+      274,
+      276,
+      278,
+      280,
+      282,
+      284,
+      286,
+      288,
+      290,
+      292,
+      294,
+      296,
+      298,
+      300,
+      302,
+      304,
+      306,
+      308,
+      310,
+      312,
+      314,
+      316,
+      318,
+      320,
+      322,
+      324,
+      326,
+      328,
+      330,
+      332,
+      334,
+      336,
+      338,
+      340,
+      342,
+      344,
+      346,
+      348,
+      350,
+      352,
+      354,
+      356,
+      358,
+      360,
+      362,
+      364,
+      366,
+      368,
+      370,
+      372,
+      374,
+      376,
+      378,
+      380,
+      382,
+      384,
+      386,
+      388,
+      390,
+      392,
+      394,
+      396,
+      398,
+      400,
+      402,
+      404,
+      406,
+      408,
+      410,
+      412,
+      414,
+      416,
+      418,
+      420,
+      422,
+      424,
+      426,
+      428,
+      430,
+      432,
+      434,
+      436,
+      438,
+      440,
+      442,
+      444,
+      446,
+      448,
+      450,
+      452,
+      454,
+      456,
+      458,
+      460,
+      462,
+      464,
+      466,
+      468,
+      470,
+      472,
+      474,
+      476,
+      478,
+      480,
+      482,
+      484,
+      486,
+      488,
+      490,
+      492,
+      494,
+      496,
+      498,
+      500,
+      502,
+      504,
+      506,
+      508,
+      510,
+      512,
+      514,
+      516,
+      518,
+      520,
+      522,
+      524,
+      526,
+      528,
+      530,
+      532,
+      534,
+      536,
+      538,
+      540,
+      542,
+      544,
+      546,
+      548,
+      550,
+      552,
+      554,
+      556,
+      558,
+      560,
+      562,
+      564,
+      566,
+      568,
+      570,
+      572,
+      574,
+      576,
+      578,
+      580,
+      582,
+      584,
+      586,
+      588,
+      590,
+      592,
+      594,
+      596,
+      598
+    ],
+    &quot;sampling_method&quot;: &quot;Every second decoded frame of camera_right (frames 0-598) in sequential temporary contact sheets covering the complete 600-frame source, plus native-resolution crops/frames at the transitions and the boundary.&quot;,
+    &quot;native_resolution_frame_indices&quot;: [
+      104,
+      128,
+      136,
+      144,
+      168,
+      184,
+      188,
+      190,
+      192,
+      196,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      222,
+      228,
+      236,
+      290,
+      330,
+      388,
+      396,
+      440,
+      476,
+      486
+    ],
+    &quot;conditioning_png_inspected_after_sequence&quot;: true,
+    &quot;conditioning_png&quot;: &quot;../first_frame.png&quot;,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/rm_review_franka_3rgb__pick_apple_into_drawer_0923_164743 (not a dataset artifact)&quot;,
+    &quot;ancillary_camera_videos_used&quot;: false,
+    &quot;telemetry_used&quot;: &quot;puppet/joint_position (7 joints plus gripper column) sampled every 10 frames as supporting evidence only.&quot;
+  },
+  &quot;generation_reference_validation&quot;: {
+    &quot;source_frame_start&quot;: 0,
+    &quot;source_frame_end_exclusive&quot;: 210,
+    &quot;frame_count&quot;: 210,
+    &quot;lossless_source_frame_correspondence_passed&quot;: true,
+    &quot;original_source_hdf5_retained_unchanged&quot;: true
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../../RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164719/index.html">← Pick apple into drawer</a><a rel="next" href="../../../RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102324/index.html">Pick up strawberry in bowl →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

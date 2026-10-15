@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 71 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 71</p>
+<h1>Video 71</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid uses its right hand to grasp the tan potato near the front center of the table between its thumb and fingers, then lifts it. It carries the potato to the lower white shelf tray, lowers it inside, and opens its fingers to release it, with the right hand remaining above the potato. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up tan potato from center of table to lower white tray of plastic shelf.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 646.7 vs threshold 60">Pass<b>647</b></span><p>Sharpness <b>646.7</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/71">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/71/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/71/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/71/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-facing-table view shows both forearms and open dexterous hands extending from the lower corners. A tan oval potato lies near the front center of the white table, below a red round object and yellow elongated object. An empty lower white perforated shelf tray is to the robot’s right.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval&quot;: [
+        0,
+        28
+      ],
+      &quot;observation&quot;: &quot;Both hands are raised open; the potato remains on the tabletop. The left hand stays in this position throughout.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        29,
+        70
+      ],
+      &quot;observation&quot;: &quot;The right arm moves inward and down toward the tan potato, with thumb and fingers open on opposing sides. By frame 70 the fingers are alongside the potato.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        71,
+        84
+      ],
+      &quot;observation&quot;: &quot;The right thumb and fingers close around the potato; the potato is visibly secured between them by frame 82.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        85,
+        100
+      ],
+      &quot;observation&quot;: &quot;The right hand lifts the potato clear of the tabletop and carries it rightward toward the lower white tray.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        101,
+        113
+      ],
+      &quot;observation&quot;: &quot;The right hand transports the held potato over the lower white shelf tray and lowers it inside its perimeter.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        114,
+        119
+      ],
+      &quot;observation&quot;: &quot;The right fingers open; the potato moves downward inside the tray and remains beneath the open thumb/fingers at the ending. The right hand remains over it; a subsequent withdrawal is not shown.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Active throughout the manipulation: grasps the potato, lifts and transports it, lowers it inside the lower tray, and opens to release.&quot;,
+    &quot;left&quot;: &quot;Remains raised open beside the table; does not grasp, support, transfer, or contact the potato or shelf.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand manipulation. No hand-to-hand transfer or assisting contact; the visible person does not participate.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;evidence&quot;: &quot;The camera looks forward from behind/above the paired forearms toward the table. The active forearm enters from the robot’s right lower side. The mirrored thumb anatomy corroborates the assignment: the right-hand thumb projects inward toward image left, while the left-hand thumb projects inward toward image right in the source PNG. This agrees with the original right-hand annotation.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;uncertainty&quot;: &quot;Shoulder attachments and torso are outside the image, but paired forearm orientation and mirrored thumb anatomy establish the side.&quot;
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    54,
+    70,
+    82,
+    92,
+    108,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;contact_sheet_frames&quot;: &quot;Every second decoded frame, 0 through 118 inclusive, visually inspected in sheet_001.jpg.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      54,
+      70,
+      82,
+      92,
+      108,
+      114,
+      116,
+      118,
+      119
+    ],
+    &quot;initial_png_inspected_at_native_resolution&quot;: true,
+    &quot;final_frame_inspected_at_native_resolution&quot;: true
+  },
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;terminal_state&quot;: &quot;The potato has been released downward inside the lower white tray. The right hand is open above it and the left hand remains raised open. The fingers partly occlude the final potato/tray contact; later settling and hand withdrawal are not visible.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The open right thumb partly occludes the final potato/tray contact; the exact resting orientation and later settling after release are not visible.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;outcome&quot;: &quot;Observed grasp, transfer into the intended lower tray, and finger opening/release. Success refers to the visible transfer and release, without claiming later settling or withdrawal.&quot;,
+  &quot;video_id&quot;: &quot;71&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_71&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/71/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    54,
+    70,
+    82,
+    92,
+    108,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid uses its right hand to grasp the tan potato near the front center of the table between its thumb and fingers, then lifts it. It carries the potato to the lower white shelf tray, lowers it inside, and opens its fingers to release it, with the right hand remaining above the potato. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up tan potato from center of table to lower white tray of plastic shelf.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;86e35ef11daf2de8e4d8b5cd9bd65101fa912094cea736181d2acf2b3e2d4aac&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:29:22.778203+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/70/index.html">← Video 70</a><a rel="next" href="../../NVIDIA_GR1_100/72/index.html">Video 72 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franka fold towel standard success · TAVP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../TAVP/index.html">TAVP</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">TAVP · 002_franka_fold_towel_standard_success</p>
+<h1>Franka fold towel standard success</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 1396 frames · 46.53 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robotic arm grasps the towel&#x27;s left edge and folds the left half over the right half. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Fold the towel.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 131.6 vs threshold 120">Pass<b>132</b></span><p>Sharpness <b>131.6</b> against 120
+(third-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 720</dd><dt>Frames</dt><dd>1396</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>46.53 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/TAVP/002_franka_fold_towel_standard_success">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/TAVP/002_franka_fold_towel_standard_success/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/TAVP/002_franka_fold_towel_standard_success/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/TAVP/002_franka_fold_towel_standard_success/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;video_id&quot;: &quot;002&quot;,
+  &quot;review_method&quot;: &quot;Visual inspection of every second decoded frame across the entire MP4 plus native-resolution transition frames, followed by native initial PNG&quot;,
+  &quot;review_source_video&quot;: &quot;/Users/nijiachen/Downloads/Robotvideo/TAVP/002_franka_fold_towel_standard_success/original/video.mp4&quot;,
+  &quot;source_frame_count&quot;: 1396,
+  &quot;source_fps&quot;: 30.0,
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 698,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;,
+    &quot;sheet_005.jpg&quot;,
+    &quot;sheet_006.jpg&quot;,
+    &quot;sheet_007.jpg&quot;,
+    &quot;sheet_008.jpg&quot;,
+    &quot;sheet_009.jpg&quot;,
+    &quot;sheet_010.jpg&quot;,
+    &quot;sheet_011.jpg&quot;
+  ],
+  &quot;native_detail_frames&quot;: [
+    450,
+    600,
+    720,
+    760,
+    800,
+    850,
+    930,
+    970,
+    1020,
+    1080,
+    1140,
+    1200,
+    1240,
+    1300,
+    1360,
+    1395
+  ],
+  &quot;initial_scene&quot;: &quot;Fixed elevated oblique view of a pale rectangular tabletop with a white towel stretched left to right across its front half, slightly wrinkled and showing a raised horizontal strip. A white articulated robot arm stands at the back, its open parallel gripper raised above the table with a bright green marker on the wrist. Red, yellow-orange, and dark green produce-shaped objects sit near the base beside a light blue bowl on a green saucer, with a small yellow object in the bowl. A round cable opening is near the table&#x27;s front-right corner. At the right is a beige two-drawer cabinet topped by a bright green apple-shaped object and red and green circular buttons, with a small wooden chair below. A dark partition is behind the arm and window blinds fill the right background.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame_inclusive&quot;: 159,
+      &quot;action&quot;: &quot;The raised arm and open gripper pause above the rear portion of the table; the towel remains stretched across the front.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 160,
+      &quot;end_frame_inclusive&quot;: 715,
+      &quot;action&quot;: &quot;The arm bends toward the left and forward, rotates its gripper downward, and slowly descends toward the towel&#x27;s left edge.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 716,
+      &quot;end_frame_inclusive&quot;: 935,
+      &quot;action&quot;: &quot;The gripper reaches the left edge near its middle, pinches the fabric, and pauses near table level. Small fabric shifts occur; the exact finger contact is partly hidden by the gripper body.&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;
+    },
+    {
+      &quot;start_frame&quot;: 936,
+      &quot;end_frame_inclusive&quot;: 1139,
+      &quot;action&quot;: &quot;The arm lifts the pinched left edge and moves it rightward in an arc. The towel drapes from the gripper, the left portion turns upward and across, and the towel slides slightly right on the tabletop.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 1140,
+      &quot;end_frame_inclusive&quot;: 1203,
+      &quot;action&quot;: &quot;The arm reaches the towel&#x27;s right side and lowers the held fabric over the remaining half, producing a smaller layered rectangle with a loose uneven top flap near the round table opening.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 1204,
+      &quot;end_frame_inclusive&quot;: 1395,
+      &quot;action&quot;: &quot;The gripper pauses close to the folded towel&#x27;s right edge, with the folded cloth resting on the table; near the final frames the wrist begins a small upward movement. No large retreat or second fold is shown.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;multi_step&quot;: false,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 1396,
+    &quot;reason&quot;: &quot;The entire clip depicts a single continuous towel fold, including approach, fabric grasp, lift across to the right, lowering, and final settling; there is no independent second subtask.&quot;,
+    &quot;terminal_state&quot;: &quot;The towel rests as a smaller layered rectangle on the right side of its original footprint, with uneven edges and a loose flap; the gripper remains close above its right edge and has begun a slight upward movement.&quot;
+  },
+  &quot;full_sequence_prompt&quot;: &quot;The robotic arm grasps the towel&#x27;s left edge and folds the left half over the right half. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;world_model_prompt&quot;: &quot;The robotic arm grasps the towel&#x27;s left edge and folds the left half over the right half. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The gripper body partly hides the fingers at the initial pinch and final placement. The visible fold and final small wrist lift are clear, but a complete opening/release of the fabric cannot be confirmed.&quot;
+  ],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    600,
+    800,
+    970,
+    1080,
+    1200,
+    1395
+  ],
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;prompt_protocol&quot;: &quot;concise_action_v1&quot;,
+  &quot;review_source_original_video&quot;: &quot;002_franka_fold_towel_standard_success/original/video.mp4&quot;,
+  &quot;review_source_crop_rectangle&quot;: null
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../TAVP/001_franka_collect_fruits_standard_success/index.html">← Franka collect fruits standard success</a><a rel="next" href="../../TAVP/003_franka_pick_and_place_standard_success/index.html">Franka pick and place standard success →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

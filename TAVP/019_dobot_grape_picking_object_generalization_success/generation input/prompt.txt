@@ -1,1 +1,0 @@
-The robotic arm picks up the green cucumber-shaped object and places it onto the green dish. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

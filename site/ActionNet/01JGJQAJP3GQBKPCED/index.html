@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jgjqajp3gqbkpced · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JGJQAJP3GQBKPCED</p>
+<h1>01jgjqajp3gqbkpced</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 418 frames · 13.93 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses the hand entering from the lower-right edge to wrap its fingers and thumb around the blue mug&#x27;s body, lifts it off the checkered tablecloth, and carries it over to the pink bowl. It lowers the mug upright into the bowl, opens its hand to release it, then withdraws upward and to the right, leaving the mug resting inside the bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Pick up the cup from the table and place it in the container</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 889.4 vs threshold 60">Pass<b>889</b></span><p>Sharpness <b>889.4</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>418</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>13.93 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JGJQAJP3GQBKPCED">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JGJQAJP3GQBKPCED/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JGJQAJP3GQBKPCED/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JGJQAJP3GQBKPCED/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JGJQAJP3GQBKPCED&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;review_scope&quot;: &quot;One dedicated agent reviewed the complete unchanged 418-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_start&quot;: 0,
+  &quot;source_frame_end_exclusive&quot;: 418,
+  &quot;fps_rational&quot;: &quot;30/1&quot;,
+  &quot;resolution&quot;: [
+    1280,
+    800
+  ],
+  &quot;source_annotation&quot;: {
+    &quot;verbatim_task_prompt&quot;: &quot;Pick up the cup from the table and place it in the container&quot;,
+    &quot;task_prompt_path&quot;: &quot;../../original/task_prompt.txt&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;hand entering from the lower-right edge of the initial image&quot;,
+    &quot;initial_frame_evidence&quot;: &quot;Two dark dexterous hands enter from the near lower image edges; the active hand is attached to the lower-right forearm, beside the blue mug. Torso and shoulders are outside the image. The forearms extend away from the near edge, which suggests a camera behind or above the robot, but camera pose and mirroring are not independently established.&quot;,
+    &quot;confidence&quot;: &quot;Visible-arm identity is unambiguous; anatomical left/right is not independently established.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulating hand: moves to the mug, wraps thumb and fingers around the mug body (handle side facing left and away from the palm), bears the mug through lift and transport, lowers it into the pink bowl, opens and withdraws.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Remains static with fingers raised at the lower-left of the table; no contact with the mug, bowl or any task object.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand object placement. No hand-to-hand transfer, bimanual stabilization, regrasp, or physical interaction with the person standing at the upper right is observed.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        46
+      ],
+      &quot;observation&quot;: &quot;Pink bowl at centre and blue enamel mug at right on the checkered cloth. Both hands are clear of objects; the lower-right hand is upright beside the mug and begins to move toward it by the end of this interval. A person stands in the upper-right background handling a small item.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        48,
+        118
+      ],
+      &quot;observation&quot;: &quot;The lower-right hand tilts toward the mug. At native frame 60 the thumb is on top/near the mug rim and the fingers are above its side; at frame 90 the fingers have moved to the far side of the mug body while the thumb presses the near side; frame 120 shows the mug enclosed between thumb and finger surfaces on the table.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        120,
+        166
+      ],
+      &quot;observation&quot;: &quot;Hand tightens around the mug body on the tabletop; at native frame 150 the mug is still on the cloth. No second-hand contact.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        168,
+        214
+      ],
+      &quot;observation&quot;: &quot;The hand raises the mug off the cloth (lifted and tilted at frame 180, rim facing upward-left) and carries it left toward the bowl (frame 200 suspended with its handle to the left of the hand), maintaining the same body grasp.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        216,
+        262
+      ],
+      &quot;observation&quot;: &quot;The mug is carried over the bowl (frame 250 centred above the bowl rim, opening toward the camera) and lowered into it.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        264,
+        334
+      ],
+      &quot;observation&quot;: &quot;The mug is seated upright inside the pink bowl with the hand still wrapped around it (frames 300 and 330 show thumb and fingers on the mug body above the bowl rim). Small settling adjustments only; no regrasp.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        336,
+        358
+      ],
+      &quot;observation&quot;: &quot;The hand begins to open: at frame 340 the digits still contact the mug; at frame 350-360 the thumb and fingers separate from the mug and are visible apart from it. Exact first release frame is partially occluded.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        360,
+        417
+      ],
+      &quot;observation&quot;: &quot;The hand rises and withdraws to the right with fingers extended (frame 385 held above the bowl rim to the right, frame 417 held upright at the right edge of the table). The mug remains upright inside the pink bowl through the final frame, handle toward the left, with no hand contact. The left hand stays static throughout.&quot;
+    }
+  ],
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;successful_visible_placement&quot;,
+    &quot;description&quot;: &quot;Blue mug is released upright inside the pink bowl and remains resting there while the hand from the lower-right edge withdraws.&quot;,
+    &quot;selected_action_outcome&quot;: &quot;successful_visible_placement&quot;,
+    &quot;source_overall_success_label&quot;: &quot;not used to infer outcome&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The source says place the cup in the container; the observed target is a round pink bowl.&quot;,
+    &quot;The source says the cup is picked up from the table; visually it is a blue enamel mug with a left-facing handle sitting on a checkered tablecloth. The prompt uses mug and pink bowl.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Torso and shoulder attachment are outside the image and camera pose or mirroring is not independently established, so anatomical left/right is uncertain; the prompt uses the hand entering from the lower-right edge.&quot;,
+    &quot;The exact first table-separation and first release frames are bracketed by sampled frames and partial occlusion by the hand and mug.&quot;,
+    &quot;Mug is grasped by its body rather than the handle; the thumb and finger contact points are only partially visible from above.&quot;,
+    &quot;Slight source-view motion across the sequence is possible; the required fixed-camera generation constraint is retained verbatim.&quot;,
+    &quot;A person in the upper-right background moves throughout but does not interact with the robot or objects.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;total_decoded_frames&quot;: 418,
+    &quot;overview_frame_indices&quot;: {
+      &quot;start&quot;: 0,
+      &quot;stop_inclusive&quot;: 416,
+      &quot;step&quot;: 2,
+      &quot;count&quot;: 209
+    },
+    &quot;overview_method&quot;: &quot;Decoded RGB every second frame into eighteen temporary 4-by-3 contact sheets (480 px wide tiles) outside dataset folders; reviewed all sheets.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      0,
+      60,
+      70,
+      90,
+      110,
+      120,
+      150,
+      180,
+      200,
+      230,
+      250,
+      270,
+      300,
+      330,
+      340,
+      350,
+      360,
+      385,
+      417
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/an_review_01JGJQAJP3GQBKPCED (not under generation input)&quot;,
+    &quot;retained_evidence_frame_directories&quot;: false
+  },
+  &quot;preservation&quot;: {
+    &quot;whole_original_single_task_clip_retained&quot;: true,
+    &quot;crop&quot;: false,
+    &quot;shorten&quot;: false,
+    &quot;resize&quot;: false,
+    &quot;reencode&quot;: false,
+    &quot;source_and_generation_sha256_equal&quot;: true
+  },
+  &quot;prompt_word_count&quot;: 80
+}</pre></details>
+<nav class="pager"><span></span><a rel="next" href="../../ActionNet/01JGJS4GWCL7A5XCXC/index.html">01jgjs4gwcl7a5xcxc →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

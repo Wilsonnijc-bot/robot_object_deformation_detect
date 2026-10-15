@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 85 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 85</p>
+<h1>Video 85</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its right hand to grasp the green cucumber on the white circular surface and lift it clear of the tabletop. It carries the cucumber over the lower tier of the black wire basket, opens its fingers, and releases it into the basket, leaving its right hand open above it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up green cucumber from white cirlce to lower level of black basket.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 1144.4 vs threshold 60">Pass<b>1144</b></span><p>Sharpness <b>1144.4</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/85">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/85/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/85/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/85/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-mounted forward/downward view with both forearms emerging from the lower body-side positions. A green cucumber lies on the white circular surface to the robot&#x27;s right, partly hidden by the initial right hand. The empty lower tier of a two-tier black wire basket is centered ahead; the left hand is open near its left side.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 47,
+      &quot;action&quot;: &quot;Right arm moves outward and down toward the cucumber on the white circular surface, exposing the initially occluded object. Left hand makes a small positional adjustment near the lower basket without contacting it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 48,
+      &quot;end_frame&quot;: 65,
+      &quot;action&quot;: &quot;Right hand hovers with fingers spread around the cucumber and lowers to enclose it. The cucumber initially remains on the circular surface.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 66,
+      &quot;end_frame&quot;: 79,
+      &quot;action&quot;: &quot;Right fingers close around the cucumber and rotate it across the circular surface into a secure grasp. Left hand remains open and separate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 80,
+      &quot;end_frame&quot;: 109,
+      &quot;action&quot;: &quot;Right hand lifts the cucumber fully off the circular surface and carries it inward toward the lower basket while retaining its grasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 110,
+      &quot;end_frame&quot;: 113,
+      &quot;action&quot;: &quot;Right hand holds the cucumber over the lower basket and opens its fingers, letting the cucumber descend into it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 114,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;Cucumber is free of the open right hand, drops onto the lower basket wires and visibly moves within the basket. Right hand remains open above and to the right; no subsequent retrieval or withdrawal is shown.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating hand: approaches, encloses and grasps cucumber, lifts and transports it, then opens to release it into lower basket.&quot;,
+    &quot;left&quot;: &quot;Open hand remains near the lower basket&#x27;s left side, with small positional changes but no visible object grasp or basket stabilization.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand manipulation; no hand-to-hand transfer, bimanual support, or interaction with the background person.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;description&quot;: &quot;The view looks forward/down from the robot between its own arms. The manipulating forearm enters from the robot&#x27;s lower-right body-side attachment and extends forward on that side; the other arm enters from the lower-left attachment. This ego-view body-relative forearm placement establishes the active anatomical right hand, consistent with the source instruction; sides are not inferred from a front-facing image convention.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;
+  },
+  &quot;uncertainties&quot;: [
+    &quot;The cucumber is still shifting within the lower basket in the final frames; its later fully settled orientation is not shown. Exact individual finger contact points are partly obscured during grasp, although the secure lift and later release are visible.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    48,
+    58,
+    66,
+    78,
+    84,
+    94,
+    110,
+    112,
+    114,
+    116,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;source_frame_interval&quot;: [
+      0,
+      119
+    ],
+    &quot;sampled_frames&quot;: &quot;All even source frame indices 0 through 118 viewed on sheet_001.jpg.&quot;,
+    &quot;native_initial_png_viewed&quot;: true,
+    &quot;native_transition_and_final_frames_viewed&quot;: [
+      48,
+      58,
+      66,
+      78,
+      84,
+      94,
+      110,
+      112,
+      114,
+      116,
+      119
+    ]
+  },
+  &quot;terminal_state&quot;: &quot;The cucumber has been released into the lower black wire basket and is still moving against its base wires. The right hand is open above and to the right of it, and the left hand remains open without contact.&quot;,
+  &quot;video_id&quot;: &quot;85&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_85&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/85/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    48,
+    58,
+    66,
+    78,
+    84,
+    94,
+    110,
+    112,
+    114,
+    116,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its right hand to grasp the green cucumber on the white circular surface and lift it clear of the tabletop. It carries the cucumber over the lower tier of the black wire basket, opens its fingers, and releases it into the basket, leaving its right hand open above it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up green cucumber from white cirlce to lower level of black basket.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;c7a17f59628c872e3f44486467220e1a419765508f2a6175a69e921de1a0fba9&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:36:38.742989+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/84/index.html">← Video 84</a><a rel="next" href="../../NVIDIA_GR1_100/86/index.html">Video 86 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

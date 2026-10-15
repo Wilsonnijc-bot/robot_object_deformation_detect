@@ -1,1 +1,0 @@
-This task demonstrates stacking operations where the humanoid robot carefully stacks rolls of paper towels, requiring balance and spatial awareness.

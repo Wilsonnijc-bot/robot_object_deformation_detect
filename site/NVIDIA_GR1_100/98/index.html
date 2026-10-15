@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 98 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 98</p>
+<h1>Video 98</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot grasps the yellow mustard bottle around its body with its left hand, lifts it from the table, and carries it upright to the white shelf’s middle level. It lowers the bottle upright onto that shelf and begins opening its fingers, with the left hand remaining beside the bottle. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the left hand to pick up yellow mustard bottle from tan table to middle level of white shelf.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 1096.5 vs threshold 60">Pass<b>1096</b></span><p>Sharpness <b>1096.5</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/98">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/98/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/98/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/98/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-mounted forward/downward view shows both arms extending from the lower body-side edges. A yellow mustard squeeze bottle stands on the bare tabletop before the white stepped shelf; its middle platform is empty. Other containers occupy the lower level.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_start&quot;: 0,
+      &quot;source_frame_end&quot;: 24,
+      &quot;observation&quot;: &quot;Both hands are open; yellow bottle remains upright on tabletop.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_start&quot;: 25,
+      &quot;source_frame_end&quot;: 62,
+      &quot;observation&quot;: &quot;Left forearm moves toward bottle with fingers spread, bringing palm and thumb around opposite sides of bottle body. Right hand stays open and away from the object.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_start&quot;: 63,
+      &quot;source_frame_end&quot;: 78,
+      &quot;observation&quot;: &quot;Left fingers close around bottle body; bottle becomes upright within hand and begins lifting clear of table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_start&quot;: 79,
+      &quot;source_frame_end&quot;: 100,
+      &quot;observation&quot;: &quot;Left arm lifts and carries bottle upright upward and forward toward middle shelf; no hand transfer or right-hand support occurs.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_start&quot;: 101,
+      &quot;source_frame_end&quot;: 114,
+      &quot;observation&quot;: &quot;Left hand lowers bottle onto middle white shelf, with base at platform surface. Fingers and thumb remain around bottle.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_start&quot;: 115,
+      &quot;source_frame_end&quot;: 119,
+      &quot;observation&quot;: &quot;Bottle remains upright on middle shelf. Left fingers start spreading/opening behind bottle, thumb remains near its front, and hand does not withdraw clear.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;left&quot;: &quot;Active manipulation: opens around bottle, closes fingers/thumb around body, lifts and transports upright, lowers onto middle shelf and begins opening fingers.&quot;,
+    &quot;right&quot;: &quot;Open and approximately stationary near the right side; does not touch bottle or assist.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: &quot;The forward/downward robot-mounted perspective shows the two forearms extending from the robot-side lower left and lower right respectively. The active arm connects to the lower-left body-side joint, and its thumb points medially toward the counterpart arm during approach; therefore it is robot-relative left, corroborating the source instruction. The robot head/shoulders are outside the camera view.&quot;,
+  &quot;coordination&quot;: &quot;Single-hand manipulation with the left hand; no bimanual support or transfer.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Full finger disengagement from the bottle is obscured by the bottle body and no withdrawal is shown; a complete release cannot be confirmed despite visible opening of fingers.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    36,
+    56,
+    74,
+    90,
+    102,
+    108,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;incomplete&quot;,
+  &quot;terminal_state&quot;: &quot;Yellow mustard bottle stands upright with its base on the middle white shelf. The left hand is still beside/around it with fingers beginning to open; the right hand remains open and uninvolved. Full release and withdrawal are not established.&quot;,
+  &quot;video_id&quot;: &quot;98&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_98&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/98/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    36,
+    56,
+    74,
+    90,
+    102,
+    108,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot grasps the yellow mustard bottle around its body with its left hand, lifts it from the table, and carries it upright to the white shelf’s middle level. It lowers the bottle upright onto that shelf and begins opening its fingers, with the left hand remaining beside the bottle. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the left hand to pick up yellow mustard bottle from tan table to middle level of white shelf.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;83529d0c8e5b092c5bb22528e33f8b8570a6d2af7c2aa45aa2cdb8db75965148&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:42:40.951133+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/97/index.html">← Video 97</a><a rel="next" href="../../NVIDIA_GR1_100/99/index.html">Video 99 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

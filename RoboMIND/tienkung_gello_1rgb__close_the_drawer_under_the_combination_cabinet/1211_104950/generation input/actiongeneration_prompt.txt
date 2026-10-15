@@ -1,0 +1,1 @@
+The humanoid's arm enters from the upper left of the image and lowers its dexterous hand, fingers extended, onto the white handle of the partly open drawer. The hand pushes the drawer front inward until the drawer is fully closed, then lifts away and out of view. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

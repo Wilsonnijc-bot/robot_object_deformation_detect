@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 4 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 4</p>
+<h1>Video 4</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot closes its left hand around the dragonfruit on the pink plate, lifts it, and carries it to the teal plate. It lowers the fruit onto the teal plate and opens its fingers, leaving the fruit lying on its side with the left hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the left hand to pick up dragonfruit from pink plate to teal plate.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 645.7 vs threshold 60">Pass<b>646</b></span><p>Sharpness <b>645.7</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/4">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/4/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/4/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/4/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;frame_start&quot;: 0,
+      &quot;frame_end&quot;: 35,
+      &quot;action&quot;: &quot;The left hand is open above and beside the upright dragonfruit on the pink plate, then lowers toward the fruit. The right hand remains open and elevated beside the blue plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_start&quot;: 36,
+      &quot;frame_end&quot;: 69,
+      &quot;action&quot;: &quot;The left hand descends around the fruit and curls its fingers and thumb around opposite sides; the dragonfruit remains on the pink plate while the grasp forms.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_start&quot;: 70,
+      &quot;frame_end&quot;: 89,
+      &quot;action&quot;: &quot;The left hand lifts the dragonfruit clear of the pink plate and starts moving it inward toward the teal plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_start&quot;: 90,
+      &quot;frame_end&quot;: 111,
+      &quot;action&quot;: &quot;The left arm carries the held dragonfruit over the teal plate and lowers it toward the plate; the pink plate is empty.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_start&quot;: 112,
+      &quot;frame_end&quot;: 119,
+      &quot;action&quot;: &quot;The fruit settles onto its side on the teal plate. The left fingers extend and the thumb opens outward to release it; the hand remains close beside the fruit at the ending.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;left&quot;: &quot;Sole manipulating hand: encloses dragonfruit, lifts it from pink plate, carries and lowers it onto teal plate, then opens fingers while remaining beside the placed fruit.&quot;,
+    &quot;right&quot;: &quot;Open elevated hand beside blue plate throughout, with minor posture drift; does not touch the fruit or support the left-hand transfer.&quot;,
+    &quot;coordination&quot;: &quot;One-hand transfer without hand-to-hand exchange or coordinated support.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;evidence&quot;: &quot;Robot-centered forward-looking view has both forearms entering from the camera-near lower body sides. The manipulating hand has its thumb on the medial/right side of its dorsal hand in the initial PNG, consistent with the robot-relative left hand; the opposite hand has mirrored thumb/finger orientation. This uses hand chirality and connected forearm origins, not image side alone.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;limitation&quot;: &quot;Shoulder attachments and torso are outside the field of view.&quot;
+  },
+  &quot;initial_scene&quot;: &quot;Upright magenta dragonfruit with green tips on the pink plate beside the open left hand; empty teal plate between pink and blue plates. Right hand is open above the blue-plate side.&quot;,
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    36,
+    64,
+    86,
+    96,
+    108,
+    114,
+    117,
+    119
+  ],
+  &quot;initial_frame_inspected&quot;: true,
+  &quot;inspection_coverage&quot;: &quot;Viewed the complete contact sheet covering all 60 stride-two samples (0 through 118), source initial PNG and eight native transition/final frames.&quot;,
+  &quot;terminal_state&quot;: &quot;Dragonfruit lies sideways on the teal plate. Left fingers and thumb are open beside it; the hand has not withdrawn fully. Pink plate is empty; right hand remains elevated and uninvolved.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Precise underside contact with the teal plate is partly hidden by the fruit and left hand during lowering; the final sideways resting fruit and opened digits establish placement/release. Shoulder attachments are not visible, but forearm origins and thumb chirality establish anatomical left/right.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;video_id&quot;: &quot;4&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_4&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/4/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    36,
+    64,
+    86,
+    96,
+    108,
+    114,
+    117,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot closes its left hand around the dragonfruit on the pink plate, lifts it, and carries it to the teal plate. It lowers the fruit onto the teal plate and opens its fingers, leaving the fruit lying on its side with the left hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the left hand to pick up dragonfruit from pink plate to teal plate.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;e9aa2518403a995b6fe1a22f3c7b1aa8f23170e52360e91d9f0a95f6804db09c&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:03:45.871686+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/3/index.html">← Video 3</a><a rel="next" href="../../NVIDIA_GR1_100/6/index.html">Video 6 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

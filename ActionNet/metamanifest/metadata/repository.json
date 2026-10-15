@@ -1,0 +1,1008 @@
+{
+  "_id": "67cc6a9d53312cdbd75be4c2",
+  "id": "FourierIntelligence/ActionNet",
+  "author": "FourierIntelligence",
+  "sha": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "lastModified": "2025-08-25T02:36:02.000Z",
+  "private": false,
+  "gated": "auto",
+  "disabled": false,
+  "tags": [
+    "task_categories:robotics",
+    "license:cc-by-nc-sa-4.0",
+    "size_categories:10K<n<100K",
+    "doi:10.57967/hf/6328",
+    "region:us"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tFourier ActionNet Dataset\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tIntroduction\n\t\n\nThe data collected from two primary sources: the robot side and the camera side. The HDF5 file contains the robot-side data, while the camera-side data is stored in the corresponding episode folder. While there is also a metadata.json file in the dataset, which contains all episodes id, and it's prompt.\n\n\t\n\t\t\n\t\n\t\n\t\tDownload the dataset\n\t\n\nFirst, you can easily download the dataset online, which will be in a .tar file. After\u2026 See the full description on the dataset page: https://huggingface.co/datasets/FourierIntelligence/ActionNet.",
+  "downloads": 1740,
+  "likes": 11,
+  "cardData": {
+    "license": "cc-by-nc-sa-4.0",
+    "task_categories": [
+      "robotics"
+    ],
+    "size_categories": [
+      "10K<n<100K"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "01JGJCNDDF-01JGJY03Q1.tar"
+    },
+    {
+      "rfilename": "01JGJY0QSK-01JGK2VNX6.tar"
+    },
+    {
+      "rfilename": "01JGK2WF6G-01JGN24HXA.tar"
+    },
+    {
+      "rfilename": "01JGN24W6D-01JGN4MK60.tar"
+    },
+    {
+      "rfilename": "01JGN4N505-01JGNMKRZK.tar"
+    },
+    {
+      "rfilename": "01JGNMNPG9-01JGWQHGNG.tar"
+    },
+    {
+      "rfilename": "01JGWQHYAA-01JGWSP283.tar"
+    },
+    {
+      "rfilename": "01JGWSPNQM-01JGX2QF8H.tar"
+    },
+    {
+      "rfilename": "01JGX2R0P9-01JGX69NP6.tar"
+    },
+    {
+      "rfilename": "01JGX6A9V4-01JGX7TBZ2.tar"
+    },
+    {
+      "rfilename": "01JGX7V37A-01JGX9E7V8.tar"
+    },
+    {
+      "rfilename": "01JGX9GDFA-01JGXENA9A.tar"
+    },
+    {
+      "rfilename": "01JGXEP0A2-01JGXMZC6J.tar"
+    },
+    {
+      "rfilename": "01JGXMZZK6-01JGXPX485.tar"
+    },
+    {
+      "rfilename": "01JGXPXQQ5-01JGZBHZRR.tar"
+    },
+    {
+      "rfilename": "01JGZBJ8GZ-01JGZCQ642.tar"
+    },
+    {
+      "rfilename": "01JGZCQEAA-01JGZJRDNM.tar"
+    },
+    {
+      "rfilename": "01JGZJS1HR-01JGZKTA7B.tar"
+    },
+    {
+      "rfilename": "01JGZKTNWG-01JGZN5PWD.tar"
+    },
+    {
+      "rfilename": "01JGZN61WY-01JGZPN2M0.tar"
+    },
+    {
+      "rfilename": "01JGZPNJ2E-01JGZQQ5N4.tar"
+    },
+    {
+      "rfilename": "01JGZQQZRB-01JGZRP80Y.tar"
+    },
+    {
+      "rfilename": "01JGZRPGDP-01JGZWR10T.tar"
+    },
+    {
+      "rfilename": "01JGZWR7K3-01JGZXNA6Q.tar"
+    },
+    {
+      "rfilename": "01JGZXNR33-01JGZYP2C9.tar"
+    },
+    {
+      "rfilename": "01JGZYPZ5Q-01JGZZHR71.tar"
+    },
+    {
+      "rfilename": "01JGZZJ9QY-01JH00F841.tar"
+    },
+    {
+      "rfilename": "01JH00FCRH-01JH0783D9.tar"
+    },
+    {
+      "rfilename": "01JH078W97-01JH08ZW5P.tar"
+    },
+    {
+      "rfilename": "01JH08ZWPJ-01JH1W1113.tar"
+    },
+    {
+      "rfilename": "01JH1W14V5-01JH1X5A6R.tar"
+    },
+    {
+      "rfilename": "01JH1X5HPS-01JH1YB795.tar"
+    },
+    {
+      "rfilename": "01JH1YB9CW-01JH25E2C9.tar"
+    },
+    {
+      "rfilename": "01JH25EFZZ-01JH26DQB1.tar"
+    },
+    {
+      "rfilename": "01JH26EBD6-01JH27RE40.tar"
+    },
+    {
+      "rfilename": "01JH27RRBQ-01JH28QRN4.tar"
+    },
+    {
+      "rfilename": "01JH28RBFR-01JH2BC72J.tar"
+    },
+    {
+      "rfilename": "01JH2BCDWX-01JH2DWE8V.tar"
+    },
+    {
+      "rfilename": "01JH2DX82P-01JH2EYVWK.tar"
+    },
+    {
+      "rfilename": "01JH2EYYE7-01JH2G1PPF.tar"
+    },
+    {
+      "rfilename": "01JH2G295Q-01JH2H7SBF.tar"
+    },
+    {
+      "rfilename": "01JH2H8249-01JH2J61V9.tar"
+    },
+    {
+      "rfilename": "01JH2J6702-01JH2M2MZ2.tar"
+    },
+    {
+      "rfilename": "01JH2M2R9G-01JH2RR65K.tar"
+    },
+    {
+      "rfilename": "01JH2RRVWW-01JH2SXZTE.tar"
+    },
+    {
+      "rfilename": "01JH2SY9Y2-01JH2TKFKQ.tar"
+    },
+    {
+      "rfilename": "01JH2TKPB4-01JH2VC86A.tar"
+    },
+    {
+      "rfilename": "01JH2VCADD-01JH2W6MXS.tar"
+    },
+    {
+      "rfilename": "01JH2W7J6J-01JH4EP14R.tar"
+    },
+    {
+      "rfilename": "01JH4EPAZP-01JH4FHBB3.tar"
+    },
+    {
+      "rfilename": "01JH4FHE9F-01JH4GJM6R.tar"
+    },
+    {
+      "rfilename": "01JH4GJT1J-01JH4HJGCG.tar"
+    },
+    {
+      "rfilename": "01JH4HK7MV-01JH4JJ44D.tar"
+    },
+    {
+      "rfilename": "01JH4JJKJE-01JH4RMB6C.tar"
+    },
+    {
+      "rfilename": "01JH4RMDYB-01JH4SSWHB.tar"
+    },
+    {
+      "rfilename": "01JH4ST5TE-01JH4V1HG3.tar"
+    },
+    {
+      "rfilename": "01JH4V1RYG-01JH4WT65B.tar"
+    },
+    {
+      "rfilename": "01JH4WTM7K-01JH4YB0Y8.tar"
+    },
+    {
+      "rfilename": "01JH4YB2XW-01JH50JPKF.tar"
+    },
+    {
+      "rfilename": "01JH50KEWG-01JH534S6D.tar"
+    },
+    {
+      "rfilename": "01JH5355Q1-01JH54KN8R.tar"
+    },
+    {
+      "rfilename": "01JH54KZMQ-01JH55WSX1.tar"
+    },
+    {
+      "rfilename": "01JH55WWX6-01JH5C9CB0.tar"
+    },
+    {
+      "rfilename": "01JH5CAPMJ-01JH5DDWN4.tar"
+    },
+    {
+      "rfilename": "01JH5DE0CH-01JH5ECJJR.tar"
+    },
+    {
+      "rfilename": "01JH5ED82H-01JH70X71H.tar"
+    },
+    {
+      "rfilename": "01JH70XDXB-01JH71VD9Z.tar"
+    },
+    {
+      "rfilename": "01JH71VMCT-01JH72Q47Y.tar"
+    },
+    {
+      "rfilename": "01JH72QNJZ-01JH73N26M.tar"
+    },
+    {
+      "rfilename": "01JH73NHVT-01JH74PCXV.tar"
+    },
+    {
+      "rfilename": "01JH74PJNJ-01JH7AEMCN.tar"
+    },
+    {
+      "rfilename": "01JH7AEPYM-01JH7BAP03.tar"
+    },
+    {
+      "rfilename": "01JH7BB0KD-01JH7C51Z1.tar"
+    },
+    {
+      "rfilename": "01JH7C524S-01JH7CYR53.tar"
+    },
+    {
+      "rfilename": "01JH7CYSW8-01JH7DWK44.tar"
+    },
+    {
+      "rfilename": "01JH7DWSS9-01JH7FT8KH.tar"
+    },
+    {
+      "rfilename": "01JH7FTWG4-01JH7JP4RH.tar"
+    },
+    {
+      "rfilename": "01JH7JPBZY-01JH7KJGKW.tar"
+    },
+    {
+      "rfilename": "01JH7KJPKV-01JH7N7CGA.tar"
+    },
+    {
+      "rfilename": "01JH7N7YFW-01JH7PXJK9.tar"
+    },
+    {
+      "rfilename": "01JH7PXZCN-01JH7S1ST7.tar"
+    },
+    {
+      "rfilename": "01JH7S268D-01JH7WGK0J.tar"
+    },
+    {
+      "rfilename": "01JH7WHAAJ-01JH7XNW65.tar"
+    },
+    {
+      "rfilename": "01JH7XP53Z-01JH7YMQB7.tar"
+    },
+    {
+      "rfilename": "01JH7YMXTK-01JHEQGZT8.tar"
+    },
+    {
+      "rfilename": "01JHEQHMNE-01JHERAH6Y.tar"
+    },
+    {
+      "rfilename": "01JHERB58N-01JHESEBKR.tar"
+    },
+    {
+      "rfilename": "01JHESED1E-01JHETQZ7X.tar"
+    },
+    {
+      "rfilename": "01JHETRCCY-01JHEVKWVS.tar"
+    },
+    {
+      "rfilename": "01JHEVM821-01JHEWG1S0.tar"
+    },
+    {
+      "rfilename": "01JHEWGQ1F-01JHF2CS1W.tar"
+    },
+    {
+      "rfilename": "01JHF2DF58-01JHF4XCH5.tar"
+    },
+    {
+      "rfilename": "01JHF4Y9MX-01JHF6GMH8.tar"
+    },
+    {
+      "rfilename": "01JHF6GPYH-01JHF7YR2E.tar"
+    },
+    {
+      "rfilename": "01JHF7ZEBF-01JHFAFHR7.tar"
+    },
+    {
+      "rfilename": "01JHFAGB9W-01JHFCKJRH.tar"
+    },
+    {
+      "rfilename": "01JHFCM6DX-01JHFDYZCY.tar"
+    },
+    {
+      "rfilename": "01JHFE069V-01JHFFJXTD.tar"
+    },
+    {
+      "rfilename": "01JHFFJZH8-01JHFN0MTG.tar"
+    },
+    {
+      "rfilename": "01JHFN1T35-01JHHAEXZN.tar"
+    },
+    {
+      "rfilename": "01JHHAF40P-01JHHDAJ7H.tar"
+    },
+    {
+      "rfilename": "01JHHDB5HV-01JHHKYJ59.tar"
+    },
+    {
+      "rfilename": "01JHHKZD4Z-01JHHQQMPB.tar"
+    },
+    {
+      "rfilename": "01JHHQTTQS-01JHJ6KD6S.tar"
+    },
+    {
+      "rfilename": "01JHJ6N3W5-01JHKXYYDS.tar"
+    },
+    {
+      "rfilename": "01JHKY0477-01JHM7FJ76.tar"
+    },
+    {
+      "rfilename": "01JHM7GAB3-01JHPF6TPW.tar"
+    },
+    {
+      "rfilename": "01JHPF82QZ-01JHPV6TC1.tar"
+    },
+    {
+      "rfilename": "01JHPVFWSY-01JHQ2984G.tar"
+    },
+    {
+      "rfilename": "01JHQ2B6PN-01JHQC6HEB.tar"
+    },
+    {
+      "rfilename": "01JHQC6J44-01JHS2E84E.tar"
+    },
+    {
+      "rfilename": "01JHS2EHBE-01JHS41ECF.tar"
+    },
+    {
+      "rfilename": "01JHS42DAN-01JHSB6KJ5.tar"
+    },
+    {
+      "rfilename": "01JHSB708Q-01JHSJPTKH.tar"
+    },
+    {
+      "rfilename": "01JHSJQFEE-01JHSKY6QF.tar"
+    },
+    {
+      "rfilename": "01JHSKY7AR-01JHSNTQ6R.tar"
+    },
+    {
+      "rfilename": "01JHSQKZ5Q-01JHSRRTSW.tar"
+    },
+    {
+      "rfilename": "01JHSRSJFV-01JHSXGKXD.tar"
+    },
+    {
+      "rfilename": "01JHSXGW7X-01JJ0RNBAS.tar"
+    },
+    {
+      "rfilename": "01JJ0RP0ZY-01JJ0TQCDF.tar"
+    },
+    {
+      "rfilename": "01JJ0TR4VC-01JJ0WT09B.tar"
+    },
+    {
+      "rfilename": "01JJ0WTCHJ-01JJ12ZSH1.tar"
+    },
+    {
+      "rfilename": "01JJ130F0A-01JJ15BREB.tar"
+    },
+    {
+      "rfilename": "01JJ15CCMW-01JJ19QRSK.tar"
+    },
+    {
+      "rfilename": "01JJ19R123-01JJ1BEANB.tar"
+    },
+    {
+      "rfilename": "01JJ1BEB21-01JJ1DE1S9.tar"
+    },
+    {
+      "rfilename": "01JJ1DEVNA-01JJ1MFQE2.tar"
+    },
+    {
+      "rfilename": "01JJ1MGKSS-01JJ1NJJ1R.tar"
+    },
+    {
+      "rfilename": "01JJ1NK47Q-01JJ1Q4P6D.tar"
+    },
+    {
+      "rfilename": "01JJ1Q5F5P-01JJ3C4Y69.tar"
+    },
+    {
+      "rfilename": "01JJ3C53D0-01JJ3NBD1E.tar"
+    },
+    {
+      "rfilename": "01JJ3NBHBH-01JJ3PY6EE.tar"
+    },
+    {
+      "rfilename": "01JJ3PYSBE-01JJ3S1BCQ.tar"
+    },
+    {
+      "rfilename": "01JJ3S1Z9B-01JJ5X1KMT.tar"
+    },
+    {
+      "rfilename": "01JJ5X28VC-01JJ67H917.tar"
+    },
+    {
+      "rfilename": "01JJ67HXXM-01JJ69TRPX.tar"
+    },
+    {
+      "rfilename": "01JJ69VDQ1-01JJ6V32PM.tar"
+    },
+    {
+      "rfilename": "01JJ6V4H3V-01JJ8K72DJ.tar"
+    },
+    {
+      "rfilename": "01JJ8K86A9-01JJ909523.tar"
+    },
+    {
+      "rfilename": "01JJ909BGM-01JJ923QMS.tar"
+    },
+    {
+      "rfilename": "01JJ923WAJ-01JJ97E9AF.tar"
+    },
+    {
+      "rfilename": "01JJ97ESZS-01JJ9D1372.tar"
+    },
+    {
+      "rfilename": "01JJ9D1VFY-01JJB27BDJ.tar"
+    },
+    {
+      "rfilename": "01JJB2886J-01JJB51K76.tar"
+    },
+    {
+      "rfilename": "01JJB52F5H-01JJBBV30G.tar"
+    },
+    {
+      "rfilename": "01JJBBVMWB-01JJBD2CPB.tar"
+    },
+    {
+      "rfilename": "01JJBD2J8S-01JJBJNST8.tar"
+    },
+    {
+      "rfilename": "01JJBJPJXP-01JJBSWWVD.tar"
+    },
+    {
+      "rfilename": "01JJBSXG9T-01JJG6S1QN.tar"
+    },
+    {
+      "rfilename": "01JJG6SC52-01JJGKZTEP.tar"
+    },
+    {
+      "rfilename": "01JJGM1YRV-01JK9Z6QGR.tar"
+    },
+    {
+      "rfilename": "01JK9Z7FWK-01JKA1537P.tar"
+    },
+    {
+      "rfilename": "01JKA15599-01JKA3GNRV.tar"
+    },
+    {
+      "rfilename": "01JKA3HC41-01JKAAFMWN.tar"
+    },
+    {
+      "rfilename": "01JKAAGD3W-01JKACPTNG.tar"
+    },
+    {
+      "rfilename": "01JKACR6A8-01JKAGPNKV.tar"
+    },
+    {
+      "rfilename": "01JKAGQABP-01JKAJV9A7.tar"
+    },
+    {
+      "rfilename": "01JKAJVZAW-01JKANVCDP.tar"
+    },
+    {
+      "rfilename": "01JKANVEE9-01JKAPKE1D.tar"
+    },
+    {
+      "rfilename": "01JKAPKQ67-01JKAQF3RG.tar"
+    },
+    {
+      "rfilename": "01JKAQFB2J-01JKAVHFRW.tar"
+    },
+    {
+      "rfilename": "01JKAVHKYV-01JKAWTH87.tar"
+    },
+    {
+      "rfilename": "01JKAWVBKA-01JKCHM1B2.tar"
+    },
+    {
+      "rfilename": "01JKCHM8ZY-01JKCJX8H2.tar"
+    },
+    {
+      "rfilename": "01JKCJXZN4-01JKCM3GEB.tar"
+    },
+    {
+      "rfilename": "01JKCM3VS7-01JKCNF4M9.tar"
+    },
+    {
+      "rfilename": "01JKCNFQ30-01JKCVMPMH.tar"
+    },
+    {
+      "rfilename": "01JKCVN8XC-01JKCXEX5C.tar"
+    },
+    {
+      "rfilename": "01JKCXFPHM-01JKD0A6QQ.tar"
+    },
+    {
+      "rfilename": "01JKD0ARHC-01JKD1PP1G.tar"
+    },
+    {
+      "rfilename": "01JKD1PV6H-01JKD2MJXC.tar"
+    },
+    {
+      "rfilename": "01JKD2MVFT-01JKD3YPC0.tar"
+    },
+    {
+      "rfilename": "01JKD3YR43-01JKD7TXHE.tar"
+    },
+    {
+      "rfilename": "01JKD7V2BY-01JKD93KWY.tar"
+    },
+    {
+      "rfilename": "01JKD94BAT-01JKDA744Q.tar"
+    },
+    {
+      "rfilename": "01JKDA75W8-01JKDE731N.tar"
+    },
+    {
+      "rfilename": "01JKDE77EW-01JKDFDKZV.tar"
+    },
+    {
+      "rfilename": "01JKDFDZ4F-01JKF43DG3.tar"
+    },
+    {
+      "rfilename": "01JKF43Q7S-01JKF50VJA.tar"
+    },
+    {
+      "rfilename": "01JKF50Y0Y-01JKF62ACD.tar"
+    },
+    {
+      "rfilename": "01JKF62FA3-01JKF79CTG.tar"
+    },
+    {
+      "rfilename": "01JKF79XDH-01JKFDXY1K.tar"
+    },
+    {
+      "rfilename": "01JKFDYASN-01JKFFR1RC.tar"
+    },
+    {
+      "rfilename": "01JKFFR57W-01JKFGXTQH.tar"
+    },
+    {
+      "rfilename": "01JKFGXYM9-01JKFJ8M5J.tar"
+    },
+    {
+      "rfilename": "01JKFJ954M-01JKFKKNZA.tar"
+    },
+    {
+      "rfilename": "01JKFKMADQ-01JKFP4TRQ.tar"
+    },
+    {
+      "rfilename": "01JKFP58FW-01JKFQ1GFN.tar"
+    },
+    {
+      "rfilename": "01JKFQ20HG-01JKFR7EP2.tar"
+    },
+    {
+      "rfilename": "01JKFR7HQW-01JKFSPGGR.tar"
+    },
+    {
+      "rfilename": "01JKFT1VTV-01JKFZQY5J.tar"
+    },
+    {
+      "rfilename": "01JKFZREAZ-01JKG15EXV.tar"
+    },
+    {
+      "rfilename": "01JKG16GT1-01JKHN83DA.tar"
+    },
+    {
+      "rfilename": "01JKHN8GR2-01JKHPF47M.tar"
+    },
+    {
+      "rfilename": "01JKHPFTWD-01JKHQ8QK0.tar"
+    },
+    {
+      "rfilename": "01JKHQ93E9-01JKHRFTCN.tar"
+    },
+    {
+      "rfilename": "01JKHRG91N-01JKHT0YVQ.tar"
+    },
+    {
+      "rfilename": "01JKHT1P3J-01JKJ0JTY0.tar"
+    },
+    {
+      "rfilename": "01JKJ0KEFP-01JKJ2M2ZS.tar"
+    },
+    {
+      "rfilename": "01JKJ2MQCW-01JKJ6Q12W.tar"
+    },
+    {
+      "rfilename": "01JKJ6QB01-01JKJ7RPK6.tar"
+    },
+    {
+      "rfilename": "01JKJ7RZQX-01JKJ8XH8A.tar"
+    },
+    {
+      "rfilename": "01JKJ8Y31X-01JKJBH3D2.tar"
+    },
+    {
+      "rfilename": "01JKJBHBYJ-01JKJD0MSE.tar"
+    },
+    {
+      "rfilename": "01JKJD17EK-01JKJEKF61.tar"
+    },
+    {
+      "rfilename": "01JKJEM1V3-01JKJKBGBX.tar"
+    },
+    {
+      "rfilename": "01JKJKBQEA-01JKPT5N37.tar"
+    },
+    {
+      "rfilename": "01JKPT5TCJ-01JKPV1Q54.tar"
+    },
+    {
+      "rfilename": "01JKPV23F9-01JKPW1N15.tar"
+    },
+    {
+      "rfilename": "01JKPW1VCE-01JKPX78PK.tar"
+    },
+    {
+      "rfilename": "01JKPX7BNF-01JKPYFYZQ.tar"
+    },
+    {
+      "rfilename": "01JKPYG9C3-01JKQ4PNGC.tar"
+    },
+    {
+      "rfilename": "01JKQ4Q79Y-01JKQ5T09S.tar"
+    },
+    {
+      "rfilename": "01JKQ5T5KY-01JKQ7PZ7N.tar"
+    },
+    {
+      "rfilename": "01JKQ7Q7RH-01JKQBVRHC.tar"
+    },
+    {
+      "rfilename": "01JKQBW9K9-01JKQDEZM0.tar"
+    },
+    {
+      "rfilename": "01JKQDF7AN-01JKQEP83K.tar"
+    },
+    {
+      "rfilename": "01JKQEPAD2-01JKQFBFJW.tar"
+    },
+    {
+      "rfilename": "01JKQFBN9E-01JKQHKZ1P.tar"
+    },
+    {
+      "rfilename": "01JKQHMN9B-01JKQQHFDW.tar"
+    },
+    {
+      "rfilename": "01JKQQHX56-01JKQS69SY.tar"
+    },
+    {
+      "rfilename": "01JKQS6YRN-01JKSD8JWN.tar"
+    },
+    {
+      "rfilename": "01JKSD8XNY-01JKSE6VE0.tar"
+    },
+    {
+      "rfilename": "01JKSE755F-01JKSFBE28.tar"
+    },
+    {
+      "rfilename": "01JKSFBQDX-01JKSGK56N.tar"
+    },
+    {
+      "rfilename": "01JKSGKDA2-01JKSPZA3E.tar"
+    },
+    {
+      "rfilename": "01JKSPZVFR-01JKSR4X5J.tar"
+    },
+    {
+      "rfilename": "01JKSR5F0F-01JKSSS0QC.tar"
+    },
+    {
+      "rfilename": "01JKSSSA80-01JKSTR8PD.tar"
+    },
+    {
+      "rfilename": "01JKSTRD9M-01JKSW1QZ4.tar"
+    },
+    {
+      "rfilename": "01JKSW1XCF-01JKSXBB9H.tar"
+    },
+    {
+      "rfilename": "01JKSXBEM9-01JKT199M7.tar"
+    },
+    {
+      "rfilename": "01JKT1A47H-01JKT3598M.tar"
+    },
+    {
+      "rfilename": "01JKT35GYG-01JKT4ZSWY.tar"
+    },
+    {
+      "rfilename": "01JKT5079F-01JKT9PBH4.tar"
+    },
+    {
+      "rfilename": "01JKT9PW42-01JKTB605D.tar"
+    },
+    {
+      "rfilename": "01JKTB6DYA-01JKW01KFQ.tar"
+    },
+    {
+      "rfilename": "01JKW022GB-01JKW1ZM1R.tar"
+    },
+    {
+      "rfilename": "01JKW21WTV-01JKWC0G6F.tar"
+    },
+    {
+      "rfilename": "01JKWC1EWX-01JKWE23DH.tar"
+    },
+    {
+      "rfilename": "01JKWE2FY3-01JKWFZE6C.tar"
+    },
+    {
+      "rfilename": "01JKWG0442-01JKWJZ1KH.tar"
+    },
+    {
+      "rfilename": "01JKWJZNED-01JKWMCND1.tar"
+    },
+    {
+      "rfilename": "01JKWMD4VB-01JKWQ3THD.tar"
+    },
+    {
+      "rfilename": "01JKWQ55HW-01JKWX4R0W.tar"
+    },
+    {
+      "rfilename": "01JKWX5D16-01JKYHM7TP.tar"
+    },
+    {
+      "rfilename": "01JKYHMVAV-01JKYK82FT.tar"
+    },
+    {
+      "rfilename": "01JKYK8PEP-01JKYMGW13.tar"
+    },
+    {
+      "rfilename": "01JKYMH5QA-01JKYNVZHS.tar"
+    },
+    {
+      "rfilename": "01JKYNWACR-01JKYWHFTE.tar"
+    },
+    {
+      "rfilename": "01JKYWHK26-01JKYXXND2.tar"
+    },
+    {
+      "rfilename": "01JKYXY57S-01JKYZA0QF.tar"
+    },
+    {
+      "rfilename": "01JKYZAK8W-01JKZ0QAMD.tar"
+    },
+    {
+      "rfilename": "01JKZ0QT1K-01JKZ1ZK4Y.tar"
+    },
+    {
+      "rfilename": "01JKZ2007K-01JKZ6E84N.tar"
+    },
+    {
+      "rfilename": "01JKZ6EFR2-01JKZ878KH.tar"
+    },
+    {
+      "rfilename": "01JKZ87ZVJ-01JKZ9TVQ1.tar"
+    },
+    {
+      "rfilename": "01JKZ9VJGG-01JKZES3J4.tar"
+    },
+    {
+      "rfilename": "01JKZESA0Q-01JKZFWZGX.tar"
+    },
+    {
+      "rfilename": "01JKZFX47Q-01JM13YYRH.tar"
+    },
+    {
+      "rfilename": "01JM13Z00V-01JM15NWT7.tar"
+    },
+    {
+      "rfilename": "01JM15P50T-01JM1784TZ.tar"
+    },
+    {
+      "rfilename": "01JM179DPW-01JM1EACZJ.tar"
+    },
+    {
+      "rfilename": "01JM1EARBD-01JM1FH920.tar"
+    },
+    {
+      "rfilename": "01JM1FHQ1X-01JM1GZG3E.tar"
+    },
+    {
+      "rfilename": "01JM1GZSW5-01JM1NQYX0.tar"
+    },
+    {
+      "rfilename": "01JM1NRP5A-01JM1S24EZ.tar"
+    },
+    {
+      "rfilename": "01JM1S42HT-01JM1W1VNG.tar"
+    },
+    {
+      "rfilename": "01JM1W2ERR-01JM210B4W.tar"
+    },
+    {
+      "rfilename": "01JM210G3Q-01JM22GF82.tar"
+    },
+    {
+      "rfilename": "01JM22KC65-01JM8VJZVK.tar"
+    },
+    {
+      "rfilename": "01JM8VK7HS-01JM8WVMBH.tar"
+    },
+    {
+      "rfilename": "01JM8WW8CF-01JM8YB8EW.tar"
+    },
+    {
+      "rfilename": "01JM8YBW4P-01JM8ZKZ4E.tar"
+    },
+    {
+      "rfilename": "01JM8ZMTDH-01JM960BCZ.tar"
+    },
+    {
+      "rfilename": "01JM9615MH-01JM97FB8P.tar"
+    },
+    {
+      "rfilename": "01JM97FT04-01JM98ST1R.tar"
+    },
+    {
+      "rfilename": "01JM98T2HV-01JM9A5B64.tar"
+    },
+    {
+      "rfilename": "01JM9A62RW-01JM9CNZTJ.tar"
+    },
+    {
+      "rfilename": "01JM9CPMW6-01JM9EFQEC.tar"
+    },
+    {
+      "rfilename": "01JM9EG2AJ-01JM9GJ50G.tar"
+    },
+    {
+      "rfilename": "01JM9GJMJE-01JM9JBX36.tar"
+    },
+    {
+      "rfilename": "01JM9JCHFP-01JM9R43GK.tar"
+    },
+    {
+      "rfilename": "01JM9R4XWT-01JMBD1Z6C.tar"
+    },
+    {
+      "rfilename": "01JMBD27WD-01JMBEDH8N.tar"
+    },
+    {
+      "rfilename": "01JMBEDZ5T-01JMBFD2VT.tar"
+    },
+    {
+      "rfilename": "01JMBFD8XX-01JMBGPMTH.tar"
+    },
+    {
+      "rfilename": "01JMBGPXFP-01JMBQBMP6.tar"
+    },
+    {
+      "rfilename": "01JMBQBYWH-01JMBRF944.tar"
+    },
+    {
+      "rfilename": "01JMBRFWRH-01JMBT4PA9.tar"
+    },
+    {
+      "rfilename": "01JMBT5CF9-01JMBVJ393.tar"
+    },
+    {
+      "rfilename": "01JMBVJY1X-01JMBXR6N9.tar"
+    },
+    {
+      "rfilename": "01JMBXRF4Q-01JMC1C3BG.tar"
+    },
+    {
+      "rfilename": "01JMC1C9DT-01JMC2WFRW.tar"
+    },
+    {
+      "rfilename": "01JMC2WGPH-01JMC4VDP5.tar"
+    },
+    {
+      "rfilename": "01JMC4WT0H-01JMCBC79M.tar"
+    },
+    {
+      "rfilename": "01JMCBCEV4-01JME11X3Y.tar"
+    },
+    {
+      "rfilename": "01JME1237R-01JMEH6X2R.tar"
+    },
+    {
+      "rfilename": "01JMEHA92R-01JMEWXBHJ.tar"
+    },
+    {
+      "rfilename": "01JMEX00XF-01JN0B0VXS.tar"
+    },
+    {
+      "rfilename": "01JN0B1N7D-01JN0Y2AWR.tar"
+    },
+    {
+      "rfilename": "01JN0Y324H-01JN0YMV54.tar"
+    },
+    {
+      "rfilename": "01JNCWVZYM-01JNFHQEQD.tar"
+    },
+    {
+      "rfilename": "01JNFHRWPD-01JNFW1CF0.tar"
+    },
+    {
+      "rfilename": "01JNFW2BQF-01JNJJ7MDR.tar"
+    },
+    {
+      "rfilename": "01JNJJ8D76-01JNQJBFVJ.tar"
+    },
+    {
+      "rfilename": "01JNQJCHMX-01JNQYNGF8.tar"
+    },
+    {
+      "rfilename": "01JNQYPJRD-01JNYYRED3.tar"
+    },
+    {
+      "rfilename": "01JNYYTYDN-01JNZVG047.tar"
+    },
+    {
+      "rfilename": "01JNZVGZSW-01JPHNAGJ9.tar"
+    },
+    {
+      "rfilename": "01JPHPPZP5-01JQ5X9MYT.tar"
+    },
+    {
+      "rfilename": "01JQ5XE6GX-01JQRB0F83.tar"
+    },
+    {
+      "rfilename": "01JQT4D8NX-01JQTT1WZE.tar"
+    },
+    {
+      "rfilename": "01JQTTM0QX-01JR7196TT.tar"
+    },
+    {
+      "rfilename": "01JR71BQDZ-01JRZ43PHZ.tar"
+    },
+    {
+      "rfilename": "01JRZ44JR4-01JSBTE6HX.tar"
+    },
+    {
+      "rfilename": "01JSBYTCAH-01JV1WGGKM.tar"
+    },
+    {
+      "rfilename": "01JV1WMZ20-01JV8XWWYT.tar"
+    },
+    {
+      "rfilename": "01JV8Y0GW8-01JWDBS1AV.tar"
+    },
+    {
+      "rfilename": "01JWDBZ957-01JWTCRX11.tar"
+    },
+    {
+      "rfilename": "01JWTCTETV-01JWZCN0CD.tar"
+    },
+    {
+      "rfilename": "01JWZCQ66H-01JY6HB7EN.tar"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "metadata.json"
+    }
+  ],
+  "createdAt": "2025-03-08T16:04:45.000Z",
+  "usedStorage": 2746858697343
+}

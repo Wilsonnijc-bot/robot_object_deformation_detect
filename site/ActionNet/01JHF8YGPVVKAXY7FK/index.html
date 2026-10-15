@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jhf8ygpvvkaxy7fk · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JHF8YGPVVKAXY7FK</p>
+<h1>01jhf8ygpvvkaxy7fk</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 421 frames · 14.03 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses the hand entering from the lower-right edge to close its fingers and thumb around the croissant-shaped pastry on the checkered tablecloth and lift it. It carries the pastry to the white stacked shelf, slides it into the middle shelf compartment, and opens its hand to release it there, then withdraws, leaving the pastry resting on the middle shelf. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Take the croissant and put it on the second shelf</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 363.5 vs threshold 60">Pass<b>364</b></span><p>Sharpness <b>363.5</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>421</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>14.03 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JHF8YGPVVKAXY7FK">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JHF8YGPVVKAXY7FK/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JHF8YGPVVKAXY7FK/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JHF8YGPVVKAXY7FK/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JHF8YGPVVKAXY7FK&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;review_scope&quot;: &quot;One dedicated agent reviewed the complete unchanged 421-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_start&quot;: 0,
+  &quot;source_frame_end_exclusive&quot;: 421,
+  &quot;fps_rational&quot;: &quot;30/1&quot;,
+  &quot;resolution&quot;: [
+    1280,
+    800
+  ],
+  &quot;source_annotation&quot;: {
+    &quot;verbatim_task_prompt&quot;: &quot;Take the croissant and put it on the second shelf&quot;,
+    &quot;task_prompt_path&quot;: &quot;../../original/task_prompt.txt&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;hand entering from the lower-right edge of the initial image&quot;,
+    &quot;initial_frame_evidence&quot;: &quot;Paired forearms enter from the near lower image edges; the lower-right forearm/hand is the one that reaches the pastry. Torso and shoulders are outside the image, so attachment to the robot body is not visible. Hand geometry (thumb and grouped fingers) does not independently establish camera mirroring or pose relative to the robot body.&quot;,
+    &quot;confidence&quot;: &quot;Visible-arm identity is unambiguous; anatomical left/right is not independently established.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulating hand: closes thumb and fingers around the pastry on the tablecloth, bears it during lift and transport, inserts it into the middle compartment of the white rack, opens to release it, withdraws and is raised, then lowered back to its lower-right starting position.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Remains stationary at the lower-left edge for the whole clip; no contact with the pastry, shelf or any other object.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand object placement. No hand-to-hand transfer, bimanual stabilization or regrasp. A person at the right edge of the frame stands, then walks out of view near the end; no physical interaction with the robot, pastry or shelf is observed.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        22
+      ],
+      &quot;observation&quot;: &quot;Pastry rests on the checkered cloth right of the three-tier white rack; both hands are clear and static (the lower-right hand is upright beside the pastry). Person at right edge is seated/standing with a hand at the face.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        24,
+        48
+      ],
+      &quot;observation&quot;: &quot;Lower-right hand tilts and moves left toward the pastry with fingers open; thumb-side and finger-side surfaces come either side of it by about frame 48.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        50,
+        100
+      ],
+      &quot;observation&quot;: &quot;Hand lowers onto the pastry and its open thumb/fingers straddle the pastry&#x27;s lower-right end; native frame 102 shows the open hand against the pastry with the pastry still on the cloth.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        102,
+        166
+      ],
+      &quot;observation&quot;: &quot;Fingers and thumb close on opposing sides of the pastry (native frame 150 shows dark thumb below and fingers above the orange pastry); small shifts of the grasp before lift. No second-hand contact.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        168,
+        214
+      ],
+      &quot;observation&quot;: &quot;Hand lifts the pastry off the cloth and carries it left and upward toward the rack while rotating it, pastry held end-on in the hand.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        216,
+        262
+      ],
+      &quot;observation&quot;: &quot;Held pastry reaches the rack front face and moves into the middle (second) compartment opening; native frame 260 shows the pastry partly inside the compartment behind the hand.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        264,
+        336
+      ],
+      &quot;observation&quot;: &quot;Hand pushes the pastry further into the middle compartment and holds it there. The rack appears slightly shifted/tilted in the image in frames about 296-332 (native 316), apparently pushed slightly by the hand, and returns to roughly its original pose by about frame 336. Pastry becomes mostly occluded by the hand and the shelf mesh.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        338,
+        358
+      ],
+      &quot;observation&quot;: &quot;Fingers open (native frame 340: open thumb/finger spread beside the pastry) and the hand retracts from the compartment; pastry stays inside the middle compartment.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        360,
+        384
+      ],
+      &quot;observation&quot;: &quot;Hand, now clear of the pastry, moves right and upward away from the rack with fingers spread. The person moves out of the view to the right.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        386,
+        420
+      ],
+      &quot;observation&quot;: &quot;Hand lowers back to the lower-right edge of the image and stays still. Pastry remains resting inside the middle compartment (native frame 420) with both hands clear; no further manipulation.&quot;
+    }
+  ],
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;successful_visible_placement&quot;,
+    &quot;description&quot;: &quot;Pastry is released into the middle (second from top) compartment of the white three-tier rack and remains resting there while the hand withdraws.&quot;,
+    &quot;selected_action_outcome&quot;: &quot;successful_visible_placement&quot;,
+    &quot;source_overall_success_label&quot;: &quot;not used to infer outcome&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;Source says &#x27;second shelf&#x27;; the pastry ends in the middle compartment of a three-tier rack, which is second from the top and second from the bottom, so it is consistent. The prompt names the middle shelf because the numbering direction is not stated.&quot;,
+    &quot;Croissant identity comes from the source annotation; visually it is a golden-orange pastry-shaped object (triangular, textured). Prompt uses croissant-shaped pastry rather than asserting food material.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Anatomical left/right is not established: torso and shoulders are outside the image and camera mirroring is not known; the prompt uses the unambiguous hand entering from the lower-right edge.&quot;,
+    &quot;Exact frame of table separation and of release inside the shelf cannot be isolated because the hand and shelf mesh occlude the pastry; chronology intervals bracket visible transitions.&quot;,
+    &quot;The slight rack displacement around frames 296-332 may be hand contact with the rack or camera/rack motion; not narrated in the prompt.&quot;,
+    &quot;Actual food versus prop material cannot be established visually.&quot;,
+    &quot;Top camera shows slight motion across the sequence; the fixed-camera generation constraint is retained verbatim.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;total_decoded_frames&quot;: 421,
+    &quot;overview_frame_indices&quot;: {
+      &quot;start&quot;: 0,
+      &quot;stop_inclusive&quot;: 420,
+      &quot;step&quot;: 2,
+      &quot;count&quot;: 211
+    },
+    &quot;overview_method&quot;: &quot;Decoded RGB every second frame into eighteen temporary 4-by-3 contact sheets (480 px tiles) outside dataset folders; reviewed all sheets.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      0,
+      102,
+      150,
+      200,
+      260,
+      316,
+      340,
+      420
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/an_review_01JHF8YGPVVKAXY7FK (removed after review; not under generation input)&quot;,
+    &quot;retained_evidence_frame_directories&quot;: false
+  },
+  &quot;preservation&quot;: {
+    &quot;whole_original_single_task_clip_retained&quot;: true,
+    &quot;crop&quot;: false,
+    &quot;shorten&quot;: false,
+    &quot;resize&quot;: false,
+    &quot;reencode&quot;: false,
+    &quot;source_and_generation_sha256_equal&quot;: true
+  },
+  &quot;prompt_word_count&quot;: 78
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../ActionNet/01JGJXRGT7E3ULU66F/index.html">← 01jgjxrgt7e3ulu66f</a><a rel="next" href="../../ActionNet/01JHF84WJCMA7S2S3S/index.html">01jhf84wjcma7s2s3s →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

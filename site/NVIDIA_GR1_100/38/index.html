@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 38 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 38</p>
+<h1>Video 38</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot closes its right hand around the tall red glass, lifts it from the table, and carries it toward the blue plate. It tilts the glass while lowering it onto the plate, then opens its fingers, leaving the glass lying on its side with the right hand beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up tall red glass from center of tan table to center of bright blue plate.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 542.3 vs threshold 60">Pass<b>542</b></span><p>Sharpness <b>542.3</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/38">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/38/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/38/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/38/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-facing-forward view over two articulated humanoid hands and forearms, with an upright tall translucent red cylindrical glass near table center and a blue plate to its right. The hands are initially open and neither touches the glass.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 21,
+      &quot;action&quot;: &quot;Both hands are open; the red glass stands upright on the table, with the blue plate beside it. The left hand remains inactive throughout.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 22,
+      &quot;end_frame&quot;: 55,
+      &quot;action&quot;: &quot;The right arm moves inward toward the glass, bringing the open thumb and fingers around its sides while the glass remains upright on the table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 56,
+      &quot;end_frame&quot;: 75,
+      &quot;action&quot;: &quot;Right fingers curl around the glass against the thumb, securing it and lifting it clear of its original position.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 76,
+      &quot;end_frame&quot;: 97,
+      &quot;action&quot;: &quot;The right hand transports the glass toward the blue plate; the wrist rotates so the glass tilts substantially from upright, then lowers it across the plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 98,
+      &quot;end_frame&quot;: 111,
+      &quot;action&quot;: &quot;The right hand retains contact around the tilted glass over the plate, adjusting its position while the left hand remains away.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 112,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;The right fingers open and the glass settles onto its side across the plate. By the final frame the hand is open beside the glass, which lies horizontally on the plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating hand: grasps glass with fingers and opposed thumb, lifts, transports, tilts, lowers, and opens to release it on the plate.&quot;,
+    &quot;left&quot;: &quot;Open and largely stationary away from the object; no grasp, support, transfer, or plate stabilization.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand manipulation; no hand-to-hand coordination or interaction with a person.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;description&quot;: &quot;Both forearms extend forward from the lower edge in a robot-facing-forward camera view. The active hand is connected to the forearm entering from the robot-right lower side; its opposed thumb lies on the medial side toward the other hand. The mirrored thumb placement of the idle hand supports anatomical right/left naming rather than relying only on image position. The torso and shoulders are outside the view.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;uncertainty&quot;: &quot;No shoulder attachment is visible, but paired forearm direction and thumb handedness establish the side.&quot;
+  },
+  &quot;coordination&quot;: &quot;Right-hand-only task; the left hand stays open and does not support the glass or plate.&quot;,
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    32,
+    62,
+    80,
+    96,
+    112,
+    116,
+    118,
+    119
+  ],
+  &quot;initial_png_inspected_at_native_resolution&quot;: true,
+  &quot;inspection_coverage&quot;: {
+    &quot;complete_source_frames&quot;: 120,
+    &quot;sampled_frames_viewed&quot;: 60,
+    &quot;sampled_frame_indices&quot;: &quot;0,2,4,...,118&quot;,
+    &quot;all_contact_sheets_viewed&quot;: true,
+    &quot;native_transition_and_terminal_frames&quot;: [
+      32,
+      62,
+      80,
+      96,
+      112,
+      116,
+      118,
+      119
+    ],
+    &quot;native_dimensions&quot;: [
+      1280,
+      800
+    ]
+  },
+  &quot;terminal_state&quot;: &quot;Red glass is released lying on its side across the blue plate. The right fingers are open beside the glass; the left hand remains open away from it. No upright placement or withdrawal is observed.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;execution_status_basis&quot;: &quot;The glass is visibly moved from its initial table position and released onto the plate. Success here denotes completed transport onto the plate, retaining the observed sideways orientation rather than inferring an upright placement.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The exact onset of glass-to-plate contact is partially obscured by the right hand; the sideways plate-supported final state and opening fingers are visible.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;annotation_comparison&quot;: &quot;Original instruction names the right hand, red glass, and blue plate destination, matching the observed manipulation. It does not specify terminal orientation; the usable prompt explicitly preserves the observed sideways ending.&quot;,
+  &quot;video_id&quot;: &quot;38&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_38&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/38/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    32,
+    62,
+    80,
+    96,
+    112,
+    116,
+    118,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot closes its right hand around the tall red glass, lifts it from the table, and carries it toward the blue plate. It tilts the glass while lowering it onto the plate, then opens its fingers, leaving the glass lying on its side with the right hand beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up tall red glass from center of tan table to center of bright blue plate.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;b68e0dba225f56240d11af118bf71e65a0e6afbceaa303fc9501078dffa504df&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:02:30.643511+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/37/index.html">← Video 37</a><a rel="next" href="../../NVIDIA_GR1_100/39/index.html">Video 39 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

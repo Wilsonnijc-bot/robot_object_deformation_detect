@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JGJXRGT7E3ULU66F",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JGJCNDDF-01JGJY03Q1.tar",
+  "archive_name": "01JGJCNDDF-01JGJY03Q1.tar",
+  "annotation": {
+    "id": "01JGJXRGT7E3ULU66F",
+    "prompt": "Pick up the bread and place it on the first level of the double shelf.",
+    "task": "shelf",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JGJXRGT7E3ULU66F.hdf5",
+      "path": "../01JGJXRGT7E3ULU66F.hdf5",
+      "size_bytes": 947320,
+      "sha256": "9a2d22d2e30acb8a2964268d67558bccaabe9e66213e9caec205550daca1f662"
+    },
+    {
+      "archive_member": "01JGJXRGT7E3ULU66F/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 28961332,
+      "sha256": "e561261d9277c15cac19286515ac6ce54fab41387ec86d972384f1a29f97f13c"
+    },
+    {
+      "archive_member": "01JGJXRGT7E3ULU66F/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 11327181,
+      "sha256": "a10c49fc8a947c5e864c3c96f1b2fa58a6d8cea4d1233b1e96d0207544219534"
+    },
+    {
+      "archive_member": "01JGJXRGT7E3ULU66F/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12600,
+      "sha256": "0c0ec5c8a28727e2b497ac57620ab76d393022d7bd8b0e18f749e8c88cafdf6e"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

@@ -1,0 +1,313 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "revision": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "license": "cc-by-nc-sa-4.0",
+  "download_method": "authenticated_existing_browser_session",
+  "archive_name": "01JN0Y324H-01JN0YMV54.tar",
+  "archive_size_bytes": 1067192320,
+  "archive_sha256": "83f9727aafe59bc1db0ef89489ec05131cdb53655bd712c0887d95a322476990",
+  "selected_episode_ids": [
+    "01JN0Y324H2ZFDTSYD",
+    "01JN0YDDF5ZYHXSSFO",
+    "01JN0YMV54BPXU4PLB"
+  ],
+  "selection": "First, annotation variant, and last episode of smallest source archive. Convenience sample of one task; not representative of the whole dataset.",
+  "source_annotation_sha256": "3f0126305998cf207b63042caf599e4e5b96c7934c5dd7aaaa801e2a4753c3b2",
+  "downloaded_at_local_date": "2026-10-15",
+  "local_timezone": "America/New_York",
+  "retained_sample_size_bytes": 257467683,
+  "temporary_downloads_removed": true,
+  "validation_status": "passed",
+  "additional_episodes": {
+    "method": "range_requests_on_uncompressed_tar (fetch_more.py); archives were not downloaded in full",
+    "selection": "Twelve episodes with distinct source prompts, three from each of four archives (a 10%, 50% and 90% position scan). Convenience sample; not representative of ActionNet.",
+    "archives": {
+      "01JGJCNDDF-01JGJY03Q1.tar": [
+        "01JGJQAJP3GQBKPCED",
+        "01JGJS4GWCL7A5XCXC",
+        "01JGJXRGT7E3ULU66F"
+      ],
+      "01JHF7ZEBF-01JHFAFHR7.tar": [
+        "01JHF84WJCMA7S2S3S",
+        "01JHF8YGPVVKAXY7FK",
+        "01JHFA7YZJTTECHOFB"
+      ],
+      "01JJ130F0A-01JJ15BREB.tar": [
+        "01JJ136C6DH2EZB42B",
+        "01JJ141D4HW47GWFAL",
+        "01JJ15873JBIEVYT62"
+      ],
+      "01JMC4WT0H-01JMCBC79M.tar": [
+        "01JMC54RMAVQ5E7IKP",
+        "01JMCA5VKE4FOEQ7FA",
+        "01JMCB8Z194OS4IEC5"
+      ]
+    },
+    "members": {
+      "01JGJQAJP3GQBKPCED": {
+        "01JGJQAJP3GQBKPCED.hdf5": {
+          "archive_offset": 538436608,
+          "size_bytes": 941720,
+          "sha256": "5dadda4f1c47e9f7d1bdfa1bd259090264cc5c5afd752b4366910c7989d1e33d"
+        },
+        "01JGJQAJP3GQBKPCED/top/rgb.mp4": {
+          "archive_offset": 551005696,
+          "size_bytes": 29518743,
+          "sha256": "a0aac99b8de33cf34849d41654970f777d36e8fa576b146d26a23080ee777491"
+        },
+        "01JGJQAJP3GQBKPCED/top/depth.mkv": {
+          "archive_offset": 539383296,
+          "size_bytes": 11620562,
+          "sha256": "99e8edd3235a8ff36d968fc89beba7ca24ccd83fb3c00189e851aa21f4177c5c"
+        },
+        "01JGJQAJP3GQBKPCED/top/timestamps.json": {
+          "archive_offset": 580526080,
+          "size_bytes": 12540,
+          "sha256": "2a9e06123578eb22f59c2058ab3784666e94fb21acba8c6722484b769f47851f"
+        }
+      },
+      "01JGJS4GWCL7A5XCXC": {
+        "01JGJS4GWCL7A5XCXC.hdf5": {
+          "archive_offset": 2319945216,
+          "size_bytes": 902520,
+          "sha256": "829a2279bc83d0fe0c094dc70c56f01a93b5e5ed3089eec6fd32acf420d16536"
+        },
+        "01JGJS4GWCL7A5XCXC/top/rgb.mp4": {
+          "archive_offset": 2332132352,
+          "size_bytes": 26504202,
+          "sha256": "7ea73995da7a785bd199cdc6b4bb9fefa7c160512abbb57efdf6dd0bfc5bf30c"
+        },
+        "01JGJS4GWCL7A5XCXC/top/depth.mkv": {
+          "archive_offset": 2320852480,
+          "size_bytes": 11277884,
+          "sha256": "06fc5ee2a29d8df2ca8485650a92acb8364b06ba61c8da1b0fdf0e1d1e92a6a6"
+        },
+        "01JGJS4GWCL7A5XCXC/top/timestamps.json": {
+          "archive_offset": 2358638592,
+          "size_bytes": 12120,
+          "sha256": "6ebbf0b2a6b3384b200271b0bc0284afb74b80613b72e9eee242218a6e9a7662"
+        }
+      },
+      "01JGJXRGT7E3ULU66F": {
+        "01JGJXRGT7E3ULU66F.hdf5": {
+          "archive_offset": 4012164096,
+          "size_bytes": 947320,
+          "sha256": "9a2d22d2e30acb8a2964268d67558bccaabe9e66213e9caec205550daca1f662"
+        },
+        "01JGJXRGT7E3ULU66F/top/rgb.mp4": {
+          "archive_offset": 4024445440,
+          "size_bytes": 28961332,
+          "sha256": "e561261d9277c15cac19286515ac6ce54fab41387ec86d972384f1a29f97f13c"
+        },
+        "01JGJXRGT7E3ULU66F/top/depth.mkv": {
+          "archive_offset": 4013116416,
+          "size_bytes": 11327181,
+          "sha256": "a10c49fc8a947c5e864c3c96f1b2fa58a6d8cea4d1233b1e96d0207544219534"
+        },
+        "01JGJXRGT7E3ULU66F/top/timestamps.json": {
+          "archive_offset": 4053408768,
+          "size_bytes": 12600,
+          "sha256": "0c0ec5c8a28727e2b497ac57620ab76d393022d7bd8b0e18f749e8c88cafdf6e"
+        }
+      },
+      "01JHF84WJCMA7S2S3S": {
+        "01JHF84WJCMA7S2S3S.hdf5": {
+          "archive_offset": 429598720,
+          "size_bytes": 1041400,
+          "sha256": "745d25721ca5d731f70c3544b4acfce6071889c0e277439ce946f9affe0187e3"
+        },
+        "01JHF84WJCMA7S2S3S/top/rgb.mp4": {
+          "archive_offset": 443296768,
+          "size_bytes": 32797948,
+          "sha256": "fc0b7393d26d867cc796e4e347e23fbece54b43c4154323ea5736d0fd2fe9ae2"
+        },
+        "01JHF84WJCMA7S2S3S/top/depth.mkv": {
+          "archive_offset": 430644736,
+          "size_bytes": 12650088,
+          "sha256": "30e6bb03b42b339288ddd3bdb68a9c52c7af88a0d186f83792183677a21764e0"
+        },
+        "01JHF84WJCMA7S2S3S/top/timestamps.json": {
+          "archive_offset": 476096512,
+          "size_bytes": 13830,
+          "sha256": "57a651d08d7ab8400c12f53636eb9307990dc4c67fab62fae0a8b6573884d28d"
+        }
+      },
+      "01JHF8YGPVVKAXY7FK": {
+        "01JHF8YGPVVKAXY7FK.hdf5": {
+          "archive_offset": 2261331968,
+          "size_bytes": 951800,
+          "sha256": "3cea5cb419e5c8092d2c2240511c6c036d5d8aed803cdba6985046ee090e23f5"
+        },
+        "01JHF8YGPVVKAXY7FK/top/rgb.mp4": {
+          "archive_offset": 2274046976,
+          "size_bytes": 29524870,
+          "sha256": "2d127703ef58dd2164440fbf2720d8c548f576ab3a2b8f309f0a0eef01b6cc76"
+        },
+        "01JHF8YGPVVKAXY7FK/top/depth.mkv": {
+          "archive_offset": 2262288384,
+          "size_bytes": 11756759,
+          "sha256": "ffad62f20f3227b4b45726621d15e3a699bd2eb281bd7b1c04fe88b0ae1ece35"
+        },
+        "01JHF8YGPVVKAXY7FK/top/timestamps.json": {
+          "archive_offset": 2303573504,
+          "size_bytes": 12630,
+          "sha256": "78c47e6ea5cf766234edb12e60a1b2c0bc77f88f8acb8f5b9b2ea9276683181c"
+        }
+      },
+      "01JHFA7YZJTTECHOFB": {
+        "01JHFA7YZJTTECHOFB.hdf5": {
+          "archive_offset": 3951528448,
+          "size_bytes": 894680,
+          "sha256": "ba1d7c81dc2c3dc9a37edc087f9aad402a8f2cc83575400270f623ca0af34488"
+        },
+        "01JHFA7YZJTTECHOFB/top/rgb.mp4": {
+          "archive_offset": 3964416512,
+          "size_bytes": 26025930,
+          "sha256": "2255c814f78719a4f6e078e253995e7803c9145b8beebe792420ac17072e558d"
+        },
+        "01JHFA7YZJTTECHOFB/top/depth.mkv": {
+          "archive_offset": 3952428032,
+          "size_bytes": 11986761,
+          "sha256": "7df2b0605f302a4e9c407fc365b57adf9eb5ac138a1b75960929346a89513f32"
+        },
+        "01JHFA7YZJTTECHOFB/top/timestamps.json": {
+          "archive_offset": 3990444032,
+          "size_bytes": 11850,
+          "sha256": "8f7dc7cb7613c956063f161893ddb596ecedadc232d38e2887a355029f3f8dbc"
+        }
+      },
+      "01JJ136C6DH2EZB42B": {
+        "01JJ136C6DH2EZB42B.hdf5": {
+          "archive_offset": 466823168,
+          "size_bytes": 928280,
+          "sha256": "014d12d7323205cf5ba47c136c1727c3cd2daddf4dd7017fbdebd0dc7e9879d5"
+        },
+        "01JJ136C6DH2EZB42B/top/rgb.mp4": {
+          "archive_offset": 478989312,
+          "size_bytes": 29818358,
+          "sha256": "493806c4b83ef2f55789ff4c591d8a15f5cd59dedfda265d25b9ec3e6955b4eb"
+        },
+        "01JJ136C6DH2EZB42B/top/depth.mkv": {
+          "archive_offset": 467756544,
+          "size_bytes": 11231180,
+          "sha256": "2337970d095ad4e876d2064549a22a57b98659c44b37f59f3fa8eb8027872a8f"
+        },
+        "01JJ136C6DH2EZB42B/top/timestamps.json": {
+          "archive_offset": 508809216,
+          "size_bytes": 12300,
+          "sha256": "aacb12858c3a1e20624393aa1ca60677b3df26fa6a70c9d5796f069373b18963"
+        }
+      },
+      "01JJ141D4HW47GWFAL": {
+        "01JJ141D4HW47GWFAL.hdf5": {
+          "archive_offset": 2283545600,
+          "size_bytes": 895800,
+          "sha256": "157fcefa927beef0f7b1fd647572165d54aaac54b22d27e3874750df8d5359e0"
+        },
+        "01JJ141D4HW47GWFAL/top/rgb.mp4": {
+          "archive_offset": 2294955008,
+          "size_bytes": 29937217,
+          "sha256": "118c1dd408d5436a488cb3be9fd1fbef21568b60cff41f25faf0c21d48395670"
+        },
+        "01JJ141D4HW47GWFAL/top/depth.mkv": {
+          "archive_offset": 2284446208,
+          "size_bytes": 10506920,
+          "sha256": "8ae644b0f7e527a8d3b9370f690033bfb3662d02057651a03c0f27f88f78f1b5"
+        },
+        "01JJ141D4HW47GWFAL/top/timestamps.json": {
+          "archive_offset": 2324894208,
+          "size_bytes": 11880,
+          "sha256": "18549b46547869bae13535cd2d1d55453588a3fbbaeeb8ff0cb96d77d812e843"
+        }
+      },
+      "01JJ15873JBIEVYT62": {
+        "01JJ15873JBIEVYT62.hdf5": {
+          "archive_offset": 4139116032,
+          "size_bytes": 917080,
+          "sha256": "8856e520dcada1ffbbf0faa26deefde08251e0404e8051442a4eb7fe3b9f8442"
+        },
+        "01JJ15873JBIEVYT62/top/rgb.mp4": {
+          "archive_offset": 4150649856,
+          "size_bytes": 27862669,
+          "sha256": "be4b7d943ac30242658dc1c410bd9801f792f119b30beb22be0b9f418810cf58"
+        },
+        "01JJ15873JBIEVYT62/top/depth.mkv": {
+          "archive_offset": 4140038144,
+          "size_bytes": 10609996,
+          "sha256": "e4dab06fa6b5992ec1f4788021f3710cfb29e733856dd7a0f502bda92d206555"
+        },
+        "01JJ15873JBIEVYT62/top/timestamps.json": {
+          "archive_offset": 4178514432,
+          "size_bytes": 12150,
+          "sha256": "db7f28fd0cd1d6b665d8c1003e964da8702be33c27b206f5f54befacc98fd40c"
+        }
+      },
+      "01JMC54RMAVQ5E7IKP": {
+        "01JMC54RMAVQ5E7IKP.hdf5": {
+          "archive_offset": 411027456,
+          "size_bytes": 969720,
+          "sha256": "675bf92e7672447c7691824a12d867f0787cdc047bd4e72808734eeb1363c2f7"
+        },
+        "01JMC54RMAVQ5E7IKP/top/rgb.mp4": {
+          "archive_offset": 423969792,
+          "size_bytes": 27998032,
+          "sha256": "56bab472762fcad590432adb2829e350a68799e41ba2571ea76711eb0253894f"
+        },
+        "01JMC54RMAVQ5E7IKP/top/depth.mkv": {
+          "archive_offset": 412001792,
+          "size_bytes": 11965968,
+          "sha256": "a6b02d7322d9dcebbf49c270f63ae7b66273c7a3b3607ae855d74f2fedd3ea2a"
+        },
+        "01JMC54RMAVQ5E7IKP/top/timestamps.json": {
+          "archive_offset": 451969536,
+          "size_bytes": 12870,
+          "sha256": "9dc631b6a156f638309bb20f7e04b59fbacbdb3a5ca17b1c205f477a633b0b11"
+        }
+      },
+      "01JMCA5VKE4FOEQ7FA": {
+        "01JMCA5VKE4FOEQ7FA.hdf5": {
+          "archive_offset": 2053395456,
+          "size_bytes": 907000,
+          "sha256": "5b36a74aaf9e98080ea587d0630389685a67a761ba9efcb760b06b5bffeed17a"
+        },
+        "01JMCA5VKE4FOEQ7FA/top/rgb.mp4": {
+          "archive_offset": 2065177088,
+          "size_bytes": 30396487,
+          "sha256": "52eda613cf57863d13f1ccd93e7449dbfae68d3e98fd3c403cdaca0b13a7bf00"
+        },
+        "01JMCA5VKE4FOEQ7FA/top/depth.mkv": {
+          "archive_offset": 2054307328,
+          "size_bytes": 10868224,
+          "sha256": "5a35f916244520bd5c25ce4e84c562f1e398460bfe0b187b9b9f11368b1bcd80"
+        },
+        "01JMCA5VKE4FOEQ7FA/top/timestamps.json": {
+          "archive_offset": 2095575552,
+          "size_bytes": 12030,
+          "sha256": "f77f790d02986ff7183ad48d08e52868cb0a98767d99e9df9dadd7d08c86a78c"
+        }
+      },
+      "01JMCB8Z194OS4IEC5": {
+        "01JMCB8Z194OS4IEC5.hdf5": {
+          "archive_offset": 3914399232,
+          "size_bytes": 1005560,
+          "sha256": "dead029ac6ffe774ceb5a22ac4b98e8e0deda6f4aff150cfe72d1afe15d5b0f3"
+        },
+        "01JMCB8Z194OS4IEC5/top/rgb.mp4": {
+          "archive_offset": 3927909376,
+          "size_bytes": 28760747,
+          "sha256": "78d24f42fdd5cadc0649e07d3735bf6fecff2450088dcf336026adcd8b705cde"
+        },
+        "01JMCB8Z194OS4IEC5/top/depth.mkv": {
+          "archive_offset": 3915409408,
+          "size_bytes": 12498375,
+          "sha256": "ea4df7c3b9bbc52c72469f6429e9b5adc298f2db0792ef49cc3fcfadd3303631"
+        },
+        "01JMCB8Z194OS4IEC5/top/timestamps.json": {
+          "archive_offset": 3956672000,
+          "size_bytes": 13350,
+          "sha256": "894b48aedd6fb2d5fb425c937488e54c92f574725d388fd267d9c3fda4ae4b03"
+        }
+      }
+    }
+  }
+}

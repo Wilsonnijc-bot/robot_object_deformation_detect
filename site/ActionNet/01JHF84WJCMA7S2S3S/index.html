@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jhf84wjcma7s2s3s · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JHF84WJCMA7S2S3S</p>
+<h1>01jhf84wjcma7s2s3s</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 461 frames · 15.37 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses the hand entering from the lower-right edge to close its thumb and fingers around the lemon on the tablecloth and lift it. It carries the lemon to the open side of the white shelf unit facing the hand, inserts it into the second shelf level from the top, and opens its fingers to release it. The hand then withdraws and returns upright at the lower right, leaving the lemon resting in that shelf. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Take the lemon and put it on the second shelf</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 469.6 vs threshold 60">Pass<b>470</b></span><p>Sharpness <b>469.6</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>461</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>15.37 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JHF84WJCMA7S2S3S">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JHF84WJCMA7S2S3S/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JHF84WJCMA7S2S3S/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JHF84WJCMA7S2S3S/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JHF84WJCMA7S2S3S&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;review_scope&quot;: &quot;One dedicated agent reviewed the complete unchanged 461-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_start&quot;: 0,
+  &quot;source_frame_end_exclusive&quot;: 461,
+  &quot;fps_rational&quot;: &quot;30/1&quot;,
+  &quot;resolution&quot;: [
+    1280,
+    800
+  ],
+  &quot;source_annotation&quot;: {
+    &quot;verbatim_task_prompt&quot;: &quot;Take the lemon and put it on the second shelf&quot;,
+    &quot;task_prompt_path&quot;: &quot;../../original/task_prompt.txt&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;hand entering from the lower-right edge of the initial image&quot;,
+    &quot;initial_frame_evidence&quot;: &quot;Two dark forearms enter from the near lower image edges; the active hand is attached to the lower-right forearm, stands upright beside the lemon, and the lower-left hand stays upright at the left edge. Torso and shoulders are outside the image. The grasp places the thumb on the image-left side of the lemon with grouped fingers on the image-right side, but this does not independently establish the camera pose relative to the robot body or whether the view is mirrored.&quot;,
+    &quot;confidence&quot;: &quot;Visible-arm identity is unambiguous; anatomical left/right is not independently established.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulating hand: lowers beside the lemon, closes thumb and fingers around it, bears it during lift and transport, pushes it into the open side of the shelf unit, opens its fingers to release it, withdraws and returns upright.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Remains upright at the left image edge throughout; no observed contact with the lemon, shelf unit or any task object.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand object placement. No hand-to-hand transfer, bimanual stabilization, or regrasp is observed. The standing person at the right edge looks at a phone throughout and does not interact with the robot, lemon or shelf.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        40
+      ],
+      &quot;observation&quot;: &quot;Lemon lies on the tablecloth to the right of the white three-level shelf unit; the lower-right hand is upright beside it and the lower-left hand is upright at the left edge. The standing person holds a phone.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        42,
+        100
+      ],
+      &quot;observation&quot;: &quot;The lower-right arm tilts the hand toward the lemon. At frame 50 the open hand is beside the right side of the lemon with fingers pointing away from the camera; by frame 90 the thumb has reached the image-left side of the lemon while the grouped fingers stay on the image-right side.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        102,
+        150
+      ],
+      &quot;observation&quot;: &quot;Thumb and fingers close on opposing sides of the lemon; frame 110 shows the closing motion and frame 130 shows the lemon enclosed between thumb and fingers. At frame 150 the lemon is held but still at table position.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        152,
+        214
+      ],
+      &quot;observation&quot;: &quot;The hand lifts the lemon off the tablecloth (frame 170 clearly raised) and begins carrying it toward the shelf unit; the hand alone bears the lemon (frame 190, 216).&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        216,
+        300
+      ],
+      &quot;observation&quot;: &quot;The held lemon is carried leftward and upward to the right-facing open side of the shelf. Frame 240 shows it beside the upper levels, frame 270 near the second level with fingertips toward the shelf, and frame 300 with the hand tilted and the lemon at the second-from-top level.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        302,
+        370
+      ],
+      &quot;observation&quot;: &quot;The hand pushes the lemon into the second shelf level under the top tray (frames 330-364); the lemon becomes partly hidden behind the hand and the top tray rim, so exact first contact with the shelf floor is occluded.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        372,
+        388
+      ],
+      &quot;observation&quot;: &quot;The fingers open and spread (frames 378-388) while the lemon rests in the shelf compartment.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        390,
+        412
+      ],
+      &quot;observation&quot;: &quot;The hand moves back out of the compartment (frames 392-400), still partly in front of the lemon; the lemon stays in place at 396 and 400.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        414,
+        460
+      ],
+      &quot;observation&quot;: &quot;The hand withdraws toward the lower right (frame 420), rises to an upright pose (frame 440) and remains upright to the final frame 460. The lemon rests inside the second shelf level from the top for the rest of the clip.&quot;
+    }
+  ],
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;successful_visible_placement&quot;,
+    &quot;description&quot;: &quot;Lemon is released inside the second shelf level from the top of the white shelf unit and stays there while the hand withdraws and returns upright at the lower right.&quot;,
+    &quot;selected_action_outcome&quot;: &quot;successful_visible_placement&quot;,
+    &quot;source_overall_success_label&quot;: &quot;not used to infer outcome&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The source says &#x27;second shelf&#x27; without a counting direction; the lemon visibly ends in the second level from the top (the compartment directly below the top tray), so the usable prompt states &#x27;second shelf level from the top&#x27;.&quot;,
+    &quot;The source does not mention that the lemon is carried to the shelf&#x27;s open side facing the robot hand and pushed in rather than set down from above; the prompt describes the observed insertion.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Anatomical left/right is not independently established; torso and shoulder attachment are outside the image and camera pose or mirroring is unknown. The prompt uses the hand entering from the lower-right edge.&quot;,
+    &quot;The exact release frame and first contact with the shelf floor are partially occluded by the hand and the top tray rim; the open-finger interval 372-388 brackets release.&quot;,
+    &quot;Counting shelf levels from the top is inferred from the stack geometry (top tray, then the level where the lemon rests, then a lower level).&quot;,
+    &quot;Lemon material (real fruit versus prop) cannot be established visually.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;total_decoded_frames&quot;: 461,
+    &quot;overview_frame_indices&quot;: {
+      &quot;start&quot;: 0,
+      &quot;stop_inclusive&quot;: 460,
+      &quot;step&quot;: 2,
+      &quot;count&quot;: 231
+    },
+    &quot;overview_method&quot;: &quot;Decoded RGB every second frame into twenty temporary 4-by-3 contact sheets at 480 px per tile outside dataset folders; reviewed all sheets, then inspected cropped native-resolution tiles around the hand and shelf.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      0,
+      50,
+      90,
+      110,
+      130,
+      150,
+      170,
+      190,
+      216,
+      240,
+      270,
+      300,
+      330,
+      340,
+      350,
+      356,
+      364,
+      370,
+      372,
+      378,
+      384,
+      385,
+      388,
+      392,
+      395,
+      396,
+      400,
+      410,
+      420,
+      440
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/an_review_01JHF84WJCMA7S2S3S (not under generation input; removed after review)&quot;,
+    &quot;retained_evidence_frame_directories&quot;: false
+  },
+  &quot;preservation&quot;: {
+    &quot;whole_original_single_task_clip_retained&quot;: true,
+    &quot;crop&quot;: false,
+    &quot;shorten&quot;: false,
+    &quot;resize&quot;: false,
+    &quot;reencode&quot;: false,
+    &quot;source_and_generation_sha256_equal&quot;: true
+  },
+  &quot;prompt_word_count&quot;: 93
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../ActionNet/01JHF8YGPVVKAXY7FK/index.html">← 01jhf8ygpvvkaxy7fk</a><a rel="next" href="../../ActionNet/01JHFA7YZJTTECHOFB/index.html">01jhfa7yzjttechofb →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

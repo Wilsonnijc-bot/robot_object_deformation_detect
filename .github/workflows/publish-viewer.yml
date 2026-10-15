@@ -1,0 +1,22 @@
+# The Pages site is deployed by main's "Publish website" workflow, which copies this branch's
+# site/ folder to /robotvideo/. Re-run it whenever the viewer changes here.
+name: Publish dataset viewer
+
+on:
+  push:
+    branches: [data/robotvideo]
+    paths:
+      - site/**
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run main's Pages workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish-website.yml --repo "$GITHUB_REPOSITORY" --ref main

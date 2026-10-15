@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fold jacket on desk · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · deformable-3__fold_jacket_on_desk</p>
+<h1>Fold jacket on desk</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 399 frames · 13.33 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid grasps the jacket&#x27;s far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Folding a jacket on the desk with proper technique, requiring understanding of garment structure and multi-step folding procedures.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 153.5 vs threshold 120">Pass<b>154</b></span><p>Sharpness <b>153.5</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>399</dd><dt>Frame rate</dt><dd>29.93 fps</dd><dt>Duration</dt><dd>13.33 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 200,
+  &quot;initial_scene&quot;: &quot;Front-facing humanoid behind a desk with a dark jacket spread in overlapping layers and a sleeve/cuff extending toward image right. Its anatomical left hand is open near that sleeve edge, with fingertips partly occluded by fabric; the right hand begins near the opposite side.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 68,
+      &quot;action&quot;: &quot;Right hand moves outward above the jacket toward its anatomical-right far edge. Left hand stays nearly stationary and open beside the opposite sleeve area, with fingertips partly covered by fabric. No left pinch is established.&quot;,
+      &quot;confidence&quot;: &quot;high for hand pose; uncertain for occluded left fingertip contact&quot;
+    },
+    {
+      &quot;start_frame&quot;: 69,
+      &quot;end_frame&quot;: 125,
+      &quot;action&quot;: &quot;Right fingers descend to the far edge near the white lettering above the orange emblem. Left hand pose remains almost unchanged; adjacent fabric still occludes some fingertips.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 126,
+      &quot;end_frame&quot;: 167,
+      &quot;action&quot;: &quot;Right fingers close on fabric near the far edge; subsequent fabric rise and continuous co-motion with the hand establish a right grasp. Jacket surface begins gathering toward the right hand. Left hand does not visibly close or lift the sleeve.&quot;,
+      &quot;confidence&quot;: &quot;high for right grasp; left contact occluded&quot;
+    },
+    {
+      &quot;start_frame&quot;: 168,
+      &quot;end_frame&quot;: 204,
+      &quot;action&quot;: &quot;Right hand pulls and raises the grasped side. Across native frames 180, 184, 188, 192 and 196 the sleeve edge progressively slides away from the left fingertips, revealing a nearly unchanged open hand. By frame 196 the left fingertips are visibly clear. There is no evidence of a separate active left-hand release or stabilizing grasp.&quot;,
+      &quot;confidence&quot;: &quot;high for visible clearance; uncertain for earlier fingertip contact&quot;
+    },
+    {
+      &quot;start_frame&quot;: 205,
+      &quot;end_frame&quot;: 244,
+      &quot;action&quot;: &quot;Right hand lifts the broad section bearing the orange emblem while lower fabric and the extended sleeve remain on the desk. Left hand stays open beside the sleeve and does not bear the raised garment.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 245,
+      &quot;end_frame&quot;: 286,
+      &quot;action&quot;: &quot;Right hand carries the held section inward toward the torso and its anatomical left, folding that portion onto the remaining jacket. The orange emblem moves with the lifted section while lower cloth and sleeve remain desk-supported; this is flexible fabric folding rather than whole-object rigid reorientation. Left hand stays open nearby without receiving the raised section.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 287,
+      &quot;end_frame&quot;: 300,
+      &quot;action&quot;: &quot;Right hand retains contact with the laid-down edge and settles it among overlapping loose folds. Native frames 294 and 298 show fingers at the fabric, followed by withdrawal beginning around frame 300. No separate regrasp is apparent.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 301,
+      &quot;end_frame&quot;: 312,
+      &quot;action&quot;: &quot;Right fingers open and lift free; native frames 302, 306 and 312 show increasing clearance with no fabric following. Jacket remains bunched on the desk. Left hand stays open beside it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 313,
+      &quot;end_frame&quot;: 398,
+      &quot;action&quot;: &quot;Right arm withdraws and lowers beside the jacket; left arm later shifts slightly back, remaining open. The loosely folded jacket stays bunched with an extended sleeve/cuff; no additional fold or smoothing follows.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole established load-bearing manipulating hand: reaches to far anatomical-right jacket edge near white lettering/orange emblem, closes on fabric, lifts a broad side, brings it inward toward its left over the remaining garment, settles it, releases and withdraws. No clear regrasp between lift and release.&quot;,
+    &quot;left&quot;: &quot;Open, nearly stationary hand beside the opposite sleeve area. Fabric initially occludes fingertips; as the right hand pulls, fabric slides clear without visible left-hand closure or intentional release. Neither stabilizing force nor a grasp is established. It remains open beside the sleeve through the fold and later moves slightly back.&quot;,
+    &quot;coordination&quot;: &quot;The only demonstrated grasp/lift/fold is right-handed. Left hand pose provides clearance rather than established support; no two-handed lifting, stabilizing grasp, hand-to-hand transfer or second fold is visible.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;convention&quot;: &quot;Robot-relative anatomy, established from the initial native PNG and continuous visible shoulder-to-upper-arm-to-forearm attachment. The face visor and front torso plate face the camera: the arm attached to the robot right shoulder appears image left; the opposite arm and pale hand appear image right and are anatomical left.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;uncertainty&quot;: &quot;No anatomical-side uncertainty.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;The right hand has released the raised jacket section onto the desk and returned beside it. Left hand is open and clear of the sleeve. Jacket remains in loose overlapping folds and bunches with a cuff/sleeve still extended; no neatly completed fold or smoothing is visible.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Initial fabric overlap obscures the left fingertips, so incidental contact is possible but a grasp, active stabilization and intentional left release cannot be established. The idle left hand is omitted from the usable prompt; detailed pose and clearance evidence is preserved in the review.&quot;,
+    &quot;The right-hand fabric grasp near white lettering and orange emblem is clear, but overlapping garment layers prevent confident naming of the exact seam/panel; it is described as the far edge/side.&quot;,
+    &quot;No neat completed-jacket fold is visible; whether the loose single fold satisfies any external success rubric is unknown.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [
+    &quot;The source instruction describes proper technique and multi-step jacket folding. The visible sequence contains one broad lift and inward fold, ending with bunched fabric rather than a neatly completed multi-step fold.&quot;
+  ],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    60,
+    70,
+    86,
+    100,
+    110,
+    126,
+    156,
+    168,
+    174,
+    180,
+    184,
+    188,
+    190,
+    192,
+    196,
+    202,
+    204,
+    208,
+    220,
+    236,
+    244,
+    252,
+    258,
+    276,
+    286,
+    294,
+    296,
+    298,
+    300,
+    302,
+    306,
+    312,
+    368,
+    398
+  ],
+  &quot;selected_execution_status&quot;: &quot;incomplete&quot;,
+  &quot;selected_execution_status_reason&quot;: &quot;The right-handed inward fold and release finish visibly, but the jacket remains loosely bunched with an extended sleeve, so complete orderly jacket folding is not demonstrated.&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;complete_video_sampled&quot;: true,
+    &quot;source_frames_inclusive&quot;: [
+      0,
+      398
+    ],
+    &quot;every_second_decoded_frame&quot;: true,
+    &quot;all_contact_sheets_visually_viewed&quot;: true,
+    &quot;native_initial_png_visually_viewed&quot;: true,
+    &quot;native_transition_and_final_frames_visually_viewed&quot;: [
+      0,
+      60,
+      70,
+      86,
+      100,
+      110,
+      126,
+      156,
+      168,
+      174,
+      180,
+      184,
+      188,
+      190,
+      192,
+      196,
+      202,
+      204,
+      208,
+      220,
+      236,
+      244,
+      252,
+      258,
+      276,
+      286,
+      294,
+      296,
+      298,
+      300,
+      302,
+      306,
+      312,
+      368,
+      398
+    ]
+  },
+  &quot;video_id&quot;: &quot;deformable-3&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_deformable_3&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/deformable-3__fold_jacket_on_desk/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 399,
+  &quot;source_fps&quot;: 29.925,
+  &quot;native_detail_frames&quot;: [
+    0,
+    60,
+    70,
+    86,
+    100,
+    110,
+    126,
+    156,
+    168,
+    174,
+    180,
+    184,
+    188,
+    190,
+    192,
+    196,
+    202,
+    204,
+    208,
+    220,
+    236,
+    244,
+    252,
+    258,
+    276,
+    286,
+    294,
+    296,
+    298,
+    300,
+    302,
+    306,
+    312,
+    368,
+    398
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid grasps the jacket&#x27;s far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Folding a jacket on the desk with proper technique, requiring understanding of garment structure and multi-step folding procedures.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 399,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;6cff0ae3f1d8ab0fb34b3b870388284ee99bd1594f4def3fc49d413adbffa550&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T19:02:06.580631+00:00&quot;,
+  &quot;bimanual_second_review&quot;: {
+    &quot;review_completed_at&quot;: &quot;2026-10-13T19:01:44.889328+00:00&quot;,
+    &quot;protocol_focus&quot;: &quot;Native-resolution separate hand contact tracing and object-relative garment landmarks under updated AGENTS.md.&quot;,
+    &quot;reviewed_contact_sheets&quot;: [
+      &quot;sheet_001.jpg&quot;,
+      &quot;sheet_002.jpg&quot;,
+      &quot;sheet_003.jpg&quot;,
+      &quot;sheet_004.jpg&quot;
+    ],
+    &quot;sampled_coverage&quot;: {
+      &quot;stride&quot;: 2,
+      &quot;sample_count&quot;: 200,
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        398
+      ]
+    },
+    &quot;native_initial_source_png_viewed&quot;: true,
+    &quot;native_frames_visually_viewed&quot;: [
+      60,
+      86,
+      100,
+      126,
+      156,
+      168,
+      180,
+      184,
+      188,
+      192,
+      196,
+      204,
+      236,
+      252,
+      286,
+      294,
+      298,
+      302,
+      306,
+      312,
+      398
+    ],
+    &quot;previous_prompt&quot;: &quot;The humanoid steadies one edge of the jacket with its left hand while its right hand grasps the opposite side. The left hand opens clear as the right hand lifts the grasped section and folds it inward over the rest of the jacket. The right hand releases and withdraws, leaving the jacket partially folded and bunched on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+    &quot;findings&quot;: [
+      &quot;Earlier claims that left hand steadies the jacket and opens to release were unsupported. Comparing closely spaced native frames shows the fabric moves away while the left hand remains open and nearly stationary.&quot;,
+      &quot;Right grasp established by fabric co-motion after finger closure, with right hand carrying the raised section through the fold and releasing around frames 300–306.&quot;,
+      &quot;Orange emblem and white lettering identify the lifted section; sleeve/lower cloth remain desk-supported during the inward fold toward robot-left.&quot;,
+      &quot;No hand-to-hand transfer, left supporting grasp, second folding step or neat final fold is visible.&quot;
+    ],
+    &quot;contact_trace&quot;: {
+      &quot;left&quot;: [
+        {
+          &quot;frames&quot;: [
+            0,
+            188
+          ],
+          &quot;part&quot;: &quot;Sleeve edge beside anatomical-left hand&quot;,
+          &quot;evidence&quot;: &quot;Fabric partly occludes fingertips; no visible closure or load-bearing co-motion.&quot;,
+          &quot;interpretation&quot;: &quot;Possible incidental contact, not established stabilization or grasp.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            188,
+            204
+          ],
+          &quot;part&quot;: &quot;Same sleeve edge&quot;,
+          &quot;evidence&quot;: &quot;Cloth edge moves away as right lifts; fingers remain nearly unchanged; clearance visible by 196.&quot;,
+          &quot;interpretation&quot;: &quot;Fabric clearance, not demonstrated intentional left release.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            205,
+            398
+          ],
+          &quot;part&quot;: &quot;No established grasp&quot;,
+          &quot;evidence&quot;: &quot;Open hand beside sleeve through folding; later slight backward motion.&quot;,
+          &quot;interpretation&quot;: &quot;Idle/open clearance; no transfer or regrasp.&quot;
+        }
+      ],
+      &quot;right&quot;: [
+        {
+          &quot;frames&quot;: [
+            0,
+            125
+          ],
+          &quot;part&quot;: &quot;Far anatomical-right edge near white lettering&quot;,
+          &quot;evidence&quot;: &quot;Open approach, then contact/partial fingertip occlusion.&quot;,
+          &quot;interpretation&quot;: &quot;Approach and grasp establishment.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            126,
+            244
+          ],
+          &quot;part&quot;: &quot;Far edge of broad section carrying emblem&quot;,
+          &quot;evidence&quot;: &quot;Fingers close and garment follows as hand rises.&quot;,
+          &quot;interpretation&quot;: &quot;Established grasp; raised section borne by right hand.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            245,
+            300
+          ],
+          &quot;part&quot;: &quot;Same grasped edge/section&quot;,
+          &quot;evidence&quot;: &quot;Continuous fabric-to-hand co-motion into overlapping folds; no intervening free hand.&quot;,
+          &quot;interpretation&quot;: &quot;Inward fold and settling without established regrasp.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            301,
+            312
+          ],
+          &quot;part&quot;: &quot;Former grasped edge&quot;,
+          &quot;evidence&quot;: &quot;Fingers lift and open; garment no longer follows.&quot;,
+          &quot;interpretation&quot;: &quot;Release and withdrawal.&quot;
+        }
+      ]
+    },
+    &quot;uncertainties&quot;: [
+      &quot;Initial fabric overlap obscures the left fingertips, so incidental contact is possible but a grasp, active stabilization and intentional left release cannot be established. The idle left hand is omitted from the usable prompt; detailed pose and clearance evidence is preserved in the review.&quot;,
+      &quot;The right-hand fabric grasp near white lettering and orange emblem is clear, but overlapping garment layers prevent confident naming of the exact seam/panel; it is described as the far edge/side.&quot;,
+      &quot;No neat completed-jacket fold is visible; whether the loose single fold satisfies any external success rubric is unknown.&quot;
+    ],
+    &quot;revised_prompt&quot;: &quot;The humanoid grasps the jacket&#x27;s far edge on its right with its right hand and lifts that side from the desk. It folds the raised section inward toward its left over the remaining jacket, then releases the fabric, leaving a loose, bunched fold on the desk. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+    &quot;media_changed&quot;: false,
+    &quot;idle_hand_prompt_decision&quot;: &quot;Omit left hand because native tracing does not establish assistance or any essential left-hand contact transition; its occlusion and nearly stationary open pose remain documented.&quot;
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/deformable-2__fold_towel/index.html">← Fold towel</a><a rel="next" href="../../Humanoid_Everyday/deformable-6__compress_plastic_bag/index.html">Compress plastic bag →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 81 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 81</p>
+<h1>Video 81</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its right hand to grasp the ear of corn around its pale husk on the right side of the table and lift it clear. It carries the corn upward over the two-tiered wooden shelf, lowers it into the upper tray, and opens its hand, leaving the corn resting across the wooden slats. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up corn from from the right side of the table to to the top of the two-tiered wooden shelf.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 687.5 vs threshold 60">Pass<b>688</b></span><p>Sharpness <b>687.5</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/81">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/81/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/81/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/81/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-centered forward/downward view of both forearms and hands above the table. An ear of corn with exposed yellow kernels and pale husk lies on the right foreground tabletop; a wooden two-tier shelf stands ahead. The left hand is open and idle.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 18,
+      &quot;action&quot;: &quot;A person behind the shelf adjusts its position; the robot right hand starts above the right side of the shelf while the left hand stays open.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 19,
+      &quot;end_frame&quot;: 54,
+      &quot;action&quot;: &quot;Right arm lowers and brings its open hand around the corn on the right foreground tabletop.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 55,
+      &quot;end_frame&quot;: 70,
+      &quot;action&quot;: &quot;Right fingers and thumb close around the pale husk/body of the corn, securing it while still near the table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 71,
+      &quot;end_frame&quot;: 96,
+      &quot;action&quot;: &quot;Right hand lifts the corn from the table and raises it above the upper wooden tray; corn remains held lengthwise.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 97,
+      &quot;end_frame&quot;: 111,
+      &quot;action&quot;: &quot;Right arm carries the corn over the upper shelf and lowers it toward the wooden slats.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 112,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;Right hand opens, releasing the corn into the upper tray. Corn rests horizontally on the slats; the open hand remains nearby rather than completing a full withdrawal. A person touches the shelf frame at the end.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole active manipulator: closes fingers/thumb around corn, lifts, transports upward, lowers into the upper tray and opens to release.&quot;,
+    &quot;left&quot;: &quot;Remains open near the left foreground; does not grasp, stabilize or transfer corn.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;convention&quot;: &quot;Robot-centered forward/downward camera sees the paired forearms extending from the lower edges into the workspace. The idle palm on the camera-left side has its thumb at the outer left edge, consistent with the robot left hand; its counterpart extends from lower right and opposes its thumb against fingers around the corn, consistent with robot right. This matches the source instruction but is grounded in the paired hand/forearm configuration.&quot;,
+    &quot;confidence&quot;: &quot;medium-high&quot;,
+    &quot;limitation&quot;: &quot;Shoulder attachments and full torso are outside the view; anatomical assignment relies on the egocentric paired forearms and thumb geometry.&quot;
+  },
+  &quot;coordination&quot;: &quot;Unimanual corn manipulation; no hand-to-hand transfer and no assistance from the left robot hand. The person adjusts the shelf early and touches its frame at the end, without taking or delivering the corn.&quot;,
+  &quot;terminal_state&quot;: &quot;Corn rests across the slats inside the upper wooden tray. The right hand is open just above/beside it, and the left hand remains open in the foreground.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Full shoulder attachments are outside the egocentric view; hand sides are established from paired forearm positions and palm/thumb geometry. Exact finger-to-husk contact surfaces are partly occluded by the hand.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    28,
+    60,
+    68,
+    76,
+    90,
+    106,
+    114,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;all_source_frames&quot;: &quot;Every second decoded frame from 0 through 118 inspected in the complete contact sheet; final frame 119 separately inspected at native resolution.&quot;,
+    &quot;native_initial_png_inspected&quot;: true,
+    &quot;native_transition_frames&quot;: [
+      28,
+      60,
+      68,
+      76,
+      90,
+      106,
+      114,
+      119
+    ]
+  },
+  &quot;video_id&quot;: &quot;81&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_81&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/81/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    28,
+    60,
+    68,
+    76,
+    90,
+    106,
+    114,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its right hand to grasp the ear of corn around its pale husk on the right side of the table and lift it clear. It carries the corn upward over the two-tiered wooden shelf, lowers it into the upper tray, and opens its hand, leaving the corn resting across the wooden slats. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up corn from from the right side of the table to to the top of the two-tiered wooden shelf.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;e0a14c7ef56812ffef6b3bc904b19bb294bb34e77b7bf9a4f9df43abf0c287d0&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:34:42.463881+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/80/index.html">← Video 80</a><a rel="next" href="../../NVIDIA_GR1_100/82/index.html">Video 82 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+The robotic arm grips the handle of the open top drawer and pushes the drawer back into the wooden cabinet until it is closed, then releases the handle and lifts away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slide close cabinet · RoboMIND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../../RoboMIND/index.html">RoboMIND</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">RoboMIND · franka_3rgb__slide_close_cabinet/0923_111806</p>
+<h1>Slide close cabinet</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 200 frames · 6.67 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robotic arm closes its gripper and pushes the open top drawer of the wooden cabinet shut by its handle, then withdraws from the closed drawer. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">slide close wooden cabinet</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--fail" title="Sharpness 25.2 vs threshold 120">Fail<b>25</b></span><p>Sharpness <b>25.2</b> against 120
+(third-person). Measured on the 960 × 704 model view,
+upscale 1.50×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>200</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>6.67 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;concise_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;x-humanoid-robomind/RoboMIND&quot;,
+  &quot;task&quot;: &quot;slide_close_cabinet&quot;,
+  &quot;episode_id&quot;: &quot;0923_111806&quot;,
+  &quot;source_video&quot;: &quot;../../original/data/trajectory.hdf5&quot;,
+  &quot;generation_camera&quot;: &quot;camera_right&quot;,
+  &quot;source_frame_count&quot;: 200,
+  &quot;source_resolution&quot;: [
+    640,
+    480
+  ],
+  &quot;source_fps&quot;: null,
+  &quot;source_fps_note&quot;: &quot;FPS is not recorded in the source HDF5; 30 FPS is only a nominal playback rate, so no real-time durations are claimed.&quot;,
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 200,
+  &quot;selected_frame_count&quot;: 200,
+  &quot;selection_reason&quot;: &quot;The episode is one continuous single task (push the already-open top drawer of the wooden cabinet closed); the approach, push and withdrawal are ordinary phases of that task, so the complete 200-frame sequence is retained and no shortened clip or separate full-sequence prompt is needed.&quot;,
+  &quot;usable_prompt&quot;: &quot;The robotic arm closes its gripper and pushes the open top drawer of the wooden cabinet shut by its handle, then withdraws from the closed drawer. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;full_sequence_prompt&quot;: &quot;The robotic arm closes its gripper and pushes the open top drawer of the wooden cabinet shut by its handle, then withdraws from the closed drawer. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;selected_action_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;description&quot;: &quot;The top drawer starts partly open (frame 0). After the arm repositions (about frames 24-90), the closed gripper presses on the drawer handle from the image-left side and the drawer slides back into the cabinet (about frames 112-166). It is flush/closed by about frame 168, and the arm then withdraws down and back to image left (about 170-199) with the drawer remaining closed.&quot;
+  },
+  &quot;source_overall_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;source_quality_label&quot;: null,
+    &quot;description&quot;: &quot;Same as the selected action: the drawer ends closed. No separate success/failure label is provided in the source.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;visible_description&quot;: &quot;Single Franka Emika Panda arm with a parallel-jaw gripper, base off-frame to image left; it enters from the left edge in camera_right view and reaches toward the cabinet drawer on the right. Only one arm exists.&quot;,
+    &quot;source_annotation&quot;: &quot;original/task_prompt.txt: &#x27;slide close wooden cabinet&#x27;.&quot;,
+    &quot;visual_certainty&quot;: &quot;Not a humanoid; left/right anatomy is not needed. The prompt refers to the single visible robotic arm.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;active_visible_arm&quot;: &quot;Single arm moves its gripper beside the open drawer handle, closes the gripper, pushes the drawer shut by the handle, then withdraws.&quot;,
+    &quot;other_arm&quot;: &quot;None.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single arm acts alone; no second arm, hand transfer or human interaction.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        22
+      ],
+      &quot;observation&quot;: &quot;Arm hovers above and left of the partly open top drawer with the gripper open and pointing down near the handle. Drawer is open (front pulled out toward the camera and image left).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        24,
+        70
+      ],
+      &quot;observation&quot;: &quot;Gripper lifts slightly, points down at the image left of the handle and rotates/adjusts; wrist rotation and a small gripper-value change appear in telemetry (about frames 40-60). Drawer unchanged and still open.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        72,
+        100
+      ],
+      &quot;observation&quot;: &quot;Arm moves back toward the handle; gripper value rises from about 0.2 to 0.99 (about frames 80-100), consistent with the fingers closing; gripper sits at the left end of the handle.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        102,
+        120
+      ],
+      &quot;observation&quot;: &quot;Closed gripper rests against the handle area; arm extends toward the cabinet (joint motion increases). Drawer still open at about frame 110; starts moving in at about 112-120.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        122,
+        166
+      ],
+      &quot;observation&quot;: &quot;Arm extends, pushing the closed gripper against the drawer handle; the drawer slides back into the cabinet progressively (about frame 134 half closed, 160 with only a small gap).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        168,
+        170
+      ],
+      &quot;observation&quot;: &quot;Drawer visibly closed and flush with the cabinet front; closed gripper still at the handle.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        172,
+        199
+      ],
+      &quot;observation&quot;: &quot;Arm withdraws down and to image left away from the handle; drawer remains closed (frame 186 and later clear of the handle).&quot;
+    }
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Whether the closed gripper pushes the handle bar from behind or presses on it with the outer fingers is not resolvable at 640x480; the prompt says &#x27;pushes ... shut by its handle&#x27; and &#x27;closes its gripper&#x27; (gripper telemetry 0.99 from about frame 100, polarity inferred from video as higher = more closed).&quot;,
+    &quot;The exact frame at which the closed gripper first contacts the handle (between about frames 100 and 112) is judged from the contact sheets.&quot;,
+    &quot;FPS is not recorded in the source; frame indices are authoritative, not time.&quot;,
+    &quot;The withdrawal after frame 170 is only partial in the frame (arm remains near the cabinet at frame 199).&quot;
+  ],
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;No discrepancy: original/task_prompt.txt &#x27;slide close wooden cabinet&#x27; matches the observed pushing of the top drawer closed (the object is a wooden two-drawer cabinet whose top drawer is closed; the bottom drawer is already closed and unchanged).&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;entire_sequence_reviewed&quot;: true,
+    &quot;sampled_decoded_frame_indices&quot;: [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198
+    ],
+    &quot;sampling_method&quot;: &quot;Every second decoded frame of camera_right (frames 0-198) in 4x3 temporary contact sheets covering the complete 200-frame source, plus native-resolution frames at the transitions.&quot;,
+    &quot;native_resolution_frame_indices&quot;: [
+      0,
+      60,
+      96,
+      110,
+      134,
+      160,
+      170,
+      186
+    ],
+    &quot;conditioning_png_inspected_after_sequence&quot;: true,
+    &quot;conditioning_png&quot;: &quot;../first_frame.png&quot;,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/rm_review_franka_3rgb__slide_close_cabinet_0923_111806 (not a dataset artifact)&quot;,
+    &quot;ancillary_camera_videos_used&quot;: false,
+    &quot;telemetry_used&quot;: &quot;puppet/joint_position (8-dim; last column is the gripper) sampled every 10 frames as supporting evidence only.&quot;
+  },
+  &quot;generation_reference_validation&quot;: {
+    &quot;source_frame_start&quot;: 0,
+    &quot;source_frame_end_exclusive&quot;: 200,
+    &quot;frame_count&quot;: 200,
+    &quot;lossless_source_frame_correspondence_passed&quot;: true,
+    &quot;original_source_hdf5_retained_unchanged&quot;: true
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../../RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820/index.html">← Pick up strawberry in bowl</a><a rel="next" href="../../../RoboMIND/franka_3rgb__slide_close_cabinet/0923_111834/index.html">Slide close cabinet →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

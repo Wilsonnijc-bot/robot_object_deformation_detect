@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JGJS4GWCL7A5XCXC",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JGJCNDDF-01JGJY03Q1.tar",
+  "archive_name": "01JGJCNDDF-01JGJY03Q1.tar",
+  "annotation": {
+    "id": "01JGJS4GWCL7A5XCXC",
+    "prompt": "Pick up the orange from the table and place it in the container.",
+    "task": "pnp",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JGJS4GWCL7A5XCXC.hdf5",
+      "path": "../01JGJS4GWCL7A5XCXC.hdf5",
+      "size_bytes": 902520,
+      "sha256": "829a2279bc83d0fe0c094dc70c56f01a93b5e5ed3089eec6fd32acf420d16536"
+    },
+    {
+      "archive_member": "01JGJS4GWCL7A5XCXC/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 26504202,
+      "sha256": "7ea73995da7a785bd199cdc6b4bb9fefa7c160512abbb57efdf6dd0bfc5bf30c"
+    },
+    {
+      "archive_member": "01JGJS4GWCL7A5XCXC/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 11277884,
+      "sha256": "06fc5ee2a29d8df2ca8485650a92acb8364b06ba61c8da1b0fdf0e1d1e92a6a6"
+    },
+    {
+      "archive_member": "01JGJS4GWCL7A5XCXC/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12120,
+      "sha256": "6ebbf0b2a6b3384b200271b0bc0284afb74b80613b72e9eee242218a6e9a7662"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

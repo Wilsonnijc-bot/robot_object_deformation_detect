@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hand over toilet paper · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · human-robot-2__hand_over_toilet_paper</p>
+<h1>Hand over toilet paper</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 447 frames · 14.93 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid robot grasps the toilet-paper roll on the tabletop with its right hand, lifts it, and turns it sideways for handover. It lowers the roll into a person&#x27;s outstretched palm and keeps holding it while the person closes their hand around it. The robot opens its right hand to release the roll, then retracts its empty arm as the person carries the roll away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Picking up toilet paper and handing it to a person, requiring gentle handling and appropriate handover positioning for easy human grasp.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--fail" title="Sharpness 99.1 vs threshold 120">Fail<b>99</b></span><p>Sharpness <b>99.1</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>447</dd><dt>Frame rate</dt><dd>29.93 fps</dd><dt>Duration</dt><dd>14.93 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 224,
+  &quot;initial_scene&quot;: &quot;Front three-quarter view of humanoid seated or supported behind a table, both articulated hands near the lap/table edge. A single upright white toilet-paper roll stands near the right hand on a small dark tabletop patch. Its cylindrical body and central cardboard core are visible in the source initial PNG.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 37,
+      &quot;action&quot;: &quot;Robot holds the initial pose; upright paper roll remains on table, both hands clear of it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 38,
+      &quot;end_frame&quot;: 95,
+      &quot;action&quot;: &quot;Anatomical right arm raises and reaches outward toward the upright roll; hand opens above and beside the roll. Anatomical left hand stays by the lap.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 96,
+      &quot;end_frame&quot;: 159,
+      &quot;action&quot;: &quot;Right hand descends to the roll, with thumb entering the visible core region and fingers alongside the outer wall; roll remains on the tabletop.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 160,
+      &quot;end_frame&quot;: 225,
+      &quot;action&quot;: &quot;Right hand closes around the roll, holding near the core and outer surface; contact is established before lifting.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 226,
+      &quot;end_frame&quot;: 293,
+      &quot;action&quot;: &quot;Right hand tips the roll from upright to sideways and lifts it clear of the dark patch, raising it forward of the torso with the circular core facing toward the viewer.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 294,
+      &quot;end_frame&quot;: 331,
+      &quot;action&quot;: &quot;A person reaches in from image left with an open palm underneath the held roll. Robot keeps the roll aloft and then begins lowering it toward the waiting hand.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 332,
+      &quot;end_frame&quot;: 371,
+      &quot;action&quot;: &quot;Robot lowers roll into the human palm. Person wraps fingers around its exterior while robot retains contact; brief shared support precedes release.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 372,
+      &quot;end_frame&quot;: 391,
+      &quot;action&quot;: &quot;Robot right hand opens clear of the roll and human carries the now solely human-held roll toward image left, leaving the frame.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 392,
+      &quot;end_frame&quot;: 446,
+      &quot;action&quot;: &quot;Empty right arm retracts and lowers toward lap. Final frame shows neither robot hand holding an object and no roll on the original tabletop spot.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole robot manipulating hand: reaches, grasps roll near its central core/exterior, tilts and lifts, presents and lowers into human palm, retains hold until the human grasps, releases and retracts.&quot;,
+    &quot;left&quot;: &quot;Remains near lap with minor passive pose variation, does not grasp or support roll or contact person.&quot;,
+    &quot;person&quot;: &quot;One visible hand approaches palm upward from image left, supports bottom/exterior of roll, wraps around it during shared hold, and withdraws carrying it after robot release.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;evidence&quot;: &quot;The source initial PNG shows the robot front face and chest panel directed toward the camera. The manipulating black hand is continuously attached via forearm and upper arm to the shoulder on the robot body right (image left). The white idle hand traces to the opposite shoulder (robot left, image right). Naming derives from front-facing body/shoulder attachment, not image position alone.&quot;,
+    &quot;uncertainty&quot;: &quot;None for robot anatomical sides; person body is outside view so human anatomical hand side is not assigned.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single robot-hand manipulation followed by robot-to-person transfer: the robot supports the roll until the person has placed a palm underneath and closed a grasp, then opens its fingers; no robot hand-to-hand transfer or bimanual support occurs.&quot;,
+  &quot;terminal_state&quot;: &quot;Successful robot-to-person transfer is visibly complete. Person has carried roll out of frame at image left; original tabletop location is empty, and robot right hand is empty and retracted toward lap.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Precise individual digit force/contact on the hidden side of the roll is not visible; gross grasp, lift and release are clear. Human anatomical hand side cannot be established from the visible forearm/hand alone and is not specified.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    96,
+    160,
+    220,
+    252,
+    290,
+    332,
+    350,
+    370,
+    384,
+    392,
+    446
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;full_sequence&quot;: &quot;All four contact sheets visually reviewed in order, covering every second decoded frame from 0 through 446.&quot;,
+    &quot;sample_count&quot;: 224,
+    &quot;native_source_initial_png_viewed&quot;: true,
+    &quot;native_transition_and_final_frames_viewed&quot;: [
+      96,
+      160,
+      220,
+      252,
+      290,
+      332,
+      350,
+      370,
+      384,
+      392,
+      446
+    ],
+    &quot;native_dimensions&quot;: [
+      720,
+      1280
+    ]
+  },
+  &quot;source_annotation_assessment&quot;: &quot;Original toilet-paper pickup and person-handover instruction matches the visible complete transfer. Gentle handling is qualitative and not treated as a separate observable outcome.&quot;,
+  &quot;video_id&quot;: &quot;human-robot-2&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_human_robot_2&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 447,
+  &quot;source_fps&quot;: 29.933035714285715,
+  &quot;native_detail_frames&quot;: [
+    96,
+    160,
+    220,
+    252,
+    290,
+    332,
+    350,
+    370,
+    384,
+    392,
+    446
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid robot grasps the toilet-paper roll on the tabletop with its right hand, lifts it, and turns it sideways for handover. It lowers the roll into a person&#x27;s outstretched palm and keeps holding it while the person closes their hand around it. The robot opens its right hand to release the roll, then retracts its empty arm as the person carries the roll away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Picking up toilet paper and handing it to a person, requiring gentle handling and appropriate handover positioning for easy human grasp.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 447,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;b0f81e79371126724200a3441b8f86caaff54cf71e744c0c55f3f7cdb818d739&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:22:29.301588+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/human-robot-1__hand_over_emotional_support_dumpling/index.html">← Hand over emotional support dumpling</a><a rel="next" href="../../Humanoid_Everyday/human-robot-3__hand_over_grey_duster/index.html">Hand over grey duster →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

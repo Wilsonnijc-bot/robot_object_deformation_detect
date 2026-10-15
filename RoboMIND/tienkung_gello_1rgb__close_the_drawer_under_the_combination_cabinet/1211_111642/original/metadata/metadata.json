@@ -1,0 +1,83 @@
+{
+  "dataset": "x-humanoid-robomind/RoboMIND",
+  "source_repository_commit": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "license": "apache-2.0",
+  "embodiment": "h5_tienkung_gello_1rgb",
+  "task": "close_the_drawer_under_the_combination_cabinet",
+  "episode_id": "1211_111642",
+  "source_url": "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND/resolve/e7ffe31d1fe983a42c3d7b79d192f554fc05b86e/example_data/h5_tienkung_gello_1rgb/close_the_drawer_under_the_combination_cabinet.tar.gz.part-aa",
+  "source_archive": "example_data/h5_tienkung_gello_1rgb/close_the_drawer_under_the_combination_cabinet.tar.gz.part-aa",
+  "archive_member": "close_the_drawer_under_the_combination_cabinet/success_episodes/train/1211_111642/data/trajectory.hdf5",
+  "source_extraction": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified.",
+  "hdf5": {
+    "path": "../data/trajectory.hdf5",
+    "size_bytes": 113120592,
+    "sha256": "b8127c604eb2cc0e400429e7d664ef20fdb44172b26edd792587d97f39eae4e0",
+    "attributes": {
+      "compress": true,
+      "sim": false
+    },
+    "datasets": {
+      "language_distilbert": {
+        "shape": [
+          1,
+          1,
+          768
+        ],
+        "dtype": "float16"
+      },
+      "language_raw": {
+        "shape": [
+          1
+        ],
+        "dtype": "object"
+      },
+      "master/joint_position": {
+        "shape": [
+          584,
+          16
+        ],
+        "dtype": "float64"
+      },
+      "observations/depth_images/camera_top": {
+        "shape": [
+          584
+        ],
+        "dtype": "object"
+      },
+      "observations/rgb_images/camera_top": {
+        "shape": [
+          584
+        ],
+        "dtype": "object"
+      },
+      "puppet/joint_position": {
+        "shape": [
+          584,
+          16
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  "source_language_instruction": [
+    "Close the drawer under the combination cabinet"
+  ],
+  "source_language_instruction_note": null,
+  "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
+  "channel_order_check": "Decoded colors were inspected visually and are natural; no channel swap was applied.",
+  "decoded_preview_videos": {
+    "camera_top": {
+      "path": "../decoded_videos/camera_top.mp4",
+      "view": "top",
+      "frame_count": 584,
+      "resolution": {
+        "width": 640,
+        "height": 480
+      },
+      "encoding": "lossy_preview_h264_crf14_yuvj420p",
+      "sha256": "dd336680ec16ee8acfdbbf1524278796a0628aa3085cdf1a979a40dbc6f41d08"
+    }
+  },
+  "source_bytes_preserved": true
+}

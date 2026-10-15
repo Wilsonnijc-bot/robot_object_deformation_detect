@@ -54,5 +54,15 @@
     "complete_sampled_frame_coverage_recorded": true,
     "prompt_constraint_exact": true
   },
-  "validation_status": "passed"
+  "validation_status": "passed",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "1280x704",
+    "upscale_factor": 1.0,
+    "sharpness": 639.1,
+    "threshold": 60,
+    "result": "pass"
+  }
 }

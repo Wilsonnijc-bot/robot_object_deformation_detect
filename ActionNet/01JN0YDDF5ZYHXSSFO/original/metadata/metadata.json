@@ -1,0 +1,40 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JN0YDDF5ZYHXSSFO",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JN0Y324H-01JN0YMV54.tar",
+  "archive_name": "01JN0Y324H-01JN0YMV54.tar",
+  "annotation": {
+    "id": "01JN0YDDF5ZYHXSSFO",
+    "prompt": "Place the croissant into the container",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JN0YDDF5ZYHXSSFO.hdf5",
+      "path": "../01JN0YDDF5ZYHXSSFO.hdf5",
+      "size_bytes": 1257560,
+      "sha256": "24c1397e5e000e524f768588ae4d76c143e93ba799c094dc990cb7a936117112"
+    },
+    {
+      "archive_member": "01JN0YDDF5ZYHXSSFO/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 15130299,
+      "sha256": "25cfded27fcc371175b45f9408d7a0d6d95dae9452e8e6392cba7cc8e42f138c"
+    },
+    {
+      "archive_member": "01JN0YDDF5ZYHXSSFO/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 38381357,
+      "sha256": "ea0b9143dd1ed06cd2a221022b6bb0ce6b472d9b02ff1865f000752f3343ce16"
+    },
+    {
+      "archive_member": "01JN0YDDF5ZYHXSSFO/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 16740,
+      "sha256": "0b2e97160c27fe1903d9985d05fa4b5c3a65a08a3bb1af1702b706927023453a"
+    }
+  ],
+  "source_bytes_preserved": true
+}

@@ -1,1 +1,0 @@
-This task demonstrates complex manipulation where the humanoid robot picks up a tripod and carefully stands it upright on the desk, requiring balance, precision, and spatial reasoning.

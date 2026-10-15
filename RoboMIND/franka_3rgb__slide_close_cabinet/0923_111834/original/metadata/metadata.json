@@ -1,0 +1,95 @@
+{
+  "dataset": "x-humanoid-robomind/RoboMIND",
+  "source_repository_commit": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "license": "apache-2.0",
+  "embodiment": "h5_franka_3rgb",
+  "task": "slide_close_cabinet",
+  "episode_id": "0923_111834",
+  "source_url": "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND/resolve/e7ffe31d1fe983a42c3d7b79d192f554fc05b86e/benchmark1_0_compressed/h5_franka_3rgb/slide_close_cabinet.tar.gz.part-aa",
+  "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/slide_close_cabinet.tar.gz.part-aa",
+  "archive_member": "slide_close_cabinet/success_episodes/train/0923_111834/data/trajectory.hdf5",
+  "source_extraction": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified.",
+  "hdf5": {
+    "path": "../data/trajectory.hdf5",
+    "attributes": {
+      "compress": true,
+      "sim": false
+    },
+    "datasets": {
+      "language_distilbert": {
+        "shape": [
+          1,
+          1,
+          768
+        ],
+        "dtype": "float16"
+      },
+      "language_raw": {
+        "shape": [
+          1
+        ],
+        "dtype": "object"
+      },
+      "master/joint_position": {
+        "shape": [
+          200,
+          8
+        ],
+        "dtype": "float64"
+      },
+      "observations/rgb_images/camera_right": {
+        "shape": [
+          200
+        ],
+        "dtype": "object"
+      },
+      "puppet/end_effector": {
+        "shape": [
+          200,
+          6
+        ],
+        "dtype": "float64"
+      },
+      "puppet/joint_position": {
+        "shape": [
+          200,
+          8
+        ],
+        "dtype": "float64"
+      }
+    },
+    "source_size_bytes": 119074040,
+    "source_sha256": "3671cc19ec58febccdf4c0ab5b3cfe89741cce621fcf4ea3aa324d2291a57f57",
+    "removed_datasets": [
+      "observations/depth_images/camera_left",
+      "observations/depth_images/camera_right",
+      "observations/depth_images/camera_top",
+      "observations/rgb_images/camera_left",
+      "observations/rgb_images/camera_top"
+    ],
+    "size_bytes": 10071080,
+    "sha256": "525601a52ad87426c82743c8da52a6c42bcfa612cfbb32b3f973562006001a3b",
+    "derivation": "Rewritten from the source member keeping only the right RGB camera: camera_left/camera_top RGB and all depth images removed; remaining datasets and attributes copied unchanged (camera_right JPEG bytes verified)."
+  },
+  "source_language_instruction": [
+    "slide close wooden cabinet"
+  ],
+  "source_language_instruction_note": null,
+  "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
+  "channel_order_check": "Decoded colors were inspected visually and are natural; no channel swap was applied.",
+  "decoded_preview_videos": {
+    "camera_right": {
+      "path": "../decoded_videos/camera_right.mp4",
+      "view": "right external",
+      "frame_count": 200,
+      "resolution": {
+        "width": 640,
+        "height": 480
+      },
+      "encoding": "lossy_preview_h264_crf14_yuvj420p",
+      "sha256": "4af8b6a144ae093dfe49b9b2f6897e9350d770fea9f7590d35df8c233d6508e3"
+    }
+  },
+  "source_bytes_preserved": false,
+  "camera_policy": "Only the right RGB camera (camera_right, the generation camera) is retained."
+}

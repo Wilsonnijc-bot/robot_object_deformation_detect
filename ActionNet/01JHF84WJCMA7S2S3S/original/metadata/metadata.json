@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JHF84WJCMA7S2S3S",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JHF7ZEBF-01JHFAFHR7.tar",
+  "archive_name": "01JHF7ZEBF-01JHFAFHR7.tar",
+  "annotation": {
+    "id": "01JHF84WJCMA7S2S3S",
+    "prompt": "Take the lemon and put it on the second shelf",
+    "task": "shelf",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JHF84WJCMA7S2S3S.hdf5",
+      "path": "../01JHF84WJCMA7S2S3S.hdf5",
+      "size_bytes": 1041400,
+      "sha256": "745d25721ca5d731f70c3544b4acfce6071889c0e277439ce946f9affe0187e3"
+    },
+    {
+      "archive_member": "01JHF84WJCMA7S2S3S/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 32797948,
+      "sha256": "fc0b7393d26d867cc796e4e347e23fbece54b43c4154323ea5736d0fd2fe9ae2"
+    },
+    {
+      "archive_member": "01JHF84WJCMA7S2S3S/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 12650088,
+      "sha256": "30e6bb03b42b339288ddd3bdb68a9c52c7af88a0d186f83792183677a21764e0"
+    },
+    {
+      "archive_member": "01JHF84WJCMA7S2S3S/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 13830,
+      "sha256": "57a651d08d7ab8400c12f53636eb9307990dc4c67fab62fae0a8b6573884d28d"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JHF8YGPVVKAXY7FK",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JHF7ZEBF-01JHFAFHR7.tar",
+  "archive_name": "01JHF7ZEBF-01JHFAFHR7.tar",
+  "annotation": {
+    "id": "01JHF8YGPVVKAXY7FK",
+    "prompt": "Take the croissant and put it on the second shelf",
+    "task": "shelf",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JHF8YGPVVKAXY7FK.hdf5",
+      "path": "../01JHF8YGPVVKAXY7FK.hdf5",
+      "size_bytes": 951800,
+      "sha256": "3cea5cb419e5c8092d2c2240511c6c036d5d8aed803cdba6985046ee090e23f5"
+    },
+    {
+      "archive_member": "01JHF8YGPVVKAXY7FK/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 29524870,
+      "sha256": "2d127703ef58dd2164440fbf2720d8c548f576ab3a2b8f309f0a0eef01b6cc76"
+    },
+    {
+      "archive_member": "01JHF8YGPVVKAXY7FK/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 11756759,
+      "sha256": "ffad62f20f3227b4b45726621d15e3a699bd2eb281bd7b1c04fe88b0ae1ece35"
+    },
+    {
+      "archive_member": "01JHF8YGPVVKAXY7FK/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12630,
+      "sha256": "78c47e6ea5cf766234edb12e60a1b2c0bc77f88f8acb8f5b9b2ea9276683181c"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

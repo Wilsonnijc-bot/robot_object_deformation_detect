@@ -1,0 +1,76 @@
+{
+  "dataset": "x-humanoid-robomind/RoboMIND",
+  "source_repository_commit": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "license": "apache-2.0",
+  "embodiment": "h5_franka_3rgb",
+  "task": "pick_apple_into_drawer",
+  "episode_id": "0923_164719",
+  "source_url": "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND/resolve/e7ffe31d1fe983a42c3d7b79d192f554fc05b86e/example_data/pick_apple_into_drawer_h5 2.zip",
+  "source_archive": "example_data/pick_apple_into_drawer_h5 2.zip",
+  "archive_member": "pick_apple_into_drawer_h5/success_episodes/0923_164719/data/trajectory.hdf5",
+  "source_extraction": "Extracted unchanged from the official example zip; the zip SHA-256 matches the Hugging Face LFS hash.",
+  "hdf5": {
+    "path": "../data/trajectory.hdf5",
+    "attributes": {
+      "compress": true,
+      "sim": false
+    },
+    "datasets": {
+      "master/joint_position": {
+        "shape": [
+          600,
+          8
+        ],
+        "dtype": "float64"
+      },
+      "observations/rgb_images/camera_right": {
+        "shape": [
+          600
+        ],
+        "dtype": "object"
+      },
+      "puppet/end_effector": {
+        "shape": [
+          600,
+          6
+        ],
+        "dtype": "float64"
+      },
+      "puppet/joint_position": {
+        "shape": [
+          600,
+          8
+        ],
+        "dtype": "float64"
+      }
+    },
+    "source_size_bytes": 90117048,
+    "source_sha256": "8f92f27bcf2e22612ad1cc00feebc2be859d602e63b8edc12c910f160e628f9d",
+    "removed_datasets": [
+      "observations/rgb_images/camera_left",
+      "observations/rgb_images/camera_top"
+    ],
+    "size_bytes": 29182400,
+    "sha256": "70e68f58f2c5bf6040dd2cae73d0ba7160e02ed73531519a1fa08ce94a4c6b41",
+    "derivation": "Rewritten from the source member keeping only the right RGB camera: camera_left/camera_top RGB and all depth images removed; remaining datasets and attributes copied unchanged (camera_right JPEG bytes verified)."
+  },
+  "source_language_instruction": null,
+  "source_language_instruction_note": "No language instruction is stored in this HDF5 and the task is absent from RoboMIND_v1_2_instr.csv.",
+  "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
+  "channel_order_check": "Decoded colors were inspected visually and are natural; no channel swap was applied.",
+  "decoded_preview_videos": {
+    "camera_right": {
+      "path": "../decoded_videos/camera_right.mp4",
+      "view": "right external",
+      "frame_count": 600,
+      "resolution": {
+        "width": 640,
+        "height": 480
+      },
+      "encoding": "lossy_preview_h264_crf14_yuvj420p",
+      "sha256": "561dbde524e9f1ef28ad62c3dc48173cf0a44cc5ddaebf342cc936cd19983a8d"
+    }
+  },
+  "source_bytes_preserved": false,
+  "camera_policy": "Only the right RGB camera (camera_right, the generation camera) is retained."
+}

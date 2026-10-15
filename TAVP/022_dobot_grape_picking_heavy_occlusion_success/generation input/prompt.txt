@@ -1,1 +1,0 @@
-The robotic arm grasps the bunch of grapes and moves it onto the green plate, releasing it there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

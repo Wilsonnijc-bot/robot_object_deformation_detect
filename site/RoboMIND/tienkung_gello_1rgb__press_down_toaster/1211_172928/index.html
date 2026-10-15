@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Press down toaster · RoboMIND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../../RoboMIND/index.html">RoboMIND</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">RoboMIND · tienkung_gello_1rgb__press_down_toaster/1211_172928</p>
+<h1>Press down toaster</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 522 frames · 17.4 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot&#x27;s arm enters from the left edge of the image, turns its hand palm-down, and extends one finger toward the lever knob on the left side of the toaster. The fingertip pushes the lever, lowering the blue bread slice into the toaster, then releases it so the slice springs back up, and the arm withdraws to its raised starting pose. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Press down toaster</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 240.8 vs threshold 60">Pass<b>241</b></span><p>Sharpness <b>240.8</b> against 60
+(first-person). Measured on the 960 × 704 model view,
+upscale 1.50×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>522</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>17.4 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboMIND/tienkung_gello_1rgb__press_down_toaster/1211_172928">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/tienkung_gello_1rgb__press_down_toaster/1211_172928/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/tienkung_gello_1rgb__press_down_toaster/1211_172928/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/RoboMIND/tienkung_gello_1rgb__press_down_toaster/1211_172928/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_protocol_note&quot;: &quot;Applied by analogy to a non-Humanoid-Everyday/GR1 humanoid (Tien Kung with dexterous hands, single overhead RGB stream); the overhead view does not show the robot body, so the arm is described by where it enters the image.&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;x-humanoid-robomind/RoboMIND&quot;,
+  &quot;task&quot;: &quot;press_down_toaster&quot;,
+  &quot;episode_id&quot;: &quot;1211_172928&quot;,
+  &quot;source_video&quot;: &quot;../../original/data/trajectory.hdf5&quot;,
+  &quot;generation_camera&quot;: &quot;camera_top&quot;,
+  &quot;source_frame_count&quot;: 522,
+  &quot;source_resolution&quot;: [
+    640,
+    480
+  ],
+  &quot;source_fps&quot;: null,
+  &quot;source_fps_note&quot;: &quot;FPS is not recorded in the source HDF5; 30 FPS is only a nominal playback rate, so no real-time durations are claimed.&quot;,
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 522,
+  &quot;selected_frame_count&quot;: 522,
+  &quot;selection_reason&quot;: &quot;The episode is one continuous single task (reach to the toaster lever, press it, release, withdraw); the phases are ordinary parts of one action, so the complete clip is retained and no shortened branch or full_sequence prompt is created.&quot;,
+  &quot;usable_prompt&quot;: &quot;The robot&#x27;s arm enters from the left edge of the image, turns its hand palm-down, and extends one finger toward the lever knob on the left side of the toaster. The fingertip pushes the lever, lowering the blue bread slice into the toaster, then releases it so the slice springs back up, and the arm withdraws to its raised starting pose. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;full_sequence_prompt&quot;: null,
+  &quot;selected_action_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;description&quot;: &quot;The extended fingertip contacts the lever knob on the left side of the toaster (about frames 198-204) and holds against it while the blue bread slice sinks into the toaster slots (starting about frame 236, mostly lowered by about 340, lowest with the toaster body slightly shifted/tilted at about 372). Around frames 374-380 the fingertip backs off the knob and the slice is back up above the toaster by frame 380, i.e. the toaster does not visibly stay latched down in the filmed outcome. The arm then retracts to the left and returns to a raised open-hand pose near its starting pose by about frame 500; the toaster and slice are in their original configuration at the end.&quot;
+  },
+  &quot;source_overall_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;source_quality_label&quot;: null,
+    &quot;description&quot;: &quot;Same as the selected action: the lever is pressed and the slice goes down, then rises again when the finger releases, and the hand returns near its start pose. No separate success/failure label exists in the source.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;visible_description&quot;: &quot;Overhead external camera; the toaster stands mid-table and a single white-and-black dexterous humanoid arm and hand enters from the left edge of the image, with the dark torso/shoulder hardware at the left edge. The other arm is never visible.&quot;,
+    &quot;telemetry_evidence&quot;: &quot;Only joint_position columns 0-6 (arm block) vary over the episode (largest changes in columns 1, 3, 4 and 5); columns 8-14 (second arm block) and the hand columns 7 and 15 are constant. If the 16-dim layout is [left arm 7, left hand 1, right arm 7, right hand 1], the moving arm is the robot&#x27;s left, but this column ordering is an assumption, not verified.&quot;,
+    &quot;geometry_evidence&quot;: &quot;At about frame 150 the white dorsal plate faces up (palm down), fingers point toward the toaster (image right) and the thumb sits on the image-bottom side. If the robot faces image-right, that thumb placement would indicate a left hand, consistent with the telemetry block assumption, but the robot body orientation is not visible.&quot;,
+    &quot;visual_certainty&quot;: &quot;Robot-relative left/right is only weakly supported (probably the robot&#x27;s left arm), so the usable prompt describes it as the arm entering from the left edge of the image.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;active_visible_arm&quot;: &quot;The arm entering from the image left (probably the robot&#x27;s left arm) reaches toward the toaster, shapes the hand with one leading finger extended and the thumb pointing down/away, presses the toaster&#x27;s side lever knob with that fingertip, holds, backs off and retracts.&quot;,
+    &quot;other_arm&quot;: &quot;Not visible; telemetry for the second arm block is constant, so it does not act.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single arm acts alone; no second hand, hand-to-hand transfer or human interaction.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        48
+      ],
+      &quot;observation&quot;: &quot;Arm static at image left with the hand raised and fingers open and spread, palm facing up/toward the camera; toaster centered with the blue bread slice sticking up from the slots.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        50,
+        110
+      ],
+      &quot;observation&quot;: &quot;Arm begins moving: the hand rotates toward palm-down and the forearm lowers and extends rightward toward the toaster (telemetry joint 4 rises from about 0.04 to 0.66 between frames 60 and 100).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        112,
+        190
+      ],
+      &quot;observation&quot;: &quot;Forearm keeps extending toward the lever knob on the left side of the toaster; the fingers close up into a pointing shape with one leading finger extended (palm-down open hand still visible near frame 150; pointing shape by about frame 170-190); fingertip about a hand-width from the knob at frame 190.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        192,
+        214
+      ],
+      &quot;observation&quot;: &quot;Fingertip reaches the lever knob and touches it (contact seen at frame 200 and later; native-resolution crops at 200 and 240).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        216,
+        372
+      ],
+      &quot;observation&quot;: &quot;Fingertip stays against the lever knob. The blue bread slice starts sinking into the toaster from about frame 236, is mostly lowered by about frame 340, and is lowest at about 360-372 where the toaster body appears slightly shifted/tilted by the push. The finger holds this pose with little motion (telemetry nearly constant between frames 200 and 360).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        374,
+        382
+      ],
+      &quot;observation&quot;: &quot;Fingertip backs away from the knob (seen at frame 376 with a small gap) and the slice jumps back up above the toaster by frame 380; the lever knob is visibly at its original position at frames 380 and 392.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        384,
+        470
+      ],
+      &quot;observation&quot;: &quot;Arm pulls back and lifts toward the image left; hand re-opens its fingers while moving away (frames 400-470).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        472,
+        521
+      ],
+      &quot;observation&quot;: &quot;Arm returns to a raised open-hand pose at the left edge near the initial pose; toaster and bread slice are back in their original appearance and the scene is otherwise unchanged.&quot;
+    }
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Robot-relative left/right of the acting arm is not directly visible from the overhead camera; the weak evidence points to the robot&#x27;s left arm, so the prompt names the arm by where it enters the image.&quot;,
+    &quot;The overhead view cannot show whether the lever travels down or whether a latch engages; the lever press is inferred from the fingertip contact on the side knob and the slice sinking into the toaster. The slice rising again right after the fingertip releases suggests the lever did not latch, but the latch mechanism is not visible.&quot;,
+    &quot;Which individual finger is the extended pointing finger (index versus another) is not resolvable at this resolution; the prompt says &#x27;one finger&#x27;.&quot;,
+    &quot;The exact frame where the lever begins to move is ambiguous (contact about frames 198-204, slice motion visible from about 236).&quot;,
+    &quot;FPS is not recorded in the source; frame indices are authoritative, not time.&quot;,
+    &quot;Telemetry column-to-arm mapping (left-first layout) is assumed and used only as supporting evidence.&quot;
+  ],
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The publisher instruction is &#x27;Press down toaster&#x27;. The video shows a fingertip pressing the lever knob on the side of the toaster and the slice lowering, but the toaster does not visibly stay latched down: the slice pops back up when the finger releases at about frames 374-380. No left/right, colour or object-order information is given by the annotation, so no other discrepancies.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;entire_sequence_reviewed&quot;: true,
+    &quot;sampled_decoded_frame_indices&quot;: [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240,
+      242,
+      244,
+      246,
+      248,
+      250,
+      252,
+      254,
+      256,
+      258,
+      260,
+      262,
+      264,
+      266,
+      268,
+      270,
+      272,
+      274,
+      276,
+      278,
+      280,
+      282,
+      284,
+      286,
+      288,
+      290,
+      292,
+      294,
+      296,
+      298,
+      300,
+      302,
+      304,
+      306,
+      308,
+      310,
+      312,
+      314,
+      316,
+      318,
+      320,
+      322,
+      324,
+      326,
+      328,
+      330,
+      332,
+      334,
+      336,
+      338,
+      340,
+      342,
+      344,
+      346,
+      348,
+      350,
+      352,
+      354,
+      356,
+      358,
+      360,
+      362,
+      364,
+      366,
+      368,
+      370,
+      372,
+      374,
+      376,
+      378,
+      380,
+      382,
+      384,
+      386,
+      388,
+      390,
+      392,
+      394,
+      396,
+      398,
+      400,
+      402,
+      404,
+      406,
+      408,
+      410,
+      412,
+      414,
+      416,
+      418,
+      420,
+      422,
+      424,
+      426,
+      428,
+      430,
+      432,
+      434,
+      436,
+      438,
+      440,
+      442,
+      444,
+      446,
+      448,
+      450,
+      452,
+      454,
+      456,
+      458,
+      460,
+      462,
+      464,
+      466,
+      468,
+      470,
+      472,
+      474,
+      476,
+      478,
+      480,
+      482,
+      484,
+      486,
+      488,
+      490,
+      492,
+      494,
+      496,
+      498,
+      500,
+      502,
+      504,
+      506,
+      508,
+      510,
+      512,
+      514,
+      516,
+      518,
+      520
+    ],
+    &quot;sampling_method&quot;: &quot;Every second decoded frame of camera_top (frames 0-520) in sequential temporary 4x3 contact sheets covering the complete 522-frame source, plus native-resolution and zoomed crops at key transitions.&quot;,
+    &quot;native_resolution_frame_indices&quot;: [
+      0,
+      120,
+      150,
+      190,
+      200,
+      240,
+      260,
+      280,
+      340,
+      372,
+      376,
+      380,
+      392
+    ],
+    &quot;conditioning_png_inspected_after_sequence&quot;: true,
+    &quot;conditioning_png&quot;: &quot;../first_frame.png&quot;,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/rm_review_tienkung_gello_1rgb__press_down_toaster_1211_172928 (not a dataset artifact)&quot;,
+    &quot;ancillary_camera_videos_used&quot;: false,
+    &quot;telemetry_used&quot;: &quot;puppet/joint_position (16-dim) sampled every 20 frames to see which block moves and the timing of the reach, as supporting evidence only.&quot;
+  },
+  &quot;generation_reference_validation&quot;: {
+    &quot;source_frame_start&quot;: 0,
+    &quot;source_frame_end_exclusive&quot;: 522,
+    &quot;frame_count&quot;: 522,
+    &quot;lossless_source_frame_correspondence_passed&quot;: true,
+    &quot;original_source_hdf5_retained_unchanged&quot;: true
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../../RoboMIND/tienkung_gello_1rgb__press_down_toaster/1211_172414/index.html">← Press down toaster</a><span></span></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

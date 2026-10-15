@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shake hand with person · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · human-robot-7__shake_hand_with_person</p>
+<h1>Shake hand with person</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 307 frames · 10.23 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid raises its right hand to meet the person’s offered hand and clasps it for a handshake. The person and robot move their joined hands up and down several times, then separate; the robot lowers its open right hand beside its thigh while its left hand remains by the other thigh. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Shaking hands with a person, demonstrating social gesture recognition, appropriate grip force, and natural human-robot physical interaction.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 127.9 vs threshold 120">Pass<b>128</b></span><p>Sharpness <b>127.9</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.19×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>592 × 1280</dd><dt>Frames</dt><dd>307</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>10.23 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 154,
+  &quot;initial_scene&quot;: &quot;Humanoid faces the camera in a supported upright pose. Its anatomical right black hand is on image left near a person’s offered hand; anatomical left white hand is on image right beside the thigh. No manipulated object is present.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        0,
+        30
+      ],
+      &quot;action&quot;: &quot;Person presents a hand near the robot’s low, open right hand. Robot remains nearly stationary initially.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        32,
+        70
+      ],
+      &quot;action&quot;: &quot;Robot bends the right elbow and raises its open hand, then extends it toward the person’s hand; person keeps the hand offered.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        72,
+        98
+      ],
+      &quot;action&quot;: &quot;Person wraps the offered hand around the robot’s right hand, establishing a handshake clasp. Exact finger closure is partly hidden by the person’s hand.&quot;,
+      &quot;confidence&quot;: &quot;high for clasp, moderate for robot finger articulation&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        100,
+        264
+      ],
+      &quot;action&quot;: &quot;Clasp remains while the person and robot right forearm move their joined hands vertically through several repeated up/down strokes. Left hand stays near left thigh.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        266,
+        276
+      ],
+      &quot;action&quot;: &quot;Hands separate, with robot’s right fingers visibly open; person withdraws downward as the robot keeps its hand briefly extended.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        278,
+        306
+      ],
+      &quot;action&quot;: &quot;Person’s hand continues withdrawing out of view and the robot lowers its open right hand toward its right thigh; left hand remains by left thigh.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Active handshake hand: raises/extends toward the offered human hand, remains clasped during repeated vertical handshake strokes, separates open, then lowers beside the right thigh.&quot;,
+    &quot;left&quot;: &quot;Inactive in the social interaction; white hand remains by the left thigh with small incidental movement, no support or transfer.&quot;,
+    &quot;person&quot;: &quot;Offers a hand, wraps it around the robot’s right hand, participates in the vertical shake strokes, then releases and withdraws.&quot;,
+    &quot;coordination&quot;: &quot;One robot hand and one human hand maintain a shared clasp while moving up/down together; there is no robot hand-to-hand transfer or left-hand assistance.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;evidence&quot;: &quot;Initial PNG shows the front face, chest and legs. The black active hand on image left can be traced through the forearm and upper arm to the shoulder on the robot’s anatomical right. White hand on image right connects to the anatomical left shoulder. Native frames 0, 46, 70, 140, 170, 210 and 306 preserve this attachment evidence.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;uncertainty&quot;: &quot;No anatomical-side uncertainty.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;Handshake has ended. Person’s hand is withdrawn from the robot’s hand. Robot’s open right hand hangs low beside its right thigh; white left hand remains near the left thigh. No stepping or object transfer occurs.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Robot finger closure during the clasp is partly occluded by the person’s hand; physical contact and repeated joined-hand motion are clear.&quot;,
+    &quot;The footage cannot distinguish how much of the shaking force is generated by the person versus commanded robot motion, or measure grip force.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [
+    &quot;Original annotation names social gesture recognition and appropriate grip force; these internal capabilities and force quality cannot be verified visually. The visible handshake action matches the task name.&quot;
+  ],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    46,
+    70,
+    90,
+    140,
+    170,
+    210,
+    240,
+    266,
+    270,
+    276,
+    306
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;source_frame_count&quot;: 307,
+    &quot;sampled_frame_count&quot;: 154,
+    &quot;stride&quot;: 2,
+    &quot;coverage&quot;: &quot;Viewed all three contact sheets covering even frames 0–306 across the complete source clip, plus native transition/final images and native source initial PNG.&quot;
+  },
+  &quot;video_id&quot;: &quot;human-robot-7&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_human_robot_7&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/human-robot-7__shake_hand_with_person/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 307,
+  &quot;source_fps&quot;: 30.000977230528683,
+  &quot;native_detail_frames&quot;: [
+    0,
+    46,
+    70,
+    90,
+    140,
+    170,
+    210,
+    240,
+    266,
+    270,
+    276,
+    306
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid raises its right hand to meet the person’s offered hand and clasps it for a handshake. The person and robot move their joined hands up and down several times, then separate; the robot lowers its open right hand beside its thigh while its left hand remains by the other thigh. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Shaking hands with a person, demonstrating social gesture recognition, appropriate grip force, and natural human-robot physical interaction.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 307,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;02cf6af69c66c2c3b8584bf15fa1dc8fc4ee6a896c11ca7502d9e2278891dc48&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:26:10.447106+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/human-robot-6__hand_over_flower/index.html">← Hand over flower</a><a rel="next" href="../../Humanoid_Everyday/loco-manip-1__clean_the_window/index.html">Clean the window →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

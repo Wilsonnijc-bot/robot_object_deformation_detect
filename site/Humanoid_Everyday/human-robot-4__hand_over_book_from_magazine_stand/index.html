@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hand over book from magazine stand · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · human-robot-4__hand_over_book_from_magazine_stand</p>
+<h1>Hand over book from magazine stand</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 327 frames · 10.93 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot grasps the exposed edge of the upright book in the magazine stand with its right hand, lifts it clear, and extends it toward the person&#x27;s outstretched hand. Once the person grips the book, the robot opens its right fingers to let the person take it away, then lowers its empty hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Grabbing a book from a magazine stand and handing it to a person, requiring careful extraction and stable handover of a heavier object.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 149.6 vs threshold 120">Pass<b>150</b></span><p>Sharpness <b>149.6</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>327</dd><dt>Frame rate</dt><dd>29.91 fps</dd><dt>Duration</dt><dd>10.93 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 164,
+  &quot;initial_scene&quot;: &quot;Front-facing humanoid behind a tabletop magazine stand containing an upright book with a tan visible reverse and pale page edges. The articulated right hand is to image left; the articulated left hand rests low in front of the left hip, behind the stand.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        0,
+        46
+      ],
+      &quot;action&quot;: &quot;Right arm raises its open hand toward the exposed book edge; left arm remains low near the hip.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        47,
+        163
+      ],
+      &quot;action&quot;: &quot;Right hand descends around the exposed side of the upright book and closes its fingers to establish a grasp while the book remains in the stand. Contact is partly occluded by the stand lattice.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        164,
+        213
+      ],
+      &quot;action&quot;: &quot;Right hand pulls the book upward from the stand, lifts it clear, and carries it outward to the robot&#x27;s right toward the recipient.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        214,
+        239
+      ],
+      &quot;action&quot;: &quot;A person reaches from image left as the robot presents the book; the person contacts its lower portion and closes a hand around it while the robot maintains its grasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        240,
+        265
+      ],
+      &quot;action&quot;: &quot;The person supports the book with its purple cover facing the camera, while the robot&#x27;s right hand remains at the opposite side during coordinated handover.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        266,
+        286
+      ],
+      &quot;action&quot;: &quot;The person draws the book up and away to image left; the robot opens its right fingers and relinquishes the book. By frame 286 the empty right hand is fully visible and the book is almost out of view.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        287,
+        326
+      ],
+      &quot;action&quot;: &quot;The person and book leave the image; the robot retracts and lowers its empty right hand, and the stand remains on the table without the extracted book.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating robot hand: grasps the book edge, extracts and lifts it, extends it to the person, releases it during the person&#x27;s pull, and lowers empty.&quot;,
+    &quot;left&quot;: &quot;Remains low at the left hip behind the stand; no visible grasp of the book or active support of the stand, and no hand-to-hand robot transfer.&quot;,
+    &quot;person&quot;: &quot;Reaches from the robot&#x27;s right/image left, grasps the offered book, shares support briefly with the robot, and removes it after release.&quot;,
+    &quot;coordination&quot;: &quot;Robot right-hand hold overlaps the person&#x27;s grasp before the person takes full support. Robot left hand does not participate.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;evidence&quot;: &quot;The initial PNG shows the front of the torso and face. The active arm visibly attaches to the shoulder on image left, the robot&#x27;s anatomical right; its upper arm, elbow, wrist and articulated fingers form a continuous visible chain. The opposite arm attaches to the image-right shoulder and rests low at the robot&#x27;s anatomical left hip.&quot;,
+    &quot;uncertainty&quot;: &quot;None for robot arm sides; the person&#x27;s full body is outside view, so their anatomical hand side is not assigned.&quot;
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    48,
+    120,
+    164,
+    180,
+    196,
+    214,
+    226,
+    240,
+    260,
+    266,
+    270,
+    272,
+    274,
+    276,
+    286,
+    326
+  ],
+  &quot;initial_png_inspected_at_native_resolution&quot;: true,
+  &quot;inspection_coverage&quot;: &quot;All three contact sheets visually inspected, covering 164 samples at stride 2 across frames 0–326; source initial PNG and all listed native transition/final images inspected at 720×1280.&quot;,
+  &quot;critical_transition_details&quot;: &quot;Native images verify right-hand extraction (164–214), recipient grasp and shared support (226–260), transfer (266–286), and empty robot hand/final stand (326).&quot;,
+  &quot;manipulation_outcome&quot;: &quot;Book successfully transferred to the person; robot hand visibly empty and stand left without the extracted book.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;source_overall_execution_status&quot;: &quot;success&quot;,
+  &quot;outcome&quot;: &quot;The person carries the extracted book out of view; the robot lowers its empty right hand.&quot;,
+  &quot;outcome_confidence&quot;: &quot;high&quot;,
+  &quot;confidences&quot;: {
+    &quot;anatomical_side&quot;: &quot;high&quot;,
+    &quot;book_extraction&quot;: &quot;high&quot;,
+    &quot;person_handover&quot;: &quot;high&quot;,
+    &quot;terminal_state&quot;: &quot;high&quot;
+  },
+  &quot;uncertainties&quot;: [
+    &quot;The book&#x27;s exact identity and weight cannot be established visually; the source instruction&#x27;s description of a heavier object is not adopted.&quot;,
+    &quot;The precise first contact within the stand is partly occluded by its lattice, but the right-hand grip and subsequent extraction are visible.&quot;,
+    &quot;The recipient&#x27;s anatomical hand side cannot be established from the isolated visible forearm and hand.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;annotation_verification&quot;: &quot;Observed extraction and person handover agree with the original task. No visible contradiction; object weight is unverified.&quot;,
+  &quot;retained_reference&quot;: &quot;Complete original single-task sequence, frames 0 through 326 inclusive; no trimming, cropping, resizing or re-encoding.&quot;,
+  &quot;protocol_final_checks&quot;: {
+    &quot;target_identifiable_from_initial_frame&quot;: true,
+    &quot;action_matches_full_sequence&quot;: true,
+    &quot;terminal_state_matches_video&quot;: true
+  },
+  &quot;notes&quot;: &quot;Left hand is recorded as idle evidence and omitted from usable action prompt because it does not contribute to manipulation.&quot;,
+  &quot;terminal_state&quot;: &quot;The person has carried the book out of view after the robot releases it. The robot&#x27;s right hand is empty and lowered beside the stand; the left hand remains low at the hip, and the magazine stand stays upright on the table without the extracted book.&quot;,
+  &quot;video_id&quot;: &quot;human-robot-4&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_human_robot_4&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 327,
+  &quot;source_fps&quot;: 29.908536585365855,
+  &quot;native_detail_frames&quot;: [
+    48,
+    120,
+    164,
+    180,
+    196,
+    214,
+    226,
+    240,
+    260,
+    266,
+    270,
+    272,
+    274,
+    276,
+    286,
+    326
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot grasps the exposed edge of the upright book in the magazine stand with its right hand, lifts it clear, and extends it toward the person&#x27;s outstretched hand. Once the person grips the book, the robot opens its right fingers to let the person take it away, then lowers its empty hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Grabbing a book from a magazine stand and handing it to a person, requiring careful extraction and stable handover of a heavier object.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 327,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;a37e87deb5ada2df11359d183a102d0b4fb71253db2cff8bb51ece48e4736851&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:24:10.302293+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/human-robot-3__hand_over_grey_duster/index.html">← Hand over grey duster</a><a rel="next" href="../../Humanoid_Everyday/human-robot-5__handover_dumpling/index.html">Handover dumpling →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

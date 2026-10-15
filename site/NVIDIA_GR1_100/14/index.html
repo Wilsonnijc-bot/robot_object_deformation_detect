@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 14 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 14</p>
+<h1>Video 14</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its right hand to grasp the red apple on the yellow plate and lift it clear, closing its fingers around the fruit. It carries the apple to the tan bowl and lowers it beside the oval object already inside. The right hand opens to release the apple into the bowl, leaving it there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up red apple from yellow plate to tan bowl.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 815.8 vs threshold 60">Pass<b>816</b></span><p>Sharpness <b>815.8</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/14">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/14/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/14/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/14/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-mounted forward/downward view over two extended forearms toward a tabletop. A yellow plate lies on the robot right with a green marked block; the red target apple is initially hidden by the upright right hand and becomes visible as that hand moves. The tan bowl nearer the robot already contains one tan/orange oval object. Both hands begin open.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval&quot;: [
+        0,
+        16
+      ],
+      &quot;action&quot;: &quot;Both hands are open above the table. The right wrist rotates and arm moves outward, revealing the red apple on the yellow plate; left hand stays open and clear of objects.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        17,
+        42
+      ],
+      &quot;action&quot;: &quot;The right hand moves over the red apple and turns palm downward, positioning fingers and thumb around its sides while the apple remains on the yellow plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        43,
+        62
+      ],
+      &quot;action&quot;: &quot;Right fingers close around the apple. The hand establishes its grasp and begins lifting; the left hand remains open and does not stabilize the plate or apple.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        63,
+        86
+      ],
+      &quot;action&quot;: &quot;The right hand lifts the apple visibly clear of the yellow plate and carries it inward and across above the large mint plate toward the tan bowl, maintaining its grasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        87,
+        110
+      ],
+      &quot;action&quot;: &quot;The right hand lowers the held apple into the tan bowl beside the existing tan/orange oval object. The left hand remains out of the manipulation.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        111,
+        119
+      ],
+      &quot;action&quot;: &quot;Right fingers spread and the apple separates from the hand, settling inside the tan bowl beside the existing object. The open right hand remains just above the bowl; no full arm withdrawal occurs.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Active manipulator: approaches, closes fingers around the red apple, lifts from yellow plate, transports over the table, lowers to the tan bowl, and opens to release.&quot;,
+    &quot;left&quot;: &quot;Open hand held over the robot-left portion of the table; small posture changes but no object contact, support, transfer, or coordinated grasp.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;basis&quot;: &quot;The forward/downward robot-side camera looks along the paired forearms from their near-body origins at the lower edges toward the table and person opposite. The active arm is continuously attached to the robot-right near-camera side and crosses toward the central bowl; the opposite forearm remains on the robot-left side. This egocentric body alignment grounds the right-hand label and agrees with the source annotation, rather than mapping a facing robot image side to anatomy.&quot;,
+    &quot;confidence&quot;: &quot;medium-high&quot;,
+    &quot;limitation&quot;: &quot;Shoulders and full torso are outside the camera view; anatomical assignment uses the robot-mounted viewpoint and forearm continuity.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand manipulation throughout. The left hand supplies no visible support and there is no hand-to-hand or human transfer.&quot;,
+  &quot;terminal_state&quot;: &quot;Red apple released inside the tan bowl beside the pre-existing tan/orange oval object. The right hand is visibly open above it; the left hand remains open and separate.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The apple is hidden behind the right hand in the source initial PNG; its yellow-plate origin is revealed by the hand movement before grasping.&quot;,
+    &quot;The exact identity of the pre-existing tan/orange oval object in the destination bowl is unclear and is described by appearance.&quot;,
+    &quot;Shoulder attachments are outside view; anatomical side is grounded in the egocentric arm layout and continuous forearm motion.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    22,
+    48,
+    64,
+    82,
+    106,
+    112,
+    116,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;inspection_coverage&quot;: &quot;Visually inspected the complete every-second-frame contact sheet (frames 0 through 118, 60 samples), nine native frames including grasp/lift/transport/release and final frame 119, and the native source first-frame PNG.&quot;,
+  &quot;video_id&quot;: &quot;14&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_14&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/14/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    0,
+    22,
+    48,
+    64,
+    82,
+    106,
+    112,
+    116,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its right hand to grasp the red apple on the yellow plate and lift it clear, closing its fingers around the fruit. It carries the apple to the tan bowl and lowers it beside the oval object already inside. The right hand opens to release the apple into the bowl, leaving it there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up red apple from yellow plate to tan bowl.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;bf64693a7cd74811c81b11c6e3d6c1ae9ee5d8addf362e3d8dede705a51def77&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:45:01.477276+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/13/index.html">← Video 13</a><a rel="next" href="../../NVIDIA_GR1_100/15/index.html">Video 15 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

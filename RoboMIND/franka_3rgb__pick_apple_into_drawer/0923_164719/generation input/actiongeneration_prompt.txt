@@ -1,0 +1,1 @@
+The robotic arm grasps the handle of the top drawer, pulls the drawer open, then releases the handle and withdraws. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

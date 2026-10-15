@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 96 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 96</p>
+<h1>Video 96</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot grasps the pink peach on the upper black shelf with its right hand and lifts it clear. Its left hand keeps hold of a handle of the brown paper bag and raises that side of the opening while the right hand carries the peach toward it. The right hand lowers the peach inside the bag and begins opening its fingers around it, remaining beside the peach. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up peach from top black shelf to inside brown paper bag.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 729.6 vs threshold 60">Pass<b>730</b></span><p>Sharpness <b>729.6</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/96">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/96/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/96/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/96/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-centered elevated view looking outward along the paired forearms toward a table. Brown paper bag lies open on the left, with a far handle extending behind the closed left hand. A pink peach with green leaf rests on the upper black shelf to the right; right hand is initially open near the fruit stand.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 15,
+      &quot;observation&quot;: &quot;Left hand is already closed at the bag handle, whose visible cord disappears behind the hand. Bag is open. Right hand open below the upper shelf; peach remains on the shelf.&quot;,
+      &quot;confidence&quot;: &quot;high for visible arrangement; medium-high for occluded handle support&quot;
+    },
+    {
+      &quot;start_frame&quot;: 16,
+      &quot;end_frame&quot;: 51,
+      &quot;observation&quot;: &quot;Right hand raises and reorients toward the peach with digits apart. Left hand retains its position and the handle has no visible disengagement.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 52,
+      &quot;end_frame&quot;: 75,
+      &quot;observation&quot;: &quot;Right front digit contacts/crosses the peach and opposing digits close around its body. Fruit remains at shelf height while grasp establishes. Left remains closed at handle.&quot;,
+      &quot;confidence&quot;: &quot;high for grasp; exact back-side fingertip contact occluded&quot;
+    },
+    {
+      &quot;start_frame&quot;: 76,
+      &quot;end_frame&quot;: 88,
+      &quot;observation&quot;: &quot;Right hand raises peach; fruit and hand move together and peach clears the shelf. Left still holds handle without visible regrasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 89,
+      &quot;end_frame&quot;: 108,
+      &quot;observation&quot;: &quot;Right carries peach inward toward bag. Left raises the handle continuously: cord segment and far-wall attachment rise with hand, and the far bag wall lifts relative to the near wall. Right lowers peach through opening while its digits remain opposed around it.&quot;,
+      &quot;confidence&quot;: &quot;high for coordinated motion; exact left digit-handle interface occluded&quot;
+    },
+    {
+      &quot;start_frame&quot;: 109,
+      &quot;end_frame&quot;: 116,
+      &quot;observation&quot;: &quot;Right hand and enclosed peach descend farther inside bag. Left retains raised handle. The inner paper surface is visible beneath fruit, but direct fruit-support contact is not established from projection alone.&quot;,
+      &quot;confidence&quot;: &quot;high for interior location and hand pose&quot;
+    },
+    {
+      &quot;start_frame&quot;: 117,
+      &quot;end_frame&quot;: 119,
+      &quot;observation&quot;: &quot;Right digits spread, upper opposing digits separate from peach, and peach shifts down/left relative to hand and turns its leaf out of view. A front fingertip still overlaps peach in final frame, so complete contact loss is not established. Left retains raised handle; no withdrawal or subsequent settling is visible.&quot;,
+      &quot;confidence&quot;: &quot;high for opening and relative motion; uncertain for complete release&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Closes around peach body, bears it during shelf lift and transport, lowers it into bag, then opens digits around it. Complete release cannot be confirmed because final front fingertip overlaps fruit.&quot;,
+    &quot;left&quot;: &quot;Continuously holds/supports one bag handle from beginning, lifts handle and its attached bag wall during transport/insertion, retains it at final frame. No observed release or regrasp. Exact finger-handle pinch is hidden behind hand.&quot;,
+    &quot;coordination&quot;: &quot;Left moves handle/far wall to keep bag opening accessible while right independently bears and lowers peach. No hand-to-hand fruit transfer. Left never touches fruit, and no human assists.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;observation&quot;: &quot;The generation view looks forward from behind/above the robot forearms: both forearms originate at the bottom near the camera and extend outward across the table. The arm at the robot-centered lower right reaches to the shelf and is anatomical right; the opposing lower-left arm holds the bag and is anatomical left. Paired hand/forearm orientation supports this body-centered convention, rather than a front-facing reversal.&quot;,
+    &quot;confidence&quot;: &quot;medium-high&quot;,
+    &quot;limitation&quot;: &quot;Torso and shoulder attachments are outside the camera crop; the arm side assignment is based on visible paired forearm origins and the egocentric geometry, and agrees with but is not solely derived from the source instruction.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;Peach lies within the visible bag opening, with right digits spreading around it and front fingertip still overlapping it. Left retains raised handle; the upper black shelf is empty. Complete release, transfer of weight to the bag interior, settling and right-hand withdrawal are not established.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Exact left-hand finger/handle contact is hidden behind its hand backplate; handle support is supported by continuous cord-to-hand proximity and coupled rise of handle attachment and bag wall. No rim pinch is visibly established.&quot;,
+    &quot;At final frame the right front fingertip overlaps peach; complete release and absence of residual contact cannot be confirmed.&quot;,
+    &quot;Peach-to-interior paper support and post-release settling cannot be established from the available depth/projection and ending.&quot;,
+    &quot;Torso/shoulders are cropped out; anatomical naming follows visible paired forearm origins in the robot-centered outward-looking view.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    16,
+    24,
+    28,
+    36,
+    46,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64,
+    76,
+    80,
+    82,
+    84,
+    88,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    103,
+    104,
+    106,
+    108,
+    110,
+    112,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;uncertain&quot;,
+  &quot;selected_execution_status_evidence&quot;: &quot;Shelf pickup and insertion are demonstrated, but final 117–119 finger opening does not establish complete hand-fruit separation or independent support by the bag.&quot;,
+  &quot;video_id&quot;: &quot;96&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_96&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/96/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    0,
+    16,
+    24,
+    28,
+    36,
+    46,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64,
+    76,
+    80,
+    82,
+    84,
+    88,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    103,
+    104,
+    106,
+    108,
+    110,
+    112,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot grasps the pink peach on the upper black shelf with its right hand and lifts it clear. Its left hand keeps hold of a handle of the brown paper bag and raises that side of the opening while the right hand carries the peach toward it. The right hand lowers the peach inside the bag and begins opening its fingers around it, remaining beside the peach. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up peach from top black shelf to inside brown paper bag.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;14582b30c97254d30e726ba7b78ae912026b367b2c0f74aca2d2a92854d8b169&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T19:10:40.654984+00:00&quot;,
+  &quot;bimanual_second_review&quot;: {
+    &quot;completed_at&quot;: &quot;2026-10-13T19:10:40.346044+00:00&quot;,
+    &quot;reviewed_contact_sheets&quot;: [
+      &quot;sheet_001.jpg&quot;
+    ],
+    &quot;inspected_sampled_frame_count&quot;: 60,
+    &quot;source_initial_png_inspected_at_native_resolution&quot;: true,
+    &quot;native_evidence_frame_indices&quot;: [
+      0,
+      16,
+      28,
+      36,
+      46,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      76,
+      80,
+      82,
+      88,
+      91,
+      92,
+      93,
+      94,
+      95,
+      97,
+      98,
+      99,
+      101,
+      103,
+      104,
+      106,
+      108,
+      112,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    &quot;contact_chronology&quot;: {
+      &quot;left&quot;: [
+        {
+          &quot;frames&quot;: [
+            0,
+            88
+          ],
+          &quot;part&quot;: &quot;far bag handle&quot;,
+          &quot;evidence&quot;: &quot;Handle cord visibly emerges at the right side of hand backplate and ends at far-wall attachment; closed pose persists. No engagement shown because hold exists initially.&quot;,
+          &quot;occlusion&quot;: &quot;Finger-level pinch hidden.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            89,
+            108
+          ],
+          &quot;part&quot;: &quot;same handle&quot;,
+          &quot;evidence&quot;: &quot;Across 91–95 and 97–104, hand rises, visible cord attachment rises and far wall raises while near wall remains lower. Same closed pose; no disengagement/regrasp.&quot;,
+          &quot;occlusion&quot;: &quot;Cord-to-digit interface remains behind hand.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            109,
+            119
+          ],
+          &quot;part&quot;: &quot;same handle&quot;,
+          &quot;evidence&quot;: &quot;Raised hand and elevated handle/far wall persist throughout right insertion and digit opening.&quot;,
+          &quot;occlusion&quot;: &quot;Exact grip remains hidden.&quot;
+        }
+      ],
+      &quot;right&quot;: [
+        {
+          &quot;frames&quot;: [
+            0,
+            51
+          ],
+          &quot;part&quot;: &quot;none then peach approach&quot;,
+          &quot;evidence&quot;: &quot;Open hand stays apart from fruit until front digit reaches peach around 52.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            52,
+            75
+          ],
+          &quot;part&quot;: &quot;peach body&quot;,
+          &quot;evidence&quot;: &quot;Native 52/54/56/58/60/62 show front digit covering/contacting peach and opposing side closing; no grasp of leaf or shelf claimed.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            76,
+            88
+          ],
+          &quot;part&quot;: &quot;peach body&quot;,
+          &quot;evidence&quot;: &quot;Peach rises with closed hand, clearing shelf. Hand bears fruit.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            89,
+            116
+          ],
+          &quot;part&quot;: &quot;peach body&quot;,
+          &quot;evidence&quot;: &quot;Fruit remains between opposing digits throughout travel and lowering; leaf/body landmarks track same grasp, with whole fruit rotation accompanying hand rather than any mechanism.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            117,
+            119
+          ],
+          &quot;part&quot;: &quot;peach body; opening transition&quot;,
+          &quot;evidence&quot;: &quot;Adjacent 115–119 show spreading digits and peach moving left/down relative to hand; leaf disappears with fruit rotation. Opposing upper digit leaves fruit, front fingertip remains projected across fruit.&quot;,
+          &quot;occlusion&quot;: &quot;Complete front contact loss and fruit-paper support not established.&quot;
+        }
+      ]
+    },
+    &quot;corrected_first_review_assertions&quot;: [
+      &quot;Replaced complete-release claim with visible opening of right digits around peach inside bag.&quot;,
+      &quot;Removed assertion of peach resting on interior paper surface and changed placement status from success to uncertain.&quot;,
+      &quot;Refined left action to retained handle support lifting one bag wall; no invented digit-level grip or rim contact.&quot;,
+      &quot;Refined grasp chronology: right approach persists through 51, contact/closure develops from 52; did not treat all 37–77 as established grasp.&quot;
+    ],
+    &quot;source_annotation_comparison&quot;: &quot;Right-hand peach pickup and intended bag destination match. Annotation omits left handle support. It does not establish the filmed final support/release outcome.&quot;,
+    &quot;media_preservation&quot;: &quot;Complete original media retained unchanged.&quot;
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/95/index.html">← Video 95</a><a rel="next" href="../../NVIDIA_GR1_100/97/index.html">Video 97 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

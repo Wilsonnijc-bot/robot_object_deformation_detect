@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hand over grey duster · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · human-robot-3__hand_over_grey_duster</p>
+<h1>Hand over grey duster</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 279 frames · 9.33 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid uses its right hand to grasp the grey duster around its fluffy head, lift it from the table, and offer the exposed handle to a person. It holds the duster while the person grasps the handle, then opens its right hand to release it as the person carries it away and out of view. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Picking up a grey duster from the table and handing it to a person, demonstrating tool handover and collaborative task initiation.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 149.3 vs threshold 120">Pass<b>149</b></span><p>Sharpness <b>149.3</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>279</dd><dt>Frame rate</dt><dd>29.89 fps</dd><dt>Duration</dt><dd>9.33 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 140,
+  &quot;initial_scene&quot;: &quot;Front-facing seated humanoid behind a white table. Grey fluffy duster rests on the tabletop in front of the robot&#x27;s anatomical right side, with its dark handle pointing toward the camera. Both hands are initially empty; the anatomical left hand is near the lap.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 14,
+      &quot;action&quot;: &quot;Robot holds its empty hands near its lap; grey duster rests on the table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 15,
+      &quot;end_frame&quot;: 52,
+      &quot;action&quot;: &quot;Anatomical right arm reaches forward and down; open right fingers surround the fluffy head of the duster while the left hand remains near the lap.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 53,
+      &quot;end_frame&quot;: 108,
+      &quot;action&quot;: &quot;Right hand closes around the fluffy head and settles its grasp; duster shifts slightly on the tabletop.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 109,
+      &quot;end_frame&quot;: 157,
+      &quot;action&quot;: &quot;Right hand lifts the duster, rotates it to leave the handle exposed toward the approaching person, and holds it in front of the robot over the table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 158,
+      &quot;end_frame&quot;: 188,
+      &quot;action&quot;: &quot;A person&#x27;s hand enters from image left, reaches the exposed dark handle, and closes around it while the robot continues holding the fluffy head.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 189,
+      &quot;end_frame&quot;: 208,
+      &quot;action&quot;: &quot;Robot and person briefly support opposite parts of the same duster; the person begins drawing the handle toward image left as the robot loosens its grip.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 209,
+      &quot;end_frame&quot;: 224,
+      &quot;action&quot;: &quot;Right hand opens and separates visibly from the duster; the person carries the duster away toward image left and out of view.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 225,
+      &quot;end_frame&quot;: 278,
+      &quot;action&quot;: &quot;Robot retracts and lowers its empty right hand toward its side/lap. Left hand remains empty by the lap; duster is absent from the tabletop.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Active manipulation hand. Reaches to the duster, grips around its fluffy head, lifts and presents its handle, maintains support while the person grasps, then opens to release and retracts empty.&quot;,
+    &quot;left&quot;: &quot;Idle empty hand near the robot&#x27;s left thigh/lap throughout; it neither supports nor manipulates the duster.&quot;,
+    &quot;person&quot;: &quot;Visible hand takes the exposed handle while the robot still holds the fluffy head, then withdraws with the released duster.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;evidence&quot;: &quot;Initial PNG and native frames show the front of the robot&#x27;s face and torso. The active arm runs from the shoulder on the robot&#x27;s own right, appearing at viewer left, through its elbow and wrist to the dark-fingered hand over the duster. The other arm attaches to the robot&#x27;s own left shoulder at viewer right and ends in the pale hand by its left thigh. Naming is grounded in these shoulder attachments and frontal body pose.&quot;,
+    &quot;uncertainty&quot;: &quot;No material uncertainty in robot anatomical side; person hand anatomy is not needed and is not assigned.&quot;
+  },
+  &quot;coordination&quot;: &quot;One robot hand and one person hand cooperate during handover: robot supports the fluffy head while the recipient grips the handle; release follows the recipient&#x27;s grasp. No robot hand-to-hand transfer.&quot;,
+  &quot;outcome&quot;: &quot;Duster is successfully transferred to the person, whose hand visibly carries it out of view after the robot releases.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Fluffy material partially occludes the exact right-finger contact points and the first instant of release; native frames 210–216 show the hand opening and separation, and the subsequent removal establishes the completed handover.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    38,
+    52,
+    90,
+    108,
+    116,
+    140,
+    158,
+    170,
+    188,
+    202,
+    208,
+    210,
+    212,
+    214,
+    216,
+    224,
+    278
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;full_video_sampled&quot;: true,
+    &quot;sampled_frames&quot;: &quot;0, 2, 4, ..., 278&quot;,
+    &quot;native_initial_png_viewed&quot;: true,
+    &quot;native_transition_and_final_frames_viewed&quot;: [
+      38,
+      52,
+      90,
+      108,
+      116,
+      140,
+      158,
+      170,
+      188,
+      202,
+      208,
+      210,
+      212,
+      214,
+      216,
+      224,
+      278
+    ]
+  },
+  &quot;terminal_state&quot;: &quot;The person has carried the duster out through image left; the table is clear of the duster, and the humanoid&#x27;s right hand is empty and lowered near its right side. Its left hand remains empty near the lap.&quot;,
+  &quot;video_id&quot;: &quot;human-robot-3&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_human_robot_3&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 279,
+  &quot;source_fps&quot;: 29.892857142857142,
+  &quot;native_detail_frames&quot;: [
+    38,
+    52,
+    90,
+    108,
+    116,
+    140,
+    158,
+    170,
+    188,
+    202,
+    208,
+    210,
+    212,
+    214,
+    216,
+    224,
+    278
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid uses its right hand to grasp the grey duster around its fluffy head, lift it from the table, and offer the exposed handle to a person. It holds the duster while the person grasps the handle, then opens its right hand to release it as the person carries it away and out of view. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Picking up a grey duster from the table and handing it to a person, demonstrating tool handover and collaborative task initiation.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 279,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;f9506e2c0c326f3e15186f0693eb850750401f625bfe4bfda63b48cc0acd8ee9&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:23:30.531961+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/index.html">← Hand over toilet paper</a><a rel="next" href="../../Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/index.html">Hand over book from magazine stand →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 6 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 6</p>
+<h1>Video 6</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot closes its right hand around the orange on the tabletop and lifts it, holding it between its thumb and fingers. It carries the orange to the lower white shelf, sets it down beside the green object, and opens its fingers, leaving the orange on the shelf with the hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up orange from middle of table to bottom white shelf.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 621.0 vs threshold 60">Pass<b>621</b></span><p>Sharpness <b>621.0</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/6">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/6/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/6/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/6/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Forward-facing robot-mounted view with two forearms and open dexterous hands above a white tabletop. An orange is near the active right hand; a pink fruit-shaped object is farther left. A lower white slotted shelf on the robot&#x27;s right already holds a green elongated object.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;frame_interval&quot;: [
+        0,
+        24
+      ],
+      &quot;action&quot;: &quot;Both hands remain open over the tabletop. The orange rests on the table; the left hand remains inactive.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        25,
+        38
+      ],
+      &quot;action&quot;: &quot;The right hand moves toward the orange with its thumb extended to one side and fingers on the other, beginning to surround it without yet lifting.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        39,
+        64
+      ],
+      &quot;action&quot;: &quot;The right hand adjusts around the orange and closes its fingers and thumb into a secure opposing grasp; the left hand does not support or touch the object.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        65,
+        78
+      ],
+      &quot;action&quot;: &quot;The right hand lifts the orange clear of its original tabletop location, maintaining the grasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        79,
+        104
+      ],
+      &quot;action&quot;: &quot;The right arm transports the grasped orange rightward onto the lower white shelf beside the green object, then lowers it toward the shelf surface.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        105,
+        119
+      ],
+      &quot;action&quot;: &quot;The right hand sets the orange down and opens its fingers. The orange remains at the near portion of the white shelf while the hand stays immediately beside it; no completed hand withdrawal follows.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating hand: surrounds and grasps the orange with thumb and fingers, lifts it, carries it to the lower white shelf, lowers it and opens the fingers.&quot;,
+    &quot;left&quot;: &quot;Open inactive hand held above the left part of the tabletop; no grasp, support, transfer or object contact.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;basis&quot;: &quot;The camera looks forward from the robot toward the work surface. The paired forearms enter from the robot-side lower edges: the active forearm is on the robot&#x27;s right and its counterpart on the left; the active hand remains attached to that same forearm throughout. This agrees with the source instruction naming the right hand, but the visual arm continuity and forward viewing direction establish the naming.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;limitations&quot;: &quot;Shoulder attachments and torso are outside the camera view; side identification uses the robot-mounted forward view and paired forearms, rather than an external facing-camera image convention.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand manipulation. The left hand remains open and contributes no support or transfer.&quot;,
+  &quot;terminal_state&quot;: &quot;The orange is on the near portion of the lower white shelf beside the green object. The right fingers are open, with the right hand still adjacent to the orange; the left hand remains open above the tabletop.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The shelf and right hand partially occlude the orange&#x27;s precise base contact at the ending; the orange remains positioned on the shelf as the fingers open, but no later unobstructed view or completed hand withdrawal is shown.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    28,
+    42,
+    64,
+    72,
+    92,
+    104,
+    114,
+    119
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;sampled_source_frames&quot;: &quot;All even source frames from 0 through 118 inclusive, viewed in sheet_001.jpg.&quot;,
+    &quot;native_source_frames&quot;: [
+      28,
+      42,
+      64,
+      72,
+      92,
+      104,
+      114,
+      119
+    ],
+    &quot;source_initial_png_viewed_at_native_resolution&quot;: true
+  },
+  &quot;video_id&quot;: &quot;6&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_6&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/6/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    28,
+    42,
+    64,
+    72,
+    92,
+    104,
+    114,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot closes its right hand around the orange on the tabletop and lifts it, holding it between its thumb and fingers. It carries the orange to the lower white shelf, sets it down beside the green object, and opens its fingers, leaving the orange on the shelf with the hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up orange from middle of table to bottom white shelf.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;666ecd2e5bcaab8847a880413e579e15ebdc0b0efcb2ec8653135aa08b329124&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:22:53.303618+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/4/index.html">← Video 4</a><a rel="next" href="../../NVIDIA_GR1_100/9/index.html">Video 9 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

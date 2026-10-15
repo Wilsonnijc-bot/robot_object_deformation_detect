@@ -1,1 +1,0 @@
-This task demonstrates precision handling of electronic equipment, requiring careful manipulation of a multi-meter and placing it in a designated container.

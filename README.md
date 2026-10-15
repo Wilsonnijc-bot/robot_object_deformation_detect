@@ -1,11 +1,51 @@
 # Robot video data branch
 
-This branch contains the Robotvideo dataset project: TAVP, Humanoid Everyday,
-NVIDIA GR1, source annotations, visual reviews, and preparation scripts.
+This branch contains the Robotvideo dataset project: first-frame-conditioned world-model
+generation inputs (first frame, action prompt, reference clip) from six robot datasets, with
+source annotations, visual reviews, quality-gate scores and preparation scripts.
 It has an independent history on `data/robotvideo` in
 `Wilsonnijc-bot/robot_object_deformation_detect`.
 
-Videos and PNG images use Git LFS. To retrieve the complete data:
+**Dataset viewer:** https://wilsonnijc-bot.github.io/robot_object_deformation_detect/robotvideo/
+
+| Dataset | Episodes | Robot · view | Manifest |
+|---|---:|---|---|
+| [NVIDIA_GR1_100](NVIDIA_GR1_100/) | 92 | Fourier GR1 humanoid · first-person | `metamanifest/world_model_prompts.csv` |
+| [Humanoid_Everyday](Humanoid_Everyday/) | 26 | Humanoid · third-person | `metamanifest/world_model_prompts.csv` |
+| [ActionNet](ActionNet/) | 15 | Fourier humanoid · first-person | `metamanifest/world_model_prompts.csv` |
+| [RoboMIND](RoboMIND/) | 12 | Franka (right camera) · Tien Kung humanoid | `metamanifest/world_model_prompts.csv` |
+| [TAVP](TAVP/) | 8 | Franka Research 3 · third-person | `world_model_manifest.csv` |
+| [RoboCOIN_Airbot_MMK2_stack_block](RoboCOIN_Airbot_MMK2_stack_block/) | 3 | Dual-arm Airbot MMK2 · first-person | `metamanifest/world_model_prompts.csv` |
+
+Each dataset README documents its source, license, selection and validation. Prompt
+protocols are in [AGENTS.md](AGENTS.md).
+
+## Quality gate
+
+Every input is scored on the sharpness of its final upscaled conditioning frame:
+third-person ≥ 120, first-person ≥ 60. Failing inputs are kept and flagged, not deleted;
+filter on `gate_result` (`pass`, `exception`, `fail`) in the manifests or in
+[quality_gate.csv](quality_gate.csv). See [data_quality_gate.md](data_quality_gate.md).
+
+```sh
+.venv/bin/python quality_gate.py    # rescore inputs, update metadata and manifests
+.venv/bin/python build_site.py      # rebuild the viewer in site/
+```
+
+## Layout
+
+Each video folder holds `original/` (unchanged source media, publisher annotation and
+`metadata/metadata.json`) and `generation input/` (`video.mp4`, `first_frame.png`, the action
+prompt and `metadata/{metadata,action_review}.json`). Humanoid Everyday nests these under
+`third_person/`. TAVP shortened references keep their selected prompt in
+`generation input/first_substep/prompt.txt`, with the full-video prompt named
+`prompt for original multi step action(reproducing the original video).txt` in the parent
+folder. Paths inside per-video metadata resolve relative to the JSON's directory.
+
+## Getting the data
+
+Videos, PNGs, HDF5 and MKV files use Git LFS. The viewer's previews in `site/` are small
+regular files so GitHub Pages can serve them.
 
 ```sh
 git lfs install
@@ -14,28 +54,6 @@ cd Robotvideo
 git lfs pull
 ```
 
-For TAVP generation inputs, read `TAVP/world_model_manifest.csv`. Its relative
-video, first-frame, and prompt paths select the preferred reference for each
-of the 23 source videos. Ten references use `generation input/first_substep/`;
-thirteen use `generation input/` directly. Preserve those paths when uploading.
-See [TAVP/WORLD_MODEL_README.md](TAVP/WORLD_MODEL_README.md) for input semantics
-and validation details, and [AGENTS.md](AGENTS.md) for the prompt protocols.
-
-Humanoid Everyday third-person and NVIDIA GR1 generation inputs use
-`generation input/` beside `original/`. Each generation folder contains
-`actiongeneration_prompt.txt`, `first_frame.png`, `video.mp4`, `metadata/action_review.json`,
-and `metadata/metadata.json`. There is no duplicate `prompt.txt` in these two datasets.
-Their `metamanifest/world_model_prompts.csv` files select the current input paths.
-TAVP retains its existing `generation input/` layout and prompt filenames.
-
-This commit is a snapshot of the local project. Humanoid and GR1 review files
-may be updated by ongoing review work; their presence alone does not establish
-that the latest protocol review is complete. Dataset sources and original
-annotations remain alongside the generation references.
-
-The local Python environment, caches, incomplete downloads, and credentials
-are excluded. Consult each dataset's source metadata for provenance.
-
-TAVP shortened references keep their selected prompt in `first_substep/prompt.txt`. The full-video prompt is named `prompt for original multi step action(reproducing the original video).txt` in the parent generation folder.
-
-Every per-video review and metadata JSON lives in a `metadata/` subfolder of its original containing directory. For example, generation inputs use `metadata/action_review.json` and `metadata/metadata.json`; source metadata uses `original/metadata/metadata.json`. Task-level metadata likewise uses `metadata/task_metadata.json`.
+The local Python environment, caches, incomplete downloads and credentials are excluded.
+Licenses differ by dataset (CC BY 4.0, CC BY-NC-SA 4.0, Apache-2.0, or not stated); check each
+dataset README before reuse.

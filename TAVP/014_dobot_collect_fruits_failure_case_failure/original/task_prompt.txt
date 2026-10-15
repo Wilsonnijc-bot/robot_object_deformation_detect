@@ -1,1 +1,0 @@
-Collect the specified fruits from the table and place them in the target container.

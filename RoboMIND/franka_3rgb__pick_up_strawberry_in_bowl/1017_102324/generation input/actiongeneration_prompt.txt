@@ -1,0 +1,1 @@
+The robotic arm grasps the red strawberry from the table, carries it over the pink bowl, and releases it into the bowl, then lifts clear. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

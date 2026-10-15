@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Place kettle on base · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · high-precision-4__place_kettle_on_base</p>
+<h1>Place kettle on base</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 629 frames · 20.96 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid robot grasps the kettle&#x27;s handle with its right hand, lifts it from the tabletop, and carries it over the separate circular base. It lowers the kettle onto the base, steadies it while it settles, then opens its fingers and withdraws the right hand, leaving the kettle upright on the base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Placing a kettle precisely on its electrical base, requiring careful alignment of contacts and stable positioning for proper connection.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 291.9 vs threshold 120">Pass<b>292</b></span><p>Sharpness <b>291.9</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>629</dd><dt>Frame rate</dt><dd>30.01 fps</dd><dt>Duration</dt><dd>20.96 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;,
+    &quot;sheet_005.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 315,
+  &quot;initial_scene&quot;: &quot;Seated humanoid faces the table. A silver kettle with a dark lid and handle rests separately from its black circular wired base. Anatomical right hand is extended toward the kettle; left hand lies open over the left thigh.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval&quot;: [
+        0,
+        132
+      ],
+      &quot;action&quot;: &quot;Right arm extends toward the separate kettle while the left hand stays on the lap; kettle and base remain on the table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        133,
+        188
+      ],
+      &quot;action&quot;: &quot;Right hand reaches the kettle handle and closes around its upper handle region. The kettle begins to rise.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        189,
+        248
+      ],
+      &quot;action&quot;: &quot;Right hand lifts kettle clear of the tabletop and carries it inward over the circular base; at frame 246 the bottom is visibly above the base.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        249,
+        274
+      ],
+      &quot;action&quot;: &quot;Right hand lowers kettle onto the circular base, keeping it upright; base remains visible as a rim underneath.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        275,
+        456
+      ],
+      &quot;action&quot;: &quot;Right hand remains at handle holding the placed kettle steady with small settling adjustments; left hand does not support the kettle or base.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        457,
+        552
+      ],
+      &quot;action&quot;: &quot;Right fingers open and release the handle, moving clear while kettle remains upright on the base.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        553,
+        628
+      ],
+      &quot;action&quot;: &quot;Right arm retracts toward the torso, leaving the kettle undisturbed on its base; left hand remains on lap.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating hand: grasps kettle handle, lifts and transfers kettle, lowers and steadies it on base, opens fingers and withdraws.&quot;,
+    &quot;left&quot;: &quot;Idle hand rests open over left thigh throughout; no grasp, supporting contact or hand-to-hand transfer.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand placement with no bimanual coordination or person interaction.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;convention&quot;: &quot;Robot-relative anatomy, established from front/three-quarter view of face and chest.&quot;,
+    &quot;right&quot;: &quot;Active dark hand can be traced through forearm/elbow to shoulder on the robot right, which appears to viewer left in this front view.&quot;,
+    &quot;left&quot;: &quot;White-backed idle hand attaches through foreground arm to opposite shoulder on robot left, viewer right.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;uncertainty&quot;: null
+  },
+  &quot;terminal_state&quot;: &quot;Kettle sits upright on the round base, with a base rim and wire visible. Right hand has released and withdrawn beside torso; left hand remains on lap. No electrical activation is shown.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Electrical contact alignment and a working electrical connection are not directly visible; success describes stable physical placement only.&quot;,
+    &quot;Some individual finger contact points on the dark handle are occluded, but the handle grip, supported lift and later release are visible.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;annotation_verification&quot;: &quot;Source describes careful placement for electrical connection. Physical placement is observed, while proper electrical connection cannot be verified from this video.&quot;,
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    148,
+    190,
+    214,
+    246,
+    268,
+    300,
+    450,
+    480,
+    552,
+    576,
+    628
+  ],
+  &quot;source_initial_png_inspected&quot;: true,
+  &quot;inspection_coverage&quot;: &quot;All five contact sheets viewed visually, covering every second decoded frame from 0 through 628. Native 720x1280 frames inspected for approach/contact, lift/transport, lowering, hold, finger opening, withdrawal and final state, plus original first-frame PNG.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;selected_execution_status_basis&quot;: &quot;Visible physical kettle placement is complete and stable after hand release; electrical connection not claimed.&quot;,
+  &quot;video_id&quot;: &quot;high-precision-4&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_high_precision_4&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 629,
+  &quot;source_fps&quot;: 30.008778402585175,
+  &quot;native_detail_frames&quot;: [
+    0,
+    148,
+    190,
+    214,
+    246,
+    268,
+    300,
+    450,
+    480,
+    552,
+    576,
+    628
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid robot grasps the kettle&#x27;s handle with its right hand, lifts it from the tabletop, and carries it over the separate circular base. It lowers the kettle onto the base, steadies it while it settles, then opens its fingers and withdraws the right hand, leaving the kettle upright on the base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Placing a kettle precisely on its electrical base, requiring careful alignment of contacts and stable positioning for proper connection.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 629,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;bd96ba3dc3386aad8b3e0c40e0a58b41b17a57454099a0a2b437cc81ed6e5749&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:15:51.409040+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/deformable-6__compress_plastic_bag/index.html">← Compress plastic bag</a><a rel="next" href="../../Humanoid_Everyday/high-precision-5__insert_flower_into_vase/index.html">Insert flower into vase →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

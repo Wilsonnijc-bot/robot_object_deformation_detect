@@ -1,0 +1,40 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JN0Y324H2ZFDTSYD",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JN0Y324H-01JN0YMV54.tar",
+  "archive_name": "01JN0Y324H-01JN0YMV54.tar",
+  "annotation": {
+    "id": "01JN0Y324H2ZFDTSYD",
+    "prompt": "Pick up the croissant and put it on a plate",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JN0Y324H2ZFDTSYD.hdf5",
+      "path": "../01JN0Y324H2ZFDTSYD.hdf5",
+      "size_bytes": 976440,
+      "sha256": "3f159fdc4ddd9663c64ceb7ea83cc1fd40025e3065d47439b88afeab24b7f18e"
+    },
+    {
+      "archive_member": "01JN0Y324H2ZFDTSYD/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 11778270,
+      "sha256": "918d8b5ab73b3bebeda6b3ae796d3c191d29d60cbcaf958b7fa93353a1630f4f"
+    },
+    {
+      "archive_member": "01JN0Y324H2ZFDTSYD/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 30138690,
+      "sha256": "ec8c523e9bc3e0a043031a3bf6847100751647d48be8c0da7d7f56814347222d"
+    },
+    {
+      "archive_member": "01JN0Y324H2ZFDTSYD/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12960,
+      "sha256": "f234fd487d89e71b739261977eb40feedc831cbf92e4dfe86b6fd1b30f4fb5ef"
+    }
+  ],
+  "source_bytes_preserved": true
+}

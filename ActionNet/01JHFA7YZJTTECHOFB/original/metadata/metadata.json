@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JHFA7YZJTTECHOFB",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JHF7ZEBF-01JHFAFHR7.tar",
+  "archive_name": "01JHF7ZEBF-01JHFAFHR7.tar",
+  "annotation": {
+    "id": "01JHFA7YZJTTECHOFB",
+    "prompt": "Pick up the tape measure,place it into the box,and close the door.",
+    "task": "pnc",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JHFA7YZJTTECHOFB.hdf5",
+      "path": "../01JHFA7YZJTTECHOFB.hdf5",
+      "size_bytes": 894680,
+      "sha256": "ba1d7c81dc2c3dc9a37edc087f9aad402a8f2cc83575400270f623ca0af34488"
+    },
+    {
+      "archive_member": "01JHFA7YZJTTECHOFB/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 26025930,
+      "sha256": "2255c814f78719a4f6e078e253995e7803c9145b8beebe792420ac17072e558d"
+    },
+    {
+      "archive_member": "01JHFA7YZJTTECHOFB/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 11986761,
+      "sha256": "7df2b0605f302a4e9c407fc365b57adf9eb5ac138a1b75960929346a89513f32"
+    },
+    {
+      "archive_member": "01JHFA7YZJTTECHOFB/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 11850,
+      "sha256": "8f7dc7cb7613c956063f161893ddb596ecedadc232d38e2887a355029f3f8dbc"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

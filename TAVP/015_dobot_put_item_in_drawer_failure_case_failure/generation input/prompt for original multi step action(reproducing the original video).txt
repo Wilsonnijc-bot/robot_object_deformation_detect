@@ -1,1 +1,0 @@
-The robotic arm opens the upper drawer, then lifts the gray rectangular bar toward it but drops the bar onto the tabletop beside the cabinet, leaving the drawer closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

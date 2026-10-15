@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jj136c6dh2ezb42b · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JJ136C6DH2EZB42B</p>
+<h1>01jj136c6dh2ezb42b</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 410 frames · 13.67 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses the hand entering from the lower-right edge to reach the orange beside the white basket, close its thumb and fingers around it, and lift it. It carries the orange over the basket, lowers it inside, and opens its hand to release it onto the basket floor. The hand then rises out and withdraws to the lower right, leaving the orange in the basket. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Pick up the orange and place it into the container.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 729.7 vs threshold 60">Pass<b>730</b></span><p>Sharpness <b>729.7</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>410</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>13.67 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JJ136C6DH2EZB42B">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JJ136C6DH2EZB42B/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JJ136C6DH2EZB42B/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JJ136C6DH2EZB42B/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JJ136C6DH2EZB42B&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;review_scope&quot;: &quot;One dedicated agent reviewed the complete unchanged 410-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_start&quot;: 0,
+  &quot;source_frame_end_exclusive&quot;: 410,
+  &quot;fps_rational&quot;: &quot;30/1&quot;,
+  &quot;resolution&quot;: [
+    1280,
+    800
+  ],
+  &quot;source_annotation&quot;: {
+    &quot;verbatim_task_prompt&quot;: &quot;Pick up the orange and place it into the container.&quot;,
+    &quot;task_prompt_path&quot;: &quot;../../original/task_prompt.txt&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;hand entering from the lower-right edge of the initial image&quot;,
+    &quot;initial_frame_evidence&quot;: &quot;Two dark dexterous-hand arms enter from the near lower image edges; the active hand is attached to the lower-right forearm and lies beside the orange at frame 0. Torso and shoulders are outside the image. Hand geometry (opposing thumb, grouped fingers) does not independently establish whether the camera is mirrored or its pose relative to the robot body.&quot;,
+    &quot;confidence&quot;: &quot;Visible-arm identity is unambiguous; anatomical left/right is not independently established.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulating hand: reaches the orange, closes thumb and fingers around opposing sides of it, bears it through the lift and transport, lowers it into the basket, opens to release it, then rises out and withdraws to the lower right.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Remains stationary beside the table on image left beside the small orange block; no observed contact with the orange, basket or any other object.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand pick and place. No hand-to-hand transfer, bimanual stabilization, or physical assistance. A person standing at the right edge of the scene moves about but does not touch the robot or objects.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        40
+      ],
+      &quot;observation&quot;: &quot;Orange rests on the tabletop between the white basket and the pink block; both robot hands are clear and upright (open, fingers up). The standing person at image right gestures. No robot motion yet.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        42,
+        84
+      ],
+      &quot;observation&quot;: &quot;The lower-right hand tilts and swings left toward the orange, thumb and fingers open. At frame 56 the open hand is beside the orange&#x27;s right side; at frame 70 and 84 the thumb-side finger group sits under/left of the orange while the palm hovers on its right/upper side.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        86,
+        126
+      ],
+      &quot;observation&quot;: &quot;The hand adjusts around the orange; thumb and fingers close on opposing sides (thumb on the near/left side, palm and fingers on the far/right side). Frame 100 shows the hand still adjusting; by frames 114-126 the orange is enclosed between the thumb and palm/fingers, still resting on the table.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        128,
+        160
+      ],
+      &quot;observation&quot;: &quot;The hand lifts the orange off the table (clear by frame 142; frame 150-160 show it well above the table and near the green block tower), orange borne entirely by this hand.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        162,
+        214
+      ],
+      &quot;observation&quot;: &quot;The hand carries the orange up and leftward past the pink and red blocks, wrist turned so the palm covers the top of the orange. At frames 180-200 the orange is held high above the table edge, moving toward the basket.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        216,
+        262
+      ],
+      &quot;observation&quot;: &quot;The held orange is brought over the right wall of the basket and lowered into it; frame 240 shows the orange and hand inside the basket outline near its far-left corner.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        264,
+        316
+      ],
+      &quot;observation&quot;: &quot;The hand continues to hold the orange low inside the basket (frames 270-316 almost unchanged apart from slight lowering); at frame 316 the orange touches the basket floor with the hand still around it.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        318,
+        332
+      ],
+      &quot;observation&quot;: &quot;The fingers open and the hand lifts: by frame 326 the orange sits on the basket floor with the hand opening above it; by frame 332 the hand is rising out of the basket.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        334,
+        380
+      ],
+      &quot;observation&quot;: &quot;The hand rises out of the basket (frame 340 hand fully above the basket rim) and withdraws toward the lower right (frame 360 near the table edge), orange resting in the basket.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        382,
+        409
+      ],
+      &quot;observation&quot;: &quot;The hand returns to its initial upright rest pose at the lower right with fingers up; the orange remains in the basket. No further manipulation.&quot;
+    }
+  ],
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;successful_visible_placement&quot;,
+    &quot;description&quot;: &quot;Orange is released onto the floor of the white basket and remains there while the hand from the lower-right edge withdraws to its rest pose.&quot;,
+    &quot;selected_action_outcome&quot;: &quot;successful_visible_placement&quot;,
+    &quot;source_overall_success_label&quot;: &quot;not used to infer outcome&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The source calls the target a container; the observed target is a white perforated plastic basket. The usable prompt specifies the white basket.&quot;,
+    &quot;The source annotation names an orange; visually a round orange ball-shaped object matches, with a small orange block on the lower-left table that is not manipulated. The prompt identifies it by its position beside the basket.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Actual fruit versus prop material cannot be established visually.&quot;,
+    &quot;The exact frame of table separation (128-142) and basket-floor contact (about 316-326) are bracketed from sampled frames and hand occlusion.&quot;,
+    &quot;Torso and shoulder attachment are outside the image, and camera pose or mirroring is not independently established. Anatomical left/right is uncertain; prompt uses the unambiguous hand entering from the lower-right edge.&quot;,
+    &quot;Palm orientation during the high carry (frames 160-214) is hard to resolve because the orange occludes the fingers; the prompt states only the closed-hand carry.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;total_decoded_frames&quot;: 410,
+    &quot;overview_frame_indices&quot;: {
+      &quot;start&quot;: 0,
+      &quot;stop_inclusive&quot;: 408,
+      &quot;step&quot;: 2,
+      &quot;count&quot;: 205
+    },
+    &quot;overview_method&quot;: &quot;Decoded RGB every second frame into eighteen temporary 4-by-3 contact sheets outside dataset folders; reviewed all sheets.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      0,
+      40,
+      56,
+      70,
+      84,
+      96,
+      100,
+      108,
+      114,
+      120,
+      126,
+      132,
+      136,
+      142,
+      144,
+      150,
+      160,
+      180,
+      200,
+      240,
+      270,
+      300,
+      308,
+      314,
+      316,
+      320,
+      324,
+      326,
+      332,
+      340,
+      360,
+      409
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/an_review_01JJ136C6DH2EZB42B (removed after review; not under generation input)&quot;,
+    &quot;retained_evidence_frame_directories&quot;: false
+  },
+  &quot;preservation&quot;: {
+    &quot;whole_original_single_task_clip_retained&quot;: true,
+    &quot;crop&quot;: false,
+    &quot;shorten&quot;: false,
+    &quot;resize&quot;: false,
+    &quot;reencode&quot;: false,
+    &quot;source_and_generation_sha256_equal&quot;: true
+  },
+  &quot;prompt_word_count&quot;: 83
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../ActionNet/01JHFA7YZJTTECHOFB/index.html">← 01jhfa7yzjttechofb</a><a rel="next" href="../../ActionNet/01JJ141D4HW47GWFAL/index.html">01jj141d4hw47gwfal →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

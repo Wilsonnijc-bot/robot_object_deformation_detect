@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rotate chair · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · articulated-1__rotate_chair</p>
+<h1>Rotate chair</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 534 frames · 17.83 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid uses its right hand to grasp the near side edge of the office chair&#x27;s backrest and turn the backrest, seat, and armrests together to a new angle. It opens its right hand and lowers the arm, leaving the chair turned while its left arm remains behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Rotating an office chair by manipulating its swivel mechanism, demonstrating understanding of rotational joints and force application for smooth articulated motion.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 239.4 vs threshold 120">Pass<b>239</b></span><p>Sharpness <b>239.4</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>534</dd><dt>Frame rate</dt><dd>29.94 fps</dd><dt>Duration</dt><dd>17.83 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/articulated-1__rotate_chair/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/articulated-1__rotate_chair/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/articulated-1__rotate_chair/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/articulated-1__rotate_chair/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;,
+    &quot;sheet_005.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 267,
+  &quot;initial_scene&quot;: &quot;Frontal third-person view of a standing humanoid behind an angled perforated office-chair backrest. Robot-relative right hand hangs beside the right thigh. Left forearm extends behind the opposite side of the backrest, with part of the left hand visible beside its far/image-right edge; firm bracing contact is not established.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        0,
+        44
+      ],
+      &quot;observation&quot;: &quot;Right hand is lowered beside the right thigh; left arm is behind the backrest with finger portions visible beside its far edge. Chair is nearly still.&quot;,
+      &quot;confidence&quot;: &quot;high for pose; left contact uncertain&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        45,
+        128
+      ],
+      &quot;observation&quot;: &quot;Right arm lifts toward the near/image-left side edge of the backrest with its fingers extended. Left forearm stays behind the far side.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        129,
+        200
+      ],
+      &quot;observation&quot;: &quot;Right hand settles at the near backrest edge; initially extended fingers bend against the front surface and establish the grip by frame 200. Left-hand finger portions remain visible beside the opposite edge, without a clearly established opposing clamp or brace.&quot;,
+      &quot;confidence&quot;: &quot;high for right grip; left contact uncertain&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        201,
+        304
+      ],
+      &quot;observation&quot;: &quot;The gripped near backrest edge shifts across toward image right. The backrest outline and oval hole change perspective, while seat and armrests reorient with it: this is rotation of the chair assembly, not isolated wrist rotation or backrest flexion. Left fingers visible beside the opposite edge at 220-236 become obscured as that edge moves out of view around 252-260; no separate left engagement or release can be established.&quot;,
+      &quot;confidence&quot;: &quot;high for assembly rotation and right grip; unknown hidden left contact&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        305,
+        366
+      ],
+      &quot;observation&quot;: &quot;Chair remains at the new angle with the right hand still at the near edge. Left forearm remains behind the backrest.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        367,
+        400
+      ],
+      &quot;observation&quot;: &quot;Right fingers straighten/open by native frame 378, ending the curled grip while the hand remains in front of and near the edge. No second grasp occurs. Left hand remains obscured.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        401,
+        436
+      ],
+      &quot;observation&quot;: &quot;Open right hand withdraws away from the near edge; by native frame 436 it is clearly separated. Chair retains its turned orientation.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval_inclusive&quot;: [
+        437,
+        533
+      ],
+      &quot;observation&quot;: &quot;Right arm lowers beside the thigh and the chair stays turned. Left forearm remains behind the backrest; its contact or release is not visible.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Confirmed manipulating hand: engages the near side edge of the backrest, curls fingers to grip, rotates the chair assembly, straightens fingers to release and withdraws downward. No mechanism, lever, seat underside or swivel joint is contacted visibly.&quot;,
+    &quot;left&quot;: &quot;Positioned behind the opposite backrest side. Open finger portions are visible beside the far edge before the rotating backrest occludes them. An opposing brace, force contribution, uninterrupted contact, regrasp or release is not established.&quot;,
+    &quot;coordination&quot;: &quot;Only the right-hand chair manipulation is confirmed. The left arm stays behind the backrest, but its partly visible proximity does not establish active coordinated support.&quot;,
+    &quot;load_bearing&quot;: &quot;Chair remains supported by its floor/base. No lift or hand-to-hand load transfer occurs.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;convention&quot;: &quot;Robot anatomy, not image directions.&quot;,
+    &quot;evidence&quot;: &quot;The robot faces the camera with its chest and front face visible. The manipulating hand is connected continuously through the forearm/elbow to the shoulder on image left, which is robot-relative right; the opposite arm attached to the shoulder on image right is robot-relative left. Native initial PNG and frames 54, 110 and 170 establish these connections.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;uncertainty&quot;: &quot;No anatomical-side uncertainty. Left-hand stabilizing contact is not established, including before full occlusion.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;The office chair remains turned to a new angle, with the near armrest and backrest edge displaced from the initial orientation. Right hand has released the backrest and hangs beside the right thigh. Left arm remains behind the backrest, and a left-hand release is not visible.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;execution_status_evidence&quot;: &quot;Chair assembly visibly turns and retains the new angle after right-hand release. No target angle or direct mechanism-control operation is established.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Left fingers beside the far backrest edge do not establish firm bracing contact. The palm/opposing contact surfaces are partly hidden; the hand becomes obscured during rotation, so its force contribution, uninterrupted contact and release cannot be determined.&quot;,
+    &quot;The chair base/swivel is mostly below or obscured by the visible chair. Backrest, seat and armrest landmarks confirm rotation of the chair assembly, but the exact pivot, any simultaneous floor translation and manipulation of a separate swivel control cannot be established.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [
+    &quot;The source describes manipulating the swivel mechanism. Visible manipulation is a right-hand grip on the backrest edge; no separate mechanism/control is visibly operated.&quot;
+  ],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    54,
+    110,
+    128,
+    164,
+    170,
+    200,
+    220,
+    224,
+    228,
+    236,
+    240,
+    252,
+    260,
+    280,
+    304,
+    350,
+    366,
+    378,
+    384,
+    394,
+    400,
+    410,
+    420,
+    436,
+    452,
+    490,
+    533
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;full_source_frame_interval_inclusive&quot;: [
+      0,
+      533
+    ],
+    &quot;contact_sheet_sample_indices&quot;: &quot;Every second decoded frame from 0 through 532, inclusive.&quot;,
+    &quot;sampled_frame_count&quot;: 267,
+    &quot;native_resolution&quot;: [
+      720,
+      1280
+    ],
+    &quot;native_initial_png_viewed&quot;: true,
+    &quot;native_transition_and_terminal_frames_viewed&quot;: [
+      54,
+      110,
+      170,
+      240,
+      280,
+      350,
+      420,
+      452,
+      490,
+      533
+    ],
+    &quot;second_review_native_frames_viewed&quot;: [
+      128,
+      164,
+      200,
+      220,
+      224,
+      228,
+      236,
+      252,
+      260,
+      280,
+      304,
+      366,
+      378,
+      384,
+      394,
+      400,
+      410,
+      420,
+      436,
+      533
+    ]
+  },
+  &quot;video_id&quot;: &quot;articulated-1&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_articulated_1&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/articulated-1__rotate_chair/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 534,
+  &quot;source_fps&quot;: 29.94392523364486,
+  &quot;native_detail_frames&quot;: [
+    54,
+    110,
+    128,
+    164,
+    170,
+    200,
+    220,
+    224,
+    228,
+    236,
+    240,
+    252,
+    260,
+    280,
+    304,
+    350,
+    366,
+    378,
+    384,
+    394,
+    400,
+    410,
+    420,
+    436,
+    452,
+    490,
+    533
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid uses its right hand to grasp the near side edge of the office chair&#x27;s backrest and turn the backrest, seat, and armrests together to a new angle. It opens its right hand and lowers the arm, leaving the chair turned while its left arm remains behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Rotating an office chair by manipulating its swivel mechanism, demonstrating understanding of rotational joints and force application for smooth articulated motion.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 534,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;d31c00ed0adecce0f431684dde5b8e2e40a6af9911fdeed1b1f52331cd17baa0&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:58:09.708147+00:00&quot;,
+  &quot;bimanual_second_review&quot;: {
+    &quot;completed_at&quot;: &quot;2026-10-13T18:58:09.586083+00:00&quot;,
+    &quot;review_trigger&quot;: &quot;Meticulous separate-hand contact review under strengthened coordinated-manipulation instructions.&quot;,
+    &quot;full_contact_sheets_reviewed&quot;: [
+      &quot;sheet_001.jpg&quot;,
+      &quot;sheet_002.jpg&quot;,
+      &quot;sheet_003.jpg&quot;,
+      &quot;sheet_004.jpg&quot;,
+      &quot;sheet_005.jpg&quot;
+    ],
+    &quot;stride&quot;: 2,
+    &quot;sample_count&quot;: 267,
+    &quot;source_initial_png_reinspected&quot;: true,
+    &quot;native_frames_actually_viewed_this_pass&quot;: [
+      128,
+      164,
+      200,
+      220,
+      224,
+      228,
+      236,
+      252,
+      260,
+      280,
+      304,
+      366,
+      378,
+      384,
+      394,
+      400,
+      410,
+      420,
+      436,
+      533
+    ],
+    &quot;superseded_prompt&quot;: &quot;With its left hand bracing the far side of the backrest, the humanoid grasps the near edge with its right hand and turns the office chair on its swivel. It releases its right-hand grasp and lowers that arm, leaving the chair at the new angle and its left hand behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+    &quot;corrections&quot;: [
+      &quot;Removed unsupported left-hand bracing claim.&quot;,
+      &quot;Replaced direct swivel-mechanism wording with confirmed whole-chair-assembly reorientation.&quot;,
+      &quot;Separated right-hand finger opening from subsequent withdrawal and corrected the opening interval to 367-378, with full separation established by 436.&quot;
+    ],
+    &quot;hand_contact_checks&quot;: {
+      &quot;right&quot;: [
+        {
+          &quot;frames&quot;: [
+            128,
+            164,
+            200
+          ],
+          &quot;part&quot;: &quot;Near side backrest edge and adjacent perforated front face&quot;,
+          &quot;evidence&quot;: &quot;Extended fingers at 128/164 become bent against the surface by 200; edge remains within the hand contact region.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            220,
+            224,
+            228,
+            236,
+            252,
+            260,
+            280,
+            304
+          ],
+          &quot;part&quot;: &quot;Same side edge&quot;,
+          &quot;evidence&quot;: &quot;Contact region moves with changing chair pose; no isolated part or mechanism is manipulated.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            366,
+            378,
+            384,
+            394,
+            400,
+            410,
+            420,
+            436
+          ],
+          &quot;part&quot;: &quot;Same edge/front surface, then free space&quot;,
+          &quot;evidence&quot;: &quot;Curled fingers at 366 straighten by 378; the open hand later retreats and is visibly separated by 436.&quot;
+        }
+      ],
+      &quot;left&quot;: [
+        {
+          &quot;frames&quot;: [
+            0,
+            128,
+            164,
+            200,
+            220,
+            224,
+            228,
+            236
+          ],
+          &quot;part&quot;: &quot;Behind and beside far side backrest edge&quot;,
+          &quot;evidence&quot;: &quot;Forearm enters behind backrest; visible finger portions remain beside the outer edge. Opposing palm contact/clamping is not resolved, so brace is not asserted.&quot;
+        },
+        {
+          &quot;frames&quot;: [
+            252,
+            260,
+            280,
+            304,
+            366,
+            378,
+            384,
+            394,
+            400,
+            410,
+            420,
+            436,
+            533
+          ],
+          &quot;part&quot;: &quot;Occluded behind backrest&quot;,
+          &quot;evidence&quot;: &quot;Chair hides hand contact surfaces. The pale shape visible through the oval hole is insufficient to establish a hand grip or contact change. No left regrasp or release can be claimed.&quot;
+        }
+      ]
+    },
+    &quot;object_relative_landmark_comparison&quot;: {
+      &quot;frame_pairs&quot;: [
+        [
+          220,
+          224
+        ],
+        [
+          224,
+          228
+        ],
+        [
+          228,
+          236
+        ],
+        [
+          236,
+          252
+        ],
+        [
+          252,
+          260
+        ],
+        [
+          260,
+          280
+        ],
+        [
+          280,
+          304
+        ]
+      ],
+      &quot;landmarks&quot;: [
+        &quot;Oval backrest hole&quot;,
+        &quot;Perforation rows and side outline&quot;,
+        &quot;Near armrest axis&quot;,
+        &quot;Visible seat outline&quot;
+      ],
+      &quot;finding&quot;: &quot;These landmarks change perspective together as the right-hand edge contact moves. The near armrest changes from a diagonal projection to a more forward-facing projection, showing assembly reorientation. No movement of a separate hinged backrest, dial, cap or control is seen; exact swivel pivot and incidental translation remain unverified.&quot;
+    },
+    &quot;final_state_confirmed_at_frame&quot;: 533,
+    &quot;prompt_contact_claim_policy&quot;: &quot;Describe confirmed right grip, chair rotation and right release. Describe left-arm disposition without asserting stabilization or continuous contact.&quot;
+  }
+}</pre></details>
+<nav class="pager"><span></span><a rel="next" href="../../Humanoid_Everyday/articulated-2__compress_liquid_hand_soap/index.html">Compress liquid hand soap →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

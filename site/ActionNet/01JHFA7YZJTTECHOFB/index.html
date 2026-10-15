@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jhfa7yzjttechofb · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JHFA7YZJTTECHOFB</p>
+<h1>01jhfa7yzjttechofb</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 395 frames · 13.17 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses the hand entering from the lower-right edge to close its fingers and thumb around the yellow tape measure on the red mat, lift it, and carry it into the white cabinet. It lowers the tape measure onto the cabinet floor, opens its hand to release it, and withdraws to the right. The same hand then reaches the open door and pushes it with extended fingertips, swinging it nearly shut over the cabinet opening. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Pick up the tape measure,place it into the box,and close the door.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 418.0 vs threshold 60">Pass<b>418</b></span><p>Sharpness <b>418.0</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>395</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>13.17 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JHFA7YZJTTECHOFB">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JHFA7YZJTTECHOFB/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JHFA7YZJTTECHOFB/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JHFA7YZJTTECHOFB/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JHFA7YZJTTECHOFB&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;review_scope&quot;: &quot;One dedicated agent reviewed the complete unchanged 395-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_start&quot;: 0,
+  &quot;source_frame_end_exclusive&quot;: 395,
+  &quot;fps_rational&quot;: &quot;30/1&quot;,
+  &quot;resolution&quot;: [
+    1280,
+    800
+  ],
+  &quot;source_annotation&quot;: {
+    &quot;verbatim_task_prompt&quot;: &quot;Pick up the tape measure,place it into the box,and close the door.&quot;,
+    &quot;task_prompt_path&quot;: &quot;../../original/task_prompt.txt&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;hand entering from the lower-right edge of the initial image&quot;,
+    &quot;initial_frame_evidence&quot;: &quot;Two forearm/hand assemblies enter from the lower image edges: one near the lower-left (fingers pointing upward, stationary) and one at the lower-right (fingers pointing upward, beside the yellow tape measure). The active hand is the lower-right one. Torso and shoulders are outside the image and the camera pose relative to the robot body is not independently established, so anatomical left/right is not claimed.&quot;,
+    &quot;confidence&quot;: &quot;Visible-arm identity is unambiguous; anatomical left/right is not independently established.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulating hand: fingers approach from above and the thumb from below-left to enclose the tape measure on the mat, bear it during lift and transport into the cabinet, lower it to the cabinet floor and open to release, withdraw to the right, then reach the open door at the right side of the cabinet and push it shut with extended fingertips, and finally retract upright without touching the door.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Remains upright and stationary at the lower-left edge for the entire clip; no contact with the tape measure, cabinet or door.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand pick, placement and door closing. No hand-to-hand transfer or bimanual stabilization. A person in a white hooded top is visible at the right edge throughout, handling something near their lap/waist; no contact with the robot, cabinet, tape measure or door is observed.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        46
+      ],
+      &quot;observation&quot;: &quot;Open cabinet (front opening facing the camera, door swung open at image right) stands on a red mat with a yellow tape measure on the mat in front of it. The lower-right hand is upright and clear; the lower-left hand is upright and stationary. The person at right moves their arms. The lower-right hand starts to tilt/reach toward the tape measure near the end of this interval.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        48,
+        100
+      ],
+      &quot;observation&quot;: &quot;The lower-right hand extends toward the tape measure with fingers open above/beyond it and the thumb below-left. Frame 60 shows the open hand beside the tape; by frame 80 to 90 the fingers lie over the top of the tape and the thumb on its lower/near side; frame 100 shows fingers on top of the tape with the hand still open.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        102,
+        134
+      ],
+      &quot;observation&quot;: &quot;Fingers and thumb close on opposing sides of the tape measure (frame 110 to 130 show it enclosed, fingers on top and thumb underneath). No second-hand contact.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        136,
+        194
+      ],
+      &quot;observation&quot;: &quot;The hand bears the tape measure (frames 136, 142, 148, 160 show it held with fingers above and thumb below), lifts it off the mat and carries it leftward and into the cabinet interior (frame 170 and 190 show it inside the opening near the left interior wall) while the wrist turns it.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        196,
+        212
+      ],
+      &quot;observation&quot;: &quot;Thumb separates and fingers open (frame 196); by frame 200 the tape measure rests on the cabinet floor against the left interior wall with its strap trailing, and the hand is open and retracting (frames 206 and 212). The exact first floor-contact frame is partially occluded by the hand.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        214,
+        262
+      ],
+      &quot;observation&quot;: &quot;The hand withdraws out of the cabinet and moves right (upright at frame 216 to 224, near the right image edge by frame 230 and 240). The tape measure remains on the cabinet floor and is not touched again.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        264,
+        330
+      ],
+      &quot;observation&quot;: &quot;The hand, mostly occluded by the open door and close to the person&#x27;s forearm at the right image edge, moves behind the open door&#x27;s right edge (frames 262 to 296). At frames 304 to 328 the door begins to swing toward the opening as the hand pushes it from the right side; fingers are pointed at the door edge/face and are partly occluded by the door.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        332,
+        358
+      ],
+      &quot;observation&quot;: &quot;The door swings from open through a near edge-on position (frame 336 to 344) to nearly covering the cabinet opening (frame 352 to 358) while the extended fingertips push against it; at frames 344 to 358 the hand is in front of the door&#x27;s outer face.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        360,
+        394
+      ],
+      &quot;observation&quot;: &quot;The hand pulls back to the right and stands upright with fingers pointing up, no longer touching the door (frames 362 to 394). The door ends nearly closed over the opening, angled slightly, with a narrow dark gap visible along its upper-left edge; the tape measure is no longer visible. Final frame 394 shows the hand clear and still.&quot;
+    }
+  ],
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;successful_visible_placement_and_door_nearly_closed&quot;,
+    &quot;description&quot;: &quot;Tape measure is released onto the cabinet floor and remains there; the same hand then pushes the open door to a nearly closed position over the opening, with a narrow dark gap still visible along its upper-left edge, and retracts upright.&quot;,
+    &quot;selected_action_outcome&quot;: &quot;tape_placed_in_cabinet_and_door_pushed_nearly_shut&quot;,
+    &quot;source_overall_success_label&quot;: &quot;not used to infer outcome&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The source calls the container a box; the observed container is an open-front white cabinet (box-like shelf unit) with a hinged door. The usable prompt says cabinet.&quot;,
+    &quot;The source gives the order pick up, place, close the door; the observed order matches. Whether the door ends fully latched or flush cannot be established because a narrow gap is visible in the final frames.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Torso and shoulder attachment are outside the image, and camera pose or mirroring is not independently established. Anatomical left/right is uncertain; prompt uses the unambiguous hand entering from the lower-right edge.&quot;,
+    &quot;The exact first cabinet-floor contact frame is partially occluded by the hand and tape measure.&quot;,
+    &quot;Hand-to-door contact during frames 262 to 330 is partly occluded by the open door and the nearby person&#x27;s arm; the pushed surface during the early swing is inferred from the door&#x27;s rotation and the visible fingertip contact at frames 344 to 358.&quot;,
+    &quot;Top camera has slight source-view motion across the sequence; required fixed-camera generation constraint is retained verbatim.&quot;,
+    &quot;Whether the final door pose is fully closed is not established; a narrow dark gap is visible.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;total_decoded_frames&quot;: 395,
+    &quot;overview_frame_indices&quot;: {
+      &quot;start&quot;: 0,
+      &quot;stop_inclusive&quot;: 394,
+      &quot;step&quot;: 2,
+      &quot;count&quot;: 198
+    },
+    &quot;overview_method&quot;: &quot;Decoded RGB every second frame into seventeen temporary 4-by-3 contact sheets (480 px wide tiles) outside dataset folders; reviewed all sheets.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      0,
+      60,
+      80,
+      90,
+      100,
+      104,
+      110,
+      120,
+      130,
+      136,
+      142,
+      148,
+      150,
+      160,
+      170,
+      190,
+      196,
+      200,
+      206,
+      212,
+      216,
+      224,
+      230,
+      240,
+      250,
+      262,
+      280,
+      296,
+      304,
+      312,
+      320,
+      328,
+      336,
+      344,
+      352,
+      362,
+      372,
+      380,
+      388,
+      394
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/an_review_01JHFA7YZJTTECHOFB (removed after review; not under generation input)&quot;,
+    &quot;retained_evidence_frame_directories&quot;: false
+  },
+  &quot;preservation&quot;: {
+    &quot;whole_original_single_task_clip_retained&quot;: true,
+    &quot;crop&quot;: false,
+    &quot;shorten&quot;: false,
+    &quot;resize&quot;: false,
+    &quot;reencode&quot;: false,
+    &quot;source_and_generation_sha256_equal&quot;: true
+  },
+  &quot;prompt_word_count&quot;: 93
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../ActionNet/01JHF84WJCMA7S2S3S/index.html">← 01jhf84wjcma7s2s3s</a><a rel="next" href="../../ActionNet/01JJ136C6DH2EZB42B/index.html">01jj136c6dh2ezb42b →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

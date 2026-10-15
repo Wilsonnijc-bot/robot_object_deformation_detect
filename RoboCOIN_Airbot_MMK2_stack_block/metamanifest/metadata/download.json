@@ -1,0 +1,117 @@
+{
+  "repository": "RoboCOIN/Airbot_MMK2_stack_block",
+  "revision": "ee1901cfd4a45185b71b571d9fdd8608ab43c934",
+  "members": {
+    "README.md": {
+      "size_bytes": 15209,
+      "sha256": "fdde8515f5847d10e5fcb789058351faedf68ca3b0c0a32fbc669c41c7677082",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "info.yaml": {
+      "size_bytes": 13700,
+      "sha256": "ae6a7168c6a818eb6658345ac50b3a2842bba3bfb62f14f45537e3e443892f22",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "meta/info.json": {
+      "size_bytes": 27232,
+      "sha256": "c33fb832c1f0fb78531413cefafcc929277fa8d00f2611685b534d8bbde8874d",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "meta/tasks.jsonl": {
+      "size_bytes": 158,
+      "sha256": "06dfabff2e3383d32501c2c433c605914d65b19f248acf7aff3da07e30f19d38",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "meta/episodes.jsonl": {
+      "size_bytes": 41898,
+      "sha256": "4a06ea3d9a47d516fb4010474cd0b7a8a20a162ff56b337cddc27ce7b9922629",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "annotations/subtask_annotations.jsonl": {
+      "size_bytes": 1927,
+      "sha256": "b80168eda8904910893ecc2a4147289f0b7ad8fb8c274fb1aab22e21acec392f",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "annotations/scene_annotations.jsonl": {
+      "size_bytes": 56209,
+      "sha256": "87b15cf70f76695a033c4874771ab22db0f752a905b10e43c26f3d279d0224f2",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "data/chunk-000/episode_000000.parquet": {
+      "size_bytes": 106077,
+      "sha256": "5a58f850dea6f6da964bf0591d397c42e65c4ca02411b694f2f97c4a42fc6a54",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_front_rgb/episode_000000.mp4": {
+      "size_bytes": 1309720,
+      "sha256": "30b64d4f0afe9abf993da3ae6c627d39499e331b6a9f1cc52caa6f40f146a71d",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_head_rgb/episode_000000.mp4": {
+      "size_bytes": 1080532,
+      "sha256": "3b492cbf165cbeb319b70821758dc7318ef9f08f792f50e8fc9433f89fb87a50",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_left_wrist_rgb/episode_000000.mp4": {
+      "size_bytes": 860907,
+      "sha256": "6c7a424aa4054081548efcbd66c734b2dc6172a140150ec947f0927ed510c4dd",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_right_wrist_rgb/episode_000000.mp4": {
+      "size_bytes": 1198551,
+      "sha256": "022de3dee1a8157550889521c03ac042f9cd2697a5fd04bfd718e53aac793ebf",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/episode_000001.parquet": {
+      "size_bytes": 113070,
+      "sha256": "99fd333783a7562c93cf692fb8fa678973005941f200a242f031982fc05afdaa",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_front_rgb/episode_000001.mp4": {
+      "size_bytes": 1956596,
+      "sha256": "46db5076e76e7b30b7336cf6fc493e1f5a1146354288370090ec35a81cc22bab",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_head_rgb/episode_000001.mp4": {
+      "size_bytes": 1416204,
+      "sha256": "3436615819e9e1c52947eaeacf3d7992d2e1dabd3cf290171f71d6e75c150a97",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_left_wrist_rgb/episode_000001.mp4": {
+      "size_bytes": 867977,
+      "sha256": "b6dab95c98d7a011b2be48650c0cc43e6bff82e8c5af21b144552b161ab96314",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_right_wrist_rgb/episode_000001.mp4": {
+      "size_bytes": 1273718,
+      "sha256": "dac175b471d0b553723fb71153429f2f93362bad4f1d8921f325ac713bf7560b",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/episode_000002.parquet": {
+      "size_bytes": 163191,
+      "sha256": "502d9598cbd9c263b3162bb8360bb2dc9330b762544a745b3bc593dff9e8d362",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_front_rgb/episode_000002.mp4": {
+      "size_bytes": 2253289,
+      "sha256": "6c463c25ff4dd6ee415593b6102d7fb045fd9c96cab61f84d7dadf38354a1006",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_head_rgb/episode_000002.mp4": {
+      "size_bytes": 2033875,
+      "sha256": "efba39807e3c84d7bb316c9ca04a1a77f7e5b1e8d87f32f4dd34f55968a48f1b",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_left_wrist_rgb/episode_000002.mp4": {
+      "size_bytes": 1680236,
+      "sha256": "5a164598be9de4879ddea7e334d7f6cf7734bf94869f491096ac0de07746355b",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/chunk-000/observation.images.cam_right_wrist_rgb/episode_000002.mp4": {
+      "size_bytes": 1848109,
+      "sha256": "d714c74b1fbaad9d0ac0536038e76a30efcccedf84facadb7c62d74d6cbd7b13",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    }
+  },
+  "note": "Every file was verified against the Hub X-Linked-Etag (LFS SHA-256, or git blob SHA-1 for small files)."
+}

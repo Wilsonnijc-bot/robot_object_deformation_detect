@@ -1,0 +1,95 @@
+{
+  "dataset": "x-humanoid-robomind/RoboMIND",
+  "source_repository_commit": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "license": "apache-2.0",
+  "embodiment": "h5_franka_3rgb",
+  "task": "pick_up_strawberry_in_bowl",
+  "episode_id": "1017_102324",
+  "source_url": "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND/resolve/e7ffe31d1fe983a42c3d7b79d192f554fc05b86e/benchmark1_0_compressed/h5_franka_3rgb/pick_up_strawberry_in_bowl.tar.gz.part-aa",
+  "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/pick_up_strawberry_in_bowl.tar.gz.part-aa",
+  "archive_member": "pick_up_strawberry_in_bowl/success_episodes/1017_102324/data/trajectory.hdf5",
+  "source_extraction": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified.",
+  "hdf5": {
+    "path": "../data/trajectory.hdf5",
+    "attributes": {
+      "compress": true,
+      "sim": false
+    },
+    "datasets": {
+      "language_distilbert": {
+        "shape": [
+          1,
+          1,
+          768
+        ],
+        "dtype": "float16"
+      },
+      "language_raw": {
+        "shape": [
+          1
+        ],
+        "dtype": "object"
+      },
+      "master/joint_position": {
+        "shape": [
+          134,
+          8
+        ],
+        "dtype": "float64"
+      },
+      "observations/rgb_images/camera_right": {
+        "shape": [
+          134
+        ],
+        "dtype": "object"
+      },
+      "puppet/end_effector": {
+        "shape": [
+          134,
+          6
+        ],
+        "dtype": "float64"
+      },
+      "puppet/joint_position": {
+        "shape": [
+          134,
+          8
+        ],
+        "dtype": "float64"
+      }
+    },
+    "source_size_bytes": 112664224,
+    "source_sha256": "1ef7bd0c50c2b85b5081681dee2bc4b91deff3cb3426191c2592f8b568d2f6aa",
+    "removed_datasets": [
+      "observations/depth_images/camera_left",
+      "observations/depth_images/camera_right",
+      "observations/depth_images/camera_top",
+      "observations/rgb_images/camera_left",
+      "observations/rgb_images/camera_top"
+    ],
+    "size_bytes": 6087240,
+    "sha256": "cf3bb6f1b5b5c705e04fd27647d280d4e1e2003f1f172aec08ac65731a567f02",
+    "derivation": "Rewritten from the source member keeping only the right RGB camera: camera_left/camera_top RGB and all depth images removed; remaining datasets and attributes copied unchanged (camera_right JPEG bytes verified)."
+  },
+  "source_language_instruction": [
+    "pick up strawberry in bowl"
+  ],
+  "source_language_instruction_note": null,
+  "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
+  "channel_order_check": "Decoded colors were inspected visually and are natural; no channel swap was applied.",
+  "decoded_preview_videos": {
+    "camera_right": {
+      "path": "../decoded_videos/camera_right.mp4",
+      "view": "right external",
+      "frame_count": 134,
+      "resolution": {
+        "width": 640,
+        "height": 480
+      },
+      "encoding": "lossy_preview_h264_crf14_yuvj420p",
+      "sha256": "f20bfaa29a68202d05786f5017211cc44b26c9b6119c11732b42a84905a48188"
+    }
+  },
+  "source_bytes_preserved": false,
+  "camera_policy": "Only the right RGB camera (camera_right, the generation camera) is retained."
+}

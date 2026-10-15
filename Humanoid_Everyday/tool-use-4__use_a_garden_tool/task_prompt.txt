@@ -1,1 +1,0 @@
-This task demonstrates outdoor tool usage where the humanoid robot uses a garden tool for various gardening tasks, requiring proper grip, motion control, and precision handling for effective outdoor work.

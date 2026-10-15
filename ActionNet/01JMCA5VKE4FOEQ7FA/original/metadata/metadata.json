@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JMCA5VKE4FOEQ7FA",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JMC4WT0H-01JMCBC79M.tar",
+  "archive_name": "01JMC4WT0H-01JMCBC79M.tar",
+  "annotation": {
+    "id": "01JMCA5VKE4FOEQ7FA",
+    "prompt": "Move the tennis ball into a clear plastic box",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JMCA5VKE4FOEQ7FA.hdf5",
+      "path": "../01JMCA5VKE4FOEQ7FA.hdf5",
+      "size_bytes": 907000,
+      "sha256": "5b36a74aaf9e98080ea587d0630389685a67a761ba9efcb760b06b5bffeed17a"
+    },
+    {
+      "archive_member": "01JMCA5VKE4FOEQ7FA/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 30396487,
+      "sha256": "52eda613cf57863d13f1ccd93e7449dbfae68d3e98fd3c403cdaca0b13a7bf00"
+    },
+    {
+      "archive_member": "01JMCA5VKE4FOEQ7FA/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 10868224,
+      "sha256": "5a35f916244520bd5c25ce4e84c562f1e398460bfe0b187b9b9f11368b1bcd80"
+    },
+    {
+      "archive_member": "01JMCA5VKE4FOEQ7FA/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12030,
+      "sha256": "f77f790d02986ff7183ad48d08e52868cb0a98767d99e9df9dadd7d08c86a78c"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

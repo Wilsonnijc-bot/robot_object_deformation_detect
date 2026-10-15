@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pick up strawberry in bowl · RoboMIND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../../RoboMIND/index.html">RoboMIND</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">RoboMIND · franka_3rgb__pick_up_strawberry_in_bowl/1017_102820</p>
+<h1>Pick up strawberry in bowl</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 133 frames · 4.43 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robotic arm picks up the red strawberry from the table and places it into the pink bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">pick up strawberry in bowl</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--fail" title="Sharpness 14.7 vs threshold 120">Fail<b>15</b></span><p>Sharpness <b>14.7</b> against 120
+(third-person). Measured on the 960 × 704 model view,
+upscale 1.50×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>133</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>4.43 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;concise_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;x-humanoid-robomind/RoboMIND&quot;,
+  &quot;task&quot;: &quot;pick_up_strawberry_in_bowl&quot;,
+  &quot;episode_id&quot;: &quot;1017_102820&quot;,
+  &quot;source_video&quot;: &quot;../../original/data/trajectory.hdf5&quot;,
+  &quot;generation_camera&quot;: &quot;camera_right&quot;,
+  &quot;source_frame_count&quot;: 133,
+  &quot;source_resolution&quot;: [
+    640,
+    480
+  ],
+  &quot;source_fps&quot;: null,
+  &quot;source_fps_note&quot;: &quot;FPS is not recorded in the source HDF5; 30 FPS is only a nominal playback rate, so no real-time durations are claimed.&quot;,
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 133,
+  &quot;selected_frame_count&quot;: 133,
+  &quot;selection_reason&quot;: &quot;The episode is one continuous single task (pick up the strawberry and place it in the bowl) with ordinary approach, grasp, lift, transfer, release and withdrawal phases, so the complete clip is retained and no shortened branch or separate full-sequence prompt is created.&quot;,
+  &quot;usable_prompt&quot;: &quot;The robotic arm picks up the red strawberry from the table and places it into the pink bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;full_sequence_prompt&quot;: null,
+  &quot;selected_action_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;description&quot;: &quot;The strawberry starts on the table to the right of the empty pink bowl, is grasped (about frames 44-56), lifted and carried left over the bowl (about frames 78-96), and released; it is visible resting inside the bowl from about frame 108 onward. The gripper opens and the arm withdraws up and right, returning near its start pose with the strawberry remaining in the bowl through frame 132.&quot;
+  },
+  &quot;source_overall_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;source_quality_label&quot;: null,
+    &quot;description&quot;: &quot;Same as the selected action: strawberry ends inside the pink bowl.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;visible_description&quot;: &quot;Single Franka Emika Panda arm with a parallel-jaw gripper entering from the upper left edge of the camera_right view; only one arm exists.&quot;,
+    &quot;source_annotation&quot;: &quot;original/task_prompt.txt and HDF5 language_raw: &#x27;pick up strawberry in bowl&#x27;.&quot;,
+    &quot;visual_certainty&quot;: &quot;Not a humanoid; left/right anatomy is not needed. The prompt refers to the single visible robotic arm.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;active_visible_arm&quot;: &quot;Single arm descends to the strawberry, closes its gripper on it, lifts and carries it to the bowl, opens the gripper to release it, and withdraws.&quot;,
+    &quot;other_arm&quot;: &quot;None.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single arm acts alone; no second arm, hand transfer or human interaction.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        22
+      ],
+      &quot;observation&quot;: &quot;Arm held above table at image left with gripper open and pointing down; empty pink bowl at left, red strawberry on the table to its right; scene static.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        24,
+        42
+      ],
+      &quot;observation&quot;: &quot;Arm moves down and toward the strawberry (the upper arm swings into view at image left), gripper open above the strawberry.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        44,
+        56
+      ],
+      &quot;observation&quot;: &quot;Gripper straddles the strawberry and closes on it (gripper telemetry rises from 0 at about frame 40 to about 0.53-0.58 by frames 52-56).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        58,
+        76
+      ],
+      &quot;observation&quot;: &quot;Gripper holds the strawberry at table height with a slight adjustment (gripper value dips to about 0.3 around frame 64 then returns to about 0.49); strawberry still near the table.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        78,
+        96
+      ],
+      &quot;observation&quot;: &quot;Arm lifts the strawberry and carries it left and down toward the pink bowl; strawberry is visibly held between the fingers (native frames around 78-96).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        96,
+        106
+      ],
+      &quot;observation&quot;: &quot;Gripper positioned over the bowl with the strawberry held just above/at the rim, then lowered into the bowl.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        104,
+        116
+      ],
+      &quot;observation&quot;: &quot;Gripper opens (value falls from about 0.54 at frame 100 to 0 by frame 116) and the strawberry is seen resting in the bowl.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        108,
+        132
+      ],
+      &quot;observation&quot;: &quot;Arm lifts away from the bowl and withdraws up and to image right, back to a raised pose similar to the start; strawberry remains inside the bowl through the final frame.&quot;
+    }
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Exact grasp instant and the precise release frame are approximate; frame ranges are from every-second-frame sampling plus gripper telemetry.&quot;,
+    &quot;Gripper telemetry polarity (higher value = more closed) was inferred from the video and used only as supporting evidence.&quot;,
+    &quot;Strawberry stays inside the bowl at the end; it is seen resting in the bowl in the last frames, but its exact resting orientation is not resolvable at this resolution.&quot;,
+    &quot;FPS is not recorded in the source; frame indices are authoritative, not time.&quot;
+  ],
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;Publisher instruction &#x27;pick up strawberry in bowl&#x27; is ambiguous (could read as picking the strawberry out of a bowl); the video shows the strawberry starting on the table and being placed into the bowl, so the prompt describes placing it into the bowl.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;entire_sequence_reviewed&quot;: true,
+    &quot;sampled_decoded_frame_indices&quot;: [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132
+    ],
+    &quot;sampling_method&quot;: &quot;Every second decoded frame of camera_right (frames 0-132) in sequential temporary contact sheets covering the complete 133-frame source, plus native-resolution crops at the grasp, lift, release and withdrawal transitions.&quot;,
+    &quot;native_resolution_frame_indices&quot;: [
+      0,
+      44,
+      52,
+      60,
+      70,
+      78,
+      84,
+      90,
+      96,
+      102,
+      106,
+      110,
+      114
+    ],
+    &quot;conditioning_png_inspected_after_sequence&quot;: true,
+    &quot;conditioning_png&quot;: &quot;../first_frame.png&quot;,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/rm_review_franka_3rgb__pick_up_strawberry_in_bowl_1017_102820 (not a dataset artifact)&quot;,
+    &quot;ancillary_camera_videos_used&quot;: false,
+    &quot;telemetry_used&quot;: &quot;puppet/joint_position gripper column (index 7) sampled every 4 frames as supporting evidence only.&quot;
+  },
+  &quot;generation_reference_validation&quot;: {
+    &quot;source_frame_start&quot;: 0,
+    &quot;source_frame_end_exclusive&quot;: 133,
+    &quot;frame_count&quot;: 133,
+    &quot;lossless_source_frame_correspondence_passed&quot;: true,
+    &quot;original_source_hdf5_retained_unchanged&quot;: true
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../../RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102324/index.html">← Pick up strawberry in bowl</a><a rel="next" href="../../../RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806/index.html">Slide close cabinet →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

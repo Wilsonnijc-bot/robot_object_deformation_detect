@@ -1,0 +1,51 @@
+{
+  "dataset": "ActionNet",
+  "episode_id": "01JHFA7YZJTTECHOFB",
+  "variant": "full_sequence",
+  "view": "top",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_video": "../../original/top/rgb.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "encoding": "original_bytes_copied",
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 395,
+  "frame_count": 395,
+  "fps_rational": "30/1",
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "duration_seconds": 13.166667,
+  "codec": "h264",
+  "video_sha256": "2255c814f78719a4f6e078e253995e7803c9145b8beebe792420ac17072e558d",
+  "first_frame_sha256": "c2488fb58e0c2069419b3ec771b5645b0e266cec4850bf2a7fcb41af775f1efd",
+  "source_annotation": {
+    "id": "01JHFA7YZJTTECHOFB",
+    "prompt": "Pick up the tape measure,place it into the box,and close the door.",
+    "task": "pnc",
+    "machine_id": "T1"
+  },
+  "validation": {
+    "source_and_generation_bytes_identical": true,
+    "full_sequence_retained": true
+  },
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_status": "complete",
+  "generation_prompt": "The robot uses the hand entering from the lower-right edge to close its fingers and thumb around the yellow tape measure on the red mat, lift it, and carry it into the white cabinet. It lowers the tape measure onto the cabinet floor, opens its hand to release it, and withdraws to the right. The same hand then reaches the open door and pushes it with extended fingertips, swinging it nearly shut over the cabinet opening. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "1280x704",
+    "upscale_factor": 1.0,
+    "sharpness": 418.0,
+    "threshold": 60,
+    "result": "pass"
+  }
+}

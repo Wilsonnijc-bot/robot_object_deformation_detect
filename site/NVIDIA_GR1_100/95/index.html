@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 95 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 95</p>
+<h1>Video 95</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its left hand to grasp the Rubik&#x27;s cube between its thumb and fingers on the yellow plate, then lifts it clear. It carries the cube to the gray plate, lowers it, and opens its fingers to leave the cube resting on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the left hand to pick up rubiks cube from yellow plate to grey plate.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 649.7 vs threshold 60">Pass<b>650</b></span><p>Sharpness <b>649.7</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/95">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/95/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/95/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/95/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Forward-looking robot view over both forearms. A multicolored Rubik&#x27;s cube rests on the yellow plate to the robot&#x27;s left; an empty gray plate is near the middle and a green plate is beside the raised right hand. The open left hand is near the cube.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 33,
+      &quot;action&quot;: &quot;The open left hand settles around the cube on the yellow plate, gradually positioning thumb and fingers on opposing sides. The right hand remains raised and open without contacting an object.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 34,
+      &quot;end_frame&quot;: 61,
+      &quot;action&quot;: &quot;The left thumb and fingers close around opposite sides of the cube while it is still at the yellow plate, establishing a grasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 62,
+      &quot;end_frame&quot;: 73,
+      &quot;action&quot;: &quot;The left hand lifts the securely held cube clear of the yellow plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 74,
+      &quot;end_frame&quot;: 95,
+      &quot;action&quot;: &quot;The left arm carries the cube inward and forward over the gray plate while maintaining the grasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 96,
+      &quot;end_frame&quot;: 113,
+      &quot;action&quot;: &quot;The left hand lowers the held cube into the gray plate and holds it close to the plate surface.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 114,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;The left fingers open and release the cube. It settles with the orange face upward on the gray plate while the open hand stays beside it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;left&quot;: &quot;Active manipulator: thumb and fingers grasp the cube, lift and carry it from the yellow plate to the gray plate, lower it, and open to release it.&quot;,
+    &quot;right&quot;: &quot;Raised open hand with slight pose drift; no cube or plate contact and no support, transfer, or coordinated manipulation.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;convention&quot;: &quot;The camera looks forward over the robot&#x27;s own paired forearms, both entering from the near bottom edge. The manipulating forearm originates on the robot&#x27;s left side of this forward egocentric view; the raised counterpart originates on the right. The active hand&#x27;s opposed thumb and fingers grasp the cube on that side. This body-relative forearm arrangement supports the original left-hand annotation.&quot;,
+    &quot;confidence&quot;: &quot;medium-high&quot;,
+    &quot;limitation&quot;: &quot;The shoulders and torso are outside the camera view; anatomical naming is inferred from the paired forward-reaching forearms in the robot-view camera rather than directly visible shoulder attachments.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;The cube rests inside the gray plate with its orange face upward. The left thumb and fingers are open and no longer gripping the cube, with the hand still beside the plate; the yellow plate is empty. The right hand remains raised and uninvolved.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The shoulders and torso are not visible; left/right assignment uses the forward robot-view forearm arrangement and is consistent with the source annotation. Exact finger-to-cube contact surfaces and the precise instant of plate contact are partially occluded by the hand.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    34,
+    54,
+    72,
+    92,
+    110,
+    116,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;video_id&quot;: &quot;95&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_95&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/95/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    34,
+    54,
+    72,
+    92,
+    110,
+    116,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its left hand to grasp the Rubik&#x27;s cube between its thumb and fingers on the yellow plate, then lifts it clear. It carries the cube to the gray plate, lowers it, and opens its fingers to leave the cube resting on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the left hand to pick up rubiks cube from yellow plate to grey plate.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;b32eb1d0bbcf259a369fafbe9f14ba2720e7c4c51ddc8959fa6fcd1dab5049a6&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:41:16.751789+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/94/index.html">← Video 94</a><a rel="next" href="../../NVIDIA_GR1_100/96/index.html">Video 96 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

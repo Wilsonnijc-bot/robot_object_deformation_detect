@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 94 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 94</p>
+<h1>Video 94</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its right hand to grasp the purple grape bunch at the center of the table and lift it. It carries the grapes to the white plastic tray on its right, lowers them among the other fruit, and opens its fingers, leaving the bunch in the tray with the hand nearby. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up purple grapes from center of table to lower white plastic tray.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 701.0 vs threshold 60">Pass<b>701</b></span><p>Sharpness <b>701.0</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/94">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/94/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/94/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/94/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Egocentric view over paired robot forearms facing a table. A purple/red grape bunch with a green leaf lies near the center, and a white plastic tray holding other fruit sits to the robot right. Both hands initially remain open above the near edge.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 23,
+      &quot;action&quot;: &quot;Both hands remain open; the grape bunch remains on the tabletop.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 24,
+      &quot;end_frame&quot;: 57,
+      &quot;action&quot;: &quot;The right arm moves inward from beside the tray toward the grape bunch, bringing its open fingers over and around it; the left hand remains open without contact.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 58,
+      &quot;end_frame&quot;: 80,
+      &quot;action&quot;: &quot;The right fingers close around the grape bunch while it is still near the table, securing and slightly turning it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 81,
+      &quot;end_frame&quot;: 99,
+      &quot;action&quot;: &quot;The right hand lifts the bunch from the tabletop and carries it rightward toward the white tray.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 100,
+      &quot;end_frame&quot;: 112,
+      &quot;action&quot;: &quot;The right hand moves the bunch over the tray and lowers it among the other fruit.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 113,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;The right fingers open; the grape bunch stays within the tray among the other fruit while the open right hand remains adjacent.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Active hand: reaches, closes around the grape bunch, lifts, carries, lowers into the tray and opens to release it.&quot;,
+    &quot;left&quot;: &quot;Remains open above the near-left table edge and makes no object contact or supporting contribution.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand manipulation; no hand-to-hand transfer, two-hand stabilization or human interaction occurs.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;viewpoint&quot;: &quot;Egocentric forward view from the robot, with both forearms extending forward from the lower near side of the image.&quot;,
+    &quot;evidence&quot;: &quot;The active forearm enters from the lower right and its contralateral counterpart from the lower left. Their forward orientation and paired wrist/hand arrangement establish robot-relative right and left in this egocentric view, rather than a frontal image-left convention. The source right-hand annotation agrees with this visual configuration.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;limitation&quot;: &quot;Shoulder attachments and torso are outside the image; naming is grounded in the egocentric bilateral arm layout and wrist/hand orientation.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;The grape bunch rests inside the white tray among other fruit. The right hand is open beside it and remains over the tray; the left hand stays open and clear of the objects.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Exact individual finger contact points are occluded by the bunch during grasp and lowering.&quot;,
+    &quot;The source egocentric camera rotates during the action; the mandated fixed-camera constraint is retained exactly in the generation prompt.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    54,
+    70,
+    88,
+    102,
+    112,
+    115,
+    117,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;complete_source_frame_interval&quot;: [
+      0,
+      119
+    ],
+    &quot;sampled_frames&quot;: &quot;All 60 even-indexed frames from 0 through 118 visually inspected on sheet_001.jpg.&quot;,
+    &quot;native_source_initial_png_viewed&quot;: true,
+    &quot;native_transition_and_terminal_frames_viewed&quot;: [
+      54,
+      70,
+      88,
+      102,
+      112,
+      115,
+      117,
+      119
+    ]
+  },
+  &quot;video_id&quot;: &quot;94&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_94&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/94/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    54,
+    70,
+    88,
+    102,
+    112,
+    115,
+    117,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its right hand to grasp the purple grape bunch at the center of the table and lift it. It carries the grapes to the white plastic tray on its right, lowers them among the other fruit, and opens its fingers, leaving the bunch in the tray with the hand nearby. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up purple grapes from center of table to lower white plastic tray.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;f1cf4df6e66557ccf47b7266c995e4f495f08da29bcaf900e8c46668e2fb2d77&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:41:15.560530+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/93/index.html">← Video 93</a><a rel="next" href="../../NVIDIA_GR1_100/95/index.html">Video 95 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

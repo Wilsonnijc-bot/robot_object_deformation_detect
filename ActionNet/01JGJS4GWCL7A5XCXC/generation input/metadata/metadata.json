@@ -1,0 +1,51 @@
+{
+  "dataset": "ActionNet",
+  "episode_id": "01JGJS4GWCL7A5XCXC",
+  "variant": "full_sequence",
+  "view": "top",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_video": "../../original/top/rgb.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "encoding": "original_bytes_copied",
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 404,
+  "frame_count": 404,
+  "fps_rational": "30/1",
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "duration_seconds": 13.466667,
+  "codec": "h264",
+  "video_sha256": "7ea73995da7a785bd199cdc6b4bb9fefa7c160512abbb57efdf6dd0bfc5bf30c",
+  "first_frame_sha256": "5f12159ea1666effa22fd47f8ca8bd6b1e1b34f4432615589874c4ec092e6b2a",
+  "source_annotation": {
+    "id": "01JGJS4GWCL7A5XCXC",
+    "prompt": "Pick up the orange from the table and place it in the container.",
+    "task": "pnp",
+    "machine_id": "T1"
+  },
+  "validation": {
+    "source_and_generation_bytes_identical": true,
+    "full_sequence_retained": true
+  },
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_status": "complete",
+  "generation_prompt": "The robot uses the hand entering from the lower-right edge to close its thumb and fingers around the orange on the tabletop and lift it. It carries the orange left over the rim of the transparent plastic container, lowers it inside, and opens its hand to release it onto the container floor, then withdraws, leaving the orange resting inside the container. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "1280x704",
+    "upscale_factor": 1.0,
+    "sharpness": 493.3,
+    "threshold": 60,
+    "result": "pass"
+  }
+}

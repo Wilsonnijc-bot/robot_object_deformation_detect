@@ -1,0 +1,1 @@
+The robot uses the hand on the arm entering from the lower right to grasp the golden-brown pastry, lift it from the tabletop, and carry it over the gray plate. It lowers and releases the pastry onto the plate, leaving it resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

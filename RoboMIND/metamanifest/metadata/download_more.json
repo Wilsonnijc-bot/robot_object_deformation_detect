@@ -1,0 +1,168 @@
+{
+  "repository": "x-humanoid-robomind/RoboMIND",
+  "revision": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "entries": [
+    {
+      "embodiment_key": "franka_3rgb",
+      "source_archive": "example_data/pick_apple_into_drawer_h5 2.zip",
+      "archive_member": "pick_apple_into_drawer_h5/success_episodes/0923_164743/data/trajectory.hdf5",
+      "path": "extracted_more/franka_3rgb/pick_apple_into_drawer_h5/success_episodes/0923_164743/data/trajectory.hdf5",
+      "size_bytes": 90808760,
+      "sha256": "d70792aacb79270f7033bb8bb36e3b68dedad0b323b127d89d356e3814d08e47"
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "example_data/h5_tienkung_gello_1rgb/close_the_drawer_under_the_combination_cabinet.tar.gz.part-aa",
+      "archive_member": "close_the_drawer_under_the_combination_cabinet/success_episodes/train/1211_111642/data/trajectory.hdf5",
+      "path": "extracted_more/tienkung/close_the_drawer_under_the_combination_cabinet/success_episodes/train/1211_111642/data/trajectory.hdf5",
+      "size_bytes": 113120592,
+      "sha256": "b8127c604eb2cc0e400429e7d664ef20fdb44172b26edd792587d97f39eae4e0",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "613e050b4acb287c56f465c0c1a75300ab3dd98785bd983e5305e5afbd4420e8",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "agilex",
+      "source_archive": "example_data/h5_agilex_3rgb/13_packbowl.tar.gz.part-aa",
+      "archive_member": "13_packbowl/success_episodes/train/2024_09_28-18_12_39-172857410899899744.00/data/trajectory.hdf5",
+      "path": "extracted_more/agilex/13_packbowl/success_episodes/train/2024_09_28-18_12_39-172857410899899744.00/data/trajectory.hdf5",
+      "size_bytes": 126505520,
+      "sha256": "0d0ba2301248792fa13bff4fde1fde960ff2fb3e892f3dc59cf0c19b1319596a",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "e38ebdf18976a53b631c8663babda09f29d7fb6736546e80ea5b67a833285af1",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "franka_3rgb",
+      "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/pick_up_strawberry_in_bowl.tar.gz.part-aa",
+      "archive_member": "pick_up_strawberry_in_bowl/success_episodes/1017_102324/data/trajectory.hdf5",
+      "path": "extracted_more/franka_3rgb/pick_up_strawberry_in_bowl/success_episodes/1017_102324/data/trajectory.hdf5",
+      "size_bytes": 112664224,
+      "sha256": "1ef7bd0c50c2b85b5081681dee2bc4b91deff3cb3426191c2592f8b568d2f6aa",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "ca39163ad5786add49effe6f997038a7fbc30060685af2b6e02f0aca11b56fa5",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "franka_3rgb",
+      "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/pick_up_strawberry_in_bowl.tar.gz.part-aa",
+      "archive_member": "pick_up_strawberry_in_bowl/success_episodes/1017_102820/data/trajectory.hdf5",
+      "path": "extracted_more/franka_3rgb/pick_up_strawberry_in_bowl/success_episodes/1017_102820/data/trajectory.hdf5",
+      "size_bytes": 110506664,
+      "sha256": "6f8c9809e731f2127c29db346138f3440ee02287892f87d8738c73f0352eb787",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "ca39163ad5786add49effe6f997038a7fbc30060685af2b6e02f0aca11b56fa5",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "franka_3rgb",
+      "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/slide_close_cabinet.tar.gz.part-aa",
+      "archive_member": "slide_close_cabinet/success_episodes/train/0923_111806/data/trajectory.hdf5",
+      "path": "extracted_more/franka_3rgb/slide_close_cabinet/success_episodes/train/0923_111806/data/trajectory.hdf5",
+      "size_bytes": 119356312,
+      "sha256": "b5970f4dc1ced080e7539239562f4c868c86abc5e7da95879f16fb1e495a668f",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "c7be9dc51103c9a0c6ec22d7233d083cd24908aa1742ab85c59c4a49cdc8b550",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "franka_3rgb",
+      "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/slide_close_cabinet.tar.gz.part-aa",
+      "archive_member": "slide_close_cabinet/success_episodes/train/0923_111834/data/trajectory.hdf5",
+      "path": "extracted_more/franka_3rgb/slide_close_cabinet/success_episodes/train/0923_111834/data/trajectory.hdf5",
+      "size_bytes": 119074040,
+      "sha256": "3671cc19ec58febccdf4c0ab5b3cfe89741cce621fcf4ea3aa324d2291a57f57",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "c7be9dc51103c9a0c6ec22d7233d083cd24908aa1742ab85c59c4a49cdc8b550",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/pick_up_tennis_ball_and_place_it_in_box.tar.gz.part-aa",
+      "archive_member": "pick_up_tennis_ball_and_place_it_in_box/success_episodes/train/1212_105714/data/trajectory.hdf5",
+      "path": "extracted_more/tienkung/pick_up_tennis_ball_and_place_it_in_box/success_episodes/train/1212_105714/data/trajectory.hdf5",
+      "size_bytes": 143577512,
+      "sha256": "aa5a74b12efcffafcda433a398817f135bcf4f976655812898d0ac4a32c95c77",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "b4636d750079c68b9abf0f9c67cb5c2af24f7ff44a5161c9e1f649090a24722e",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/pick_up_tennis_ball_and_place_it_in_box.tar.gz.part-aa",
+      "archive_member": "pick_up_tennis_ball_and_place_it_in_box/success_episodes/train/1212_105755/data/trajectory.hdf5",
+      "path": "extracted_more/tienkung/pick_up_tennis_ball_and_place_it_in_box/success_episodes/train/1212_105755/data/trajectory.hdf5",
+      "size_bytes": 108621400,
+      "sha256": "8f6a8360b9f539089b5f2c187d2ad31c649c53ace59f3d5b66bcf1f86d7b7b34",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "b4636d750079c68b9abf0f9c67cb5c2af24f7ff44a5161c9e1f649090a24722e",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/press_down_toaster.tar.gz.part-aa",
+      "archive_member": "press_down_toaster/success_episodes/train/1211_172414/data/trajectory.hdf5",
+      "path": "extracted_more/tienkung/press_down_toaster/success_episodes/train/1211_172414/data/trajectory.hdf5",
+      "size_bytes": 96522216,
+      "sha256": "15a026db21478dc9a7d361209965ec7be6a919a85528d8c9dd8b6fac01a6a844",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "dc058d2b6259a2519d3c14752d8eedd7e3c99af4fd8cdd644828d68ee51e4100",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/press_down_toaster.tar.gz.part-aa",
+      "archive_member": "press_down_toaster/success_episodes/train/1211_172928/data/trajectory.hdf5",
+      "path": "extracted_more/tienkung/press_down_toaster/success_episodes/train/1211_172928/data/trajectory.hdf5",
+      "size_bytes": 110060936,
+      "sha256": "1e484c447a4e5c23c03bdf2b44e890f7fd970aecce427bffdfc6253b2a86cc74",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "dc058d2b6259a2519d3c14752d8eedd7e3c99af4fd8cdd644828d68ee51e4100",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "agilex",
+      "source_archive": "benchmark1_0_compressed/h5_agilex_3rgb/19_takebread.tar.gz.part-aa",
+      "archive_member": "19_takebread/success_episodes/train/2024_09_23-18_12_33-172951688545859776.00/data/trajectory.hdf5",
+      "path": "extracted_more/agilex/19_takebread/success_episodes/train/2024_09_23-18_12_33-172951688545859776.00/data/trajectory.hdf5",
+      "size_bytes": 164320008,
+      "sha256": "e20e1237dc55f925ccb70bf99454a46d70528c88d53c724aa3f39e21a0e88ac8",
+      "range_downloaded_bytes": 450000000,
+      "range_prefix_sha256": "d01528576f7c01dcd85e1d1d807247b57441a426ab67b8475d79a69b085de7dc",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "agilex",
+      "source_archive": "benchmark1_0_compressed/h5_agilex_3rgb/19_takebread.tar.gz.part-aa",
+      "archive_member": "19_takebread/success_episodes/train/2024_09_23-18_14_17-172951899955692448.00/data/trajectory.hdf5",
+      "path": "extracted_more/agilex/19_takebread/success_episodes/train/2024_09_23-18_14_17-172951899955692448.00/data/trajectory.hdf5",
+      "size_bytes": 154698576,
+      "sha256": "f87fbf67dcfe24119e353cac333c61ef2b780c2733ef54cd30c5f2204c222579",
+      "range_downloaded_bytes": 450000000,
+      "range_prefix_sha256": "d01528576f7c01dcd85e1d1d807247b57441a426ab67b8475d79a69b085de7dc",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "agilex",
+      "source_archive": "benchmark1_0_compressed/h5_agilex_3rgb/36_putpepper.tar.gz.part-aa",
+      "archive_member": "36_putpepper/success_episodes/train/2024_10_12-14_02_11-172890965670948192.00/data/trajectory.hdf5",
+      "path": "extracted_more/agilex/36_putpepper/success_episodes/train/2024_10_12-14_02_11-172890965670948192.00/data/trajectory.hdf5",
+      "size_bytes": 104030760,
+      "sha256": "02c11a8a43e0d07d4d7649aa6f9d2e24a03e7c73374141af2a0f5fe3fee16527",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "40c48637c3902c0f08596f26166b01f42bd662acb1ae77b489afe97efe3138f8",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "agilex",
+      "source_archive": "benchmark1_0_compressed/h5_agilex_3rgb/36_putpepper.tar.gz.part-aa",
+      "archive_member": "36_putpepper/success_episodes/train/2024_10_12-14_02_41-172890966901842624.00/data/trajectory.hdf5",
+      "path": "extracted_more/agilex/36_putpepper/success_episodes/train/2024_10_12-14_02_41-172890966901842624.00/data/trajectory.hdf5",
+      "size_bytes": 117939464,
+      "sha256": "f53b9f3e4f10c8975cbabe9cea2938deca3efe21946ab7043b8f800702431fd7",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "40c48637c3902c0f08596f26166b01f42bd662acb1ae77b489afe97efe3138f8",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    }
+  ]
+}

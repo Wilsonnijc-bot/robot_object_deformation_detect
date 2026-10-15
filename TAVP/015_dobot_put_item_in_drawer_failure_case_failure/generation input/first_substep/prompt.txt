@@ -1,1 +1,0 @@
-The robotic arm pulls the upper drawer open and releases it, leaving the drawer extended. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

@@ -1,0 +1,59 @@
+{
+  "dataset": "ActionNet",
+  "episode_id": "01JN0YDDF5ZYHXSSFO",
+  "variant": "full_sequence",
+  "view": "top",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_video": "../../original/top/rgb.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "encoding": "original_bytes_copied",
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 558,
+  "frame_count": 558,
+  "fps_rational": "30/1",
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "duration_seconds": 18.6,
+  "codec": "h264",
+  "video_sha256": "ea0b9143dd1ed06cd2a221022b6bb0ce6b472d9b02ff1865f000752f3343ce16",
+  "first_frame_sha256": "1fee0bda3cd64a666937bfb04a8926e4c0c92602f7e2952eec47b93361a16c4e",
+  "source_annotation": {
+    "id": "01JN0YDDF5ZYHXSSFO",
+    "prompt": "Place the croissant into the container",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "validation": {
+    "source_and_generation_bytes_identical": true,
+    "full_sequence_retained": true,
+    "complete_rgb_decode_passed": true,
+    "complete_source_depth_decode_passed": true,
+    "first_frame_rgb_pixels_match_source_frame_zero": true
+  },
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "observed_outcome": {
+    "status": "successful_visible_placement",
+    "description": "Pastry is released onto the gray plate and remains resting there while the hand from the lower-left edge withdraws.",
+    "selected_action_outcome": "successful_visible_placement",
+    "source_overall_success_label": "not used to infer outcome"
+  },
+  "action_prompt_sha256": "c3c824fe75f2544f945af7e3058eebf0da2d6312817cb32a3a357b7f855a9019",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "1280x704",
+    "upscale_factor": 1.0,
+    "sharpness": 511.1,
+    "threshold": 60,
+    "result": "pass"
+  }
+}

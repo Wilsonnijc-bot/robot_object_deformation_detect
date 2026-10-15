@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jj141d4hw47gwfal · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JJ141D4HW47GWFAL</p>
+<h1>01jj141d4hw47gwfal</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 396 frames · 13.2 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses the hand entering from the lower-right edge to close its thumb and fingers around the blue clamp on the red tabletop and lift it. It carries the clamp left over the rim of the white wire basket, lowers it inside, and opens its hand to release it onto the basket floor. The hand then withdraws, leaving the clamp resting in the basket. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Pick up the clamp from the table and place it in the container.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 636.2 vs threshold 60">Pass<b>636</b></span><p>Sharpness <b>636.2</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>396</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>13.2 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JJ141D4HW47GWFAL">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JJ141D4HW47GWFAL/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JJ141D4HW47GWFAL/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JJ141D4HW47GWFAL/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JJ141D4HW47GWFAL&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;review_scope&quot;: &quot;One dedicated agent reviewed the complete unchanged 396-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_start&quot;: 0,
+  &quot;source_frame_end_exclusive&quot;: 396,
+  &quot;fps_rational&quot;: &quot;30/1&quot;,
+  &quot;resolution&quot;: [
+    1280,
+    800
+  ],
+  &quot;source_annotation&quot;: {
+    &quot;verbatim_task_prompt&quot;: &quot;Pick up the clamp from the table and place it in the container.&quot;,
+    &quot;task_prompt_path&quot;: &quot;../../original/task_prompt.txt&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;hand entering from the lower-right edge of the initial image&quot;,
+    &quot;initial_frame_evidence&quot;: &quot;Paired robot forearms enter from the near lower image edges; the active hand is attached to the lower-right forearm, the other hand to the lower-left forearm (partly behind the white basket). The active hand is seen from its dorsal (back) side with the thumb on the image-left side, which is the geometry of a right hand viewed from behind and above. Torso and shoulders are outside the image, and camera pose or mirroring is not independently established.&quot;,
+    &quot;confidence&quot;: &quot;Visible-arm identity is unambiguous; anatomical right is suggested by hand geometry but not independently established, so the prompt uses the hand entering from the lower-right edge.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulating hand: moves from an upright rest pose to the blue clamp, curls fingers over the clamp with the thumb on the opposing underside, bears the clamp during lift and transport, lowers it into the basket, extends its fingers to release it and withdraws.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Upright and stationary at the far lower-left edge, partly behind the white basket, throughout; no observed contact with the clamp, basket or any task object.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand object placement. No hand-to-hand transfer or bimanual stabilization. A person (apparently the teleoperator holding controllers) stands/leans at the right edge and in the background but does not touch the robot, clamp or basket.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        58
+      ],
+      &quot;observation&quot;: &quot;Both robot hands upright and still. Clamp lies on the red cloth between the basket and the active hand, beside a green apple, green cube, red cylinder and purple block. A person at the right edge holds hand controllers, moves back and forth, then steps out of view.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        60,
+        98
+      ],
+      &quot;observation&quot;: &quot;The right-side hand tilts forward and extends toward the clamp; by frame 80 the fingers are over the green block/clamp-handle area with the thumb beside the clamp&#x27;s handle end, and by frame 100 fingers rest on the top jaw of the clamp.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        100,
+        128
+      ],
+      &quot;observation&quot;: &quot;The hand slides over the clamp&#x27;s handle end; thumb and curled fingers close on opposing sides of it (frames 114-128). The clamp is still on the tabletop, then shifts slightly with the hand.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        130,
+        158
+      ],
+      &quot;observation&quot;: &quot;Grasp is established and the clamp starts to separate from the table (frame 150 shows it dragged up and left).&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        160,
+        200
+      ],
+      &quot;observation&quot;: &quot;The hand lifts the clamp (frame 160 clearly held in air above the cloth, frame 180 over the apple, frame 200 at the basket&#x27;s right rim). No second-hand contact.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        202,
+        254
+      ],
+      &quot;observation&quot;: &quot;The held clamp is carried left over the rim into the white wire basket and lowered; the arm extends far into the image (frame 220-246 show the clamp hanging below the hand inside the basket).&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        254,
+        262
+      ],
+      &quot;observation&quot;: &quot;At frame 254 the clamp is still hanging from the hand; by frame 258 the fingers extend and open and the clamp drops from the grasp, lying on the basket floor by frame 260-262.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        264,
+        300
+      ],
+      &quot;observation&quot;: &quot;The open hand rises slightly above the basket and moves back toward the right with fingers extended, clear of the clamp.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        302,
+        395
+      ],
+      &quot;observation&quot;: &quot;The hand reorients to a near-upright pose (frame 340 fingers pointing up-left) and returns to its starting posture beside the apple/cube side by frame ~360; the clamp remains in the basket lower-left through the final frame 395. The person returns to the right edge, looking down at controllers.&quot;
+    }
+  ],
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;successful_visible_placement&quot;,
+    &quot;description&quot;: &quot;The blue clamp is released inside the white wire basket and rests on its floor while the hand withdraws to an upright pose.&quot;,
+    &quot;selected_action_outcome&quot;: &quot;successful_visible_placement&quot;,
+    &quot;source_overall_success_label&quot;: &quot;not used to infer outcome&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The source calls the target a container; the observed target is an open white wire basket (shelf-like grid sides, clamp visible through the wires).&quot;,
+    &quot;Source says pick up from the table; observed object is a large blue plastic clothes-pin style clamp with a white hand-side lever, on a red cloth-covered table.&quot;,
+    &quot;No left/right hand is stated in the source.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Anatomical left/right of the active hand is not independently established; thumb-on-image-left dorsal view suggests a right hand, but the prompt uses the unambiguous lower-right edge description.&quot;,
+    &quot;Exact thumb/finger contact points on the clamp are partly occluded by the palm; a regrasp cannot be ruled out between frames 100-150.&quot;,
+    &quot;The exact first lift frame (about 150) and release frame (about 256-258) lie between sampled frames.&quot;,
+    &quot;Whether the clamp touches the basket floor directly or is partly supported by the wire grid cannot be established from the oblique view.&quot;,
+    &quot;The background person is judged a teleoperator, not an interacting partner; this role is inferred, not stated.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;total_decoded_frames&quot;: 396,
+    &quot;overview_frame_indices&quot;: {
+      &quot;start&quot;: 0,
+      &quot;stop_inclusive&quot;: 394,
+      &quot;step&quot;: 2,
+      &quot;count&quot;: 198
+    },
+    &quot;overview_method&quot;: &quot;Decoded RGB every second frame into seventeen temporary 4-by-3 contact sheets (480 px tile width) outside dataset folders; reviewed all sheets.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      0,
+      80,
+      100,
+      108,
+      114,
+      120,
+      128,
+      140,
+      150,
+      160,
+      180,
+      200,
+      220,
+      240,
+      246,
+      250,
+      254,
+      258,
+      260,
+      270,
+      280,
+      290,
+      300,
+      320,
+      340
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/an_review_01JJ141D4HW47GWFAL (not under generation input; removed)&quot;,
+    &quot;retained_evidence_frame_directories&quot;: false
+  },
+  &quot;preservation&quot;: {
+    &quot;whole_original_single_task_clip_retained&quot;: true,
+    &quot;crop&quot;: false,
+    &quot;shorten&quot;: false,
+    &quot;resize&quot;: false,
+    &quot;reencode&quot;: false,
+    &quot;source_and_generation_sha256_equal&quot;: true
+  },
+  &quot;prompt_word_count&quot;: 82
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../ActionNet/01JJ136C6DH2EZB42B/index.html">← 01jj136c6dh2ezb42b</a><a rel="next" href="../../ActionNet/01JJ15873JBIEVYT62/index.html">01jj15873jbievyt62 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JJ136C6DH2EZB42B",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JJ130F0A-01JJ15BREB.tar",
+  "archive_name": "01JJ130F0A-01JJ15BREB.tar",
+  "annotation": {
+    "id": "01JJ136C6DH2EZB42B",
+    "prompt": "Pick up the orange and place it into the container.",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JJ136C6DH2EZB42B.hdf5",
+      "path": "../01JJ136C6DH2EZB42B.hdf5",
+      "size_bytes": 928280,
+      "sha256": "014d12d7323205cf5ba47c136c1727c3cd2daddf4dd7017fbdebd0dc7e9879d5"
+    },
+    {
+      "archive_member": "01JJ136C6DH2EZB42B/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 29818358,
+      "sha256": "493806c4b83ef2f55789ff4c591d8a15f5cd59dedfda265d25b9ec3e6955b4eb"
+    },
+    {
+      "archive_member": "01JJ136C6DH2EZB42B/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 11231180,
+      "sha256": "2337970d095ad4e876d2064549a22a57b98659c44b37f59f3fa8eb8027872a8f"
+    },
+    {
+      "archive_member": "01JJ136C6DH2EZB42B/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12300,
+      "sha256": "aacb12858c3a1e20624393aa1ca60677b3df26fa6a70c9d5796f069373b18963"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

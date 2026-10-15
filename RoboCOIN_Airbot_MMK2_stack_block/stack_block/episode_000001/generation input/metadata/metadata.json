@@ -1,0 +1,55 @@
+{
+  "dataset": "RoboCOIN_Airbot_MMK2_stack_block",
+  "task": "stack_block",
+  "episode_id": "episode_000001",
+  "source_repository_commit": "ee1901cfd4a45185b71b571d9fdd8608ab43c934",
+  "source_annotation": {
+    "episode_index": 1,
+    "tasks": [
+      "place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand."
+    ],
+    "length": 188
+  },
+  "view": "observation.images.cam_head_rgb",
+  "variant": "full_sequence_pending_visual_review",
+  "review_status": "pending_visual_review",
+  "prompt_status": "not_yet_authored",
+  "source_video": "../../original/videos/chunk-000/observation.images.cam_head_rgb/episode_000001.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 188,
+  "source_frame_count": 188,
+  "frame_count": 188,
+  "duration_seconds": 6.266666666666667,
+  "fps_rational": "30/1",
+  "fps_source": "recorded_in_source_info_json",
+  "resolution": {
+    "width": 640,
+    "height": 480
+  },
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "encoding": "frame_accurate_lossless_h264_of_av1_source",
+  "source_video_sha256": "3436615819e9e1c52947eaeacf3d7992d2e1dabd3cf290171f71d6e75c150a97",
+  "video_sha256": "6c3f3badb6d1379dfda91c1bd73a0b0c1709969d71bf6e5ccf2db84cc652a4da",
+  "first_frame_sha256": "83c22449d897885c5be849cca0c7cd502447e0f248ff27e3eca249afd8fa26ac",
+  "validation": {
+    "generation_complete_decode_passed": true,
+    "generation_frames_match_source_decode": true,
+    "generation_resolution_matches_source": true
+  },
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "960x704",
+    "upscale_factor": 1.5,
+    "sharpness": 19.8,
+    "threshold": 60,
+    "result": "exception",
+    "exception_reason": "Visual-review exception (2026-10-15): edges of the hands and blocks are judged acceptable; the low score is driven mostly by the large untextured table."
+  }
+}

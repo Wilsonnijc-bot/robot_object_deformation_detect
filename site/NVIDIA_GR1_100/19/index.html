@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 19 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 19</p>
+<h1>Video 19</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot closes its right hand around the green apple on the bottom shelf and lifts it clear. It carries the apple upward to the top shelf, lowers it onto the shelf, and opens its hand, leaving the apple upright as the hand lifts away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up green apple from bottom shelf to top shelf.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 756.2 vs threshold 60">Pass<b>756</b></span><p>Sharpness <b>756.2</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/19">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/19/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/19/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/19/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;A green apple rests upright on the lowest/front wooden shelf. The empty top shelf is elevated behind it. Both robot forearms enter from the near lower edge; the hand on the right is initially open, and the hand on the left is open and inactive.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 18,
+      &quot;action&quot;: &quot;Both hands remain open while the green apple rests on the bottom shelf.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 19,
+      &quot;end_frame&quot;: 40,
+      &quot;action&quot;: &quot;The right hand moves inward to the apple, bringing its thumb below/along the near side and fingers to the far/right side. The apple remains on the bottom shelf.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 41,
+      &quot;end_frame&quot;: 62,
+      &quot;action&quot;: &quot;The right hand closes around the apple, securing it between the thumb and opposing fingers while it remains at the shelf surface.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 63,
+      &quot;end_frame&quot;: 88,
+      &quot;action&quot;: &quot;The right hand lifts the apple clear of the bottom shelf and raises it along the right side of the shelf structure toward the top shelf. The left hand remains open without contact.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 89,
+      &quot;end_frame&quot;: 106,
+      &quot;action&quot;: &quot;The right hand carries the apple over the top shelf and lowers it to the shelf surface.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 107,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;The right hand opens around the upright apple and begins lifting away. The apple remains resting upright on the top shelf at the last frame.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Active manipulation hand: closes its thumb and fingers around the apple, lifts and transports it from the bottom shelf to the top shelf, lowers it, opens and starts lifting clear.&quot;,
+    &quot;left&quot;: &quot;Open, inactive hand; remains to the left of the shelf without touching the apple or shelf.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand transfer. No hand-to-hand transfer, bilateral support, person interaction, or locomotion is visible.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;convention&quot;: &quot;Robot-relative anatomy, rather than treating image position alone as side evidence.&quot;,
+    &quot;evidence&quot;: &quot;The manipulating forearm runs continuously from the lower-right near-camera robot-side region to the hand. The forward-facing, near-robot view shows the back of that hand and its thumb on the medial/image-left side. The opposite forearm enters from the lower-left and exposes its palm with its thumb toward the outer/image-left side. These mirrored thumb/palm orientations support identification of the active hand as anatomical right, consistent with the source instruction.&quot;,
+    &quot;confidence&quot;: &quot;moderate&quot;,
+    &quot;limitation&quot;: &quot;The torso and shoulder attachments are outside the camera view; side assignment relies on forearm continuity and mirrored hand geometry rather than visible shoulders.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;The green apple is upright and resting on the top shelf. The right hand is open above/beside it and starting to lift away; the left hand remains open and inactive.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Torso and shoulder attachments are outside view; anatomical right is supported by forearm entry direction and mirrored thumb/palm geometry, with moderate confidence.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    32,
+    60,
+    68,
+    84,
+    96,
+    108,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;video_id&quot;: &quot;19&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_19&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/19/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    32,
+    60,
+    68,
+    84,
+    96,
+    108,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot closes its right hand around the green apple on the bottom shelf and lifts it clear. It carries the apple upward to the top shelf, lowers it onto the shelf, and opens its hand, leaving the apple upright as the hand lifts away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up green apple from bottom shelf to top shelf.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;b4ff94b4b25eb52ac5fc4ca8113263826cec9eb8508822c8c62edc48aa772b2b&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:47:28.229802+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/18/index.html">← Video 18</a><a rel="next" href="../../NVIDIA_GR1_100/20/index.html">Video 20 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

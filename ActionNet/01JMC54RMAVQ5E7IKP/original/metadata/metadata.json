@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JMC54RMAVQ5E7IKP",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JMC4WT0H-01JMCBC79M.tar",
+  "archive_name": "01JMC4WT0H-01JMCBC79M.tar",
+  "annotation": {
+    "id": "01JMC54RMAVQ5E7IKP",
+    "prompt": "Pick up the Rubiks cube and place it into the transparent container.",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JMC54RMAVQ5E7IKP.hdf5",
+      "path": "../01JMC54RMAVQ5E7IKP.hdf5",
+      "size_bytes": 969720,
+      "sha256": "675bf92e7672447c7691824a12d867f0787cdc047bd4e72808734eeb1363c2f7"
+    },
+    {
+      "archive_member": "01JMC54RMAVQ5E7IKP/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 27998032,
+      "sha256": "56bab472762fcad590432adb2829e350a68799e41ba2571ea76711eb0253894f"
+    },
+    {
+      "archive_member": "01JMC54RMAVQ5E7IKP/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 11965968,
+      "sha256": "a6b02d7322d9dcebbf49c270f63ae7b66273c7a3b3607ae855d74f2fedd3ea2a"
+    },
+    {
+      "archive_member": "01JMC54RMAVQ5E7IKP/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12870,
+      "sha256": "9dc631b6a156f638309bb20f7e04b59fbacbdb3a5ca17b1c205f477a633b0b11"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

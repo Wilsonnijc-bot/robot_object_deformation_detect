@@ -1,5 +1,9 @@
 # Project instructions
 
+Data quality gate: see [data_quality_gate.md](data_quality_gate.md). The gate measures the sharpness of the final upscaled conditioning frame (≥ 120 third-person, ≥ 60 first-person). Failing inputs are kept and flagged (`gate_result` in the manifests); run `quality_gate.py` after adding or changing inputs.
+
+Dataset viewer: `build_site.py` writes the static site to `site/`, published at https://wilsonnijc-bot.github.io/robot_object_deformation_detect/robotvideo/. Rebuild it after changing inputs, prompts or reviews. Do not recreate per-dataset `preview.html` files.
+
 ## How to craft world-model action-generation prompts
 
 Follow protocol `concise_action_v1` for first-frame-conditioned robot video generation. The reference is [RoboWM-Bench's close-drawer input](https://github.com/fffstrong/RoboWM-Bench/tree/main/wm_inputs/close_drawer): a concise action sentence plus shared physical/camera constraints. The first frame supplies the scene appearance.

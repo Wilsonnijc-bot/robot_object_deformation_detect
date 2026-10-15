@@ -1,1 +1,0 @@
-This task demonstrates precision pick and place operations where the humanoid robot grasps a cube and carefully places it inside a bag, requiring spatial awareness and gentle manipulation.

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 34 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 34</p>
+<h1>Video 34</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its right hand to grasp the red-and-white milk carton standing on the tabletop and lift it upright. It carries the carton over the yellow bin, lowers it among the boxes, and opens its fingers, leaving the carton tilted inside the bin beneath its open hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up red milk carton from right side of tan table to center of yellow bin.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 977.7 vs threshold 60">Pass<b>978</b></span><p>Sharpness <b>977.7</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/34">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/34/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/34/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/34/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;A red-and-white milk carton stands on the near-right tabletop, in front of a yellow bin containing tall food boxes. Both robot forearms enter the foreground; the left hand remains open beside the dish rack, and the right hand begins open near the bin.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 31,
+      &quot;observation&quot;: &quot;The carton stands upright on the tabletop; both robot hands are open and remain apart from it. A person moves near the dish rack without touching the task object.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 32,
+      &quot;end_frame&quot;: 49,
+      &quot;observation&quot;: &quot;The right hand moves inward from beside the yellow bin and surrounds the carton; its fingers and thumb close around opposite sides. The left hand remains idle beside the dish rack.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 50,
+      &quot;end_frame&quot;: 71,
+      &quot;observation&quot;: &quot;The right hand tightens and adjusts its grasp while keeping the carton upright near its original tabletop position.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 72,
+      &quot;end_frame&quot;: 89,
+      &quot;observation&quot;: &quot;The right arm lifts the carton clear of the tabletop and carries it upright toward and above the yellow bin.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 90,
+      &quot;end_frame&quot;: 113,
+      &quot;observation&quot;: &quot;The right hand positions the held carton over the bin among the pre-existing food boxes and lowers it toward the interior.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 114,
+      &quot;end_frame&quot;: 119,
+      &quot;observation&quot;: &quot;The right fingers open; the carton descends and tips among the boxes inside the yellow bin. The final frame shows the carton tilted within the bin under the open right hand.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating hand: grasps, lifts, carries, lowers and releases the milk carton into the yellow bin.&quot;,
+    &quot;left&quot;: &quot;Remains open beside the dish rack throughout; does not grasp the carton or stabilize the bin.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand manipulation with no hand-to-hand transfer or person-object interaction.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;confidence&quot;: &quot;medium-high&quot;,
+    &quot;evidence&quot;: &quot;The initial image shows paired forearms projecting forward from the near side of the table in a forward-looking camera view. Their mirrored thumb placement is consistent with the hand entering the lower-right foreground being the anatomical right hand, and the lower-left hand being the left. The visible proximal forearm geometry and inward thumb positions support this mapping; the source instruction also identifies the active hand as right. Shoulders and torso are outside the image.&quot;
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    40,
+    58,
+    70,
+    88,
+    110,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;The final carton is visibly released and tilted inside the bin, but its eventual settled pose and exact bottom contact are not shown; surrounding boxes occlude part of the interior.&quot;,
+    &quot;The torso and shoulder attachments are outside the image; anatomical mapping uses forward-projecting paired forearms and hand chirality rather than a visible full body.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [
+    &quot;The instruction specifies the center of the bin; visible release is inside the bin among existing boxes, and precise centered placement cannot be established.&quot;
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;outcome_basis&quot;: &quot;The carton is lifted from the tabletop and visibly released inside the yellow bin; successful placement is limited to this observed transfer, without asserting precise centering or a settled upright pose.&quot;,
+  &quot;terminal_state&quot;: &quot;The right hand is open above the yellow bin. The released milk carton is tilted inside the bin among the food boxes; the left hand remains open beside the dish rack.&quot;,
+  &quot;video_id&quot;: &quot;34&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_34&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/34/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    40,
+    58,
+    70,
+    88,
+    110,
+    114,
+    116,
+    118,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its right hand to grasp the red-and-white milk carton standing on the tabletop and lift it upright. It carries the carton over the yellow bin, lowers it among the boxes, and opens its fingers, leaving the carton tilted inside the bin beneath its open hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up red milk carton from right side of tan table to center of yellow bin.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;d9435abaa88db08fd3c2db3d1603dd4304ff95caeb81ae4dad21365a75a5e8c1&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:00:20.398095+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/33/index.html">← Video 33</a><a rel="next" href="../../NVIDIA_GR1_100/35/index.html">Video 35 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robotvideo dataset viewer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"></nav></header>
+<main>
+<header class="intro intro--home">
+<h1>Robot videos for first-frame world-model generation</h1>
+<p class="lede">156 reviewed episodes from 6 datasets. Each input is a first frame, an action prompt
+written from the video, and the reference clip. Every input is scored on the sharpness of its upscaled
+conditioning frame: third-person at least 120, first-person at least 60.</p>
+<p class="gate-line"><span class="dot dot--pass"></span>145 pass · <span class="dot dot--exception"></span>3 exception · <span class="dot dot--fail"></span>8 fail · <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/data_quality_gate.md">How the gate works</a></p>
+</header>
+<div class="sets"><a class="set" href="NVIDIA_GR1_100/index.html">
+<span class="set__strip"><img src="NVIDIA_GR1_100/1/poster.jpg" alt="" loading="lazy"><img src="NVIDIA_GR1_100/24/poster.jpg" alt="" loading="lazy"><img src="NVIDIA_GR1_100/43/poster.jpg" alt="" loading="lazy"><img src="NVIDIA_GR1_100/62/poster.jpg" alt="" loading="lazy"><img src="NVIDIA_GR1_100/80/poster.jpg" alt="" loading="lazy"></span>
+<span class="set__body"><span class="set__title">NVIDIA GR1</span>
+<span class="set__robot">Fourier GR1 humanoid, dexterous hands · First-person head camera</span>
+<span class="set__stats"><b>92</b> episodes · <span class="dot dot--pass"></span>92 pass · CC BY 4.0</span></span></a><a class="set" href="Humanoid_Everyday/index.html">
+<span class="set__strip"><img src="Humanoid_Everyday/articulated-1__rotate_chair/poster.jpg" alt="" loading="lazy"><img src="Humanoid_Everyday/deformable-3__fold_jacket_on_desk/poster.jpg" alt="" loading="lazy"><img src="Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/poster.jpg" alt="" loading="lazy"><img src="Humanoid_Everyday/human-robot-7__shake_hand_with_person/poster.jpg" alt="" loading="lazy"><img src="Humanoid_Everyday/loco-manip-5__pick_up_container_walk_and_stick_to_whiteboard/poster.jpg" alt="" loading="lazy"></span>
+<span class="set__body"><span class="set__title">Humanoid Everyday</span>
+<span class="set__robot">Full-size humanoid · Third-person</span>
+<span class="set__stats"><b>26</b> episodes · <span class="dot dot--pass"></span>24 pass · <span class="dot dot--fail"></span>2 fail · Unclear (card: Apache-2.0; code: MIT)</span></span></a><a class="set" href="TAVP/index.html">
+<span class="set__strip"><img src="TAVP/001_franka_collect_fruits_standard_success/poster.jpg" alt="" loading="lazy"><img src="TAVP/002_franka_fold_towel_standard_success/poster.jpg" alt="" loading="lazy"><img src="TAVP/003_franka_pick_and_place_standard_success/poster.jpg" alt="" loading="lazy"><img src="TAVP/004_franka_press_buttons_standard_success/poster.jpg" alt="" loading="lazy"><img src="TAVP/005_franka_reach_and_drag_standard_success/poster.jpg" alt="" loading="lazy"></span>
+<span class="set__body"><span class="set__title">TAVP</span>
+<span class="set__robot">Franka Research 3, parallel gripper · Third-person</span>
+<span class="set__stats"><b>8</b> episodes · <span class="dot dot--pass"></span>8 pass · Not stated by the publisher</span></span></a><a class="set" href="ActionNet/index.html">
+<span class="set__strip"><img src="ActionNet/01JGJQAJP3GQBKPCED/poster.jpg" alt="" loading="lazy"><img src="ActionNet/01JHF8YGPVVKAXY7FK/poster.jpg" alt="" loading="lazy"><img src="ActionNet/01JJ136C6DH2EZB42B/poster.jpg" alt="" loading="lazy"><img src="ActionNet/01JMC54RMAVQ5E7IKP/poster.jpg" alt="" loading="lazy"><img src="ActionNet/01JN0Y324H2ZFDTSYD/poster.jpg" alt="" loading="lazy"></span>
+<span class="set__body"><span class="set__title">ActionNet</span>
+<span class="set__robot">Fourier humanoid, dexterous hands · First-person top camera</span>
+<span class="set__stats"><b>15</b> episodes · <span class="dot dot--pass"></span>15 pass · CC BY-NC-SA 4.0</span></span></a><a class="set" href="RoboMIND/index.html">
+<span class="set__strip"><img src="RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164719/poster.jpg" alt="" loading="lazy"><img src="RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102324/poster.jpg" alt="" loading="lazy"><img src="RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806/poster.jpg" alt="" loading="lazy"><img src="RoboMIND/tienkung_gello_1rgb__close_the_drawer_under_the_combination_cabinet/1211_104950/poster.jpg" alt="" loading="lazy"><img src="RoboMIND/tienkung_gello_1rgb__pick_up_tennis_ball_and_place_it_in_box/1212_105714/poster.jpg" alt="" loading="lazy"></span>
+<span class="set__body"><span class="set__title">RoboMIND</span>
+<span class="set__robot">Franka Panda (right camera) · Tien Kung humanoid · Third- and first-person</span>
+<span class="set__stats"><b>12</b> episodes · <span class="dot dot--pass"></span>6 pass · <span class="dot dot--fail"></span>6 fail · Apache-2.0</span></span></a><a class="set" href="RoboCOIN_Airbot_MMK2_stack_block/index.html">
+<span class="set__strip"><img src="RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000/poster.jpg" alt="" loading="lazy"><img src="RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000001/poster.jpg" alt="" loading="lazy"><img src="RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000002/poster.jpg" alt="" loading="lazy"></span>
+<span class="set__body"><span class="set__title">RoboCOIN · Airbot MMK2</span>
+<span class="set__robot">Dual-arm Airbot MMK2, five-finger hands · First-person head camera</span>
+<span class="set__stats"><b>3</b> episodes · <span class="dot dot--exception"></span>3 exception · Apache-2.0</span></span></a></div>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

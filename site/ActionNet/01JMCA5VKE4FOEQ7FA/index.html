@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jmca5vke4foeq7fa · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JMCA5VKE4FOEQ7FA</p>
+<h1>01jmca5vke4foeq7fa</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 401 frames · 13.37 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot&#x27;s hand entering from the lower-right edge reaches out, closes its thumb and fingers around the yellow tape measure on the red tabletop, and lifts it. It carries the tape measure to the black metal dish rack, lowers it onto the rack&#x27;s bars, opens its fingers to release it, then withdraws toward the lower right, leaving the tape measure resting on the rack. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Move the tennis ball into a clear plastic box</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 840.3 vs threshold 60">Pass<b>840</b></span><p>Sharpness <b>840.3</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>401</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>13.37 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JMCA5VKE4FOEQ7FA">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JMCA5VKE4FOEQ7FA/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JMCA5VKE4FOEQ7FA/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JMCA5VKE4FOEQ7FA/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JMCA5VKE4FOEQ7FA&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;review_scope&quot;: &quot;One dedicated agent reviewed the complete unchanged 401-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_start&quot;: 0,
+  &quot;source_frame_end_exclusive&quot;: 401,
+  &quot;fps_rational&quot;: &quot;30/1&quot;,
+  &quot;resolution&quot;: [
+    1280,
+    800
+  ],
+  &quot;source_annotation&quot;: {
+    &quot;verbatim_task_prompt&quot;: &quot;Move the tennis ball into a clear plastic box&quot;,
+    &quot;task_prompt_path&quot;: &quot;../../original/task_prompt.txt&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;hand entering from the lower-right edge of the initial image&quot;,
+    &quot;initial_frame_evidence&quot;: &quot;Two forearms enter from the near lower image edges and point away from the camera toward the table; the active hand is attached to the lower-right forearm, the idle hand to the lower-left forearm. Torso and shoulders are outside the image. During the grasp the thumb plate lies on the image-left side of the palm-down hand, which is consistent with a robot right hand viewed from behind/above, but the camera pose relative to the robot body is not independently established.&quot;,
+    &quot;confidence&quot;: &quot;Visible-arm identity is unambiguous; anatomical right is plausible but not independently established, so the prompt uses the hand entering from the lower-right edge.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulating hand: rises from rest, reaches over the yellow tape measure, slides the thumb under its left side while the fingers close over the top, bears it through lift and transport to the dish rack, lowers it onto the rack bars, opens the fingers to release it, and withdraws to the lower right.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Remains stationary beside the table at image left with fingers upright; no observed contact with the tape measure, rack or any other object.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-hand object placement. No hand-to-hand transfer, bimanual stabilization or regrasp. A person in a white hoodie at image right holds a controller and watches or moves in the background (apparent teleoperator) and does not touch the robot or any task object; other people are visible far upper left.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        22
+      ],
+      &quot;observation&quot;: &quot;Initial scene: red tabletop with black dish rack at top centre, yellow tape measure with black strap near lower centre, masking-tape roll, pink and blue foam blocks. Both robot hands are at rest at the lower edges; the lower-right hand is upright and clear of all objects.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        24,
+        66
+      ],
+      &quot;observation&quot;: &quot;The lower-right hand rises and swings toward the table centre with fingers spread and extended, then descends toward the yellow tape measure. Native frame 40 shows the open hand raised above the table near the rack front.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        68,
+        106
+      ],
+      &quot;observation&quot;: &quot;The hand moves over the tape measure; at native frames 84-96 the thumb plate is slid in against the left/lower side of the tape measure while the fingers are held open above and to the right of it. No lift yet.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        108,
+        150
+      ],
+      &quot;observation&quot;: &quot;Fingers close down over the top of the tape measure while the thumb stays beneath its left side; native frame 120 shows the case enclosed between thumb and curled fingers and frame 150 shows a firm grasp with the case slightly rotated. The black strap trails from the case.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        152,
+        230
+      ],
+      &quot;observation&quot;: &quot;The hand bears the tape measure and raises it off the tabletop (frame 170 clearly airborne, strap hanging) and carries it up and left toward the dish rack, reaching a position above the rack front by frame 230.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        232,
+        270
+      ],
+      &quot;observation&quot;: &quot;The held tape measure is lowered onto the bars of the rack (native frames 240-268 show it close to and then touching the bars with the thumb still beneath it and strap hanging between bars). The first exact bar contact frame is partly occluded by the hand.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        272,
+        288
+      ],
+      &quot;observation&quot;: &quot;Release: at native frame 276 the tape measure is on the bars and the fingers start to straighten; frame 280 shows the fingers lifted clear of its top; frame 284 shows the tape measure resting on the bars with only the thumb plate still adjacent beneath it.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        290,
+        340
+      ],
+      &quot;observation&quot;: &quot;The thumb slides out and the hand lifts away with fingers extended, drawing back from the rack toward the lower right (native frames 300 and 320). The tape measure stays on the rack with the strap draped through the bars.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        342,
+        400
+      ],
+      &quot;observation&quot;: &quot;The hand folds upward and retracts to the lower-right resting posture (frame 360 at rest beside the blue and light-blue blocks) and remains still through the final frame 400. The tape measure rests on the rack throughout; the background person only gestures near their face.&quot;
+    }
+  ],
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;successful_visible_placement&quot;,
+    &quot;description&quot;: &quot;The yellow tape measure is released onto the bars of the black dish rack and remains resting there while the lower-right hand withdraws to its resting position.&quot;,
+    &quot;selected_action_outcome&quot;: &quot;successful_visible_placement&quot;,
+    &quot;source_overall_success_label&quot;: &quot;not used to infer outcome&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The source instruction says to move a tennis ball into a clear plastic box. No tennis ball or clear plastic box is visible anywhere in the clip; the manipulated object is a yellow tape measure with a black strap and the target is a black metal dish rack. The usable prompt describes the observed objects.&quot;,
+    &quot;The source offers no object-identity detail beyond the mismatched noun phrases; object names in the prompt come from appearance only.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Anatomical left/right of the robot is not independently established; the thumb orientation suggests a right hand but the prompt uses the unambiguous hand entering from the lower-right edge.&quot;,
+    &quot;Exact first contact between the tape measure and the rack bars and the exact first table separation frame are partly occluded by the hand; stated chronology intervals bracket the visible transitions.&quot;,
+    &quot;The object identification as a tape measure rests on its appearance (yellow rounded case with black strap).&quot;,
+    &quot;Slight camera motion across the sequence is visible; the fixed-camera generation constraint is retained verbatim.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;total_decoded_frames&quot;: 401,
+    &quot;overview_frame_indices&quot;: {
+      &quot;start&quot;: 0,
+      &quot;stop_inclusive&quot;: 400,
+      &quot;step&quot;: 2,
+      &quot;count&quot;: 201
+    },
+    &quot;overview_method&quot;: &quot;Decoded RGB every second frame into 17 temporary 4-by-3 contact sheets outside dataset folders; reviewed all sheets.&quot;,
+    &quot;native_resolution_frames&quot;: [
+      0,
+      40,
+      60,
+      72,
+      84,
+      96,
+      108,
+      120,
+      132,
+      150,
+      170,
+      200,
+      230,
+      240,
+      250,
+      260,
+      264,
+      268,
+      272,
+      276,
+      280,
+      284,
+      288,
+      300,
+      320,
+      340,
+      360
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/an_review_01JMCA5VKE4FOEQ7FA (not under generation input; removed after review)&quot;,
+    &quot;retained_evidence_frame_directories&quot;: false
+  },
+  &quot;preservation&quot;: {
+    &quot;whole_original_single_task_clip_retained&quot;: true,
+    &quot;crop&quot;: false,
+    &quot;shorten&quot;: false,
+    &quot;resize&quot;: false,
+    &quot;reencode&quot;: false,
+    &quot;source_and_generation_sha256_equal&quot;: true
+  },
+  &quot;prompt_word_count&quot;: 81
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../ActionNet/01JMC54RMAVQ5E7IKP/index.html">← 01jmc54rmavq5e7ikp</a><a rel="next" href="../../ActionNet/01JMCB8Z194OS4IEC5/index.html">01jmcb8z194os4iec5 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 82 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 82</p>
+<h1>Video 82</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its right hand to grasp the multicolored cube on the bottom wooden shelf, closing its fingers and thumb around opposite sides and lifting it clear. It carries the cube up to the top shelf, lowers it onto the wood, and opens its hand, leaving the cube standing there with the hand beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the right hand to pick up rubik&#x27;s cube from bottom wooden shelf to top wooden shelf.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 801.3 vs threshold 60">Pass<b>801</b></span><p>Sharpness <b>801.3</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/82">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/82/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/82/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/82/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Robot-centered forward view with both forearms entering from the lower corners. A multicolored puzzle cube rests on the lowest wooden shelf; the middle and highest shelves are empty.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 15,
+      &quot;action&quot;: &quot;Both hands are open and stationary beside the shelves; cube rests on the bottom shelf.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 16,
+      &quot;end_frame&quot;: 55,
+      &quot;action&quot;: &quot;Right arm reaches inward toward the cube with hand open, positioning the thumb and fingers on opposing sides; left hand remains idle.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 56,
+      &quot;end_frame&quot;: 75,
+      &quot;action&quot;: &quot;Right fingers and thumb close around the cube while it remains near the bottom shelf surface. The cube shifts and tilts slightly during establishment of the grasp.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 76,
+      &quot;end_frame&quot;: 99,
+      &quot;action&quot;: &quot;Right hand lifts the cube clear and carries it upward toward the highest shelf. Left hand does not contact the object or shelves.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 100,
+      &quot;end_frame&quot;: 114,
+      &quot;action&quot;: &quot;Right arm positions the held cube over the highest shelf and lowers it toward the wooden surface. Cube passes partly above the upper image boundary during this motion.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 115,
+      &quot;end_frame&quot;: 119,
+      &quot;action&quot;: &quot;Right hand opens while the cube comes to rest upright on the highest shelf. Fingers and thumb separate from opposite sides; the right hand remains beside the cube rather than fully withdrawing.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating hand: surrounds, grasps, lifts, transports and releases the cube on the highest shelf.&quot;,
+    &quot;left&quot;: &quot;Open idle hand beside the table throughout; no supporting contact or transfer.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: &quot;The forward robot-centered camera shows paired forearms extending from the robot position at the lower corners, with the active forearm continuing from the lower-right side and the passive forearm from lower-left. Hand/thumb orientation and continuous visible wrist-to-forearm attachment corroborate right versus left in this body-aligned view. This is not a frontal view of a robot with reversed image/anatomical sides. Shoulders and torso are outside the image.&quot;,
+  &quot;coordination&quot;: &quot;Single-handed manipulation; the left hand remains clear and does not stabilize the shelf or receive the cube.&quot;,
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    40,
+    58,
+    72,
+    84,
+    100,
+    114,
+    116,
+    117,
+    118,
+    119
+  ],
+  &quot;last_frame_index&quot;: 119,
+  &quot;initial_png_inspected_at_native_resolution&quot;: true,
+  &quot;terminal_state&quot;: &quot;The multicolored cube stands upright on the highest wooden shelf. The right hand is open immediately beside it, with no full withdrawal shown; the lower shelf is empty and left hand remains idle.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Torso and shoulder attachment are outside the body-aligned camera view; anatomical sides are grounded in paired arm origins and hand orientation.&quot;,
+    &quot;Some far-side finger contact and the exact bottom contact point during lowering are occluded by the right hand; terminal release and upright shelf placement are visible.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;inspection_coverage&quot;: &quot;Viewed the complete returned sheet covering all 60 even-index samples from 0 through 118 of the 120-frame sequence, the source initial PNG at native resolution, and 10 native transition/final frames. Entire original sequence retained.&quot;,
+  &quot;video_id&quot;: &quot;82&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_82&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/82/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    40,
+    58,
+    72,
+    84,
+    100,
+    114,
+    116,
+    117,
+    118,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its right hand to grasp the multicolored cube on the bottom wooden shelf, closing its fingers and thumb around opposite sides and lifting it clear. It carries the cube up to the top shelf, lowers it onto the wood, and opens its hand, leaving the cube standing there with the hand beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the right hand to pick up rubik&#x27;s cube from bottom wooden shelf to top wooden shelf.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;fce762bab9d3af0160ef4cd2bd629c28adce2d84261108949997adcd40623fc7&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T18:35:10.540231+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/81/index.html">← Video 81</a><a rel="next" href="../../NVIDIA_GR1_100/83/index.html">Video 83 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

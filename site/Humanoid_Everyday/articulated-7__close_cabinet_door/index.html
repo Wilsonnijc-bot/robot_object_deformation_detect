@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Close cabinet door · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · articulated-7__close_cabinet_door</p>
+<h1>Close cabinet door</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 144 frames · 4.83 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot raises its left hand to the outer face of the open cabinet door marked 2D11 and presses it inward, swinging the door shut against the cabinet. It then withdraws and lowers the left hand while remaining in place, leaving the door closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Closing a cabinet door smoothly, demonstrating control of hinged mechanisms and gentle force application to avoid slamming.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 204.6 vs threshold 120">Pass<b>205</b></span><p>Sharpness <b>204.6</b> against 120
+(third-person). Measured on the 704 × 1280 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>720 × 1280</dd><dt>Frames</dt><dd>144</dd><dt>Frame rate</dt><dd>29.78 fps</dd><dt>Duration</dt><dd>4.83 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/articulated-7__close_cabinet_door/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 72,
+  &quot;initial_scene&quot;: &quot;Robot stands facing the cabinet bank with both feet planted and knees bent. The door marked 2D11 is already open, projecting toward the robot; the camera-near left hand is below the panel and the far right hand is idle near the waist.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame&quot;: 20,
+      &quot;action&quot;: &quot;Left shoulder and elbow raise the camera-near hand from below the door toward its broad outer face. The door remains open and the right hand stays low beside the torso.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 21,
+      &quot;end_frame&quot;: 46,
+      &quot;action&quot;: &quot;Left hand reaches and bears against the outer door panel, below the 2D11 marking and away from the handle. Fingers remain open; there is no observed handle grasp. The hand adjusts while the panel remains largely open.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 47,
+      &quot;end_frame&quot;: 66,
+      &quot;action&quot;: &quot;Left arm presses the panel inward; the door rotates around its left vertical hinge into alignment with the surrounding cabinet fronts. The hand follows the closing panel, and the dark opening disappears.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 67,
+      &quot;end_frame&quot;: 86,
+      &quot;action&quot;: &quot;Door is visibly closed and flush. Left hand remains close to the cabinet briefly; the right hand remains low without manipulating or supporting the door.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 87,
+      &quot;end_frame&quot;: 126,
+      &quot;action&quot;: &quot;Left hand withdraws from the closed door and the elbow extends downward, lowering the arm toward the side. Feet remain in place.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 127,
+      &quot;end_frame&quot;: 143,
+      &quot;action&quot;: &quot;Robot holds the final standing posture with both hands lowered. Door 2D11 remains closed.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;left&quot;: &quot;Active camera-near arm: raises the open hand, presses the broad outer door face to swing it shut, then withdraws and lowers. No handle grasp, object lifting or transfer is observed.&quot;,
+    &quot;right&quot;: &quot;Far arm remains lowered near the waist/side; does not contact, stabilize or manipulate the door.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand door closure. Robot maintains its planted, slightly bent-knee stance; no hand-to-hand transfer or person interaction.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_hand&quot;: &quot;left&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;evidence&quot;: &quot;The illuminated front facial contour points toward image left, toward the cabinet, while the backpack/cables lie behind the torso on image right. The camera sees the robot from its left side and slightly behind: the active arm is continuously visible from the near shoulder through elbow to hand, with the other arm farther behind it. The near-side arm is thus robot-relative left; this is based on body facing and attachment, not image position alone.&quot;,
+    &quot;initial_frame_indices&quot;: [
+      0
+    ],
+    &quot;corroborating_frame_indices&quot;: [
+      16,
+      24,
+      30,
+      48,
+      56,
+      80,
+      143
+    ]
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    16,
+    24,
+    30,
+    48,
+    56,
+    62,
+    64,
+    80,
+    90,
+    116,
+    143
+  ],
+  &quot;initial_png_inspected_at_native_resolution&quot;: true,
+  &quot;full_sequence_inspection&quot;: {
+    &quot;source_frame_interval&quot;: [
+      0,
+      143
+    ],
+    &quot;stride_two_frames&quot;: &quot;0, 2, ... 142&quot;,
+    &quot;all_contact_sheets_visually_viewed&quot;: true,
+    &quot;native_source_png_dimensions&quot;: [
+      720,
+      1280
+    ],
+    &quot;native_transition_and_terminal_frames_visually_viewed&quot;: [
+      0,
+      16,
+      24,
+      30,
+      48,
+      56,
+      62,
+      64,
+      80,
+      90,
+      116,
+      143
+    ]
+  },
+  &quot;terminal_state&quot;: &quot;The 2D11 cabinet door is flush with the cabinet and remains closed at frame 143; both hands are lowered and the robot stands in the same location.&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;Internal latch engagement is not visible; success refers to the visibly closed door, not a verified latched or locked state. Exact contact force and the source caption&#x27;s gentle-force/avoid-slamming characterization cannot be established from visual frames.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;source_annotation_assessment&quot;: &quot;The source annotation describes closing a cabinet door, which agrees with the visible left-hand panel push and closed terminal state. No discrepancy in task or outcome; qualitative force claims are not carried into the usable prompt.&quot;,
+  &quot;video_id&quot;: &quot;articulated-7&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_articulated_7&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/articulated-7__close_cabinet_door/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 144,
+  &quot;source_fps&quot;: 29.782833505687694,
+  &quot;native_detail_frames&quot;: [
+    0,
+    16,
+    24,
+    30,
+    48,
+    56,
+    62,
+    64,
+    80,
+    90,
+    116,
+    143
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot raises its left hand to the outer face of the open cabinet door marked 2D11 and presses it inward, swinging the door shut against the cabinet. It then withdraws and lowers the left hand while remaining in place, leaving the door closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Closing a cabinet door smoothly, demonstrating control of hinged mechanisms and gentle force application to avoid slamming.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 144,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;98ca324a461d544ba906270dcc5f1d397f13a80bc779b53a175c03856aac19a7&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:12:20.140999+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/articulated-3__unfold_multimeter_stand/index.html">← Unfold multimeter stand</a><a rel="next" href="../../Humanoid_Everyday/deformable-2__fold_towel/index.html">Fold towel →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

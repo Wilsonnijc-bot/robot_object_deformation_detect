@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franka pick and place standard success · TAVP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../TAVP/index.html">TAVP</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">TAVP · 003_franka_pick_and_place_standard_success</p>
+<h1>Franka pick and place standard success</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 835 frames · 27.83 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robotic arm picks up the orange carrot and places it on the purple plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Put the carrot into the purple plate.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 181.3 vs threshold 120">Pass<b>181</b></span><p>Sharpness <b>181.3</b> against 120
+(third-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 720</dd><dt>Frames</dt><dd>835</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>27.83 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/TAVP/003_franka_pick_and_place_standard_success">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/TAVP/003_franka_pick_and_place_standard_success/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/TAVP/003_franka_pick_and_place_standard_success/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/TAVP/003_franka_pick_and_place_standard_success/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;video_id&quot;: &quot;003&quot;,
+  &quot;review_method&quot;: &quot;Visual inspection of every second decoded frame across the entire MP4 plus native-resolution transition frames, followed by native initial PNG&quot;,
+  &quot;review_source_video&quot;: &quot;/Users/nijiachen/Downloads/Robotvideo/TAVP/003_franka_pick_and_place_standard_success/original/video.mp4&quot;,
+  &quot;source_frame_count&quot;: 835,
+  &quot;source_fps&quot;: 30.0,
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 418,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;,
+    &quot;sheet_005.jpg&quot;,
+    &quot;sheet_006.jpg&quot;,
+    &quot;sheet_007.jpg&quot;
+  ],
+  &quot;native_detail_frames&quot;: [
+    160,
+    250,
+    276,
+    300,
+    320,
+    416,
+    424,
+    440,
+    510,
+    580,
+    620,
+    630,
+    640,
+    650,
+    735,
+    765,
+    834
+  ],
+  &quot;initial_scene&quot;: &quot;A white articulated robot stands at the rear of a white rectangular table, its open two-finger gripper suspended above a cluster of colorful produce. A separate orange carrot with green leaves lies diagonally at the front-left, with the leaves toward the viewer. An empty shallow lavender plate sits at the front-right beside a circular tabletop cable opening. Black curtains stand behind and to the left of the robot; silver window blinds and a light wood shelf/cart are on the right, with computer equipment visible at the far left.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;start_frame&quot;: 0,
+      &quot;end_frame_inclusive&quot;: 31,
+      &quot;action&quot;: &quot;The raised open gripper holds its starting pose above the back of the table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 32,
+      &quot;end_frame_inclusive&quot;: 260,
+      &quot;action&quot;: &quot;The arm moves forward and down, aligning its open fingers on opposite sides of the separate carrot body.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 261,
+      &quot;end_frame_inclusive&quot;: 412,
+      &quot;action&quot;: &quot;The gripper closes around the carrot while the carrot remains near the tabletop, then holds still before lifting.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 413,
+      &quot;end_frame_inclusive&quot;: 550,
+      &quot;action&quot;: &quot;The arm lifts the gripped carrot clear of the table and carries it rightward toward the lavender plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 551,
+      &quot;end_frame_inclusive&quot;: 608,
+      &quot;action&quot;: &quot;The gripper positions the carrot over the plate and lowers it to the plate surface.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 609,
+      &quot;end_frame_inclusive&quot;: 642,
+      &quot;action&quot;: &quot;The fingers open, releasing the carrot; it settles diagonally on the lavender plate with its green leaves hanging toward the near rim and cable opening.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 643,
+      &quot;end_frame_inclusive&quot;: 734,
+      &quot;action&quot;: &quot;The open gripper pauses immediately above the placed carrot, which stays on the plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;start_frame&quot;: 735,
+      &quot;end_frame_inclusive&quot;: 834,
+      &quot;action&quot;: &quot;The empty gripper rises and withdraws toward the rear of the table; the carrot remains on the lavender plate.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;multi_step&quot;: false,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 835,
+    &quot;reason&quot;: &quot;The entire clip contains one continuous completed carrot pick-and-place, including grasp, transport, release, settling, and empty-gripper withdrawal; there is no second independent subtask.&quot;,
+    &quot;terminal_state&quot;: &quot;The carrot rests diagonally on the lavender plate with its leafy end over the near rim, while the open empty gripper is raised above and behind it.&quot;
+  },
+  &quot;full_sequence_prompt&quot;: &quot;The robotic arm picks up the orange carrot and places it on the purple plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;world_model_prompt&quot;: &quot;The robotic arm picks up the orange carrot and places it on the purple plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The exact frame of initial jaw contact and final plate contact is partly hidden by the gripper; stage boundaries are approximate. The produce appears to be artificial, but its material cannot be confirmed visually.&quot;
+  ],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    250,
+    320,
+    440,
+    580,
+    640,
+    765,
+    834
+  ],
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;prompt_protocol&quot;: &quot;concise_action_v1&quot;,
+  &quot;review_source_original_video&quot;: &quot;003_franka_pick_and_place_standard_success/original/video.mp4&quot;,
+  &quot;review_source_crop_rectangle&quot;: null
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../TAVP/002_franka_fold_towel_standard_success/index.html">← Franka fold towel standard success</a><a rel="next" href="../../TAVP/004_franka_press_buttons_standard_success/index.html">Franka press buttons standard success →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

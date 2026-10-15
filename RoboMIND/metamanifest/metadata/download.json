@@ -1,0 +1,55 @@
+{
+  "static_files": {
+    "README.md": {
+      "sha256": "84f510133a9b3ba372a41e45dcc9637a7a1e17c1e7c0df1e2c2e80361376c271"
+    },
+    "static/RoboMIND_v1_2_instr.csv": {
+      "sha256": "bc9d58dee9822a352285a8672986779eca4eed86958fa114072d7b30b0f619a8"
+    },
+    "static/all_robot_h5_info_v1.2.md": {
+      "sha256": "19ee204670f38c5638828d22148f4a8bab4afed7b88a89b9a937800ba0807d39"
+    },
+    "static/robomind.yaml": {
+      "sha256": "6cab654cd15828547d0314265335873ee28763de6e0f6e3a2961acf9d8b8ea06"
+    }
+  },
+  "zip": {
+    "path": "example_data/pick_apple_into_drawer_h5 2.zip",
+    "size_bytes": 180163745,
+    "sha256": "dc4ee040d8604b00612af18b7133b269cd936919c9dca7c65c80fc5916ae7604",
+    "hf_lfs_sha256": "dc4ee040d8604b00612af18b7133b269cd936919c9dca7c65c80fc5916ae7604"
+  },
+  "members": {
+    "franka_3rgb": {
+      "source_archive": "example_data/pick_apple_into_drawer_h5 2.zip",
+      "archive_member": "pick_apple_into_drawer_h5/success_episodes/0923_164719/data/trajectory.hdf5",
+      "size_bytes": 90117048,
+      "sha256": "8f92f27bcf2e22612ad1cc00feebc2be859d602e63b8edc12c910f160e628f9d"
+    },
+    "tienkung": {
+      "source_archive": "example_data/h5_tienkung_gello_1rgb/close_the_drawer_under_the_combination_cabinet.tar.gz.part-aa",
+      "archive_member": "close_the_drawer_under_the_combination_cabinet/success_episodes/train/1211_104950/data/trajectory.hdf5",
+      "archive_part_size_bytes": 10737418240,
+      "archive_part_hf_lfs_sha256": "314cde69d7851ad62577ee56226f4463a46251ae69d91b79c669a56ca2d8d690",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "613e050b4acb287c56f465c0c1a75300ab3dd98785bd983e5305e5afbd4420e8",
+      "size_bytes": 147576640,
+      "sha256": "3d4c64c887ccaace65f2cdc7aa2cea23bb0e018283c317c9a0976e2697062086",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    "agilex": {
+      "source_archive": "example_data/h5_agilex_3rgb/13_packbowl.tar.gz.part-aa",
+      "archive_member": "13_packbowl/success_episodes/train/2024_09_29-10_29_40-172857804939817056.00/data/trajectory.hdf5",
+      "archive_part_size_bytes": 10737418240,
+      "archive_part_hf_lfs_sha256": "10b8fd42049c9f2880506505aa83cf207faefeba3f05c15a3828ed7aa6f06b3f",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "e38ebdf18976a53b631c8663babda09f29d7fb6736546e80ea5b67a833285af1",
+      "size_bytes": 145852840,
+      "sha256": "f5ad36fd4f1fff0fb8ca0e4aaea06698f8d57f7f59915994439dd01b2e8b651a",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    }
+  },
+  "repository": "x-humanoid-robomind/RoboMIND",
+  "revision": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "license": "apache-2.0"
+}

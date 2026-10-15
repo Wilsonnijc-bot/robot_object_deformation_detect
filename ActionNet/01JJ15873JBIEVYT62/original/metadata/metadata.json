@@ -1,0 +1,41 @@
+{
+  "dataset": "FourierIntelligence/ActionNet",
+  "episode_id": "01JJ15873JBIEVYT62",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_url": "https://huggingface.co/datasets/FourierIntelligence/ActionNet/resolve/eb3b5bb16f3a5a7052c1498c1072e78ac99042d0/01JJ130F0A-01JJ15BREB.tar",
+  "archive_name": "01JJ130F0A-01JJ15BREB.tar",
+  "annotation": {
+    "id": "01JJ15873JBIEVYT62",
+    "prompt": "Pick up the clamp and place it into the container.",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "source_files": [
+    {
+      "archive_member": "01JJ15873JBIEVYT62.hdf5",
+      "path": "../01JJ15873JBIEVYT62.hdf5",
+      "size_bytes": 917080,
+      "sha256": "8856e520dcada1ffbbf0faa26deefde08251e0404e8051442a4eb7fe3b9f8442"
+    },
+    {
+      "archive_member": "01JJ15873JBIEVYT62/top/rgb.mp4",
+      "path": "../top/rgb.mp4",
+      "size_bytes": 27862669,
+      "sha256": "be4b7d943ac30242658dc1c410bd9801f792f119b30beb22be0b9f418810cf58"
+    },
+    {
+      "archive_member": "01JJ15873JBIEVYT62/top/depth.mkv",
+      "path": "../top/depth.mkv",
+      "size_bytes": 10609996,
+      "sha256": "e4dab06fa6b5992ec1f4788021f3710cfb29e733856dd7a0f502bda92d206555"
+    },
+    {
+      "archive_member": "01JJ15873JBIEVYT62/top/timestamps.json",
+      "path": "../top/timestamps.json",
+      "size_bytes": 12150,
+      "sha256": "db7f28fd0cd1d6b665d8c1003e964da8702be33c27b206f5f54befacc98fd40c"
+    }
+  ],
+  "source_bytes_preserved": true,
+  "fetch_note": "Members read with HTTP Range requests from the uncompressed tar; the rest of the archive was not downloaded."
+}

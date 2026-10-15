@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean the window · Humanoid Everyday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../Humanoid_Everyday/index.html">Humanoid Everyday</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">Humanoid Everyday · loco-manip-1__clean_the_window</p>
+<h1>Clean the window</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 1092 frames · 36.4 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid grasps the gray duster&#x27;s handle with its right hand, lifts it from the ledge, and turns with short steps to face the window. It raises the duster and sweeps its head across the window in repeated sideways and downward wiping strokes at different heights. Still holding the handle, it turns and steps back to the ledge, lays the duster down, releases it, and lowers its empty right hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Walking to and cleaning a window, combining locomotion with manipulation for reaching and wiping motions at different heights.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 719.2 vs threshold 120">Pass<b>719</b></span><p>Sharpness <b>719.2</b> against 120
+(third-person). Measured on the 704 × 960 model view,
+upscale 0.50×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1440 × 1920</dd><dt>Frames</dt><dd>1092</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>36.4 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/Humanoid_Everyday/loco-manip-1__clean_the_window/third_person">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;,
+    &quot;sheet_002.jpg&quot;,
+    &quot;sheet_003.jpg&quot;,
+    &quot;sheet_004.jpg&quot;,
+    &quot;sheet_005.jpg&quot;,
+    &quot;sheet_006.jpg&quot;,
+    &quot;sheet_007.jpg&quot;,
+    &quot;sheet_008.jpg&quot;,
+    &quot;sheet_009.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 546,
+  &quot;initial_scene&quot;: &quot;Robot stands in three-quarter front/right-side view beside a window. A gray fluffy duster lies on the light-colored ledge at image right with its dark handle projecting toward the robot. Both hands are initially empty; its nearer anatomical right arm hangs low and its left hand is farther away beside the torso.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;source_frame_interval&quot;: [
+        0,
+        77
+      ],
+      &quot;action&quot;: &quot;Right arm lifts and extends toward the projecting duster handle; the left hand stays clear. Body stays near the ledge.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        78,
+        197
+      ],
+      &quot;action&quot;: &quot;Right fingers surround and close around the handle while the duster head remains on the ledge. The hand maintains the grip before lifting.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        198,
+        255
+      ],
+      &quot;action&quot;: &quot;Right hand lifts the duster free, rotates it upright, and draws it toward the chest. Left hand does not assist.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        256,
+        447
+      ],
+      &quot;action&quot;: &quot;With the duster held upright in the right hand, the robot takes short alternating steps and turns until its back faces the camera and its front faces the window; the left arm hangs beside it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        448,
+        639
+      ],
+      &quot;action&quot;: &quot;Right shoulder/elbow raise and extend the tool toward the window. The head moves toward image right at roughly shoulder height, then sweeps downward and left toward the torso in a wiping stroke. Contact depth is not independently resolved at every point.&quot;,
+      &quot;confidence&quot;: &quot;high for movement; medium for continuous glass contact&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        640,
+        701
+      ],
+      &quot;action&quot;: &quot;Right hand raises the duster again and makes another sideways/downward sweep, varying the height and tilt of its head across the window. Left hand remains idle.&quot;,
+      &quot;confidence&quot;: &quot;high for movement; medium for continuous glass contact&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        702,
+        921
+      ],
+      &quot;action&quot;: &quot;Robot lowers the held duster toward its torso, steps laterally/back from its wiping stance, moves partly out of the image at left, then steps back into view and turns toward the original ledge. Grip remains in the right hand.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        922,
+        1023
+      ],
+      &quot;action&quot;: &quot;Right arm extends the tool over the ledge and lowers/tilts the fluffy head onto it. The duster lies supported on the ledge as the right fingers open around its handle.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;source_frame_interval&quot;: [
+        1024,
+        1091
+      ],
+      &quot;action&quot;: &quot;Right hand moves away empty and lowers beside the body. Duster remains resting on the ledge with its handle visible; robot stands beside it.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;right&quot;: &quot;Sole manipulating hand: grasps the projecting handle, lifts and carries the duster, performs raised sideways/downward wiping strokes, puts it back onto the ledge, and releases it.&quot;,
+    &quot;left&quot;: &quot;Empty, nonparticipating hand; stays beside the torso through turn, wiping and return. It neither supports the duster nor touches the window.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand tool use coordinated with whole-body stepping and turning to face the window and return to the ledge. No hand-to-hand transfer or person interaction is visible.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;description&quot;: &quot;Initial PNG shows the front chest panel and robot facing image right. The active nearer arm is attached to its right shoulder, with its farther left hand visible on the opposite side of the chest. Following this same arm through the turn gives the active arm on image right when the rear torso faces the camera (frames 338, 420, 520), independently confirming anatomical right. The idle arm is image left in that rear view.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;uncertainty&quot;: null
+  },
+  &quot;terminal_state&quot;: &quot;Duster rests on the original light-colored ledge to image right, no longer held. The right hand is empty and lowered beside the robot; the left hand remains empty. The robot stands next to the ledge after completing the tool-use and return sequence.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The frontal/rear projection cannot establish uninterrupted duster-to-glass contact throughout every sweep; the head follows clear wiping movements across the window plane, and portions are briefly occluded by the robot.&quot;,
+    &quot;Visible dirt removal or final cleanliness cannot be established. Success denotes the observed grasp, wiping-motion sequence and completed tool return/release, not a verified clean surface.&quot;,
+    &quot;The robot is partially out of view during the lateral/backward stepping phase around frames 736-798; the held duster and parts of the body remain visible and re-entry confirms retained possession.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;source_annotation_notes&quot;: &quot;Original annotation describes walking to and cleaning a window. The full video supports a short turn/step approach, right-hand duster sweeps at varying heights, and a return/release omitted from that brief caption; no contradiction is observed.&quot;,
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    78,
+    116,
+    200,
+    254,
+    338,
+    420,
+    520,
+    550,
+    600,
+    680,
+    740,
+    830,
+    920,
+    1020,
+    1091
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;execution_status_basis&quot;: &quot;Grasp, lift, carried locomotion, window-directed wiping strokes and supported return/release are visibly completed. Surface-cleanliness effectiveness remains unverified.&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;contact_sheets_viewed&quot;: 9,
+    &quot;sampled_frames_viewed&quot;: 546,
+    &quot;entire_source_interval&quot;: [
+      0,
+      1091
+    ],
+    &quot;native_source_initial_png_viewed&quot;: true,
+    &quot;native_transition_and_final_frames_viewed&quot;: [
+      78,
+      116,
+      200,
+      254,
+      338,
+      420,
+      520,
+      550,
+      600,
+      680,
+      740,
+      830,
+      920,
+      1020,
+      1091
+    ]
+  },
+  &quot;video_id&quot;: &quot;loco-manip-1&quot;,
+  &quot;dataset&quot;: &quot;Humanoid_Everyday&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_he_loco_manip_1&quot;,
+  &quot;review_source_video&quot;: &quot;Humanoid_Everyday/loco-manip-1__clean_the_window/third_person/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 1092,
+  &quot;source_fps&quot;: 30.0,
+  &quot;native_detail_frames&quot;: [
+    78,
+    116,
+    200,
+    254,
+    338,
+    420,
+    520,
+    550,
+    600,
+    680,
+    740,
+    830,
+    920,
+    1020,
+    1091
+  ],
+  &quot;world_model_prompt&quot;: &quot;The humanoid grasps the gray duster&#x27;s handle with its right hand, lifts it from the ledge, and turns with short steps to face the window. It raises the duster and sweeps its head across the window in repeated sideways and downward wiping strokes at different heights. Still holding the handle, it turns and steps back to the ledge, lays the duster down, releases it, and lowers its empty right hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Walking to and cleaning a window, combining locomotion with manipulation for reaching and wiping motions at different heights.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 1092,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;47f0cc0213aa3c1ef60ffe1dda45d86c5cdc5d7a3ce3712f38bc1fad11e8b1d5&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:34:45.965192+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../Humanoid_Everyday/human-robot-7__shake_hand_with_person/index.html">← Shake hand with person</a><a rel="next" href="../../Humanoid_Everyday/loco-manip-2__pick_up_kettle_place_on_base_and_turn_on/index.html">Pick up kettle place on base and turn on →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

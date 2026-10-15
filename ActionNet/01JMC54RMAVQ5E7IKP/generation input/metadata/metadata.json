@@ -1,0 +1,51 @@
+{
+  "dataset": "ActionNet",
+  "episode_id": "01JMC54RMAVQ5E7IKP",
+  "variant": "full_sequence",
+  "view": "top",
+  "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
+  "source_video": "../../original/top/rgb.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "encoding": "original_bytes_copied",
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 429,
+  "frame_count": 429,
+  "fps_rational": "30/1",
+  "resolution": {
+    "width": 1280,
+    "height": 800
+  },
+  "duration_seconds": 14.3,
+  "codec": "h264",
+  "video_sha256": "56bab472762fcad590432adb2829e350a68799e41ba2571ea76711eb0253894f",
+  "first_frame_sha256": "7a8ecabbeb2cf597bb206f4565e7f287ba9be7225325f07c0e3e1657e0197df1",
+  "source_annotation": {
+    "id": "01JMC54RMAVQ5E7IKP",
+    "prompt": "Pick up the Rubiks cube and place it into the transparent container.",
+    "task": "npnp",
+    "machine_id": "T1"
+  },
+  "validation": {
+    "source_and_generation_bytes_identical": true,
+    "full_sequence_retained": true
+  },
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "review_status": "complete",
+  "generation_prompt": "The robot uses the hand entering from the lower-right edge to close its thumb and fingers around the Rubik's cube on the tabletop, lifts it, and carries it left over the transparent plastic container. It lowers the cube into the container and opens its hand to release it, then withdraws toward the right edge, leaving the cube resting inside the container. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "1280x704",
+    "upscale_factor": 1.0,
+    "sharpness": 430.1,
+    "threshold": 60,
+    "result": "pass"
+  }
+}

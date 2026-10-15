@@ -1,0 +1,464 @@
+task_categories:
+- robotics
+language:
+- en
+tags:
+- RoboCOIN
+- LeRobot
+license: apache-2.0
+configs:
+- config_name: default
+  data_files: data/chunk-{id}/episode_{id}.parquet
+extra_gated_prompt: By accessing this dataset, you agree to cite the associated paper
+  in your research/publications—see the "Citation" section for details. You agree
+  to not use the dataset to conduct experiments that cause harm to human subjects.
+extra_gated_fields:
+  Company/Organization:
+    type: text
+    description: e.g., "ETH Zurich", "Boston Dynamics", "Independent Researcher"
+  Country:
+    type: country
+    description: e.g., "Germany", "China", "United States"
+codebase_version: v2.1
+dataset_name: Airbot_MMK2_stack_block
+dataset_uuid: 00000000-0000-0000-0000-000000000000
+scene_type:
+  level1: household
+  level2: bedroom
+  level3: null
+  level4: null
+  level5: null
+env_type: Due to some reasons, this dataset temporarily cannot provide the environment
+  type information.
+objects:
+- object_name: square_building_blocks
+  level1: toys
+  level2: square_building_blocks
+  level3: null
+  level4: null
+  level5: null
+- object_name: block_pillar
+  level1: toys
+  level2: block_pillar
+  level3: null
+  level4: null
+  level5: null
+task_operation_type: Due to some reasons, this dataset temporarily cannot provide
+  the operation type information.
+task_instruction:
+- place the square building blocks in the center with left hand and put the cylindrical
+  building blocks on top with right hand.
+sub_tasks:
+- subtask: Grasp the blue build blocks with the left gripper
+  subtask_index: 0
+- subtask: Grasp the green build blocks with the right gripper
+  subtask_index: 1
+- subtask: Place the blue build blocks on the Mini table with the left gripper
+  subtask_index: 2
+- subtask: Place the green build blocks on the blue build block with the right gripper
+  subtask_index: 3
+- subtask: Grasp the blue diamond shaped build blocks with the right gripper
+  subtask_index: 4
+- subtask: Grasp the red build blocks with the right gripper
+  subtask_index: 5
+- subtask: Place the blue diamond shaped build blocks on the glasses case with the
+    right gripper
+  subtask_index: 6
+- subtask: Place the purple build blocks on the red build block with the right gripper
+  subtask_index: 7
+- subtask: Place the green build blocks on the center of the table with the left gripper
+  subtask_index: 8
+- subtask: Grasp the green build blocks with the left gripper
+  subtask_index: 9
+- subtask: Place the glasses case on the red and green build blocks with the left
+    gripper
+  subtask_index: 10
+- subtask: Grasp the purple build blocks with the right gripper
+  subtask_index: 11
+- subtask: Place the blue build blocks on the yellow build block with the left gripper
+  subtask_index: 12
+- subtask: Grasp the glasses case with the left gripper
+  subtask_index: 13
+- subtask: Place the green cylindrical build blocks on the green build blocks with
+    the right gripper
+  subtask_index: 14
+- subtask: End
+  subtask_index: 15
+- subtask: Place the blue build blocks on the pink build block with the left gripper
+  subtask_index: 16
+- subtask: Place the red build blocks on the blue build block with the right gripper
+  subtask_index: 17
+- subtask: Grasp the green cylindrical build blocks with the right gripper
+  subtask_index: 18
+- subtask: 'null'
+  subtask_index: 19
+atomic_actions:
+- grasp
+- pick
+- place
+robot_name:
+- Airbot_MMK2
+end_effector_type: five_finger_gripper
+tele_type: Due to some reasons, this dataset temporarily cannot provide the teleoperation
+  type information.
+sensor_list:
+- cam_head_rgb
+- cam_left_wrist_rgb
+- cam_right_wrist_rgb
+- cam_front_rgb
+came_info:
+  cam_head_rgb: dtype=video, shape=480x640x3, resolution=640x480, codec=av1, pix_fmt=yuv420p
+  cam_left_wrist_rgb: dtype=video, shape=480x640x3, resolution=640x480, codec=av1,
+    pix_fmt=yuv420p
+  cam_right_wrist_rgb: dtype=video, shape=480x640x3, resolution=640x480, codec=av1,
+    pix_fmt=yuv420p
+  cam_front_rgb: dtype=video, shape=480x640x3, resolution=640x480, codec=av1, pix_fmt=yuv420p
+depth_enabled: false
+coordinate_definition: right-hand-frame
+joint_rotation_dim: radian
+end_rotation_dim: end_rotation_dim
+end_translation_dim: end_translation_dim
+annotations:
+- eef_acc_mag_annotation.jsonl
+- eef_direction_annotation.jsonl
+- eef_velocity_annotation.jsonl
+- gripper_activity_annotation.jsonl
+- gripper_mode_annotation.jsonl
+- scene_annotations.jsonl
+- subtask_annotations.jsonl
+statistics:
+  total_episodes: 236
+  total_frames: 60925
+  fps: 30
+  total_tasks: 20
+  total_videos: 944
+  total_chunks: 1
+  chunks_size: 1000
+  state_dim: 36
+  action_dim: 36
+  camera_views: 4
+  dataset_size: 2.00 GB
+frame_num: 60925
+dataset_size: 2.00 GB
+data_structure: "Airbot_MMK2_stack_block_qced_hardlink/\n|-- annotations\n|   |--\
+  \ eef_acc_mag_annotation.jsonl\n|   |-- eef_direction_annotation.jsonl\n|   |--\
+  \ eef_velocity_annotation.jsonl\n|   |-- gripper_activity_annotation.jsonl\n|  \
+  \ |-- gripper_mode_annotation.jsonl\n|   |-- scene_annotations.jsonl\n|   `-- subtask_annotations.jsonl\n\
+  |-- data\n|   `-- chunk-000\n|       |-- episode_000000.parquet\n|       |-- episode_000001.parquet\n\
+  |       |-- episode_000002.parquet\n|       |-- episode_000003.parquet\n|      \
+  \ |-- episode_000004.parquet\n|       |-- episode_000005.parquet\n|       |-- episode_000006.parquet\n\
+  |       |-- episode_000007.parquet\n|       |-- episode_000008.parquet\n|      \
+  \ |-- episode_000009.parquet\n|       |-- episode_000010.parquet\n|       `-- episode_000011.parquet\n\
+  |       `-- ... (224 more entries)\n|-- meta\n|   |-- episodes.jsonl\n|   |-- episodes_stats.jsonl\n\
+  |   |-- info.json\n|   `-- tasks.jsonl\n`-- videos\n    `-- chunk-000\n        |--\
+  \ observation.images.cam_front_rgb\n        |-- observation.images.cam_head_rgb\n\
+  \        |-- observation.images.cam_left_wrist_rgb\n        `-- observation.images.cam_right_wrist_rgb"
+splits:
+  train: 0:235
+features:
+  observation.images.cam_head_rgb:
+    dtype: video
+    shape:
+    - 480
+    - 640
+    - 3
+    names:
+    - height
+    - width
+    - channels
+    info:
+      video.height: 480
+      video.width: 640
+      video.codec: av1
+      video.pix_fmt: yuv420p
+      video.is_depth_map: false
+      video.fps: 30
+      video.channels: 3
+      has_audio: false
+  observation.images.cam_left_wrist_rgb:
+    dtype: video
+    shape:
+    - 480
+    - 640
+    - 3
+    names:
+    - height
+    - width
+    - channels
+    info:
+      video.height: 480
+      video.width: 640
+      video.codec: av1
+      video.pix_fmt: yuv420p
+      video.is_depth_map: false
+      video.fps: 30
+      video.channels: 3
+      has_audio: false
+  observation.images.cam_right_wrist_rgb:
+    dtype: video
+    shape:
+    - 480
+    - 640
+    - 3
+    names:
+    - height
+    - width
+    - channels
+    info:
+      video.height: 480
+      video.width: 640
+      video.codec: av1
+      video.pix_fmt: yuv420p
+      video.is_depth_map: false
+      video.fps: 30
+      video.channels: 3
+      has_audio: false
+  observation.images.cam_front_rgb:
+    dtype: video
+    shape:
+    - 480
+    - 640
+    - 3
+    names:
+    - height
+    - width
+    - channels
+    info:
+      video.height: 480
+      video.width: 640
+      video.codec: av1
+      video.pix_fmt: yuv420p
+      video.is_depth_map: false
+      video.fps: 30
+      video.channels: 3
+      has_audio: false
+  observation.state:
+    dtype: float32
+    shape:
+    - 36
+    names:
+    - left_arm_joint_1_rad
+    - left_arm_joint_2_rad
+    - left_arm_joint_3_rad
+    - left_arm_joint_4_rad
+    - left_arm_joint_5_rad
+    - left_arm_joint_6_rad
+    - right_arm_joint_1_rad
+    - right_arm_joint_2_rad
+    - right_arm_joint_3_rad
+    - right_arm_joint_4_rad
+    - right_arm_joint_5_rad
+    - right_arm_joint_6_rad
+    - left_hand_joint_1_rad
+    - left_hand_joint_2_rad
+    - left_hand_joint_3_rad
+    - left_hand_joint_4_rad
+    - left_hand_joint_5_rad
+    - left_hand_joint_6_rad
+    - left_hand_joint_7_rad
+    - left_hand_joint_8_rad
+    - left_hand_joint_9_rad
+    - left_hand_joint_10_rad
+    - left_hand_joint_11_rad
+    - left_hand_joint_12_rad
+    - right_hand_joint_1_rad
+    - right_hand_joint_2_rad
+    - right_hand_joint_3_rad
+    - right_hand_joint_4_rad
+    - right_hand_joint_5_rad
+    - right_hand_joint_6_rad
+    - right_hand_joint_7_rad
+    - right_hand_joint_8_rad
+    - right_hand_joint_9_rad
+    - right_hand_joint_10_rad
+    - right_hand_joint_11_rad
+    - right_hand_joint_12_rad
+  action:
+    dtype: float32
+    shape:
+    - 36
+    names:
+    - left_arm_joint_1_rad
+    - left_arm_joint_2_rad
+    - left_arm_joint_3_rad
+    - left_arm_joint_4_rad
+    - left_arm_joint_5_rad
+    - left_arm_joint_6_rad
+    - right_arm_joint_1_rad
+    - right_arm_joint_2_rad
+    - right_arm_joint_3_rad
+    - right_arm_joint_4_rad
+    - right_arm_joint_5_rad
+    - right_arm_joint_6_rad
+    - left_hand_joint_1_rad
+    - left_hand_joint_2_rad
+    - left_hand_joint_3_rad
+    - left_hand_joint_4_rad
+    - left_hand_joint_5_rad
+    - left_hand_joint_6_rad
+    - left_hand_joint_7_rad
+    - left_hand_joint_8_rad
+    - left_hand_joint_9_rad
+    - left_hand_joint_10_rad
+    - left_hand_joint_11_rad
+    - left_hand_joint_12_rad
+    - right_hand_joint_1_rad
+    - right_hand_joint_2_rad
+    - right_hand_joint_3_rad
+    - right_hand_joint_4_rad
+    - right_hand_joint_5_rad
+    - right_hand_joint_6_rad
+    - right_hand_joint_7_rad
+    - right_hand_joint_8_rad
+    - right_hand_joint_9_rad
+    - right_hand_joint_10_rad
+    - right_hand_joint_11_rad
+    - right_hand_joint_12_rad
+  timestamp:
+    dtype: float32
+    shape:
+    - 1
+    names: null
+  frame_index:
+    dtype: int64
+    shape:
+    - 1
+    names: null
+  episode_index:
+    dtype: int64
+    shape:
+    - 1
+    names: null
+  index:
+    dtype: int64
+    shape:
+    - 1
+    names: null
+  task_index:
+    dtype: int64
+    shape:
+    - 1
+    names: null
+  subtask_annotation:
+    names: null
+    shape:
+    - 5
+    dtype: int32
+  scene_annotation:
+    names: null
+    shape:
+    - 1
+    dtype: int32
+  eef_sim_pose_state:
+    names:
+    - left_eef_pos_x
+    - left_eef_pos_y
+    - left_eef_pos_z
+    - left_eef_rot_x
+    - left_eef_rot_y
+    - left_eef_rot_z
+    - right_eef_pos_x
+    - right_eef_pos_y
+    - right_eef_pos_z
+    - right_eef_rot_x
+    - right_eef_rot_y
+    - right_eef_rot_z
+    shape:
+    - 12
+    dtype: float32
+  eef_sim_pose_action:
+    names:
+    - left_eef_pos_x
+    - left_eef_pos_y
+    - left_eef_pos_z
+    - left_eef_rot_x
+    - left_eef_rot_y
+    - left_eef_rot_z
+    - right_eef_pos_x
+    - right_eef_pos_y
+    - right_eef_pos_z
+    - right_eef_rot_x
+    - right_eef_rot_y
+    - right_eef_rot_z
+    shape:
+    - 12
+    dtype: float32
+  eef_direction_state:
+    names:
+    - left_eef_direction
+    - right_eef_direction
+    shape:
+    - 2
+    dtype: int32
+  eef_direction_action:
+    names:
+    - left_eef_direction
+    - right_eef_direction
+    shape:
+    - 2
+    dtype: int32
+  eef_velocity_state:
+    names:
+    - left_eef_velocity
+    - right_eef_velocity
+    shape:
+    - 2
+    dtype: int32
+  eef_velocity_action:
+    names:
+    - left_eef_velocity
+    - right_eef_velocity
+    shape:
+    - 2
+    dtype: int32
+  eef_acc_mag_state:
+    names:
+    - left_eef_acc_mag
+    - right_eef_acc_mag
+    shape:
+    - 2
+    dtype: int32
+  eef_acc_mag_action:
+    names:
+    - left_eef_acc_mag
+    - right_eef_acc_mag
+    shape:
+    - 2
+    dtype: int32
+authors:
+  contributed_by:
+  - name: RoboCOIN Team at Beijing Academy of Artificial Intelligence (BAAI)
+dataset_description: This dataset uses an extended format based on LeRobot and is
+  fully compatible with LeRobot.
+homepage: https://flagopen.github.io/RoboCOIN/
+paper: https://arxiv.org/abs/2511.17441
+repository: https://github.com/FlagOpen/RoboCOIN
+contact_info: For questions, issues, or feedback regarding this dataset, please contact
+  us.
+support_info: For technical support, please open an issue on our GitHub repository.
+license_details: apache-2.0
+citation_bibtex: "@article{robocoin,\n  title={RoboCOIN: An Open-Sourced Bimanual\
+  \ Robotic Data Collection for Integrated Manipulation},\n  author={Shihan Wu, Xuecheng\
+  \ Liu, Shaoxuan Xie, Pengwei Wang, Xinghang Li, Bowen Yang, Zhe Li, Kai Zhu, Hongyu\
+  \ Wu, Yiheng Liu, Zhaoye Long, Yue Wang, Chong Liu, Dihan Wang, Ziqiang Ni, Xiang\
+  \ Yang, You Liu, Ruoxuan Feng, Runtian Xu, Lei Zhang, Denghang Huang, Chenghao Jin,\
+  \ Anlan Yin, Xinlong Wang, Zhenguo Sun, Junkai Zhao, Mengfei Du, Mingyu Cao, Xiansheng\
+  \ Chen, Hongyang Cheng, Xiaojie Zhang, Yankai Fu, Ning Chen, Cheng Chi, Sixiang\
+  \ Chen, Huaihai Lyu, Xiaoshuai Hao, Yequan Wang, Bo Lei, Dong Liu, Xi Yang, Yance\
+  \ Jiao, Tengfei Pan, Yunyan Zhang, Songjing Wang, Ziqian Zhang, Xu Liu, Ji Zhang,\
+  \ Caowei Meng, Zhizheng Zhang, Jiyang Gao, Song Wang, Xiaokun Leng, Zhiqiang Xie,\
+  \ Zhenzhen Zhou, Peng Huang, Wu Yang, Yandong Guo, Yichao Zhu, Suibing Zheng, Hao\
+  \ Cheng, Xinmin Ding, Yang Yue, Huanqian Wang, Chi Chen, Jingrui Pang, YuXi Qian,\
+  \ Haoran Geng, Lianli Gao, Haiyuan Li, Bin Fang, Gao Huang, Yaodong Yang, Hao Dong,\
+  \ He Wang, Hang Zhao, Yadong Mu, Di Hu, Hao Zhao, Tiejun Huang, Shanghang Zhang,\
+  \ Yonghua Lin, Zhongyuan Wang and Guocai Yao},\n  journal={arXiv preprint arXiv:2511.17441},\n\
+  \  url = {https://arxiv.org/abs/2511.17441},\n  year={2025},\n  }\n"
+additional_citations: 'If you use this dataset, please also consider citing:
+
+  LeRobot Framework: https://github.com/huggingface/lerobot
+
+  '
+version_info: Initial Release
+data_path: data/chunk-{id}/episode_{id}.parquet
+video_path: videos/chunk-{id}/observation.images.cam_left_wrist_rgb/episode_{id}.mp{id}
+video_url: videos/chunk-000/observation.images.cam_front_rgb/episode_000000.mp4

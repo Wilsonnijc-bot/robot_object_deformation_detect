@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01jn0y324h2zfdtsyd · ActionNet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../ActionNet/index.html">ActionNet</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">ActionNet · 01JN0Y324H2ZFDTSYD</p>
+<h1>01jn0y324h2zfdtsyd</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 432 frames · 14.4 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses the hand on the arm entering from the lower right to grasp the golden-brown pastry, lift it from the tabletop, and carry it over the gray plate. It lowers and releases the pastry onto the plate, leaving it resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Pick up the croissant and put it on a plate</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 486.7 vs threshold 60">Pass<b>487</b></span><p>Sharpness <b>486.7</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>432</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>14.4 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/ActionNet/01JN0Y324H2ZFDTSYD">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JN0Y324H2ZFDTSYD/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/ActionNet/01JN0Y324H2ZFDTSYD/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/ActionNet/01JN0Y324H2ZFDTSYD/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;dataset&quot;: &quot;ActionNet&quot;,
+  &quot;episode_id&quot;: &quot;01JN0Y324H2ZFDTSYD&quot;,
+  &quot;view&quot;: &quot;top&quot;,
+  &quot;review_scope&quot;: &quot;Complete original single-task clip; no trimming, resizing or re-encoding.&quot;,
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;protocol_application&quot;: &quot;Applied as an analogous extension to the Fourier humanoid sample; visible-arm description used because shoulder attachment is outside the top view.&quot;,
+  &quot;source_video&quot;: &quot;../../original/top/rgb.mp4&quot;,
+  &quot;conditioning_image&quot;: &quot;../first_frame.png&quot;,
+  &quot;prompt_path&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;decoded_frame_count&quot;: 432,
+    &quot;frame_index_convention&quot;: &quot;zero-based&quot;,
+    &quot;contact_sheet_frames&quot;: {
+      &quot;first&quot;: 0,
+      &quot;last&quot;: 430,
+      &quot;stride&quot;: 2,
+      &quot;count&quot;: 216
+    },
+    &quot;native_resolution_frames&quot;: [
+      0,
+      52,
+      76,
+      118,
+      160,
+      194,
+      220,
+      260,
+      292,
+      318,
+      336,
+      342,
+      354,
+      370,
+      431
+    ],
+    &quot;native_resolution&quot;: [
+      1280,
+      800
+    ],
+    &quot;initial_png_inspected_after_full_sequence&quot;: true,
+    &quot;temporary_evidence_only&quot;: true
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;active_arm&quot;: &quot;Arm entering from lower right of the conditioning image.&quot;,
+    &quot;inactive_arm&quot;: &quot;Arm entering from lower left, with open hand beside table.&quot;,
+    &quot;anatomical_side&quot;: &quot;not independently established&quot;,
+    &quot;evidence&quot;: &quot;Both forearms enter from the lower edges in a forward-looking top view; neither shoulder nor torso attachment is visible. Image side is observable, but it is not used as definitive anatomical proof.&quot;,
+    &quot;prompt_convention&quot;: &quot;unambiguous visible-arm wording&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;lower_right_visible_arm&quot;: &quot;Sole manipulator: encloses pastry, bears it during lift and transport, lowers onto plate, releases and retracts.&quot;,
+    &quot;lower_left_visible_arm&quot;: &quot;Remains beside the table with open hand throughout; no pastry, plate or other support contact observed.&quot;
+  },
+  &quot;coordination&quot;: &quot;No bimanual contact, transfer, human handoff or object support by the other hand is visible.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frame_start&quot;: 0,
+      &quot;frame_end&quot;: 38,
+      &quot;observation&quot;: &quot;Golden-brown pastry rests above and to image right of gray plate. Active hand starts upright and moves toward pastry; other hand remains open at image left.&quot;
+    },
+    {
+      &quot;frame_start&quot;: 40,
+      &quot;frame_end&quot;: 84,
+      &quot;observation&quot;: &quot;Active hand opens and descends around pastry. Its lower opposing digit nears the pastry right edge while other digits remain above; no lift yet.&quot;
+    },
+    {
+      &quot;frame_start&quot;: 86,
+      &quot;frame_end&quot;: 160,
+      &quot;observation&quot;: &quot;Hand rotates over pastry and curls around opposite sides, progressively establishing the grasp. At native frame 118 the pastry is still near its original table position; frame 160 shows enclosure around its body. Small adjustments are phases of the same grasp.&quot;
+    },
+    {
+      &quot;frame_start&quot;: 162,
+      &quot;frame_end&quot;: 198,
+      &quot;observation&quot;: &quot;Closed hand lifts pastry clear of tabletop; frame 194 shows visible clearance and pastry supported only by active hand.&quot;
+    },
+    {
+      &quot;frame_start&quot;: 200,
+      &quot;frame_end&quot;: 286,
+      &quot;observation&quot;: &quot;Hand maintains its grasp while moving pastry toward and over gray plate. Pastry changes orientation with the hand as a whole; no separate mechanism motion or other hand contact.&quot;
+    },
+    {
+      &quot;frame_start&quot;: 288,
+      &quot;frame_end&quot;: 318,
+      &quot;observation&quot;: &quot;Pastry is lowered within plate rim. By frame 318 it appears flat on the plate while active digits begin spreading; hand still overlaps its right side.&quot;
+    },
+    {
+      &quot;frame_start&quot;: 320,
+      &quot;frame_end&quot;: 354,
+      &quot;observation&quot;: &quot;Active hand opens and clears the pastry. Native frames 336 and 342 show pastry remaining flat on plate as digits separate; frame 354 shows open hand above it.&quot;
+    },
+    {
+      &quot;frame_start&quot;: 356,
+      &quot;frame_end&quot;: 431,
+      &quot;observation&quot;: &quot;Open hand withdraws upward/right and returns upright. Pastry remains stationary inside the plate through final frame 431; other hand has no contact.&quot;
+    }
+  ],
+  &quot;outcome&quot;: {
+    &quot;selected_action&quot;: &quot;success&quot;,
+    &quot;observed_end_state&quot;: &quot;Pastry released and resting flat inside gray plate; active hand withdrawn.&quot;,
+    &quot;source_overall_label&quot;: &quot;not inferred from task code npnp&quot;,
+    &quot;independent_subtasks&quot;: false
+  },
+  &quot;source_annotation&quot;: {
+    &quot;original_text&quot;: &quot;Pick up the croissant and put it on a plate&quot;,
+    &quot;preserved_verbatim_file&quot;: &quot;../../original/task_prompt.txt&quot;,
+    &quot;task&quot;: &quot;npnp&quot;,
+    &quot;machine_id&quot;: &quot;T1&quot;
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;Annotated croissant has a triangular golden-brown pastry appearance; prompt uses appearance-based pastry wording without asserting exact food identity.&quot;,
+    &quot;Placement outcome agrees with annotation.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Robot anatomical left/right cannot be independently confirmed from visible torso/shoulder attachment.&quot;,
+    &quot;Exact first contact and plate-support transition are partly occluded by the hand; frame ranges describe visible changes without claiming subframe precision.&quot;,
+    &quot;Source top-camera view shifts slightly relative to the table over the clip; required shared fixed-camera sentence is retained as the generation constraint.&quot;
+  ],
+  &quot;final_checks&quot;: {
+    &quot;target_identifiable_in_initial_frame&quot;: true,
+    &quot;prompt_matches_complete_retained_sequence&quot;: true,
+    &quot;visible_release_and_end_state_confirmed&quot;: true,
+    &quot;no_evidence_frame_directory_in_generation_input&quot;: true
+  }
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../ActionNet/01JMCB8Z194OS4IEC5/index.html">← 01jmcb8z194os4iec5</a><a rel="next" href="../../ActionNet/01JN0YDDF5ZYHXSSFO/index.html">01jn0yddf5zyhxssfo →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

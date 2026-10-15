@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video 26 · NVIDIA GR1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../NVIDIA_GR1_100/index.html">NVIDIA GR1</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">NVIDIA GR1 · 26</p>
+<h1>Video 26</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 120 frames · 6 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot uses its left hand to grasp the green zucchini protruding from the white mug and lift it completely out. It carries the zucchini over the empty blue plate, lowers it, and opens its fingers to leave it lying on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Use the left hand to pick up zucchini from inside white mug to blue plate.</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 675.1 vs threshold 60">Pass<b>675</b></span><p>Sharpness <b>675.1</b> against 60
+(first-person). Measured on the 1280 × 704 model view,
+upscale 1.00×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>1280 × 800</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>20 fps</dd><dt>Duration</dt><dd>6 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/NVIDIA_GR1_100/26">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/26/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/NVIDIA_GR1_100/26/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/NVIDIA_GR1_100/26/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
+</div>
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;reviewed_contact_sheets&quot;: [
+    &quot;sheet_001.jpg&quot;
+  ],
+  &quot;inspected_frame_stride&quot;: 2,
+  &quot;inspected_sampled_frame_count&quot;: 60,
+  &quot;initial_scene&quot;: &quot;Forward-looking robot-mounted view with both forearms entering from below. The green mottled zucchini protrudes upright from a white mug beside the empty dark blue plate on the robot&#x27;s left. Both hands initially open; a person stands beyond the table without participating.&quot;,
+  &quot;observed_sequence&quot;: [
+    {
+      &quot;frame_interval&quot;: [
+        0,
+        16
+      ],
+      &quot;action&quot;: &quot;Both hands remain open over the table; zucchini is upright inside the white mug.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        17,
+        55
+      ],
+      &quot;action&quot;: &quot;Left forearm advances from beside the empty blue plate toward the protruding zucchini; open fingers surround its exposed upper portion. Right hand stays open without contact.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        56,
+        72
+      ],
+      &quot;action&quot;: &quot;Left fingers close around the exposed zucchini and begin lifting it, with the lower portion initially still inside the mug.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        73,
+        90
+      ],
+      &quot;action&quot;: &quot;Left hand lifts the zucchini completely out of the mug and carries it leftward over the empty blue plate. Mug remains upright and empty on the table.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        91,
+        112
+      ],
+      &quot;action&quot;: &quot;Left hand lowers the held zucchini toward the blue plate while rotating it from upright toward a horizontal placement.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;frame_interval&quot;: [
+        113,
+        119
+      ],
+      &quot;action&quot;: &quot;Left fingers open as zucchini settles horizontally onto the blue plate. Hand stays close beside it at the endpoint; right hand remains open and uninvolved.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;
+    }
+  ],
+  &quot;arm_hand_roles&quot;: {
+    &quot;left&quot;: &quot;Only manipulating hand: grasps exposed zucchini, lifts it from the mug, transports it to the blue plate, lowers it and opens its fingers for placement.&quot;,
+    &quot;right&quot;: &quot;Remains open and away from objects throughout; no grasp, stabilizing contact or transfer.&quot;,
+    &quot;coordination&quot;: &quot;Single-hand manipulation; the right hand does not assist and no person participates.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;description&quot;: &quot;Source PNG is a forward-looking robot-mounted view, with forearms extending from the lower left and lower right toward the table. Their opposed thumb/palm orientation and continuous wrist-to-forearm attachment identify the active lower-left forearm as the robot&#x27;s left arm, consistent with the original left-hand annotation. The right forearm remains continuously visible on the opposite side.&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;limitations&quot;: &quot;Shoulders and torso are outside the robot-mounted camera view; naming uses embodied forward perspective and visible forearm/hand orientation.&quot;
+  },
+  &quot;terminal_state&quot;: &quot;Zucchini lies horizontally on the blue plate; white mug is upright and empty. Left fingers are open beside the zucchini and the thumb remains nearby; no complete withdrawal is shown. Right hand is still open away from the manipulation.&quot;,
+  &quot;uncertainties&quot;: [
+    &quot;The exact final thumb-to-zucchini separation is partly obscured; the fingers visibly open and the zucchini settles on the plate, but full hand withdrawal is not shown.&quot;
+  ],
+  &quot;annotation_discrepancies&quot;: [],
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    44,
+    60,
+    72,
+    80,
+    90,
+    108,
+    112,
+    116,
+    119
+  ],
+  &quot;selected_execution_status&quot;: &quot;success&quot;,
+  &quot;inspection_coverage&quot;: {
+    &quot;full_source_frame_range&quot;: [
+      0,
+      119
+    ],
+    &quot;sampled_frames&quot;: &quot;Every second source frame from 0 through 118; all 60 sampled frames visually inspected in the single returned contact sheet.&quot;,
+    &quot;native_frames&quot;: [
+      44,
+      60,
+      72,
+      80,
+      90,
+      108,
+      112,
+      116,
+      119
+    ],
+    &quot;source_initial_png_inspected_at_native_resolution&quot;: true
+  },
+  &quot;video_id&quot;: &quot;26&quot;,
+  &quot;dataset&quot;: &quot;NVIDIA_GR1_100&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_gr1_26&quot;,
+  &quot;review_source_video&quot;: &quot;NVIDIA_GR1_100/26/original/original.mp4&quot;,
+  &quot;source_frame_count&quot;: 120,
+  &quot;source_fps&quot;: 20.0,
+  &quot;native_detail_frames&quot;: [
+    44,
+    60,
+    72,
+    80,
+    90,
+    108,
+    112,
+    116,
+    119
+  ],
+  &quot;world_model_prompt&quot;: &quot;The robot uses its left hand to grasp the green zucchini protruding from the white mug and lift it completely out. It carries the zucchini over the empty blue plate, lowers it, and opens its fingers to leave it lying on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;original_task_instruction&quot;: &quot;Use the left hand to pick up zucchini from inside white mug to blue plate.&quot;,
+  &quot;selected_segment&quot;: {
+    &quot;start_frame&quot;: 0,
+    &quot;end_frame_exclusive&quot;: 120,
+    &quot;reason&quot;: &quot;Complete original single-task reference; no cropping or trimming requested.&quot;
+  },
+  &quot;source_video_sha256&quot;: &quot;3a2decf9aac895a9dfa53f51f120a6da8d16d056c8818dadb6915c0956c7e456&quot;,
+  &quot;review_completed_at&quot;: &quot;2026-10-13T17:51:50.037470+00:00&quot;
+}</pre></details>
+<nav class="pager"><a rel="prev" href="../../NVIDIA_GR1_100/25/index.html">← Video 25</a><a rel="next" href="../../NVIDIA_GR1_100/27/index.html">Video 27 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>
