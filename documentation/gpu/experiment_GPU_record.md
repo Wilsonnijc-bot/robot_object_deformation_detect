@@ -928,3 +928,243 @@ Other cleanup candidates, including VLM Finger results, were not deleted.
 
 Server verification receipt, completed 2026-10-09T02:23:17Z (2026-10-08 ET):
 `/PHShome_actual/z/zy992/Wilson/deformationdetection/metadata/cleanup-megasam-intermediates-20261009T022317Z.json`.
+
+## Reg2Inv scoring with two registration methods — 2026-10-12
+
+- **Status:** completed (job 5855643, exit 0). Results deleted on October 14, 2026 at the user's request, locally and on ERIS (scores, correlations, CAD banks, case archives, replay, metadata, scratch, input bundle). The method-independent observation clouds were first copied and verified into `robot/experiments/reg2inv_frame0/observations/` on ERIS. The GPU usage record below is kept.
+- **Optimization audit (2026-10-13):** user authorized throughput optimization.
+  A bounded saved-observation profile runs inside the existing allocation, in
+  an additional owned tmux window; the five scientific workers remain active.
+  No shared model/environment or completed output is changed. Profile and
+  acceptance evidence go under `metadata/performance/`; execution changes must
+  retain the frozen scorer, CAD banks and registration settings and pass
+  representative numerical checks before being used for remaining frames.
+- **Accepted optimization:** profiling one difficult saved Link5 observation
+  measured 113.85 s in Open3D RANSAC out of 125.07 s total (cold imports included).
+  Float64 GPU nearest-point hypothesis evaluation, original Open3D estimation
+  for degenerate samples, and immutable-CAD caches passed six real native score
+  controls exactly, 96 fixed-hypothesis checks, six exact feature/cache checks,
+  early-convergence/degenerate/empty-correspondence checks, and an eight-observation
+  full paired-score pilot. FoundationPose point scores matched the original
+  preflight exactly; four native scorer/metric-pose reproduction checks passed.
+  Pilot steady frame/link times were about 1.0–1.2 s; RANSAC about 0.20–0.26 s.
+  Sampling is serial MT19937 rather than OpenMP interleaving, so universal pose
+  equivalence is not claimed. Iteration cap 50,000, confidence 0.9999, CAD banks,
+  masks, weights and scoring rule are unchanged. GPU/cache source hashes and
+  acceptance scope are in `metadata/performance/optimization-accepted.json`.
+  Same-allocation restart preserved 1,620 CPU frame/link archives and all other
+  jobs. Original owned worker groups exited on the requested reconfiguration;
+  their exit 130/log/telemetry are retained as `before-optimization-*`. New
+  launcher snapshot is `metadata/launchers/optimized-v6/`; production remains
+  exactly five workers on one H200. New frames record backend/source hashes;
+  the summarizer verifies them and reports CPU/GPU backend counts.
+- **Batch capacity optimization:** under the five-worker live workload, the
+  bounded batch comparison measured 256 hypotheses at 2.68/3.07 s, 4,096 at
+  0.267/0.226 s, 16,384 at 0.185/0.149 s, and the largest memory-bounded batch
+  at 0.155/0.120 s. All eight runs preserved the normalized float32 pose;
+  float64 differences were below 1e-12. Distance matrices are bounded to
+  64 million elements per worker, with a requested 50,000-hypothesis batch.
+  Six real native controls and the eight-observation full pipeline were
+  rechecked; native scores and FoundationPose point scores matched exactly.
+  A second same-allocation reconfiguration retained 2,310 numeric archives;
+  launcher `optimized-v7/`, prior v6 log/exit/telemetry and acceptance receipt
+  are retained. Both accepted execution source hashes remain valid for resume
+  and final verification. Five workers and the single H200 remain unchanged.
+- **Production measurement:** optimized-v7 saved 72 frame/link archives in
+  48.20 s (1.494/s), compared with approximately 0.119/s over the CPU run
+  before reconfiguration: about 13× throughput. GPU utilization was 100% in
+  all seven samples, with observed peak 27,342 MiB. Recent 30 observations
+  averaged 0.436 s extraction/registration (RANSAC 0.145 s), 2.693 s
+  FoundationPose and 0.118 s scoring under five-way sharing. FoundationPose
+  now dominates. At the subsequent check, 11/45 videos were complete and
+  2,670/9,930 archives existed; all five current logs had no traceback.
+- **Provider:** MGB ERIS, Slurm `gpu-h200`, account `wang`.
+- **Instance/allocation ID:** first full job `5855383` on `erishpc-gpu-002`,
+  H200 UUID `GPU-ff938208-5f21-8d64-d466-629365851e7c` (143,771 MiB),
+  observed inside its allocation; startup check `5855212`. Earlier check `5843404` failed
+  on a missing `decorator` dependency; its dependent full job `5843432` was
+  automatically cancelled before starting. The missing dependency was installed
+  only in the owned environment and its import passed. Check `5855202` then
+  failed on an installed `utils` package shadowing Reg2Inv utilities. A
+  packaging-only `utils/__init__.py` now pins the upstream directory.
+  Check `5855212` passed all GPU/model/scorer assertions and produced 8/8 paired
+  observations, then exited 1 because the final Git metadata command was absent.
+  `recover_preflight_metadata.py` audited completed archives, source control flow
+  and the sole terminal failure; the Git module supplied the exact revision.
+  The recovered receipt explicitly retains exit 1 and the unknown startup UUID.
+  Four native scorer-equivalence/metric-pose assertions passed. No inference was
+  repeated solely to recover metadata. Full runtime rechecks CUDA and records its GPU.
+- **Purpose:** score link2/link5 on all 45 selected videos with the official
+  Reg2Inv anomaly scorer, comparing native Reg2Inv and FoundationPose registration.
+- **Method:** 4,965 original frames; shared CAD bank, invariant features and
+  scoring support between registration arms; independent FoundationPose registration
+  with 10 refinement iterations. Mean available frame score per video/link/method,
+  plus per-frame availability and point correspondence. Retain five mask-review
+  quality flags. Reuse 40 verified native CVD caches and rebuild the missing five
+  from retained masks, without new SAM/VLM calls. No training or CAD-anchor score.
+- **Key dependencies:** owned venv over read-only FoundationPose dependencies;
+  PyTorch 2.8/CUDA 12.8 runtime, CUDA 12.9 build toolkit, NumPy 1.26.4;
+  Reg2Inv `4dfb3470353cd239966c3522d6fc5dd57323f327`;
+  official checkpoint SHA-256
+  `2edcce83f8fe6ab2573831ef61bcd663b2e2c3f2dac4fded3365022ec1ac60c3`.
+  CPU environment setup `5843402` completed with exit `0:0` and `SETUP_COMPLETE`.
+- **Scheduling:** one H200 at a time; full request 16 CPUs/96 GiB, 12-hour
+  limit. Video concurrency is separate from GPU count, starts at five where
+  measured memory permits, and increases only with measured throughput/headroom.
+  The full job has nice=1000 to remain behind the user's other job. No unrelated
+  allocation, process, environment or output is modified. The original dependent full job was cancelled automatically on startup failure.
+  Initial 40-CPU/192-GiB request had an estimated six-hour queue wait; the owned
+  pending job was reduced to 16 CPUs/96 GiB to fit the currently free H200 node
+  capacity. Capacity trials cover five/eight workers (CPU-limited ceiling).
+- **Execution:** dedicated tmux socket/session
+  `reg2inv-fp-5855643` / `reg2inv-fp-experiment-5855643`; durable stdout/stderr and
+  explicit exit file under `results/20261012/metadata/experiment-5855643.*`.
+  Entry point `orchestrate.py` validates the startup receipt before any experiment.
+  Launcher snapshot: `metadata/launchers/end-to-end-v3/`. Local read-only collector
+  `collect_when_complete.py` observes this job, requires exit 0 and the completion
+  marker, collects numeric artifacts and both score files, and verifies hashes
+  and row/case counts before updating this ledger. It submits/cancels no GPU job.
+- **Results:** deleted October 14, 2026 at the user's request; no CAD-reference scores remain.
+- **Artifacts:** deleted October 14, 2026. Code, checkpoint, environment and native build remain at `robot/experiments/reg2inv_foundationpose/` and `/PHShome/zy992/Wilson/deformationdetection/workspace-reg2inv-foundationpose-20261012/robot/experiments/reg2inv_foundationpose/`.
+- **Notes:** the FoundationPose arm replaces the rigid pose in Reg2Inv position
+  features and is a new ablation, rather than an official upstream mode.
+  Startup must verify native scorer equivalence and metric/normalized pose
+  roundtrip on real observations. Setup failures (load order, missing libGL,
+  unreachable conda endpoint) were corrected inside owned paths; failed/cancelled
+  setup logs are retained. No GPU run is claimed completed from queue submission.
+- **Retry:** full job `5855383` failed during missing-cache preparation, before scoring,
+  because RAFT utilities were shadowed by another package. Native CVD was required
+  and fallback rejected. Failed logs/provenance are preserved under
+  `metadata/failed/5855383/`. New job `5855542` uses packaging-only copies in owned
+  scratch directories, resumes the two completed raw-DROID stages, and reruns
+  interrupted preparation for the other three. Shared MegaSAM files are unchanged.
+- **Latest scheduling instruction:** user requested each video end-to-end with five
+  videos in parallel. Job `5855542` was cancelled (only this experiment) and
+  replaced by `5855643`; global geometry batching and capacity trials were removed.
+  Five persistent workers each prepare/verify depth, load/reuse their models,
+  register and score every frame, then take another video. Job `5855678` is a
+  sequential guarded continuation for the 12-hour allocation limit: afternotok
+  dependency, but the immutable launcher permits model execution only after
+  `5855643` has state TIMEOUT. Successful completion invalidates/cancels the
+  continuation automatically. A stop request cancels both `5855678` and `5855643`.
+  The collector follows a timeout into the continuation and verifies only final
+  completed artifacts. User request takes precedence over the earlier capacity
+  sweep plan. Completed outputs and all frozen scoring inputs are preserved.
+- **Telemetry compatibility:** PyTorch returned a UUID without `GPU-`, which
+  the system `nvidia-smi` rejected. An owned venv command shim normalizes this
+  argument and calls `/usr/bin/nvidia-smi`. The query was reverified in the
+  allocation. Startup telemetry errors are retained; later observed peaks and
+  utilization use valid samples. This does not change scoring or shared tools.
+- **Progress check:** approximately 23 minutes into `5855643`, five workers
+  active, 0 complete videos, 112 frame/link archives (224 paired scalar scores);
+  no worker traceback. CPU utilization about 1.55–1.81 cores per worker at the
+  sample, with GPU idle at that instant: native registration dominates. The
+  observed pace may exceed two 12-hour allocations. Guarded third allocation
+  `5856720` was queued with afternotok dependencies on both predecessors; its
+  launcher permits model execution only if `5855678` timed out. No GPU count
+  or five-video concurrency increase. A stop cancels `5856720`, `5855678` and
+  `5855643`; successful completion invalidates the remaining dependencies.
+
+## MoSE3 3D tracking of PDI-initialized Link2/Link5 points — 2026-10-12
+
+- **Status:** completed; 45/45 videos, exit 0. Results collected locally and hash verified (180 files).
+- **Provider:** MGB ERIS, Slurm, account `wang`. Query initialization: CPU job `5843142` on
+  `interactive` (`erishpc-compute-038`, 16 CPUs; an earlier `short` submission `5843041` was
+  cancelled before starting). Smoke test `5843209` (2 videos, 2 workers, `erishpc-gpu-001`).
+  Full run `5843370` on `erishpc-gpu-002`, one H200 `GPU-8c368eb7-59f8-9cb7-674b-fbaf81311879`,
+  32 CPUs, 256 GB, elapsed 7 min 47 s.
+- **Purpose:** apply MoSE3 (NeurIPS 2026) to the points PDI's CoTracker sampler would choose,
+  producing per-point 3D trajectories, visibility, 16-D rigidity embeddings, per-point SE(3)
+  and a MoSE3-style replay.
+- **Method:** the selected 45 videos, 4,965 original frames. Queries come from the unchanged
+  `TrackWrapper.prepare_multi` sampler on frame-zero masks: 256 Link2 (four-way six-link base
+  masks) and 100 Link5 (latest guarded cache) per video. No PDI pair graph is used. MoSE3 runs one
+  pass over every frame at 518 px (query frame 0, bf16), reads its dense fields bilinearly at the
+  queries (nearest at depth edges) and fits a per-query weighted-Horn SE(3) identical to upstream.
+  Five user-rejected or excluded Link5 masks are flagged, not dropped.
+- **Key dependencies:** new isolated `dependency/env/mose3`: Python 3.10, Torch 2.6.0+cu126,
+  NumPy 1.26.4, OpenCV headless 4.11.0.86. MoSE3 source `c39ef00f7198515d709f40c668688d4f869255ae`
+  in `dependency/source/MoSE3`; weights `mose3-tracker/MoSE3@5280ca2ea4c8cf41ac174645fd3aada430af7f40`
+  (CC BY-NC 4.0) in `dependency/models/mose3`. Query stage used the PDI geometry env
+  (OpenCV 4.11.0, sampler `cotracker_core.py` SHA-256 `a8d359af…`).
+- **Capacity:** GPUs 1; video workers 5 concurrent on that GPU, chosen before launch, maximum 8.
+  Each worker loaded MoSE3 once (30–31 s under contention) and claimed videos longest first.
+  Baseline wave of five 189-frame videos: 6.99 source frames/s, peak 126,481 / 143,771 MiB.
+  The measured per-worker peak plus 2 GiB headroom (27.5 GB) allows only 4 workers below 85%
+  of the card, so no larger trial ran and 5 were retained. GPU utilization averaged 89%
+  (median 100%); the run is compute bound. Peak reserved per video: 11.4 GB at 49 frames,
+  15.1 GB at 93, 25.4 GB at 189. Mean wall time per video under 5-way sharing: 10.0, 24.9 and
+  95.6 s. Whole run: 4,965 frames in 431 s (11.5 frames/s). No failures or OOM retries.
+- **Results:** every video kept all 256 Link2 and 100 Link5 points. Median last-frame
+  visibility was 0.96 (Link2) and 0.95 (Link5); lowest Link5 was `LVP_ROBOWM_0065` at 0.45
+  (the link leaves the frame). Points touching a MoSE3 depth edge carry about 3× the
+  rigid-fit residual of interior points, so scores are reported for all points and for interior
+  points. These are diagnostics, not validated deformation detectors; no label correlation was
+  computed.
+- **Artifacts:** remote `/PHShome/zy992/Wilson/deformationdetection/workspace-mose3-tracking-20261012/results/mose3_tracking/20261012/`
+  (`inputs/`, `queries/`, `cases/`, `metadata/allocation-5843370/` with telemetry, status,
+  capacity decision and summary). Superseded smoke outputs are kept as `cases-smoke-5843209-superseded/`.
+  Local `robot/experiments/mose3_tracking/results/20261012/` with `rigidity_scores.csv`,
+  `collection.json` and the interactive `replay/index.html`.
+- **Notes:** after the smoke test, the worker gained interior-point summaries and frame-zero
+  reprojection QA; source hashes before and after that update are in the run metadata, and the
+  full run used only the updated code.
+
+## MoSE3 display-only rigidity-embedding render — 2026-10-12
+
+- **Status:** completed; 45/45 videos, both jobs exit 0; renders collected and hash verified.
+- **Provider:** MGB ERIS, account `wang`. An H200 submission (`5856085`) waited with all 16 H200s
+  allocated and was cancelled before it started. At the user's request ("find a usable GPU"), the pass
+  ran as two 1-GPU jobs on the idle `gpu-l40s` node `erishpc-gpu-004`: `5856686`
+  (`GPU-eefe4b23-b012-1a01-da27-649a7e0852ff`, 23 videos) and `5856687`
+  (`GPU-f6af6362-6139-d9b8-27c2-0e7a8251b95e`, 22 videos). Each job had 16 CPUs and 128 GB; the two
+  video halves are disjoint and length-balanced. This deviates from the one-H200 rule because no H200
+  was available. The pass is display-only; every scientific array comes from H200 run `5843370`.
+- **Purpose:** upstream MoSE3 rigidity-embedding view (`pca_rgb` over every frame) for the replay; the
+  tracking run keeps the embedding only at its query points.
+- **Method:** `render_worker.py` repeats the tracking forward pass (same frames, grid, query frame 0,
+  bf16) and writes `rigidity_pca.mp4`. It re-samples the saved queries and compares them with the saved
+  trajectories.
+- **Capacity:** 1 worker per L40S (46,068 MiB). A 189-frame video peaked at 24,474 MiB; one more worker
+  would not fit the long clips. Mean GPU utilization was 64% and 61%. 189-frame videos took
+  45–52 s each; each job finished in about 470 s (4,965 frames in total).
+- **QA:** reproduction relative to median scene depth: per-video median at most 0.0017, p99 at most
+  0.022, single largest deviation 0.067 (bf16 across GPU types). Renders are not used for any score.
+- **Artifacts:** remote `.../workspace-mose3-tracking-20261012/results/mose3_tracking/20261012/renders/`
+  and `metadata/allocation-585668{6,7}/`; local copy under
+  `robot/experiments/mose3_tracking/results/20261012/renders/`. Replay rebuilt at
+  `results/20261012/replay/index.html` with all seven views for every video.
+
+## Reg2Inv frame-0 normal reference, first 30 videos — 2026-10-13
+
+- **Status:** superseded. The watcher's controller wait expired at 03:45 on October 14 before it submitted anything. Resubmitted job 5881590 failed its GPU preflight because COSMOS3_0001 Link2 had insufficient score support. See the October 14 rerun below.
+- **Provider / instance:** MGB ERIS Slurm cluster `erishpc`, account `wang`, partition `gpu-h200`. New allocation/GPU UUID not yet assigned. Rechecked on October 13: both controllers report DOWN and their TCP6817 ports refuse connections. Current cached node configuration lists 16 H200s across gpu001/002 and six L40S across gpu003/004/005; free/allocatable count is unknown while live Slurm inventory is inaccessible. Read-only compute-node inspection was denied by pam_slurm_adopt without an active allocation; no work ran outside Slurm.
+- **Purpose:** rerun the first 30 original manifest entries (15 COSMOS2.5, 15 COSMOS3), all frames and both Link2/upperarm and Link5/forearm, substituting each video's own frame-0 cloud for the CAD reference. User explicitly selected Reg2Inv only.
+- **Method:** 60 frozen frame-0-only normal banks; unchanged official pretrained checkpoint, reference-derived normalization, 1-NN feature discrepancy, 64-neighbor pooling, maximum patch scorer and previously validated float64 GPU RANSAC. Saved camera clouds/depth filtering reused exactly. No CAD, FoundationPose, reconstructed mesh, later-frame normal-bank points or new segmentation/depth inference.
+- **Validation:** all 60 normal XYZ/pixel arrays exactly matched the original frame-0 observations; all 8,460 source archives and checkpoint/core hashes verified on ERIS. CPU orchestration imports passed. A preliminary worker import on the login node correctly rejected missing CUDA; actual allocation preflight must verify CUDA and four native scorer controls before execution. Input/validation receipts are retained; no GPU result claimed.
+- **Execution:** one dedicated H200, 24 CPUs/128 GiB requested for 8 hours. Matched 12-video/eight-frame capacity trials compare 5/8/12 end-to-end workers after normal-bank warmup; increase only with >2% measured throughput improvement and <85% memory use. GPU allocation is separate from worker count. No other allocation is modified; no dependent jobs.
+- **Recovery watcher:** owned tmux socket/session `frame0-submit-20261013`, restarted and verified active PID547113 on erishpc-login-001; `wait_and_submit.py` waits for controller recovery, submits once, requires scheduled CUDA/scorer preflight, and observes completion. Durable `metadata/controller-watcher.log` and `.exit`, `run_status.json`, `watcher.json`; allocated execution socket/session `reg2inv-frame0-JOBID` / `frame0-experiment-JOBID`, explicit per-job log/exit receipt. Local read-only collector PID33241 is active. Stop request prevents submission or cancels only its recorded job. Initial watcher rejected a stale code receipt before submission; final input validation passed against frozen scientific code SHA4dc4d2549d78a19bd830e58c81b68ef09a0e21a94b32b07a80e47fdab5af8811. A subsequent transient controller-UP response followed by squeue timeout exited before any sbatch call; logs/exit preserved as controller-watcher-transient-timeout.*. Corrected read-only readiness queries to retry on timeout, regression verified no sbatch after that failure, and restarted the watcher. Submission uncertainty still never triggers an automatic duplicate submission.
+- **Acceleration parity:** metadata/acceleration_audit.json verifies exact final-v7 GPU RANSAC and geometry/backbone-cache source hashes against the completed run's acceptance receipt. Same float64 precision, 50,000 requested hypothesis batch and iteration ceiling, 64,000,000 distance-element batch cap, cached reference CUDA spatial grid, multiscale geometry and backbone features. Persistent end-to-end video lanes, exact saved query reuse and two threads per worker are configured. Actual frame-0 runtime throughput/cache validation remains pending the scheduled preflight and matched 5/8/12-worker trials.
+- **Results:** pending; expected 60 video/link score rows and 8,460 frame/link results from 4,230 source frames. Frame 0 is scored normally, not forced to zero. Scores measure deviation from that reference; it is not certified healthy geometry.
+- **Artifacts:** local owner `robot/experiments/reg2inv_frame0/results/20261013/`; remote `/PHShome/zy992/Wilson/deformationdetection/workspace-reg2inv-frame0-20261013/robot/experiments/reg2inv_frame0/results/20261013/`. Read-only local collector verifies both score CSV hashes and all numeric archives before marking completed. The CAD-reference results were deleted on October 14 at the user's request.
+
+## Reg2Inv frame-0 normal reference, first 30 videos — 2026-10-14 rerun
+
+- **Status:** completed; Job 5882225 exited 0; 30 videos, 60 video/link scores, 8,460 frame/link results collected and verified. Available: 8460. Frame-0 normal references only; no CAD or FoundationPose.
+- **Provider / instance:** MGB ERIS `erishpc`, account `wang`, partition `gpu-h200`, node erishpc-gpu-001. One NVIDIA H200, UUID `d8235122-c9cd-e0f8-96c2-77f122038536`. Requested 24 CPUs, 128 GiB and 8 hours. Slurm elapsed time was 14:28 (16:01:03–16:15:31 EDT), exit 0:0.
+- **Purpose:** same design as the October 13 entry: first 30 videos, all frames, Link2 and Link5, each video's own frame-0 cloud as the Reg2Inv normal reference. The only change is a Link2 observation filter, added at the user's direction.
+- **Change:** `link2_islands.py` runs after the shared Link5 density filter, on Link2 only, for frame 0 and every test frame. It removes a detached 8-connected island of retained pixels when its median depth is more than 0.25 m from the largest island's. Detached Link2 islands sit either within 0.17 m or at least 0.334 m from the link's depth; none fall in between. The islands were background seen through gaps in the Link2 mask. They inflated all 15 COSMOS3 Link2 frame-0 radii (0.61–0.79 m, now 0.145–0.209 m). Of 4,230 Link2 observations, 3,077 change, losing at most 4.4% of points. Link5 is unchanged. This change affects the numbers.
+- **Validation:** CPU input validation re-hashed all 8,460 source observations and re-derived all 60 filtered references, then passed. The scheduled preflight passed CUDA/H200 checks and four native scorer-equivalence checks. COSMOS3_0001 Link2 scored on frames 0 and 1.
+- **Execution:** worker trials on the same 12 videos and 8 frames each: 5 workers gave 7.79 frame-links/s (13.4 GiB peak), 8 gave 8.78 (21.3 GiB), 12 gave 9.63 (31.5 GiB). 12 workers were selected; the 24-CPU request allowed at most 12. The full phase ran 8,460 frame-links in 652.5 s (12.96/s), peaking at 32.8 GiB with 94% mean GPU utilization. No dependent jobs; no other allocations modified.
+- **Results:** Job 5882225 exited 0; 30 videos, 60 video/link scores, 8,460 frame/link results collected and verified. Available: 8460. Frame-0 normal references only; no CAD or FoundationPose.
+- **Artifacts:** local `robot/experiments/reg2inv_frame0/results/20261014/`; remote `/PHShome/zy992/Wilson/deformationdetection/workspace-reg2inv-frame0-20261013/robot/experiments/reg2inv_frame0/results/20261014/`. The failed October 13 root is preserved; the CAD-reference results were deleted on October 14 at the user's request.
+
+## Reg2Inv frame-0 normal reference, all 45 videos — 2026-10-14
+
+- **Status:** completed; Job 5883877 exited 0; 45 videos, 90 video/link scores, 9,930 frame/link results collected and verified. Available: 9,930. Frame-0 normal references only; no CAD or FoundationPose.
+- **Provider / instance:** MGB ERIS `erishpc`, account `wang`, partition `gpu-h200`, node erishpc-gpu-001, one H200. 24 CPUs, 128 GiB, 8 hours requested.
+- **Purpose:** the October 14 frame-0 design (including the Link2 detached-island filter) on all 45 selected videos: the earlier 30 plus 15 LVP_ROBOWM, 4,965 frames, 9,930 frame-links. One run, so every result shares one manifest and code hash.
+- **Inputs:** before the CAD-reference results were deleted, the method-independent observation clouds (XYZ, pixels, intrinsics, depth-filter receipt) were copied into `reg2inv_frame0/observations/`. Each array was re-read and compared exactly with its source. The 0.25 m island threshold also sits in an empty depth-gap interval for the LVP videos (0.098–0.347 m). CPU validation re-hashed all 9,930 observations and re-derived all 90 frame-0 references.
+- **Execution:** H200 UUID `1b8d7fb2-66c8-ad11-fde5-a0231c7c0a47`; Slurm elapsed time 16:38 (16:49:42–17:06:20 EDT), exit 0:0. Worker trials: 5 workers gave 7.55 frame-links/s (13.4 GiB), 8 gave 8.54 (21.3 GiB), 12 gave 9.19 (31.5 GiB); 12 were selected. The full phase scored 9,930 frame-links in 759.2 s (13.08/s), peaking at 32.8 GiB with 98% mean GPU utilization. No dependent jobs.
+- **Results:** Job 5883877 exited 0; 45 videos, 90 video/link scores, 9,930 frame/link results collected and verified. Available: 9,930. Frame-0 normal references only; no CAD or FoundationPose.
+- **Artifacts:** local `robot/experiments/reg2inv_frame0/results/20261014-45/`; remote `/PHShome/zy992/Wilson/deformationdetection/workspace-reg2inv-frame0-20261013/robot/experiments/reg2inv_frame0/results/20261014-45/`; observation store `.../reg2inv_frame0/observations/` on ERIS.
