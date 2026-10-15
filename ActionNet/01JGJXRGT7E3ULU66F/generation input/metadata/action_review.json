@@ -6,7 +6,7 @@
   "review_scope": "One dedicated agent reviewed the complete unchanged 420-frame top/rgb.mp4 and the generation first frame. Full single-task sequence retained.",
   "source_video": "../../original/top/rgb.mp4",
   "conditioning_first_frame": "../first_frame.png",
-  "generation_video": "../video.mp4",
+  "generation_video": "../../original/top/rgb.mp4",
   "action_prompt": "../actiongeneration_prompt.txt",
   "source_frame_start": 0,
   "source_frame_end_exclusive": 420,

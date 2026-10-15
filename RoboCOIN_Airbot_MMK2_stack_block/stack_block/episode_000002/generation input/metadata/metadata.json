@@ -11,9 +11,8 @@
     "length": 283
   },
   "view": "observation.images.cam_head_rgb",
-  "variant": "full_sequence_pending_visual_review",
-  "review_status": "pending_visual_review",
-  "prompt_status": "not_yet_authored",
+  "variant": "full_sequence",
+  "review_status": "visually_reviewed",
   "source_video": "../../original/videos/chunk-000/observation.images.cam_head_rgb/episode_000002.mp4",
   "relative_video_path": "../video.mp4",
   "relative_first_frame_path": "../first_frame.png",
@@ -41,6 +40,12 @@
     "generation_frames_match_source_decode": true,
     "generation_resolution_matches_source": true
   },
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "generation_prompt": "The robot's left hand closes its fingers and thumb around the green cube, lifts it, carries it toward the table center, sets it down and opens, then withdraws. The right hand then pinches the small green cylinder from the right side, carries it to the cube, holds it on top of the cube, releases it so it rests on the cube's top face, and withdraws. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_sha256": "2777721f262e5697363cf331a6ccdd28cd7d425a6efad896f3685b66e7682f34",
   "data_quality_gate": {
     "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
     "documentation": "data_quality_gate.md (repository root)",

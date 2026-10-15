@@ -25,12 +25,234 @@
 <figcaption>Conditioning first frame</figcaption></figure>
 
 </div>
-<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt prompt--missing">No reviewed action prompt yet. The publisher instruction is below.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand.</p></section><section class="field"><h2>Quality gate</h2>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot&#x27;s left hand, on the left side of the view, grips the green cube between its thumb and fingers, lifts it, carries it toward the table center, sets it down and releases it. The robot&#x27;s right hand then closes its fingers around the green cylinder, lifts it, carries it over the cube, lowers it onto the cube&#x27;s top face and releases it, leaving the cylinder resting on top of the cube. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand.</p></section><section class="field"><h2>Quality gate</h2>
 <div class="gate"><span class="chip chip--exception" title="Sharpness 17.1 vs threshold 60">Exception<b>17</b></span><p>Sharpness <b>17.1</b> against 60
 (first-person). Measured on the 960 × 704 model view,
-upscale 1.50×.</p></div><p class="quiet">Visual-review exception (2026-10-15): edges of the hands and blocks are judged acceptable; the low score is driven mostly by the large untextured table.</p></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>176</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>5.87 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence pending visual review</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000/generation%20input/video.mp4">Generation video (original file)</a></li></ul></section></aside>
+upscale 1.50×.</p></div><p class="quiet">Visual-review exception (2026-10-15): edges of the hands and blocks are judged acceptable; the low score is driven mostly by the large untextured table.</p></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>176</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>5.87 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000/generation%20input/video.mp4">Generation video (original file)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/blob/data/robotvideo/RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000/generation%20input/metadata/action_review.json">Review JSON</a></li></ul></section></aside>
 </div>
-
+<details class="review"><summary>Visual review <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_protocol_note&quot;: &quot;Applied by analogy: this episode is a dual-arm Airbot MMK2 with five-finger dexterous hands, not a Humanoid Everyday or NVIDIA GR1 video. The humanoid_action_v1 rules (robot-relative side, per-hand roles, coordination, actual end state, shared constraint sentence, complete single-task clip) were used as written.&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;RoboCOIN/Airbot_MMK2_stack_block&quot;,
+  &quot;task&quot;: &quot;stack_block&quot;,
+  &quot;episode_id&quot;: &quot;episode_000000&quot;,
+  &quot;generation_camera&quot;: &quot;cam_head_rgb (robot first-person head camera)&quot;,
+  &quot;source_video&quot;: &quot;../../original/videos/chunk-000/observation.images.cam_head_rgb/episode_000000.mp4&quot;,
+  &quot;generation_video&quot;: &quot;../video.mp4&quot;,
+  &quot;conditioning_first_frame&quot;: &quot;../first_frame.png&quot;,
+  &quot;action_prompt&quot;: &quot;../actiongeneration_prompt.txt&quot;,
+  &quot;source_frame_count&quot;: 176,
+  &quot;fps&quot;: 30,
+  &quot;resolution&quot;: {
+    &quot;width&quot;: 640,
+    &quot;height&quot;: 480
+  },
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 176,
+  &quot;selection_reason&quot;: &quot;Complete single-task clip retained: left hand moves the cube to the table center, then right hand stacks the cylinder on it. Both phases belong to one stacking task, so the full 176-frame sequence is kept without cropping or first_substep splitting.&quot;,
+  &quot;usable_prompt&quot;: &quot;The robot&#x27;s left hand, on the left side of the view, grips the green cube between its thumb and fingers, lifts it, carries it toward the table center, sets it down and releases it. The robot&#x27;s right hand then closes its fingers around the green cylinder, lifts it, carries it over the cube, lowers it onto the cube&#x27;s top face and releases it, leaving the cylinder resting on top of the cube. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;frames&quot;: [
+        0,
+        12
+      ],
+      &quot;observation&quot;: &quot;Initial frame: robot-left hand (image left) is open and raised at the left edge with its thumb extended below it; robot-right hand (image right) is open at the right edge, mostly out of view. Green cube lies left of centre, green cylinder (green top with blue/yellow/white stripes on its side, hole in top) lies right of centre. The left hand advances toward the cube and tilts down; the right hand stays at the right edge.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        14,
+        24
+      ],
+      &quot;observation&quot;: &quot;Left hand lowers with the thumb on the table side of the cube and the fingers/palm side above and behind it; the fingers and thumb close on the cube (contact visible from about frame 14, firmly pinched by frame 24-25). The cube is held between thumb and the fingers/palm, not merely pushed.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        26,
+        46
+      ],
+      &quot;observation&quot;: &quot;Left hand lifts the cube and carries it toward the right and forward, the cube tilting in the grip (frames 36-46) with its shadow separated from it, while the forearm extends into view. The right hand remains static at the right edge.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        48,
+        58
+      ],
+      &quot;observation&quot;: &quot;Left hand lowers the cube onto the table near the table centre and the thumb backs off; by frame 58-60 the cube sits flat on the table and the hand is no longer holding it.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        60,
+        70
+      ],
+      &quot;observation&quot;: &quot;Left hand withdraws toward the left edge and stops with fingers open (it stays idle there until the end except for a small drift at frames 168-174). Right hand begins moving inward toward the cylinder.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        72,
+        96
+      ],
+      &quot;observation&quot;: &quot;Right hand arrives over/beside the cylinder with its palm facing down and fingers extended, then lowers; by about frame 84-96 the fingers wrap the cylinder&#x27;s sides and the thumb comes in underneath/beside it. The cylinder is partly hidden by the hand.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        98,
+        118
+      ],
+      &quot;observation&quot;: &quot;Right hand is nearly stationary with fingers curled around the cylinder, finishing the grasp (slow finger closure). The cylinder is still on the table, occluded.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        120,
+        134
+      ],
+      &quot;observation&quot;: &quot;Right hand lifts the cylinder off the table (visible raised and tilted in the fingers at about frames 126-134) and carries it left toward the cube, remaining in contact with the cylinder with fingers and thumb.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        136,
+        154
+      ],
+      &quot;observation&quot;: &quot;Right hand brings the cylinder over the cube and lowers it onto the cube&#x27;s top face (cylinder over cube at frames 136-142, resting on the top face with fingers still around it by frames 146-154).&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        156,
+        160
+      ],
+      &quot;observation&quot;: &quot;Fingers open and release; the thumb/lower fingers slide away. Cylinder stands upright on top of the cube with the hole facing up.&quot;
+    },
+    {
+      &quot;frames&quot;: [
+        162,
+        175
+      ],
+      &quot;observation&quot;: &quot;Right hand lifts and withdraws toward the upper right, ending partly out of frame. Cylinder remains upright on the cube; left hand still at the left edge, open. Final state: cylinder stacked on the cube near the table centre.&quot;
+    }
+  ],
+  &quot;anatomical_side_evidence&quot;: [
+    &quot;Head camera looks forward over the table; the hand entering from the image-left edge is the robot&#x27;s left hand and the one entering from the image-right edge is the right hand. This agrees with the other evidence below.&quot;,
+    &quot;Parquet telemetry: eef_sim_pose_state holds two end-effector poses (columns 0-5 and 6-11). The first has y = +0.21 at frame 0, moving to about +0.02 during frames 0-60 (the left-hand cube transport phase), then returns to +0.22 and stays still; the second has y = -0.18 and begins moving only after frame 60 (right-hand phase). With x forward, positive y is robot-left and negative y is robot-right.&quot;,
+    &quot;Wrist cameras: cam_left_wrist_rgb sees the green cube near the hand at frame 20, and cam_right_wrist_rgb sees the striped cylinder in the hand at frame 100. The front camera faces the robot, so its image is mirrored: the active hand at frame 20 is on the image-right there, matching robot-left.&quot;,
+    &quot;The Parquet column names were not available for the poses, so the pose-column to side mapping rests on the y-sign convention and its agreement with the head-camera and wrist-camera views.&quot;
+  ],
+  &quot;arm_roles&quot;: {
+    &quot;left&quot;: &quot;Acts first (frames about 14-60). Pinches the green cube between thumb and fingers/palm, lifts and carries it toward the table center, sets it down and releases it. Afterwards it is retracted at the left edge, open and idle; it does not touch the cylinder or the stack.&quot;,
+    &quot;right&quot;: &quot;Idle at the right edge until about frame 60. Then approaches the green cylinder, wraps fingers and thumb around it (grasp complete by about frame 98-118), lifts and carries it over the cube, lowers it onto the cube&#x27;s top face, opens to release it (frames 156-160) and withdraws upward and rightward.&quot;
+  },
+  &quot;coordination&quot;: &quot;Strictly sequential, no hand-to-hand transfer and no overlapping manipulation. The left hand finishes positioning the cube and has withdrawn (frame 60-70) before the right hand starts moving toward the cylinder; the right hand then stacks the cylinder onto the cube the left hand placed. The left hand provides no support during stacking.&quot;,
+  &quot;observed_outcome&quot;: {
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;description&quot;: &quot;The green cube ends at the table centre, sitting flat on the table; the striped green cylinder rests upright on the top face of the cube, with both hands withdrawn (left at the left edge, right retreating out of view at upper right). Nothing dropped; no regrasp. The placement of the cylinder appears roughly centred on the cube top; the final frame shows it stable.&quot;
+  },
+  &quot;source_annotation&quot;: {
+    &quot;task_prompt&quot;: &quot;place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand.&quot;,
+    &quot;scene_annotation&quot;: &quot;On the left, there is a green building block. On the right, there is another green building block.&quot;,
+    &quot;subtask_timeline&quot;: [
+      {
+        &quot;frames&quot;: [
+          0,
+          25
+        ],
+        &quot;label&quot;: &quot;Grasp the green build blocks with the left gripper&quot;
+      },
+      {
+        &quot;frames&quot;: [
+          26,
+          59
+        ],
+        &quot;label&quot;: &quot;Place the green build blocks on the center of the table with the left gripper&quot;
+      },
+      {
+        &quot;frames&quot;: [
+          60,
+          118
+        ],
+        &quot;label&quot;: &quot;Grasp the green cylindrical build blocks with the right gripper&quot;
+      },
+      {
+        &quot;frames&quot;: [
+          119,
+          155
+        ],
+        &quot;label&quot;: &quot;Place the green cylindrical build blocks on the green build blocks with the right gripper&quot;
+      },
+      {
+        &quot;frames&quot;: [
+          156,
+          175
+        ],
+        &quot;label&quot;: &quot;End&quot;
+      }
+    ]
+  },
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;Publisher text matches the visible task and sides (left hand: square block to the centre; right hand: cylinder on top).&quot;,
+    &quot;Subtask timing differs: &#x27;Grasp ... with the left gripper&#x27; covers frames 0-25, but the visible fingers close on the cube at roughly frames 14-25, with approach and hand pre-shaping from frame 0. &#x27;Place ... on the center&#x27; (26-59) actually includes lifting and carrying the cube; release is at about frame 58-60.&quot;,
+    &quot;&#x27;Grasp the green cylindrical build blocks with the right gripper&#x27; (60-118) mixes the right-hand approach (60-84) with a slow finger closure (84-118); the lift of the cylinder starts about frame 120-126, inside the publisher&#x27;s &#x27;Place&#x27; phase (119-155).&quot;,
+    &quot;&#x27;End&#x27; (156-175) starts at the visible release (156-160); frames 162-175 are the right hand withdrawing.&quot;,
+    &quot;Source subtask labels say &#x27;gripper&#x27; while the hands are five-finger dexterous hands; the prompt uses hand wording.&quot;,
+    &quot;The source scene text says &#x27;another green building block&#x27; on the right; it is a striped green cylinder (its sides show blue, yellow and white bands), not a second cube. The publisher also calls the cube &#x27;square building blocks&#x27; (plural); one cube and one cylinder are present.&quot;
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Exact finger-level grasp of the cube by the left hand (which fingers press) is partially occluded; the cube is described as pinched between the thumb and the fingers/palm side.&quot;,
+    &quot;Right-hand finger positions around the cylinder during frames 84-124 are occluded by the hand and the shadow; the lift moment is estimated at about frames 120-126 from the cylinder moving out of position.&quot;,
+    &quot;Exact frame at which the cylinder stops touching the right-hand fingers on the cube is around 156-160 because of motion blur at 160-164.&quot;,
+    &quot;Robot-relative left/right rests on head-view geometry, y-sign of the end-effector poses, and wrist-camera content, not on published pose column names.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;frames_decoded&quot;: 176,
+    &quot;frames_sampled_in_contact_sheets&quot;: 88,
+    &quot;sample_stride&quot;: 2,
+    &quot;sampled_frame_indices&quot;: &quot;0, 2, ..., 174 (every second decoded frame)&quot;,
+    &quot;native_resolution_frames_inspected&quot;: [
+      0,
+      24,
+      40,
+      58,
+      60,
+      74,
+      98,
+      124,
+      130,
+      136,
+      148,
+      156,
+      162,
+      175
+    ],
+    &quot;initial_png_inspected&quot;: true,
+    &quot;initial_png_note&quot;: &quot;generation input/first_frame.png inspected at native 640x480 after the full sequence; it matches decoded frame 0.&quot;,
+    &quot;other_cameras_and_telemetry_used&quot;: [
+      &quot;cam_left_wrist_rgb frames 20&quot;,
+      &quot;cam_right_wrist_rgb frames 100&quot;,
+      &quot;cam_front_rgb frames 20 and 100&quot;,
+      &quot;original parquet eef_sim_pose_state, eef_velocity_state, observation.state&quot;
+    ],
+    &quot;temporary_images_location&quot;: &quot;/tmp/rv_review/robocoin_episode_000000/ (deleted after review)&quot;
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    14,
+    24,
+    40,
+    58,
+    60,
+    74,
+    98,
+    124,
+    130,
+    136,
+    148,
+    156,
+    162,
+    175
+  ],
+  &quot;review_completed_at&quot;: &quot;2026-10-15T19:52:05Z&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_robocoin_episode_000000&quot;
+}</pre></details>
 <nav class="pager"><span></span><a rel="next" href="../../../RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000001/index.html">Episode 000001 →</a></nav>
 </article>
 </main>

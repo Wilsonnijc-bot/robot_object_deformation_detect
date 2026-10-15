@@ -1,6 +1,6 @@
 """Build episode folders for the fifteen episodes fetched by fetch_more.py.
 
-Usage: ../.venv/bin/python prepare_more.py /path/to/work_directory
+Usage: ../.venv/bin/python prepare_more.py /path/to/work_directory [download_record_file]
 
 Uses the same per-episode builder as prepare_sample.py. Embodiment, generation camera and folder
 naming follow the first three episodes.
@@ -20,7 +20,7 @@ EMBODIMENTS = {
 
 def main():
     work = Path(sys.argv[1]).resolve()
-    record = json.loads((work / 'download_record_more.json').read_text())
+    record = json.loads((work / (sys.argv[2] if len(sys.argv) > 2 else 'download_record_more.json')).read_text())
     for entry in record['entries']:
         prefix, embodiment, camera = EMBODIMENTS[entry['embodiment_key']]
         parts = PurePosixPath(entry['archive_member']).parts

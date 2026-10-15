@@ -1,11 +1,14 @@
 """Create and verify the generation references chosen by the visual reviewers.
 
+Usage: ../.venv/bin/python finalize_sample.py [episode_id ...]   (default: every episode)
+
 Each video.mp4 is a lossless H.264 (yuvj420p, full range) encoding of the first N stored JPEG
 frames of the generation camera, with no cropping, resizing or FPS conversion. Every frame's YUV
 checksum must equal the checksum of the stored JPEG decoded directly.
 """
 import json
 import subprocess
+import sys
 
 from PIL import Image
 
@@ -15,7 +18,10 @@ from robomind_common import CONSTRAINT, NOMINAL_FPS, ROOT, ffmpeg_jpeg_pipe, jpe
 
 
 def main():
+    only = set(sys.argv[1:])
     for generation in sorted(ROOT.glob('*/*/generation input')):
+        if only and generation.parent.name not in only:
+            continue
         metadata_path = generation / 'metadata/metadata.json'
         review_path = generation / 'metadata/action_review.json'
         metadata = json.loads(metadata_path.read_text())

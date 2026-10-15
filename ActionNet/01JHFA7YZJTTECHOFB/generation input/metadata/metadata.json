@@ -5,7 +5,7 @@
   "view": "top",
   "source_repository_commit": "eb3b5bb16f3a5a7052c1498c1072e78ac99042d0",
   "source_video": "../../original/top/rgb.mp4",
-  "relative_video_path": "../video.mp4",
+  "relative_video_path": "../../original/top/rgb.mp4",
   "relative_first_frame_path": "../first_frame.png",
   "relative_prompt_path": "../actiongeneration_prompt.txt",
   "action_review_path": "action_review.json",
@@ -38,6 +38,7 @@
   "prompt_provenance": "visually_authored_from_video_and_initial_frame",
   "review_status": "complete",
   "generation_prompt": "The robot uses the hand entering from the lower-right edge to close its fingers and thumb around the yellow tape measure on the red mat, lift it, and carry it into the white cabinet. It lowers the tape measure onto the cabinet floor, opens its hand to release it, and withdraws to the right. The same hand then reaches the open door and pushes it with extended fingertips, swinging it nearly shut over the cabinet opening. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "generation_video_is_source": true,
   "data_quality_gate": {
     "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
     "documentation": "data_quality_gate.md (repository root)",

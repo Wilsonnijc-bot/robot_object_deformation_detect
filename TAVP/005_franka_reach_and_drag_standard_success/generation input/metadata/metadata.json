@@ -44,7 +44,7 @@
   ],
   "manual_annotation_review_needed": true,
   "action_review_path": "005_franka_reach_and_drag_standard_success/generation input/metadata/action_review.json",
-  "relative_video_path": "005_franka_reach_and_drag_standard_success/generation input/video.mp4",
+  "relative_video_path": "005_franka_reach_and_drag_standard_success/original/video.mp4",
   "relative_first_frame_path": "005_franka_reach_and_drag_standard_success/generation input/first_frame.png",
   "relative_prompt_path": "005_franka_reach_and_drag_standard_success/generation input/prompt.txt",
   "relative_metadata_path": "005_franka_reach_and_drag_standard_success/generation input/metadata/metadata.json",
@@ -59,6 +59,7 @@
     "prompt_nonempty": true
   },
   "validation_status": "passed",
+  "generation_video_is_source": true,
   "data_quality_gate": {
     "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
     "documentation": "data_quality_gate.md (repository root)",

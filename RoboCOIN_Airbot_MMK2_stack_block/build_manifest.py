@@ -25,6 +25,8 @@ def main():
             'source_parquet': original + original_metadata['source_files']['parquet']['path'].replace('../', ''),
             'frame_count': metadata['frame_count'], 'duration_seconds': round(metadata['duration_seconds'], 3),
             'width': metadata['resolution']['width'], 'height': metadata['resolution']['height'], 'fps': metadata['fps_rational'],
+            'prompt': base + 'actiongeneration_prompt.txt', 'action_review': base + 'metadata/action_review.json',
+            'prompt_protocol': metadata.get('prompt_protocol', ''),
             'review_status': metadata['review_status'], 'publisher_instruction': ' '.join(metadata['source_annotation']['tasks']),
             'video_sha256': metadata['video_sha256'], 'first_frame_sha256': metadata['first_frame_sha256'],
             **gate_columns(metadata)})

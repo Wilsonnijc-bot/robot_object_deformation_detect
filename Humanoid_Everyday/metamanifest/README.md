@@ -26,7 +26,7 @@ The Humanoid HF card says Apache-2.0 and the official code README says MIT; the 
 
 ## Humanoid world-model action prompts
 
-Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `generation input/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; it is the sole generation prompt file. `video.mp4` retains the complete original bytes. `metadata/action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
+Every reviewed third-person Humanoid clip and every available GR1 clip has a dedicated `generation input/` folder. `actiongeneration_prompt.txt` is the visually authored `humanoid_action_v1` instruction to pair with `first_frame.png`; it is the sole generation prompt file. The generation video is the unchanged `original/original.mp4`; `metadata/metadata.json` points to it with `relative_video_path` and no copy is kept. `metadata/action_review.json` records observed hand roles, coordination, terminal state, inspection coverage and uncertainties. Original task annotations remain under `original/`.
 
 `world_model_prompts.csv` indexes completed prompts, and `world_model_prompt_report.json` records completed and pending reviews. `bimanual_second_review_report.json` records the focused second pass on coordinated or potentially coordinated hand actions, including prompt corrections and detailed contact evidence. The project `AGENTS.md` and this folder's `REVIEW_WORKFLOW.md` define the protocol. No cropping or shortening is used for these single-task references.
 

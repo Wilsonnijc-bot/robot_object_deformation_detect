@@ -20,10 +20,16 @@ other three views (front, left wrist, right wrist) are kept as originals.
 
 ## Read this first
 
-* **No action prompt or visual review yet.** Per [AGENTS.md](../AGENTS.md) each video needs its
-  own dedicated reviewer, which has not been run. `generation input/` therefore has no
-  `actiongeneration_prompt.txt` or `metadata/action_review.json`, and the metadata carries
-  `review_status: pending_visual_review`. The publisher instruction is in `original/task_prompt.txt`.
+* **Visually reviewed.** One dedicated reviewer per video inspected the complete head-camera clip,
+  the initial PNG, the wrist and front cameras and the Parquet telemetry, and wrote
+  `actiongeneration_prompt.txt` and `metadata/action_review.json` following `humanoid_action_v1`
+  (by analogy: dual-arm, five-finger hands). Complete clips are kept. In every episode the image-left
+  hand is the robot's left hand (telemetry and wrist cameras agree), the left hand places first, the
+  right hand second, and the final stack is visibly complete.
+* **Episode `episode_000001` is not the published cube-and-cylinder task.** The left hand lays a
+  glasses case across a red and a green block, and the right hand stands a blue prism on the case.
+  The publisher instruction (shared by all episodes) does not describe it; the review records this.
+  In the other two episodes the objects are a green cube and a striped green cylinder.
 * **Quality-gate exception.** The upscaled head-camera frames score 12.3–19.8 on the sharpness gate
   (first-person threshold 60), mostly because of the large untextured table. They are admitted as a
   documented visual-review exception (`gate_result = exception`); see [../data_quality_gate.md](../data_quality_gate.md).
@@ -41,7 +47,8 @@ stack_block/<episode_id>/
 └── generation input/
     ├── video.mp4                                         # complete head-camera video, lossless H.264
     ├── first_frame.png
-    └── metadata/metadata.json
+    ├── actiongeneration_prompt.txt
+    └── metadata/{metadata.json, action_review.json}
 ```
 
 ## Provenance and validation

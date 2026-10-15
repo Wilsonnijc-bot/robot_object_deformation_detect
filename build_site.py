@@ -56,8 +56,8 @@ DATASETS = {
     "RoboCOIN_Airbot_MMK2_stack_block": dict(
         title="RoboCOIN · Airbot MMK2", robot="Dual-arm Airbot MMK2, five-finger hands", view="First-person head camera",
         license="Apache-2.0", source="https://huggingface.co/datasets/RoboCOIN/Airbot_MMK2_stack_block",
-        blurb="Block stacking with both hands. Admitted to the gate as a documented visual-review exception. "
-              "No reviewed action prompt yet; the publisher instruction is shown."),
+        blurb="Two-handed stacking: the left hand places the base object, then the right hand stacks on top. "
+              "Admitted to the gate as a documented visual-review exception. Prompts follow humanoid_action_v1."),
 }
 # Episodes shown on the site per dataset (first N in folder order); all remain in the repository.
 SITE_LIMIT = {"NVIDIA_GR1_100": 15}
@@ -152,9 +152,13 @@ def collect():
         elif full_prompt and meta.get("view"):
             full_video = first(ep_root / "original" / "decoded_videos" / f"{meta['view']}.mp4")
         review = first(sel / "metadata" / "action_review.json", gen / "metadata" / "action_review.json")
+        video = sel / "video.mp4"
+        if not video.exists():  # deduplicated: the generation video is the unchanged source in original/
+            path = meta["relative_video_path"]
+            video = ((sel / "metadata" / path) if path.startswith("../") else (ROOT / ds / path)).resolve()
         episodes.append(dict(
             dataset=ds, folder=folder, gate=row, png=png, sel=sel, gen=gen, ep_root=ep_root,
-            video=sel / "video.mp4", full_video=full_video, meta=meta,
+            video=video, full_video=full_video, meta=meta,
             prompt=read(first(sel / "actiongeneration_prompt.txt", sel / "prompt.txt")),
             full_prompt=read(full_prompt),
             publisher=read(first(ep_root / "original" / "task_prompt.txt", ep_root / "task_prompt.txt")),

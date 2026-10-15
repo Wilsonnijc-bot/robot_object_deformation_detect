@@ -45,7 +45,7 @@
   "annotation_discrepancies": [
     "The source describes proper liquid dispensing into a cup. The frames verify pump contact and withdrawal but do not visibly establish liquid entering the cup; the prompt therefore describes only the observed manipulation and end state."
   ],
-  "relative_video_path": "../video.mp4",
+  "relative_video_path": "../../original/original.mp4",
   "relative_first_frame_path": "../first_frame.png",
   "relative_prompt_path": "../actiongeneration_prompt.txt",
   "action_review_path": "action_review.json",
@@ -58,6 +58,7 @@
     "prompt_constraint_exact": true
   },
   "validation_status": "passed",
+  "generation_video_is_source": true,
   "data_quality_gate": {
     "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
     "documentation": "data_quality_gate.md (repository root)",

@@ -48,8 +48,8 @@ the extraction is byte-exact and each member's SHA-256 is in `metamanifest/metad
 | `01JMCA5VKE4FOEQ7FA` | npnp | Move the tennis ball into a clear plastic box | 401 |
 | `01JMCB8Z194OS4IEC5` | npnp | Move the clock and place it into the transparent container. | 445 |
 
-All twelve are 1280 × 800 at 30 FPS, kept complete and unmodified (byte-identical generation
-copies), with a dedicated reviewer per video and prompts following `humanoid_action_v1`.
+All twelve are 1280 × 800 at 30 FPS, kept complete and unmodified (the generation video is the
+source `top/rgb.mp4` itself), with a dedicated reviewer per video and prompts following `humanoid_action_v1`.
 The publisher captions do not always match the footage, and each review records the
 discrepancy. Two clear cases: `01JMCB8Z194OS4IEC5` is captioned "clock" but shows a golden
 pastry, and `01JMCA5VKE4FOEQ7FA` is captioned "tennis ball into a clear plastic box" but shows a
@@ -71,7 +71,6 @@ Each episode follows the existing dataset organization:
 │   │   └── timestamps.json
 │   └── metadata/metadata.json
 └── generation input/
-    ├── video.mp4
     ├── first_frame.png
     ├── actiongeneration_prompt.txt
     └── metadata/
@@ -79,9 +78,10 @@ Each episode follows the existing dataset organization:
         └── action_review.json
 ```
 
-All source members are extracted unchanged. The complete RGB reference is copied
-byte for byte into `generation input/video.mp4`; there is no trimming, cropping,
-resizing, frame-rate conversion, or video re-encoding. Each PNG is decoded from
+All source members are extracted unchanged. The generation video is the complete
+source `original/top/rgb.mp4` itself (`relative_video_path` in the generation metadata);
+no separate copy is kept, and there is no trimming, cropping, resizing, frame-rate
+conversion, or video re-encoding. Each PNG is decoded from
 source frame zero at native resolution and has no duplicate under `original/`.
 Per-episode metadata paths resolve from the metadata JSON directory.
 
@@ -93,7 +93,7 @@ are retained in the review JSON. Inspection images are temporary, outside this
 dataset folder.
 
 Full RGB and depth decoding passed for all three episodes. Generation videos
-match their originals byte for byte; PNG RGB pixels match source frame zero.
+are the original files; PNG RGB pixels match source frame zero.
 HDF5 signatures were checked; robot arrays have not been semantically validated.
 Checksums, source archive members, source annotations, and the archive checksum
 are retained under per-episode metadata and `metamanifest/metadata/`.

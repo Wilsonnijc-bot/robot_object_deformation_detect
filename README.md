@@ -37,8 +37,10 @@ filter on `gate_result` (`pass`, `exception`, `fail`) in the manifests or in
 ## Layout
 
 Each video folder holds `original/` (unchanged source media, publisher annotation and
-`metadata/metadata.json`) and `generation input/` (`video.mp4`, `first_frame.png`, the action
-prompt and `metadata/{metadata,action_review}.json`). Humanoid Everyday nests these under
+`metadata/metadata.json`) and `generation input/` (`first_frame.png`, the action prompt,
+`metadata/{metadata,action_review}.json`, and `video.mp4` only when the reference is a derived
+clip). When the generation video is the unchanged source, metadata and manifests point to the
+file in `original/` instead of keeping a copy. Humanoid Everyday nests these under
 `third_person/`. TAVP shortened references keep their selected prompt in
 `generation input/first_substep/prompt.txt`, with the full-video prompt named
 `prompt for original multi step action(reproducing the original video).txt` in the parent
