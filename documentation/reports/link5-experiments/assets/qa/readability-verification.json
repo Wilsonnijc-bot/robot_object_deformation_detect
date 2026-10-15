@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "1440px: 12 undistorted evidence panels, legible HTML labels, no document overflow",
+    "900px: 12 undistorted evidence panels, legible HTML labels, no document overflow",
+    "390px: 12 undistorted evidence panels, legible HTML labels, no document overflow",
+    "Interactive erosion scrubbing and kernel switching still work"
+  ],
+  "browser_errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "All 82 method pages and their explicit local resources exist",
+    "Six method pictures captured from the live method replay renderer",
+    "All-frame erosion scrubbing, square kernel comparison and playback work",
+    "41-case gallery search, empty state, generator filter, method switching, source-frame seeking and 3D orbit work",
+    "All six seeded Simple3D cases load; pair navigation and top-160 score inspection work",
+    "Simple3D display-copy cross-run links resolve after relocation",
+    "390px mobile layout has no document overflow; diagrams and tables scroll within their containers",
+    "All report links, images, scripts and replay entrypoints resolve locally"
+  ],
+  "browser_errors": [],
+  "method_pictures": 6,
+  "case_replays": 82,
+  "simple_random_cases": 6
+}

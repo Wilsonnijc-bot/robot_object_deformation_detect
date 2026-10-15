@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "Full cohort, generator and matched-cohort totals reconcile exactly",
+    "1440px: scoring totals readable; table scroll stays within page",
+    "900px: scoring totals readable; table scroll stays within page",
+    "390px: scoring totals readable; table scroll stays within page",
+    "Per-video search, link filtering, sorting and saved replay link work",
+    "Three flowcharts highlight revised stages in purple with explicit text labels"
+  ],
+  "browser_errors": []
+}

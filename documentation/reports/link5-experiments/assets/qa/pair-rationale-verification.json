@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "All four PNGs exactly match the recorded video crop coordinates",
+    "1440px: four readable, undistorted Link5 crops; no page overflow",
+    "900px: four readable, undistorted Link5 crops; no page overflow",
+    "390px: four readable, undistorted Link5 crops; no page overflow"
+  ],
+  "browser_errors": []
+}
