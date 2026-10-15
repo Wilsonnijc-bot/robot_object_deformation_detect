@@ -1,0 +1,62 @@
+NVIDIA GR1 / 14
+
+Action generation prompt
+The robot uses its right hand to grasp the red apple on the yellow plate and lift it clear, closing its fingers around the fruit. It carries the apple to the tan bowl and lowers it beside the oval object already inside. The right hand opens to release the apple into the bowl, leaving it there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up red apple from yellow plate to tan bowl.
+
+Quality gate
+pass: sharpness 815.8 vs 60 (first_person)
+
+Observed outcome
+Red apple released inside the tan bowl beside the pre-existing tan/orange oval object. The right hand is visibly open above it; the left hand remains open and separate.
+
+Hand roles
+Right: Active manipulator: approaches, closes fingers around the red apple, lifts from yellow plate, transports over the table, lowers to the tan bowl, and opens to release.
+Left: Open hand held over the robot-left portion of the table; small posture changes but no object contact, support, transfer, or coordinated grasp.
+
+Coordination
+Single-hand manipulation throughout. The left hand supplies no visible support and there is no hand-to-hand or human transfer.
+
+Robot-side evidence
+Basis: The forward/downward robot-side camera looks along the paired forearms from their near-body origins at the lower edges toward the table and person opposite. The active arm is continuously attached to the robot-right near-camera side and crosses toward the central bowl; the opposite forearm remains on the robot-left side. This egocentric body alignment grounds the right-hand label and agrees with the source annotation, rather than mapping a facing robot image side to anatomy.
+Confidence: medium-high
+Limitation: Shoulders and full torso are outside the camera view; anatomical assignment uses the robot-mounted viewpoint and forearm continuity.
+
+Chronology
+  Source frame interval:
+    - 0
+    - 16
+  Action: Both hands are open above the table. The right wrist rotates and arm moves outward, revealing the red apple on the yellow plate; left hand stays open and clear of objects.
+  Confidence: high
+  Source frame interval:
+    - 17
+    - 42
+  Action: The right hand moves over the red apple and turns palm downward, positioning fingers and thumb around its sides while the apple remains on the yellow plate.
+  Confidence: high
+  Source frame interval:
+    - 43
+    - 62
+  Action: Right fingers close around the apple. The hand establishes its grasp and begins lifting; the left hand remains open and does not stabilize the plate or apple.
+  Confidence: high
+  Source frame interval:
+    - 63
+    - 86
+  Action: The right hand lifts the apple visibly clear of the yellow plate and carries it inward and across above the large mint plate toward the tan bowl, maintaining its grasp.
+  Confidence: high
+  Source frame interval:
+    - 87
+    - 110
+  Action: The right hand lowers the held apple into the tan bowl beside the existing tan/orange oval object. The left hand remains out of the manipulation.
+  Confidence: high
+  Source frame interval:
+    - 111
+    - 119
+  Action: Right fingers spread and the apple separates from the hand, settling inside the tan bowl beside the existing object. The open right hand remains just above the bowl; no full arm withdrawal occurs.
+  Confidence: high
+
+Uncertainties
+- The apple is hidden behind the right hand in the source initial PNG; its yellow-plate origin is revealed by the hand movement before grasping.
+- The exact identity of the pre-existing tan/orange oval object in the destination bowl is unclear and is described by appearance.
+- Shoulder attachments are outside view; anatomical side is grounded in the egocentric arm layout and continuous forearm motion.

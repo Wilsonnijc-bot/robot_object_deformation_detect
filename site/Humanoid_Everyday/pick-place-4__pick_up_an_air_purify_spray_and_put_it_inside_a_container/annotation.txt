@@ -1,0 +1,47 @@
+Humanoid Everyday / pick-place-4__pick_up_an_air_purify_spray_and_put_it_inside_a_container
+
+Action generation prompt
+The humanoid uses its right hand to grasp the turquoise spray can around its body, lift it off the black pad, and carry it over the gray open container. It lowers the can into the container and releases it upright, then withdraws its right hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+This task involves picking up an air purifier spray bottle and placing it inside a container, demonstrating object manipulation and spatial planning.
+
+Quality gate
+pass: sharpness 194.2 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+Grasp: Can securely lifted in right hand.
+Placement: Can released upright within the gray container.
+Source overall success label: Not inferred from task name; visible manipulation succeeds.
+Terminal state:
+Turquoise spray can stands upright on the floor inside the gray container after right-hand release; both hands are clear of the object. Container stays on the tabletop.
+
+Hand roles
+Right: Reaches toward the can, closes articulated fingers around its cylindrical body, lifts and carries it over the container, lowers and releases it upright, then retracts.
+Left: White hand remains open near the lap/table edge without touching the can or container. It provides no visible support.
+Coordination: Single-right-hand manipulation; no hand-to-hand transfer, bimanual support, or interaction with a person.
+
+Robot-side evidence
+Active side: right
+Confidence: high
+Evidence: The front-facing chest plate, head front and visible continuous shoulder-to-arm attachments establish robot anatomy. The active black hand is attached to the shoulder on image left, which is the robot-relative right side; the idle white hand is attached to the opposite, robot-relative left shoulder. Native first-frame PNG and frames 80, 164 and 214 show these attachments.
+
+Chronology
+frames 0–14: Can stands upright on the black pad; container is empty; right hand is near the body and left hand is open near the lap.
+frames 16–80: Right shoulder and elbow extend the black hand toward the can with fingers spread; by frame 80 the hand surrounds its upper body.
+frames 82–136: Right articulated fingers close around the cylindrical body while the can remains at the pad; the arm begins lifting and the can starts to tilt.
+frames 138–164: Right hand tilts the can away from vertical and lifts it clear of the black pad. Frame 164 shows the whole can suspended above the table.
+frames 166–214: Right arm carries the suspended can inward and over the open gray container, rotating it back toward vertical. Left hand remains idle.
+frames 216–258: Right hand lowers the can inside the container. Its base reaches the container floor and it settles upright; the fingers continue surrounding the upper body during placement.
+frames 260–278: Right fingers open and disengage. The can remains upright independently in the container; frame 270 shows an open hand and frame 278 shows the hand lifting clear.
+frames 280–314: Right hand retracts upward and outward, away from the deposited can. Can remains upright and unmoving in the container.
+frames 316–357: Right arm returns down toward the body. Final native frame shows the can upright in the container with both hands clear.
+
+Differences from the publisher annotation
+  Source: original task instruction
+  Description: Broad pick-and-place action is visually confirmed. Source omits the active right hand, upright release and actual end state. Prompt calls the visibly cylindrical aerosol-shaped object a turquoise spray can rather than treating the source's air purifier description as verified product identity.
+
+Uncertainties
+- Exact frame of first finger closure and exact base-contact frame are bounded by the every-second-frame inspection and temporary hand occlusion; release and independent upright final state are directly visible.
+- Source describes an air purifier spray bottle; visible object is a turquoise cylindrical spray can. Its exact formulation is not necessary for the action prompt.

@@ -1,0 +1,60 @@
+NVIDIA GR1 / 6
+
+Action generation prompt
+The robot closes its right hand around the orange on the tabletop and lifts it, holding it between its thumb and fingers. It carries the orange to the lower white shelf, sets it down beside the green object, and opens its fingers, leaving the orange on the shelf with the hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up orange from middle of table to bottom white shelf.
+
+Quality gate
+pass: sharpness 621.0 vs 60 (first_person)
+
+Observed outcome
+The orange is on the near portion of the lower white shelf beside the green object. The right fingers are open, with the right hand still adjacent to the orange; the left hand remains open above the tabletop.
+
+Hand roles
+Right: Sole manipulating hand: surrounds and grasps the orange with thumb and fingers, lifts it, carries it to the lower white shelf, lowers it and opens the fingers.
+Left: Open inactive hand held above the left part of the tabletop; no grasp, support, transfer or object contact.
+
+Coordination
+Single-hand manipulation. The left hand remains open and contributes no support or transfer.
+
+Robot-side evidence
+Basis: The camera looks forward from the robot toward the work surface. The paired forearms enter from the robot-side lower edges: the active forearm is on the robot's right and its counterpart on the left; the active hand remains attached to that same forearm throughout. This agrees with the source instruction naming the right hand, but the visual arm continuity and forward viewing direction establish the naming.
+Confidence: high
+Limitations: Shoulder attachments and torso are outside the camera view; side identification uses the robot-mounted forward view and paired forearms, rather than an external facing-camera image convention.
+
+Chronology
+  Frame interval:
+    - 0
+    - 24
+  Action: Both hands remain open over the tabletop. The orange rests on the table; the left hand remains inactive.
+  Confidence: high
+  Frame interval:
+    - 25
+    - 38
+  Action: The right hand moves toward the orange with its thumb extended to one side and fingers on the other, beginning to surround it without yet lifting.
+  Confidence: high
+  Frame interval:
+    - 39
+    - 64
+  Action: The right hand adjusts around the orange and closes its fingers and thumb into a secure opposing grasp; the left hand does not support or touch the object.
+  Confidence: high
+  Frame interval:
+    - 65
+    - 78
+  Action: The right hand lifts the orange clear of its original tabletop location, maintaining the grasp.
+  Confidence: high
+  Frame interval:
+    - 79
+    - 104
+  Action: The right arm transports the grasped orange rightward onto the lower white shelf beside the green object, then lowers it toward the shelf surface.
+  Confidence: high
+  Frame interval:
+    - 105
+    - 119
+  Action: The right hand sets the orange down and opens its fingers. The orange remains at the near portion of the white shelf while the hand stays immediately beside it; no completed hand withdrawal follows.
+  Confidence: high
+
+Uncertainties
+- The shelf and right hand partially occlude the orange's precise base contact at the ending; the orange remains positioned on the shelf as the fingers open, but no later unobstructed view or completed hand withdrawal is shown.

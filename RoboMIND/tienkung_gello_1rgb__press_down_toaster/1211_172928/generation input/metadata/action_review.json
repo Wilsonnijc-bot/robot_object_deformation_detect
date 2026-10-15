@@ -18,7 +18,7 @@
   "selected_source_frame_end_exclusive": 522,
   "selected_frame_count": 522,
   "selection_reason": "The episode is one continuous single task (reach to the toaster lever, press it, release, withdraw); the phases are ordinary parts of one action, so the complete clip is retained and no shortened branch or full_sequence prompt is created.",
-  "usable_prompt": "The robot's arm enters from the left edge of the image, turns its hand palm-down, and extends one finger toward the lever knob on the left side of the toaster. The fingertip pushes the lever, lowering the blue bread slice into the toaster, then releases it so the slice springs back up, and the arm withdraws to its raised starting pose. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "usable_prompt": "The robot's arm enters from the left edge of the image, turns its hand palm-down, and extends one finger toward the lever knob on the left side of the toaster. The fingertip pushes the lever, lowering the bread slice into the toaster, then releases it so the slice springs back up, and the arm withdraws to its raised starting pose. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "full_sequence_prompt": null,
   "selected_action_outcome": {
     "status": "visually_completed",
@@ -402,5 +402,14 @@
     "frame_count": 522,
     "lossless_source_frame_correspondence_passed": true,
     "original_source_hdf5_retained_unchanged": true
-  }
+  },
+  "prompt_color_correction": {
+    "changes": [
+      "'the blue bread slice' -> 'the bread slice'"
+    ],
+    "previous_prompt": "The robot's arm enters from the left edge of the image, turns its hand palm-down, and extends one finger toward the lever knob on the left side of the toaster. The fingertip pushes the lever, lowering the blue bread slice into the toaster, then releases it so the slice springs back up, and the arm withdraws to its raised starting pose. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+    "corrected_at": "2026-10-15T20:09:55.205517+00:00",
+    "basis": "Colour terms re-read from the channel-corrected first frame and video; no other wording changed."
+  },
+  "channel_order_note": "Channel-order correction (2026-10-15): RoboMIND stores Tien Kung JPEGs with red and blue swapped relative to a standard decoder; this review was made on uncorrected frames, so colour terms in its observations are swapped (teal/cyan reads as yellow or yellow-green, blue as orange/brown, brown/pink as blue). Actions, timing and outcomes are unaffected. All decoded derivatives are now corrected."
 }

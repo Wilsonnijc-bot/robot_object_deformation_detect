@@ -1,0 +1,36 @@
+NVIDIA GR1 / 10
+
+Action generation prompt
+The robot closes its right hand around the bunch of green grapes in the central black tray and lifts it clear. It carries the bunch to the white circular mat on its right, opens its fingers, and releases the grapes above the mat. The grapes descend beneath its open right hand toward the mat. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up green grapes from black tray at the center of the table to white circular mat at the right side of the table.
+
+Quality gate
+pass: sharpness 909.5 vs 60 (first_person)
+
+Observed outcome
+At source frame 119 the right hand is open above the white mat. The grape bunch is detached and visibly descending below the hand, with motion blur; its stable resting position and mat contact are not shown. The source tray no longer contains that bunch, and the left hand remains open near the tray.
+
+Hand roles
+Right: Only manipulating hand: closes thumb and fingers around the green grape bunch, lifts and transports it from the black tray to above the white mat, then opens and releases it.
+Left: Remains open near the near-left edge of the black tray; slight pose changes occur but it does not touch, support, receive, or manipulate the bunch.
+Coordination: Single right-hand execution, with no two-hand coordination, hand-to-hand transfer, or interaction with a person.
+
+Robot-side evidence
+Confidence: high
+Evidence: The camera looks forward over the robot own forearms, whose proximal sections emerge from the lower left and lower right of the view. The image-right forearm is on the robot right in this forward view; its thumb is on its inward/image-left side. The paired image-left hand has the mirrored inward thumb position. This body-relative forearm arrangement identifies the active hand as anatomical right, independently corroborating the source instruction.
+
+Chronology
+frames 0–23: Both hands are initially raised open; the right hand starts its reach toward the grape bunch while the left remains clear of the tray.
+frames 24–59: The right arm swings inward and lowers its open hand over the green grape bunch in the black tray. The left hand stays open near the near-left tray edge without manipulating anything.
+frames 60–75: Right thumb and fingers close around opposite sides of the bunch; the bunch tilts upward as the hand secures it.
+frames 76–97: The right hand lifts the entire bunch clear of the tray and transports it upward and to the robot right toward the white circular mat. The left hand remains unused; there is no transfer or coordinated support.
+frames 98–113: The right arm positions the held bunch above the right portion of the white mat, turning it downward and lowering slightly.
+frames 114–119: Right fingers open; the grape bunch separates and drops beneath the hand. Frames 118 and 119 show it descending above the mat. No settled contact, post-placement adjustment, or withdrawal is visible before the clip ends.
+
+Differences from the publisher annotation
+- The original instruction specifies moving grapes to the white mat; the observed clip shows the correct right-hand pickup and release above that destination but ends before the bunch is visibly resting on it.
+
+Uncertainties
+- The bunch is released above the mat, but the final frame precedes a visible settled landing; successful final placement cannot be confirmed.

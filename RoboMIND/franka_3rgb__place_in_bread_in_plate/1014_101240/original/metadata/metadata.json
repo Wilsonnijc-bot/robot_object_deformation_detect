@@ -1,0 +1,95 @@
+{
+  "dataset": "x-humanoid-robomind/RoboMIND",
+  "source_repository_commit": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "license": "apache-2.0",
+  "embodiment": "h5_franka_3rgb",
+  "task": "place_in_bread_in_plate",
+  "episode_id": "1014_101240",
+  "source_url": "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND/resolve/e7ffe31d1fe983a42c3d7b79d192f554fc05b86e/benchmark1_0_compressed/h5_franka_3rgb/place_in_bread_in_plate.tar.gz.part-aa",
+  "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/place_in_bread_in_plate.tar.gz.part-aa",
+  "archive_member": "place_in_bread_in_plate/success_episodes/train/1014_101240/data/trajectory.hdf5",
+  "source_extraction": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified.",
+  "hdf5": {
+    "path": "../data/trajectory.hdf5",
+    "attributes": {
+      "compress": true,
+      "sim": false
+    },
+    "datasets": {
+      "language_distilbert": {
+        "shape": [
+          1,
+          1,
+          768
+        ],
+        "dtype": "float16"
+      },
+      "language_raw": {
+        "shape": [
+          1
+        ],
+        "dtype": "object"
+      },
+      "master/joint_position": {
+        "shape": [
+          160,
+          8
+        ],
+        "dtype": "float64"
+      },
+      "observations/rgb_images/camera_right": {
+        "shape": [
+          160
+        ],
+        "dtype": "object"
+      },
+      "puppet/end_effector": {
+        "shape": [
+          160,
+          6
+        ],
+        "dtype": "float64"
+      },
+      "puppet/joint_position": {
+        "shape": [
+          160,
+          8
+        ],
+        "dtype": "float64"
+      }
+    },
+    "source_size_bytes": 147648288,
+    "source_sha256": "17244d24b1cb044286371dcf7bf76a2984a7900cd9180a88ca03dfc83dcd2ee0",
+    "removed_datasets": [
+      "observations/depth_images/camera_left",
+      "observations/depth_images/camera_right",
+      "observations/depth_images/camera_top",
+      "observations/rgb_images/camera_left",
+      "observations/rgb_images/camera_top"
+    ],
+    "size_bytes": 8834488,
+    "sha256": "531b6cff29c42ff799bf6267bb336621348fea5780587dd86c1c40d5a0a9d0d6",
+    "derivation": "Rewritten from the source member keeping only the right RGB camera: camera_left/camera_top RGB and all depth images removed; remaining datasets and attributes copied unchanged (camera_right JPEG bytes verified)."
+  },
+  "source_language_instruction": [
+    "put the bread on a plate"
+  ],
+  "source_language_instruction_note": null,
+  "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
+  "channel_order_check": "Standard-decoder colours are natural (RoboMIND lists this embodiment as BGR for its OpenCV loader); no swap applied.",
+  "decoded_preview_videos": {
+    "camera_right": {
+      "path": "../decoded_videos/camera_right.mp4",
+      "view": "right external",
+      "frame_count": 160,
+      "resolution": {
+        "width": 640,
+        "height": 480
+      },
+      "encoding": "lossy_preview_h264_crf14_yuvj420p",
+      "sha256": "7f5a1bef1ea4033201abff8d9dbca856fdcfbb332810b3e879f63936ca7d99c4"
+    }
+  },
+  "source_bytes_preserved": false,
+  "camera_policy": "Only the right RGB camera (camera_right, the generation camera) is retained."
+}

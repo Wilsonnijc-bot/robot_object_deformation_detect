@@ -1,0 +1,54 @@
+RoboMIND / tienkung_gello_1rgb__close_the_drawer_under_the_combination_cabinet/1211_111642
+
+Action generation prompt
+The robot's arm at the image left swings out of view, then re-enters from the upper left with its open dexterous hand, fingers relaxed. The hand presses against the front of the open navy drawer near its white handle and pushes the drawer steadily inward until it sits closed in the cabinet. The arm then lifts off, retracts to the left, and returns to its starting pose beside the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Close the drawer under the combination cabinet
+
+Quality gate
+pass: sharpness 149.9 vs 60 (first_person)
+
+Observed outcome
+Status: visually_completed
+Description: The drawer, open at frame 0 with its blue interior visible, is pushed inward by the hand between about frames 176 and 320 and appears fully closed and flush with the cabinet by about frame 330 (flat dark front with white handle, interior no longer visible). It stays closed after the hand lifts off (about frames 384-430) and the arm leaves the view; the arm returns to the left starting pose by about frame 552.
+
+Hand roles
+Active visible arm: The single visible arm enters from the image left. After swinging away out of view it re-enters from the upper left, extends over the open drawer with the dexterous hand open and relaxed, presses against the drawer front near the handle to push the drawer inward until closed, then lifts off and retracts leftward and back to its starting pose.
+Other arm: Not visible and idle: the second joint block is constant throughout the telemetry.
+
+Coordination
+Single arm acts alone; no hand-to-hand transfer, second-arm support or human interaction. Bystander legs/shoes are visible in the background beyond the table at about frames 256-300 and are not involved in the task.
+
+Robot-side evidence
+Visible description: Only one robot arm is ever visible. It is a black arm with a white-shelled dexterous five-finger hand, entering from the left edge of the overhead image. At frame 0 and again from about frame 530 the hand is raised at the top-left with the fingers pointing up and a black cable loop below it. While pressing the drawer the back of the hand faces up, the fingers point toward image right and the thumb is the dark digit with a white spot pointing toward the lower image edge (toward the camera).
+Telemetry evidence: puppet/joint_position: only columns 0-6 change over the episode (std 0.15, 0.10, 0.47, 0.42, 0.34, 0.18, 0.24); columns 7-15 are constant (hand/gripper and second arm blocks do not move). So one arm block acts alone, and the other arm stays idle and out of view.
+Visual certainty: Robot-relative left/right is NOT reliably established: the overhead camera never shows the torso. A palm-down hand with fingers toward image right and thumb toward the image bottom is consistent with a left hand, and the first joint block is conventionally the left arm, but neither is verified. The prompt therefore describes the arm by where it enters the image (image left) instead of naming an anatomical side.
+
+Chronology
+frames 0–22: Arm at the top-left with the dexterous hand raised, fingers pointing up and a black cable loop below it; drawer open with its blue interior visible, white handle on the front. The hand does not touch the drawer.
+frames 24–70: Arm slides out of the image toward the left, first the hand (about frames 40-58) and then the forearm, leaving the view by about frame 72; the drawer is unchanged and open.
+frames 72–146: Arm absent from view (only a bit of teal sleeve at the left edge in places); drawer open and unchanged.
+frames 148–172: Black arm structure and then the white forearm/hand re-enter from the top-left over the cabinet top (hand visible from about 148-150, then clearly at 164-172); drawer still open.
+frames 174–196: Arm lowers/extends in front of the cabinet with the white-shelled hand palm-down, fingers pointing toward image right, thumb pointing toward the lower image edge; the hand and wrist hover at the drawer top edge/handle; drawer start to slide in (open interior narrowing by about frames 176-196).
+frames 198–310: Hand stays above the handle region with the fingers loosely open and the thumb pointing downward, wrist/palm base against the handle/drawer front; the drawer gradually slides inward toward the cabinet (interior band shrinking in crops at 196, 240, 268, 284, 296, 310). Bystander shoes visible in the background at about 256-300.
+frames 312–332: Drawer reaches the closed position: dark front panel with white handle flush with the cabinet, interior no longer visible (native frames 330, 384 confirm).
+frames 334–396: Hand remains resting against the closed drawer's handle area with no further drawer motion.
+frames 398–430: Arm lifts the hand off the handle, then raises and shifts it up and to the left: hand reaches the top edge with the palm side partly visible at about frames 408-426 and moves out of view by about 430. Drawer remains closed.
+frames 432–510: Arm out of view apart from the black loop/sleeve at the left edge (about 432-470); drawer closed and unchanged.
+frames 512–552: Arm returns into the image from the left: black cable loop (about 512-524), then the silvery wrist and hand rise at the top-left.
+frames 554–582: Arm settles at the starting pose of frame 0 (hand up with fingers pointing upward at the top-left, cable loop below); drawer closed. Final decoded frame 583.
+
+Clip selection
+The episode is one continuous single task (close the drawer): the arm swings out of view, re-enters, pushes the drawer closed, withdraws and returns to the starting pose. These are ordinary phases of one task, so the complete clip is retained and no shortened branch or separate full-sequence prompt is made.
+
+Differences from the publisher annotation
+- Publisher instruction 'Close the drawer under the combination cabinet' matches the video: a drawer below the combination cabinet is closed. No color/object/side discrepancy; the instruction does not mention that the arm first leaves the view and that the drawer starts open and unobstructed for about the first 150 frames, and it does not give any arm side.
+
+Uncertainties
+- Robot-relative left/right arm is not established (torso never visible overhead); described by the image side where the arm enters. Telemetry suggests the first 7-column block acts, with the other block idle.
+- Exact contact surface is unresolved from the overhead view: the hand/wrist sits against the drawer front near the handle while the drawer slides in, but whether the palm base, wrist or the thumb side bears the load cannot be separated; the fingers do not clearly grip the handle. The prompt therefore says the hand 'presses against the front of the open drawer near its white handle'.
+- Frame boundaries for the push (about 176-320) are approximate because the arm occludes much of the drawer front; closure is judged from the interior no longer being visible by about frame 330.
+- The arm leaves the view in the first segment and re-enters, so the initial leftward motion is not a task action; it is retained in the prompt because the full original clip is the reference.
+- FPS is not recorded in the source; frame indices are authoritative, not time.
+- Thumb orientation relative to the camera is not reliably resolvable at 640x480, so the prompt omits it.

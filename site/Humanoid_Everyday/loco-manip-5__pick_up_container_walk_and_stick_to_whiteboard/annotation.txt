@@ -1,0 +1,37 @@
+Humanoid Everyday / loco-manip-5__pick_up_container_walk_and_stick_to_whiteboard
+
+Action generation prompt
+The humanoid grasps the black container on the table with its left hand and lifts it clear. Holding the container, it steps away from the table, turns to face the whiteboard, and walks up to it. It reaches its left hand across its body to press the container onto the board, then opens its fingers and lowers the empty hand, leaving the container attached. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Picking up a magnetic container, turning around, walking towards a whiteboard, and sticking it onto the board, demonstrating complex mobile manipulation sequence.
+
+Quality gate
+pass: sharpness 363.0 vs 120 (third_person)
+
+Observed outcome
+The black container remains attached to the whiteboard near shoulder height, with its open compartment visible. Both hands are lowered and empty; the robot stands facing the board. The container does not fall or move away after the left hand withdraws.
+
+Hand roles
+Left: Sole manipulating hand: reaches to grasp the container, lifts and carries it during locomotion, reaches across the body to press it onto the whiteboard, opens to release it, and withdraws empty.
+Right: Remains lowered and empty throughout the task; does not stabilize the container or board and does not receive a transfer.
+Coordination: Single-hand transport and attachment with stepping, turning, and approach to the board. No two-hand object coordination or human interaction occurs.
+
+Robot-side evidence
+Confidence: high
+Evidence: The native source initial PNG shows the front chest plate and face. The active arm visible on image right attaches to the robot's left shoulder; the image-left arm is anatomical right. The same left arm performs the grasp and lift. After the robot turns away, the passive anatomical right arm is clearly visible on image right and remains lowered, while the left hand reaches across the front of the torso toward the board. Its final empty withdrawal emerges on the image-left/anatomical-left side.
+Uncertainty: The torso partly occludes the left arm during the whiteboard approach and cross-body press, but continuous motion and the passive right hand establish the side.
+
+Chronology
+frames 0–175: The left arm raises and extends over the tabletop. The open fingers descend toward the black container, briefly lift and reposition, then descend again. The right arm remains lowered.
+frames 176–254: The left hand closes around the container near its open upper edge while it remains on the tabletop; the grasp settles without assistance from the right hand.
+frames 255–281: The left hand lifts the container off the table and rotates it into an upright carrying orientation, exposing its flat outer/back face.
+frames 282–319: The robot holds the lifted container at chest height in its left hand while preparing to move.
+frames 320–463: Maintaining the left-hand grasp, the robot takes steps away from the table toward image left, turns its body to face the whiteboard, and advances toward it. The robot is briefly partly outside the image during the turn. The right arm remains lowered, with no hand-to-hand transfer.
+frames 464–511: The robot settles in front of the whiteboard, facing away from the camera. Its left arm and held object are partly hidden by the torso; the right hand remains empty at its side.
+frames 512–727: The left arm lifts the container across the front of the torso toward the robot's right side and presses its flat back against the whiteboard around shoulder height. Small adjustments keep the container in place while the right hand stays lowered.
+frames 728–751: The left fingers open and lift clear of the container, which remains on the whiteboard without visible hand support.
+frames 752–791: The empty left arm retracts across the body and lowers to the left side. The container stays attached to the whiteboard through the final frame.
+
+Uncertainties
+- Exact finger contact and the instant of initial whiteboard contact are partly occluded by the torso during the cross-body placement; the left-hand opening, empty withdrawal, and unsupported final attachment are visible. The attachment mechanism itself is not directly visible, although the original annotation calls the container magnetic.

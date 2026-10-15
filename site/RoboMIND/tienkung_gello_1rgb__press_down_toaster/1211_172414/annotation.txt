@@ -1,0 +1,52 @@
+RoboMIND / tienkung_gello_1rgb__press_down_toaster/1211_172414
+
+Action generation prompt
+The robot's arm at the left edge of the image extends its hand toward the toaster, rests its extended fingertips on the lever knob at the toaster's left side, and presses it down so the bread slice sinks into the toaster. It holds the lever down, then releases it so the lever and bread slice spring back up, and the hand withdraws to a raised pose at the left edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Press down toaster
+
+Quality gate
+pass: sharpness 250.9 vs 60 (first_person)
+
+Observed outcome
+Status: visually_completed
+Description: The extended fingertips reach the lever knob on the toaster's left side (about frames 210-236). The bread slice visibly sinks into the toaster from about frame 240 and stays lowered while the hand remains against the knob (about frames 262-310). By frame 316 the knob has sprung back up, the bread slice has popped up to its original height (clearly raised by frames 316-322 and unchanged afterwards) and the fingertips are clear of the knob. The hand then withdraws to the left and up to a raised, open-fingered pose that it holds to the last frame (454). Toaster and bread end where they started; no other object is moved.
+
+Hand roles
+Active visible arm: The single visible arm extends the dexterous hand to the toaster, places its extended fingertips on the lever knob at the toaster's left side, pushes the lever down, holds it, releases it and withdraws.
+Other arm: Not visible in the overhead view; telemetry for the second 8-column block is constant, so it does not act.
+
+Coordination
+Single-arm action; no hand-to-hand transfer, second-hand support or human interaction. Fingers stay extended, with some slight curl, and the contact is a pressing push by the fingertips, not a grasp.
+
+Robot-side evidence
+Visible description: Only one arm is visible: a white-and-black humanoid arm with a dark multi-finger dexterous hand entering the overhead image from the left edge, above a dark robot body mass at the lower-left; the toaster sits to the right. The thumb is the black digit on the image-bottom side of the hand.
+Source annotation: original/task_prompt.txt: 'Press down toaster'; no side stated.
+Telemetry evidence: Only the first 8 columns of puppet/joint_position vary (columns 0-6 change, column 4 sweeps about -0.06 to 1.38 and back to -0.18, column 7 is the nearly constant hand/gripper-like value near 0.99-1.0); the last 8 columns are constant. The moving block therefore corresponds to the visible arm. Which block is left vs right is not documented in the source.
+Inferred side: Probably the robot's left arm: if the robot faces image-right from the left edge, image-up is its left, the visible arm is on the image-upper side, the thumb points toward image-bottom (medial side for a palm-down left hand), and the first telemetry block conventionally maps to the left arm. This is inference, not established, so the usable prompt says 'arm at the left edge of the image' instead of naming a robot side.
+Visual certainty: Robot-relative left/right not reliably determined from the overhead view (body and facing direction not visible).
+
+Chronology
+frames 0–38: Arm held still at the left edge with the hand raised and fingers open pointing up; toaster with a blue-green bread slice raised in the slot; table otherwise empty. Telemetry flat.
+frames 40–100: Hand begins to lower and rotate; wrist/forearm rotate while fingers point toward the toaster (about frames 40-100; the hand is seen palm-down and open from about frame 56).
+frames 102–190: Arm extends along the table toward the toaster's left side with the fingers extended and gradually curled; hand moves toward the lever knob on the toaster's left side (frames 150 and 190 viewed at native resolution).
+frames 192–236: Fingertips approach and touch the lever knob; by about frame 215-236 the fingertips rest on the knob.
+frames 238–262: Knob is pushed down and the bread slice begins to sink into the toaster slots (visible from about frame 240-242).
+frames 264–310: Hand stays against the knob; bread slice stays lowered (frames 286, 296, 304, 310 viewed at native resolution).
+frames 312–322: Fingertips lift off; the knob rises and the bread slice pops back up to full height (knob visible raised at frame 316).
+frames 324–454: Arm withdraws left and up; hand comes to a raised, open-fingered pose at the left edge from about frame 340 and stays there to the end. Toaster lever up, bread slice raised.
+
+Clip selection
+The episode is one continuous single task (press the toaster lever down, hold, release, withdraw); there are no independent subtasks, so the complete original clip is retained and no shortened branch or separate full-sequence prompt is written.
+
+Differences from the publisher annotation
+- None found: the visible action matches the source instruction 'Press down toaster'. The source does not state which arm acts; the bread slice is a blue-green sponge-like slice.
+
+Uncertainties
+- Robot-relative left/right arm is not established from the overhead view; probable left arm is inferred from geometry and telemetry-block convention and is not asserted in the prompt.
+- Exact finger configuration during contact (which fingertips touch the knob, whether the push is by extended fingers or by a slightly curled hand) cannot be resolved at 640x480 overhead resolution; the prompt says 'extended fingertips'.
+- The lever is identified as the knob protruding from the toaster's left side because the bread slice sinks when it is pushed down and rises when released; the lever's slot is not otherwise visible.
+- Whether the toaster is heating is not visible.
+- Moment when the hand actively lifts versus the lever springing up is not separable; the prompt says the hand releases it and the lever and bread spring back up.
+- FPS is not recorded; frame indices are authoritative, not time.

@@ -1,0 +1,37 @@
+Humanoid Everyday / loco-manip-7__walk_to_fire_extinguisher_and_open_door
+
+Action generation prompt
+The humanoid walks toward the fire extinguisher cabinet and stops within reach. With its right hand, it takes hold of the cabinet door and pulls it outward, swinging it open to expose the extinguisher. It releases the door and lowers its right arm, remaining beside the open cabinet with the extinguisher inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Walking towards a fire extinguisher cabinet and opening its door, demonstrating navigation to emergency equipment and door manipulation.
+
+Quality gate
+pass: sharpness 377.0 vs 120 (third_person)
+
+Observed outcome
+Cabinet door stays widely open, the red extinguisher remains upright inside, and the humanoid stands beside it with right hand disengaged and lowered; no extinguisher removal or door closing occurs.
+
+Hand roles
+Right: Near-camera arm connected to the right shoulder: reaches to door free/handle side, takes hold, pulls door outward, then releases and lowers.
+Left: Far-side arm remains lowered throughout door manipulation. No support, transfer, or second-hand contact is visible.
+Coordination: Single-hand door manipulation after walking into reach. Legs establish and retain a staggered stance while the right hand pulls; no bimanual manipulation or interaction with a person.
+
+Robot-side evidence
+Convention: Robot-relative anatomical sides, independent of image positions.
+Evidence: Initial PNG and native frames 60/124 show external back support and tether behind the torso while the feet and body approach the cabinet. The active near-camera shoulder is on the right side of this rear-oblique torso view; its arm can be traced continuously from shoulder to wrist during reach and pull. The opposite shoulder/arm remains far-side and lowered.
+Confidence: high
+Uncertainty: No side label is printed on the robot; assignment is based on visible torso/back, shoulder attachment and forward body orientation.
+
+Chronology
+frames 0–28: Robot initially stands with both arms lowered; cabinet door slightly ajar.
+frames 29–112: Alternating leg steps move the body toward the cabinet; arms remain low with small walking movement.
+frames 113–206: Robot stops near the cabinet, maintaining a staggered bent-knee stance. Right arm starts preparing to reach; left arm stays lowered.
+frames 207–278: Right shoulder raises and elbow bends, bringing the right hand to the free/handle side of the cabinet door. Some fingertips and initial contact are near or beyond the right image boundary.
+frames 279–344: Right hand remains engaged at the door with small positioning adjustments; left hand stays lowered without stabilizing the cabinet.
+frames 345–420: Right arm draws inward, pulling the door outward about its left vertical hinge. Door swings open and reveals the red extinguisher still upright inside.
+frames 421–480: Right hand disengages and right arm extends away and lowers; door remains open.
+frames 481–510: Robot remains standing beside the open cabinet with lowered arms; extinguisher is not removed.
+
+Uncertainties
+- Initial door-contact and exact finger/handle grip are partly occluded by the wrist or clipped at the right image boundary. The prompt therefore specifies taking hold of the door without inventing a detailed grip or latch operation.

@@ -14,7 +14,7 @@ The viewer shows the first 15 NVIDIA GR1 videos (`SITE_LIMIT` in `build_site.py`
 | [NVIDIA_GR1_100](NVIDIA_GR1_100/) | 92 | Fourier GR1 humanoid · first-person | `metamanifest/world_model_prompts.csv` |
 | [Humanoid_Everyday](Humanoid_Everyday/) | 26 | Humanoid · third-person | `metamanifest/world_model_prompts.csv` |
 | [ActionNet](ActionNet/) | 15 | Fourier humanoid · first-person | `metamanifest/world_model_prompts.csv` |
-| [RoboMIND](RoboMIND/) | 12 | Franka (right camera) · Tien Kung humanoid | `metamanifest/world_model_prompts.csv` |
+| [RoboMIND](RoboMIND/) | 18 | Franka (right camera) · Tien Kung humanoid | `metamanifest/world_model_prompts.csv` |
 | [TAVP](TAVP/) | 8 | Franka Research 3 · third-person | `world_model_manifest.csv` |
 | [RoboCOIN_Airbot_MMK2_stack_block](RoboCOIN_Airbot_MMK2_stack_block/) | 3 | Dual-arm Airbot MMK2 · first-person | `metamanifest/world_model_prompts.csv` |
 

@@ -1,0 +1,33 @@
+NVIDIA GR1 / 18
+
+Action generation prompt
+The robot grasps the orange juice carton on the pink plate with its right hand, lifts it clear, and carries it upright toward the cyan bowl behind the plate. It lowers the carton into the bowl, leaving it upright with the right hand still beside its upper half. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up orange juice carton from pink plate to cyan bowl.
+
+Quality gate
+pass: sharpness 928.4 vs 60 (first_person)
+
+Observed outcome
+Orange juice carton upright with its base inside the center cyan bowl; pink plate empty. Right hand still adjacent to upper carton, thumb lifted away from the front; left hand open and uninvolved.
+
+Hand roles
+Right: Active manipulator: wraps fingers/thumb around orange juice carton, lifts from pink plate, transports to central cyan bowl and lowers upright; ends adjacent to upper carton as grasp opens.
+Left: Remains open at the near left side, with slight incidental motion; no object contact, support or transfer.
+
+Robot-side evidence
+Description: View is forward from behind the robot arms: each forearm extends from its corresponding lower-side body position into the workspace, rather than a front-facing opposing robot. Visible palm/thumb handedness and continuous forearm placement identify the arm at image right as anatomical right and the opposite arm as anatomical left. The carton grasp is performed by the image-right arm.
+Confidence: high
+Uncertainty: Shoulders and torso are outside the image; side assignment uses the forward body-relative forearm arrangement and hand morphology.
+
+Chronology
+frames 0–27: Both hands remain open near the near edge of the table; orange juice carton stands upright on pink plate. Right hand begins moving inward toward carton.
+frames 28–43: Right palm approaches the carton side and fingers close around its upper body with the thumb across the front. Left hand stays open and separate.
+frames 44–57: Right hand maintains the grasp and begins raising carton; carton remains upright over the plate.
+frames 58–83: Carton clears the plate and is carried upright forward and inward over the central cyan bowl by the right hand alone.
+frames 84–109: Right hand lowers upright carton into cyan bowl; the carton base disappears within the bowl and approaches its bottom.
+frames 110–119: Carton stands upright inside the cyan bowl. Right thumb/fingers begin opening away from its front but right hand remains beside the upper carton without a clear withdrawal.
+
+Uncertainties
+- Complete separation of all right fingertips from the carton is not visible at the endpoint; no fully withdrawn hand or unambiguous full release is claimed.

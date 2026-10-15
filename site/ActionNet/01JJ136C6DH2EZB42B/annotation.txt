@@ -1,0 +1,50 @@
+ActionNet / 01JJ136C6DH2EZB42B
+
+Action generation prompt
+The robot uses the hand entering from the lower-right edge to reach the orange beside the white basket, close its thumb and fingers around it, and lift it. It carries the orange over the basket, lowers it inside, and opens its hand to release it onto the basket floor. The hand then rises out and withdraws to the lower right, leaving the orange in the basket. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Pick up the orange and place it into the container.
+
+Quality gate
+pass: sharpness 729.7 vs 60 (first_person)
+
+Observed outcome
+Status: successful_visible_placement
+Description: Orange is released onto the floor of the white basket and remains there while the hand from the lower-right edge withdraws to its rest pose.
+Selected action outcome: successful_visible_placement
+Source overall success label: not used to infer outcome
+
+Hand roles
+Lower right visible arm: Sole manipulating hand: reaches the orange, closes thumb and fingers around opposing sides of it, bears it through the lift and transport, lowers it into the basket, opens to release it, then rises out and withdraws to the lower right.
+Lower left visible arm: Remains stationary beside the table on image left beside the small orange block; no observed contact with the orange, basket or any other object.
+
+Coordination
+Single-hand pick and place. No hand-to-hand transfer, bimanual stabilization, or physical assistance. A person standing at the right edge of the scene moves about but does not touch the robot or objects.
+
+Robot-side evidence
+Active arm: hand entering from the lower-right edge of the initial image
+Initial frame evidence: Two dark dexterous-hand arms enter from the near lower image edges; the active hand is attached to the lower-right forearm and lies beside the orange at frame 0. Torso and shoulders are outside the image. Hand geometry (opposing thumb, grouped fingers) does not independently establish whether the camera is mirrored or its pose relative to the robot body.
+Confidence: Visible-arm identity is unambiguous; anatomical left/right is not independently established.
+
+Chronology
+frames 0–40: Orange rests on the tabletop between the white basket and the pink block; both robot hands are clear and upright (open, fingers up). The standing person at image right gestures. No robot motion yet.
+frames 42–84: The lower-right hand tilts and swings left toward the orange, thumb and fingers open. At frame 56 the open hand is beside the orange's right side; at frame 70 and 84 the thumb-side finger group sits under/left of the orange while the palm hovers on its right/upper side.
+frames 86–126: The hand adjusts around the orange; thumb and fingers close on opposing sides (thumb on the near/left side, palm and fingers on the far/right side). Frame 100 shows the hand still adjusting; by frames 114-126 the orange is enclosed between the thumb and palm/fingers, still resting on the table.
+frames 128–160: The hand lifts the orange off the table (clear by frame 142; frame 150-160 show it well above the table and near the green block tower), orange borne entirely by this hand.
+frames 162–214: The hand carries the orange up and leftward past the pink and red blocks, wrist turned so the palm covers the top of the orange. At frames 180-200 the orange is held high above the table edge, moving toward the basket.
+frames 216–262: The held orange is brought over the right wall of the basket and lowered into it; frame 240 shows the orange and hand inside the basket outline near its far-left corner.
+frames 264–316: The hand continues to hold the orange low inside the basket (frames 270-316 almost unchanged apart from slight lowering); at frame 316 the orange touches the basket floor with the hand still around it.
+frames 318–332: The fingers open and the hand lifts: by frame 326 the orange sits on the basket floor with the hand opening above it; by frame 332 the hand is rising out of the basket.
+frames 334–380: The hand rises out of the basket (frame 340 hand fully above the basket rim) and withdraws toward the lower right (frame 360 near the table edge), orange resting in the basket.
+frames 382–409: The hand returns to its initial upright rest pose at the lower right with fingers up; the orange remains in the basket. No further manipulation.
+
+Differences from the publisher annotation
+- The source calls the target a container; the observed target is a white perforated plastic basket. The usable prompt specifies the white basket.
+- The source annotation names an orange; visually a round orange ball-shaped object matches, with a small orange block on the lower-left table that is not manipulated. The prompt identifies it by its position beside the basket.
+
+Uncertainties
+- Actual fruit versus prop material cannot be established visually.
+- The exact frame of table separation (128-142) and basket-floor contact (about 316-326) are bracketed from sampled frames and hand occlusion.
+- Torso and shoulder attachment are outside the image, and camera pose or mirroring is not independently established. Anatomical left/right is uncertain; prompt uses the unambiguous hand entering from the lower-right edge.
+- Palm orientation during the high carry (frames 160-214) is hard to resolve because the orange occludes the fingers; the prompt states only the closed-hand carry.

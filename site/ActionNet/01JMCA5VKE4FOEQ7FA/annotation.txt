@@ -1,0 +1,49 @@
+ActionNet / 01JMCA5VKE4FOEQ7FA
+
+Action generation prompt
+The robot's hand entering from the lower-right edge reaches out, closes its thumb and fingers around the yellow tape measure on the red tabletop, and lifts it. It carries the tape measure to the black metal dish rack, lowers it onto the rack's bars, opens its fingers to release it, then withdraws toward the lower right, leaving the tape measure resting on the rack. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Move the tennis ball into a clear plastic box
+
+Quality gate
+pass: sharpness 840.3 vs 60 (first_person)
+
+Observed outcome
+Status: successful_visible_placement
+Description: The yellow tape measure is released onto the bars of the black dish rack and remains resting there while the lower-right hand withdraws to its resting position.
+Selected action outcome: successful_visible_placement
+Source overall success label: not used to infer outcome
+
+Hand roles
+Lower right visible arm: Sole manipulating hand: rises from rest, reaches over the yellow tape measure, slides the thumb under its left side while the fingers close over the top, bears it through lift and transport to the dish rack, lowers it onto the rack bars, opens the fingers to release it, and withdraws to the lower right.
+Lower left visible arm: Remains stationary beside the table at image left with fingers upright; no observed contact with the tape measure, rack or any other object.
+
+Coordination
+Single-hand object placement. No hand-to-hand transfer, bimanual stabilization or regrasp. A person in a white hoodie at image right holds a controller and watches or moves in the background (apparent teleoperator) and does not touch the robot or any task object; other people are visible far upper left.
+
+Robot-side evidence
+Active arm: hand entering from the lower-right edge of the initial image
+Initial frame evidence: Two forearms enter from the near lower image edges and point away from the camera toward the table; the active hand is attached to the lower-right forearm, the idle hand to the lower-left forearm. Torso and shoulders are outside the image. During the grasp the thumb plate lies on the image-left side of the palm-down hand, which is consistent with a robot right hand viewed from behind/above, but the camera pose relative to the robot body is not independently established.
+Confidence: Visible-arm identity is unambiguous; anatomical right is plausible but not independently established, so the prompt uses the hand entering from the lower-right edge.
+
+Chronology
+frames 0–22: Initial scene: red tabletop with black dish rack at top centre, yellow tape measure with black strap near lower centre, masking-tape roll, pink and blue foam blocks. Both robot hands are at rest at the lower edges; the lower-right hand is upright and clear of all objects.
+frames 24–66: The lower-right hand rises and swings toward the table centre with fingers spread and extended, then descends toward the yellow tape measure. Native frame 40 shows the open hand raised above the table near the rack front.
+frames 68–106: The hand moves over the tape measure; at native frames 84-96 the thumb plate is slid in against the left/lower side of the tape measure while the fingers are held open above and to the right of it. No lift yet.
+frames 108–150: Fingers close down over the top of the tape measure while the thumb stays beneath its left side; native frame 120 shows the case enclosed between thumb and curled fingers and frame 150 shows a firm grasp with the case slightly rotated. The black strap trails from the case.
+frames 152–230: The hand bears the tape measure and raises it off the tabletop (frame 170 clearly airborne, strap hanging) and carries it up and left toward the dish rack, reaching a position above the rack front by frame 230.
+frames 232–270: The held tape measure is lowered onto the bars of the rack (native frames 240-268 show it close to and then touching the bars with the thumb still beneath it and strap hanging between bars). The first exact bar contact frame is partly occluded by the hand.
+frames 272–288: Release: at native frame 276 the tape measure is on the bars and the fingers start to straighten; frame 280 shows the fingers lifted clear of its top; frame 284 shows the tape measure resting on the bars with only the thumb plate still adjacent beneath it.
+frames 290–340: The thumb slides out and the hand lifts away with fingers extended, drawing back from the rack toward the lower right (native frames 300 and 320). The tape measure stays on the rack with the strap draped through the bars.
+frames 342–400: The hand folds upward and retracts to the lower-right resting posture (frame 360 at rest beside the blue and light-blue blocks) and remains still through the final frame 400. The tape measure rests on the rack throughout; the background person only gestures near their face.
+
+Differences from the publisher annotation
+- The source instruction says to move a tennis ball into a clear plastic box. No tennis ball or clear plastic box is visible anywhere in the clip; the manipulated object is a yellow tape measure with a black strap and the target is a black metal dish rack. The usable prompt describes the observed objects.
+- The source offers no object-identity detail beyond the mismatched noun phrases; object names in the prompt come from appearance only.
+
+Uncertainties
+- Anatomical left/right of the robot is not independently established; the thumb orientation suggests a right hand but the prompt uses the unambiguous hand entering from the lower-right edge.
+- Exact first contact between the tape measure and the rack bars and the exact first table separation frame are partly occluded by the hand; stated chronology intervals bracket the visible transitions.
+- The object identification as a tape measure rests on its appearance (yellow rounded case with black strap).
+- Slight camera motion across the sequence is visible; the fixed-camera generation constraint is retained verbatim.

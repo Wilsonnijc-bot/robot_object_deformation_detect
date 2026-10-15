@@ -1,0 +1,45 @@
+Humanoid Everyday / human-robot-5__handover_dumpling
+
+Action generation prompt
+A person presents the pink dumpling plush on an open palm, and the humanoid reaches with its left hand and closes its fingers around the toy. After the person withdraws their supporting hand, the robot lifts the plush, carries it toward its left, and releases it just above the tabletop, where it settles beside the tape cross. The left hand retracts empty while the plush remains on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Handing over a dumpling plush toy to a person with gentle approach and safe transfer, demonstrating soft object handling in human interaction.
+
+Quality gate
+pass: sharpness 182.6 vs 120 (third_person)
+
+Observed outcome
+The pink dumpling plush rests on the tabletop immediately beside the tape cross, toward the robot left (viewer right). Both robot arms have returned down; the person has withdrawn. The plush was released above the surface and visibly settled after a short drop.
+
+Hand roles
+Left: Receives the toy from the person: reaches above it, encloses it with fingers while the person supports its underside, retains it after the person withdraws, lifts and carries it outward to robot left, lowers and releases it just above the table, then retracts empty.
+Right: Remains down beside the torso throughout; no grasp, support, object transfer or manipulation.
+Person: Introduces the dumpling plush on an open palm from image left and continues supporting it while robot left fingers grasp. Withdraws the supporting hand after the robot has secured the toy.
+Coordination: Human-to-robot transfer with a period of simultaneous human underside support and robot left-hand grasp, followed by human withdrawal. No robot hand-to-hand transfer or robot two-hand coordination.
+
+Robot-side evidence
+Confidence: high
+Evidence: The initial PNG shows the anterior face, chest and both shoulder attachments. The active arm attaches to the robot left shoulder (viewer right), tracks through its elbow/forearm to the hand at viewer right, and subsequently reaches inward to the offered toy. The opposite viewer-left arm attaches to the anatomical right shoulder and stays down. Naming is based on this frontal body anatomy, not screen position alone.
+Uncertainty: None
+
+Chronology
+frames 0–21: Robot waits with right arm down and left arm extended low; table is empty apart from tape cross.
+frames 22–65: Person brings the round pink dumpling plush into view on an open palm and presents it over the table in front of the robot.
+frames 66–207: Person holds the plush steady on their palm while robot remains largely in its initial pose.
+frames 208–369: Robot raises and bends its anatomical left arm, brings the open hand inward and down over the offered plush; person continues supporting it.
+frames 370–454: Left fingers come around the upper sides of the plush and close while the person supports its bottom.
+frames 455–589: Robot maintains its left-hand grasp; the person continues to hold their palm beneath the toy.
+frames 590–605: Person slides their supporting hand away and out of view; robot retains the plush alone in its left hand just above the table.
+frames 606–744: Robot lifts the plush higher and carries it outward toward its left, keeping it enclosed in its left hand.
+frames 745–841: Robot brings the held plush down toward the tabletop to the viewer-right side of the tape cross.
+frames 842–859: Left fingers open and release the plush slightly above the table. It drops the remaining short distance, makes contact and settles beside the tape cross.
+frames 860–1151: Empty left hand separates from the resting plush, retracts upward/inward and changes orientation; plush stays on the table.
+frames 1152–1249: Left arm lowers back beside the body. Robot ends with both arms down and the plush resting beside the tape cross; person is absent.
+
+Differences from the publisher annotation
+- Original instruction describes handing a dumpling plush to a person. Video shows the opposite transfer direction: the person offers the toy, robot receives it with left hand, then releases it onto the table. No robot-to-person handover occurs.
+
+Uncertainties
+- The target toy is absent from initial frame 0 and is introduced by the person during the clip; the prompt identifies the incoming offered object rather than inventing an initially visible target.
+- The precise source intention behind the elevated release is not visible; the review records release, short fall and tabletop resting state without inferring whether that release was planned.

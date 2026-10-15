@@ -1,0 +1,45 @@
+RoboMIND / franka_3rgb__slide_close_cabinet/0923_111834
+
+Action generation prompt
+The robotic arm grips the handle of the open top drawer and pushes the drawer back into the wooden cabinet until it is closed, then releases the handle and lifts away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+slide close wooden cabinet
+
+Quality gate
+exception: sharpness 26.9 vs 120 (third_person)
+
+Observed outcome
+Status: visually_completed
+Description: The top drawer starts partly open (frame 0). The gripper sits at the drawer handle (frames 0-20), closes on it (telemetry gripper value rises 0 -> 0.99 over frames 0-30), and the arm pushes the drawer in toward the cabinet (visibly narrowing from about frame 40; nearly flush at about 86; closed by about 96-100). The gripper stays at the handle through about frame 130, then opens (telemetry value falls 0.99 -> 0 over frames 130-160) while the arm lifts up and to image left. At frames 160-199 the drawer remains closed and the open gripper hovers clear of the cabinet.
+
+Hand roles
+Active visible arm: Single arm positions the gripper at the open top drawer handle, grips it, pushes the drawer closed, then releases and lifts away.
+Other arm: None.
+
+Coordination
+Single arm acts alone; no second arm, hand transfer or human interaction.
+
+Robot-side evidence
+Visible description: Single Franka Emika Panda arm with a parallel-jaw gripper, base off-frame to image left; the arm enters from the left edge in camera_right view and reaches the cabinet on the right. Only one arm exists.
+Source annotation: original/task_prompt.txt: 'slide close wooden cabinet'.
+Visual certainty: Not a humanoid; left/right anatomy is not needed. The prompt refers to the single visible robotic arm.
+
+Chronology
+frames 0–28: Arm above the table at left of the wooden two-drawer cabinet; top drawer partly open toward the camera. Gripper fingers are at/around the drawer handle; the gripper closes (telemetry 0 -> 0.99 over frames 0-30).
+frames 30–70: Gripper holds the handle (native frames 20, 60 viewed). Arm pushes the drawer in; the drawer visibly narrows from about frame 40 and the wrist/forearm swings toward the cabinet (blue light on the wrist link visible from about frame 24).
+frames 72–100: Drawer nearly flush by about frame 86 and closed by about frames 96-100 (native frames 86, 100 viewed); lower drawer remains closed.
+frames 102–130: Gripper stays at the closed drawer handle with the drawer closed; arm begins easing back (telemetry joint 6 falls from about frame 110).
+frames 132–160: Gripper opens (telemetry 0.99 -> 0 over about frames 130-160) and arm lifts away from the handle up and toward image left (native frames 120, 136 viewed).
+frames 162–199: Open gripper hovers above the table to the left of the cabinet, clear of the closed drawer; drawer stays closed through the last frame (native frame 199 viewed).
+
+Clip selection
+The episode is one continuous single task (close the open top drawer by pushing it shut, then release and retreat). There are no independent subtasks, so the complete 200-frame sequence is retained and no shortened branch or separate full-sequence prompt is written.
+
+Differences from the publisher annotation
+- No discrepancy: 'slide close wooden cabinet' matches the video (the top drawer is slid closed). The drawer is only partly open at the start, not fully extended.
+
+Uncertainties
+- Whether the fingers grip the handle bar or hook around/behind it while pushing is not resolvable at this resolution; the prompt says 'grips the handle' because the gripper value rises while the fingers surround the handle and stays high during the push (inferred polarity: higher value = more closed).
+- Exact frame at which the drawer becomes fully flush is approximate (about 96-100).
+- FPS is not recorded in the source; frame indices are authoritative, not time.

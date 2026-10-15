@@ -1,0 +1,51 @@
+RoboMIND / tienkung_gello_1rgb__press_down_toaster/1211_172928
+
+Action generation prompt
+The robot's arm enters from the left edge of the image, turns its hand palm-down, and extends one finger toward the lever knob on the left side of the toaster. The fingertip pushes the lever, lowering the bread slice into the toaster, then releases it so the slice springs back up, and the arm withdraws to its raised starting pose. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Press down toaster
+
+Quality gate
+pass: sharpness 240.7 vs 60 (first_person)
+
+Observed outcome
+Status: visually_completed
+Description: The extended fingertip contacts the lever knob on the left side of the toaster (about frames 198-204) and holds against it while the blue bread slice sinks into the toaster slots (starting about frame 236, mostly lowered by about 340, lowest with the toaster body slightly shifted/tilted at about 372). Around frames 374-380 the fingertip backs off the knob and the slice is back up above the toaster by frame 380, i.e. the toaster does not visibly stay latched down in the filmed outcome. The arm then retracts to the left and returns to a raised open-hand pose near its starting pose by about frame 500; the toaster and slice are in their original configuration at the end.
+
+Hand roles
+Active visible arm: The arm entering from the image left (probably the robot's left arm) reaches toward the toaster, shapes the hand with one leading finger extended and the thumb pointing down/away, presses the toaster's side lever knob with that fingertip, holds, backs off and retracts.
+Other arm: Not visible; telemetry for the second arm block is constant, so it does not act.
+
+Coordination
+Single arm acts alone; no second hand, hand-to-hand transfer or human interaction.
+
+Robot-side evidence
+Visible description: Overhead external camera; the toaster stands mid-table and a single white-and-black dexterous humanoid arm and hand enters from the left edge of the image, with the dark torso/shoulder hardware at the left edge. The other arm is never visible.
+Telemetry evidence: Only joint_position columns 0-6 (arm block) vary over the episode (largest changes in columns 1, 3, 4 and 5); columns 8-14 (second arm block) and the hand columns 7 and 15 are constant. If the 16-dim layout is [left arm 7, left hand 1, right arm 7, right hand 1], the moving arm is the robot's left, but this column ordering is an assumption, not verified.
+Geometry evidence: At about frame 150 the white dorsal plate faces up (palm down), fingers point toward the toaster (image right) and the thumb sits on the image-bottom side. If the robot faces image-right, that thumb placement would indicate a left hand, consistent with the telemetry block assumption, but the robot body orientation is not visible.
+Visual certainty: Robot-relative left/right is only weakly supported (probably the robot's left arm), so the usable prompt describes it as the arm entering from the left edge of the image.
+
+Chronology
+frames 0–48: Arm static at image left with the hand raised and fingers open and spread, palm facing up/toward the camera; toaster centered with the blue bread slice sticking up from the slots.
+frames 50–110: Arm begins moving: the hand rotates toward palm-down and the forearm lowers and extends rightward toward the toaster (telemetry joint 4 rises from about 0.04 to 0.66 between frames 60 and 100).
+frames 112–190: Forearm keeps extending toward the lever knob on the left side of the toaster; the fingers close up into a pointing shape with one leading finger extended (palm-down open hand still visible near frame 150; pointing shape by about frame 170-190); fingertip about a hand-width from the knob at frame 190.
+frames 192–214: Fingertip reaches the lever knob and touches it (contact seen at frame 200 and later; native-resolution crops at 200 and 240).
+frames 216–372: Fingertip stays against the lever knob. The blue bread slice starts sinking into the toaster from about frame 236, is mostly lowered by about frame 340, and is lowest at about 360-372 where the toaster body appears slightly shifted/tilted by the push. The finger holds this pose with little motion (telemetry nearly constant between frames 200 and 360).
+frames 374–382: Fingertip backs away from the knob (seen at frame 376 with a small gap) and the slice jumps back up above the toaster by frame 380; the lever knob is visibly at its original position at frames 380 and 392.
+frames 384–470: Arm pulls back and lifts toward the image left; hand re-opens its fingers while moving away (frames 400-470).
+frames 472–521: Arm returns to a raised open-hand pose at the left edge near the initial pose; toaster and bread slice are back in their original appearance and the scene is otherwise unchanged.
+
+Clip selection
+The episode is one continuous single task (reach to the toaster lever, press it, release, withdraw); the phases are ordinary parts of one action, so the complete clip is retained and no shortened branch or full_sequence prompt is created.
+
+Differences from the publisher annotation
+- The publisher instruction is 'Press down toaster'. The video shows a fingertip pressing the lever knob on the side of the toaster and the slice lowering, but the toaster does not visibly stay latched down: the slice pops back up when the finger releases at about frames 374-380. No left/right, colour or object-order information is given by the annotation, so no other discrepancies.
+
+Uncertainties
+- Robot-relative left/right of the acting arm is not directly visible from the overhead camera; the weak evidence points to the robot's left arm, so the prompt names the arm by where it enters the image.
+- The overhead view cannot show whether the lever travels down or whether a latch engages; the lever press is inferred from the fingertip contact on the side knob and the slice sinking into the toaster. The slice rising again right after the fingertip releases suggests the lever did not latch, but the latch mechanism is not visible.
+- Which individual finger is the extended pointing finger (index versus another) is not resolvable at this resolution; the prompt says 'one finger'.
+- The exact frame where the lever begins to move is ambiguous (contact about frames 198-204, slice motion visible from about 236).
+- FPS is not recorded in the source; frame indices are authoritative, not time.
+- Telemetry column-to-arm mapping (left-first layout) is assumed and used only as supporting evidence.

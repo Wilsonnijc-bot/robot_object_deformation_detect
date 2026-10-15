@@ -13,7 +13,7 @@ import sys
 from PIL import Image
 
 from robomind_common import CONSTRAINT, NOMINAL_FPS, ROOT, ffmpeg_jpeg_pipe, jpeg_frames, probe, save, sha, \
-    source_frame_hashes, video_frame_hashes
+    color_args, source_frame_hashes, video_frame_hashes
 
 
 
@@ -46,9 +46,9 @@ def main():
             metadata['variant'] = 'full_sequence'
         video = generation / 'video.mp4'
         candidate = generation / 'video.reviewed.mp4'
-        ffmpeg_jpeg_pipe(jpeg_frames(source, camera, end), ['-c:v', 'libx264', '-preset', 'fast', '-crf', '0',
+        ffmpeg_jpeg_pipe(jpeg_frames(source, camera, end), color_args(metadata['embodiment']) + ['-c:v', 'libx264', '-preset', 'fast', '-crf', '0',
             '-pix_fmt', 'yuvj420p', '-color_range', 'pc', '-movflags', '+faststart'], str(candidate))
-        expected = source_frame_hashes(source, camera, end)
+        expected = source_frame_hashes(source, camera, end, metadata['embodiment'])
         actual = video_frame_hashes(candidate, end + 1)
         assert len(expected) == end and actual == expected, 'frame correspondence failed'
         candidate.replace(video)
@@ -64,7 +64,8 @@ def main():
             'duration_seconds': float(info['format']['duration']),
             'duration_note': 'Nominal: frame count at an assumed 30 FPS; the source records no frame rate.',
             'codec': stream['codec_name'], 'pixel_format': stream['pix_fmt'],
-            'encoding': 'frame_accurate_lossless_h264_of_stored_jpeg_prefix',
+            'encoding': 'frame_accurate_lossless_h264_of_stored_jpeg_prefix' if not color_args(metadata['embodiment'])
+                        else 'frame_accurate_lossless_h264_of_red_blue_corrected_jpeg_prefix',
             'video_sha256': sha(video), 'first_frame_sha256': sha(generation / 'first_frame.png'),
             'prompt_sha256': sha(prompt_path), 'prompt_protocol': review['prompt_protocol'],
             'prompt_provenance': review['prompt_provenance'], 'generation_prompt': prompt,

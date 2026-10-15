@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upright white cup · RoboMIND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../../RoboMIND/index.html">RoboMIND</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">RoboMIND · tienkung_gello_1rgb__upright_white_cup/1211_141244</p>
+<h1>Upright white cup</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 731 frames · 24.37 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robot&#x27;s arm entering from the left edge of the image reaches over the white cup lying on its side, closes its dexterous thumb and fingers around the cup wall, and lifts it off the mat. It tilts the cup mouth-up, carries it toward the back-left, and sets it down upright on the mat, then opens the hand. The hand rises clear of the cup and withdraws to a raised, open-fingered pose at the left edge, leaving the cup standing upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Upright white cup</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 132.8 vs threshold 60">Pass<b>133</b></span><p>Sharpness <b>132.8</b> against 60
+(first-person). Measured on the 960 × 704 model view,
+upscale 1.50×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>731</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>24.37 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="annotation.txt">Annotation (text)</a></li><li><a href="review.json">Visual review (JSON)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboMIND/tienkung_gello_1rgb__upright_white_cup/1211_141244">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/tienkung_gello_1rgb__upright_white_cup/1211_141244/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/tienkung_gello_1rgb__upright_white_cup/1211_141244/generation%20input/video.mp4">Generation video (original file)</a></li></ul></section></aside>
+</div>
+<section class="annotation"><h2>Annotation</h2>
+<p class="quiet">From the dedicated visual review of this video (humanoid_action_v1).
+<a href="annotation.txt">Plain text</a> · <a href="review.json">JSON</a></p>
+<div class="annotation__grid"><section class="anno"><h3>Observed outcome</h3><dl class="kv"><dt>Status</dt><dd><p>visually_completed</p></dd><dt>Description</dt><dd><p>The white cup, initially lying on its side near the upper-left of the mat, is grasped by the hand (closing from about frame 190-215), lifted and rotated (rocking from about frame 244, clearly lifted from about frame 264), carried to the top-left of the image, held at the back of the mat with the mouth up, and lowered to an upright stand on the mat by about frame 500. The hand opens from about frame 480 to 510, rises clear above the cup, leaves the view at the top-left (about frames 560-640) and returns to a raised open-handed pose at the left edge by about frame 660, held to the last frame (730). The cup ends upright (mouth up, logo on the near wall) at roughly the upper-left of the mat, slightly left of and above where it started; no other object moves.</p></dd></dl></section><section class="anno"><h3>Hand roles</h3><dl class="kv"><dt>Active visible arm</dt><dd><p>The single visible arm reaches over the lying cup, places its thumb on the near/left outer wall and its fingers over the top/far side, closes on the cup wall, lifts and rotates the cup so its mouth turns up, carries it to the back-left, lowers it to an upright stand on the mat, opens, rises clear and withdraws.</p></dd><dt>Other arm</dt><dd><p>Not visible in the overhead view; telemetry for the second 8-column block is constant, so it does not act.</p></dd></dl></section><section class="anno"><h3>Coordination</h3><p>Single-arm action; no hand-to-hand transfer, second-hand support or human interaction. The cup is held by a dexterous pinch/wrap of thumb and fingers on the wall (not a parallel-jaw grip); the cup is reoriented as a whole by wrist and forearm rotation, with no sliding along the mat visible before lift and no visible regrasp or slip while held.</p></section><section class="anno"><h3>Robot-side evidence</h3><dl class="kv"><dt>Visible description</dt><dd><p>Only one arm is visible: a white-and-black humanoid forearm and five-finger dexterous hand entering the overhead image from the left edge, rooted in a dark robot body/shoulder mass at the left and lower-left; the mat and the cup lie to the right. The thumb is the black digit on the image-bottom side of the hand when it reaches over the cup.</p></dd><dt>Source annotation</dt><dd><p>original/task_prompt.txt: &#x27;Upright white cup&#x27;; no side stated.</p></dd><dt>Telemetry evidence</dt><dd><p>puppet/joint_position has 16 columns. Columns 0-7 vary (column 4 ranges about -0.4 to 1.25, column 6 about -0.61 to 0.13, column 7 is the hand/gripper-like value falling from 1.0 to about 0.73-0.77 on grasp and returning to 1.0 on release); columns 8-15 are essentially constant (std &lt;= 0.002). The moving block therefore corresponds to the visible arm. Which block is left vs right is not documented in the source.</p></dd><dt>Inferred side</dt><dd><p>Probably the robot&#x27;s left arm: the robot appears to face image-right from the left edge, so image-up/far side is its left, the visible arm is on that side, the thumb points toward image-bottom (medial side for a palm-down left hand), and the first telemetry block conventionally maps to the left arm. This is inference, not established, so the usable prompt says &#x27;arm entering from the left edge of the image&#x27; instead of naming a robot side.</p></dd><dt>Visual certainty</dt><dd><p>Robot-relative left/right not reliably determined from the overhead view (head, torso and facing direction not visible).</p></dd></dl></section><section class="anno"><h3>Chronology</h3><table class="chrono"><thead><tr><th scope="col">Frames</th><th scope="col">Observation</th></tr></thead><tbody><tr><th scope="row">0–36</th><td>Robot arm held still at the left edge of the overhead image with the hand raised and fingers open pointing up. A white cylindrical cup lies on its side (axis horizontal) near the upper-left of the blue-grey foam mat; table otherwise empty. Telemetry flat until about frame 40.</td></tr><tr><th scope="row">37–90</th><td>Arm swings the raised hand out over the mat toward the cup: hand rotates from pointing up to pointing right with fingers extended and thumb (black digit on the image-bottom side) separate; wrist and forearm rotate while the arm reaches along the mat.</td></tr><tr><th scope="row">91–150</th><td>Hand descends beside the cup: the thumb tip touches the top-left side wall of the lying cup (about frames 92-110), the fingers stay extended above and behind the cup, and the hand shifts slowly to the right until it straddles the cup with the thumb on the near/left outer wall and the fingers over the top (frames 130-150). Cup has not moved.</td></tr><tr><th scope="row">151–188</th><td>Hand settles around the cup wall and fingers begin to curl; hand-closing value (puppet/joint_position column 7) is still about 0.96-0.98. No cup motion.</td></tr><tr><th scope="row">189–262</th><td>Hand closes on the cup (column 7 falls from about 0.96 to 0.77 between about frames 190 and 215). Cup stays on the mat through frame ~240; from about frame 244 it rocks and its near edge lifts, and by frames 250-262 the cup is visibly rotating with the hand (rim edge rising) while still touching the mat.</td></tr><tr><th scope="row">263–310</th><td>Cup is lifted off the mat and rotated: it tilts from lying on its side through about 45 degrees (frame 270-288) toward mouth-up-and-right while the forearm rises and the hand moves toward the upper-left; rim and interior become visible (frames 288-310). Cup moves rigidly with the hand; thumb stays on the outer wall near the front and fingers wrap the far/top side.</td></tr><tr><th scope="row">311–360</th><td>Cup is carried up to the top-left of the image near the back edge of the mat, held well off the table, mouth facing up and toward the right, with the black printed logo on the near wall (frames 312-360). No regrasp or slip visible.</td></tr><tr><th scope="row">361–440</th><td>Cup is held at the top-left with the mouth tilted toward the camera, then gradually levelled toward mouth-up as the wrist rotates (frames 360-440); arm moves slowly down and toward the mat. Hand grip pattern unchanged (thumb on near wall, fingers on far side).</td></tr><tr><th scope="row">441–503</th><td>Cup is lowered and levelled to an upright pose on the mat near the upper-left of the mat while still held; hand-closing value stays about 0.73 until about frame 480 and then rises, i.e. the hand begins to open from about frame 480. Cup is upright with its mouth facing up by about frame 500.</td></tr><tr><th scope="row">504–527</th><td>Hand opens (column 7 reaches about 1.0 by frame 510); fingers lift off the cup&#x27;s rim and wall and are open above the cup. Cup stands upright on the mat, untouched by the fingers from about frame 510.</td></tr><tr><th scope="row">528–580</th><td>Open hand rises above and slightly behind the cup (thumb tip briefly over the cup mouth around frames 530-550) and then moves up and out of the frame top-left (frames 550-580); cup remains upright and stationary.</td></tr><tr><th scope="row">581–640</th><td>Hand is largely out of view above the top-left edge of the image while the forearm comes back down; cup upright and stationary at the upper-left of the mat.</td></tr><tr><th scope="row">641–730</th><td>Arm withdraws to the left edge and rises to a raised pose with the open hand pointing up (frames 660-730), similar to the starting pose; cup stands upright and stationary for the rest of the clip. Telemetry settles near its starting values.</td></tr></tbody></table></section><section class="anno"><h3>Clip selection</h3><p>The episode is one continuous single task (reach, grasp the cup lying on its side, lift and rotate it upright, set it down, release, withdraw); there are no independent subtasks, so the complete original clip is retained and no shortened branch or separate full-sequence prompt is written.</p></section><section class="anno"><h3>Differences from the publisher annotation</h3><ul><li>None found: the visible action (a cup lying on its side is turned upright and left standing) matches the instruction &#x27;Upright white cup&#x27;. The instruction does not mention grasping, lifting and carrying the cup, which the video shows before the cup is set down upright.</li></ul></section><section class="anno"><h3>Uncertainties</h3><ul><li>Robot-relative left/right arm is not established from the overhead view; probable left arm is inferred from geometry and telemetry-block convention and is not asserted in the prompt.</li><li>Exactly which fingertips contact the cup and which wall segment is grasped (outer wall near the rim versus mid-wall) cannot be resolved at 640x480; the prompt says &#x27;cup wall&#x27;.</li><li>While the cup is lying on its side, the direction its open end faces at frame 0 is not visible; the rim appears facing up and right once the cup is lifted (frames 270-310).</li><li>The frame at which the cup first touches the mat during lowering (about frames 440-500) and the exact frame of release are not separable from the held pose; telemetry (hand value rising from about frame 480 and reaching 1.0 by about frame 510) and the visibly open fingers by about frame 510 support release around frames 480-510.</li><li>Whether the cup shifts slightly while the hand settles (frames 150-240) cannot be excluded at this resolution; it appears not to move until about frame 244.</li><li>FPS is not recorded; frame indices are authoritative, not time.</li></ul></section></div>
+<details class="review"><summary>Complete review record <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_protocol_note&quot;: &quot;humanoid_action_v1 is applied by analogy to a non-Humanoid-Everyday/GR1 humanoid (Tien Kung with dexterous hands, single overhead RGB stream); not an original dataset of that protocol.&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;x-humanoid-robomind/RoboMIND&quot;,
+  &quot;task&quot;: &quot;upright_white_cup&quot;,
+  &quot;episode_id&quot;: &quot;1211_141244&quot;,
+  &quot;embodiment&quot;: &quot;tienkung_gello_1rgb&quot;,
+  &quot;source_video&quot;: &quot;../../original/data/trajectory.hdf5&quot;,
+  &quot;generation_camera&quot;: &quot;camera_top&quot;,
+  &quot;source_frame_count&quot;: 731,
+  &quot;source_resolution&quot;: [
+    640,
+    480
+  ],
+  &quot;source_fps&quot;: null,
+  &quot;source_fps_note&quot;: &quot;FPS is not recorded in the source HDF5; 30 FPS is only a nominal playback rate, so no real-time durations are claimed.&quot;,
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 731,
+  &quot;selected_frame_count&quot;: 731,
+  &quot;selection_reason&quot;: &quot;The episode is one continuous single task (reach, grasp the cup lying on its side, lift and rotate it upright, set it down, release, withdraw); there are no independent subtasks, so the complete original clip is retained and no shortened branch or separate full-sequence prompt is written.&quot;,
+  &quot;usable_prompt&quot;: &quot;The robot&#x27;s arm entering from the left edge of the image reaches over the white cup lying on its side, closes its dexterous thumb and fingers around the cup wall, and lifts it off the mat. It tilts the cup mouth-up, carries it toward the back-left, and sets it down upright on the mat, then opens the hand. The hand rises clear of the cup and withdraws to a raised, open-fingered pose at the left edge, leaving the cup standing upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;full_sequence_prompt&quot;: null,
+  &quot;selected_action_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;description&quot;: &quot;The white cup, initially lying on its side near the upper-left of the mat, is grasped by the hand (closing from about frame 190-215), lifted and rotated (rocking from about frame 244, clearly lifted from about frame 264), carried to the top-left of the image, held at the back of the mat with the mouth up, and lowered to an upright stand on the mat by about frame 500. The hand opens from about frame 480 to 510, rises clear above the cup, leaves the view at the top-left (about frames 560-640) and returns to a raised open-handed pose at the left edge by about frame 660, held to the last frame (730). The cup ends upright (mouth up, logo on the near wall) at roughly the upper-left of the mat, slightly left of and above where it started; no other object moves.&quot;
+  },
+  &quot;source_overall_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;source_quality_label&quot;: null,
+    &quot;description&quot;: &quot;Same as the selected action: the cup is uprighted and left standing. The source language instruction is &#x27;Upright white cup&#x27;. The exact moment of mat contact during lowering (about frames 440-500) is not separable from the hand-held pose at overhead resolution.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;visible_description&quot;: &quot;Only one arm is visible: a white-and-black humanoid forearm and five-finger dexterous hand entering the overhead image from the left edge, rooted in a dark robot body/shoulder mass at the left and lower-left; the mat and the cup lie to the right. The thumb is the black digit on the image-bottom side of the hand when it reaches over the cup.&quot;,
+    &quot;source_annotation&quot;: &quot;original/task_prompt.txt: &#x27;Upright white cup&#x27;; no side stated.&quot;,
+    &quot;telemetry_evidence&quot;: &quot;puppet/joint_position has 16 columns. Columns 0-7 vary (column 4 ranges about -0.4 to 1.25, column 6 about -0.61 to 0.13, column 7 is the hand/gripper-like value falling from 1.0 to about 0.73-0.77 on grasp and returning to 1.0 on release); columns 8-15 are essentially constant (std &lt;= 0.002). The moving block therefore corresponds to the visible arm. Which block is left vs right is not documented in the source.&quot;,
+    &quot;inferred_side&quot;: &quot;Probably the robot&#x27;s left arm: the robot appears to face image-right from the left edge, so image-up/far side is its left, the visible arm is on that side, the thumb points toward image-bottom (medial side for a palm-down left hand), and the first telemetry block conventionally maps to the left arm. This is inference, not established, so the usable prompt says &#x27;arm entering from the left edge of the image&#x27; instead of naming a robot side.&quot;,
+    &quot;visual_certainty&quot;: &quot;Robot-relative left/right not reliably determined from the overhead view (head, torso and facing direction not visible).&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;active_visible_arm&quot;: &quot;The single visible arm reaches over the lying cup, places its thumb on the near/left outer wall and its fingers over the top/far side, closes on the cup wall, lifts and rotates the cup so its mouth turns up, carries it to the back-left, lowers it to an upright stand on the mat, opens, rises clear and withdraws.&quot;,
+    &quot;other_arm&quot;: &quot;Not visible in the overhead view; telemetry for the second 8-column block is constant, so it does not act.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single-arm action; no hand-to-hand transfer, second-hand support or human interaction. The cup is held by a dexterous pinch/wrap of thumb and fingers on the wall (not a parallel-jaw grip); the cup is reoriented as a whole by wrist and forearm rotation, with no sliding along the mat visible before lift and no visible regrasp or slip while held.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        36
+      ],
+      &quot;observation&quot;: &quot;Robot arm held still at the left edge of the overhead image with the hand raised and fingers open pointing up. A white cylindrical cup lies on its side (axis horizontal) near the upper-left of the blue-grey foam mat; table otherwise empty. Telemetry flat until about frame 40.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        37,
+        90
+      ],
+      &quot;observation&quot;: &quot;Arm swings the raised hand out over the mat toward the cup: hand rotates from pointing up to pointing right with fingers extended and thumb (black digit on the image-bottom side) separate; wrist and forearm rotate while the arm reaches along the mat.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        91,
+        150
+      ],
+      &quot;observation&quot;: &quot;Hand descends beside the cup: the thumb tip touches the top-left side wall of the lying cup (about frames 92-110), the fingers stay extended above and behind the cup, and the hand shifts slowly to the right until it straddles the cup with the thumb on the near/left outer wall and the fingers over the top (frames 130-150). Cup has not moved.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        151,
+        188
+      ],
+      &quot;observation&quot;: &quot;Hand settles around the cup wall and fingers begin to curl; hand-closing value (puppet/joint_position column 7) is still about 0.96-0.98. No cup motion.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        189,
+        262
+      ],
+      &quot;observation&quot;: &quot;Hand closes on the cup (column 7 falls from about 0.96 to 0.77 between about frames 190 and 215). Cup stays on the mat through frame ~240; from about frame 244 it rocks and its near edge lifts, and by frames 250-262 the cup is visibly rotating with the hand (rim edge rising) while still touching the mat.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        263,
+        310
+      ],
+      &quot;observation&quot;: &quot;Cup is lifted off the mat and rotated: it tilts from lying on its side through about 45 degrees (frame 270-288) toward mouth-up-and-right while the forearm rises and the hand moves toward the upper-left; rim and interior become visible (frames 288-310). Cup moves rigidly with the hand; thumb stays on the outer wall near the front and fingers wrap the far/top side.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        311,
+        360
+      ],
+      &quot;observation&quot;: &quot;Cup is carried up to the top-left of the image near the back edge of the mat, held well off the table, mouth facing up and toward the right, with the black printed logo on the near wall (frames 312-360). No regrasp or slip visible.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        361,
+        440
+      ],
+      &quot;observation&quot;: &quot;Cup is held at the top-left with the mouth tilted toward the camera, then gradually levelled toward mouth-up as the wrist rotates (frames 360-440); arm moves slowly down and toward the mat. Hand grip pattern unchanged (thumb on near wall, fingers on far side).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        441,
+        503
+      ],
+      &quot;observation&quot;: &quot;Cup is lowered and levelled to an upright pose on the mat near the upper-left of the mat while still held; hand-closing value stays about 0.73 until about frame 480 and then rises, i.e. the hand begins to open from about frame 480. Cup is upright with its mouth facing up by about frame 500.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        504,
+        527
+      ],
+      &quot;observation&quot;: &quot;Hand opens (column 7 reaches about 1.0 by frame 510); fingers lift off the cup&#x27;s rim and wall and are open above the cup. Cup stands upright on the mat, untouched by the fingers from about frame 510.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        528,
+        580
+      ],
+      &quot;observation&quot;: &quot;Open hand rises above and slightly behind the cup (thumb tip briefly over the cup mouth around frames 530-550) and then moves up and out of the frame top-left (frames 550-580); cup remains upright and stationary.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        581,
+        640
+      ],
+      &quot;observation&quot;: &quot;Hand is largely out of view above the top-left edge of the image while the forearm comes back down; cup upright and stationary at the upper-left of the mat.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        641,
+        730
+      ],
+      &quot;observation&quot;: &quot;Arm withdraws to the left edge and rises to a raised pose with the open hand pointing up (frames 660-730), similar to the starting pose; cup stands upright and stationary for the rest of the clip. Telemetry settles near its starting values.&quot;
+    }
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Robot-relative left/right arm is not established from the overhead view; probable left arm is inferred from geometry and telemetry-block convention and is not asserted in the prompt.&quot;,
+    &quot;Exactly which fingertips contact the cup and which wall segment is grasped (outer wall near the rim versus mid-wall) cannot be resolved at 640x480; the prompt says &#x27;cup wall&#x27;.&quot;,
+    &quot;While the cup is lying on its side, the direction its open end faces at frame 0 is not visible; the rim appears facing up and right once the cup is lifted (frames 270-310).&quot;,
+    &quot;The frame at which the cup first touches the mat during lowering (about frames 440-500) and the exact frame of release are not separable from the held pose; telemetry (hand value rising from about frame 480 and reaching 1.0 by about frame 510) and the visibly open fingers by about frame 510 support release around frames 480-510.&quot;,
+    &quot;Whether the cup shifts slightly while the hand settles (frames 150-240) cannot be excluded at this resolution; it appears not to move until about frame 244.&quot;,
+    &quot;FPS is not recorded; frame indices are authoritative, not time.&quot;
+  ],
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;None found: the visible action (a cup lying on its side is turned upright and left standing) matches the instruction &#x27;Upright white cup&#x27;. The instruction does not mention grasping, lifting and carrying the cup, which the video shows before the cup is set down upright.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;entire_sequence_reviewed&quot;: true,
+    &quot;sampled_decoded_frame_indices&quot;: [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240,
+      242,
+      244,
+      246,
+      248,
+      250,
+      252,
+      254,
+      256,
+      258,
+      260,
+      262,
+      264,
+      266,
+      268,
+      270,
+      272,
+      274,
+      276,
+      278,
+      280,
+      282,
+      284,
+      286,
+      288,
+      290,
+      292,
+      294,
+      296,
+      298,
+      300,
+      302,
+      304,
+      306,
+      308,
+      310,
+      312,
+      314,
+      316,
+      318,
+      320,
+      322,
+      324,
+      326,
+      328,
+      330,
+      332,
+      334,
+      336,
+      338,
+      340,
+      342,
+      344,
+      346,
+      348,
+      350,
+      352,
+      354,
+      356,
+      358,
+      360,
+      362,
+      364,
+      366,
+      368,
+      370,
+      372,
+      374,
+      376,
+      378,
+      380,
+      382,
+      384,
+      386,
+      388,
+      390,
+      392,
+      394,
+      396,
+      398,
+      400,
+      402,
+      404,
+      406,
+      408,
+      410,
+      412,
+      414,
+      416,
+      418,
+      420,
+      422,
+      424,
+      426,
+      428,
+      430,
+      432,
+      434,
+      436,
+      438,
+      440,
+      442,
+      444,
+      446,
+      448,
+      450,
+      452,
+      454,
+      456,
+      458,
+      460,
+      462,
+      464,
+      466,
+      468,
+      470,
+      472,
+      474,
+      476,
+      478,
+      480,
+      482,
+      484,
+      486,
+      488,
+      490,
+      492,
+      494,
+      496,
+      498,
+      500,
+      502,
+      504,
+      506,
+      508,
+      510,
+      512,
+      514,
+      516,
+      518,
+      520,
+      522,
+      524,
+      526,
+      528,
+      530,
+      532,
+      534,
+      536,
+      538,
+      540,
+      542,
+      544,
+      546,
+      548,
+      550,
+      552,
+      554,
+      556,
+      558,
+      560,
+      562,
+      564,
+      566,
+      568,
+      570,
+      572,
+      574,
+      576,
+      578,
+      580,
+      582,
+      584,
+      586,
+      588,
+      590,
+      592,
+      594,
+      596,
+      598,
+      600,
+      602,
+      604,
+      606,
+      608,
+      610,
+      612,
+      614,
+      616,
+      618,
+      620,
+      622,
+      624,
+      626,
+      628,
+      630,
+      632,
+      634,
+      636,
+      638,
+      640,
+      642,
+      644,
+      646,
+      648,
+      650,
+      652,
+      654,
+      656,
+      658,
+      660,
+      662,
+      664,
+      666,
+      668,
+      670,
+      672,
+      674,
+      676,
+      678,
+      680,
+      682,
+      684,
+      686,
+      688,
+      690,
+      692,
+      694,
+      696,
+      698,
+      700,
+      702,
+      704,
+      706,
+      708,
+      710,
+      712,
+      714,
+      716,
+      718,
+      720,
+      722,
+      724,
+      726,
+      728,
+      730
+    ],
+    &quot;sampling_method&quot;: &quot;Every second decoded frame of camera_top (frames 0-730, 366 frames) in sequential temporary 4x3 contact sheets covering the complete 731-frame source, plus native-resolution stored-JPEG frames at transitions decoded from the HDF5.&quot;,
+    &quot;native_resolution_frame_indices&quot;: [
+      0,
+      92,
+      110,
+      130,
+      160,
+      200,
+      240,
+      250,
+      262,
+      270,
+      288,
+      312,
+      340,
+      420,
+      500,
+      510,
+      540,
+      600,
+      730
+    ],
+    &quot;conditioning_png_inspected_after_sequence&quot;: true,
+    &quot;conditioning_png&quot;: &quot;../first_frame.png&quot;,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/rv_review/robomind_1211_141244 (not a dataset artifact; removed)&quot;,
+    &quot;ancillary_camera_videos_used&quot;: false,
+    &quot;telemetry_used&quot;: &quot;puppet/joint_position column standard deviations and values sampled every 30 frames, used as supporting evidence for which arm moves and for grasp and release timing.&quot;
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    92,
+    110,
+    130,
+    160,
+    200,
+    240,
+    250,
+    262,
+    270,
+    288,
+    312,
+    340,
+    420,
+    500,
+    510,
+    540,
+    600,
+    730
+  ],
+  &quot;review_completed_at&quot;: &quot;2026-10-15T20:06:58Z&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_robomind_1211_141244&quot;,
+  &quot;channel_order_note&quot;: &quot;Channel-order correction (2026-10-15): RoboMIND stores Tien Kung JPEGs with red and blue swapped relative to a standard decoder; this review was made on uncorrected frames, so colour terms in its observations are swapped (teal/cyan reads as yellow or yellow-green, blue as orange/brown, brown/pink as blue). Actions, timing and outcomes are unaffected. All decoded derivatives are now corrected.&quot;,
+  &quot;generation_reference_validation&quot;: {
+    &quot;source_frame_start&quot;: 0,
+    &quot;source_frame_end_exclusive&quot;: 731,
+    &quot;frame_count&quot;: 731,
+    &quot;lossless_source_frame_correspondence_passed&quot;: true,
+    &quot;original_source_hdf5_retained_unchanged&quot;: true
+  }
+}</pre></details></section>
+<nav class="pager"><a rel="prev" href="../../../RoboMIND/tienkung_gello_1rgb__upright_white_cup/1211_141210/index.html">← Upright white cup</a><span></span></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

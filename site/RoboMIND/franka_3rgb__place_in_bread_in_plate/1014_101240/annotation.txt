@@ -1,0 +1,50 @@
+RoboMIND / franka_3rgb__place_in_bread_in_plate/1014_101240
+
+Action generation prompt
+The robotic arm picks up the slice of bread from the table and places it on the pink plate, then releases it and lifts away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+put the bread on a plate
+
+Quality gate
+exception: sharpness 26.6 vs 120 (third_person)
+
+Observed outcome
+Status: visually_completed
+Description: The gripper closes on the orange-topped bread slice on the table (frames 52-60), lifts and carries it left (64-98), lowers it onto the pink plate and opens the fingers (100-104). The slice rests on the plate from frame 104 through 159 while the arm lifts away and hovers above the cream tray.
+
+Hand roles
+Active visible arm: Single arm grasps the bread slice, carries it to the pink plate, places it there, releases it and lifts away.
+Other arm: None.
+
+Coordination
+Single arm acts alone; no second arm, hand transfer or human interaction.
+
+Robot-side evidence
+Visible description: Single Franka Emika Panda arm with a parallel-jaw gripper entering from the upper-left edge of the camera_right view. Only one arm exists.
+Source annotation: Publisher instruction: 'put the bread on a plate'.
+Visual certainty: Not a humanoid; left/right anatomy is not needed. The prompt refers to the single visible robotic arm.
+
+Chronology
+frames 0–20: Arm held above and left of a small cream open-top tray with gripper open and pointing down; the tabletop holds a pink plate at left, the orange-topped bread slice in the middle, a purple cube, a yellow banana, a small panda figurine and a small white crumpled item. Arm nearly static.
+frames 22–38: Arm swings right and down toward the bread slice, wrist turning; gripper still open and stays above the tray rim then in front of it.
+frames 40–50: Gripper lowers over the bread slice (blue wrist light visible), fingers straddling the slice; gripper telemetry still 0.
+frames 52–62: Fingers close on the bread slice (gripper telemetry rises 0.03 at 52, 0.44 at 56, 0.69 at 60); slice held between the fingers (frames 56, 64 at native resolution).
+frames 64–78: Arm lifts the held slice and moves it up and to image left; the slice passes briefly over the cream tray (about frames 70-76) without being released there; the slice remains in the gripper.
+frames 80–98: Arm carries the slice left and down toward the pink plate at image left; slice still held (gripper telemetry about 0.68 to 0.60).
+frames 100–106: Slice is lowered onto the pink plate; gripper telemetry falls from 0.35 at 100 to 0 at 104 as the fingers open; slice rests on the plate by 104-106 (native frames 98, 104, 106).
+frames 108–126: Gripper open and clear of the slice; arm lifts and moves back up and to image right away from the plate. The slice stays on the plate.
+frames 128–159: Arm hovers and drifts above the cream tray with open gripper, not touching anything; bread slice remains on the pink plate to the end (native frames 130, 159).
+
+Clip selection
+The episode is one single-task clip (pick up the bread slice, place it on the plate, release and withdraw), with no independent subtasks, so the complete clip is kept. The release at about frames 100-104 and the withdrawal to frame 159 are the ordinary end of the same placement.
+
+Differences from the publisher annotation
+- The folder name says 'place_in_bread_in_plate' and the instruction 'put the bread on a plate'; the video matches the instruction. The only detail added is that the plate is pink and the slice is picked up from the open tabletop, not from the cream tray the arm initially hovers above.
+
+Uncertainties
+- The bread is a toy-like orange-topped slice (appearance of a bread or cake slice); the prompt calls it 'slice of bread' following the publisher instruction and its appearance.
+- The exact finger contact points on the slice are not resolvable at 640x480; the grasp is established from the gripper telemetry rising while the slice moves with the gripper.
+- Gripper telemetry polarity (higher value = more closed) was inferred from video and used only as supporting evidence.
+- The slice's final orientation on the plate is slightly tilted but fully on the plate rim region; it is not touching the table.
+- FPS is not recorded in the source; frame indices are authoritative, not time.

@@ -1,0 +1,41 @@
+Humanoid Everyday / human-robot-1__hand_over_emotional_support_dumpling
+
+Action generation prompt
+The robot grasps the dumpling plush in the orange bowl with its right hand and lifts it clear of the bowl. It carries the plush toward a person's outstretched palm, lowers it into the palm, and opens its fingers so the person can take it away. The robot then retracts its empty right hand toward its lap. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Picking up an emotional support dumpling plush and handing it to a person, demonstrating safe object transfer and human-aware motion planning.
+
+Quality gate
+pass: sharpness 137.3 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+Successful visible object handover to a person; plush is carried out of view in the receiving hand.
+Terminal state:
+Person has taken the plush out of view; orange bowl remains empty on the table. Robot's empty right hand is lowered beside its lap and left hand remains at lap. No dropped object is visible.
+
+Hand roles
+Right: Active throughout: reaches to bowl, grasps and lifts plush, carries it to the person's receiving palm, opens fingers for release, retracts empty hand.
+Left: Inactive in the manipulation: remains open near the lap and provides no visible support, transfer, or bowl stabilization.
+Person: Extends a palm-up receiving hand beneath the plush, supports it as robot opens fingers, then carries it away.
+Coordination: One robot hand and the person's hand overlap in contact at transfer; robot lowers plush onto palm before opening fingers. No robot hand-to-hand transfer.
+
+Robot-side evidence
+Confidence: high
+Evidence: Initial native PNG shows the front face, chest panel and both shoulder attachments. The reaching arm is continuously attached to the shoulder on the viewer's left of the front-facing chest, establishing anatomical right. The hand remaining at the lap attaches to the opposite shoulder and is anatomical left. Arm identity is followed continuously through all sheets and native transition views.
+Uncertainty: None
+
+Chronology
+frames 0–15: Robot holds its initial seated posture with both hands low; dumpling plush remains in orange bowl.
+frames 16–59: Anatomical right arm reaches outward and down toward the dumpling plush in the orange bowl. Left hand stays at lap.
+frames 60–151: Right fingers settle around the plush and close, with adjustments while it remains in the bowl. Native frames 60, 100 and 152 show finger contact and grasp formation.
+frames 152–189: Right hand lifts the plush out of the bowl and holds it suspended forward and to the robot's right. The orange bowl stays on the table.
+frames 190–225: A person extends a palm-up hand from the foreground while robot maintains its grasp on the suspended plush.
+frames 226–295: Robot brings the plush forward and down toward the waiting palm, maintaining its right-hand grasp as the person raises and positions the receiving hand beneath it.
+frames 296–315: Plush settles into the person's hand; robot opens its right fingers to relinquish it. Person closes the receiving fingers around the plush and begins moving it away. Native frame 300 shows shared contact and frame 316 shows separation.
+frames 316–335: Person withdraws the plush toward foreground left and out of view; robot's now-empty right hand lifts away.
+frames 336–393: Robot retracts and lowers the empty right arm toward its lap. Left hand remains at lap and bowl is empty at final frame.
+
+Uncertainties
+- The source annotation's claim about human-aware motion planning describes an internal control property that cannot be established from the visible video; the prompt describes only the observed transfer.

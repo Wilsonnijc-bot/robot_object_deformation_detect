@@ -1,0 +1,40 @@
+NVIDIA GR1 / 2
+
+Action generation prompt
+After the person turns the Rubik's cube on the top shelf and removes their hand, the robot grasps the cube with its right hand and lifts it clear. It carries the cube down to the bottom shelf, sets it onto the wooden surface, and opens its fingers while keeping the hand beside the cube. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up rubik's cube from top level of the shelf to bottom level of the shelf.
+
+Quality gate
+pass: sharpness 703.4 vs 60 (first_person)
+
+Observed outcome
+Cube is on the lowest wooden shelf with green face upward; right fingers are opening beside it, with thumb and palm still nearby. Complete hand withdrawal is outside the clip.
+
+Hand roles
+Right: Only manipulator: reaches to top shelf, grasps cube, lifts, transports downward, lowers onto lowest shelf and begins opening fingers.
+Left: Remains open near initial position throughout; no object contact or stabilization.
+Person: Turns the cube in place during initial frames and withdraws before robot grasp; no person-to-robot handoff.
+Coordination: Single-hand robot manipulation; left hand provides no support, and the person ceases touching the cube before the robot grasp.
+
+Robot-side evidence
+Camera convention: Forward view from the robot's perspective; the near forearms enter from the lower left and lower right rather than belonging to a robot facing the camera.
+Right hand: Active arm enters from the robot's right/lower-right edge; its thumb is on the inner/left side and fingers curl from the outer/right side around the cube, consistent with anatomical right hand.
+Left hand: Inactive near arm enters from lower left with thumb toward the inner/right side, supporting the forward-view convention.
+Confidence: high; robot torso is out of frame, but arm origins, forward viewpoint and opposing thumb positions establish the convention.
+
+Chronology
+frames 0–10: Person touches and turns the cube on the highest shelf, changing the visible front face from blue to yellow; the cube remains on that shelf. Both robot hands start open.
+frames 12–26: Person withdraws their hand. Right robot arm rises toward the cube; left robot arm remains near its initial open-hand position.
+frames 28–58: Right hand reaches across the upper shelf and closes its thumb and fingers around opposite sides of the cube; the cube tilts as grasp is established.
+frames 60–74: Right hand lifts cube visibly clear of the upper wooden surface, initially upward and toward the robot's right.
+frames 76–102: Right arm transports cube downward to the lowest tray-like wooden shelf and lowers it to the shelf surface.
+frames 104–119: Cube settles on the bottom shelf. Right fingers begin opening at the end, with the upper fingers rising away from the cube; hand and thumb remain immediately beside the cube as the clip ends. No complete arm withdrawal is shown.
+
+Differences from the publisher annotation
+- Original instruction correctly identifies right hand and top-to-bottom cube relocation, but omits the person turning the cube before robot contact and the visible terminal finger opening without full hand withdrawal.
+
+Uncertainties
+- Final cube-to-shelf contact is partly obscured by the right hand; lowering, settled position and finger opening support set-down, but complete clearance of all hand contact is not visible.
+- Exact initial person finger contact and exact robot grasp closure frame are only resolved to the sampled two-frame intervals.

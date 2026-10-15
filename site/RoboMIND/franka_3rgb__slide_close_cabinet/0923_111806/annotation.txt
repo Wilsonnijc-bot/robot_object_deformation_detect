@@ -1,0 +1,47 @@
+RoboMIND / franka_3rgb__slide_close_cabinet/0923_111806
+
+Action generation prompt
+The robotic arm closes its gripper and pushes the open top drawer of the wooden cabinet shut by its handle, then withdraws from the closed drawer. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+slide close wooden cabinet
+
+Quality gate
+exception: sharpness 25.2 vs 120 (third_person)
+
+Observed outcome
+Status: visually_completed
+Description: The top drawer starts partly open (frame 0). After the arm repositions (about frames 24-90), the closed gripper presses on the drawer handle from the image-left side and the drawer slides back into the cabinet (about frames 112-166). It is flush/closed by about frame 168, and the arm then withdraws down and back to image left (about 170-199) with the drawer remaining closed.
+
+Hand roles
+Active visible arm: Single arm moves its gripper beside the open drawer handle, closes the gripper, pushes the drawer shut by the handle, then withdraws.
+Other arm: None.
+
+Coordination
+Single arm acts alone; no second arm, hand transfer or human interaction.
+
+Robot-side evidence
+Visible description: Single Franka Emika Panda arm with a parallel-jaw gripper, base off-frame to image left; it enters from the left edge in camera_right view and reaches toward the cabinet drawer on the right. Only one arm exists.
+Source annotation: original/task_prompt.txt: 'slide close wooden cabinet'.
+Visual certainty: Not a humanoid; left/right anatomy is not needed. The prompt refers to the single visible robotic arm.
+
+Chronology
+frames 0–22: Arm hovers above and left of the partly open top drawer with the gripper open and pointing down near the handle. Drawer is open (front pulled out toward the camera and image left).
+frames 24–70: Gripper lifts slightly, points down at the image left of the handle and rotates/adjusts; wrist rotation and a small gripper-value change appear in telemetry (about frames 40-60). Drawer unchanged and still open.
+frames 72–100: Arm moves back toward the handle; gripper value rises from about 0.2 to 0.99 (about frames 80-100), consistent with the fingers closing; gripper sits at the left end of the handle.
+frames 102–120: Closed gripper rests against the handle area; arm extends toward the cabinet (joint motion increases). Drawer still open at about frame 110; starts moving in at about 112-120.
+frames 122–166: Arm extends, pushing the closed gripper against the drawer handle; the drawer slides back into the cabinet progressively (about frame 134 half closed, 160 with only a small gap).
+frames 168–170: Drawer visibly closed and flush with the cabinet front; closed gripper still at the handle.
+frames 172–199: Arm withdraws down and to image left away from the handle; drawer remains closed (frame 186 and later clear of the handle).
+
+Clip selection
+The episode is one continuous single task (push the already-open top drawer of the wooden cabinet closed); the approach, push and withdrawal are ordinary phases of that task, so the complete 200-frame sequence is retained and no shortened clip or separate full-sequence prompt is needed.
+
+Differences from the publisher annotation
+- No discrepancy: original/task_prompt.txt 'slide close wooden cabinet' matches the observed pushing of the top drawer closed (the object is a wooden two-drawer cabinet whose top drawer is closed; the bottom drawer is already closed and unchanged).
+
+Uncertainties
+- Whether the closed gripper pushes the handle bar from behind or presses on it with the outer fingers is not resolvable at 640x480; the prompt says 'pushes ... shut by its handle' and 'closes its gripper' (gripper telemetry 0.99 from about frame 100, polarity inferred from video as higher = more closed).
+- The exact frame at which the closed gripper first contacts the handle (between about frames 100 and 112) is judged from the contact sheets.
+- FPS is not recorded in the source; frame indices are authoritative, not time.
+- The withdrawal after frame 170 is only partial in the frame (arm remains near the cabinet at frame 199).

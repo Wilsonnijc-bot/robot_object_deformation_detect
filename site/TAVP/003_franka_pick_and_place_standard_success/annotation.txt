@@ -1,0 +1,23 @@
+TAVP / 003_franka_pick_and_place_standard_success
+
+Action generation prompt
+The robotic arm picks up the orange carrot and places it on the purple plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Put the carrot into the purple plate.
+
+Quality gate
+pass: sharpness 181.3 vs 120 (third_person)
+
+Chronology
+frames 0–31: The raised open gripper holds its starting pose above the back of the table.
+frames 32–260: The arm moves forward and down, aligning its open fingers on opposite sides of the separate carrot body.
+frames 261–412: The gripper closes around the carrot while the carrot remains near the tabletop, then holds still before lifting.
+frames 413–550: The arm lifts the gripped carrot clear of the table and carries it rightward toward the lavender plate.
+frames 551–608: The gripper positions the carrot over the plate and lowers it to the plate surface.
+frames 609–642: The fingers open, releasing the carrot; it settles diagonally on the lavender plate with its green leaves hanging toward the near rim and cable opening.
+frames 643–734: The open gripper pauses immediately above the placed carrot, which stays on the plate.
+frames 735–834: The empty gripper rises and withdraws toward the rear of the table; the carrot remains on the lavender plate.
+
+Uncertainties
+- The exact frame of initial jaw contact and final plate contact is partly hidden by the gripper; stage boundaries are approximate. The produce appears to be artificial, but its material cannot be confirmed visually.

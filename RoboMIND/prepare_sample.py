@@ -18,9 +18,14 @@ import h5py
 import numpy as np
 from PIL import Image
 
-from robomind_common import (EPISODES, NOMINAL_FPS, REPO, REVISION, ROOT, ffmpeg_jpeg_pipe, jpeg_frames,
-                             probe, save, sha)
+from robomind_common import (EPISODES, NOMINAL_FPS, REPO, REVISION, ROOT, STANDARD_RGB_EMBODIMENTS, color_args,
+                             ffmpeg_jpeg_pipe, jpeg_frames, probe, save, sha)
 
+CHANNEL_NOTE = {
+    True: 'Standard-decoder colours are natural (RoboMIND lists this embodiment as BGR for its OpenCV loader); no swap applied.',
+    False: 'Stored JPEGs hold red and blue swapped relative to a standard decoder (RoboMIND converts BGR->RGB only for '
+           'Franka/UR embodiments). All decoded derivatives swap red and blue back; the HDF5 is unchanged.',
+}
 CAMERA_NOTE = {'camera_left': 'left external', 'camera_right': 'right external', 'camera_top': 'top',
                'camera_front': 'front', 'camera_left_wrist': 'left wrist', 'camera_right_wrist': 'right wrist'}
 
@@ -57,7 +62,7 @@ def build_episode(episode, source, member):
     for camera in cameras:
         video = original / 'decoded_videos' / f'{camera}.mp4'
         video.parent.mkdir(parents=True, exist_ok=True)
-        ffmpeg_jpeg_pipe(jpeg_frames(stored, camera), ['-c:v', 'libx264', '-preset', 'medium', '-crf', '14',
+        ffmpeg_jpeg_pipe(jpeg_frames(stored, camera), color_args(episode['embodiment']) + ['-c:v', 'libx264', '-preset', 'medium', '-crf', '14',
             '-pix_fmt', 'yuvj420p', '-color_range', 'pc', '-movflags', '+faststart'], str(video))
         info = probe(video)
         stream = next(s for s in info['streams'] if s['codec_type'] == 'video')
@@ -67,7 +72,8 @@ def build_episode(episode, source, member):
             'encoding': 'lossy_preview_h264_crf14_yuvj420p', 'sha256': sha(video)}
     # Frame zero of the generation camera, decoded from the stored JPEG with no resizing.
     first_frame = generation / 'first_frame.png'
-    ffmpeg_jpeg_pipe(jpeg_frames(stored, episode['camera'], 1), ['-frames:v', '1'], str(first_frame))
+    ffmpeg_jpeg_pipe(jpeg_frames(stored, episode['camera'], 1), color_args(episode['embodiment']) + ['-frames:v', '1'],
+                     str(first_frame))
     width, height = Image.open(io.BytesIO(next(jpeg_frames(stored, episode['camera'], 1)))).size
     assert Image.open(first_frame).size == (width, height)
     save(original / 'metadata/metadata.json', {
@@ -82,7 +88,7 @@ def build_episode(episode, source, member):
         'source_language_instruction_note': None if language else
             'No language instruction is stored in this HDF5 and the task is absent from RoboMIND_v1_2_instr.csv.',
         'image_encoding': 'JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.',
-        'channel_order_check': 'Decoded colors were inspected visually and are natural; no channel swap was applied.',
+        'channel_order_check': CHANNEL_NOTE[episode['embodiment'] in STANDARD_RGB_EMBODIMENTS],
         'decoded_preview_videos': previews, 'source_bytes_preserved': True})
     save(generation / 'metadata/metadata.json', {
         'dataset': 'RoboMIND', 'embodiment': episode['embodiment'], 'task': episode['task'],

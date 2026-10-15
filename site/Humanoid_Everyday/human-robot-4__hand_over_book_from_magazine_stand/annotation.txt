@@ -1,0 +1,69 @@
+Humanoid Everyday / human-robot-4__hand_over_book_from_magazine_stand
+
+Action generation prompt
+The robot grasps the exposed edge of the upright book in the magazine stand with its right hand, lifts it clear, and extends it toward the person's outstretched hand. Once the person grips the book, the robot opens its right fingers to let the person take it away, then lowers its empty hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Grabbing a book from a magazine stand and handing it to a person, requiring careful extraction and stable handover of a heavier object.
+
+Quality gate
+pass: sharpness 149.6 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+The person carries the extracted book out of view; the robot lowers its empty right hand.
+Terminal state:
+The person has carried the book out of view after the robot releases it. The robot's right hand is empty and lowered beside the stand; the left hand remains low at the hip, and the magazine stand stays upright on the table without the extracted book.
+
+Hand roles
+Right: Sole manipulating robot hand: grasps the book edge, extracts and lifts it, extends it to the person, releases it during the person's pull, and lowers empty.
+Left: Remains low at the left hip behind the stand; no visible grasp of the book or active support of the stand, and no hand-to-hand robot transfer.
+Person: Reaches from the robot's right/image left, grasps the offered book, shares support briefly with the robot, and removes it after release.
+Coordination: Robot right-hand hold overlaps the person's grasp before the person takes full support. Robot left hand does not participate.
+
+Robot-side evidence
+Confidence: high
+Evidence: The initial PNG shows the front of the torso and face. The active arm visibly attaches to the shoulder on image left, the robot's anatomical right; its upper arm, elbow, wrist and articulated fingers form a continuous visible chain. The opposite arm attaches to the image-right shoulder and rests low at the robot's anatomical left hip.
+Uncertainty: None for robot arm sides; the person's full body is outside view, so their anatomical hand side is not assigned.
+
+Chronology
+  Source frame interval inclusive:
+    - 0
+    - 46
+  Action: Right arm raises its open hand toward the exposed book edge; left arm remains low near the hip.
+  Confidence: high
+  Source frame interval inclusive:
+    - 47
+    - 163
+  Action: Right hand descends around the exposed side of the upright book and closes its fingers to establish a grasp while the book remains in the stand. Contact is partly occluded by the stand lattice.
+  Confidence: high
+  Source frame interval inclusive:
+    - 164
+    - 213
+  Action: Right hand pulls the book upward from the stand, lifts it clear, and carries it outward to the robot's right toward the recipient.
+  Confidence: high
+  Source frame interval inclusive:
+    - 214
+    - 239
+  Action: A person reaches from image left as the robot presents the book; the person contacts its lower portion and closes a hand around it while the robot maintains its grasp.
+  Confidence: high
+  Source frame interval inclusive:
+    - 240
+    - 265
+  Action: The person supports the book with its purple cover facing the camera, while the robot's right hand remains at the opposite side during coordinated handover.
+  Confidence: high
+  Source frame interval inclusive:
+    - 266
+    - 286
+  Action: The person draws the book up and away to image left; the robot opens its right fingers and relinquishes the book. By frame 286 the empty right hand is fully visible and the book is almost out of view.
+  Confidence: high
+  Source frame interval inclusive:
+    - 287
+    - 326
+  Action: The person and book leave the image; the robot retracts and lowers its empty right hand, and the stand remains on the table without the extracted book.
+  Confidence: high
+
+Uncertainties
+- The book's exact identity and weight cannot be established visually; the source instruction's description of a heavier object is not adopted.
+- The precise first contact within the stand is partly occluded by its lattice, but the right-hand grip and subsequent extraction are visible.
+- The recipient's anatomical hand side cannot be established from the isolated visible forearm and hand.

@@ -1,0 +1,53 @@
+RoboMIND / tienkung_gello_1rgb__close_the_drawer_under_the_combination_cabinet/1211_104950
+
+Action generation prompt
+The humanoid's arm enters from the upper left of the image and lowers its dexterous hand, fingers extended, onto the white handle of the partly open drawer. The hand pushes the drawer front inward until the drawer is fully closed, then lifts away and out of view. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Close the drawer under the combination cabinet
+
+Quality gate
+pass: sharpness 149.5 vs 60 (first_person)
+
+Observed outcome
+Status: visually_completed
+Description: The drawer, partly open at frame 0, is pushed back until its dark front panel sits flush under the cabinet body with no interior visible (edge settles by about frame 400). The hand rests on the closed drawer, lifts and leaves the view by about frame 620, and the arm reappears in its upper-left rest pose with fingers upright from about frame 708; the drawer remains closed to frame 758.
+
+Hand roles
+Active visible arm: Acting arm (probable robot-left) lowers a flat, palm-down hand with straight fingers onto the drawer's white handle/top edge of the drawer front and pushes the drawer inward (toward image top, into the cabinet) until it is closed, keeps resting on it, then lifts away upward out of the frame.
+Other arm: Not identified as visible beyond the shared black arm chain at lower left; its telemetry stays essentially constant, and no support, stabilizing, or transfer contact is observed.
+
+Coordination
+One arm acts alone. No bimanual coordination, hand-to-hand transfer, or person interaction. No grasp: the hand pushes with extended fingers and does not close around the handle.
+
+Robot-side evidence
+Visible description: One arm with a white-shelled dexterous hand is the only moving manipulator. It rests at the upper-left of the image (fingers up) at frame 0, leaves the view, re-enters from the upper left, and returns to the same rest pose at the end. It approaches with the hand extended toward image right, back-of-hand shell facing the camera (palm down, judged from the white cover), thumb on the camera-side (image-bottom) edge. A black cable loop and chain links at the lower left of the image move with the same arm. The robot torso is outside the view.
+Telemetry support: HDF5 puppet/master joint_position (16 dims): columns 0-6 move by up to about 1.4 rad over the episode and return near their start values; column 7 (hand/gripper scalar) stays about 1.0; columns 8-14 move less than 0.02 rad and column 15 stays constant. The first 8-dim block therefore corresponds to the acting arm. Column ordering (left-first vs right-first) is not documented in the source.
+Robot relative side: Probably the robot's left arm (overhead view with the robot base at image left facing the cabinet, active arm on the image-top side, thumb toward the image-bottom/medial side for a palm-down hand), but this is not established with certainty.
+Visual certainty: Low to moderate. The robot body is not visible, so the robot's left/right is inferred only from camera geometry and hand layout and could be wrong if the camera is mirrored or the back/palm identification is mistaken. The usable prompt therefore describes the arm by its visible entry from the upper left of the image rather than naming an anatomical side.
+
+Chronology
+frames 0–60: Rest pose: hand with fingers pointing up at the upper-left of the image and a black cable loop at the lower left. Drawer partly open, handle facing the camera. Nothing moves.
+frames 61–100: Arm begins moving (telemetry changes from about frame 60-75); hand and loop leave the view toward the upper left.
+frames 101–166: No manipulator visible; scene unchanged, drawer still partly open.
+frames 167–205: Hand re-enters from the upper left, extended toward image right with thumb pointing toward the camera side, and moves over the drawer interior.
+frames 206–310: Hand lowers over the white handle; extended fingers lie across the handle and top edge of the drawer front while the thumb hangs toward the viewer. The drawer front stays at its initial position (front bottom edge at row about 196 at the right side).
+frames 311–400: Drawer front moves toward image top and into the cabinet under the resting hand (front edge row 196 to about 159 by frame 400); the interior disappears. Which hand surface actually transmits the push (fingers vs palm edge) is not resolved.
+frames 401–590: Drawer closed, front flush under the cabinet body. Hand stays on or over the handle with little visible change.
+frames 591–620: Hand lifts off the handle and moves up and out of the top of the frame.
+frames 621–707: No manipulator visible; drawer closed.
+frames 708–758: Arm re-enters at the left edge and settles in the original upper-left rest pose with fingers pointing up; drawer remains closed through final frame 758.
+
+Clip selection
+Single continuous task with ordinary phases (arm leaves view, re-enters, contacts the drawer handle, pushes the drawer closed, dwells, withdraws, returns to rest). No independent repeated subtasks, so the complete clip is retained and no shortened branch exists.
+
+Differences from the publisher annotation
+- None: the publisher instruction 'Close the drawer under the combination cabinet' matches the visual content. The source gives no side or manipulation detail, which was authored from the video.
+
+Uncertainties
+- Robot-relative left/right cannot be confirmed because the robot body is out of view; telemetry block order is undocumented.
+- Back-of-hand versus palm identification relies on the white cover and may be wrong.
+- The exact contact surface (fingertips, finger pads or edge of the palm) and whether the hand ever pushes the handle vs the front panel is occluded or ambiguous at 640x480.
+- Frame boundaries are approximate, derived from every-second-frame sheets plus native-resolution spot checks and a right-edge row measurement of the drawer front.
+- FPS is not recorded, so durations are not stated.
+- Palm versus back-of-hand orientation and the exact finger/palm contact surface are not resolvable at 640x480, so the prompt omits palm and thumb orientation.

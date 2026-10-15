@@ -1,0 +1,322 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 60,
+  "initial_scene": "Two robot forearms extend from the near side of a table. A brown potato-shaped object rests on the blue plate beside the left hand; the yellow plate beside the right hand is empty. A central mint plate holds separate green and pink objects. The seated person across the table does not take part in the manipulation.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 31,
+      "action": "The left hand approaches the potato on the blue plate with fingers open. The right hand is open and empty above the yellow destination plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 32,
+      "end_frame": 63,
+      "action": "The left hand turns palm-down over the potato and repositions its open thumb and fingers around the object at the near blue-plate edge. At frame 42 the palm occludes most of the object; frames 52, 56 and 62 show it still at the source with the thumb and fingers not yet tightly closed. No intermediate lift or transfer is visible. The right hand remains empty above the yellow plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 64,
+      "end_frame": 75,
+      "action": "The left thumb and fingers curl around opposite sides of the potato, forming the carrying grasp by frames 68-72. The right hand is separate from the potato and does not grasp the source plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 76,
+      "end_frame": 81,
+      "action": "The left hand lifts the held potato from the blue plate and begins moving across the table; at frame 80 it is near the plate edge and frame 82 confirms it clear of the source.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 82,
+      "end_frame": 99,
+      "action": "The left hand carries the potato across to the yellow plate in the same grasp. The right hand simultaneously translates outward/rightward from above the plate: compare its palm and wrist to the fixed yellow rim at 80, 82, 86, 90, 94 and 98. The right hand bears no load and shows no grasp of the potato or plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 100,
+      "end_frame": 109,
+      "action": "The left hand holds and lowers the potato into the yellow-plate interior. Native frames 102, 106, 108 and 109 show the potato still enclosed between the thumb and fingers; the underside contact point with the plate is hidden. The right hand is now lateral to the plate, separated from the potato.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 110,
+      "end_frame": 113,
+      "action": "The left fingers uncurl and lift away from the far side while the thumb opens and passes over the near side. At 111-113 the object is no longer enclosed in the grasp and remains inside the plate. The right hand stays empty beside the plate.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 114,
+      "end_frame": 119,
+      "action": "The left open hand rises and changes orientation above the released potato. The potato changes orientation slightly within the plate as it settles; some projected thumb/object overlap prevents resolving every last grazing contact. The potato remains on the yellow plate at frame 119, with no renewed enclosing grasp. The right hand remains beside the plate.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "left": "Sole load-bearing manipulator: closes its thumb and fingers around the potato body, lifts and carries it in one sustained grasp, lowers it into the yellow plate, and opens the hand to release. No hand-to-hand transfer or loaded regrasp.",
+    "right": "Empty hand: initially above the yellow plate, moves outward/rightward during the left-hand transport, and ends beside the plate. No visible potato contact, plate grasp, or supporting/stabilizing role.",
+    "coordination": "The right-hand displacement begins during transport (visible by frame 82) and continues before the left-hand opening/release at 110-113. The left hand alone bears the potato; the right hand clears the destination area without engaging it."
+  },
+  "anatomical_side_evidence": {
+    "assessment": "The camera looks along the paired arms from the robot's near side toward the work surface. Both forearms enter from their respective near-side body positions. In the source initial PNG, the left hand's open palm has its opposing thumb on its medial/right side, and the right hand is its mirrored counterpart with the thumb on the medial/left side. This paired forearm and hand anatomy establishes robot-relative left and right, rather than using image position alone. It is consistent with the original left-hand instruction.",
+    "limitation": "The shoulders and torso are outside the field of view; side identification relies on the paired proximal forearms and mirrored thumb/palm arrangement."
+  },
+  "terminal_state": "The potato is released within the yellow plate. The left hand is open above it with no enclosing grasp; the right hand is empty beside the plate. The blue source plate is empty. A slight change in potato orientation occurs during release/settling, but it remains inside the yellow plate.",
+  "selected_execution_status": "success",
+  "uncertainties": [
+    "The left palm hides some initial fingertip contacts while establishing the grasp; no separate lifted regrasp is observed.",
+    "The potato underside is occluded during lowering, so the exact first plate-contact frame cannot be fixed; complete release and retention inside the plate are visible.",
+    "During opening and settling, the projected left thumb partly overlaps the potato. Every final grazing contact cannot be determined from the camera angle, but there is no renewed enclosing grasp or lift.",
+    "Shoulder attachments are outside the image; anatomy is established from the paired near-side forearms and mirrored thumb/palm arrangement, consistent with the original instruction.",
+    "Whether the potato-shaped object is actual food or a replica cannot be determined visually."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    30,
+    32,
+    42,
+    48,
+    52,
+    56,
+    62,
+    64,
+    68,
+    70,
+    72,
+    76,
+    78,
+    80,
+    82,
+    86,
+    88,
+    90,
+    94,
+    98,
+    102,
+    104,
+    106,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    119
+  ],
+  "inspection_coverage": {
+    "full_sequence_sampled": "All 60 even-indexed frames from 0 through 118 were visually inspected in sheet_001.jpg.",
+    "native_resolution_frames_viewed": [
+      30,
+      32,
+      42,
+      48,
+      52,
+      56,
+      62,
+      64,
+      68,
+      70,
+      72,
+      76,
+      78,
+      80,
+      82,
+      86,
+      88,
+      90,
+      94,
+      98,
+      102,
+      104,
+      106,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      119
+    ],
+    "source_initial_png_viewed_at_native_resolution": true,
+    "native_resolution": [
+      1280,
+      800
+    ]
+  },
+  "video_id": "12",
+  "dataset": "NVIDIA_GR1_100",
+  "dedicated_review_agent": "review_gr1_12",
+  "review_source_video": "NVIDIA_GR1_100/12/original/original.mp4",
+  "source_frame_count": 120,
+  "source_fps": 20.0,
+  "native_detail_frames": [
+    30,
+    32,
+    42,
+    48,
+    52,
+    56,
+    62,
+    64,
+    68,
+    70,
+    72,
+    76,
+    78,
+    80,
+    82,
+    86,
+    88,
+    90,
+    94,
+    98,
+    102,
+    104,
+    106,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    119
+  ],
+  "world_model_prompt": "The robot uses its left hand to grasp and lift the brown potato from the blue plate. It carries the potato to the yellow plate while its right hand moves outward from above the plate to the plate's right side. The left hand lowers the potato and opens its fingers to release it onto the plate, ending open above the potato. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Use the left hand to pick up brown potato from dark blue plate to the left to yellow plate to the right.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 120,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "336e12766ff9a7061a3a50b36adc2e4659983524825e415b440f1ff48e0698b1",
+  "review_completed_at": "2026-10-13T19:10:25.194012+00:00",
+  "bimanual_second_review": {
+    "completed_at": "2026-10-13T19:10:24.845469+00:00",
+    "scope": "Dedicated same-video second pass tracing both hands, load-bearing contacts, right-hand clearing timing, anatomical evidence and terminal release.",
+    "reviewed_contact_sheets": [
+      "sheet_001.jpg"
+    ],
+    "sampled_frame_count": 60,
+    "source_initial_png_viewed_at_native_resolution": true,
+    "native_frames_viewed": [
+      32,
+      42,
+      52,
+      56,
+      62,
+      64,
+      68,
+      70,
+      72,
+      76,
+      78,
+      80,
+      82,
+      86,
+      90,
+      94,
+      98,
+      102,
+      106,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      119
+    ],
+    "contact_chronology": {
+      "left": [
+        {
+          "frames": [
+            32,
+            63
+          ],
+          "contact": "Palm and open fingers reposition around the potato body; palm occludes contact at 42; object remains at source."
+        },
+        {
+          "frames": [
+            64,
+            75
+          ],
+          "contact": "Thumb and fingers curl around opposite sides of the potato body; enclosing grasp established by 68-72."
+        },
+        {
+          "frames": [
+            76,
+            109
+          ],
+          "contact": "Sustained one-hand potato grasp during lift/transport/lowering. No loaded regrasp, no grasp of a mechanism or separate part."
+        },
+        {
+          "frames": [
+            110,
+            113
+          ],
+          "contact": "Fingers lift away and thumb opens; enclosing contact ends and plate receives the potato."
+        },
+        {
+          "frames": [
+            114,
+            119
+          ],
+          "contact": "Open hand above released potato; residual projected thumb overlap may hide grazing contact, but no renewed grasp or lift."
+        }
+      ],
+      "right": [
+        {
+          "frames": [
+            0,
+            81
+          ],
+          "contact": "Open empty hand above yellow plate; proximity alone supplies no evidence of support or stabilization."
+        },
+        {
+          "frames": [
+            82,
+            109
+          ],
+          "contact": "Moves outward beside the plate during transport and before release; no potato grasp/contact or plate-rim grasp visible."
+        },
+        {
+          "frames": [
+            110,
+            119
+          ],
+          "contact": "Remains open and empty beside the destination, spatially separated from the potato throughout left-hand release."
+        }
+      ]
+    },
+    "object_relative_comparison": "Yellow rim and central objects serve as landmarks. Right palm and wrist shift outward relative to the yellow rim from 80 through 106, before the left fingers open at 110-113. Potato body remains between the left thumb and fingers through 109, then stays in the plate as the left fingers move apart. No independent articulated mechanism is present.",
+    "findings": "Confirms a single-left-hand transfer with an unloaded right-hand clearing movement. Refines timing from the first review: outward movement is visible during transport, before lowering/release. Prompt now states this timing rather than describing right movement after the placement sentence.",
+    "uncertainties": [
+      "The left palm hides some initial fingertip contacts while establishing the grasp; no separate lifted regrasp is observed.",
+      "The potato underside is occluded during lowering, so the exact first plate-contact frame cannot be fixed; complete release and retention inside the plate are visible.",
+      "During opening and settling, the projected left thumb partly overlaps the potato. Every final grazing contact cannot be determined from the camera angle, but there is no renewed enclosing grasp or lift.",
+      "Shoulder attachments are outside the image; anatomy is established from the paired near-side forearms and mirrored thumb/palm arrangement, consistent with the original instruction.",
+      "Whether the potato-shaped object is actual food or a replica cannot be determined visually."
+    ],
+    "anatomical_side_verified": true,
+    "terminal_release_verified": true,
+    "sources_unchanged": true
+  }
+}

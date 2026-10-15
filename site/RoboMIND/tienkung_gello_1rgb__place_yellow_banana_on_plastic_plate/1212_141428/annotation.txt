@@ -1,0 +1,57 @@
+RoboMIND / tienkung_gello_1rgb__place_yellow_banana_on_plastic_plate/1212_141428
+
+Action generation prompt
+The robot's left arm, entering from the left edge of the image, lowers its five-finger hand to the left end of the banana and closes its fingers around it. It lifts and tilts the banana, carries it rightward over the plate, and lowers it inside the plate's rim. The fingers then open to release the banana, which stays resting in the plate, and the arm withdraws up and back toward the left edge with the hand raised. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Place yellow banana on plastic plate
+
+Quality gate
+pass: sharpness 225.7 vs 60 (first_person)
+
+Observed outcome
+Status: visually_completed
+Description: The left-edge hand closes its fingers around the left end of the banana (about frames 306-360), lifts it off the mat (by frames 356-358), carries it rightward over the plate and lowers it inside the rim (about frames 408-464), then opens its fingers (about frames 462-480). The banana rests inside the plate from about frame 478 through the final frame 635 and is not touched afterwards; the hand withdraws up and back toward the left edge and ends raised with open fingers.
+
+Hand roles
+Active visible arm: The single visible arm (robot's left, entering from the left image edge) reaches the banana, grasps its left end with closed dexterous fingers, lifts and tilts it, carries it rightward to the plate, lowers it inside the rim, opens the fingers to release it, and withdraws up/back to a raised pose.
+Other arm: Not visible; its telemetry block (columns 8-15) is constant, so it does not act.
+
+Coordination
+Single arm acts alone; no hand-to-hand transfer, second hand or human interaction.
+
+Robot-side evidence
+Visible description: Only one arm/hand is visible, entering from the left edge of the image with a black wrist/cable housing at the edge and a white forearm and black five-finger hand extending right along the table. The body, head and other arm are never visible; people's legs appear at the top-left background.
+Camera geometry: In the first frame the hand sits at the upper left with its fingers pointing away from the camera toward the table, and the arm reaches forward/right across the table, so the camera looks in the same direction as the robot (head/overhead view from behind the hand); under that geometry image left corresponds to the robot's left. The thumb appears on the right side of the hand with the back of the hand facing the camera, consistent with a left hand viewed from behind (native frame 0), but this is a supporting cue only.
+Telemetry: In puppet/joint_position, columns 0-7 move over the episode (hand-close column 7 about 1.0, then 0.99, then about 0.51 over frames 306-460, then 1.0 by frame 480) while columns 8-15 are constant over all 636 frames. In the earlier Tien Kung episode 1212_105714 the arm entering from the right image edge moved columns 8-15 instead, so the two episodes are mutually consistent with the first 8-dim block being the left arm and the second the right arm, although the source does not document the ordering.
+Source annotation: Publisher instruction: 'Place yellow banana on plastic plate' (no side given).
+Visual certainty: Moderate to high: the left side follows from the forward-looking camera geometry, the left-edge arm entry and the telemetry block consistency across two episodes. The overhead view does not show the torso, so it is not directly proven; the prompt also states the entry edge so the arm is unambiguous.
+
+Chronology
+frames 0–58: Hand is raised at the upper left of the mat with fingers pointing up/away from the camera and the black wrist/cable housing at the left image edge; essentially static (arm telemetry changes are negligible). Banana lies left of the plate on the mat; plate to its right.
+frames 59–143: Arm starts moving at about frame 59: the forearm and hand rotate and move up and forward, the white back of the forearm/hand becomes visible, and by about frames 140-143 the open hand is extended horizontally to the right along the top-left of the mat with fingers pointing right.
+frames 144–167: Hand sweeps right and lowers toward the banana's left end; fingers open, no contact yet (frames 144-166).
+frames 168–305: Fingertips reach the banana's left tip (native frames 168, 190 and 300); the open hand adjusts above and against the left end, pressing and re-aligning slightly (arm telemetry shows small continuing motion). The banana is not displaced or lifted; hand-close telemetry stays about 0.99.
+frames 306–359: Fingers close around the banana's left end (hand-close telemetry about 0.99 to 0.57 over roughly frames 306-360, 0.65 around 330-350); the banana stays on the mat through about frame 354 and has come off the mat, its right end swinging up, by frames 356-358 (native frame 356 shows fingers wrapped around the left end).
+frames 360–407: Banana is lifted clear of the mat and tilted with its right end raised (native 364); the grasp is maintained while the arm carries it rightward and forward toward the plate. Fingers stay closed (about 0.57-0.51).
+frames 408–439: Banana is carried to the left rim of the plate and then over it, moving farther right and down in the image; by native frame 420 it is above the plate's left rim held by the hand; at frames 432-438 it is over the plate.
+frames 440–465: Hand lowers the banana inside the plate's rim and holds it there (native 440 and 466); the banana's curve opens toward the camera; fingers remain closed (about 0.51-0.52) until about frame 462.
+frames 466–479: Fingers open (hand-close telemetry 0.52 to 0.93 to 1.0 over roughly frames 462-480; native 466 and 476 show the fingers relaxing); the banana settles in the plate and no longer follows the hand.
+frames 480–503: Open hand withdraws up and left away from the plate (native 484, 500); banana remains in the plate, lying along the plate's inner wall and not touching the hand.
+frames 504–561: Arm continues to retract toward the left image edge and rotates the open hand to point upward; banana unchanged in the plate.
+frames 562–635: Arm settles in a raised pose near the upper left, with the open fingers pointing up and slightly right and the wrist at the left edge, similar to the start pose; telemetry is nearly still after about frame 600. The banana rests inside the plate through the final frame 635 (native 635), both ends within the rim.
+
+Clip selection
+The episode is one continuous single task (reach, grasp the banana, lift and carry it, lower it into the plate, release, withdraw); the complete sequence is retained, so no shortened clip or separate full-sequence prompt was made.
+
+Differences from the publisher annotation
+- The publisher instruction says 'yellow banana' and 'plastic plate'; the recorded frames show a teal/cyan banana-shaped object and a pale blue-gray plate, consistent with a red-blue channel swap in the stored frames. Shape and action otherwise match the instruction: the banana ends in the plate.
+- The instruction says only 'place'; the video also includes a long open-hand adjustment at the banana's left end before the grasp, a lift, tilt and carry, and a final withdrawal, all kept as ordinary phases of one task.
+
+Uncertainties
+- Robot-relative left is inferred from camera geometry and telemetry block ordering, not from a visible torso; the ordering of the two 8-dim blocks is undocumented.
+- The exact finger contacts on the banana (which fingers pinch or support) are not resolvable at 640x480; the grasp is described neutrally as fingers closing around the banana's left end.
+- Frames 168-305 show the open hand touching and adjusting at the banana's left tip; whether the fingertips make firm contact before closing is not clearly visible, and the banana does not move until the fingers close.
+- The banana is partly occluded by the hand during carry and lowering; the release moment is judged from the hand-close telemetry (0.52 to 1.0 at about frames 462-480) and from the banana staying put in the plate as the hand moves away.
+- The video colour channels appear swapped (the 'yellow' banana looks teal/cyan, the plate pale blue-gray, the mat brown), so the target is identified by shape and the prompt gives no colours.
+- FPS is not recorded; frame indices are authoritative, not time.

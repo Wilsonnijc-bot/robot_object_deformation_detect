@@ -1,0 +1,80 @@
+Humanoid Everyday / loco-manip-4__walk_to_gate_button_and_open_gate
+
+Action generation prompt
+The humanoid robot walks forward to the tall black wall-mounted door actuator, stops within reach, and presses and holds it with its right hand. It pulls the hand back, briefly reaches toward the actuator again, then lowers its right arm and remains beside the wall as the glass double doors swing open. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Walking towards a gate button and pressing it to open the gate, demonstrating navigation to a target and button activation.
+
+Quality gate
+pass: sharpness 412.6 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+Actuator contact and subsequent opening of both glass door leaves are visible; robot remains beside the wall.
+Terminal state:
+Robot stands beside the wall actuator with its right hand lowered and no longer contacting the control. Both glass door leaves are visibly swung wide open; the robot has not passed through the doorway.
+
+Hand roles
+Right: Active pressing hand. Walks with arm low, then raises and extends it to press and hold the actuator, retracts, briefly re-extends toward it, and finally lowers clear.
+Left: Inactive hand on the far side, low near the torso throughout the actuator interaction; no stabilization, transfer, grasp or actuator contact is observed.
+Coordination: Single-hand manipulation with locomotion to bring the robot within reach; the left hand does not assist.
+
+Robot-side evidence
+Description: The initial PNG shows the illuminated face directed toward image right and the front chest panel on the forward side of the clearly visible near shoulder. This near shoulder/arm is the robot-relative right arm. Continuous tracking through the approach and turn shows this same near arm extending to the actuator; the opposite left hand stays below and behind it near the torso. Later frames show the rear torso hardware toward image left, supporting the forward/backward convention rather than assigning sides by image position.
+Confidence: high
+Uncertainty: None material for anatomical side.
+
+Chronology
+  Source frame interval:
+    - 0
+    - 18
+  Action: Initial bent-knee stance facing toward the wall actuator, hands low and empty.
+  Confidence: high
+  Source frame interval:
+    - 19
+    - 140
+  Action: Walks forward with alternating steps toward the tall black wall actuator, adjusting body heading toward the wall while the arms remain low.
+  Confidence: high
+  Source frame interval:
+    - 141
+    - 210
+  Action: Stops close to the actuator and settles into a stable bent-knee stance, without hand contact yet.
+  Confidence: high
+  Source frame interval:
+    - 211
+    - 253
+  Action: Raises and extends the anatomical right arm toward the actuator; fingers remain partly curled. Left hand stays low near the torso.
+  Confidence: high
+  Source frame interval:
+    - 254
+    - 318
+  Action: Right hand contacts and presses the front of the tall actuator near its accessibility symbol, remaining against it while the body stays planted.
+  Confidence: high
+  Source frame interval:
+    - 319
+    - 338
+  Action: Retracts the right hand from the actuator by bending the elbow.
+  Confidence: high
+  Source frame interval:
+    - 339
+    - 358
+  Action: Makes a brief second extension of the right hand toward the actuator; a small visible gap remains in inspected native frames, so a second press is not confirmed. The doors begin opening behind the robot.
+  Confidence: high for reach and door movement; uncertain for any second contact
+  Source frame interval:
+    - 359
+    - 380
+  Action: Withdraws and lowers the right arm while remaining beside the wall; the two glass door leaves continue to swing open.
+  Confidence: high
+  Source frame interval:
+    - 381
+    - 493
+  Action: Holds position beside the wall with right hand lowered and clear of the actuator while both door leaves open widely. No walking through the doorway occurs.
+  Confidence: high
+
+Differences from the publisher annotation
+- Source instruction calls the opening barrier a gate; the visible mechanism is an automatic glass double-door entrance.
+
+Uncertainties
+- The brief second forward reach around frames 339-358 approaches the actuator but native frames 346, 350, 352 and 354 show a small gap; a second contact or press is not confirmed.
+- Individual finger contact and actuator travel are partly hidden by the hand, although sustained hand-to-actuator contact and subsequent door opening are visible.

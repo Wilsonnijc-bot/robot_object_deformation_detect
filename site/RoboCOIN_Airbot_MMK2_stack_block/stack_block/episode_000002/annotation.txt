@@ -1,0 +1,58 @@
+RoboCOIN · Airbot MMK2 / stack_block/episode_000002
+
+Action generation prompt
+The robot's left hand closes its fingers and thumb around the green cube, lifts it, carries it toward the table center, sets it down and opens, then withdraws. The right hand then pinches the small green cylinder from the right side, carries it to the cube, holds it on top of the cube, releases it so it rests on the cube's top face, and withdraws. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand.
+
+Quality gate
+exception: sharpness 12.3 vs 60 (first_person)
+
+Observed outcome
+Status: success
+Description: The green cube rests upright on the table near the scene center and the small green cylinder with striped sides sits upright and centered on top of the cube. Both hands are away from the objects. Nothing was dropped and there were no retries or regrasps.
+
+Hand roles
+Left hand: Active first. Closes its thumb and fingers around the green cube, lifts it, carries it toward the table center and releases it onto the table (frames 0-100), then stays open and still at the left edge without touching any object.
+Right hand: Passive and stationary at the right edge until about frame 100, then active. It grasps the small green cylinder between its thumb and fingers, lifts it, carries it to the cube, holds it above the cube's top face and then on it, and releases it (frames 100-264), then withdraws to the upper-right.
+
+Coordination
+Sequential, not simultaneous. The left hand completes its pick-and-place of the cube and withdraws before the right hand starts to move; the right hand then stacks the cylinder on the placed cube. There is no hand-to-hand transfer and no stabilizing hold by the left hand during stacking; the cube sits on the table unsupported while the cylinder is placed.
+
+Robot-side evidence
+Conclusion: The hand entering from the image-left edge is the robot's left hand, and the one from the image-right edge is the robot's right hand.
+Evidence:
+  - Parquet telemetry (observation.state layout from info.yaml: left_arm joints 1-6, right_arm joints 1-6, left_hand 12, right_hand 12): left-arm joints change by about 1.6 rad over frames 0-40, while right-arm joints change by only about 0.03; the right arm becomes active from about frame 90, as the image-right hand begins moving. Left-hand joint mean rises at frames 20-60 (the cube grasp) and the right-hand joint mean rises at frames 120-260 (the cylinder grasp).
+  - The cam_left_wrist_rgb view at frame 60 shows the green cube pressed against the hand during the first phase, and cam_right_wrist_rgb at frame 200 shows the striped cylinder in its fingers during the stacking phase.
+  - The head camera looks away from the robot's body along the table, so image-left corresponds to the robot's left, consistent with the telemetry.
+Caveat: The cam_front_rgb view is a different perspective; it was only used as a side check.
+
+Chronology
+frames 0–33: The robot-left hand enters from the image-left edge with fingers extended; its thumb tip rests against the green cube's left face (frames 0-12) while the palm approaches. By frames 16-33 the palm and curled fingers come down over the cube's top and its thumb slides underneath on the near side, closing around it. The right hand is stationary at the image-right edge with open fingers, beside the small multicolored cylinder (green top face, striped side), which sits flat on the table. Left-arm telemetry joints change; left-hand joint mean rises from 0.22 at frame 20 to 0.65 by frame 40.
+frames 34–50: The left hand holds the cube between curled fingers and thumb and lifts it off the table (frame 48 native shows the cube raised with its shadow separated from it) while moving it rightward and away from the robot.
+frames 51–89: The left hand carries the cube, still held, across the table toward the scene center, with only small repositioning (left-arm joint changes continue until about frame 80 and then reverse). The cube is lowered toward the table, with the thumb pad beneath it and fingers over the top (frames 84-90).
+frames 90–100: The left hand opens its fingers and releases the cube onto the table near the image center (roughly x 280-350, y 200-300 of 640x480). The cube stays upright and in place. Publisher label for the placement ends at frame 94.
+frames 101–145: The left hand pulls back toward the image-left edge and stays open and still for the rest of the clip; the thumb tip remains visible at the left edge, with no further contact with the cube. The right hand begins moving (right-arm telemetry change from about frame 90-100) and advances from the right edge, fingers around the cylinder. By frame 126-144 the right hand curls around the cylinder with the thumb and fingers on its sides, still on or just above the table.
+frames 146–168: The right hand grasps and lifts the cylinder off the table (frame 148 native shows the cylinder gripped between the thumb and fingers at the hand's right) and carries it leftward, bringing it from the right edge toward the cube. The right-hand joint mean rises from about 0.42 to 0.67-0.73 as the hand closes.
+frames 169–255: The right hand positions the cylinder directly above the cube's top face (native frames 168 and 200 show the cylinder hovering over the cube with the thumb and fingers at its sides) and lowers it until it touches the top. It then holds the cylinder on the cube for a long dwell with almost no visible change (about frames 190-255), likely fine placing/alignment. The cube does not move or topple. The left hand stays open at the image-left edge and does not touch the objects.
+frames 256–264: The right-hand fingers release the cylinder; by frames 258-264 the cylinder is resting on the cube top, with the right hand's thumb and fingers opened and moving away to the upper-left (frame 262 native).
+frames 265–282: The right hand withdraws up and rightward out of the object area, finally into the upper-right corner with fingers extended (frames 274-282); the left hand is open at the left edge. The cylinder remains stacked, upright and centered on top of the cube at the scene center, and nothing falls.
+
+Clip selection
+Complete single-task clip retained: left hand places the cube, then right hand stacks the cylinder on it. These are ordered phases of one stacking task, so the full sequence is kept without cropping, shortening or a first_substep branch.
+
+Differences from the publisher annotation
+- The publisher instruction says 'square building blocks' and 'cylindrical building blocks' in the plural, but the video shows one cube and one small cylinder.
+- The instruction says the cube is placed 'in the center'. The cube ends near the middle of the table surface in the head view, but its position is only moderately central, closer to the left-center of the frame at about x 300 of 640, and it is moved only a short distance from its start at the image-left.
+- The scene annotation says the green block is in the front-left and other blocks are not visible. The visible cylinder has a green top face with colored (yellow/blue/green) bands, which the scene annotation does not mention.
+- The subtask label for grasping the cube ends at frame 33 and placement runs frames 34-94. Visually, the grasp closes at about frames 24-36 and the cube is lifted from about frame 36-48, and its release occurs at about frames 90-96, which matches closely.
+- The label 'Grasp the green cylindrical build blocks' spans frames 95-136, but the right hand only reaches the cylinder at about frames 120-146 and the lift occurs at about frame 146, so the label is a bit early. The 'Place' label spans 137-264, which includes the carry (146-168) and a long hold on top (about 190-255); the actual release is at about 256-264.
+- The publisher 'End' label starts at frame 265, after release, which matches.
+
+Uncertainties
+- Whether the cube is fully lifted or partially slid across the table in frames 36-90 cannot be fully established; frame 48 suggests it is raised, and the shadow is separate from the cube.
+- The exact contact points of the left-hand fingers on the cube are hidden behind the palm; the thumb sits under the near face and the other fingers curl over the top.
+- The long hold of the cylinder on the cube (about frames 190-255) may include slow alignment and release; the exact frame at which the fingers lose contact is estimated at 256-260.
+- Cylinder appearance: green top face with a striped yellow/blue/green side; the identity is described by appearance only.
+- The robot-relative side rests on telemetry names and wrist cameras together with the head-camera view; it was not cross-checked with a body view because no camera shows the robot's torso.

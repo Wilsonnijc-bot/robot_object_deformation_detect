@@ -1,0 +1,52 @@
+RoboMIND / tienkung_gello_1rgb__pick_up_tennis_ball_and_place_it_in_box/1212_105755
+
+Action generation prompt
+The humanoid arm entering from the right side of the image reaches over the table, wraps its dexterous fingers around the yellow-green tennis ball, and lifts it. It carries the ball left above the small white bin with its lid open, lowers it inside, then opens its fingers to release the ball and withdraws to the right, leaving the ball in the bin. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Pick up the tennis ball and place it in the box.
+
+Quality gate
+pass: sharpness 94.0 vs 60 (first_person)
+
+Observed outcome
+Status: visually_completed
+Description: The right-entering hand closes around the green ball (about frames 120-240), lifts and carries it left (about 240-330) above the open-lid bin, lowers it into the bin (about 340-404), and opens to release it (about 404-420). The green ball is visible at the bottom of the bin from about frame 430 through frame 542 while the arm withdraws to near its start pose at the right edge. The ball resting inside the bin is directly visible.
+
+Hand roles
+Active visible arm: The arm entering from the right of the image reaches to the ball, closes its fingers around it, lifts and carries it to the bin, lowers it inside, opens its fingers to release, and withdraws.
+Other arm: Not visible and its telemetry columns (0-7) stay constant; it plays no role.
+
+Coordination
+Single arm and hand act alone; no hand-to-hand transfer, no second-hand support and no human interaction.
+
+Robot-side evidence
+Visible description: A single white-and-black dexterous humanoid hand and forearm enters the overhead view from the right image edge; the torso, shoulders and the second arm are never visible. Only the arm that enters from the right acts.
+Telemetry evidence: In puppet/joint_position (16 columns) only columns 8-15 change (std up to 0.4 rad; column 12 ranges about 1.22 rad, column 15 changes between about 0.62 and 0.92 consistent with hand closing); columns 0-7 are constant. This suggests the second 8-column block (columns 8-15) drives the acting arm and hand, which would correspond to the robot's right arm if the layout is left block then right block, but that ordering is an assumption not established from the video.
+Source annotation: original/task_prompt.txt: 'Pick up the tennis ball and place it in the box.'
+Visual certainty: Robot-relative left/right cannot be established from the overhead view because no body is visible. The prompt therefore uses the visible description 'arm entering from the right side of the image'.
+
+Chronology
+frames 0–36: Hand and forearm held raised at the upper right with fingers spread; green ball on the mat at the right of the small white lidded bin (lid open); no motion of scene objects.
+frames 38–100: Arm lowers and extends leftward across the table toward the ball, hand tilting palm-down with fingers extended (frames 48-100).
+frames 102–128: Fingertips reach the ball surface; the ball stays at its original position (native-resolution frame 130 shows a fingertip on the ball and the hand closing).
+frames 130–238: Fingers progressively curl around the ball with the thumb on one side and the fingers on the other; the ball remains on the mat until the hand begins to rise (about frame 240). Hand-scalar telemetry falls from about 0.92 to 0.66 between frames 180 and 210, consistent with the grasp closing.
+frames 240–330: Ball is lifted off the mat inside the closed hand (frame 262 native resolution: ball held between thumb and fingers) and carried up and to the left toward the bin; at about frames 290-330 it is above the bin rim.
+frames 332–404: Hand lowers the ball into the open bin mouth (frames 336-404), moving slightly in the bin throat; ball still held at frame 396-404.
+frames 406–430: Fingers open (hand scalar rising toward 0.85-0.92) and the ball drops to the bottom of the bin; at frame 430 the open hand hovers above the bin with the ball at the bottom.
+frames 432–500: Arm lifts the open hand out of the bin and withdraws up and to the right; ball remains visible at the bin bottom.
+frames 502–542: Arm rests near the starting pose at the upper right edge with fingers open; ball in the bin; scene otherwise unchanged.
+
+Clip selection
+The episode is one continuous single task (pick up the tennis ball, place it in the bin, withdraw); approach, grasp, lift, transport, release and withdrawal are ordinary phases of one action, so the complete sequence is kept and no shortened reference or separate full-sequence prompt is written.
+
+Differences from the publisher annotation
+- No discrepancy in objects or order. Publisher text says 'box' while the visible container is a small lidded white bin; the ball is called a tennis ball and appears as a green tennis-ball-like sphere.
+
+Uncertainties
+- Robot-relative left/right arm identity is not established because no torso or second arm is visible; telemetry block ordering (columns 8-15 moving) only suggests the right arm.
+- The exact instant of release is a judgement between about frames 404 and 420 because the hand partly occludes the ball inside the bin.
+- The task name says 'box' but the container is a small white trash bin with a hinged lid held open; the prompt describes it as a small white bin with its lid open.
+- The grasp configuration (which fingers oppose the thumb) is only partly visible from above; the prompt says the fingers wrap around the ball.
+- FPS is not recorded in the source; frame indices are authoritative, not time.
+- Telemetry was used only as supporting evidence; the video determines the described outcome.

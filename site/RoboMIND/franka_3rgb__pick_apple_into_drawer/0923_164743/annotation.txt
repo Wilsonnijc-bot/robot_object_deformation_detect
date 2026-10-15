@@ -1,0 +1,58 @@
+RoboMIND / franka_3rgb__pick_apple_into_drawer/0923_164743
+
+Action generation prompt
+The robotic arm grasps the handle of the top drawer, pulls the drawer open, then releases the handle and lifts clear. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Full-sequence prompt
+The robotic arm grasps the top drawer handle and pulls the drawer open, then picks up the red apple, places it inside the open drawer, and pushes the drawer closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Quality gate
+exception: sharpness 27.3 vs 120 (third_person)
+
+Observed outcome
+Status: visually_completed
+Description: The top drawer starts closed (frames 0-136), the gripper holds its handle (closing at about frames 100-130), the drawer is pulled out toward the camera and image left (about frames 138-170) to a partly open position that then stays constant, the gripper opens (about frames 185-200) and lifts off the handle (about 196-209). The drawer remains open and empty; the apple is untouched on the table through frame 209. The gripper is still close to the open drawer's front edge at frame 209, not far away.
+
+Hand roles
+Active visible arm: Single arm grips the top drawer handle and pulls the drawer open, releases and lifts off; later picks up the apple, places it in the drawer and pushes the drawer closed.
+Other arm: None.
+
+Coordination
+Single arm acts alone; no second arm, hand transfer or human interaction.
+
+Robot-side evidence
+Visible description: Single Franka Emika Panda arm with a parallel-jaw gripper; its base is off-frame to image left and the arm enters from the left edge in the camera_right view, reaching toward the drawer cabinet on the right. Only one arm exists.
+Source annotation: No publisher language instruction (task_prompt.txt) exists for this episode; the task name comes only from the folder name.
+Visual certainty: Not a humanoid or dual-arm robot; left/right anatomy is not needed. The prompts refer to the single visible robotic arm.
+
+Chronology
+frames 0–20: Arm held above the table at left of the wooden two-drawer cabinet with gripper open; red apple on the table at the bottom edge of the image; drawers closed.
+frames 22–60: Arm swings toward the cabinet; the gripper moves in front of the top drawer handle (blue wrist light visible from about frame 50).
+frames 62–100: Arm extends and the gripper reaches the top drawer handle; at frame 104 the gripper is at the handle with the drawer still closed.
+frames 100–130: Gripper closes on the handle (telemetry gripper value rises from 0.01 at frame 100 to 0.83 at frame 130); drawer still closed at frames 128 and 136.
+frames 138–170: Arm pulls back toward image left and the top drawer slides out toward the camera; clearly open at frame 144 and at its final extension by about frame 168-170.
+frames 172–184: Drawer stays open and static; the gripper still holds the handle.
+frames 185–209: Gripper value falls from 0.83 (frame 180) to about 0.08 (frame 200) as the fingers open; the gripper lifts off the handle (frames 190-206) while staying near the drawer front. Selected clip ends at frame 209, before the arm base swings toward the apple.
+frames 210–240: Arm swings left and down toward the apple on the table (frames 216-236 viewed).
+frames 242–288: Gripper lowers over the apple; telemetry gripper value rises to about 0.1 at frame 290, consistent with closing on the apple (frame 290 viewed: gripper at the apple).
+frames 290–360: Apple held in the gripper (frame 330 viewed), lifted and carried up and right to the open drawer.
+frames 360–392: Apple held over the open drawer and lowered into it (frame 388 viewed); gripper value falls to 0 at about frame 390.
+frames 394–430: Apple rests inside the open drawer (frame 396 viewed); gripper withdraws up and to the left.
+frames 430–470: Gripper returns to the front of the drawer near the handle and closes (telemetry 0.18 at 430, 0.99 from 450); apple still visible in the open drawer (frames 440, 476 viewed).
+frames 472–490: Arm pushes the drawer in; drawer closed by about frame 486-490 (frame 486 viewed: nearly closed), apple no longer visible.
+frames 490–540: Gripper stays at the closed drawer handle, then the arm begins to retract.
+frames 540–599: Gripper opens (telemetry falls from about 540 to 0 by 560); arm withdraws up and left and settles near the starting pose above the table; drawer closed, table clear.
+
+Clip selection
+The episode contains three independent subtasks (open the top drawer, move the apple into the drawer, push the drawer closed). The first complete meaningful manipulation is opening the top drawer: the gripper closes on the handle, pulls the drawer out, opens to release the handle (gripper telemetry falls from 0.83 at frame 180 to about 0.08 at frame 200) and lifts off it. The selection ends at frame 209, a few frames after the release and before the arm base swings toward the apple (joint 0 starts changing at about frame 205-210; the descent toward the apple is visible from about frame 216). The apple is untouched on the table throughout.
+
+Differences from the publisher annotation
+- There is no publisher language instruction for this episode; the task name 'pick_apple_into_drawer' comes only from the folder name.
+- The folder name describes picking the apple into the drawer, but the video also contains opening the drawer first and pushing it closed after placement. The selected shorter clip covers only the drawer opening; the full-sequence prompt covers all three phases.
+
+Uncertainties
+- Whether the closed gripper holds the handle bar by pinching or hooking behind it is not resolvable at this resolution; the prompt uses 'grasps the handle' based on the gripper telemetry rising and the drawer following the gripper.
+- The boundary at frame 210 is a judgement: the gripper only gradually lifts off the handle (frames 190-206) and stays near the drawer front until about frame 216, while the arm base swing toward the apple starts at about frame 205-210; the selected clip ends at the start of that swing.
+- The apple's presence inside the closed drawer at the end is inferred (seen inside until closure, never seen leaving), not directly visible.
+- FPS is not recorded in the source; frame indices are authoritative, not time.
+- Gripper telemetry polarity (higher value = more closed) was inferred from video and used only as supporting evidence.

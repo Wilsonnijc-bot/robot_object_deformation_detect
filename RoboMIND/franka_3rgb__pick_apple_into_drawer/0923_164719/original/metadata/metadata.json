@@ -57,7 +57,7 @@
   "source_language_instruction": null,
   "source_language_instruction_note": "No language instruction is stored in this HDF5 and the task is absent from RoboMIND_v1_2_instr.csv.",
   "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
-  "channel_order_check": "Decoded colors were inspected visually and are natural; no channel swap was applied.",
+  "channel_order_check": "Standard-decoder colours are natural (RoboMIND lists this embodiment as BGR for its OpenCV loader); no swap applied.",
   "decoded_preview_videos": {
     "camera_right": {
       "path": "../decoded_videos/camera_right.mp4",

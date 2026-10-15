@@ -1,0 +1,69 @@
+Humanoid Everyday / high-precision-4__place_kettle_on_base
+
+Action generation prompt
+The humanoid robot grasps the kettle's handle with its right hand, lifts it from the tabletop, and carries it over the separate circular base. It lowers the kettle onto the base, steadies it while it settles, then opens its fingers and withdraws the right hand, leaving the kettle upright on the base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Placing a kettle precisely on its electrical base, requiring careful alignment of contacts and stable positioning for proper connection.
+
+Quality gate
+pass: sharpness 291.9 vs 120 (third_person)
+
+Observed outcome
+Terminal state:
+Kettle sits upright on the round base, with a base rim and wire visible. Right hand has released and withdrawn beside torso; left hand remains on lap. No electrical activation is shown.
+Selected execution status basis:
+Visible physical kettle placement is complete and stable after hand release; electrical connection not claimed.
+
+Hand roles
+Right: Sole manipulating hand: grasps kettle handle, lifts and transfers kettle, lowers and steadies it on base, opens fingers and withdraws.
+Left: Idle hand rests open over left thigh throughout; no grasp, supporting contact or hand-to-hand transfer.
+Coordination: Single-hand placement with no bimanual coordination or person interaction.
+
+Robot-side evidence
+Convention: Robot-relative anatomy, established from front/three-quarter view of face and chest.
+Right: Active dark hand can be traced through forearm/elbow to shoulder on the robot right, which appears to viewer left in this front view.
+Left: White-backed idle hand attaches through foreground arm to opposite shoulder on robot left, viewer right.
+Confidence: high
+Uncertainty: None
+
+Chronology
+  Source frame interval:
+    - 0
+    - 132
+  Action: Right arm extends toward the separate kettle while the left hand stays on the lap; kettle and base remain on the table.
+  Confidence: high
+  Source frame interval:
+    - 133
+    - 188
+  Action: Right hand reaches the kettle handle and closes around its upper handle region. The kettle begins to rise.
+  Confidence: high
+  Source frame interval:
+    - 189
+    - 248
+  Action: Right hand lifts kettle clear of the tabletop and carries it inward over the circular base; at frame 246 the bottom is visibly above the base.
+  Confidence: high
+  Source frame interval:
+    - 249
+    - 274
+  Action: Right hand lowers kettle onto the circular base, keeping it upright; base remains visible as a rim underneath.
+  Confidence: high
+  Source frame interval:
+    - 275
+    - 456
+  Action: Right hand remains at handle holding the placed kettle steady with small settling adjustments; left hand does not support the kettle or base.
+  Confidence: high
+  Source frame interval:
+    - 457
+    - 552
+  Action: Right fingers open and release the handle, moving clear while kettle remains upright on the base.
+  Confidence: high
+  Source frame interval:
+    - 553
+    - 628
+  Action: Right arm retracts toward the torso, leaving the kettle undisturbed on its base; left hand remains on lap.
+  Confidence: high
+
+Uncertainties
+- Electrical contact alignment and a working electrical connection are not directly visible; success describes stable physical placement only.
+- Some individual finger contact points on the dark handle are occluded, but the handle grip, supported lift and later release are visible.

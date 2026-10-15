@@ -1,0 +1,51 @@
+ActionNet / 01JHF8YGPVVKAXY7FK
+
+Action generation prompt
+The robot uses the hand entering from the lower-right edge to close its fingers and thumb around the croissant-shaped pastry on the checkered tablecloth and lift it. It carries the pastry to the white stacked shelf, slides it into the middle shelf compartment, and opens its hand to release it there, then withdraws, leaving the pastry resting on the middle shelf. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Take the croissant and put it on the second shelf
+
+Quality gate
+pass: sharpness 363.5 vs 60 (first_person)
+
+Observed outcome
+Status: successful_visible_placement
+Description: Pastry is released into the middle (second from top) compartment of the white three-tier rack and remains resting there while the hand withdraws.
+Selected action outcome: successful_visible_placement
+Source overall success label: not used to infer outcome
+
+Hand roles
+Lower right visible arm: Sole manipulating hand: closes thumb and fingers around the pastry on the tablecloth, bears it during lift and transport, inserts it into the middle compartment of the white rack, opens to release it, withdraws and is raised, then lowered back to its lower-right starting position.
+Lower left visible arm: Remains stationary at the lower-left edge for the whole clip; no contact with the pastry, shelf or any other object.
+
+Coordination
+Single-hand object placement. No hand-to-hand transfer, bimanual stabilization or regrasp. A person at the right edge of the frame stands, then walks out of view near the end; no physical interaction with the robot, pastry or shelf is observed.
+
+Robot-side evidence
+Active arm: hand entering from the lower-right edge of the initial image
+Initial frame evidence: Paired forearms enter from the near lower image edges; the lower-right forearm/hand is the one that reaches the pastry. Torso and shoulders are outside the image, so attachment to the robot body is not visible. Hand geometry (thumb and grouped fingers) does not independently establish camera mirroring or pose relative to the robot body.
+Confidence: Visible-arm identity is unambiguous; anatomical left/right is not independently established.
+
+Chronology
+frames 0–22: Pastry rests on the checkered cloth right of the three-tier white rack; both hands are clear and static (the lower-right hand is upright beside the pastry). Person at right edge is seated/standing with a hand at the face.
+frames 24–48: Lower-right hand tilts and moves left toward the pastry with fingers open; thumb-side and finger-side surfaces come either side of it by about frame 48.
+frames 50–100: Hand lowers onto the pastry and its open thumb/fingers straddle the pastry's lower-right end; native frame 102 shows the open hand against the pastry with the pastry still on the cloth.
+frames 102–166: Fingers and thumb close on opposing sides of the pastry (native frame 150 shows dark thumb below and fingers above the orange pastry); small shifts of the grasp before lift. No second-hand contact.
+frames 168–214: Hand lifts the pastry off the cloth and carries it left and upward toward the rack while rotating it, pastry held end-on in the hand.
+frames 216–262: Held pastry reaches the rack front face and moves into the middle (second) compartment opening; native frame 260 shows the pastry partly inside the compartment behind the hand.
+frames 264–336: Hand pushes the pastry further into the middle compartment and holds it there. The rack appears slightly shifted/tilted in the image in frames about 296-332 (native 316), apparently pushed slightly by the hand, and returns to roughly its original pose by about frame 336. Pastry becomes mostly occluded by the hand and the shelf mesh.
+frames 338–358: Fingers open (native frame 340: open thumb/finger spread beside the pastry) and the hand retracts from the compartment; pastry stays inside the middle compartment.
+frames 360–384: Hand, now clear of the pastry, moves right and upward away from the rack with fingers spread. The person moves out of the view to the right.
+frames 386–420: Hand lowers back to the lower-right edge of the image and stays still. Pastry remains resting inside the middle compartment (native frame 420) with both hands clear; no further manipulation.
+
+Differences from the publisher annotation
+- Source says 'second shelf'; the pastry ends in the middle compartment of a three-tier rack, which is second from the top and second from the bottom, so it is consistent. The prompt names the middle shelf because the numbering direction is not stated.
+- Croissant identity comes from the source annotation; visually it is a golden-orange pastry-shaped object (triangular, textured). Prompt uses croissant-shaped pastry rather than asserting food material.
+
+Uncertainties
+- Anatomical left/right is not established: torso and shoulders are outside the image and camera mirroring is not known; the prompt uses the unambiguous hand entering from the lower-right edge.
+- Exact frame of table separation and of release inside the shelf cannot be isolated because the hand and shelf mesh occlude the pastry; chronology intervals bracket visible transitions.
+- The slight rack displacement around frames 296-332 may be hand contact with the rack or camera/rack motion; not narrated in the prompt.
+- Actual food versus prop material cannot be established visually.
+- Top camera shows slight motion across the sequence; the fixed-camera generation constraint is retained verbatim.

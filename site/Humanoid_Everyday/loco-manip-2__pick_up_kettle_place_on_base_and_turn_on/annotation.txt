@@ -1,0 +1,43 @@
+Humanoid Everyday / loco-manip-2__pick_up_kettle_place_on_base_and_turn_on
+
+Action generation prompt
+The humanoid grasps the black kettle by its handle with its right hand and lifts it from the rear counter. Holding it in the same hand, it steps backward, then walks forward to the round base in front of the sink, sets the kettle upright on the base, and turns its handle toward itself. It releases the handle, makes pressing motions at the small switch below it with its right fingers, and withdraws, leaving the kettle on the base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Walking to pick up a kettle, placing it on its base, and turning it on, demonstrating multi-step mobile manipulation with precise placement.
+
+Quality gate
+pass: sharpness 561.8 vs 120 (third_person)
+
+Observed outcome
+Black kettle stands upright on the nearer round base in front of the sink, handle facing the robot. Right hand has withdrawn and lowered; left remains near the torso. Placement is visibly complete; successful electrical activation is not visually established.
+
+Hand roles
+Right: Raises toward the kettle, closes around its handle, lifts and supports it throughout backward and forward walking, lowers it onto the round base, adjusts the kettle orientation, releases, and makes lower-switch pressing motions before withdrawing.
+Left: Remains low beside the waist/torso; does not grasp the kettle or base, support the load, or receive a transfer.
+Coordination: Single-hand transport and operation; leg stepping and torso translation move the held kettle to the nearer base. No bimanual support or hand-to-hand transfer is visible.
+
+Robot-side evidence
+Active hand: right
+Confidence: high
+Evidence: The active arm is continuously traceable to the camera-near shoulder in the initial PNG and native frames 110, 270, 570 and 940. The torso front and foot toes point toward the counter (image right), while the long hanging rear panel and cable hardware lie on the opposite/back side (image left). This is a view from the robot's right side; the visible near shoulder, elbow and hand therefore belong to its anatomical right arm, rather than being named from image horizontal position.
+
+Chronology
+frames 0–110: Standing beside the counter, the robot raises and extends its anatomical right arm toward the kettle handle; left hand stays low. No substantial walking approach precedes this reach.
+frames 111–254: Right fingers close at the handle; the kettle lifts off the rear counter and moves outward toward the robot, remaining supported only by the right hand.
+frames 255–310: Robot draws the suspended kettle toward its upper torso, bending its right elbow and beginning a backward body shift.
+frames 311–418: Robot takes backward steps away from the counter while holding the kettle aloft; much of its body briefly goes beyond the image left edge.
+frames 419–570: Robot steps forward toward the nearer round base in front of the sink, carrying the kettle in the right hand without transfer or left-hand support.
+frames 571–710: Right arm lowers the kettle over the central connector and brings its bottom onto the round base. Kettle becomes visibly supported at the base, while right hand still holds the handle.
+frames 711–982: Right hand adjusts the seated kettle and changes its orientation so the handle moves from image right to the robot-facing/image-left side; hand opens and repositions around the handle/body. The kettle stays on the round base.
+frames 983–1018: Right hand descends from the handle toward the small protruding lower switch, makes a short downward motion, and retracts slightly; exact switch travel is partially obscured by the fingers.
+frames 1019–1182: Right hand moves back toward the lower switch and holds its finger tips at that area, with small pressing/adjusting motions. Kettle remains upright on the base. No clear illuminated indicator or boiling confirms activation.
+frames 1183–1238: Right hand rises away from the lower switch along the handle/body, then withdraws and lowers clear; kettle remains upright and unsupported by either hand on the round base.
+
+Differences from the publisher annotation
+- The source instruction says walking to pick up the kettle; the visible clip begins already beside it and shows the substantial walking after pickup.
+- The source instruction asserts turning it on; the observed ending establishes placement and switch-directed pressing motions but no unambiguous electrical activation.
+
+Uncertainties
+- Right fingers partly occlude the small lower switch during the pressing motions; exact actuation and whether the kettle is powered on cannot be established from the visible clip.
+- The robot briefly moves partly outside the left image edge while walking backward, so the complete foot trajectory there is occluded.

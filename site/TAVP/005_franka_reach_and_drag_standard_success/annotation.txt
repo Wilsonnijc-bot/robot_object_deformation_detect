@@ -1,0 +1,21 @@
+TAVP / 005_franka_reach_and_drag_standard_success
+
+Action generation prompt
+The robotic arm grasps the wooden strip and uses it to sweep the green apple into the gap between the green and red buttons. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Sweep the green apple into the gap between buttons using wood board.
+
+Quality gate
+pass: sharpness 139.6 vs 120 (third_person)
+
+Chronology
+frames 0–635: The robot slowly reorients its wrist from a raised pose, then extends forward and downward toward the wooden strip, reaching a point right of its center. The apple and strip remain in their starting positions.
+frames 636–945: The downward-facing parallel gripper settles around the wooden strip and closes on it. There is a prolonged hold and a small rocking or alignment adjustment of the strip before transport.
+frames 946–1110: The robot lifts and angles the gripped strip, then draws it forward toward the camera. The strip contacts the rear of the green apple and moves it toward the table front, into the gap between the buttons and close beside the red button. The strip also appears to nudge the green button assembly slightly.
+frames 1111–1210: The robot raises and retracts the wooden strip away from the apple while keeping it gripped. The apple settles in its new forward position between the buttons, near the red button; the strip remains held above the tabletop at the end.
+
+Uncertainties
+- The strip-gripper contact is partly occluded by the gripper housing, though subsequent coupled motion clearly shows the strip is held.
+- The apple moves under contact with the wooden strip; the video does not clearly distinguish pure sliding from slight rolling.
+- The strip appears to shift the green button assembly slightly during the forward sweep; no button press is clearly established.

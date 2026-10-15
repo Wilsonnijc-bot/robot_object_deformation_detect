@@ -1,0 +1,44 @@
+Humanoid Everyday / articulated-7__close_cabinet_door
+
+Action generation prompt
+The robot raises its left hand to the outer face of the open cabinet door marked 2D11 and presses it inward, swinging the door shut against the cabinet. It then withdraws and lowers the left hand while remaining in place, leaving the door closed. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Closing a cabinet door smoothly, demonstrating control of hinged mechanisms and gentle force application to avoid slamming.
+
+Quality gate
+pass: sharpness 204.6 vs 120 (third_person)
+
+Observed outcome
+The 2D11 cabinet door is flush with the cabinet and remains closed at frame 143; both hands are lowered and the robot stands in the same location.
+
+Hand roles
+Left: Active camera-near arm: raises the open hand, presses the broad outer door face to swing it shut, then withdraws and lowers. No handle grasp, object lifting or transfer is observed.
+Right: Far arm remains lowered near the waist/side; does not contact, stabilize or manipulate the door.
+Coordination: Single-hand door closure. Robot maintains its planted, slightly bent-knee stance; no hand-to-hand transfer or person interaction.
+
+Robot-side evidence
+Active hand: left
+Confidence: high
+Evidence: The illuminated front facial contour points toward image left, toward the cabinet, while the backpack/cables lie behind the torso on image right. The camera sees the robot from its left side and slightly behind: the active arm is continuously visible from the near shoulder through elbow to hand, with the other arm farther behind it. The near-side arm is thus robot-relative left; this is based on body facing and attachment, not image position alone.
+Initial frame indices:
+  - 0
+Corroborating frame indices:
+  - 16
+  - 24
+  - 30
+  - 48
+  - 56
+  - 80
+  - 143
+
+Chronology
+frames 0–20: Left shoulder and elbow raise the camera-near hand from below the door toward its broad outer face. The door remains open and the right hand stays low beside the torso.
+frames 21–46: Left hand reaches and bears against the outer door panel, below the 2D11 marking and away from the handle. Fingers remain open; there is no observed handle grasp. The hand adjusts while the panel remains largely open.
+frames 47–66: Left arm presses the panel inward; the door rotates around its left vertical hinge into alignment with the surrounding cabinet fronts. The hand follows the closing panel, and the dark opening disappears.
+frames 67–86: Door is visibly closed and flush. Left hand remains close to the cabinet briefly; the right hand remains low without manipulating or supporting the door.
+frames 87–126: Left hand withdraws from the closed door and the elbow extends downward, lowering the arm toward the side. Feet remain in place.
+frames 127–143: Robot holds the final standing posture with both hands lowered. Door 2D11 remains closed.
+
+Uncertainties
+- Internal latch engagement is not visible; success refers to the visibly closed door, not a verified latched or locked state. Exact contact force and the source caption's gentle-force/avoid-slamming characterization cannot be established from visual frames.

@@ -1,0 +1,21 @@
+TAVP / 002_franka_fold_towel_standard_success
+
+Action generation prompt
+The robotic arm grasps the towel's left edge and folds the left half over the right half. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Fold the towel.
+
+Quality gate
+pass: sharpness 131.6 vs 120 (third_person)
+
+Chronology
+frames 0–159: The raised arm and open gripper pause above the rear portion of the table; the towel remains stretched across the front.
+frames 160–715: The arm bends toward the left and forward, rotates its gripper downward, and slowly descends toward the towel's left edge.
+frames 716–935: The gripper reaches the left edge near its middle, pinches the fabric, and pauses near table level. Small fabric shifts occur; the exact finger contact is partly hidden by the gripper body.
+frames 936–1139: The arm lifts the pinched left edge and moves it rightward in an arc. The towel drapes from the gripper, the left portion turns upward and across, and the towel slides slightly right on the tabletop.
+frames 1140–1203: The arm reaches the towel's right side and lowers the held fabric over the remaining half, producing a smaller layered rectangle with a loose uneven top flap near the round table opening.
+frames 1204–1395: The gripper pauses close to the folded towel's right edge, with the folded cloth resting on the table; near the final frames the wrist begins a small upward movement. No large retreat or second fold is shown.
+
+Uncertainties
+- The gripper body partly hides the fingers at the initial pinch and final placement. The visible fold and final small wrist lift are clear, but a complete opening/release of the fabric cannot be confirmed.

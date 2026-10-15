@@ -1,0 +1,28 @@
+TAVP / 006_franka_stack_bowls_standard_success
+
+Action generation prompt
+The robotic arm picks up the mint-green bowl and sets it upright on the lavender dish. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Full-sequence prompt
+The robotic arm sets the mint-green bowl upright on the lavender dish, then picks up the cream bowl and nests it inside the mint-green bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Stack a beige bowl and a green bowl on a purple plate.
+
+Quality gate
+pass: sharpness 160.4 vs 120 (third_person)
+
+Chronology
+frames 0–210: The raised open gripper moves rightward and forward to hover above the mint-green bowl.
+frames 211–510: The gripper lowers to the right side of the mint bowl and closes around its rim, with one finger inside and the other outside. The bowl remains on the tabletop during alignment and grasp.
+frames 511–640: The arm lifts the mint bowl clear of the tabletop, keeping its opening facing upward.
+frames 641–800: The arm carries the bowl forward over the lavender shallow dish, then lowers it onto the dish.
+frames 801–930: The mint bowl rests upright on the lavender dish; the gripper opens and releases its rim.
+frames 931–1040: The empty open gripper withdraws upward, leaving the mint bowl stable on the lavender dish.
+frames 1041–1420: The arm moves left and lowers the open gripper to the cream bowl, then closes around its right rim.
+frames 1421–1580: The robot lifts the cream bowl and carries it upward and right toward the mint bowl.
+frames 1581–1735: The cream bowl is lowered upright into the mint bowl, forming a nested stack on the lavender dish; the fingers open to release it.
+frames 1736–2003: The open gripper briefly remains near the stacked bowls, then retracts upward. The cream bowl remains nested in the mint bowl on the lavender dish.
+
+Uncertainties
+- The lavender base object is visibly shallow and plate-like; its exact bowl-versus-plate category is ambiguous.

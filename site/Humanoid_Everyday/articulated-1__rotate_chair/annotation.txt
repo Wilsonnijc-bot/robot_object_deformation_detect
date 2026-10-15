@@ -1,0 +1,74 @@
+Humanoid Everyday / articulated-1__rotate_chair
+
+Action generation prompt
+The humanoid uses its right hand to grasp the near side edge of the office chair's backrest and turn the backrest, seat, and armrests together to a new angle. It opens its right hand and lowers the arm, leaving the chair turned while its left arm remains behind the backrest. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Rotating an office chair by manipulating its swivel mechanism, demonstrating understanding of rotational joints and force application for smooth articulated motion.
+
+Quality gate
+pass: sharpness 239.4 vs 120 (third_person)
+
+Observed outcome
+The office chair remains turned to a new angle, with the near armrest and backrest edge displaced from the initial orientation. Right hand has released the backrest and hangs beside the right thigh. Left arm remains behind the backrest, and a left-hand release is not visible.
+
+Hand roles
+Right: Confirmed manipulating hand: engages the near side edge of the backrest, curls fingers to grip, rotates the chair assembly, straightens fingers to release and withdraws downward. No mechanism, lever, seat underside or swivel joint is contacted visibly.
+Left: Positioned behind the opposite backrest side. Open finger portions are visible beside the far edge before the rotating backrest occludes them. An opposing brace, force contribution, uninterrupted contact, regrasp or release is not established.
+Coordination: Only the right-hand chair manipulation is confirmed. The left arm stays behind the backrest, but its partly visible proximity does not establish active coordinated support.
+Load bearing: Chair remains supported by its floor/base. No lift or hand-to-hand load transfer occurs.
+
+Robot-side evidence
+Convention: Robot anatomy, not image directions.
+Evidence: The robot faces the camera with its chest and front face visible. The manipulating hand is connected continuously through the forearm/elbow to the shoulder on image left, which is robot-relative right; the opposite arm attached to the shoulder on image right is robot-relative left. Native initial PNG and frames 54, 110 and 170 establish these connections.
+Confidence: high
+Uncertainty: No anatomical-side uncertainty. Left-hand stabilizing contact is not established, including before full occlusion.
+
+Chronology
+  Source frame interval inclusive:
+    - 0
+    - 44
+  Observation: Right hand is lowered beside the right thigh; left arm is behind the backrest with finger portions visible beside its far edge. Chair is nearly still.
+  Confidence: high for pose; left contact uncertain
+  Source frame interval inclusive:
+    - 45
+    - 128
+  Observation: Right arm lifts toward the near/image-left side edge of the backrest with its fingers extended. Left forearm stays behind the far side.
+  Confidence: high
+  Source frame interval inclusive:
+    - 129
+    - 200
+  Observation: Right hand settles at the near backrest edge; initially extended fingers bend against the front surface and establish the grip by frame 200. Left-hand finger portions remain visible beside the opposite edge, without a clearly established opposing clamp or brace.
+  Confidence: high for right grip; left contact uncertain
+  Source frame interval inclusive:
+    - 201
+    - 304
+  Observation: The gripped near backrest edge shifts across toward image right. The backrest outline and oval hole change perspective, while seat and armrests reorient with it: this is rotation of the chair assembly, not isolated wrist rotation or backrest flexion. Left fingers visible beside the opposite edge at 220-236 become obscured as that edge moves out of view around 252-260; no separate left engagement or release can be established.
+  Confidence: high for assembly rotation and right grip; unknown hidden left contact
+  Source frame interval inclusive:
+    - 305
+    - 366
+  Observation: Chair remains at the new angle with the right hand still at the near edge. Left forearm remains behind the backrest.
+  Confidence: high
+  Source frame interval inclusive:
+    - 367
+    - 400
+  Observation: Right fingers straighten/open by native frame 378, ending the curled grip while the hand remains in front of and near the edge. No second grasp occurs. Left hand remains obscured.
+  Confidence: high
+  Source frame interval inclusive:
+    - 401
+    - 436
+  Observation: Open right hand withdraws away from the near edge; by native frame 436 it is clearly separated. Chair retains its turned orientation.
+  Confidence: high
+  Source frame interval inclusive:
+    - 437
+    - 533
+  Observation: Right arm lowers beside the thigh and the chair stays turned. Left forearm remains behind the backrest; its contact or release is not visible.
+  Confidence: high
+
+Differences from the publisher annotation
+- The source describes manipulating the swivel mechanism. Visible manipulation is a right-hand grip on the backrest edge; no separate mechanism/control is visibly operated.
+
+Uncertainties
+- Left fingers beside the far backrest edge do not establish firm bracing contact. The palm/opposing contact surfaces are partly hidden; the hand becomes obscured during rotation, so its force contribution, uninterrupted contact and release cannot be determined.
+- The chair base/swivel is mostly below or obscured by the visible chair. Backrest, seat and armrest landmarks confirm rotation of the chair assembly, but the exact pivot, any simultaneous floor translation and manipulation of a separate swivel control cannot be established.

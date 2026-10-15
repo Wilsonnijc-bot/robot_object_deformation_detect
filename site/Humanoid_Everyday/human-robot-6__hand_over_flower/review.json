@@ -1,0 +1,186 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg",
+    "sheet_002.jpg",
+    "sheet_003.jpg",
+    "sheet_004.jpg",
+    "sheet_005.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 261,
+  "initial_scene": "Front-facing humanoid stands behind a white tabletop. A bouquet of three pink rose-shaped flowers and green stems/leaves lies on the tabletop in front of its anatomical left arm, on image right. Both arms initially hang low; no person is initially visible.",
+  "observed_sequence": [
+    {
+      "source_frame_interval": [
+        0,
+        44
+      ],
+      "action": "Robot remains stationary with bouquet resting on table; both hands low.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        45,
+        158
+      ],
+      "action": "Anatomical left arm rises, extends toward bouquet and lowers its open fingers around the green stems/leaves; anatomical right arm remains beside torso.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        159,
+        222
+      ],
+      "action": "Left fingers settle around stems/leaves and close; bouquet still contacts tabletop while grasp is established.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        223,
+        260
+      ],
+      "action": "Left hand lifts bouquet clear of table, with blossoms initially angled outward and stems trailing.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        261,
+        346
+      ],
+      "action": "Person reaches one hand into view from image left. Robot moves bouquet inward and rotates it upright, presenting exposed lower stems to the reaching hand.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        347,
+        414
+      ],
+      "action": "Person grips lower stems below robot hand. Robot continues holding upper stem/leaf region while bouquet tilts slightly during shared support.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        415,
+        426
+      ],
+      "action": "Robot opens left fingers and releases bouquet into person's hand; by frame 426 bouquet and open robot hand are clearly separated.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        427,
+        452
+      ],
+      "action": "Person carries bouquet out toward image left; robot's empty left hand remains raised briefly.",
+      "confidence": "high"
+    },
+    {
+      "source_frame_interval": [
+        453,
+        520
+      ],
+      "action": "Empty left arm retracts and lowers beside body. Bouquet and person are absent from final view, and table is empty.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "left": "Sole manipulating robot hand: grasps stems/leaves, lifts bouquet, turns blossoms upright, presents lower stems, supports bouquet while person takes hold, releases, and lowers empty hand.",
+    "right": "Idle robot arm hangs at side throughout and does not contact bouquet or assist transfer.",
+    "person": "One visible human hand enters from image left, grips lower stems beneath robot's grasp, shares support during transfer, then carries bouquet away.",
+    "coordination": "Robot retains upper stem/leaf support while person acquires exposed lower stems; robot opens only after person has gripped the bouquet. No robot hand-to-hand transfer occurs."
+  },
+  "anatomical_side_evidence": {
+    "robot": "Initial PNG and native frames show the face and chest front toward camera. The active image-right arm is continuously traceable from the shoulder on the robot's anatomical left through elbow/wrist to the bouquet hand. The image-left arm is anatomical right and stays low.",
+    "confidence": "high",
+    "person": "Only one human forearm and hand are visible; human anatomical side is not required or asserted."
+  },
+  "handling_outcome": "Bouquet is visibly transferred to person without an observed drop; no placement back on table occurs.",
+  "outcome": "Successful visible handover.",
+  "coordinated_action": "Single robot-left-hand to human-hand transfer with overlap in support before release.",
+  "terminal_state": "Person has removed bouquet from camera view. Robot stands stationary with both hands lowered and empty; tabletop is clear of bouquet.",
+  "selected_execution_status": "success",
+  "uncertainties": [
+    "Flowers look rose-shaped, but whether they are real or artificial cannot be established visually; prompt uses appearance-based pink flower bouquet.",
+    "Only a person's forearm/hand is visible; person's anatomical hand side is not asserted."
+  ],
+  "annotation_discrepancies": [
+    "Source instruction says a flower; visible object is a bouquet with three prominent pink blossoms. The observed handover matches the instruction's main action."
+  ],
+  "evidence_frame_indices": [
+    0,
+    150,
+    192,
+    222,
+    236,
+    264,
+    324,
+    348,
+    396,
+    414,
+    420,
+    426,
+    432,
+    446,
+    520
+  ],
+  "inspection_coverage": {
+    "full_sequence": "All five contact sheets visually inspected; every second decoded frame from frame 0 through 520 (261 samples).",
+    "native_transition_frames": [
+      0,
+      150,
+      192,
+      222,
+      236,
+      264,
+      324,
+      348,
+      396,
+      414,
+      420,
+      426,
+      432,
+      446,
+      520
+    ],
+    "source_initial_png_viewed_at_native_resolution": true,
+    "native_final_frame_viewed": 520,
+    "retained_source_frames": [
+      0,
+      520
+    ]
+  },
+  "video_id": "human-robot-6",
+  "dataset": "Humanoid_Everyday",
+  "dedicated_review_agent": "review_he_human_robot_6",
+  "review_source_video": "Humanoid_Everyday/human-robot-6__hand_over_flower/third_person/original/original.mp4",
+  "source_frame_count": 521,
+  "source_fps": 29.942528735632184,
+  "native_detail_frames": [
+    0,
+    150,
+    192,
+    222,
+    236,
+    264,
+    324,
+    348,
+    396,
+    414,
+    420,
+    426,
+    432,
+    446,
+    520
+  ],
+  "world_model_prompt": "The humanoid robot grasps the pink flower bouquet around its stems and leaves with its left hand, lifts it from the table, and turns it upright toward a person's outstretched hand. It holds the bouquet while the person grasps the exposed stems, then opens its fingers to release it. The person carries the bouquet away as the robot lowers its empty left hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Handing over a flower to a person with delicate handling and appropriate presentation angle, demonstrating care for fragile objects in social contexts.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 521,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "f132440c008bafde45b8dfff63551a61ed308789152adb84b71a1faae3d80278",
+  "review_completed_at": "2026-10-13T17:25:27.053531+00:00"
+}

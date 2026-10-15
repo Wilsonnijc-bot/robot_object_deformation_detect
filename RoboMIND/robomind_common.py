@@ -12,6 +12,18 @@ REPO = 'x-humanoid-robomind/RoboMIND'
 REVISION = 'e7ffe31d1fe983a42c3d7b79d192f554fc05b86e'
 # RoboMIND does not record a frame rate for these files; 30 FPS is a nominal playback rate.
 NOMINAL_FPS = '30/1'
+# RoboMIND's loader decodes JPEGs with OpenCV (BGR) and converts BGR->RGB only for these embodiments
+# (metamanifest/source_README.md). For every other embodiment the stored JPEGs therefore hold red and
+# blue swapped relative to a standard decoder, so our decodes swap them back.
+STANDARD_RGB_EMBODIMENTS = {'h5_franka_3rgb', 'h5_franka_1rgb', 'h5_ur_1rgb', 'h5_franka_fr3_dual'}
+SWAP_RB_FILTER = 'colorchannelmixer=rr=0:rb=1:br=1:bb=0,format=yuvj420p'
+
+
+def color_args(embodiment):
+    """ffmpeg filter arguments that give natural colours for this embodiment's stored JPEGs."""
+    return [] if embodiment in STANDARD_RGB_EMBODIMENTS else ['-vf', SWAP_RB_FILTER]
+
+
 CONSTRAINT = 'Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.'
 EPISODES = [
     {'key': 'franka_3rgb', 'folder': 'franka_3rgb__pick_apple_into_drawer', 'episode': '0923_164719',
@@ -72,10 +84,10 @@ def ffmpeg_jpeg_pipe(frames, output_args, tail):
     return b''.join(stdout_chunks)
 
 
-def source_frame_hashes(hdf5_path, camera, count):
-    """Per-frame MD5 of the YUV decode of the stored JPEGs (the reference every encode must match)."""
+def source_frame_hashes(hdf5_path, camera, count, embodiment):
+    """Per-frame MD5 of the colour-corrected YUV decode of the stored JPEGs (the reference every encode must match)."""
     out = ffmpeg_jpeg_pipe(jpeg_frames(hdf5_path, camera, count),
-        ['-pix_fmt', 'yuvj420p', '-f', 'framemd5'], '-')
+        color_args(embodiment) + ['-pix_fmt', 'yuvj420p', '-f', 'framemd5'], '-')
     return [line.rsplit(',', 1)[1].strip() for line in out.decode().splitlines() if line and not line.startswith('#')]
 
 

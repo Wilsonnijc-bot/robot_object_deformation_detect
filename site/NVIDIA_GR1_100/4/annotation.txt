@@ -1,0 +1,48 @@
+NVIDIA GR1 / 4
+
+Action generation prompt
+The robot closes its left hand around the dragonfruit on the pink plate, lifts it, and carries it to the teal plate. It lowers the fruit onto the teal plate and opens its fingers, leaving the fruit lying on its side with the left hand still beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the left hand to pick up dragonfruit from pink plate to teal plate.
+
+Quality gate
+pass: sharpness 645.7 vs 60 (first_person)
+
+Observed outcome
+Dragonfruit lies sideways on the teal plate. Left fingers and thumb are open beside it; the hand has not withdrawn fully. Pink plate is empty; right hand remains elevated and uninvolved.
+
+Hand roles
+Left: Sole manipulating hand: encloses dragonfruit, lifts it from pink plate, carries and lowers it onto teal plate, then opens fingers while remaining beside the placed fruit.
+Right: Open elevated hand beside blue plate throughout, with minor posture drift; does not touch the fruit or support the left-hand transfer.
+Coordination: One-hand transfer without hand-to-hand exchange or coordinated support.
+
+Robot-side evidence
+Evidence: Robot-centered forward-looking view has both forearms entering from the camera-near lower body sides. The manipulating hand has its thumb on the medial/right side of its dorsal hand in the initial PNG, consistent with the robot-relative left hand; the opposite hand has mirrored thumb/finger orientation. This uses hand chirality and connected forearm origins, not image side alone.
+Confidence: high
+Limitation: Shoulder attachments and torso are outside the field of view.
+
+Chronology
+  Frame start: 0
+  Frame end: 35
+  Action: The left hand is open above and beside the upright dragonfruit on the pink plate, then lowers toward the fruit. The right hand remains open and elevated beside the blue plate.
+  Confidence: high
+  Frame start: 36
+  Frame end: 69
+  Action: The left hand descends around the fruit and curls its fingers and thumb around opposite sides; the dragonfruit remains on the pink plate while the grasp forms.
+  Confidence: high
+  Frame start: 70
+  Frame end: 89
+  Action: The left hand lifts the dragonfruit clear of the pink plate and starts moving it inward toward the teal plate.
+  Confidence: high
+  Frame start: 90
+  Frame end: 111
+  Action: The left arm carries the held dragonfruit over the teal plate and lowers it toward the plate; the pink plate is empty.
+  Confidence: high
+  Frame start: 112
+  Frame end: 119
+  Action: The fruit settles onto its side on the teal plate. The left fingers extend and the thumb opens outward to release it; the hand remains close beside the fruit at the ending.
+  Confidence: high
+
+Uncertainties
+- Precise underside contact with the teal plate is partly hidden by the fruit and left hand during lowering; the final sideways resting fruit and opened digits establish placement/release. Shoulder attachments are not visible, but forearm origins and thumb chirality establish anatomical left/right.

@@ -1,0 +1,316 @@
+{
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "reviewed_contact_sheets": [
+    "sheet_001.jpg"
+  ],
+  "inspected_frame_stride": 2,
+  "inspected_sampled_frame_count": 60,
+  "initial_scene": "A forward-facing view shows paired forearms over the table. The left fingers are already curled at one upper side of the open brown paper bag, with a loop handle visible below the palm and the other handle free on the near wall. The right hand is open beside the shelf; a single red spherical tomato rests in the upper black tray.",
+  "observed_sequence": [
+    {
+      "start_frame": 0,
+      "end_frame": 18,
+      "action": "The left fingers are curled at one upper side of the bag mouth; the bag is open and its opposite handle is free. The right hand is open beside the shelf.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 19,
+      "end_frame": 50,
+      "action": "The right hand moves open toward the tomato. The left hand preserves its closed hold at the bag mouth with no visible release or regrasp.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 51,
+      "end_frame": 76,
+      "action": "The right thumb and opposing fingers close around the tomato while it remains in the black tray; the left hold remains unchanged.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 77,
+      "end_frame": 83,
+      "action": "The right hand lifts the tomato clear of the tray, bearing the fruit alone.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 84,
+      "end_frame": 95,
+      "action": "The right hand carries the tomato toward the bag. Simultaneously the left hand raises its held side, and the bag wall and adjacent handle move upward with it, widening access to the mouth; no left regrasp is visible.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 96,
+      "end_frame": 103,
+      "action": "The right hand brings the tomato over the opening and lowers it below the upper rim. At frames 100 and 102 the tomato remains enclosed by the fingers below the rim; the left hand keeps its raised hold.",
+      "confidence": "high"
+    },
+    {
+      "start_frame": 104,
+      "end_frame": 114,
+      "action": "The tomato and most right-finger contact are hidden in the bag interior. The right wrist remains within the mouth while the left keeps the bag side raised.",
+      "confidence": "high for positions; occluded fruit contact"
+    },
+    {
+      "start_frame": 115,
+      "end_frame": 119,
+      "action": "The right fingers progressively open inside the mouth; at 118 and 119 they are visibly spread and empty. The left fingers stay closed at the same upper side of the bag and the right hand has not fully withdrawn.",
+      "confidence": "high"
+    }
+  ],
+  "arm_hand_roles": {
+    "left_hand": "Maintains a closed hold at one upper side of the bag mouth from the start, raises that side during right-hand transport, then holds it raised throughout insertion and right-finger opening. No release or regrasp is visible.",
+    "right_hand": "Closes thumb and opposing fingers around the tomato, bears it alone during lift and transport, lowers it below the bag rim, then opens its fingers inside the mouth.",
+    "coordination": "Left support precedes the right grasp. The left side rises while the right carries the fruit; it remains held while the right lowers and opens. The left never receives or touches the fruit, and there is no hand-to-hand transfer."
+  },
+  "anatomical_side_evidence": {
+    "description": "The forward-facing generation view looks outward between paired robot forearms entering from the lower left and lower right. The hand on the robot right enters from lower right and reaches the shelf; the opposite forearm enters from lower left and holds the bag. This paired egocentric arm arrangement establishes robot-relative right and left, rather than a front-facing mirror convention.",
+    "confidence": "medium",
+    "limitation": "The shoulders and central torso are outside the source image, so attachment to the shoulders is not directly visible."
+  },
+  "terminal_state": "The upper tray is empty; the left hand retains its raised hold on one side of the bag mouth. The right hand remains inside the opening with fingers visibly spread and empty. The tomato is hidden below the rim; its exact resting location and contact with the bag bottom are not visible.",
+  "uncertainties": [
+    "The left palm and curled fingers occlude the exact grasp interface. The grip is at the upper bag-mouth side, and an adjacent loop handle is visible below the palm; the images do not establish whether paper alone, handle alone, or both are caught. The prompt therefore names the held side rather than asserting a handle grip.",
+    "The bag wall and hands hide the exact tomato separation and final resting location, including contact with the bag bottom. Insertion and empty spread right fingers at the ending are visible.",
+    "Shoulder attachments are outside the forward-facing view; anatomical sides are grounded in the paired egocentric arm arrangement."
+  ],
+  "annotation_discrepancies": [],
+  "evidence_frame_indices": [
+    0,
+    46,
+    48,
+    52,
+    66,
+    72,
+    74,
+    78,
+    82,
+    84,
+    88,
+    92,
+    96,
+    98,
+    100,
+    102,
+    104,
+    106,
+    108,
+    110,
+    112,
+    114,
+    116,
+    118,
+    119
+  ],
+  "selected_execution_status": "uncertain",
+  "outcome_basis": "Pickup and insertion below the rim are visible, as is subsequent right-finger opening with no visible tomato between the fingers. Placement in the bag is consistent with this evidence, but the exact release and final resting location are occluded, so fully settled placement is not directly confirmed.",
+  "inspection_coverage": "Second review visually revisited the entire 60-sample sheet_001.jpg and source initial PNG, and inspected native frames 0, 46, 52, 66, 74, 78, 82, 88, 92, 96, 100, 102, 104, 108, 110, 114, 116, 118, 119. First-review native inspections remain recorded; temporary unresized crops of the left contact at frames 0, 88, 92, 104 and 119 were also viewed.",
+  "video_id": "16",
+  "dataset": "NVIDIA_GR1_100",
+  "dedicated_review_agent": "review_gr1_16",
+  "review_source_video": "NVIDIA_GR1_100/16/original/original.mp4",
+  "source_frame_count": 120,
+  "source_fps": 20.0,
+  "native_detail_frames": [
+    0,
+    46,
+    48,
+    52,
+    66,
+    72,
+    74,
+    78,
+    82,
+    84,
+    88,
+    92,
+    96,
+    98,
+    100,
+    102,
+    104,
+    106,
+    108,
+    110,
+    112,
+    114,
+    116,
+    118,
+    119
+  ],
+  "world_model_prompt": "The robot keeps the brown paper bag open with its left hand while its right hand grasps the red tomato from the upper black tray and lifts it clear. As the right hand carries the tomato to the opening, the left hand raises the side of the bag it holds. The right hand lowers the tomato below the rim and opens inside the bag while the left hand maintains its hold. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "original_task_instruction": "Use the right hand to pick up red tomato from upper black tray of plastic shelf to inside of brown paper bag.",
+  "selected_segment": {
+    "start_frame": 0,
+    "end_frame_exclusive": 120,
+    "reason": "Complete original single-task reference; no cropping or trimming requested."
+  },
+  "source_video_sha256": "5f6e71c140e5bc92800e636f3db3aec64fda500e011b95d5dce18006af399a65",
+  "review_completed_at": "2026-10-13T19:06:43.583094+00:00",
+  "bimanual_second_review": {
+    "completed": true,
+    "method": "Separate per-hand contact tracing at native resolution with close temporal comparisons, full contact-sheet revisit, and native source initial PNG.",
+    "reviewed_contact_sheets": [
+      "sheet_001.jpg"
+    ],
+    "native_frames_viewed": [
+      0,
+      46,
+      52,
+      66,
+      74,
+      78,
+      82,
+      88,
+      92,
+      96,
+      100,
+      102,
+      104,
+      108,
+      110,
+      114,
+      116,
+      118,
+      119
+    ],
+    "unresized_contact_crops_viewed": [
+      0,
+      88,
+      92,
+      104,
+      119
+    ],
+    "contact_chronology": {
+      "left": [
+        {
+          "frames": [
+            0,
+            83
+          ],
+          "contact": "Closed hold already established at the upper mouth-side; exact paper/handle interface hidden.",
+          "evidence": [
+            0,
+            46,
+            52,
+            66,
+            74,
+            78,
+            82
+          ]
+        },
+        {
+          "frames": [
+            84,
+            103
+          ],
+          "contact": "Same closed grip maintained while side wall and adjacent loop rise together with the hand. No open-hand interval or regrasp visible.",
+          "evidence": [
+            88,
+            92,
+            96,
+            100,
+            102
+          ]
+        },
+        {
+          "frames": [
+            104,
+            119
+          ],
+          "contact": "Continued raised hold, fingers still curled; no left release.",
+          "evidence": [
+            104,
+            108,
+            110,
+            114,
+            116,
+            118,
+            119
+          ]
+        }
+      ],
+      "right": [
+        {
+          "frames": [
+            0,
+            50
+          ],
+          "contact": "Open, no fruit contact initially; approaches upper tray.",
+          "evidence": [
+            0,
+            46
+          ]
+        },
+        {
+          "frames": [
+            51,
+            76
+          ],
+          "contact": "Thumb/opposing fingers surround tomato, then close on it in tray.",
+          "evidence": [
+            52,
+            66,
+            74
+          ]
+        },
+        {
+          "frames": [
+            77,
+            95
+          ],
+          "contact": "Closed grip bears fruit clear of tray and during transport.",
+          "evidence": [
+            78,
+            82,
+            88,
+            92
+          ]
+        },
+        {
+          "frames": [
+            96,
+            103
+          ],
+          "contact": "Maintains fruit grip while lowering through bag mouth; fruit still visible below rim.",
+          "evidence": [
+            96,
+            100,
+            102
+          ]
+        },
+        {
+          "frames": [
+            104,
+            114
+          ],
+          "contact": "Fruit-finger interface occluded in interior; contact with bottom cannot be established.",
+          "evidence": [
+            104,
+            108,
+            110,
+            114
+          ]
+        },
+        {
+          "frames": [
+            115,
+            119
+          ],
+          "contact": "Fingers open progressively, visibly spread and empty at final frames; exact fruit separation hidden.",
+          "evidence": [
+            116,
+            118,
+            119
+          ]
+        }
+      ]
+    },
+    "support_evidence": "The left-held bag side and attached loop rise with the still-curled left fingers while the opposite handle stays free. This coupled motion establishes load-bearing contact beyond proximity, while the exact interface remains hidden.",
+    "changes_from_first_review": [
+      "Added left-hand raising during transport and sustained hold to the prompt.",
+      "Replaced overly early right-opening interval with native-evidenced late opening, and documented occluded contact interval.",
+      "Changed execution status to uncertain because exact release/settled placement is not directly visible.",
+      "Recorded left rim-versus-handle grasp ambiguity explicitly."
+    ]
+  }
+}

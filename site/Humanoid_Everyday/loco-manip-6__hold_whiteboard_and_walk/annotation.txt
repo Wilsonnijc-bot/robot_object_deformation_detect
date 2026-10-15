@@ -1,0 +1,43 @@
+Humanoid Everyday / loco-manip-6__hold_whiteboard_and_walk
+
+Action generation prompt
+The humanoid robot grasps the whiteboard's nearby vertical frame with its left hand at about waist height. Keeping that hold, it walks forward alongside the board and pushes it ahead on its caster wheels, then stops with the board upright. It releases the frame and lowers its left arm, leaving the whiteboard standing at its new position. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Holding a whiteboard and walking with it, requiring balance control while carrying a large, flat object during locomotion.
+
+Quality gate
+pass: sharpness 417.3 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+Whiteboard successfully moved on its wheels and left standing; left hand released.
+Terminal state:
+The whiteboard stands upright on its caster base in a new position toward image left. Robot stands beside it with both arms lowered; left hand is clear of the frame and no further movement is visible.
+Selected execution status basis:
+Visible relocation by wheeled transport completes, followed by a clear hand release; board remains upright and robot stands beside it.
+
+Hand roles
+Left: Active hand: reaches for and grips the near vertical whiteboard frame, maintains contact to push and guide the wheeled board during forward walking, then opens and lowers after stopping.
+Right: Inactive for manipulation: stays by the hip/body, intermittently occluded, with no observed whiteboard contact or support.
+Coordination: Single-hand manipulation coordinated with alternating forward steps and a stable torso; caster base supports the board. No hand-to-hand transfer or human interaction.
+
+Robot-side evidence
+Description: Initial head front faces toward image left, while exposed back equipment lies on the image-right side of the torso. Camera sees the robot left side: the near shoulder, elbow and hand form the active arm. Later rear three-quarter views at frames 430 and 510 show this same arm on the anatomical left side of the back, while the opposite arm remains near the far hip. Side naming is based on body attachment and front/back orientation, not the hand image position.
+Confidence: high
+Uncertainty: None
+
+Chronology
+frames 0–106: Robot and whiteboard remain essentially stationary; arms hang beside the torso.
+frames 107–197: The anatomical left arm raises and extends toward the near vertical whiteboard frame; the open hand reaches the frame at approximately waist height. The right hand remains beside the hip.
+frames 198–279: Left hand closes around the near vertical frame and establishes a hold. Whiteboard remains supported upright on its caster base; robot waits with left elbow bent.
+frames 280–488: Robot begins alternating forward steps while maintaining the left-hand hold, pushing the whiteboard ahead across the floor on its caster wheels. Robot and board move toward image left and slightly away; the board turns modestly as it rolls. The right hand remains free and down by the body without board contact.
+frames 489–546: Travel ceases and feet settle into a standing stance. The whiteboard stays upright in its displaced position while the left hand continues holding the frame.
+frames 547–600: The left hand opens, releases the frame and withdraws downward to the side. The board remains upright and stationary on its wheels.
+frames 601–654: Robot stands beside the relocated board with hands lowered and no visible contact. Whiteboard remains standing in the new position.
+
+Differences from the publisher annotation
+- Original instruction describes carrying a large flat object. In the visible sequence the whiteboard is held at its vertical frame and pushed/rolled on its caster base; it is not lifted or carried off the floor.
+
+Uncertainties
+- Exact first contact and release instants are bounded by two-frame sampling; chronology intervals describe visually observed phases rather than subframe contact timing.

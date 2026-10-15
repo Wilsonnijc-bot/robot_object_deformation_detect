@@ -1,0 +1,52 @@
+Humanoid Everyday / articulated-3__unfold_multimeter_stand
+
+Action generation prompt
+The robot grasps the red multimeter’s body with its right hand, then lifts and rolls it, turning its back and extended stand toward the left hand. The left fingers reposition around the stand’s free end and pivot it inward toward the meter’s back while the right hand maintains its grasp on the body and tilts the device. After the left hand disengages, the right hand turns and lowers the meter, releasing it onto the tabletop, where it tips and settles face-up. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Unfolding the stand on a multimeter, demonstrating manipulation of hinged mechanisms and precise positioning for stable device placement.
+
+Quality gate
+pass: sharpness 147.9 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+The right hand retains the body throughout coordinated manipulation. After left stand release, the right returns/releases the meter; it tips and remains face-up on the tabletop. The stand is pivoted inward during interaction, without confirmation of latching.
+Terminal state:
+Meter released on tabletop near the original small black patch, front display/control face upward. Both hands withdrawn near the lap; the underside and exact terminal stand angle are hidden.
+
+Hand roles
+Right hand: Dark anatomical right hand, image left: grasps the red housing, bears the meter throughout, lifts/repositions and rolls the entire body to expose the rear stand, stabilizes and tilts the body during left-hand stand engagement, then rolls it away and lowers/releases it. No body handoff occurs.
+Left hand: White anatomical left hand, image right: approaches with open fingers, briefly contacts the stand end, opens/repositions and closes around the free end, then pivots that end toward the back while the right maintains the housing grasp. It releases before the right returns the meter to the table. It does not visibly grasp or manipulate the front dial.
+Coordination: Body-holding and whole-object orientation belong to the right hand; stand-end engagement/repositioning and hinge actuation belong to the left. During hinge motion both hands move, so the inward pivot is identified from stand-to-housing angle rather than screen-space motion. Left release precedes right-hand return and body release.
+
+Coordination
+Body-holding and whole-object orientation belong to the right hand; stand-end engagement/repositioning and hinge actuation belong to the left. During hinge motion both hands move, so the inward pivot is identified from stand-to-housing angle rather than screen-space motion. Left release precedes right-hand return and body release.
+
+Robot-side evidence
+Confidence: high
+Evidence: The humanoid faces the camera. The image-left arm is visibly connected to the robot-right shoulder and leads to the dark hand; the image-right arm connects to the robot-left shoulder and leads to the white hand. Arm continuity remains visible during chest-level manipulation.
+Uncertainty: None
+
+Chronology
+frames 0–86: The right arm extends toward the meter at robot-right; left hand remains near the lap. The meter is already raised on its extended black rear stand.
+frames 87–157: The right fingers close around the red housing, with the thumb opposing them on the body. The table and stand still support the device during grasp establishment. Left hand does not contact it.
+frames 158–190: The right hand lifts the meter clear, briefly lowers/repositions it above the tabletop, and starts rolling the whole body. The stand is visibly free-hanging from its hinge. Left hand remains near the lap and is not supporting the meter.
+frames 191–218: The right hand raises and rolls the device into a near-horizontal rear-facing pose. The rear housing rectangle, black back panel and yellow hinge landmark turn with the housing; these whole-object changes should not be mistaken for left-hand mechanism actuation. Left arm rises with fingers open and still separated from the meter.
+frames 219–236: The right hand moves the meter up toward the chest and rolls it from near horizontal to diagonal, presenting its back with the stand projecting toward the approaching left hand. The right hand retains the body grasp.
+frames 237–246: Left fingers approach and make brief contact around the free end of the extended black stand. Right fingers continue holding the red body. Exact fingertip opposition is partly hidden.
+frames 247–262: The left fingers open and shift upward and outward from the stand tip, with a visible separation during part of this interval; they then return toward the same free end. Right hand alone retains and bears the body, making small pose adjustments.
+frames 263–288: The left fingers curl around the free end of the black stand, retaining contact while the right hand holds the housing diagonally. This is a mechanism contact, not a transfer of the device body or visible front-dial manipulation.
+frames 289–324: The left hand changes finger/wrist orientation and moves the stand end downward toward the back of the meter, while the right hand keeps its housing grasp and tilts the whole meter slightly. Relative to the red housing and yellow hinge landmark, the black plate changes from projecting transversely outward to lying closer along the long axis/back of the housing: an inward pivot distinct from whole-object rolling. The final hinge seating is partly hidden.
+frames 325–340: The left hand releases the stand and separates; the right hand rolls the meter away from the left hand while retaining the same body grasp. The left never receives the meter.
+frames 341–377: The right arm transports the meter down to the original table area and turns its long body toward a more horizontal placement pose. The left hand lowers without supporting the meter.
+frames 378–398: The right hand lowers the body close to the tabletop, opens and withdraws. The released device tips/rolls from its edge and settles with the front display/control face upward.
+frames 399–466: The meter remains released face-up on the tabletop; the right arm retreats and both hands return near the lap. No further object manipulation occurs.
+
+Differences from the publisher annotation
+- Source says unfolding the stand. It is already extended initially. Re-review separates right-hand whole-object rolling from left-hand stand-end manipulation; the visible relative stand motion is inward toward the back, not newly unfolding. No successful unfolded elevated final pose is claimed.
+
+Uncertainties
+- Exact left thumb/fingertip opposition at first brief stand contact (237–246) is partly occluded; the clear separation/reposition and later finger closure are recorded without claiming continuous contact.
+- Both the housing and stand move during 289–324. Adjacent-frame landmarks establish an inward stand-to-body pivot, but the exact angular displacement cannot be measured reliably from the oblique view.
+- The hand/body occlude final hinge seating, so flush closure or latch engagement is not confirmed. The final underside/stand angle is hidden after face-up settling.

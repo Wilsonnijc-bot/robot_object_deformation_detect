@@ -1,0 +1,46 @@
+Humanoid Everyday / tool-use-6__wipe_table_with_cloth
+
+Action generation prompt
+The humanoid presses its right hand onto the folded yellow cloth and slides it together with the green layer beneath it across the tabletop in a back-and-forth wiping motion. It then lifts its right hand clear and retracts the arm, leaving the cloth resting on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+This task demonstrates cloth-based cleaning where the humanoid robot uses a cloth to wipe a table surface, requiring proper wiping motions, systematic coverage patterns, and effective cleaning techniques.
+
+Quality gate
+exception: sharpness 117.3 vs 120 (third_person)
+
+Observed outcome
+Terminal state:
+At frame 330 the folded yellow cloth and green layer rest on the tabletop near their starting area; the right hand is empty and withdrawn beside the body, with no continuing cloth contact. The left hand remains by the thigh. Back-and-forth wiping is completed, but cleanliness or removal of dirt is not established.
+Selected execution status basis:
+The visible wiping manipulation completes with hand withdrawal and cloth left on the table; success refers to this observed action, not confirmed cleanliness.
+
+Hand roles
+Right: Active manipulation hand: presses on the top cloth, maintains table contact while sliding it and the underlying green layer inward/outward/inward, then opens, lifts away and retracts without carrying the cloth.
+Left: Idle open hand held beside the left thigh; does not touch, support, stabilize or transfer the cloth.
+Coordination: Single-hand wiping task; no bimanual support, transfer, human interaction or locomotion.
+
+Robot-side evidence
+Convention: The face/front torso panel face the camera. The active image-left arm is visibly attached to the robot right shoulder; the inactive image-right arm attaches to the left shoulder. Both shoulder-to-elbow-to-wrist chains are visible in the source initial PNG and native transition frames.
+Active anatomical side: right
+Confidence: high
+Uncertainty: None
+
+Chronology
+frames 0–44: The anatomical right arm extends toward the folded yellow cloth, bringing the hand above it; left hand stays by the left thigh.
+frames 45–108: Right hand lowers onto the top of the yellow cloth, closes/curls the fingers, and holds the cloth against the tabletop. Cloth remains supported on the table; there is no visible pickup.
+frames 109–128: Right arm bends inward, sliding the yellow cloth and underlying green layer toward image right and closer to the robot center. A dark rectangular tabletop patch formerly covered by the cloth is exposed.
+frames 129–158: Right hand maintains contact and downward pressure at the inward end of the first wipe; cloth remains on the tabletop.
+frames 159–190: Right arm extends outward, sliding the yellow/green stack back toward image left across the same tabletop area.
+frames 191–210: The right hand pauses in contact at the outward end of the wipe; the left hand remains uninvolved.
+frames 211–252: Right arm draws inward again, moving the cloth back toward its original vicinity over the dark patch.
+frames 253–272: Right fingers open and the hand rises clear of the cloth. The folded yellow cloth and green layer settle and remain on the tabletop.
+frames 273–330: The empty right arm retracts beside the torso. Both cloth layers remain on the table in the final frame; left hand stays by the thigh throughout.
+
+Differences from the publisher annotation
+- The source annotation describes systematic coverage patterns and effective cleaning techniques. The observed motion wipes a limited region back and forth; systematic coverage or cleaning efficacy cannot be verified from this clip.
+
+Uncertainties
+- The exact material and identity of the underlying green layer and the dark rectangular tabletop patch cannot be determined visually. Their shared sliding motion and table support are clear.
+- The clip establishes wiping motion but does not establish that the tabletop became clean; no measurable dirt-removal outcome is visible.
+- Phase boundaries are approximate to the stride-2 observations; native details verify contact, displacement, withdrawal and final state.

@@ -1,0 +1,40 @@
+Humanoid Everyday / human-robot-2__hand_over_toilet_paper
+
+Action generation prompt
+The humanoid robot grasps the toilet-paper roll on the tabletop with its right hand, lifts it, and turns it sideways for handover. It lowers the roll into a person's outstretched palm and keeps holding it while the person closes their hand around it. The robot opens its right hand to release the roll, then retracts its empty arm as the person carries the roll away. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Picking up toilet paper and handing it to a person, requiring gentle handling and appropriate handover positioning for easy human grasp.
+
+Quality gate
+exception: sharpness 99.1 vs 120 (third_person)
+
+Observed outcome
+Successful robot-to-person transfer is visibly complete. Person has carried roll out of frame at image left; original tabletop location is empty, and robot right hand is empty and retracted toward lap.
+
+Hand roles
+Right: Sole robot manipulating hand: reaches, grasps roll near its central core/exterior, tilts and lifts, presents and lowers into human palm, retains hold until the human grasps, releases and retracts.
+Left: Remains near lap with minor passive pose variation, does not grasp or support roll or contact person.
+Person: One visible hand approaches palm upward from image left, supports bottom/exterior of roll, wraps around it during shared hold, and withdraws carrying it after robot release.
+
+Coordination
+Single robot-hand manipulation followed by robot-to-person transfer: the robot supports the roll until the person has placed a palm underneath and closed a grasp, then opens its fingers; no robot hand-to-hand transfer or bimanual support occurs.
+
+Robot-side evidence
+Confidence: high
+Evidence: The source initial PNG shows the robot front face and chest panel directed toward the camera. The manipulating black hand is continuously attached via forearm and upper arm to the shoulder on the robot body right (image left). The white idle hand traces to the opposite shoulder (robot left, image right). Naming derives from front-facing body/shoulder attachment, not image position alone.
+Uncertainty: None for robot anatomical sides; person body is outside view so human anatomical hand side is not assigned.
+
+Chronology
+frames 0–37: Robot holds the initial pose; upright paper roll remains on table, both hands clear of it.
+frames 38–95: Anatomical right arm raises and reaches outward toward the upright roll; hand opens above and beside the roll. Anatomical left hand stays by the lap.
+frames 96–159: Right hand descends to the roll, with thumb entering the visible core region and fingers alongside the outer wall; roll remains on the tabletop.
+frames 160–225: Right hand closes around the roll, holding near the core and outer surface; contact is established before lifting.
+frames 226–293: Right hand tips the roll from upright to sideways and lifts it clear of the dark patch, raising it forward of the torso with the circular core facing toward the viewer.
+frames 294–331: A person reaches in from image left with an open palm underneath the held roll. Robot keeps the roll aloft and then begins lowering it toward the waiting hand.
+frames 332–371: Robot lowers roll into the human palm. Person wraps fingers around its exterior while robot retains contact; brief shared support precedes release.
+frames 372–391: Robot right hand opens clear of the roll and human carries the now solely human-held roll toward image left, leaving the frame.
+frames 392–446: Empty right arm retracts and lowers toward lap. Final frame shows neither robot hand holding an object and no roll on the original tabletop spot.
+
+Uncertainties
+- Precise individual digit force/contact on the hidden side of the roll is not visible; gross grasp, lift and release are clear. Human anatomical hand side cannot be established from the visible forearm/hand alone and is not specified.

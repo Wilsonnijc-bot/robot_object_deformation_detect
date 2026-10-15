@@ -1,0 +1,51 @@
+RoboMIND / franka_3rgb__place_in_bread_in_plate/1014_101050
+
+Action generation prompt
+The robotic arm picks up the small orange-topped bread loaf and places it on the pink plate, releasing it so it rests on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+put the bread on a plate
+
+Quality gate
+exception: sharpness 23.8 vs 120 (third_person)
+
+Observed outcome
+Status: visually_completed
+Description: The arm grasps the orange-topped bread loaf (gripper closing frames 59-70), lifts it, carries it left and lowers it onto the pink plate, opens the gripper (frames 93-99) and withdraws. From frame 98 onward the loaf is visibly resting on the plate, slightly tilted, and stays there to frame 134.
+
+Hand roles
+Active visible arm: Single arm picks up the bread loaf, carries it to the pink plate, places and releases it, and withdraws.
+Other arm: None.
+
+Coordination
+Single arm acts alone. A human hand appears briefly at the lower left (frames 13-24) only to reposition the banana, before the robot moves; there is no human-robot interaction.
+
+Robot-side evidence
+Visible description: Single Franka Emika Panda arm with a parallel-jaw gripper; the arm base is off-frame to image left and the arm enters from the left edge in the camera_right view. Only one arm exists.
+Source annotation: Publisher instruction: 'put the bread on a plate'.
+Visual certainty: Not a humanoid; left/right anatomy is not needed. The usable prompt refers to the single robotic arm.
+
+Chronology
+frames 0–12: Arm held above the open white storage bin with gripper open and pointing down; toy bread loaf with orange top, pink plate, purple cube, two white crumpled items, a panda figurine and a banana lie on the table; stacked cabinet at right. Scene static.
+frames 13–24: A human hand and forearm enter from the lower left edge, reach to the banana at about frames 14-16, adjust it and withdraw by about frame 22; the banana ends nearer the panda figurine and the blue cube. The robot stays still.
+frames 25–38: Banana and panda settle (panda leans on the banana). Arm still hovers over the bin; it begins to move toward the bread around frame 36-38.
+frames 39–52: Arm swings left-forward and down toward the bread loaf, gripper still open (gripper telemetry 0.0), blue wrist light visible from about frame 44; fingers straddle the loaf at frame 52.
+frames 53–62: Gripper lowered around the bread loaf; telemetry gripper value starts rising from frame 59 (0.02) and reaches 0.13 at frame 62, fingers closing on the loaf.
+frames 63–74: Fingers close on the loaf (telemetry about 0.74-0.75 from frame 70, which is the closed-on-object value) and the loaf is held at the grasp; loaf still at original table position at frame 70.
+frames 75–86: Loaf lifted off the table and carried left toward the pink plate; at frame 86 the held loaf is over the plate rim.
+frames 87–98: Arm lowers the loaf onto the plate; telemetry gripper value falls 0.6 to 0.06 over frames 93-98 and reaches 0.0 at frame 99 as the fingers release. At frame 98 the loaf lies on the plate with the open fingers beside it.
+frames 99–108: Gripper open (0.0) and lifts clear of the plate, moving up and to image right; the loaf rests on the plate, slightly tilted, and stays in place (frame 104 and 110 at native resolution).
+frames 109–134: Arm withdraws up and back toward its starting pose above the white bin with gripper open; bread remains on the pink plate through the last frame 134. Banana, panda, cube unchanged.
+
+Clip selection
+The episode is one single-task manipulation (pick the bread loaf, place it on the plate, release, withdraw). There is no later independent subtask, so the complete clip is retained and no shortened branch or full-sequence prompt is needed. The brief human hand adjusting the banana at frames 13-24 precedes the robot motion and is not a robot subtask.
+
+Differences from the publisher annotation
+- The publisher instruction 'put the bread on a plate' matches the video; the prompt only adds the visible detail that the loaf has an orange top and the plate is pink.
+- The brief human hand in frames 13-24 adjusting the banana is not mentioned in the instruction and is excluded from the prompt.
+
+Uncertainties
+- The bread is a toy-like loaf with an orange glazed top (possibly a toy sushi/bread roll); the prompt uses an appearance-based description 'small orange-topped bread loaf' and the publisher word 'bread'.
+- Fine finger-to-object contact points are not resolvable at 640x480; the grasp is inferred from the gripper telemetry rising to about 0.75 while the loaf moves with the gripper (higher value = more closed, inferred from video).
+- The exact frame of release is taken from telemetry (value 0.0 at frame 99) and the loaf already lying on the plate at frame 98.
+- FPS is not recorded in the source; frame indices are authoritative, not time.

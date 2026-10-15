@@ -1,0 +1,22 @@
+TAVP / 008_franka_pick_and_place_failure_case_failure
+
+Action generation prompt
+The robotic arm picks up the carrot, carries it toward the purple plate, and releases it onto the tabletop beside the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Put the carrot into the purple plate.
+
+Quality gate
+pass: sharpness 157.6 vs 120 (third_person)
+
+Chronology
+frames 0–232: The empty gripper moves forward from its raised starting pose and descends around the carrot narrow tip. The carrot and purple plate remain on the tabletop.
+frames 233–456: The fingers close near the carrot tip. The carrot changes angle beneath the low gripper, swinging from a diagonal with the leaves toward screen-right to one with the leaves toward screen-left, while the tip remains held near the fingers.
+frames 457–540: The robot raises the carrot by its narrow tip; the thicker leafy end hangs downward as the carrot clears the tabletop. The gripper begins carrying it toward the plate on the right.
+frames 541–650: The arm carries the hanging carrot rightward and lowers it beside the plate. The carrot is positioned in front of and to the left of the plate, rather than centered over it.
+frames 651–660: The fingers open and release the carrot. It drops a short distance onto the tabletop outside the plate, with the green leaves facing the table front and the narrow tip near the plate left edge. The plate remains empty.
+frames 661–807: The open empty gripper pauses above the misplaced carrot. The carrot rests on the tabletop beside the empty plate without further manipulation.
+frames 808–896: The robot lifts and retracts its empty gripper. The carrot remains on the tabletop in front-left of the empty purple plate at the video end.
+
+Uncertainties
+- The exact moment the carrot fully clears the table during the initial low grasp is difficult to resolve from this viewpoint; the later lift and retained tip grasp are clearly visible. The carrot material is not identifiable from the video.

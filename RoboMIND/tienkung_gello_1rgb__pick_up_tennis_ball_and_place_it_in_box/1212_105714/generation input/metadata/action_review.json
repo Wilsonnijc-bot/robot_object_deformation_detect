@@ -18,7 +18,7 @@
   "selected_source_frame_end_exclusive": 719,
   "selected_frame_count": 719,
   "selection_reason": "The episode is one continuous single task (pick up the ball, carry it, drop it in the bin, withdraw) with ordinary phases; the complete sequence is retained, so no shortened clip or separate full-sequence prompt was made.",
-  "usable_prompt": "The humanoid's dexterous hand, on the arm entering from the right edge of the image, reaches down to the green tennis ball, curls its fingers around it and lifts it off the mat. The arm carries the ball leftward over the open-lidded white bin, holds it above the opening, then opens its fingers so the ball drops inside the bin, and withdraws toward the right edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "usable_prompt": "The humanoid's dexterous hand, on the arm entering from the right edge of the image, reaches down to the yellow-green tennis ball, curls its fingers around it and lifts it off the mat. The arm carries the ball leftward over the open-lidded white bin, holds it above the opening, then opens its fingers so the ball drops inside the bin, and withdraws toward the right edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "full_sequence_prompt": "The humanoid's dexterous hand, on the arm entering from the right edge of the image, reaches down to the green tennis ball, curls its fingers around it and lifts it off the mat. The arm carries the ball leftward over the open-lidded white bin, holds it above the opening, then opens its fingers so the ball drops inside the bin, and withdraws toward the right edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
   "selected_action_outcome": {
     "status": "visually_completed",
@@ -502,5 +502,14 @@
     "frame_count": 719,
     "lossless_source_frame_correspondence_passed": true,
     "original_source_hdf5_retained_unchanged": true
-  }
+  },
+  "prompt_color_correction": {
+    "changes": [
+      "'the green tennis ball' -> 'the yellow-green tennis ball'"
+    ],
+    "previous_prompt": "The humanoid's dexterous hand, on the arm entering from the right edge of the image, reaches down to the green tennis ball, curls its fingers around it and lifts it off the mat. The arm carries the ball leftward over the open-lidded white bin, holds it above the opening, then opens its fingers so the ball drops inside the bin, and withdraws toward the right edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+    "corrected_at": "2026-10-15T20:09:55.205517+00:00",
+    "basis": "Colour terms re-read from the channel-corrected first frame and video; no other wording changed."
+  },
+  "channel_order_note": "Channel-order correction (2026-10-15): RoboMIND stores Tien Kung JPEGs with red and blue swapped relative to a standard decoder; this review was made on uncorrected frames, so colour terms in its observations are swapped (teal/cyan reads as yellow or yellow-green, blue as orange/brown, brown/pink as blue). Actions, timing and outcomes are unaffected. All decoded derivatives are now corrected."
 }

@@ -1,0 +1,83 @@
+{
+  "dataset": "x-humanoid-robomind/RoboMIND",
+  "source_repository_commit": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "license": "apache-2.0",
+  "embodiment": "h5_tienkung_gello_1rgb",
+  "task": "upright_white_cup",
+  "episode_id": "1211_141210",
+  "source_url": "https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND/resolve/e7ffe31d1fe983a42c3d7b79d192f554fc05b86e/benchmark1_0_compressed/h5_tienkung_gello_1rgb/upright_white_cup.tar.gz.part-aa",
+  "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/upright_white_cup.tar.gz.part-aa",
+  "archive_member": "upright_white_cup/success_episodes/train/1211_141210/data/trajectory.hdf5",
+  "source_extraction": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified.",
+  "hdf5": {
+    "path": "../data/trajectory.hdf5",
+    "size_bytes": 138230960,
+    "sha256": "c9b251738b27ba4f05caf1701d94f28379b70293094c9b1c289d622a935f41eb",
+    "attributes": {
+      "compress": true,
+      "sim": false
+    },
+    "datasets": {
+      "language_distilbert": {
+        "shape": [
+          1,
+          1,
+          768
+        ],
+        "dtype": "float16"
+      },
+      "language_raw": {
+        "shape": [
+          1
+        ],
+        "dtype": "object"
+      },
+      "master/joint_position": {
+        "shape": [
+          700,
+          16
+        ],
+        "dtype": "float64"
+      },
+      "observations/depth_images/camera_top": {
+        "shape": [
+          700
+        ],
+        "dtype": "object"
+      },
+      "observations/rgb_images/camera_top": {
+        "shape": [
+          700
+        ],
+        "dtype": "object"
+      },
+      "puppet/joint_position": {
+        "shape": [
+          700,
+          16
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  "source_language_instruction": [
+    "Upright white cup"
+  ],
+  "source_language_instruction_note": null,
+  "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
+  "channel_order_check": "Stored JPEGs hold red and blue swapped relative to a standard decoder (RoboMIND converts BGR->RGB only for Franka/UR embodiments). All decoded derivatives swap red and blue back; the HDF5 is unchanged.",
+  "decoded_preview_videos": {
+    "camera_top": {
+      "path": "../decoded_videos/camera_top.mp4",
+      "view": "top",
+      "frame_count": 700,
+      "resolution": {
+        "width": 640,
+        "height": 480
+      },
+      "encoding": "lossy_preview_h264_crf14_yuvj420p",
+      "sha256": "45abae0243d3a093acaf2cace4622966a5d641d53988f8d78383e1b50f184be9"
+    }
+  },
+  "source_bytes_preserved": true
+}

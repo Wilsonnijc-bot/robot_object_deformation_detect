@@ -1,0 +1,41 @@
+Humanoid Everyday / loco-manip-3__throw_paper_to_trashcan
+
+Action generation prompt
+The humanoid grasps the crumpled white paper on the table with its right hand and lifts it, holding it near its chest while stepping away and turning toward the waste station. It walks up to the compost compartment, extends its right arm, and opens its hand to release the paper through the front opening. It withdraws its empty right hand and steps back from the bin. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Walking to throw away a piece of paper to a trashcan, combining navigation with throwing motion and target aiming.
+
+Quality gate
+pass: sharpness 1295.9 vs 120 (third_person)
+
+Observed outcome
+The crumpled paper has disappeared through the compost opening, and the right hand is visibly empty. The humanoid has withdrawn its right arm and stepped back; the left hand remains lowered and empty. The paper's resting position within the enclosed bin is not visible.
+
+Hand roles
+Right: Sole manipulating hand: reaches for and grasps the wad, lifts and carries it near the chest during locomotion, extends to the compost opening, releases it, and withdraws empty.
+Left: Remains free and lowered alongside the body; no grasp, support, stabilization, transfer, or contact with the paper/bin is visible.
+Coordination: One-handed manipulation coordinated with whole-body stepping and turning; no two-hand coordination or hand-to-hand transfer.
+
+Robot-side evidence
+Basis: The source initial PNG and front-facing frames show the chest/front and both shoulder attachments. The manipulating arm originates at the robot's right shoulder, which appears on image left in that front-facing view. Its continuous motion is tracked through the turn; once the back faces the camera, the same right arm is on image right and extends toward compost.
+Confidence: high
+Uncertainty: None
+
+Chronology
+frames 0–63: Robot holds its initial standing pose beside the table; white wad is on the tabletop and both hands are empty.
+frames 64–153: Anatomical right arm bends inward and reaches forward/down toward the crumpled wad; left hand stays away from the target.
+frames 154–215: Right hand encloses the white wad on the table and closes around it, compressing the wad before lifting. Native frames 160 and 204 show contact and a closed hold while the wad remains at tabletop level.
+frames 216–283: Right hand lifts the wad clear of the table and draws it upward toward the chest, retaining the grasp.
+frames 284–501: Robot steps away from the table, pivots toward the waste station, and walks forward until its back faces the camera. Right elbow remains bent with the paper held in front of the torso; left arm hangs free.
+frames 502–591: Robot extends its right arm toward the rightmost compost opening, positioning the held paper at the mouth of the bin.
+frames 592–711: Right arm remains extended at the compost opening with the paper still visibly held beneath/between the fingers, while the robot makes small stance adjustments. Native frames 604, 700, 706, and 710 retain the visible wad.
+frames 712–723: Right hand opens at the bin opening. The white wad descends beneath the fingers in native frame 714 and is absent by native frame 718, disappearing inside the dark opening rather than traveling in an observable long throwing arc.
+frames 724–815: Robot holds its now-empty right hand briefly near the opening, withdraws it, and steps backward away from the station. Final frame shows the empty right hand bent forward and the left arm lowered.
+
+Differences from the publisher annotation
+- The original instruction describes throwing motion and target aiming; the visible execution instead carries the wad close to the compost opening and releases it there, with no distinct free-flight throw visible.
+
+Uncertainties
+- The interior of the compost bin is occluded, so the exact resting position after release cannot be observed.
+- The white wad visually resembles crumpled paper or tissue; precise material cannot be established from appearance alone.

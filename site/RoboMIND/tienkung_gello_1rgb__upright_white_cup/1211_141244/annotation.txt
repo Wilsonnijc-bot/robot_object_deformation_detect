@@ -1,0 +1,57 @@
+RoboMIND / tienkung_gello_1rgb__upright_white_cup/1211_141244
+
+Action generation prompt
+The robot's arm entering from the left edge of the image reaches over the white cup lying on its side, closes its dexterous thumb and fingers around the cup wall, and lifts it off the mat. It tilts the cup mouth-up, carries it toward the back-left, and sets it down upright on the mat, then opens the hand. The hand rises clear of the cup and withdraws to a raised, open-fingered pose at the left edge, leaving the cup standing upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Upright white cup
+
+Quality gate
+pass: sharpness 132.8 vs 60 (first_person)
+
+Observed outcome
+Status: visually_completed
+Description: The white cup, initially lying on its side near the upper-left of the mat, is grasped by the hand (closing from about frame 190-215), lifted and rotated (rocking from about frame 244, clearly lifted from about frame 264), carried to the top-left of the image, held at the back of the mat with the mouth up, and lowered to an upright stand on the mat by about frame 500. The hand opens from about frame 480 to 510, rises clear above the cup, leaves the view at the top-left (about frames 560-640) and returns to a raised open-handed pose at the left edge by about frame 660, held to the last frame (730). The cup ends upright (mouth up, logo on the near wall) at roughly the upper-left of the mat, slightly left of and above where it started; no other object moves.
+
+Hand roles
+Active visible arm: The single visible arm reaches over the lying cup, places its thumb on the near/left outer wall and its fingers over the top/far side, closes on the cup wall, lifts and rotates the cup so its mouth turns up, carries it to the back-left, lowers it to an upright stand on the mat, opens, rises clear and withdraws.
+Other arm: Not visible in the overhead view; telemetry for the second 8-column block is constant, so it does not act.
+
+Coordination
+Single-arm action; no hand-to-hand transfer, second-hand support or human interaction. The cup is held by a dexterous pinch/wrap of thumb and fingers on the wall (not a parallel-jaw grip); the cup is reoriented as a whole by wrist and forearm rotation, with no sliding along the mat visible before lift and no visible regrasp or slip while held.
+
+Robot-side evidence
+Visible description: Only one arm is visible: a white-and-black humanoid forearm and five-finger dexterous hand entering the overhead image from the left edge, rooted in a dark robot body/shoulder mass at the left and lower-left; the mat and the cup lie to the right. The thumb is the black digit on the image-bottom side of the hand when it reaches over the cup.
+Source annotation: original/task_prompt.txt: 'Upright white cup'; no side stated.
+Telemetry evidence: puppet/joint_position has 16 columns. Columns 0-7 vary (column 4 ranges about -0.4 to 1.25, column 6 about -0.61 to 0.13, column 7 is the hand/gripper-like value falling from 1.0 to about 0.73-0.77 on grasp and returning to 1.0 on release); columns 8-15 are essentially constant (std <= 0.002). The moving block therefore corresponds to the visible arm. Which block is left vs right is not documented in the source.
+Inferred side: Probably the robot's left arm: the robot appears to face image-right from the left edge, so image-up/far side is its left, the visible arm is on that side, the thumb points toward image-bottom (medial side for a palm-down left hand), and the first telemetry block conventionally maps to the left arm. This is inference, not established, so the usable prompt says 'arm entering from the left edge of the image' instead of naming a robot side.
+Visual certainty: Robot-relative left/right not reliably determined from the overhead view (head, torso and facing direction not visible).
+
+Chronology
+frames 0–36: Robot arm held still at the left edge of the overhead image with the hand raised and fingers open pointing up. A white cylindrical cup lies on its side (axis horizontal) near the upper-left of the blue-grey foam mat; table otherwise empty. Telemetry flat until about frame 40.
+frames 37–90: Arm swings the raised hand out over the mat toward the cup: hand rotates from pointing up to pointing right with fingers extended and thumb (black digit on the image-bottom side) separate; wrist and forearm rotate while the arm reaches along the mat.
+frames 91–150: Hand descends beside the cup: the thumb tip touches the top-left side wall of the lying cup (about frames 92-110), the fingers stay extended above and behind the cup, and the hand shifts slowly to the right until it straddles the cup with the thumb on the near/left outer wall and the fingers over the top (frames 130-150). Cup has not moved.
+frames 151–188: Hand settles around the cup wall and fingers begin to curl; hand-closing value (puppet/joint_position column 7) is still about 0.96-0.98. No cup motion.
+frames 189–262: Hand closes on the cup (column 7 falls from about 0.96 to 0.77 between about frames 190 and 215). Cup stays on the mat through frame ~240; from about frame 244 it rocks and its near edge lifts, and by frames 250-262 the cup is visibly rotating with the hand (rim edge rising) while still touching the mat.
+frames 263–310: Cup is lifted off the mat and rotated: it tilts from lying on its side through about 45 degrees (frame 270-288) toward mouth-up-and-right while the forearm rises and the hand moves toward the upper-left; rim and interior become visible (frames 288-310). Cup moves rigidly with the hand; thumb stays on the outer wall near the front and fingers wrap the far/top side.
+frames 311–360: Cup is carried up to the top-left of the image near the back edge of the mat, held well off the table, mouth facing up and toward the right, with the black printed logo on the near wall (frames 312-360). No regrasp or slip visible.
+frames 361–440: Cup is held at the top-left with the mouth tilted toward the camera, then gradually levelled toward mouth-up as the wrist rotates (frames 360-440); arm moves slowly down and toward the mat. Hand grip pattern unchanged (thumb on near wall, fingers on far side).
+frames 441–503: Cup is lowered and levelled to an upright pose on the mat near the upper-left of the mat while still held; hand-closing value stays about 0.73 until about frame 480 and then rises, i.e. the hand begins to open from about frame 480. Cup is upright with its mouth facing up by about frame 500.
+frames 504–527: Hand opens (column 7 reaches about 1.0 by frame 510); fingers lift off the cup's rim and wall and are open above the cup. Cup stands upright on the mat, untouched by the fingers from about frame 510.
+frames 528–580: Open hand rises above and slightly behind the cup (thumb tip briefly over the cup mouth around frames 530-550) and then moves up and out of the frame top-left (frames 550-580); cup remains upright and stationary.
+frames 581–640: Hand is largely out of view above the top-left edge of the image while the forearm comes back down; cup upright and stationary at the upper-left of the mat.
+frames 641–730: Arm withdraws to the left edge and rises to a raised pose with the open hand pointing up (frames 660-730), similar to the starting pose; cup stands upright and stationary for the rest of the clip. Telemetry settles near its starting values.
+
+Clip selection
+The episode is one continuous single task (reach, grasp the cup lying on its side, lift and rotate it upright, set it down, release, withdraw); there are no independent subtasks, so the complete original clip is retained and no shortened branch or separate full-sequence prompt is written.
+
+Differences from the publisher annotation
+- None found: the visible action (a cup lying on its side is turned upright and left standing) matches the instruction 'Upright white cup'. The instruction does not mention grasping, lifting and carrying the cup, which the video shows before the cup is set down upright.
+
+Uncertainties
+- Robot-relative left/right arm is not established from the overhead view; probable left arm is inferred from geometry and telemetry-block convention and is not asserted in the prompt.
+- Exactly which fingertips contact the cup and which wall segment is grasped (outer wall near the rim versus mid-wall) cannot be resolved at 640x480; the prompt says 'cup wall'.
+- While the cup is lying on its side, the direction its open end faces at frame 0 is not visible; the rim appears facing up and right once the cup is lifted (frames 270-310).
+- The frame at which the cup first touches the mat during lowering (about frames 440-500) and the exact frame of release are not separable from the held pose; telemetry (hand value rising from about frame 480 and reaching 1.0 by about frame 510) and the visibly open fingers by about frame 510 support release around frames 480-510.
+- Whether the cup shifts slightly while the hand settles (frames 150-240) cannot be excluded at this resolution; it appears not to move until about frame 244.
+- FPS is not recorded; frame indices are authoritative, not time.

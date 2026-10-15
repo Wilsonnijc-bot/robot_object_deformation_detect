@@ -1,0 +1,38 @@
+NVIDIA GR1 / 9
+
+Action generation prompt
+The robot uses its left hand to grasp the tall purple glass around its side and lift it from the blue plate. It carries the glass upright to the center of the teal plate, lowers it onto the plate, and opens its fingers, leaving the glass standing upright with its left hand beside it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the left hand to pick up tall purple glass from center of blue plate to center of teal plate.
+
+Quality gate
+pass: sharpness 519.3 vs 60 (first_person)
+
+Observed outcome
+Tall glass stands upright near the center of the teal plate after the left hand opens. Left hand remains immediately beside the glass; right hand stays open and uninvolved. The blue plate is empty.
+
+Hand roles
+Left: Sole manipulating hand: approaches, establishes a side grasp, lifts, transports, lowers and releases the glass.
+Right: Remains open near the right table edge; no object contact, stabilization, support or transfer.
+
+Coordination
+Single-hand manipulation; no hand-to-hand transfer and no interaction with the background person.
+
+Robot-side evidence
+Convention: Robot-relative anatomy in the forward/downward egocentric view, rather than the anatomy of the person facing the camera.
+Evidence: The two robot forearms enter from the corresponding lower body sides of the egocentric camera. The active forearm is continuously connected through the lower-left wrist. Initial mirrored palm-facing hand geometry shows the active left hand thumb on the outer image-left side, opposite the right hand thumb on image-right; subsequent rotation brings the left thumb toward the glass. This agrees with the source left-hand instruction.
+Confidence: high
+Uncertainty: Robot shoulder attachments are outside the egocentric image; side is grounded in paired forearm placement and thumb/palm anatomy.
+
+Chronology
+frames 0–12: Both open hands remain near the near table edge; glass remains on the blue plate.
+frames 13–36: Left arm advances over the blue plate and turns its open hand toward the glass, positioning the fingers beside the upper side. Right hand remains open and away from the object.
+frames 37–61: Left fingers and thumb move around the glass, making successive contact and adjusting the hand position while the glass remains on the blue plate.
+frames 62–79: Left hand closes a side grasp around the glass and begins raising it; right hand provides no support.
+frames 80–104: Left hand lifts the glass clear of the blue plate and carries it inward toward the teal plate while maintaining a near-upright orientation.
+frames 105–114: Left hand lowers the glass upright onto the central region of the teal plate, still holding its side.
+frames 115–119: Left thumb and fingers open away from the glass; the glass remains upright on the teal plate and the open left hand remains beside it.
+
+Uncertainties
+- Shoulder attachments are outside the egocentric view; paired arm placement and visible hand anatomy establish the active left hand. Exact millimeter separation between the open left fingers and the glass at the last frame is not measurable, but the enclosing grasp has visibly opened and the glass stands on the plate.

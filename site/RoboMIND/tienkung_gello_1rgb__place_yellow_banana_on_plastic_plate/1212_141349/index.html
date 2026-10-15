@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Place yellow banana on plastic plate · RoboMIND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../../RoboMIND/index.html">RoboMIND</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">RoboMIND · tienkung_gello_1rgb__place_yellow_banana_on_plastic_plate/1212_141349</p>
+<h1>Place yellow banana on plastic plate</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 674 frames · 22.47 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The humanoid&#x27;s left arm, entering from the left edge of the image, extends its dexterous hand over the yellow banana, closes its fingers around the banana and lifts it off the table. The hand carries the banana rightward and lowers it into the cream plate, then opens its fingers to release it. The banana rests in the plate as the open hand withdraws up toward the left edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">Place yellow banana on plastic plate</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--pass" title="Sharpness 214.6 vs threshold 60">Pass<b>215</b></span><p>Sharpness <b>214.6</b> against 60
+(first-person). Measured on the 960 × 704 model view,
+upscale 1.50×.</p></div></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>674</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>22.47 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="annotation.txt">Annotation (text)</a></li><li><a href="review.json">Visual review (JSON)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboMIND/tienkung_gello_1rgb__place_yellow_banana_on_plastic_plate/1212_141349">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/tienkung_gello_1rgb__place_yellow_banana_on_plastic_plate/1212_141349/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/tienkung_gello_1rgb__place_yellow_banana_on_plastic_plate/1212_141349/generation%20input/video.mp4">Generation video (original file)</a></li></ul></section></aside>
+</div>
+<section class="annotation"><h2>Annotation</h2>
+<p class="quiet">From the dedicated visual review of this video (humanoid_action_v1).
+<a href="annotation.txt">Plain text</a> · <a href="review.json">JSON</a></p>
+<div class="annotation__grid"><section class="anno"><h3>Observed outcome</h3><dl class="kv"><dt>Status</dt><dd><p>visually_completed</p></dd><dt>Description</dt><dd><p>The left-edge hand curls its fingers around the banana, lifts it clear of the mat (about frames 354-408), carries it rightward and lowers it into the plate, then opens its fingers (frames 476-486). From about frame 490 through 673 the banana rests on the plate (mostly inside the rim, with its left tip slightly overhanging the plate&#x27;s left rim at the final frame). The hand withdraws to near its starting pose with fingers open.</p></dd></dl></section><section class="anno"><h3>Hand roles</h3><dl class="kv"><dt>Active visible arm</dt><dd><p>The left-edge arm reaches the banana with an extended index finger leading, settles the hand over the banana&#x27;s left/middle section, curls the fingers (thumb at the near/under side) to hold it, lifts and tilts it clear of the mat, carries it rightward to the plate, lowers it onto the plate floor, opens the fingers to release, hovers briefly with the index finger extended and withdraws.</p></dd><dt>Other arm</dt><dd><p>Not visible; its telemetry block (columns 8-15) is constant, so it does not act.</p></dd></dl></section><section class="anno"><h3>Coordination</h3><p>Single arm acts alone; no hand-to-hand transfer, second hand or human interaction.</p></section><section class="anno"><h3>Robot-side evidence</h3><dl class="kv"><dt>Visible description</dt><dd><p>Only one arm is visible: a black upper arm/wrist housing with a white forearm segment and black five-finger dexterous hand, entering from the lower-left/left edge of the overhead image and extending rightward. The body, head and other arm are never visible.</p></dd><dt>Telemetry</dt><dd><p>In puppet/joint_position, columns 0-7 move (column 7, the hand-close channel, drops from 1.0 to about 0.5 at frames ~280-320 and returns to 1.0 at frames ~476-490) while columns 8-15 are constant over all 674 frames. In the earlier Tien Kung episode 1212_105714, the moving block was columns 8-15 and the arm entered from the right edge; here the moving block is columns 0-7 and the arm enters from the left edge. Together this is consistent with a [left, right] block ordering, but the ordering is not documented in the source.</p></dd><dt>Image geometry</dt><dd><p>The camera is the robot&#x27;s overhead head view looking forward over the table (people and equipment appear at the far side), so image left corresponds to the robot&#x27;s left; the arm base is at the lower-left.</p></dd><dt>Source annotation</dt><dd><p>Publisher instruction: &#x27;Place yellow banana on plastic plate&#x27;. It names no arm.</p></dd><dt>Visual certainty</dt><dd><p>Moderate. The left-arm conclusion rests on head-view geometry plus telemetry-block consistency with the previous episode, not on seeing the torso. The prompt pairs &#x27;left arm&#x27; with &#x27;entering from the left edge of the image&#x27; so the description holds even if the anatomical label is wrong.</p></dd></dl></section><section class="anno"><h3>Chronology</h3><table class="chrono"><thead><tr><th scope="col">Frames</th><th scope="col">Observation</th></tr></thead><tbody><tr><th scope="row">0–94</th><td>Hand open and raised at the upper left of the frame, fingers pointing up/up-right, forearm entering from the left edge; only slight drift. Teal banana lies left of the light-blue plate on the brown mat.</td></tr><tr><th scope="row">96–142</th><td>Arm extends rightward and the hand rotates from pointing up to roughly horizontal, rising slightly toward the top of the mat; banana and plate unchanged.</td></tr><tr><th scope="row">144–182</th><td>Hand, palm facing down with fingers pointing right, advances along the left side of the mat toward the banana&#x27;s left end; banana still untouched.</td></tr><tr><th scope="row">184–214</th><td>Hand descends; the extended index fingertip comes to the banana&#x27;s left/middle portion (native frames 184, 200, 216 show it just above and touching the banana&#x27;s left part) while the other fingers stay curled/trailing behind. Banana has not moved.</td></tr><tr><th scope="row">216–262</th><td>Hand continues down and settles over the banana&#x27;s left half, fingers placed on its top and thumb tucked at its near side (native 262); small adjustments, banana still on the mat.</td></tr><tr><th scope="row">264–320</th><td>Fingers wrap onto the banana&#x27;s left-middle section; hand-close telemetry falls from 1.0 to about 0.59 between roughly frames 280-320 (native 300, 310, 320 show fingers curled over the banana, thumb beneath/near side). Banana still resting on the mat.</td></tr><tr><th scope="row">322–352</th><td>Closed hand holds the banana in place with slight adjustments; banana not yet raised (native 330, 350).</td></tr><tr><th scope="row">354–384</th><td>Wrist lifts: the banana&#x27;s right end rises first and the banana tilts upward in the grip while its left tip is last to leave the mat (native 360-380 at sheet resolution).</td></tr><tr><th scope="row">386–408</th><td>Banana is clear of the mat and is lifted higher and carried toward the right and the top of the mat in a tilted pose, held by the curled fingers (native 400).</td></tr><tr><th scope="row">410–438</th><td>Hand carries the banana rightward over the plate&#x27;s upper-left rim, banana still tilted and held (native 420, 440).</td></tr><tr><th scope="row">440–474</th><td>Hand lowers the banana into the plate; banana is above and then touching the plate floor while still gripped (native 440, 470).</td></tr><tr><th scope="row">476–490</th><td>Fingers open (hand telemetry 0.50 to about 1.0 over frames 476-486); banana lies in the plate (native 480-500).</td></tr><tr><th scope="row">492–516</th><td>Open hand hovers at the banana&#x27;s left end with the index finger extended, then lifts slightly; banana lies on the plate, no visible further displacement (native 500, 510).</td></tr><tr><th scope="row">518–552</th><td>Arm withdraws up and left; hand fingers open and pointing right/up, leaving the plate area; banana stays in the plate.</td></tr><tr><th scope="row">554–600</th><td>Hand swings back to the left edge, fingers pointing up and rotated, returning toward the starting pose; banana still on the plate.</td></tr><tr><th scope="row">602–673</th><td>Arm static near the starting pose at the upper left, hand open with fingers up; banana rests on the plate (native 673), left tip slightly overhanging the plate&#x27;s left rim.</td></tr></tbody></table></section><section class="anno"><h3>Clip selection</h3><p>The episode is one continuous single task (grasp the banana, lift, carry, set it on the plate, release, withdraw) with ordinary phases; the complete sequence is retained, so no shortened clip or separate full-sequence prompt was made.</p></section><section class="anno"><h3>Differences from the publisher annotation</h3><ul><li>The publisher instruction calls the object a &#x27;yellow banana&#x27; but it appears teal/cyan in every stored frame (possible color-channel swap or a teal toy); the prompt uses the appearance &#x27;teal banana&#x27;.</li><li>The instruction says &#x27;plastic plate&#x27;; the object is a shallow light blue-grey plate and the material is not verifiable visually. The action (banana ends on the plate) otherwise matches.</li></ul></section><section class="anno"><h3>Uncertainties</h3><ul><li>Robot-relative left/right is inferred (head-view geometry plus telemetry-block ordering), not seen directly; telemetry block ordering is undocumented.</li><li>Exact finger contacts on the banana (which fingers press from above, thumb placement) are not fully resolvable at 640x480; described as curling the fingers around the banana.</li><li>The hand briefly covers the banana during the carry; lift-off is judged from the banana rising and tilting while the hand moves (right end rises first around frames 354-384).</li><li>Whether the banana moves slightly during the post-release hover (frames 492-516) is not distinguishable; its final pose appears unchanged.</li><li>At the final frame the banana&#x27;s left tip slightly overhangs the plate&#x27;s left rim in the image; whether it touches the mat beneath is not determinable from the overhead view.</li><li>The banana renders teal/cyan in the stored frames, whereas the publisher names it yellow; the original color cannot be established from the data.</li><li>FPS is not recorded; frame indices are authoritative, not time.</li><li>Telemetry polarity of column 7 (high=open) is inferred from video and used only as supporting evidence.</li></ul></section></div>
+<details class="review"><summary>Complete review record <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;humanoid_action_v1&quot;,
+  &quot;prompt_protocol_note&quot;: &quot;humanoid_action_v1 is applied by analogy to a non-Humanoid-Everyday/GR1 humanoid (Tien Kung with dexterous hands). The overhead head view shows only the forearm and hand entering at the left edge; the side is stated together with the image edge so the description is unambiguous.&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;x-humanoid-robomind/RoboMIND&quot;,
+  &quot;task&quot;: &quot;place_yellow_banana_on_plastic_plate&quot;,
+  &quot;episode_id&quot;: &quot;1212_141349&quot;,
+  &quot;embodiment&quot;: &quot;tienkung_gello_1rgb&quot;,
+  &quot;generation_camera&quot;: &quot;camera_top&quot;,
+  &quot;source_video&quot;: &quot;../../original/data/trajectory.hdf5&quot;,
+  &quot;source_frame_count&quot;: 674,
+  &quot;source_resolution&quot;: [
+    640,
+    480
+  ],
+  &quot;source_fps&quot;: null,
+  &quot;source_fps_note&quot;: &quot;FPS is not recorded in the source HDF5; 30 FPS is only a nominal playback rate, so no real-time durations are claimed.&quot;,
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 674,
+  &quot;selected_frame_count&quot;: 674,
+  &quot;selection_reason&quot;: &quot;The episode is one continuous single task (grasp the banana, lift, carry, set it on the plate, release, withdraw) with ordinary phases; the complete sequence is retained, so no shortened clip or separate full-sequence prompt was made.&quot;,
+  &quot;usable_prompt&quot;: &quot;The humanoid&#x27;s left arm, entering from the left edge of the image, extends its dexterous hand over the yellow banana, closes its fingers around the banana and lifts it off the table. The hand carries the banana rightward and lowers it into the cream plate, then opens its fingers to release it. The banana rests in the plate as the open hand withdraws up toward the left edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;full_sequence_prompt&quot;: null,
+  &quot;selected_action_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;description&quot;: &quot;The left-edge hand curls its fingers around the banana, lifts it clear of the mat (about frames 354-408), carries it rightward and lowers it into the plate, then opens its fingers (frames 476-486). From about frame 490 through 673 the banana rests on the plate (mostly inside the rim, with its left tip slightly overhanging the plate&#x27;s left rim at the final frame). The hand withdraws to near its starting pose with fingers open.&quot;
+  },
+  &quot;source_overall_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;source_quality_label&quot;: &quot;no per-frame label inspected; the archive path was not used as visual evidence&quot;,
+    &quot;description&quot;: &quot;Same as the selected action: banana ends on the plate and the hand returns near its start pose.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;visible_description&quot;: &quot;Only one arm is visible: a black upper arm/wrist housing with a white forearm segment and black five-finger dexterous hand, entering from the lower-left/left edge of the overhead image and extending rightward. The body, head and other arm are never visible.&quot;,
+    &quot;telemetry&quot;: &quot;In puppet/joint_position, columns 0-7 move (column 7, the hand-close channel, drops from 1.0 to about 0.5 at frames ~280-320 and returns to 1.0 at frames ~476-490) while columns 8-15 are constant over all 674 frames. In the earlier Tien Kung episode 1212_105714, the moving block was columns 8-15 and the arm entered from the right edge; here the moving block is columns 0-7 and the arm enters from the left edge. Together this is consistent with a [left, right] block ordering, but the ordering is not documented in the source.&quot;,
+    &quot;image_geometry&quot;: &quot;The camera is the robot&#x27;s overhead head view looking forward over the table (people and equipment appear at the far side), so image left corresponds to the robot&#x27;s left; the arm base is at the lower-left.&quot;,
+    &quot;source_annotation&quot;: &quot;Publisher instruction: &#x27;Place yellow banana on plastic plate&#x27;. It names no arm.&quot;,
+    &quot;visual_certainty&quot;: &quot;Moderate. The left-arm conclusion rests on head-view geometry plus telemetry-block consistency with the previous episode, not on seeing the torso. The prompt pairs &#x27;left arm&#x27; with &#x27;entering from the left edge of the image&#x27; so the description holds even if the anatomical label is wrong.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;active_visible_arm&quot;: &quot;The left-edge arm reaches the banana with an extended index finger leading, settles the hand over the banana&#x27;s left/middle section, curls the fingers (thumb at the near/under side) to hold it, lifts and tilts it clear of the mat, carries it rightward to the plate, lowers it onto the plate floor, opens the fingers to release, hovers briefly with the index finger extended and withdraws.&quot;,
+    &quot;other_arm&quot;: &quot;Not visible; its telemetry block (columns 8-15) is constant, so it does not act.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single arm acts alone; no hand-to-hand transfer, second hand or human interaction.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        94
+      ],
+      &quot;observation&quot;: &quot;Hand open and raised at the upper left of the frame, fingers pointing up/up-right, forearm entering from the left edge; only slight drift. Teal banana lies left of the light-blue plate on the brown mat.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        96,
+        142
+      ],
+      &quot;observation&quot;: &quot;Arm extends rightward and the hand rotates from pointing up to roughly horizontal, rising slightly toward the top of the mat; banana and plate unchanged.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        144,
+        182
+      ],
+      &quot;observation&quot;: &quot;Hand, palm facing down with fingers pointing right, advances along the left side of the mat toward the banana&#x27;s left end; banana still untouched.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        184,
+        214
+      ],
+      &quot;observation&quot;: &quot;Hand descends; the extended index fingertip comes to the banana&#x27;s left/middle portion (native frames 184, 200, 216 show it just above and touching the banana&#x27;s left part) while the other fingers stay curled/trailing behind. Banana has not moved.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        216,
+        262
+      ],
+      &quot;observation&quot;: &quot;Hand continues down and settles over the banana&#x27;s left half, fingers placed on its top and thumb tucked at its near side (native 262); small adjustments, banana still on the mat.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        264,
+        320
+      ],
+      &quot;observation&quot;: &quot;Fingers wrap onto the banana&#x27;s left-middle section; hand-close telemetry falls from 1.0 to about 0.59 between roughly frames 280-320 (native 300, 310, 320 show fingers curled over the banana, thumb beneath/near side). Banana still resting on the mat.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        322,
+        352
+      ],
+      &quot;observation&quot;: &quot;Closed hand holds the banana in place with slight adjustments; banana not yet raised (native 330, 350).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        354,
+        384
+      ],
+      &quot;observation&quot;: &quot;Wrist lifts: the banana&#x27;s right end rises first and the banana tilts upward in the grip while its left tip is last to leave the mat (native 360-380 at sheet resolution).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        386,
+        408
+      ],
+      &quot;observation&quot;: &quot;Banana is clear of the mat and is lifted higher and carried toward the right and the top of the mat in a tilted pose, held by the curled fingers (native 400).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        410,
+        438
+      ],
+      &quot;observation&quot;: &quot;Hand carries the banana rightward over the plate&#x27;s upper-left rim, banana still tilted and held (native 420, 440).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        440,
+        474
+      ],
+      &quot;observation&quot;: &quot;Hand lowers the banana into the plate; banana is above and then touching the plate floor while still gripped (native 440, 470).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        476,
+        490
+      ],
+      &quot;observation&quot;: &quot;Fingers open (hand telemetry 0.50 to about 1.0 over frames 476-486); banana lies in the plate (native 480-500).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        492,
+        516
+      ],
+      &quot;observation&quot;: &quot;Open hand hovers at the banana&#x27;s left end with the index finger extended, then lifts slightly; banana lies on the plate, no visible further displacement (native 500, 510).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        518,
+        552
+      ],
+      &quot;observation&quot;: &quot;Arm withdraws up and left; hand fingers open and pointing right/up, leaving the plate area; banana stays in the plate.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        554,
+        600
+      ],
+      &quot;observation&quot;: &quot;Hand swings back to the left edge, fingers pointing up and rotated, returning toward the starting pose; banana still on the plate.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        602,
+        673
+      ],
+      &quot;observation&quot;: &quot;Arm static near the starting pose at the upper left, hand open with fingers up; banana rests on the plate (native 673), left tip slightly overhanging the plate&#x27;s left rim.&quot;
+    }
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;Robot-relative left/right is inferred (head-view geometry plus telemetry-block ordering), not seen directly; telemetry block ordering is undocumented.&quot;,
+    &quot;Exact finger contacts on the banana (which fingers press from above, thumb placement) are not fully resolvable at 640x480; described as curling the fingers around the banana.&quot;,
+    &quot;The hand briefly covers the banana during the carry; lift-off is judged from the banana rising and tilting while the hand moves (right end rises first around frames 354-384).&quot;,
+    &quot;Whether the banana moves slightly during the post-release hover (frames 492-516) is not distinguishable; its final pose appears unchanged.&quot;,
+    &quot;At the final frame the banana&#x27;s left tip slightly overhangs the plate&#x27;s left rim in the image; whether it touches the mat beneath is not determinable from the overhead view.&quot;,
+    &quot;The banana renders teal/cyan in the stored frames, whereas the publisher names it yellow; the original color cannot be established from the data.&quot;,
+    &quot;FPS is not recorded; frame indices are authoritative, not time.&quot;,
+    &quot;Telemetry polarity of column 7 (high=open) is inferred from video and used only as supporting evidence.&quot;
+  ],
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The publisher instruction calls the object a &#x27;yellow banana&#x27; but it appears teal/cyan in every stored frame (possible color-channel swap or a teal toy); the prompt uses the appearance &#x27;teal banana&#x27;.&quot;,
+    &quot;The instruction says &#x27;plastic plate&#x27;; the object is a shallow light blue-grey plate and the material is not verifiable visually. The action (banana ends on the plate) otherwise matches.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;entire_sequence_reviewed&quot;: true,
+    &quot;sampled_decoded_frame_indices&quot;: [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240,
+      242,
+      244,
+      246,
+      248,
+      250,
+      252,
+      254,
+      256,
+      258,
+      260,
+      262,
+      264,
+      266,
+      268,
+      270,
+      272,
+      274,
+      276,
+      278,
+      280,
+      282,
+      284,
+      286,
+      288,
+      290,
+      292,
+      294,
+      296,
+      298,
+      300,
+      302,
+      304,
+      306,
+      308,
+      310,
+      312,
+      314,
+      316,
+      318,
+      320,
+      322,
+      324,
+      326,
+      328,
+      330,
+      332,
+      334,
+      336,
+      338,
+      340,
+      342,
+      344,
+      346,
+      348,
+      350,
+      352,
+      354,
+      356,
+      358,
+      360,
+      362,
+      364,
+      366,
+      368,
+      370,
+      372,
+      374,
+      376,
+      378,
+      380,
+      382,
+      384,
+      386,
+      388,
+      390,
+      392,
+      394,
+      396,
+      398,
+      400,
+      402,
+      404,
+      406,
+      408,
+      410,
+      412,
+      414,
+      416,
+      418,
+      420,
+      422,
+      424,
+      426,
+      428,
+      430,
+      432,
+      434,
+      436,
+      438,
+      440,
+      442,
+      444,
+      446,
+      448,
+      450,
+      452,
+      454,
+      456,
+      458,
+      460,
+      462,
+      464,
+      466,
+      468,
+      470,
+      472,
+      474,
+      476,
+      478,
+      480,
+      482,
+      484,
+      486,
+      488,
+      490,
+      492,
+      494,
+      496,
+      498,
+      500,
+      502,
+      504,
+      506,
+      508,
+      510,
+      512,
+      514,
+      516,
+      518,
+      520,
+      522,
+      524,
+      526,
+      528,
+      530,
+      532,
+      534,
+      536,
+      538,
+      540,
+      542,
+      544,
+      546,
+      548,
+      550,
+      552,
+      554,
+      556,
+      558,
+      560,
+      562,
+      564,
+      566,
+      568,
+      570,
+      572,
+      574,
+      576,
+      578,
+      580,
+      582,
+      584,
+      586,
+      588,
+      590,
+      592,
+      594,
+      596,
+      598,
+      600,
+      602,
+      604,
+      606,
+      608,
+      610,
+      612,
+      614,
+      616,
+      618,
+      620,
+      622,
+      624,
+      626,
+      628,
+      630,
+      632,
+      634,
+      636,
+      638,
+      640,
+      642,
+      644,
+      646,
+      648,
+      650,
+      652,
+      654,
+      656,
+      658,
+      660,
+      662,
+      664,
+      666,
+      668,
+      670,
+      672
+    ],
+    &quot;sampling_method&quot;: &quot;Every second decoded stored frame of camera_top (0-672) in sequential 4x3 temporary contact sheets covering the complete 674-frame source, plus native-resolution pairs at the transitions (frame 673 included).&quot;,
+    &quot;native_resolution_frame_indices&quot;: [
+      0,
+      184,
+      216,
+      262,
+      300,
+      310,
+      320,
+      350,
+      360,
+      400,
+      420,
+      440,
+      470,
+      500,
+      510,
+      530,
+      673
+    ],
+    &quot;conditioning_png_inspected_after_sequence&quot;: true,
+    &quot;conditioning_png&quot;: &quot;../first_frame.png&quot;,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/rv_review/robomind_1212_141349 (not a dataset artifact)&quot;,
+    &quot;ancillary_camera_videos_used&quot;: false,
+    &quot;frames_decoded_from&quot;: &quot;observations/rgb_images/camera_top JPEG frames in trajectory.hdf5&quot;,
+    &quot;telemetry_used&quot;: &quot;puppet joint_position (16-dim) per-column variation and frame values, as supporting evidence only.&quot;
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    184,
+    216,
+    262,
+    300,
+    320,
+    360,
+    400,
+    440,
+    470,
+    500,
+    530,
+    673
+  ],
+  &quot;review_completed_at&quot;: &quot;2026-10-15T20:06:45Z&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_robomind_1212_141349&quot;,
+  &quot;prompt_color_correction&quot;: {
+    &quot;changes&quot;: [
+      &quot;&#x27;the teal banana&#x27; -&gt; &#x27;the yellow banana&#x27;&quot;,
+      &quot;&#x27;the light-blue plate&#x27; -&gt; &#x27;the cream plate&#x27;&quot;
+    ],
+    &quot;previous_prompt&quot;: &quot;The humanoid&#x27;s left arm, entering from the left edge of the image, extends its dexterous hand over the teal banana, closes its fingers around the banana and lifts it off the table. The hand carries the banana rightward and lowers it into the light-blue plate, then opens its fingers to release it. The banana rests in the plate as the open hand withdraws up toward the left edge. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+    &quot;corrected_at&quot;: &quot;2026-10-15T20:09:55.205517+00:00&quot;,
+    &quot;basis&quot;: &quot;Colour terms re-read from the channel-corrected first frame and video; no other wording changed.&quot;
+  },
+  &quot;channel_order_note&quot;: &quot;Channel-order correction (2026-10-15): RoboMIND stores Tien Kung JPEGs with red and blue swapped relative to a standard decoder; this review was made on uncorrected frames, so colour terms in its observations are swapped (teal/cyan reads as yellow or yellow-green, blue as orange/brown, brown/pink as blue). Actions, timing and outcomes are unaffected. All decoded derivatives are now corrected.&quot;,
+  &quot;generation_reference_validation&quot;: {
+    &quot;source_frame_start&quot;: 0,
+    &quot;source_frame_end_exclusive&quot;: 674,
+    &quot;frame_count&quot;: 674,
+    &quot;lossless_source_frame_correspondence_passed&quot;: true,
+    &quot;original_source_hdf5_retained_unchanged&quot;: true
+  }
+}</pre></details></section>
+<nav class="pager"><a rel="prev" href="../../../RoboMIND/tienkung_gello_1rgb__pick_up_tennis_ball_and_place_it_in_box/1212_105755/index.html">← Pick up tennis ball and place it in box</a><a rel="next" href="../../../RoboMIND/tienkung_gello_1rgb__place_yellow_banana_on_plastic_plate/1212_141428/index.html">Place yellow banana on plastic plate →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

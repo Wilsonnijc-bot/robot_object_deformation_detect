@@ -1,0 +1,48 @@
+RoboMIND / franka_3rgb__pick_up_strawberry_in_bowl/1017_102820
+
+Action generation prompt
+The robotic arm picks up the red strawberry from the table and places it into the pink bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+pick up strawberry in bowl
+
+Quality gate
+exception: sharpness 14.7 vs 120 (third_person)
+
+Observed outcome
+Status: visually_completed
+Description: The strawberry starts on the table to the right of the empty pink bowl, is grasped (about frames 44-56), lifted and carried left over the bowl (about frames 78-96), and released; it is visible resting inside the bowl from about frame 108 onward. The gripper opens and the arm withdraws up and right, returning near its start pose with the strawberry remaining in the bowl through frame 132.
+
+Hand roles
+Active visible arm: Single arm descends to the strawberry, closes its gripper on it, lifts and carries it to the bowl, opens the gripper to release it, and withdraws.
+Other arm: None.
+
+Coordination
+Single arm acts alone; no second arm, hand transfer or human interaction.
+
+Robot-side evidence
+Visible description: Single Franka Emika Panda arm with a parallel-jaw gripper entering from the upper left edge of the camera_right view; only one arm exists.
+Source annotation: original/task_prompt.txt and HDF5 language_raw: 'pick up strawberry in bowl'.
+Visual certainty: Not a humanoid; left/right anatomy is not needed. The prompt refers to the single visible robotic arm.
+
+Chronology
+frames 0–22: Arm held above table at image left with gripper open and pointing down; empty pink bowl at left, red strawberry on the table to its right; scene static.
+frames 24–42: Arm moves down and toward the strawberry (the upper arm swings into view at image left), gripper open above the strawberry.
+frames 44–56: Gripper straddles the strawberry and closes on it (gripper telemetry rises from 0 at about frame 40 to about 0.53-0.58 by frames 52-56).
+frames 58–76: Gripper holds the strawberry at table height with a slight adjustment (gripper value dips to about 0.3 around frame 64 then returns to about 0.49); strawberry still near the table.
+frames 78–96: Arm lifts the strawberry and carries it left and down toward the pink bowl; strawberry is visibly held between the fingers (native frames around 78-96).
+frames 96–106: Gripper positioned over the bowl with the strawberry held just above/at the rim, then lowered into the bowl.
+frames 104–116: Gripper opens (value falls from about 0.54 at frame 100 to 0 by frame 116) and the strawberry is seen resting in the bowl.
+frames 108–132: Arm lifts away from the bowl and withdraws up and to image right, back to a raised pose similar to the start; strawberry remains inside the bowl through the final frame.
+
+Clip selection
+The episode is one continuous single task (pick up the strawberry and place it in the bowl) with ordinary approach, grasp, lift, transfer, release and withdrawal phases, so the complete clip is retained and no shortened branch or separate full-sequence prompt is created.
+
+Differences from the publisher annotation
+- Publisher instruction 'pick up strawberry in bowl' is ambiguous (could read as picking the strawberry out of a bowl); the video shows the strawberry starting on the table and being placed into the bowl, so the prompt describes placing it into the bowl.
+
+Uncertainties
+- Exact grasp instant and the precise release frame are approximate; frame ranges are from every-second-frame sampling plus gripper telemetry.
+- Gripper telemetry polarity (higher value = more closed) was inferred from the video and used only as supporting evidence.
+- Strawberry stays inside the bowl at the end; it is seen resting in the bowl in the last frames, but its exact resting orientation is not resolvable at this resolution.
+- FPS is not recorded in the source; frame indices are authoritative, not time.

@@ -1,0 +1,75 @@
+Humanoid Everyday / loco-manip-1__clean_the_window
+
+Action generation prompt
+The humanoid grasps the gray duster's handle with its right hand, lifts it from the ledge, and turns with short steps to face the window. It raises the duster and sweeps its head across the window in repeated sideways and downward wiping strokes at different heights. Still holding the handle, it turns and steps back to the ledge, lays the duster down, releases it, and lowers its empty right hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Walking to and cleaning a window, combining locomotion with manipulation for reaching and wiping motions at different heights.
+
+Quality gate
+pass: sharpness 719.2 vs 120 (third_person)
+
+Observed outcome
+Duster rests on the original light-colored ledge to image right, no longer held. The right hand is empty and lowered beside the robot; the left hand remains empty. The robot stands next to the ledge after completing the tool-use and return sequence.
+
+Hand roles
+Right: Sole manipulating hand: grasps the projecting handle, lifts and carries the duster, performs raised sideways/downward wiping strokes, puts it back onto the ledge, and releases it.
+Left: Empty, nonparticipating hand; stays beside the torso through turn, wiping and return. It neither supports the duster nor touches the window.
+Coordination: Single-hand tool use coordinated with whole-body stepping and turning to face the window and return to the ledge. No hand-to-hand transfer or person interaction is visible.
+
+Robot-side evidence
+Description: Initial PNG shows the front chest panel and robot facing image right. The active nearer arm is attached to its right shoulder, with its farther left hand visible on the opposite side of the chest. Following this same arm through the turn gives the active arm on image right when the rear torso faces the camera (frames 338, 420, 520), independently confirming anatomical right. The idle arm is image left in that rear view.
+Confidence: high
+Uncertainty: None
+
+Chronology
+  Source frame interval:
+    - 0
+    - 77
+  Action: Right arm lifts and extends toward the projecting duster handle; the left hand stays clear. Body stays near the ledge.
+  Confidence: high
+  Source frame interval:
+    - 78
+    - 197
+  Action: Right fingers surround and close around the handle while the duster head remains on the ledge. The hand maintains the grip before lifting.
+  Confidence: high
+  Source frame interval:
+    - 198
+    - 255
+  Action: Right hand lifts the duster free, rotates it upright, and draws it toward the chest. Left hand does not assist.
+  Confidence: high
+  Source frame interval:
+    - 256
+    - 447
+  Action: With the duster held upright in the right hand, the robot takes short alternating steps and turns until its back faces the camera and its front faces the window; the left arm hangs beside it.
+  Confidence: high
+  Source frame interval:
+    - 448
+    - 639
+  Action: Right shoulder/elbow raise and extend the tool toward the window. The head moves toward image right at roughly shoulder height, then sweeps downward and left toward the torso in a wiping stroke. Contact depth is not independently resolved at every point.
+  Confidence: high for movement; medium for continuous glass contact
+  Source frame interval:
+    - 640
+    - 701
+  Action: Right hand raises the duster again and makes another sideways/downward sweep, varying the height and tilt of its head across the window. Left hand remains idle.
+  Confidence: high for movement; medium for continuous glass contact
+  Source frame interval:
+    - 702
+    - 921
+  Action: Robot lowers the held duster toward its torso, steps laterally/back from its wiping stance, moves partly out of the image at left, then steps back into view and turns toward the original ledge. Grip remains in the right hand.
+  Confidence: high
+  Source frame interval:
+    - 922
+    - 1023
+  Action: Right arm extends the tool over the ledge and lowers/tilts the fluffy head onto it. The duster lies supported on the ledge as the right fingers open around its handle.
+  Confidence: high
+  Source frame interval:
+    - 1024
+    - 1091
+  Action: Right hand moves away empty and lowers beside the body. Duster remains resting on the ledge with its handle visible; robot stands beside it.
+  Confidence: high
+
+Uncertainties
+- The frontal/rear projection cannot establish uninterrupted duster-to-glass contact throughout every sweep; the head follows clear wiping movements across the window plane, and portions are briefly occluded by the robot.
+- Visible dirt removal or final cleanliness cannot be established. Success denotes the observed grasp, wiping-motion sequence and completed tool return/release, not a verified clean surface.
+- The robot is partially out of view during the lateral/backward stepping phase around frames 736-798; the held duster and parts of the body remain visible and re-entry confirms retained possession.

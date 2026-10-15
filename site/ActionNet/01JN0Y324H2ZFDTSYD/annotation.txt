@@ -1,0 +1,65 @@
+ActionNet / 01JN0Y324H2ZFDTSYD
+
+Action generation prompt
+The robot uses the hand on the arm entering from the lower right to grasp the golden-brown pastry, lift it from the tabletop, and carry it over the gray plate. It lowers and releases the pastry onto the plate, leaving it resting there. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Pick up the croissant and put it on a plate
+
+Quality gate
+pass: sharpness 486.7 vs 60 (first_person)
+
+Observed outcome
+Selected action: success
+Observed end state: Pastry released and resting flat inside gray plate; active hand withdrawn.
+Source overall label: not inferred from task code npnp
+Independent subtasks: False
+
+Hand roles
+Lower right visible arm: Sole manipulator: encloses pastry, bears it during lift and transport, lowers onto plate, releases and retracts.
+Lower left visible arm: Remains beside the table with open hand throughout; no pastry, plate or other support contact observed.
+
+Coordination
+No bimanual contact, transfer, human handoff or object support by the other hand is visible.
+
+Robot-side evidence
+Active arm: Arm entering from lower right of the conditioning image.
+Inactive arm: Arm entering from lower left, with open hand beside table.
+Anatomical side: not independently established
+Evidence: Both forearms enter from the lower edges in a forward-looking top view; neither shoulder nor torso attachment is visible. Image side is observable, but it is not used as definitive anatomical proof.
+Prompt convention: unambiguous visible-arm wording
+
+Chronology
+  Frame start: 0
+  Frame end: 38
+  Observation: Golden-brown pastry rests above and to image right of gray plate. Active hand starts upright and moves toward pastry; other hand remains open at image left.
+  Frame start: 40
+  Frame end: 84
+  Observation: Active hand opens and descends around pastry. Its lower opposing digit nears the pastry right edge while other digits remain above; no lift yet.
+  Frame start: 86
+  Frame end: 160
+  Observation: Hand rotates over pastry and curls around opposite sides, progressively establishing the grasp. At native frame 118 the pastry is still near its original table position; frame 160 shows enclosure around its body. Small adjustments are phases of the same grasp.
+  Frame start: 162
+  Frame end: 198
+  Observation: Closed hand lifts pastry clear of tabletop; frame 194 shows visible clearance and pastry supported only by active hand.
+  Frame start: 200
+  Frame end: 286
+  Observation: Hand maintains its grasp while moving pastry toward and over gray plate. Pastry changes orientation with the hand as a whole; no separate mechanism motion or other hand contact.
+  Frame start: 288
+  Frame end: 318
+  Observation: Pastry is lowered within plate rim. By frame 318 it appears flat on the plate while active digits begin spreading; hand still overlaps its right side.
+  Frame start: 320
+  Frame end: 354
+  Observation: Active hand opens and clears the pastry. Native frames 336 and 342 show pastry remaining flat on plate as digits separate; frame 354 shows open hand above it.
+  Frame start: 356
+  Frame end: 431
+  Observation: Open hand withdraws upward/right and returns upright. Pastry remains stationary inside the plate through final frame 431; other hand has no contact.
+
+Differences from the publisher annotation
+- Annotated croissant has a triangular golden-brown pastry appearance; prompt uses appearance-based pastry wording without asserting exact food identity.
+- Placement outcome agrees with annotation.
+
+Uncertainties
+- Robot anatomical left/right cannot be independently confirmed from visible torso/shoulder attachment.
+- Exact first contact and plate-support transition are partly occluded by the hand; frame ranges describe visible changes without claiming subframe precision.
+- Source top-camera view shifts slightly relative to the table over the clip; required shared fixed-camera sentence is retained as the generation constraint.

@@ -1,0 +1,42 @@
+Humanoid Everyday / human-robot-3__hand_over_grey_duster
+
+Action generation prompt
+The humanoid uses its right hand to grasp the grey duster around its fluffy head, lift it from the table, and offer the exposed handle to a person. It holds the duster while the person grasps the handle, then opens its right hand to release it as the person carries it away and out of view. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Picking up a grey duster from the table and handing it to a person, demonstrating tool handover and collaborative task initiation.
+
+Quality gate
+pass: sharpness 149.3 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+Duster is successfully transferred to the person, whose hand visibly carries it out of view after the robot releases.
+Terminal state:
+The person has carried the duster out through image left; the table is clear of the duster, and the humanoid's right hand is empty and lowered near its right side. Its left hand remains empty near the lap.
+
+Hand roles
+Right: Active manipulation hand. Reaches to the duster, grips around its fluffy head, lifts and presents its handle, maintains support while the person grasps, then opens to release and retracts empty.
+Left: Idle empty hand near the robot's left thigh/lap throughout; it neither supports nor manipulates the duster.
+Person: Visible hand takes the exposed handle while the robot still holds the fluffy head, then withdraws with the released duster.
+
+Coordination
+One robot hand and one person hand cooperate during handover: robot supports the fluffy head while the recipient grips the handle; release follows the recipient's grasp. No robot hand-to-hand transfer.
+
+Robot-side evidence
+Confidence: high
+Evidence: Initial PNG and native frames show the front of the robot's face and torso. The active arm runs from the shoulder on the robot's own right, appearing at viewer left, through its elbow and wrist to the dark-fingered hand over the duster. The other arm attaches to the robot's own left shoulder at viewer right and ends in the pale hand by its left thigh. Naming is grounded in these shoulder attachments and frontal body pose.
+Uncertainty: No material uncertainty in robot anatomical side; person hand anatomy is not needed and is not assigned.
+
+Chronology
+frames 0–14: Robot holds its empty hands near its lap; grey duster rests on the table.
+frames 15–52: Anatomical right arm reaches forward and down; open right fingers surround the fluffy head of the duster while the left hand remains near the lap.
+frames 53–108: Right hand closes around the fluffy head and settles its grasp; duster shifts slightly on the tabletop.
+frames 109–157: Right hand lifts the duster, rotates it to leave the handle exposed toward the approaching person, and holds it in front of the robot over the table.
+frames 158–188: A person's hand enters from image left, reaches the exposed dark handle, and closes around it while the robot continues holding the fluffy head.
+frames 189–208: Robot and person briefly support opposite parts of the same duster; the person begins drawing the handle toward image left as the robot loosens its grip.
+frames 209–224: Right hand opens and separates visibly from the duster; the person carries the duster away toward image left and out of view.
+frames 225–278: Robot retracts and lowers its empty right hand toward its side/lap. Left hand remains empty by the lap; duster is absent from the tabletop.
+
+Uncertainties
+- Fluffy material partially occludes the exact right-finger contact points and the first instant of release; native frames 210–216 show the hand opening and separation, and the subsequent removal establishes the completed handover.

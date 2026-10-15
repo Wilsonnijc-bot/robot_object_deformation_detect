@@ -1,0 +1,40 @@
+NVIDIA GR1 / 3
+
+Action generation prompt
+The robot closes its right hand around the yellow banana on the teal plate and lifts it clear. It carries the banana leftward to the bare wooden tabletop beside the plate, lowers it, and opens its fingers, leaving the banana beneath the open hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up banana from teal plate to wooden table.
+
+Quality gate
+pass: sharpness 869.3 vs 60 (first_person)
+
+Observed outcome
+Outcome:
+The banana is removed from the teal plate and brought to the bare tabletop to its left. The right hand visibly opens over it at the ending.
+Terminal state:
+The teal plate is empty. The yellow banana is beneath the opened right hand to the left of the plate; its ends are visible, but its center and precise supporting contact are occluded by the palm. The left hand is still open nearby.
+
+Hand roles
+Right: Grasps, lifts, transports and lowers the banana, then opens its fingers at the tabletop destination.
+Left: Stays open and substantially stationary; does not touch, support or receive the banana.
+
+Coordination
+Single-hand manipulation; no hand-to-hand transfer or human interaction occurs. The left hand stays clear throughout.
+
+Robot-side evidence
+Description: The near-side perspective shows the two forearms entering from the corresponding lower sides and extending away toward the table. The active forearm remains connected to the lower-right robot arm, with the back of its hand upward and thumb on the inward side; the opposite open hand is palm-up. This paired arm arrangement supports robot-relative right for the active hand rather than assuming sides from target position. The source instruction independently also identifies the right hand.
+Confidence: medium-high
+Limitations: Torso and shoulder joints are outside the view, so direct shoulder attachment cannot be followed.
+
+Chronology
+frames 0–28: Right hand is open over the banana on the teal plate and shifts to surround it; left hand remains open and idle.
+frames 29–62: Right hand turns over the banana and curls its fingers and thumb around it while it is still at the plate.
+frames 63–80: Right hand lifts the banana clear of the plate, maintaining its grasp.
+frames 81–108: Right arm carries the held banana leftward over the bare tabletop beside the plate and lowers it near the idle left hand.
+frames 109–115: Right hand remains low with the banana beneath it at the tabletop destination; the palm obscures the banana center and exact surface contact.
+frames 116–119: Right fingers and thumb open away from the banana. The banana remains beneath the open right hand on or immediately above the tabletop; no hand withdrawal is shown.
+
+Uncertainties
+- The right palm partly occludes the banana and tabletop at the ending; finger opening is visible, but complete release into an independently resting state cannot be verified without hand withdrawal.
+- The shoulder and torso are outside the view; anatomical right is supported by paired near-side arm arrangement and thumb orientation rather than visible shoulder attachment.

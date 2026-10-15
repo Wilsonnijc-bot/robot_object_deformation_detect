@@ -1,0 +1,48 @@
+ActionNet / 01JN0YMV54BPXU4PLB
+
+Action generation prompt
+The robot uses the hand entering from the lower-left edge to close its fingers around the triangular golden pastry and lift it from the table. It carries the pastry over the gray plate, turns it over, then lowers and releases it flat onto the plate before withdrawing its hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Pick up the croissant and put it on a plate
+
+Quality gate
+pass: sharpness 530.4 vs 60 (first_person)
+
+Observed outcome
+Selected action: Complete original single-task clip
+Status: visibly_successful
+Actual end state: Triangular pastry lies flat on gray plate, pale reverse face upward; manipulating hand has released and withdrawn.
+Release observed: True
+Final frame index: 490
+
+Hand roles
+Lower left visible arm: Sole manipulating arm: fingers enclose pastry, bear its weight during lift and transport, maintain grasp during turnover, then release over plate and retract.
+Lower right visible arm: Remains beside work area without contacting pastry or plate; no stabilizing or carrying role observed.
+
+Coordination
+Single-hand manipulation; no hand-to-hand transfer or human object contact. Person beside table moves but does not touch the task object or plate.
+
+Robot-side evidence
+Assignment: undetermined
+Visible active arm: Arm entering the lower-left edge of the initial image.
+Visible inactive arm: Arm entering the lower-right edge of the initial image.
+Evidence: Both forearms and hands are visible from a close high robot-side camera, but torso and shoulder attachments are outside the frame. Image left/right alone does not prove anatomical left/right.
+Prompt convention: Use unambiguous initial-image arm description rather than invent anatomical side.
+
+Chronology
+frames 0–48: Golden ridged triangular pastry lies flat on cloth to the image left of gray plate; both robot hands clear. Active arm begins to move inward late in interval.
+frames 50–120: Lower-left hand advances around pastry with fingers open, gradually positioning opposing digits along its edges. The other arm stays clear.
+frames 122–140: Fingers close around opposing pastry edges; by 132–140 digits firmly surround its upper and lower visible edges while its ridged face remains upward.
+frames 142–210: Hand holds the pastry near its original position, then starts raising it while retaining the same grasp; whole object begins to tilt.
+frames 212–278: Pastry is visibly raised and carried toward plate. Its ridged face stays toward camera as the hand bears it above cloth and approaches the plate.
+frames 280–326: Hand carries pastry over plate and lowers toward its interior while retaining edge grasp.
+frames 328–342: Pastry turns as a whole from ridged face upward through edge-on orientation to pale reverse face upward while hand remains around its edges. This is whole-object turnover, not a moving mechanism.
+frames 344–390: Hand holds tilted pastry over plate with pale face visible, making a small placement adjustment.
+frames 392–418: Fingers open; pastry settles flat onto plate with pale face upward. At 414 onward hand separates clearly from pastry, which stays on plate.
+frames 420–490: Open hand withdraws toward lower-left edge; pastry remains stationary flat on gray plate through final frame. Other arm remains uninvolved.
+
+Uncertainties
+- Anatomical side cannot be established from visible body attachments, which are outside frame.
+- Exact pastry identity and material are uncertain; source calls it croissant.
+- Precise first contact, table clearance, and initial plate contact are partly occluded or ambiguous in the high camera view; review uses frame ranges.

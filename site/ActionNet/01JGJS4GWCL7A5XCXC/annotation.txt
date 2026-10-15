@@ -1,0 +1,47 @@
+ActionNet / 01JGJS4GWCL7A5XCXC
+
+Action generation prompt
+The robot uses the hand entering from the lower-right edge to close its thumb and fingers around the orange on the tabletop and lift it. It carries the orange left over the rim of the transparent plastic container, lowers it inside, and opens its hand to release it onto the container floor, then withdraws, leaving the orange resting inside the container. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Pick up the orange from the table and place it in the container.
+
+Quality gate
+pass: sharpness 493.3 vs 60 (first_person)
+
+Observed outcome
+Status: successful_visible_placement
+Description: The orange is lifted from the tabletop, carried into the transparent plastic container and released onto its floor, where it remains while the hand withdraws.
+Selected action outcome: successful_visible_placement
+Source overall success label: not used to infer outcome
+
+Hand roles
+Lower right visible arm: Sole manipulating hand: approaches the orange, closes thumb (image-left side) and fingers around opposing sides of it, bears its weight during lift and transport, lowers it into the container, opens to release, withdraws and returns to a raised rest posture at the lower right.
+Lower left visible arm: Remains stationary beside the container's lower-left corner with fingers raised for the whole clip; no contact with the orange or container.
+
+Coordination
+Single-hand pick and place. No hand-to-hand transfer or bimanual stabilization. A person stands at the left edge holding a handheld device and moves slightly in and out of view; they do not touch the robot, orange or container.
+
+Robot-side evidence
+Active arm: hand entering from the lower-right edge of the initial image
+Initial frame evidence: Two robot arms enter from the near lower image edge. The hand attached to the lower-right arm sits beside the orange at frame 0 and is the only hand that moves. The lower-left arm stands upright beside the container with fingers raised and stays still. Torso and shoulders are outside the image, and camera pose or mirroring relative to the robot body is not established.
+Confidence: Visible-arm identity is unambiguous; anatomical left/right is not independently established.
+
+Chronology
+frames 0–89: Orange lies on the teal cloth right of the empty transparent plastic container. The lower-right hand is beside it with the thumb to its lower left and fingers raised. It shifts slowly toward the orange; the lower-left hand is still. The person is initially visible at the left, partly leaves the field of view and returns.
+frames 90–139: The hand opens around the orange. At frame 110 the thumb is below-left and the fingers on the right side of the orange with an open gap. By frame 130 thumb and fingers touch opposing sides; the orange is still on the table.
+frames 140–200: The hand holds the orange and raises it off the table. Frame 160 shows it clearly lifted above the cloth. By frame 200 it is carried up and left toward the container, held between the thumb below and the fingers on top. No regrasp is visible.
+frames 201–250: The held orange is carried left over the container's right rim and lowered inside. At frame 250 it is just inside the container above the floor with the hand and wrist still above the rim.
+frames 251–266: The hand lowers the orange further and releases it. Frame 258 still shows finger and thumb contact on the orange. By frame 266 the orange rests low in the container and the thumb remains near its lower edge. The exact release frame is partly occluded by the hand.
+frames 267–310: The hand opens fully and lifts out of the container, pointing upward at the right of the container.
+frames 311–403: The hand moves back to a raised rest posture beside the table at the lower right. The orange remains on the container floor through final frame 403. The person at the left appears surprised but does not interact. No further manipulation follows.
+
+Differences from the publisher annotation
+- The source says to place the orange in the container; the observed target is a transparent plastic storage bin, consistent with the instruction.
+- The source gives no side or arm information; the prompt uses the visible hand entering from the lower-right edge.
+
+Uncertainties
+- Torso and shoulder attachment are outside the image, and camera pose or mirroring is not independently established. Anatomical left/right is uncertain; the prompt uses the unambiguous hand entering from the lower-right edge.
+- The exact first table-separation and release frames are bracketed rather than isolated because of hand and orange occlusion; chronology intervals bracket visible transitions.
+- The top camera is mounted on the robot and shows slight apparent motion in some segments; the fixed-camera generation constraint is retained verbatim.
+- Whether the orange is real fruit or a prop cannot be established visually.

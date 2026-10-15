@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Place in bread in plate · RoboMIND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>dataset viewer</span></a>
+<nav class="crumbs"><a href="../../../index.html">All datasets</a><span aria-hidden="true">/</span><a href="../../../RoboMIND/index.html">RoboMIND</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">RoboMIND · franka_3rgb__place_in_bread_in_plate/1014_101050</p>
+<h1>Place in bread in plate</h1></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generation input · 135 frames · 4.5 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="Conditioning first frame" loading="lazy">
+<figcaption>Conditioning first frame</figcaption></figure>
+
+</div>
+<aside class="episode__side"><section class="field"><h2>Action prompt</h2><p class="prompt">The robotic arm picks up the small orange-topped bread loaf and places it on the pink plate, releasing it so it rests on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.</p></section><section class="field"><h2>Publisher annotation</h2><p class="quiet">put the bread on a plate</p></section><section class="field"><h2>Quality gate</h2>
+<div class="gate"><span class="chip chip--exception" title="Sharpness 23.8 vs threshold 120">Exception<b>24</b></span><p>Sharpness <b>23.8</b> against 120
+(third-person). Measured on the 960 × 704 model view,
+upscale 1.50×.</p></div><p class="quiet">Accepted as an exception by project decision (2026-10-15); the Franka camera_right frames score below the third-person threshold.</p></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Source frame</dt><dd>640 × 480</dd><dt>Frames</dt><dd>135</dd><dt>Frame rate</dt><dd>30 fps</dd><dt>Duration</dt><dd>4.5 s</dd><dt>Codec</dt><dd>h264</dd><dt>Variant</dt><dd>full sequence</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="annotation.txt">Annotation (text)</a></li><li><a href="review.json">Visual review (JSON)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/RoboMIND/franka_3rgb__place_in_bread_in_plate/1014_101050">Episode folder on GitHub</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__place_in_bread_in_plate/1014_101050/generation%20input/first_frame.png">First frame (PNG)</a></li><li><a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/raw/data/robotvideo/RoboMIND/franka_3rgb__place_in_bread_in_plate/1014_101050/generation%20input/video.mp4">Generation video (original file)</a></li></ul></section></aside>
+</div>
+<section class="annotation"><h2>Annotation</h2>
+<p class="quiet">From the dedicated visual review of this video (concise_action_v1).
+<a href="annotation.txt">Plain text</a> · <a href="review.json">JSON</a></p>
+<div class="annotation__grid"><section class="anno"><h3>Observed outcome</h3><dl class="kv"><dt>Status</dt><dd><p>visually_completed</p></dd><dt>Description</dt><dd><p>The arm grasps the orange-topped bread loaf (gripper closing frames 59-70), lifts it, carries it left and lowers it onto the pink plate, opens the gripper (frames 93-99) and withdraws. From frame 98 onward the loaf is visibly resting on the plate, slightly tilted, and stays there to frame 134.</p></dd></dl></section><section class="anno"><h3>Hand roles</h3><dl class="kv"><dt>Active visible arm</dt><dd><p>Single arm picks up the bread loaf, carries it to the pink plate, places and releases it, and withdraws.</p></dd><dt>Other arm</dt><dd><p>None.</p></dd></dl></section><section class="anno"><h3>Coordination</h3><p>Single arm acts alone. A human hand appears briefly at the lower left (frames 13-24) only to reposition the banana, before the robot moves; there is no human-robot interaction.</p></section><section class="anno"><h3>Robot-side evidence</h3><dl class="kv"><dt>Visible description</dt><dd><p>Single Franka Emika Panda arm with a parallel-jaw gripper; the arm base is off-frame to image left and the arm enters from the left edge in the camera_right view. Only one arm exists.</p></dd><dt>Source annotation</dt><dd><p>Publisher instruction: &#x27;put the bread on a plate&#x27;.</p></dd><dt>Visual certainty</dt><dd><p>Not a humanoid; left/right anatomy is not needed. The usable prompt refers to the single robotic arm.</p></dd></dl></section><section class="anno"><h3>Chronology</h3><table class="chrono"><thead><tr><th scope="col">Frames</th><th scope="col">Observation</th></tr></thead><tbody><tr><th scope="row">0–12</th><td>Arm held above the open white storage bin with gripper open and pointing down; toy bread loaf with orange top, pink plate, purple cube, two white crumpled items, a panda figurine and a banana lie on the table; stacked cabinet at right. Scene static.</td></tr><tr><th scope="row">13–24</th><td>A human hand and forearm enter from the lower left edge, reach to the banana at about frames 14-16, adjust it and withdraw by about frame 22; the banana ends nearer the panda figurine and the blue cube. The robot stays still.</td></tr><tr><th scope="row">25–38</th><td>Banana and panda settle (panda leans on the banana). Arm still hovers over the bin; it begins to move toward the bread around frame 36-38.</td></tr><tr><th scope="row">39–52</th><td>Arm swings left-forward and down toward the bread loaf, gripper still open (gripper telemetry 0.0), blue wrist light visible from about frame 44; fingers straddle the loaf at frame 52.</td></tr><tr><th scope="row">53–62</th><td>Gripper lowered around the bread loaf; telemetry gripper value starts rising from frame 59 (0.02) and reaches 0.13 at frame 62, fingers closing on the loaf.</td></tr><tr><th scope="row">63–74</th><td>Fingers close on the loaf (telemetry about 0.74-0.75 from frame 70, which is the closed-on-object value) and the loaf is held at the grasp; loaf still at original table position at frame 70.</td></tr><tr><th scope="row">75–86</th><td>Loaf lifted off the table and carried left toward the pink plate; at frame 86 the held loaf is over the plate rim.</td></tr><tr><th scope="row">87–98</th><td>Arm lowers the loaf onto the plate; telemetry gripper value falls 0.6 to 0.06 over frames 93-98 and reaches 0.0 at frame 99 as the fingers release. At frame 98 the loaf lies on the plate with the open fingers beside it.</td></tr><tr><th scope="row">99–108</th><td>Gripper open (0.0) and lifts clear of the plate, moving up and to image right; the loaf rests on the plate, slightly tilted, and stays in place (frame 104 and 110 at native resolution).</td></tr><tr><th scope="row">109–134</th><td>Arm withdraws up and back toward its starting pose above the white bin with gripper open; bread remains on the pink plate through the last frame 134. Banana, panda, cube unchanged.</td></tr></tbody></table></section><section class="anno"><h3>Clip selection</h3><p>The episode is one single-task manipulation (pick the bread loaf, place it on the plate, release, withdraw). There is no later independent subtask, so the complete clip is retained and no shortened branch or full-sequence prompt is needed. The brief human hand adjusting the banana at frames 13-24 precedes the robot motion and is not a robot subtask.</p></section><section class="anno"><h3>Differences from the publisher annotation</h3><ul><li>The publisher instruction &#x27;put the bread on a plate&#x27; matches the video; the prompt only adds the visible detail that the loaf has an orange top and the plate is pink.</li><li>The brief human hand in frames 13-24 adjusting the banana is not mentioned in the instruction and is excluded from the prompt.</li></ul></section><section class="anno"><h3>Uncertainties</h3><ul><li>The bread is a toy-like loaf with an orange glazed top (possibly a toy sushi/bread roll); the prompt uses an appearance-based description &#x27;small orange-topped bread loaf&#x27; and the publisher word &#x27;bread&#x27;.</li><li>Fine finger-to-object contact points are not resolvable at 640x480; the grasp is inferred from the gripper telemetry rising to about 0.75 while the loaf moves with the gripper (higher value = more closed, inferred from video).</li><li>The exact frame of release is taken from telemetry (value 0.0 at frame 99) and the loaf already lying on the plate at frame 98.</li><li>FPS is not recorded in the source; frame indices are authoritative, not time.</li></ul></section></div>
+<details class="review"><summary>Complete review record <span>action_review.json</span></summary>
+<pre>{
+  &quot;prompt_protocol&quot;: &quot;concise_action_v1&quot;,
+  &quot;prompt_provenance&quot;: &quot;visually_authored_from_video_and_initial_frame&quot;,
+  &quot;dataset&quot;: &quot;x-humanoid-robomind/RoboMIND&quot;,
+  &quot;task&quot;: &quot;place_in_bread_in_plate&quot;,
+  &quot;episode_id&quot;: &quot;1014_101050&quot;,
+  &quot;embodiment&quot;: &quot;franka_3rgb&quot;,
+  &quot;generation_camera&quot;: &quot;camera_right&quot;,
+  &quot;source_video&quot;: &quot;../../original/data/trajectory.hdf5&quot;,
+  &quot;source_frame_count&quot;: 135,
+  &quot;source_resolution&quot;: [
+    640,
+    480
+  ],
+  &quot;source_fps&quot;: null,
+  &quot;source_fps_note&quot;: &quot;FPS is not recorded in the source HDF5; 30 FPS is only a nominal playback rate, so no real-time durations are claimed.&quot;,
+  &quot;selected_source_frame_start&quot;: 0,
+  &quot;selected_source_frame_end_exclusive&quot;: 135,
+  &quot;selected_frame_count&quot;: 135,
+  &quot;selection_reason&quot;: &quot;The episode is one single-task manipulation (pick the bread loaf, place it on the plate, release, withdraw). There is no later independent subtask, so the complete clip is retained and no shortened branch or full-sequence prompt is needed. The brief human hand adjusting the banana at frames 13-24 precedes the robot motion and is not a robot subtask.&quot;,
+  &quot;usable_prompt&quot;: &quot;The robotic arm picks up the small orange-topped bread loaf and places it on the pink plate, releasing it so it rests on the plate. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.&quot;,
+  &quot;full_sequence_prompt&quot;: null,
+  &quot;selected_action_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;description&quot;: &quot;The arm grasps the orange-topped bread loaf (gripper closing frames 59-70), lifts it, carries it left and lowers it onto the pink plate, opens the gripper (frames 93-99) and withdraws. From frame 98 onward the loaf is visibly resting on the plate, slightly tilted, and stays there to frame 134.&quot;
+  },
+  &quot;source_overall_outcome&quot;: {
+    &quot;status&quot;: &quot;visually_completed&quot;,
+    &quot;source_quality_label&quot;: null,
+    &quot;description&quot;: &quot;Same as the selected action: the bread ends on the pink plate and the arm returns toward its start pose by frame 134. No success/failure label is stored in the source files reviewed.&quot;
+  },
+  &quot;anatomical_side_evidence&quot;: {
+    &quot;visible_description&quot;: &quot;Single Franka Emika Panda arm with a parallel-jaw gripper; the arm base is off-frame to image left and the arm enters from the left edge in the camera_right view. Only one arm exists.&quot;,
+    &quot;source_annotation&quot;: &quot;Publisher instruction: &#x27;put the bread on a plate&#x27;.&quot;,
+    &quot;visual_certainty&quot;: &quot;Not a humanoid; left/right anatomy is not needed. The usable prompt refers to the single robotic arm.&quot;
+  },
+  &quot;arm_roles&quot;: {
+    &quot;active_visible_arm&quot;: &quot;Single arm picks up the bread loaf, carries it to the pink plate, places and releases it, and withdraws.&quot;,
+    &quot;other_arm&quot;: &quot;None.&quot;
+  },
+  &quot;coordination&quot;: &quot;Single arm acts alone. A human hand appears briefly at the lower left (frames 13-24) only to reposition the banana, before the robot moves; there is no human-robot interaction.&quot;,
+  &quot;chronology&quot;: [
+    {
+      &quot;source_frames_inclusive&quot;: [
+        0,
+        12
+      ],
+      &quot;observation&quot;: &quot;Arm held above the open white storage bin with gripper open and pointing down; toy bread loaf with orange top, pink plate, purple cube, two white crumpled items, a panda figurine and a banana lie on the table; stacked cabinet at right. Scene static.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        13,
+        24
+      ],
+      &quot;observation&quot;: &quot;A human hand and forearm enter from the lower left edge, reach to the banana at about frames 14-16, adjust it and withdraw by about frame 22; the banana ends nearer the panda figurine and the blue cube. The robot stays still.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        25,
+        38
+      ],
+      &quot;observation&quot;: &quot;Banana and panda settle (panda leans on the banana). Arm still hovers over the bin; it begins to move toward the bread around frame 36-38.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        39,
+        52
+      ],
+      &quot;observation&quot;: &quot;Arm swings left-forward and down toward the bread loaf, gripper still open (gripper telemetry 0.0), blue wrist light visible from about frame 44; fingers straddle the loaf at frame 52.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        53,
+        62
+      ],
+      &quot;observation&quot;: &quot;Gripper lowered around the bread loaf; telemetry gripper value starts rising from frame 59 (0.02) and reaches 0.13 at frame 62, fingers closing on the loaf.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        63,
+        74
+      ],
+      &quot;observation&quot;: &quot;Fingers close on the loaf (telemetry about 0.74-0.75 from frame 70, which is the closed-on-object value) and the loaf is held at the grasp; loaf still at original table position at frame 70.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        75,
+        86
+      ],
+      &quot;observation&quot;: &quot;Loaf lifted off the table and carried left toward the pink plate; at frame 86 the held loaf is over the plate rim.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        87,
+        98
+      ],
+      &quot;observation&quot;: &quot;Arm lowers the loaf onto the plate; telemetry gripper value falls 0.6 to 0.06 over frames 93-98 and reaches 0.0 at frame 99 as the fingers release. At frame 98 the loaf lies on the plate with the open fingers beside it.&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        99,
+        108
+      ],
+      &quot;observation&quot;: &quot;Gripper open (0.0) and lifts clear of the plate, moving up and to image right; the loaf rests on the plate, slightly tilted, and stays in place (frame 104 and 110 at native resolution).&quot;
+    },
+    {
+      &quot;source_frames_inclusive&quot;: [
+        109,
+        134
+      ],
+      &quot;observation&quot;: &quot;Arm withdraws up and back toward its starting pose above the white bin with gripper open; bread remains on the pink plate through the last frame 134. Banana, panda, cube unchanged.&quot;
+    }
+  ],
+  &quot;uncertainties&quot;: [
+    &quot;The bread is a toy-like loaf with an orange glazed top (possibly a toy sushi/bread roll); the prompt uses an appearance-based description &#x27;small orange-topped bread loaf&#x27; and the publisher word &#x27;bread&#x27;.&quot;,
+    &quot;Fine finger-to-object contact points are not resolvable at 640x480; the grasp is inferred from the gripper telemetry rising to about 0.75 while the loaf moves with the gripper (higher value = more closed, inferred from video).&quot;,
+    &quot;The exact frame of release is taken from telemetry (value 0.0 at frame 99) and the loaf already lying on the plate at frame 98.&quot;,
+    &quot;FPS is not recorded in the source; frame indices are authoritative, not time.&quot;
+  ],
+  &quot;source_annotation_discrepancies&quot;: [
+    &quot;The publisher instruction &#x27;put the bread on a plate&#x27; matches the video; the prompt only adds the visible detail that the loaf has an orange top and the plate is pink.&quot;,
+    &quot;The brief human hand in frames 13-24 adjusting the banana is not mentioned in the instruction and is excluded from the prompt.&quot;
+  ],
+  &quot;inspection_coverage&quot;: {
+    &quot;entire_sequence_reviewed&quot;: true,
+    &quot;sampled_decoded_frame_indices&quot;: [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134
+    ],
+    &quot;sampling_method&quot;: &quot;Every second stored frame of camera_right (frames 0-134) in sequential temporary contact sheets covering the whole 135-frame source, plus native-resolution frames at the contact and release transitions.&quot;,
+    &quot;native_resolution_frame_indices&quot;: [
+      0,
+      14,
+      16,
+      24,
+      52,
+      62,
+      70,
+      86,
+      98,
+      104,
+      110,
+      134
+    ],
+    &quot;conditioning_png_inspected_after_sequence&quot;: true,
+    &quot;conditioning_png&quot;: &quot;../first_frame.png&quot;,
+    &quot;temporary_evidence_location&quot;: &quot;/tmp/rv_review/robomind_1014_101050 (not a dataset artifact)&quot;,
+    &quot;ancillary_camera_videos_used&quot;: false,
+    &quot;telemetry_used&quot;: &quot;puppet/joint_position gripper column (index 7) at every frame from 55-109 and every 10 frames overall as supporting evidence only.&quot;
+  },
+  &quot;evidence_frame_indices&quot;: [
+    0,
+    14,
+    16,
+    24,
+    52,
+    62,
+    70,
+    86,
+    98,
+    104,
+    110,
+    134
+  ],
+  &quot;review_completed_at&quot;: &quot;2026-10-15T20:05:51Z&quot;,
+  &quot;dedicated_review_agent&quot;: &quot;review_robomind_1014_101050&quot;,
+  &quot;generation_reference_validation&quot;: {
+    &quot;source_frame_start&quot;: 0,
+    &quot;source_frame_end_exclusive&quot;: 135,
+    &quot;frame_count&quot;: 135,
+    &quot;lossless_source_frame_correspondence_passed&quot;: true,
+    &quot;original_source_hdf5_retained_unchanged&quot;: true
+  }
+}</pre></details></section>
+<nav class="pager"><a rel="prev" href="../../../RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820/index.html">← Pick up strawberry in bowl</a><a rel="next" href="../../../RoboMIND/franka_3rgb__place_in_bread_in_plate/1014_101240/index.html">Place in bread in plate →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Conditioning inputs for first-frame world-model generation. Previews are reduced H.264 copies;
+full-resolution files live in the <a href="https://github.com/Wilsonnijc-bot/robot_object_deformation_detect/tree/data/robotvideo/">repository</a>.</p></footer>
+</body>
+</html>

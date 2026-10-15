@@ -1,0 +1,49 @@
+ActionNet / 01JMCB8Z194OS4IEC5
+
+Action generation prompt
+The robot uses the hand entering from the lower-right edge to close its thumb and fingers around the golden pastry on the tabletop, lifts it over the eyeglasses, and carries it across the rim of the transparent plastic container. It lowers the pastry inside, opens its hand to release it onto the container floor, then withdraws to the right, leaving the pastry resting in the container. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Move the clock and place it into the transparent container.
+
+Quality gate
+pass: sharpness 410.6 vs 60 (first_person)
+
+Observed outcome
+Status: successful_visible_placement
+Description: Golden pastry is released onto the bottom of the transparent plastic container and remains resting there while the hand withdraws to the lower-right edge.
+Selected action outcome: successful_visible_placement
+Source overall success label: not used to infer outcome
+
+Hand roles
+Lower right visible arm: Sole manipulating hand: opens and approaches the pastry, closes thumb and fingers on opposing sides of it, bears it during lift and transport over the eyeglasses and across the container rim, lowers it into the container, opens to release and withdraws to the right.
+Lower left visible arm: Remains stationary beside the table at image left; no contact with the pastry, container, or any other object.
+
+Coordination
+Single-hand object placement. No hand-to-hand transfer or bimanual stabilization. A person standing at image right (operating a wooden control board) and a second person in the far background do not touch the robot, pastry, or container.
+
+Robot-side evidence
+Active arm: hand entering from the lower-right edge of the initial image
+Initial frame evidence: Two dark dexterous robot hands rest on the near table edge, one at lower-left and one at lower-right of the image. The lower-right hand/forearm performs the whole task; the lower-left hand stays motionless from frame 0 to 444. Torso and shoulders are outside the image, so the camera pose relative to the robot body (and any mirroring) is not independently established.
+Confidence: Visible-arm identity is unambiguous; anatomical left/right is not independently established.
+
+Chronology
+frames 0–44: Golden pastry rests on the tabletop right of the transparent plastic container and below the eyeglasses; both robot hands are idle and clear. The standing person at right works at a control board.
+frames 46–72: The lower-right hand rises into view and swings in toward the pastry with the thumb and finger group still open; it reaches the right side of the pastry around frame 54.
+frames 74–118: Hand positioned beside and over the pastry: the lower grey finger/palm segment slides under and the upper fingers sit above its right side (frame 74 shows pastry still on the table with a gap). Fine positioning adjustments follow, no lift yet.
+frames 120–166: Fingers close around opposing sides of the pastry (frame 120 shows pincer contact, frame 168 shows it enclosed and starting to rise). No regrasp or second-hand help.
+frames 168–238: The hand raises the pastry off the table and carries it to the left over the eyeglasses (frames 168-214 near the glasses; frames 216-238 the pastry is above the container's right wall).
+frames 240–334: Pastry carried across the container rim and lowered into the container; frame 264-290 it hangs inside the container held by the hand, frames 300-334 it sits near the floor, still gripped, with the pastry settling in a slightly tilted position.
+frames 336–358: The hand opens and releases the pastry onto the container floor; at frame 350 the pastry rests on the container bottom with fingers spread above it.
+frames 360–408: The hand rises out of the container and withdraws to the right, passing above the eyeglasses and green block (frames 384-408), with the pastry staying in place.
+frames 410–444: Hand returns near its starting pose at the lower-right edge; pastry rests inside the container through the final frame 444. The standing person looks toward the camera at the end without touching anything.
+
+Differences from the publisher annotation
+- The source prompt says 'clock'; no clock is visible. The manipulated object is a golden croissant/bread-like pastry.
+- The target container is a transparent plastic storage box, consistent with the source wording.
+
+Uncertainties
+- Whether the pastry is real food or a prop cannot be established visually.
+- Torso and shoulder attachment are outside the image and camera pose or mirroring is not independently established, so anatomical left/right is uncertain; the prompt uses the hand entering from the lower-right edge.
+- Exact frames of table separation and container-floor contact are bracketed by the stated intervals from every-second-frame sampling and hand occlusion.
+- Slight handheld-like camera shake and exposure changes occur in the source view; the fixed-camera constraint is retained verbatim.

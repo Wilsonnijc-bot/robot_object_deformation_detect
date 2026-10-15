@@ -1,0 +1,48 @@
+ActionNet / 01JGJXRGT7E3ULU66F
+
+Action generation prompt
+The robot uses the hand entering from the lower-right edge to reach the golden bread roll on the tabletop, rest its thumb on it, and curl its fingers around it to lift it. It carries the roll to the lower tray of the two-tier wooden shelf, lowers it onto the slats, opens its hand and withdraws to the right, leaving the roll resting in the lower tray. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Pick up the bread and place it on the first level of the double shelf.
+
+Quality gate
+pass: sharpness 577.4 vs 60 (first_person)
+
+Observed outcome
+Status: successful_visible_placement
+Description: The pastry rests on the slatted floor of the lower tray of the two-tier wooden shelf after the hand opens and withdraws; it remains there through the final frame.
+Selected action outcome: successful_visible_placement
+Source overall success label: not used to infer outcome
+
+Hand roles
+Lower right visible arm: Sole manipulating hand: rises from its rest pose, lays its thumb on the pastry, curls the fingers around it, bears its weight through lift and transport, lowers it into the lower shelf tray, opens and withdraws to the right.
+Lower left visible arm: Stays upright and still at the lower-left edge for the whole clip; no contact with pastry or shelf.
+
+Coordination
+Single-hand object placement. No hand-to-hand transfer, bimanual stabilization, or regrasp. A person in a white top stands at the left edge and holds a small handheld device, without touching the robot, pastry or shelf; they walk toward the camera side and partly leave the frame late in the clip.
+
+Robot-side evidence
+Active arm: hand entering from the lower-right edge of the initial image
+Initial frame evidence: Two dark dexterous hands rest upright on forearms entering from the near lower edges, one at lower left and one at lower right of the image. The lower-right hand is the one that reaches the bread. The torso and shoulders are outside the image, so attachment to the body cannot be seen. If the top camera looks forward from the robot's head, the active hand would be the robot's right hand, but this is not independently established.
+Confidence: Visible-arm identity is unambiguous; anatomical left/right is not independently established.
+
+Chronology
+frames 0–22: Both hands rest upright at the lower edges. The golden bread-roll-like pastry lies on the table to the right of the two-tier wooden shelf. The person stands at the left edge.
+frames 24–46: The lower-right hand lifts and swings toward the pastry, fingers pointing up and thumb extended toward it.
+frames 48–70: The thumb is laid across the upper surface of the pastry; the fingers stay raised beside it. Native frames 40 and 60 show the thumb approaching and then resting on the pastry.
+frames 72–190: The hand turns palm-down over the pastry and the fingers curl around it. At native frame 120 the pastry is enclosed between the thumb and curled fingers on the table; it is still on the table in the 168-190 overview tiles and appears to be lifted around frame 190.
+frames 192–224: The hand raises the pastry off the table and carries it up and left. At native frame 200 the pastry is held at the lower tray's right edge, and frame 210 it is over the lower tray's near rim.
+frames 224–330: Native frame 224 shows the pastry entering the lower tray, still held with the thumb on one side and fingers on the other. Over the following frames the hand lowers it toward the slats of the lower tray and settles it.
+frames 332–352: The pastry rests on the lower-tray slats; the hand opens, the thumb and fingers separate from it (native frame 340 shows the thumb beside it, frame 350 the hand lifting off).
+frames 354–419: The hand withdraws to the right edge and then lowers out of the frame area (native frames 362, 368, 374 show the withdrawal; by 380 it is mostly out of the crop). Both hands are upright at the lower edges by about frame 398-419. The pastry stays in the lower tray through the final frame 419.
+
+Differences from the publisher annotation
+- The source calls the object bread; visually it is a golden, triangular, croissant- or bread-roll-like object. The prompt uses the neutral appearance-based description golden bread roll.
+- The source says the first level of the double shelf. The shelf has a lower, nearer tray and an upper, set-back tray; the pastry is placed in the lower tray, which the prompt specifies as the lower tray. Whether the publisher counts this as the first level is not visually verifiable.
+
+Uncertainties
+- Anatomical left/right is not independently established because torso and shoulders are outside the image; the prompt uses the hand entering from the lower-right edge.
+- Actual food versus prop material cannot be established visually.
+- The exact frames of first table separation and of final contact release are partly occluded by the hand; the chronology intervals bracket visible transitions and were derived from every-second-frame overview tiles plus selected native frames.
+- The top camera view appears fixed; the fixed-camera generation constraint is retained verbatim.

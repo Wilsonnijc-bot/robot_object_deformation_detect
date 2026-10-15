@@ -65,7 +65,7 @@
   ],
   "source_language_instruction_note": null,
   "image_encoding": "JPEG per frame (RGB, 4:2:0) in observations/rgb_images/<camera>; no frame rate or timestamps are stored.",
-  "channel_order_check": "Decoded colors were inspected visually and are natural; no channel swap was applied.",
+  "channel_order_check": "Stored JPEGs hold red and blue swapped relative to a standard decoder (RoboMIND converts BGR->RGB only for Franka/UR embodiments). All decoded derivatives swap red and blue back; the HDF5 is unchanged.",
   "decoded_preview_videos": {
     "camera_top": {
       "path": "../decoded_videos/camera_top.mp4",
@@ -76,7 +76,7 @@
         "height": 480
       },
       "encoding": "lossy_preview_h264_crf14_yuvj420p",
-      "sha256": "c4f649424550a6f6c2ad75dd340689a73a2ddabf218f8305ec3e7fb679e64f10"
+      "sha256": "f1d5bff6b55d135c9d025339d592a675c980c30e8e2da52b4eb5487d009ea8d1"
     }
   },
   "source_bytes_preserved": true

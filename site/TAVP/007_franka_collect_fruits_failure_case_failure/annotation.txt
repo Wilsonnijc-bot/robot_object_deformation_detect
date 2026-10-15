@@ -1,0 +1,28 @@
+TAVP / 007_franka_collect_fruits_failure_case_failure
+
+Action generation prompt
+The robotic arm picks up the green cucumber-shaped object and places it inside the blue bowl. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Full-sequence prompt
+The robotic arm picks up the green cucumber-shaped object and places it inside the blue bowl, then attempts to grasp the yellow oval object but nudges it aside, leaving it on the tabletop. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Put a cucumber, a kiwi and a bunch of grapes into the blue bowl.
+
+Quality gate
+pass: sharpness 169.3 vs 120 (third_person)
+
+Chronology
+frames 0–260: The raised open gripper moves down and forward from the rear of the table, approaching the green cucumber-shaped object and bringing the fingers to its sides.
+frames 261–406: The gripper closes around the green object while it remains close to the table surface, holding it during a prolonged pause.
+frames 407–540: The arm lifts the securely grasped green object off the tabletop, briefly holds it above its original area, then begins carrying it toward the blue bowl.
+frames 541–631: The arm carries the green object forward-right and lowers it into the blue bowl while retaining the grasp.
+frames 632–736: The fingers open, releasing the green object into the blue bowl. It settles lying diagonally inside; the open gripper pauses above it.
+frames 737–756: The empty open gripper rises clear of the bowl, completing the first placement.
+frames 757–879: The arm moves back toward the yellow oval object and lowers its open gripper toward it for a separate pickup attempt.
+frames 880–917: One fingertip contacts the yellow object from above/left as the gripper lowers and closes without capturing it. The yellow object rolls or shifts to the right of the empty gripper and remains on the tabletop; no second lift or placement occurs before the video ends.
+
+Uncertainties
+- The exact produce identities and whether these objects are real food or props are not established visually; descriptions use visible shape and color.
+- The folder labels the complete video as failure, but the first green-object placement visibly succeeds; the subsequent yellow-object grasp is unsuccessful.
+- Stage frame boundaries are approximate; the retained endpoint was checked in native frame 756 after release and brief withdrawal.

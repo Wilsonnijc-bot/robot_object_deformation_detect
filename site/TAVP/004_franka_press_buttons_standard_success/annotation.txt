@@ -1,0 +1,26 @@
+TAVP / 004_franka_press_buttons_standard_success
+
+Action generation prompt
+The robotic arm presses the yellow button with its closed gripper, then lifts just clear of the button. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Full-sequence prompt
+The robotic arm presses the yellow, blue, red, and green buttons in that order with its closed gripper, lifting clear between presses, then withdraws and opens the gripper. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Press the yellow button, then the blue button, followed by the red button, and finally the green button.
+
+Quality gate
+pass: sharpness 182.1 vs 120 (third_person)
+
+Chronology
+frames 0–150: The robot lowers and extends its open gripper forward and left, above the fruit props and behind the front-left yellow button.
+frames 151–360: The fingers close together while the wrist remains nearly stationary above the tabletop, followed by a pause.
+frames 361–448: The closed gripper moves forward and down, passing in front of the green button without a separate held press, then contacts the top of the yellow button with its fingertips and holds the downward contact briefly.
+frames 449–455: The robot begins lifting the fingertips off the yellow button, completing the first press and release.
+frames 456–638: The wrist lifts and shifts to the right, aligns the closed fingertips over the front blue button, lowers them onto its dome, and holds a brief press.
+frames 639–898: The fingertips withdraw from blue; the robot raises and moves rearward and right over the red button, then lowers to press and briefly hold its dome.
+frames 899–1200: The robot releases red, raises the gripper, travels left across the rear of the button area, and lowers onto the green button for a brief held press.
+frames 1201–1299: The robot releases green and raises its gripper backward above the fruit props. The fingertips open during the final withdrawal; all four button bases and the props remain in place.
+
+Uncertainties
+- The buttons' internal electrical activation is not visible; the review identifies presses from fingertip contact, downward motion, held contact, and release. The dome travel is small.

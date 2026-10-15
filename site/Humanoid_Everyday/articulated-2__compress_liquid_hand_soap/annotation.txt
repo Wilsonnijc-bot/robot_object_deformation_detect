@@ -1,0 +1,76 @@
+Humanoid Everyday / articulated-2__compress_liquid_hand_soap
+
+Action generation prompt
+The humanoid lowers its open right hand onto the soap dispenser's pump behind the red cup and presses the pump downward while the bottle stays upright on the table. It then lifts its hand off the pump and retracts the right arm, leaving the dispenser and cup standing in place. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Compressing a liquid hand soap dispenser into a cup, requiring precise force control and understanding of pump mechanisms for proper liquid dispensing.
+
+Quality gate
+pass: sharpness 139.0 vs 120 (third_person)
+
+Observed outcome
+Outcome:
+The pump-press and hand-withdrawal sequence completes. The cup and dispenser remain upright and stationary; successful liquid delivery is not visually established.
+Terminal state:
+At frame 400 the right arm is retracted with hand open, the left hand remains clear, and the pump dispenser and red cup are upright in their original tabletop positions.
+
+Hand roles
+Right: The dark articulated hand approaches palm-down, contacts and presses the soap pump, then releases contact and retracts. It does not pick up the dispenser or cup.
+Left: The white articulated hand remains near the torso at image right and does not contact, support, transfer or stabilize the objects.
+Coordination: Single-hand manipulation; no bimanual coordination or person interaction is visible.
+
+Robot-side evidence
+Convention: The robot faces the table/camera with its front torso panel and face visible. Tracing each shoulder attachment to the upper arm identifies the dark hand on image left as the robot-relative right hand and the white hand on image right as the robot-relative left hand. The active arm does not cross the torso.
+Evidence frame indices:
+  - 0
+  - 50
+  - 100
+  - 128
+  - 400
+Confidence: high
+Uncertainty: None
+
+Chronology
+  Source frame interval:
+    - 0
+    - 40
+  Action: The right arm is extended toward the table; both hands are clear of the objects. The left arm remains beside the torso.
+  Confidence: high
+  Source frame interval:
+    - 41
+    - 78
+  Action: The right elbow bends and raises the open dark hand, with fingers spread; the hand turns toward a palm-down approach.
+  Confidence: high
+  Source frame interval:
+    - 79
+    - 119
+  Action: The right arm extends toward the soap bottle, lowering the open hand over the pump behind the stationary red cup. Native frame 112 shows a small gap; frame 120 shows fingers contacting the pump.
+  Confidence: high
+  Source frame interval:
+    - 120
+    - 140
+  Action: The right hand contacts the pump and pushes down; the fingers settle over its head while the soap bottle remains upright.
+  Confidence: high for downward contact; moderate for exact pump travel
+  Source frame interval:
+    - 141
+    - 278
+  Action: The right hand remains low on the pump with small finger and wrist adjustments. No distinct additional large pumping cycle or object lifting is resolved. The left hand does not stabilize or receive either object.
+  Confidence: high for maintained contact; moderate for small pump motion
+  Source frame interval:
+    - 279
+    - 322
+  Action: The right hand lifts clear of the pump, reopening the fingers while withdrawing upward and away. The pump head becomes visible again; the bottle and red cup remain in place.
+  Confidence: high
+  Source frame interval:
+    - 323
+    - 400
+  Action: The right elbow bends to retract the arm, returning the open hand beside the torso. Both hands finish clear of the dispenser and cup.
+  Confidence: high
+
+Differences from the publisher annotation
+- The source describes proper liquid dispensing into a cup. The frames verify pump contact and withdrawal but do not visibly establish liquid entering the cup; the prompt therefore describes only the observed manipulation and end state.
+
+Uncertainties
+- A liquid stream, liquid quantity and delivery into the cup are not resolved at native resolution; the cup and hand partly occlude the dispenser spout.
+- The exact depth of pump depression and any very small repeated strokes during sustained contact cannot be determined reliably.

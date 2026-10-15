@@ -1,0 +1,42 @@
+Humanoid Everyday / tool-use-5__use_a_duster_to_dust_the_desk
+
+Action generation prompt
+The robot grasps the gray duster's handle with its right hand and lifts the duster out of the basket. It moves the fluffy head outward over the exposed tabletop, brings it back beside the basket, and releases the duster onto the tabletop before withdrawing its right hand. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+This task demonstrates cleaning tool usage where the humanoid robot uses a duster to clean a desk surface, requiring proper motion patterns, systematic coverage, and effective dust removal techniques.
+
+Quality gate
+pass: sharpness 178.8 vs 120 (third_person)
+
+Observed outcome
+The duster is released on the tabletop immediately beside the basket on the robot's right; fluffy head rests outside the basket and handle angles upward. The empty right hand is withdrawn near the body; left hand stays at the lap. Basket is empty.
+
+Hand roles
+Right: Sole manipulator: grasps projecting handle, lifts duster out of basket, carries and lowers it beside basket, releases and retracts.
+Left: Remains near the lap behind the basket; no visible support, transfer or tool manipulation.
+
+Coordination
+Single right-hand manipulation; no coordinated left-hand support or hand-to-hand transfer occurs.
+
+Robot-side evidence
+Description: The initial PNG and native frames expose the robot's face and front torso. The active arm at image left can be traced from the robot's right shoulder down to the hand; the image-right shoulder leads to the inactive left arm and white hand at the lap. Anatomical naming follows these body attachments rather than image direction alone.
+Confidence: high
+Uncertainty: None
+
+Chronology
+frames 0–22: Right hand remains free near the duster handle, while the duster lies in the basket and left hand stays near the lap.
+frames 23–174: Right arm raises, extends and descends toward the projecting handle; open fingers approach it without moving the duster from the basket.
+frames 175–206: Right fingers close around the duster handle and adjust the hold while its fluffy head remains inside the basket.
+frames 207–240: Right hand lifts the duster clear of the basket, rotating its head upward and outward.
+frames 241–306: Right arm carries the raised duster outward across the exposed tabletop on the robot's right. The fluffy head descends but appears above the tabletop during most of this arc.
+frames 307–338: Right hand brings the duster back nearer the basket and lowers its head onto the tabletop alongside the basket; handle remains held as it settles.
+frames 339–360: Right fingers release the handle, leaving the duster outside the basket on the tabletop, and hand rises clear.
+frames 361–431: Empty right hand retracts toward the body. Duster remains on the tabletop beside the basket and left hand remains at the lap.
+
+Differences from the publisher annotation
+- The original instruction describes systematic coverage and effective dust removal; this clip visibly establishes pickup, a single outward-and-return duster movement, and release beside the basket, without establishing those cleaning outcomes.
+- Source metadata's publisher sheet description places the duster initially on the desk; the initial PNG shows the fluffy head lying within the basket.
+
+Uncertainties
+- The fluffy head passes low over the desk but prolonged or systematic brushing contact is not clearly visible; dust removal and a cleaned desk cannot be verified.

@@ -1,0 +1,72 @@
+{
+  "repository": "x-humanoid-robomind/RoboMIND",
+  "revision": "e7ffe31d1fe983a42c3d7b79d192f554fc05b86e",
+  "entries": [
+    {
+      "embodiment_key": "franka_3rgb",
+      "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/place_in_bread_in_plate.tar.gz.part-aa",
+      "archive_member": "place_in_bread_in_plate/success_episodes/train/1014_101050/data/trajectory.hdf5",
+      "path": "extracted_extra/franka_3rgb/place_in_bread_in_plate/success_episodes/train/1014_101050/data/trajectory.hdf5",
+      "size_bytes": 122907840,
+      "sha256": "c2ab0c21e00d27bf5ee919a78d617f376a1a4c2e62edca046a06dd26d7001191",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "cc3cf4ec35d2a3722955072e92e8170024404ebfc9c4ecf3371770c8d2d99847",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "franka_3rgb",
+      "source_archive": "benchmark1_0_compressed/h5_franka_3rgb/place_in_bread_in_plate.tar.gz.part-aa",
+      "archive_member": "place_in_bread_in_plate/success_episodes/train/1014_101240/data/trajectory.hdf5",
+      "path": "extracted_extra/franka_3rgb/place_in_bread_in_plate/success_episodes/train/1014_101240/data/trajectory.hdf5",
+      "size_bytes": 147648288,
+      "sha256": "17244d24b1cb044286371dcf7bf76a2984a7900cd9180a88ca03dfc83dcd2ee0",
+      "range_downloaded_bytes": 250000000,
+      "range_prefix_sha256": "cc3cf4ec35d2a3722955072e92e8170024404ebfc9c4ecf3371770c8d2d99847",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/upright_white_cup.tar.gz.part-aa",
+      "archive_member": "upright_white_cup/success_episodes/train/1211_141210/data/trajectory.hdf5",
+      "path": "extracted_extra/tienkung/upright_white_cup/success_episodes/train/1211_141210/data/trajectory.hdf5",
+      "size_bytes": 138230960,
+      "sha256": "c9b251738b27ba4f05caf1701d94f28379b70293094c9b1c289d622a935f41eb",
+      "range_downloaded_bytes": 450000000,
+      "range_prefix_sha256": "2bc8de731882568703d98650f8a62fa64e53699ad929a9935dbc76faf1dce8b9",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/upright_white_cup.tar.gz.part-aa",
+      "archive_member": "upright_white_cup/success_episodes/train/1211_141244/data/trajectory.hdf5",
+      "path": "extracted_extra/tienkung/upright_white_cup/success_episodes/train/1211_141244/data/trajectory.hdf5",
+      "size_bytes": 144508208,
+      "sha256": "992943d6215bca4549e0494d1bb193d224f857d849f4c89252030726cb4d51fd",
+      "range_downloaded_bytes": 450000000,
+      "range_prefix_sha256": "2bc8de731882568703d98650f8a62fa64e53699ad929a9935dbc76faf1dce8b9",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/place_yellow_banana_on_plastic_plate.tar.gz.part-aa",
+      "archive_member": "place_yellow_banana_on_plastic_plate/success_episodes/train/1212_141349/data/trajectory.hdf5",
+      "path": "extracted_extra/tienkung/place_yellow_banana_on_plastic_plate/success_episodes/train/1212_141349/data/trajectory.hdf5",
+      "size_bytes": 146842512,
+      "sha256": "dab09ca12f478be3ad14eea5c4671bbc95b75fef7827069f434b15f1ddb44b97",
+      "range_downloaded_bytes": 450000000,
+      "range_prefix_sha256": "d734efe07b43807d9c9b0f04d50d9314368f3d6952ba2bda3afa91b418e99bc1",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    },
+    {
+      "embodiment_key": "tienkung",
+      "source_archive": "benchmark1_0_compressed/h5_tienkung_gello_1rgb/place_yellow_banana_on_plastic_plate.tar.gz.part-aa",
+      "archive_member": "place_yellow_banana_on_plastic_plate/success_episodes/train/1212_141428/data/trajectory.hdf5",
+      "path": "extracted_extra/tienkung/place_yellow_banana_on_plastic_plate/success_episodes/train/1212_141428/data/trajectory.hdf5",
+      "size_bytes": 139400424,
+      "sha256": "26c20e5a2931d286d2cd2931dec94f8e5142509f02c913548856fb77f0bb6560",
+      "range_downloaded_bytes": 450000000,
+      "range_prefix_sha256": "d734efe07b43807d9c9b0f04d50d9314368f3d6952ba2bda3afa91b418e99bc1",
+      "note": "Member extracted from a truncated prefix of the first split part; the whole-part hash was not verified."
+    }
+  ]
+}

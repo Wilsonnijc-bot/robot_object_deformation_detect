@@ -1,0 +1,36 @@
+NVIDIA GR1 / 17
+
+Action generation prompt
+The robot uses its left hand to grasp the red-and-white milk carton around its sides and lift it out of the small pink bowl. It carries the carton leftward to the light blue plate, lowers it upright onto the plate, and opens its fingers to release it. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the left hand to pick up milk bottle from pink bowl to light blue plate.
+
+Quality gate
+pass: sharpness 971.8 vs 60 (first_person)
+
+Observed outcome
+Milk carton stands upright on the light blue plate, removed from the empty pink bowl. The left hand is visibly open and withdrawn clear; the right hand remains idle and open.
+
+Hand roles
+Left: Sole active manipulation hand: grasps, lifts, transports, lowers and releases the milk carton.
+Right: Open and idle near the lower-right tabletop throughout; no object contact or support.
+Coordination: No bimanual manipulation or transfer; the person beyond the table does not interact with the carton.
+
+Robot-side evidence
+Description: This is a robot-aligned forward/downward view: both arm chains extend away from the lower corners toward the tabletop, with thumbs facing inward in the initial open-hand pose. The active arm is connected along the robot-left chain at lower left and reaches inward without swapping or crossing arm identities. Robot-relative left therefore coincides with image left for this view, rather than applying a front-facing-camera reversal.
+Confidence: high
+Limitations: Shoulder/torso attachment is outside the view; assignment uses visible arm-chain orientation and inward-facing thumbs.
+
+Chronology
+frames 0–42: The left forearm reaches from its own side toward the milk carton while the right hand remains open at the right edge of the table.
+frames 43–66: The left hand contacts the milk carton and closes its thumb and fingers around the sides while the carton initially remains in the pink bowl.
+frames 67–80: The left hand lifts the carton clear of the bowl and carries it leftward toward the blue plate; the now-empty pink bowl becomes visible.
+frames 81–109: The left hand positions the carton over the blue plate and lowers its base onto the plate while retaining the grip.
+frames 110–119: The left thumb and fingers open away from the carton and the hand withdraws slightly. The milk carton remains standing upright on the blue plate.
+
+Differences from the publisher annotation
+- The source calls the object a milk bottle; its visible rectangular body and folded top identify it as a milk carton.
+
+Uncertainties
+- Exact hidden finger contacts behind the carton are occluded during the grasp; release is visible at the ending. Shoulder attachment is out of frame, so anatomical naming is grounded in the robot-aligned view and arm/hand orientation.

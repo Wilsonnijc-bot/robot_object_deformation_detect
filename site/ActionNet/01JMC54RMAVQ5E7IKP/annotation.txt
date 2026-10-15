@@ -1,0 +1,48 @@
+ActionNet / 01JMC54RMAVQ5E7IKP
+
+Action generation prompt
+The robot uses the hand entering from the lower-right edge to close its thumb and fingers around the Rubik's cube on the tabletop, lifts it, and carries it left over the transparent plastic container. It lowers the cube into the container and opens its hand to release it, then withdraws toward the right edge, leaving the cube resting inside the container. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Pick up the Rubiks cube and place it into the transparent container.
+
+Quality gate
+pass: sharpness 430.1 vs 60 (first_person)
+
+Observed outcome
+Status: successful_visible_placement
+Description: The Rubik's cube is released inside the transparent container and remains resting on its floor while the hand withdraws.
+Selected action outcome: successful_visible_placement
+Source overall success label: not used to infer outcome
+
+Hand roles
+Lower right visible arm: Sole manipulating hand: approaches the cube, closes thumb and fingers around opposing sides of it, bears it during lift and transport, lowers it into the container, opens, and withdraws to the right edge.
+Lower left visible arm: Stays stationary beside the table on image left for the whole clip; no contact with the cube, container or any object.
+
+Coordination
+Single-hand object placement. No hand-to-hand transfer or bimanual stabilization. A person standing at the image right (hand raised to chin) does not interact with the robot or objects.
+
+Robot-side evidence
+Active arm: hand entering from the lower-right edge of the initial image
+Initial frame evidence: Two arms rise from the near lower image edges: a dark five-finger hand on the lower left and a dark arm with a gray hand on the lower right. Only the right-edge arm moves during the clip. Torso and shoulders are outside the image, so the camera's pose relative to the robot body is not independently established; if the camera looks forward from behind the robot's head the active arm would be the robot's right, but this is not verified.
+Confidence: Visible-arm identity is unambiguous; anatomical left/right is not independently established.
+
+Chronology
+frames 0–40: Cube lies on the table right of the transparent container; both robot hands are clear and still. The standing person at upper right is static.
+frames 42–104: The right-edge arm advances toward the cube with fingers open. By about frame 70 the hand is beside the cube with the thumb on its lower/right side and fingers above; frame 104 still shows a small gap.
+frames 106–160: Thumb and fingers close around opposing sides of the cube (frame 110 hand surrounding the cube, frame 150 cube enclosed between thumb-side and finger-side surfaces). Small cube shifts during closure; no second-hand contact or regrasp.
+frames 162–214: The hand raises the cube clear of the table (frame 180 slightly lifted, frame 190 clearly suspended), maintaining the same grasp and bearing its weight. Cube rotates somewhat in the hand during lift.
+frames 216–296: The arm carries the held cube up and to the left across the back of the table (frame 224 at right edge, frame 248 higher, frame 272 near the container's right rim, frame 296 above the container) while the wrist turns.
+frames 298–320: The held cube is positioned over the container and lowered inside (frame 316 and 318 held above the container floor, frame 320 lower and tilted still in the hand).
+frames 321–328: Fingers open; by frame 322 the cube is free in the container bottom and by frame 328 it rests tilted on its bottom with the hand open above it. Exact release frame is between 318 and 322.
+frames 329–428: The hand lifts clear and withdraws to the right/upper-right (frame 380 only fingers at the right edge; frame 428 hand out of view). Cube remains in the container, with no further manipulation.
+
+Differences from the publisher annotation
+- Source says transparent container; observed target is a clear plastic storage tub, consistent with the source. No substantive discrepancy in object, target or step order.
+- Source annotation does not specify a hand side; the prompt uses the visible lower-right-edge hand.
+
+Uncertainties
+- Torso and shoulder attachment are outside the image and camera pose or mirroring is not independently established; anatomical left/right is uncertain, so the prompt uses the unambiguous hand entering from the lower-right edge.
+- Exact finger-closure and first table-separation frames are bracketed by the sampled frames; the release frame lies between 318 and 322, and the cube drops a short distance into the container.
+- Contact with individual finger links cannot be resolved at this resolution; the grasp is described as thumb and fingers on opposing sides.
+- The top camera shows slight source-view motion; the required fixed-camera constraint is retained verbatim.

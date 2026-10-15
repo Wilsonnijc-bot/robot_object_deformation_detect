@@ -1,0 +1,38 @@
+NVIDIA GR1 / 16
+
+Action generation prompt
+The robot keeps the brown paper bag open with its left hand while its right hand grasps the red tomato from the upper black tray and lifts it clear. As the right hand carries the tomato to the opening, the left hand raises the side of the bag it holds. The right hand lowers the tomato below the rim and opens inside the bag while the left hand maintains its hold. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up red tomato from upper black tray of plastic shelf to inside of brown paper bag.
+
+Quality gate
+pass: sharpness 803.8 vs 60 (first_person)
+
+Observed outcome
+The upper tray is empty; the left hand retains its raised hold on one side of the bag mouth. The right hand remains inside the opening with fingers visibly spread and empty. The tomato is hidden below the rim; its exact resting location and contact with the bag bottom are not visible.
+
+Hand roles
+Left hand: Maintains a closed hold at one upper side of the bag mouth from the start, raises that side during right-hand transport, then holds it raised throughout insertion and right-finger opening. No release or regrasp is visible.
+Right hand: Closes thumb and opposing fingers around the tomato, bears it alone during lift and transport, lowers it below the bag rim, then opens its fingers inside the mouth.
+Coordination: Left support precedes the right grasp. The left side rises while the right carries the fruit; it remains held while the right lowers and opens. The left never receives or touches the fruit, and there is no hand-to-hand transfer.
+
+Robot-side evidence
+Description: The forward-facing generation view looks outward between paired robot forearms entering from the lower left and lower right. The hand on the robot right enters from lower right and reaches the shelf; the opposite forearm enters from lower left and holds the bag. This paired egocentric arm arrangement establishes robot-relative right and left, rather than a front-facing mirror convention.
+Confidence: medium
+Limitation: The shoulders and central torso are outside the source image, so attachment to the shoulders is not directly visible.
+
+Chronology
+frames 0–18: The left fingers are curled at one upper side of the bag mouth; the bag is open and its opposite handle is free. The right hand is open beside the shelf.
+frames 19–50: The right hand moves open toward the tomato. The left hand preserves its closed hold at the bag mouth with no visible release or regrasp.
+frames 51–76: The right thumb and opposing fingers close around the tomato while it remains in the black tray; the left hold remains unchanged.
+frames 77–83: The right hand lifts the tomato clear of the tray, bearing the fruit alone.
+frames 84–95: The right hand carries the tomato toward the bag. Simultaneously the left hand raises its held side, and the bag wall and adjacent handle move upward with it, widening access to the mouth; no left regrasp is visible.
+frames 96–103: The right hand brings the tomato over the opening and lowers it below the upper rim. At frames 100 and 102 the tomato remains enclosed by the fingers below the rim; the left hand keeps its raised hold.
+frames 104–114: The tomato and most right-finger contact are hidden in the bag interior. The right wrist remains within the mouth while the left keeps the bag side raised.
+frames 115–119: The right fingers progressively open inside the mouth; at 118 and 119 they are visibly spread and empty. The left fingers stay closed at the same upper side of the bag and the right hand has not fully withdrawn.
+
+Uncertainties
+- The left palm and curled fingers occlude the exact grasp interface. The grip is at the upper bag-mouth side, and an adjacent loop handle is visible below the palm; the images do not establish whether paper alone, handle alone, or both are caught. The prompt therefore names the held side rather than asserting a handle grip.
+- The bag wall and hands hide the exact tomato separation and final resting location, including contact with the bag bottom. Insertion and empty spread right fingers at the ending are visible.
+- Shoulder attachments are outside the forward-facing view; anatomical sides are grounded in the paired egocentric arm arrangement.

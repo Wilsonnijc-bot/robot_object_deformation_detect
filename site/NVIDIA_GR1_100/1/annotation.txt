@@ -1,0 +1,38 @@
+NVIDIA GR1 / 1
+
+Action generation prompt
+The robot uses its right hand to grasp the small green bok choy on the right side of the table and lift it clear of the surface. It carries the bok choy to the lower wire basket, lowers it beside the red fruit, and opens its hand to leave it resting inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up green bok choy from tan table right side to bottom level of wire basket.
+
+Quality gate
+pass: sharpness 814.6 vs 60 (first_person)
+
+Observed outcome
+Outcome:
+Successful visible release into the lower basket.
+Terminal state:
+Bok choy rests inside the lower wire basket beside the red fruit; right hand is open and clear of the bok choy. Left hand remains unused.
+
+Hand roles
+Right: Sole manipulator: grasps and lifts bok choy, transports it to lower basket, releases it and retreats.
+Left: Remains open near its initial position without supporting the object or basket.
+
+Coordination
+Single-handed manipulation; no hand-to-hand transfer or human interaction.
+
+Robot-side evidence
+The camera looks forward between the robot forearms, which extend away from the lower edge. The active arm emerges on the camera-right side; the initial open palms and mirrored thumb placement establish the forward-facing robot-relative convention, rather than a front-facing view with reversed sides. The active hand is robot-right, consistent with the original annotation. The robot torso and shoulder attachments are outside the camera crop.
+
+Chronology
+frames 0–14: Right hand begins upright and open near the lower basket; left hand remains open.
+frames 16–60: Right hand turns palm down and reaches toward the small bok choy, opening around its sides.
+frames 62–76: Right fingers close around bok choy and lift it clear of the table.
+frames 78–102: Right hand carries the held bok choy upward and forward into the lower wire basket region beside the red fruit.
+frames 104–108: Right hand repositions the bok choy above the lower basket floor while still holding it.
+frames 110–112: Right hand opens and bok choy settles inside the lower basket beside the red fruit.
+frames 114–119: Empty right hand withdraws clear; bok choy remains visibly in the basket.
+
+Uncertainties
+- Robot torso and shoulders are outside the view; anatomical side is established from forward-looking paired-arm perspective and mirrored thumb orientation. Exact botanical identity comes from the annotation, supported by the visible green leaves and white stalk.

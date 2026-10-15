@@ -1,0 +1,41 @@
+NVIDIA GR1 / 13
+
+Action generation prompt
+The robot closes its right hand around the body of the pink mug on the upper shelf and lifts it clear. It carries the mug onto the tan tabletop in front of the shelf, lowers it upright, and opens its hand to release it, leaving the mug standing on the table. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+Use the right hand to pick up pink mug from top level of the shelf to tan table.
+
+Quality gate
+pass: sharpness 842.9 vs 60 (first_person)
+
+Observed outcome
+Outcome:
+The pink mug is removed from the upper shelf and released upright onto the tan tabletop.
+Terminal state:
+At source frame 119 the pink mug stands upright on the tan tabletop in front of the wooden shelf, with the inside/bottom of the mug visible and its handle pointing leftward in the image. The right hand is open above and beside its rim, no longer enclosing the body; left hand remains open at the opposite side.
+
+Hand roles
+Right: Sole manipulating hand: closes around mug body, lifts from shelf, carries toward the foreground table, lowers, and opens to release.
+Left: Remains open and approximately stationary over the opposite tabletop area; does not stabilize, grasp, support or receive the mug.
+Coordination: One-hand manipulation with no transfer, coordinated second-hand support, locomotion, or interaction with the watching people.
+
+Coordination
+The right hand performs the complete mug relocation; the open left hand does not participate.
+
+Robot-side evidence
+Basis: The camera looks outward between the robot forearms, which extend from the lower near-body corners toward the table rather than facing the robot front. The active limb can be followed continuously through the lower-right arm assembly to the hand at the shelf. Its thumb opposes the curled fingers on the inward side during grasp; the opposite open hand and thumb orientation corroborate the robot-relative left/right convention. This supports naming the active limb right, consistent with but independently visually checked against the instruction.
+Confidence: high
+Limitations: Torso and shoulder attachments are outside the frame; naming uses the outward first-person forearm orientation and visible hand anatomy.
+
+Chronology
+frames 0–36: Right arm holds an open hand beside and over the pink mug on the upper shelf, making small adjustments while left hand stays open over the table.
+frames 37–60: Right hand descends around the mug body and closes opposing digits on its sides. The mug tilts slightly as the grasp takes hold; the handle remains outside the hand on the mug left in the image.
+frames 61–74: Right arm raises the gripped mug clear of the upper wooden shelf tier.
+frames 75–94: Right arm carries the mug toward the robot and inward over the tabletop in front of the shelf, lowering it toward the open table area. The left hand remains uninvolved.
+frames 95–108: Right hand lowers and steadies the upright mug at tabletop height in front of the shelf while continuing to enclose its body.
+frames 109–119: Right hand opens and moves its digits away from the mug body. The mug briefly shifts/tilts during separation, then stands upright on the tabletop in the final frame; the open right hand hovers above/beside it.
+
+Uncertainties
+- Exact fingertip contact distribution on the back of the mug is occluded during grasp; the enclosing body grasp and subsequent lift are visible.
+- Torso/shoulder origins lie outside the camera view; anatomical naming is supported by the outward forearm arrangement and hand/thumb anatomy rather than direct shoulder attachment.

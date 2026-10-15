@@ -558,5 +558,6 @@
     "frame_count": 759,
     "lossless_source_frame_correspondence_passed": true,
     "original_source_hdf5_retained_unchanged": true
-  }
+  },
+  "channel_order_note": "Channel-order correction (2026-10-15): RoboMIND stores Tien Kung JPEGs with red and blue swapped relative to a standard decoder; this review was made on uncorrected frames, so colour terms in its observations are swapped (teal/cyan reads as yellow or yellow-green, blue as orange/brown, brown/pink as blue). Actions, timing and outcomes are unaffected. All decoded derivatives are now corrected."
 }

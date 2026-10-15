@@ -51,8 +51,9 @@ DATASETS = {
     "RoboMIND": dict(
         title="RoboMIND", robot="Franka Panda (right camera) · Tien Kung humanoid", view="Third- and first-person",
         license="Apache-2.0", source="https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND",
-        blurb="Franka episodes keep only the right RGB camera; Tien Kung episodes use the head camera. Frames are "
-              "640 × 480 JPEGs from HDF5 at a nominal 30 FPS."),
+        blurb="Franka episodes keep only the right RGB camera; Tien Kung episodes use the head camera, with red and blue "
+              "swapped back because RoboMIND stores them channel-swapped. Frames are 640 × 480 JPEGs from HDF5 at a "
+              "nominal 30 FPS."),
     "RoboCOIN_Airbot_MMK2_stack_block": dict(
         title="RoboCOIN · Airbot MMK2", robot="Dual-arm Airbot MMK2, five-finger hands", view="First-person head camera",
         license="Apache-2.0", source="https://huggingface.co/datasets/RoboCOIN/Airbot_MMK2_stack_block",
@@ -180,6 +181,124 @@ def build_media(episodes, jobs):
         e["info"] = probe(e["video"])
 
 
+ANNOTATION_SECTIONS = [
+    ("Observed outcome", ["observed_outcome", "selected_action_outcome", "outcome", "terminal_state",
+                          "observed_terminal_state", "selected_execution_status_basis"]),
+    ("Hand roles", ["arm_roles", "arm_hand_roles"]),
+    ("Coordination", ["coordination"]),
+    ("Robot-side evidence", ["anatomical_side_evidence"]),
+    ("Chronology", ["chronology", "observed_sequence"]),
+    ("Clip selection", ["selection_reason"]),
+    ("Differences from the publisher annotation", ["source_annotation_discrepancies", "annotation_discrepancies",
+                                                    "annotation_notes"]),
+    ("Uncertainties", ["uncertainties"]),
+]
+FRAME_KEYS = ("frames", "source_frames_inclusive", "source_frames")
+TEXT_KEYS = ("observation", "description", "action", "event", "summary")
+
+
+def label(key):
+    return key.replace("_", " ").capitalize()
+
+
+def frame_span(item):
+    for k in FRAME_KEYS:
+        if isinstance(item.get(k), list) and item[k]:
+            return "–".join(str(x) for x in item[k][:2])
+    start = item.get("start_frame")
+    end = next((item[k] for k in ("end_frame_inclusive", "end_frame", "end_frame_exclusive") if k in item), None)
+    return f"{start}–{end}" if start is not None else ""
+
+
+def is_chronology(value):
+    return isinstance(value, list) and value and all(isinstance(i, dict) and frame_span(i) for i in value)
+
+
+def chrono_text(item):
+    text = next((item[k] for k in TEXT_KEYS if isinstance(item.get(k), str)), None)
+    if text is None:
+        rest = {k: v for k, v in item.items() if k not in FRAME_KEYS and not k.startswith(("start_frame", "end_frame"))}
+        text = "; ".join(f"{label(k)}: {v}" for k, v in rest.items())
+    return text
+
+
+def render(value, depth=0):
+    """Readable HTML for a review value of any shape."""
+    if value is None or value == [] or value == {}:
+        return '<p class="quiet">None recorded.</p>'
+    if isinstance(value, (str, int, float, bool)):
+        return f"<p>{esc(value)}</p>"
+    if is_chronology(value):
+        rows = "".join(f'<tr><th scope="row">{esc(frame_span(i))}</th><td>{esc(chrono_text(i))}</td></tr>' for i in value)
+        return f'<table class="chrono"><thead><tr><th scope="col">Frames</th><th scope="col">Observation</th></tr></thead><tbody>{rows}</tbody></table>'
+    if isinstance(value, list):
+        return "<ul>" + "".join(f"<li>{esc(v) if not isinstance(v, (dict, list)) else render(v, depth + 1)}</li>" for v in value) + "</ul>"
+    if depth > 2:
+        return f"<p>{esc(json.dumps(value, ensure_ascii=False))}</p>"
+    return '<dl class="kv">' + "".join(f"<dt>{esc(label(k))}</dt><dd>{render(v, depth + 1)}</dd>" for k, v in value.items()) + "</dl>"
+
+
+def annotation_sections(review):
+    out = []
+    for title, keys in ANNOTATION_SECTIONS:
+        values = [(k, review[k]) for k in keys if k in review and review[k] not in (None, "", [], {})]
+        if values:
+            out.append((title, values))
+    return out
+
+
+def annotation_text(e):
+    """Plain-text annotation for one episode (published as annotation.txt)."""
+    lines = [f"{DATASETS[e['dataset']]['title']} / {e['folder']}", ""]
+    for head, text in (("Action generation prompt", e["prompt"]), ("Full-sequence prompt", e["full_prompt"]),
+                       ("Publisher annotation", e["publisher"])):
+        if text:
+            lines += [head, text, ""]
+    g = e["gate"]
+    lines += ["Quality gate", f"{g['gate']}: sharpness {g['sharpness']} vs {g['threshold']} ({g['view']})", ""]
+    review = json.loads(e["review"]) if e["review"] else {}
+
+    def flat(value, indent=""):
+        if is_chronology(value):
+            return [f"{indent}frames {frame_span(i)}: {chrono_text(i)}" for i in value]
+        if isinstance(value, list):
+            return [x for v in value for x in (flat(v, indent + "  ") if isinstance(v, (dict, list)) else [f"{indent}- {v}"])]
+        if isinstance(value, dict):
+            return [x for k, v in value.items() for x in ([f"{indent}{label(k)}:"] + flat(v, indent + "  ")
+                    if isinstance(v, (dict, list)) else [f"{indent}{label(k)}: {v}"])]
+        return [f"{indent}{value}"]
+    for title, values in annotation_sections(review):
+        lines.append(title)
+        for k, v in values:
+            if len(values) > 1:
+                lines.append(f"{label(k)}:")
+            lines += flat(v)
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def export_row(e):
+    return {"dataset": e["dataset"], "folder": e["folder"], "title": e["title"],
+            "action_generation_prompt": e["prompt"], "full_sequence_prompt": e["full_prompt"],
+            "publisher_annotation": e["publisher"],
+            "quality_gate": {k: e["gate"][k] for k in ("view", "sharpness", "threshold", "gate")},
+            "repository_folder": e["ep_root"].relative_to(ROOT).as_posix(),
+            "review": json.loads(e["review"]) if e["review"] else None}
+
+
+def write_exports(directory, eps):
+    with open(directory / "annotations.jsonl", "w", encoding="utf-8") as fh:
+        for e in eps:
+            fh.write(json.dumps(export_row(e), ensure_ascii=False) + "\n")
+    with open(directory / "annotations.csv", "w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["dataset", "folder", "action_generation_prompt", "full_sequence_prompt", "publisher_annotation",
+                    "gate_result", "gate_sharpness", "gate_threshold"])
+        for e in eps:
+            w.writerow([e["dataset"], e["folder"], e["prompt"] or "", e["full_prompt"] or "", e["publisher"] or "",
+                        e["gate"]["gate"], e["gate"]["sharpness"], e["gate"]["threshold"]])
+
+
 def chip(gate):
     g = gate["gate"]
     return (f'<span class="chip chip--{g}" title="Sharpness {esc(gate["sharpness"])} vs threshold {esc(gate["threshold"])}">'
@@ -244,8 +363,12 @@ upscale {float(gate['upscale']):.2f}×.</p></div>{f'<p class="quiet">{esc(reason
     links = [("Episode folder on GitHub", gh("tree", rel_ep)),
              ("First frame (PNG)", gh("raw", e["png"].relative_to(ROOT))),
              ("Generation video (original file)", gh("raw", e["video"].relative_to(ROOT)))]
-    if e["review_path"]:
-        links.append(("Review JSON", gh("blob", e["review_path"].relative_to(ROOT))))
+    (e["page"] / "annotation.txt").write_text(annotation_text(e), encoding="utf-8")
+    links.insert(0, ("Annotation (text)", "annotation.txt"))
+    if e["review"]:
+        (e["page"] / "review.json").write_text(json.dumps(json.loads(e["review"]), indent=2, ensure_ascii=False) + "\n",
+                                               encoding="utf-8")
+        links.insert(1, ("Visual review (JSON)", "review.json"))
     blocks.append('<section class="field"><h2>Files</h2><ul class="links">' +
                   "".join(f'<li><a href="{esc(h)}">{esc(t)}</a></li>' for t, h in links) + "</ul></section>")
     full = ""
@@ -254,8 +377,17 @@ upscale {float(gate['upscale']):.2f}×.</p></div>{f'<p class="quiet">{esc(reason
 <figcaption>Complete source video. The generation input above is its first {fmt_num(info['frames'])} frames.</figcaption></figure>"""
     review = ""
     if e["review"]:
-        review = f"""<details class="review"><summary>Visual review <span>{esc(e['review_path'].name)}</span></summary>
-<pre>{esc(json.dumps(json.loads(e['review']), indent=2, ensure_ascii=False))}</pre></details>"""
+        data = json.loads(e["review"])
+        parts = []
+        for title, values in annotation_sections(data):
+            inner = "".join((f"<h4>{esc(label(k))}</h4>" if len(values) > 1 else "") + render(v) for k, v in values)
+            parts.append(f'<section class="anno"><h3>{esc(title)}</h3>{inner}</section>')
+        review = f"""<section class="annotation"><h2>Annotation</h2>
+<p class="quiet">From the dedicated visual review of this video ({esc(data.get('prompt_protocol', 'review'))}).
+<a href="annotation.txt">Plain text</a> · <a href="review.json">JSON</a></p>
+<div class="annotation__grid">{''.join(parts)}</div>
+<details class="review"><summary>Complete review record <span>{esc(e['review_path'].name)}</span></summary>
+<pre>{esc(json.dumps(data, indent=2, ensure_ascii=False))}</pre></details></section>"""
     nav = '<nav class="pager">' + (
         f'<a rel="prev" href="{rel}{esc(quote(prev["dataset"] + "/" + prev["folder"]))}/index.html">← {esc(prev["title"])}</a>' if prev else "<span></span>") + (
         f'<a rel="next" href="{rel}{esc(quote(nxt["dataset"] + "/" + nxt["folder"]))}/index.html">{esc(nxt["title"])} →</a>' if nxt else "<span></span>") + "</nav>"
@@ -280,15 +412,33 @@ upscale {float(gate['upscale']):.2f}×.</p></div>{f'<p class="quiet">{esc(reason
 
 
 def card(e, rel_from, grouped=False):
-    href = quote(os.path.relpath(e["page"], rel_from)) + "/index.html"
-    poster = quote(os.path.relpath(e["page"] / "poster.jpg", rel_from))
+    base = quote(os.path.relpath(e["page"], rel_from))
     text = (e["prompt"] or e["publisher"] or "").replace(CONSTRAINT, "").strip()
-    label = e["folder"].split("/")[-1] if grouped else e["folder"]
-    return f"""<a class="card" href="{href}" data-gate="{esc(e['gate']['gate'])}" data-text="{esc((e['title'] + ' ' + e['folder'] + ' ' + text).lower())}">
-<span class="card__img"><img src="{poster}" alt="" loading="lazy"></span>
-<span class="card__meta"><span class="card__title">{esc(e['title'])}</span>{chip(e['gate'])}</span>
-<span class="card__id">{esc(label)}</span>
-<span class="card__text">{esc(text)}</span></a>"""
+    name = e["folder"].split("/")[-1] if grouped else e["folder"]
+    return f"""<article class="card" data-gate="{esc(e['gate']['gate'])}" data-text="{esc((e['title'] + ' ' + e['folder'] + ' ' + text).lower())}"
+ data-title="{esc(e['title'])}" data-id="{esc(e['folder'])}" data-href="{base}/index.html" data-clip="{base}/clip.mp4"
+ data-poster="{base}/frame.jpg" data-prompt="{esc(e['prompt'] or '')}" data-publisher="{esc(e['publisher'] or '')}">
+<button type="button" class="card__img" aria-label="Play {esc(e['title'])} and show its prompt"><img src="{base}/poster.jpg" alt="" loading="lazy"><span class="card__play" aria-hidden="true"></span></button>
+<span class="card__meta"><a class="card__title" href="{base}/index.html">{esc(e['title'])}</a>{chip(e['gate'])}</span>
+<span class="card__id">{esc(name)}</span>
+<span class="card__text">{esc(text)}</span></article>"""
+
+
+PLAYER = """<dialog class="player" aria-labelledby="player-title">
+<div class="player__frame">
+<video controls playsinline></video>
+<div class="player__text">
+<p class="kicker player__id"></p>
+<h2 id="player-title"></h2>
+<h3>Action generation prompt</h3>
+<p class="prompt player__prompt"></p>
+<div class="player__pub"><h3>Publisher annotation</h3><p class="quiet player__publisher"></p></div>
+<p class="player__links"><a class="player__open" href="#">Full annotation and files →</a></p>
+<p class="player__hint">← → previous / next · Esc closes</p>
+</div>
+<button type="button" class="player__close" aria-label="Close player" autofocus>×</button>
+</div>
+</dialog>"""
 
 
 def gate_summary(eps):
@@ -314,12 +464,14 @@ def dataset_page(ds, eps, total):
 <p class="lede">{esc(meta['blurb'])}</p>
 <dl class="specs"><dt>Episodes</dt><dd>{len(eps) if total == len(eps) else f"{len(eps)} shown of {total}; all {total} are in the repository folder"}</dd><dt>Gate</dt><dd>{gate_summary(eps)}</dd>
 <dt>License</dt><dd>{esc(meta['license'])}</dd><dt>Source</dt><dd><a href="{esc(meta['source'])}">{esc(meta['source'].split('//')[1].rstrip('/'))}</a></dd>
-<dt>Folder</dt><dd><a href="{gh('tree', ds)}">{esc(ds)}/</a></dd></dl>
+<dt>Folder</dt><dd><a href="{gh('tree', ds)}">{esc(ds)}/</a></dd>
+<dt>Annotations</dt><dd><a href="annotations.jsonl">JSONL</a> · <a href="annotations.csv">CSV</a> ({total} episodes, with full reviews)</dd></dl>
 </header>
 <div class="toolbar" role="search"><div class="filters"><button type="button" data-filter="all" aria-pressed="true">All <span>{len(eps)}</span></button>{filters}</div>
 <input type="search" placeholder="Search prompts and folders" aria-label="Search episodes"><output class="count" aria-live="polite"></output></div>
 {''.join(sections)}
-<p class="empty" hidden>No episodes match. Clear the search or choose another gate filter.</p>"""
+<p class="empty" hidden>No episodes match. Clear the search or choose another gate filter.</p>
+{PLAYER}"""
     (d / "index.html").write_text(page(f"{meta['title']} · Robotvideo", "../", body, [("All datasets", "../index.html")]))
 
 
@@ -340,7 +492,8 @@ def index_page(by_ds, totals):
 <p class="lede">{sum(totals.values())} reviewed episodes from {len(by_ds)} datasets, {len(total)} shown here. Each input is a first frame, an action prompt
 written from the video, and the reference clip. Every input is scored on the sharpness of its upscaled
 conditioning frame: third-person at least 120, first-person at least 60.</p>
-<p class="gate-line">{gate_summary(total)} · <a href="{gh('blob', 'data_quality_gate.md')}">How the gate works</a></p>
+<p class="gate-line">{gate_summary(total)} · <a href="{gh('blob', 'data_quality_gate.md')}">How the gate works</a>
+· All annotations: <a href="annotations.jsonl">JSONL</a> · <a href="annotations.csv">CSV</a></p>
 </header>
 <div class="sets">{''.join(rows)}</div>"""
     (SITE / "index.html").write_text(page("Robotvideo dataset viewer", "", body))
@@ -352,6 +505,7 @@ def main():
     args = ap.parse_args()
     episodes = collect()
     totals = Counter(e["dataset"] for e in episodes)
+    everything = episodes
     episodes = [e for ds in DATASETS for e in [x for x in episodes if x["dataset"] == ds][:SITE_LIMIT.get(ds)]]
     unknown = set(totals) - set(DATASETS)
     if unknown:
@@ -370,6 +524,8 @@ def main():
             episode_page(e, eps[i - 1] if i else None, eps[i + 1] if i + 1 < len(eps) else None)
     for ds, eps in by_ds.items():
         dataset_page(ds, eps, totals[ds])
+        write_exports(SITE / ds, [e for e in everything if e["dataset"] == ds])
+    write_exports(SITE, [e for ds in by_ds for e in everything if e["dataset"] == ds])
     index_page(by_ds, totals)
     (SITE / ".nojekyll").touch()
     size = sum(p.stat().st_size for p in SITE.rglob("*") if p.is_file())
