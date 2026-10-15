@@ -43,8 +43,8 @@ is kept as `hdf5.source_sha256` in each `original/metadata/metadata.json`.
   so durations are not real time.
 * **Sharpness gate** ([../data_quality_gate.md](../data_quality_gate.md)): the six Tien Kung
   episodes (first-person head camera) pass at 90–251. The six Franka `camera_right` episodes
-  (third-person) score 15–27 against a threshold of 120 and are kept but flagged
-  `gate_result = fail`. Scores are in each `generation input/metadata/metadata.json` and the manifest.
+  (third-person) score 15–27 against a threshold of 120 and are accepted as documented
+  exceptions (`gate_result = exception`). Scores are in each `generation input/metadata/metadata.json` and the manifest.
 * **RoboMIND ships no MP4s.** Every video is rendered from the stored JPEGs.
 
 ## Layout

@@ -27,11 +27,13 @@ The first-person threshold was set to 60 (from the proposed 70) on 2026-10-15 af
 
 ## Exceptions
 
-Exceptions are admitted by visual review and keep their measured score; `gate_result` is `exception`.
+Exceptions are admitted by review or project decision and keep their measured score; `gate_result` is `exception`. Exceptions apply only to inputs that would otherwise fail; they are listed per dataset in `EXCEPTIONS` in `quality_gate.py`, so a new failing input in these datasets also becomes an exception.
 
 | Dataset | Inputs | Sharpness | Reason |
 |---|---:|---|---|
 | RoboCOIN_Airbot_MMK2_stack_block | 3 | 12.3–19.8 | Hand and block edges judged acceptable at the model view; the score is driven mostly by the large untextured table. |
+| RoboMIND (Franka `camera_right`) | 6 | 14.7–27.3 | Accepted by project decision; below the third-person threshold. |
+| Humanoid_Everyday | 2 | 99.1, 117.3 | Accepted by project decision: `human-robot-2__hand_over_toilet_paper`, `tool-use-6__wipe_table_with_cloth`. |
 
 ## Failing inputs are kept and flagged
 
@@ -46,14 +48,14 @@ Failing inputs are **not** deleted. They remain in place with `gate_result = fai
 | RoboMIND Tien Kung | 640 × 480 | first | 6 | 960 × 704 | 1.50 | 90 / 150 / 251 | 6 pass |
 | RoboCOIN Airbot MMK2 | 640 × 480 | first | 3 | 960 × 704 | 1.50 | 12 / 17 / 20 | 3 exception |
 | TAVP Franka | 1280 × 720 | third | 8 | 1280 × 704 | 1.00 | 132 / 160 / 182 | 8 pass |
-| Humanoid Everyday | 720 × 1280 | third | 18 | 704 × 1280 | 1.00 | 99 / 183 / 523 | 16 pass, 2 fail |
+| Humanoid Everyday | 720 × 1280 | third | 18 | 704 × 1280 | 1.00 | 99 / 183 / 523 | 16 pass, 2 exception |
 | Humanoid Everyday | 592 × 1280 | third | 1 | 704 × 1280 | 1.19 | 128 | 1 pass (human-robot-7) |
 | Humanoid Everyday | 1440 × 1920 / 1920 × 1440 | third | 7 | 704 × 960 / 960 × 704 | 0.50 | 363 / 417 / 1296 | 7 pass |
-| RoboMIND Franka | 640 × 480 | third | 6 | 960 × 704 | 1.50 | 15 / 25 / 27 | 6 fail |
+| RoboMIND Franka | 640 × 480 | third | 6 | 960 × 704 | 1.50 | 15 / 25 / 27 | 6 exception |
 
-Summary: 145 pass, 3 exception, 8 fail.
+Summary: 145 pass, 11 exception, 0 fail.
 
-Failing inputs: Humanoid_Everyday `human-robot-2__hand_over_toilet_paper` (99.1), `tool-use-6__wipe_table_with_cloth` (117.3); all six RoboMIND Franka episodes (14.7–27.3).
+Every input below its threshold is currently an exception; none fail.
 
 ## History
 

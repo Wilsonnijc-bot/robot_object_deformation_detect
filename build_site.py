@@ -59,6 +59,8 @@ DATASETS = {
         blurb="Block stacking with both hands. Admitted to the gate as a documented visual-review exception. "
               "No reviewed action prompt yet; the publisher instruction is shown."),
 }
+# Episodes shown on the site per dataset (first N in folder order); all remain in the repository.
+SITE_LIMIT = {"NVIDIA_GR1_100": 15}
 GATE_LABEL = {"pass": "Pass", "exception": "Exception", "fail": "Fail"}
 CONSTRAINT = ("Keep the camera fixed; preserve robot geometry, physically valid joint motion, "
               "and normal gripper opening and closing.")
@@ -290,7 +292,7 @@ def gate_summary(eps):
     return " · ".join(f'<span class="dot dot--{g}"></span>{c[g]} {GATE_LABEL[g].lower()}' for g in GATE_LABEL if c[g])
 
 
-def dataset_page(ds, eps):
+def dataset_page(ds, eps, total):
     meta, d = DATASETS[ds], SITE / ds
     groups = {}
     for e in eps:
@@ -306,7 +308,7 @@ def dataset_page(ds, eps):
 <p class="kicker">{esc(meta['view'])} · {esc(meta['robot'])}</p>
 <h1>{esc(meta['title'])}</h1>
 <p class="lede">{esc(meta['blurb'])}</p>
-<dl class="specs"><dt>Episodes</dt><dd>{len(eps)}</dd><dt>Gate</dt><dd>{gate_summary(eps)}</dd>
+<dl class="specs"><dt>Episodes</dt><dd>{len(eps) if total == len(eps) else f"{len(eps)} shown of {total}; all {total} are in the repository folder"}</dd><dt>Gate</dt><dd>{gate_summary(eps)}</dd>
 <dt>License</dt><dd>{esc(meta['license'])}</dd><dt>Source</dt><dd><a href="{esc(meta['source'])}">{esc(meta['source'].split('//')[1].rstrip('/'))}</a></dd>
 <dt>Folder</dt><dd><a href="{gh('tree', ds)}">{esc(ds)}/</a></dd></dl>
 </header>
@@ -317,7 +319,7 @@ def dataset_page(ds, eps):
     (d / "index.html").write_text(page(f"{meta['title']} · Robotvideo", "../", body, [("All datasets", "../index.html")]))
 
 
-def index_page(by_ds):
+def index_page(by_ds, totals):
     rows = []
     for ds, eps in by_ds.items():
         meta = DATASETS[ds]
@@ -327,11 +329,11 @@ def index_page(by_ds):
 <span class="set__strip">{strip}</span>
 <span class="set__body"><span class="set__title">{esc(meta['title'])}</span>
 <span class="set__robot">{esc(meta['robot'])} · {esc(meta['view'])}</span>
-<span class="set__stats"><b>{len(eps)}</b> episodes · {gate_summary(eps)} · {esc(meta['license'])}</span></span></a>""")
+<span class="set__stats"><b>{len(eps)}</b> {"episodes" if totals[ds] == len(eps) else f"of {totals[ds]} episodes shown"} · {gate_summary(eps)} · {esc(meta['license'])}</span></span></a>""")
     total = [e for eps in by_ds.values() for e in eps]
     body = f"""<header class="intro intro--home">
 <h1>Robot videos for first-frame world-model generation</h1>
-<p class="lede">{len(total)} reviewed episodes from {len(by_ds)} datasets. Each input is a first frame, an action prompt
+<p class="lede">{sum(totals.values())} reviewed episodes from {len(by_ds)} datasets, {len(total)} shown here. Each input is a first frame, an action prompt
 written from the video, and the reference clip. Every input is scored on the sharpness of its upscaled
 conditioning frame: third-person at least 120, first-person at least 60.</p>
 <p class="gate-line">{gate_summary(total)} · <a href="{gh('blob', 'data_quality_gate.md')}">How the gate works</a></p>
@@ -345,13 +347,15 @@ def main():
     ap.add_argument("--jobs", type=int, default=4)
     args = ap.parse_args()
     episodes = collect()
-    unknown = {e["dataset"] for e in episodes} - set(DATASETS)
+    totals = Counter(e["dataset"] for e in episodes)
+    episodes = [e for ds in DATASETS for e in [x for x in episodes if x["dataset"] == ds][:SITE_LIMIT.get(ds)]]
+    unknown = set(totals) - set(DATASETS)
     if unknown:
         raise SystemExit(f"Add {sorted(unknown)} to DATASETS in build_site.py")
     keep = {e["page"] for e in episodes}
     for ds in DATASETS:
-        for idx in (SITE / ds).rglob("index.html") if (SITE / ds).exists() else []:
-            if idx.parent != SITE / ds and idx.parent not in keep:
+        for idx in list((SITE / ds).rglob("index.html")) if (SITE / ds).exists() else []:
+            if idx.parent != SITE / ds and idx.parent not in keep and idx.parent.exists():
                 shutil.rmtree(idx.parent)
     for stale_ds in (p for p in SITE.iterdir() if p.is_dir() and p.name not in DATASETS and p.name != "assets") if SITE.exists() else []:
         shutil.rmtree(stale_ds)
@@ -361,8 +365,8 @@ def main():
         for i, e in enumerate(eps):
             episode_page(e, eps[i - 1] if i else None, eps[i + 1] if i + 1 < len(eps) else None)
     for ds, eps in by_ds.items():
-        dataset_page(ds, eps)
-    index_page(by_ds)
+        dataset_page(ds, eps, totals[ds])
+    index_page(by_ds, totals)
     (SITE / ".nojekyll").touch()
     size = sum(p.stat().st_size for p in SITE.rglob("*") if p.is_file())
     print(f"{len(episodes)} episode pages, {len(by_ds)} dataset pages, {size / 1e6:.1f} MB -> {SITE}")

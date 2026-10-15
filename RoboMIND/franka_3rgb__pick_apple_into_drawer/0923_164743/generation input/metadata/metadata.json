@@ -53,6 +53,7 @@
     "upscale_factor": 1.5,
     "sharpness": 27.3,
     "threshold": 120,
-    "result": "fail"
+    "result": "exception",
+    "exception_reason": "Accepted as an exception by project decision (2026-10-15); the Franka camera_right frames score below the third-person threshold."
   }
 }

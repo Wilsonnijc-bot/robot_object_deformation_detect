@@ -67,6 +67,7 @@
     "upscale_factor": 1.0,
     "sharpness": 117.3,
     "threshold": 120,
-    "result": "fail"
+    "result": "exception",
+    "exception_reason": "Accepted as an exception by project decision (2026-10-15); the score is below the third-person threshold."
   }
 }

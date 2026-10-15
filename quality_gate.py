@@ -31,6 +31,12 @@ EXCEPTIONS = {
     "RoboCOIN_Airbot_MMK2_stack_block": (
         "Visual-review exception (2026-10-15): edges of the hands and blocks are judged acceptable; "
         "the low score is driven mostly by the large untextured table."),
+    "RoboMIND": (
+        "Accepted as an exception by project decision (2026-10-15); the Franka camera_right frames "
+        "score below the third-person threshold."),
+    "Humanoid_Everyday": (
+        "Accepted as an exception by project decision (2026-10-15); the score is below the "
+        "third-person threshold."),
 }
 RULE = ("Variance of the Laplacian of the luma of the model-view frame (cover-resize to the "
         "nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.")

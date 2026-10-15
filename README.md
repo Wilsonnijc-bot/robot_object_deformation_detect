@@ -7,6 +7,7 @@ It has an independent history on `data/robotvideo` in
 `Wilsonnijc-bot/robot_object_deformation_detect`.
 
 **Dataset viewer:** https://wilsonnijc-bot.github.io/robot_object_deformation_detect/robotvideo/
+The viewer shows the first 15 NVIDIA GR1 videos (`SITE_LIMIT` in `build_site.py`); all 92 are in the repository.
 
 | Dataset | Episodes | Robot · view | Manifest |
 |---|---:|---|---|
@@ -23,7 +24,8 @@ protocols are in [AGENTS.md](AGENTS.md).
 ## Quality gate
 
 Every input is scored on the sharpness of its final upscaled conditioning frame:
-third-person ≥ 120, first-person ≥ 60. Failing inputs are kept and flagged, not deleted;
+third-person ≥ 120, first-person ≥ 60. Inputs below threshold are kept, not deleted: RoboCOIN,
+RoboMIND Franka and two Humanoid Everyday inputs are documented exceptions;
 filter on `gate_result` (`pass`, `exception`, `fail`) in the manifests or in
 [quality_gate.csv](quality_gate.csv). See [data_quality_gate.md](data_quality_gate.md).
 

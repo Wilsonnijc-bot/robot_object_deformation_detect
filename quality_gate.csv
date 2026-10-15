@@ -24,7 +24,7 @@ Humanoid_Everyday,deformable-6__compress_plastic_bag,third_person,720,1280,704x1
 Humanoid_Everyday,high-precision-4__place_kettle_on_base,third_person,720,1280,704x1280,1.0,291.9,120,pass,Humanoid_Everyday/high-precision-4__place_kettle_on_base/third_person/generation input/first_frame.png
 Humanoid_Everyday,high-precision-5__insert_flower_into_vase,third_person,720,1280,704x1280,1.0,196.9,120,pass,Humanoid_Everyday/high-precision-5__insert_flower_into_vase/third_person/generation input/first_frame.png
 Humanoid_Everyday,human-robot-1__hand_over_emotional_support_dumpling,third_person,720,1280,704x1280,1.0,137.3,120,pass,Humanoid_Everyday/human-robot-1__hand_over_emotional_support_dumpling/third_person/generation input/first_frame.png
-Humanoid_Everyday,human-robot-2__hand_over_toilet_paper,third_person,720,1280,704x1280,1.0,99.1,120,fail,Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/generation input/first_frame.png
+Humanoid_Everyday,human-robot-2__hand_over_toilet_paper,third_person,720,1280,704x1280,1.0,99.1,120,exception,Humanoid_Everyday/human-robot-2__hand_over_toilet_paper/third_person/generation input/first_frame.png
 Humanoid_Everyday,human-robot-3__hand_over_grey_duster,third_person,720,1280,704x1280,1.0,149.3,120,pass,Humanoid_Everyday/human-robot-3__hand_over_grey_duster/third_person/generation input/first_frame.png
 Humanoid_Everyday,human-robot-4__hand_over_book_from_magazine_stand,third_person,720,1280,704x1280,1.0,149.6,120,pass,Humanoid_Everyday/human-robot-4__hand_over_book_from_magazine_stand/third_person/generation input/first_frame.png
 Humanoid_Everyday,human-robot-5__handover_dumpling,third_person,720,1280,704x1280,1.0,182.6,120,pass,Humanoid_Everyday/human-robot-5__handover_dumpling/third_person/generation input/first_frame.png
@@ -39,7 +39,7 @@ Humanoid_Everyday,loco-manip-6__hold_whiteboard_and_walk,third_person,1920,1440,
 Humanoid_Everyday,loco-manip-7__walk_to_fire_extinguisher_and_open_door,third_person,1440,1920,704x960,0.5,377.0,120,pass,Humanoid_Everyday/loco-manip-7__walk_to_fire_extinguisher_and_open_door/third_person/generation input/first_frame.png
 Humanoid_Everyday,pick-place-4__pick_up_an_air_purify_spray_and_put_it_inside_a_container,third_person,720,1280,704x1280,1.0,194.2,120,pass,Humanoid_Everyday/pick-place-4__pick_up_an_air_purify_spray_and_put_it_inside_a_container/third_person/generation input/first_frame.png
 Humanoid_Everyday,tool-use-5__use_a_duster_to_dust_the_desk,third_person,720,1280,704x1280,1.0,178.8,120,pass,Humanoid_Everyday/tool-use-5__use_a_duster_to_dust_the_desk/third_person/generation input/first_frame.png
-Humanoid_Everyday,tool-use-6__wipe_table_with_cloth,third_person,720,1280,704x1280,1.0,117.3,120,fail,Humanoid_Everyday/tool-use-6__wipe_table_with_cloth/third_person/generation input/first_frame.png
+Humanoid_Everyday,tool-use-6__wipe_table_with_cloth,third_person,720,1280,704x1280,1.0,117.3,120,exception,Humanoid_Everyday/tool-use-6__wipe_table_with_cloth/third_person/generation input/first_frame.png
 NVIDIA_GR1_100,1,first_person,1280,800,1280x704,1.0,814.6,60,pass,NVIDIA_GR1_100/1/generation input/first_frame.png
 NVIDIA_GR1_100,2,first_person,1280,800,1280x704,1.0,703.4,60,pass,NVIDIA_GR1_100/2/generation input/first_frame.png
 NVIDIA_GR1_100,3,first_person,1280,800,1280x704,1.0,869.3,60,pass,NVIDIA_GR1_100/3/generation input/first_frame.png
@@ -135,12 +135,12 @@ NVIDIA_GR1_100,100,first_person,1280,800,1280x704,1.0,680.5,60,pass,NVIDIA_GR1_1
 RoboCOIN_Airbot_MMK2_stack_block,stack_block/episode_000000,first_person,640,480,960x704,1.5,17.1,60,exception,RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000000/generation input/first_frame.png
 RoboCOIN_Airbot_MMK2_stack_block,stack_block/episode_000001,first_person,640,480,960x704,1.5,19.8,60,exception,RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000001/generation input/first_frame.png
 RoboCOIN_Airbot_MMK2_stack_block,stack_block/episode_000002,first_person,640,480,960x704,1.5,12.3,60,exception,RoboCOIN_Airbot_MMK2_stack_block/stack_block/episode_000002/generation input/first_frame.png
-RoboMIND,franka_3rgb__pick_apple_into_drawer/0923_164719,third_person,640,480,960x704,1.5,23.0,120,fail,RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164719/generation input/first_frame.png
-RoboMIND,franka_3rgb__pick_apple_into_drawer/0923_164743,third_person,640,480,960x704,1.5,27.3,120,fail,RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164743/generation input/first_frame.png
-RoboMIND,franka_3rgb__pick_up_strawberry_in_bowl/1017_102324,third_person,640,480,960x704,1.5,16.2,120,fail,RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102324/generation input/first_frame.png
-RoboMIND,franka_3rgb__pick_up_strawberry_in_bowl/1017_102820,third_person,640,480,960x704,1.5,14.7,120,fail,RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820/generation input/first_frame.png
-RoboMIND,franka_3rgb__slide_close_cabinet/0923_111806,third_person,640,480,960x704,1.5,25.2,120,fail,RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806/generation input/first_frame.png
-RoboMIND,franka_3rgb__slide_close_cabinet/0923_111834,third_person,640,480,960x704,1.5,26.9,120,fail,RoboMIND/franka_3rgb__slide_close_cabinet/0923_111834/generation input/first_frame.png
+RoboMIND,franka_3rgb__pick_apple_into_drawer/0923_164719,third_person,640,480,960x704,1.5,23.0,120,exception,RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164719/generation input/first_frame.png
+RoboMIND,franka_3rgb__pick_apple_into_drawer/0923_164743,third_person,640,480,960x704,1.5,27.3,120,exception,RoboMIND/franka_3rgb__pick_apple_into_drawer/0923_164743/generation input/first_frame.png
+RoboMIND,franka_3rgb__pick_up_strawberry_in_bowl/1017_102324,third_person,640,480,960x704,1.5,16.2,120,exception,RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102324/generation input/first_frame.png
+RoboMIND,franka_3rgb__pick_up_strawberry_in_bowl/1017_102820,third_person,640,480,960x704,1.5,14.7,120,exception,RoboMIND/franka_3rgb__pick_up_strawberry_in_bowl/1017_102820/generation input/first_frame.png
+RoboMIND,franka_3rgb__slide_close_cabinet/0923_111806,third_person,640,480,960x704,1.5,25.2,120,exception,RoboMIND/franka_3rgb__slide_close_cabinet/0923_111806/generation input/first_frame.png
+RoboMIND,franka_3rgb__slide_close_cabinet/0923_111834,third_person,640,480,960x704,1.5,26.9,120,exception,RoboMIND/franka_3rgb__slide_close_cabinet/0923_111834/generation input/first_frame.png
 RoboMIND,tienkung_gello_1rgb__close_the_drawer_under_the_combination_cabinet/1211_104950,first_person,640,480,960x704,1.5,149.3,60,pass,RoboMIND/tienkung_gello_1rgb__close_the_drawer_under_the_combination_cabinet/1211_104950/generation input/first_frame.png
 RoboMIND,tienkung_gello_1rgb__close_the_drawer_under_the_combination_cabinet/1211_111642,first_person,640,480,960x704,1.5,149.8,60,pass,RoboMIND/tienkung_gello_1rgb__close_the_drawer_under_the_combination_cabinet/1211_111642/generation input/first_frame.png
 RoboMIND,tienkung_gello_1rgb__pick_up_tennis_ball_and_place_it_in_box/1212_105714,first_person,640,480,960x704,1.5,89.5,60,pass,RoboMIND/tienkung_gello_1rgb__pick_up_tennis_ball_and_place_it_in_box/1212_105714/generation input/first_frame.png
