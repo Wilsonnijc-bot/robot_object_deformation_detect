@@ -1,0 +1,60 @@
+{
+  "dataset": "RoboCOIN_Airbot_MMK2_stack_block",
+  "task": "stack_block",
+  "episode_id": "episode_000005",
+  "source_repository_commit": "ee1901cfd4a45185b71b571d9fdd8608ab43c934",
+  "source_annotation": {
+    "episode_index": 5,
+    "tasks": [
+      "place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand."
+    ],
+    "length": 392
+  },
+  "view": "observation.images.cam_head_rgb",
+  "variant": "full_sequence",
+  "review_status": "visually_reviewed",
+  "source_video": "../../original/videos/chunk-000/observation.images.cam_head_rgb/episode_000005.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 392,
+  "source_frame_count": 392,
+  "frame_count": 392,
+  "duration_seconds": 13.066666666666666,
+  "fps_rational": "30/1",
+  "fps_source": "recorded_in_source_info_json",
+  "resolution": {
+    "width": 640,
+    "height": 480
+  },
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "encoding": "frame_accurate_lossless_h264_of_av1_source",
+  "source_video_sha256": "a8a930699585a7ad639cdb76cf43c3eaa353e1dfe778ba78c0284cb7456329ab",
+  "video_sha256": "17e8a30fad68e25f6941ba4c713d7ac472267b6b158b09f79d1e8ea59c139224",
+  "first_frame_sha256": "7533f1a1327e668db4ff595830839be7faa0da102d0bac5761b599215824f0b4",
+  "validation": {
+    "generation_complete_decode_passed": true,
+    "generation_frames_match_source_decode": true,
+    "generation_resolution_matches_source": true
+  },
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "generation_prompt": "The robot's left hand closes its thumb and fingers around the glasses case, lifts it, and sets it across the tops of the red and green blocks, holding it in place before releasing and drawing back to the left. The robot's right hand then pinches the blue block between thumb and fingers, lifts it, carries it over, sets it upright on the case's right end, and opens and withdraws, leaving the three-level stack standing. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_sha256": "001c4d69d4d1f9fdbbf77dd10107dd0ed4daafb2bb25f48159520098c70041ab",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "960x704",
+    "upscale_factor": 1.5,
+    "sharpness": 22.1,
+    "threshold": 60,
+    "result": "exception",
+    "exception_reason": "Dataset-wide exception (2026-10-15), granted after visual review of the first episodes: edges of the hands and blocks were judged acceptable; the low score is driven mostly by the large untextured table."
+  }
+}

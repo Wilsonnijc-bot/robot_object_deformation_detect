@@ -27,7 +27,7 @@ close view shows the hands and work surface rather than the full humanoid body.
 Twelve more episodes were added from four other archives (`01JGJCNDDF-01JGJY03Q1.tar`,
 `01JHF7ZEBF-01JHFAFHR7.tar`, `01JJ130F0A-01JJ15BREB.tar`, `01JMC4WT0H-01JMCBC79M.tar`;
 about 4 GB each), same repository revision and license. The archives are plain `.tar`
-files, so `fetch_more.py` walks the tar headers with small HTTP Range requests and downloads
+files, so `scripts/fetch_more.py` walks the tar headers with small HTTP Range requests and downloads
 only the four members of each selected episode (about 500 MB in total instead of ~17 GB).
 Three episodes with different source prompts were taken from roughly the 10%, 50% and 90%
 positions of each archive. This is again a convenience sample, not a representative one;
@@ -101,25 +101,25 @@ are retained under per-episode metadata and `metamanifest/metadata/`.
 To reproduce the first three episodes from the same downloaded archive and source annotation JSON:
 
 ```sh
-../.venv/bin/python prepare_sample.py /path/to/01JN0Y324H-01JN0YMV54.tar /path/to/metadata.json
+../.venv/bin/python scripts/prepare_sample.py /path/to/01JN0Y324H-01JN0YMV54.tar /path/to/metadata.json
 ```
 
 This recreates extraction metadata. Visual reviews and authored prompts are separate
 artifacts. After reviews are present, rebuild the manifest with:
 
 ```sh
-../.venv/bin/python build_manifest.py
+../.venv/bin/python scripts/build_manifest.py
 ```
 
 The twelve additional episodes are fetched and built with:
 
 ```sh
-HF_TOKEN=... ../.venv/bin/python fetch_more.py /path/to/new_work_directory
-../.venv/bin/python prepare_more.py /path/to/new_work_directory
-../.venv/bin/python build_manifest.py
+HF_TOKEN=... ../.venv/bin/python scripts/fetch_more.py /path/to/new_work_directory
+../.venv/bin/python scripts/prepare_more.py /path/to/new_work_directory
+../.venv/bin/python scripts/build_manifest.py
 ```
 
 The token is read from the environment only and is not stored. Authored prompts and reviews
 are separate artifacts that must be present before the manifest is rebuilt.
-Run `../quality_gate.py` first so the manifest carries the sharpness-gate columns
+Run `../scripts/quality_gate.py` first so the manifest carries the sharpness-gate columns
 (all fifteen pass, first-person, 364–889).

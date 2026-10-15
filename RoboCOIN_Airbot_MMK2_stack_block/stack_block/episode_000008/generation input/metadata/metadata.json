@@ -1,0 +1,60 @@
+{
+  "dataset": "RoboCOIN_Airbot_MMK2_stack_block",
+  "task": "stack_block",
+  "episode_id": "episode_000008",
+  "source_repository_commit": "ee1901cfd4a45185b71b571d9fdd8608ab43c934",
+  "source_annotation": {
+    "episode_index": 8,
+    "tasks": [
+      "place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand."
+    ],
+    "length": 192
+  },
+  "view": "observation.images.cam_head_rgb",
+  "variant": "full_sequence",
+  "review_status": "visually_reviewed",
+  "source_video": "../../original/videos/chunk-000/observation.images.cam_head_rgb/episode_000008.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 192,
+  "source_frame_count": 192,
+  "frame_count": 192,
+  "duration_seconds": 6.4,
+  "fps_rational": "30/1",
+  "fps_source": "recorded_in_source_info_json",
+  "resolution": {
+    "width": 640,
+    "height": 480
+  },
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "encoding": "frame_accurate_lossless_h264_of_av1_source",
+  "source_video_sha256": "cfb9b52a18c3f90724709eff84edc0e81761f134aab83279d542d01bf0d79781",
+  "video_sha256": "04ab86992c36b642d70184f104902fde860a1571c4a9b973ba9e02bfeb9573a0",
+  "first_frame_sha256": "c6bd3651580312e037c3f7f375af1e4ec4bec7867d6f05f00809bb0fafdefda3",
+  "validation": {
+    "generation_complete_decode_passed": true,
+    "generation_frames_match_source_decode": true,
+    "generation_resolution_matches_source": true
+  },
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "generation_prompt": "The robot's left hand, on the left of the view, pinches the light-blue cube between thumb and fingers, lifts it, carries it onto the pink cube at the back left and releases it. The robot's right hand then closes its fingers around the purple cube, lifts it, carries it onto the red cube at the back right and releases it, then withdraws upward. Two stacks remain: light-blue on pink and purple on red. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_sha256": "6e8d4fc57166d75d930b45856b98b60b22ffa037af61023bd3abf988e2be7577",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "960x704",
+    "upscale_factor": 1.5,
+    "sharpness": 35.9,
+    "threshold": 60,
+    "result": "exception",
+    "exception_reason": "Dataset-wide exception (2026-10-15), granted after visual review of the first episodes: edges of the hands and blocks were judged acceptable; the low score is driven mostly by the large untextured table."
+  }
+}

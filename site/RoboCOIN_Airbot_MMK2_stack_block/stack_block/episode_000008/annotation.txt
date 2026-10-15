@@ -1,0 +1,60 @@
+RoboCOIN · Airbot MMK2 / stack_block/episode_000008
+
+Action generation prompt
+The robot's left hand, on the left of the view, pinches the light-blue cube between thumb and fingers, lifts it, carries it onto the pink cube at the back left and releases it. The robot's right hand then closes its fingers around the purple cube, lifts it, carries it onto the red cube at the back right and releases it, then withdraws upward. Two stacks remain: light-blue on pink and purple on red. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
+
+Publisher annotation
+place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand.
+
+Quality gate
+exception: sharpness 35.9 vs 60 (first_person)
+
+Observed outcome
+Status: success
+Description: Two separate two-cube stacks stand at the end: the light-blue cube rests on top of the pink cube at the back left (placed slightly off-centre, with a small overhang toward the right of the view), and the purple cube rests on top of the red cube at the back right. Both hands are withdrawn (left at the left edge, right leaving at upper right). No cube was dropped and no regrasp occurred. The stacks are not one stack and no cylinder is involved.
+
+Hand roles
+Left: Acts first (frames about 14-100). Pinches the light-blue cube between thumb and fingers/palm, lifts it, carries it to the far-left pink cube, lowers it onto the pink cube's top face and releases it (thumb withdraws about frames 90-98). It then retracts to the left edge, open and idle for the rest of the clip; it does not touch the purple or red cubes.
+Right: Idle at the right edge until about frame 100. It then enters, wraps fingers and thumb around the purple cube (about 110-124), lifts it, carries it up and over to the red cube, lowers it onto the red cube's top face, opens to release (about 156-164) and withdraws toward the upper right.
+
+Coordination
+Strictly sequential, no hand-to-hand transfer and no overlapping manipulation. The left hand has put the light-blue cube on the pink cube and is backing away (frames 94-106) before the right hand moves in; the right hand's stacking is independent of the left stack and the left hand provides no support during it.
+
+Robot-side evidence
+- Head camera looks forward over the table; the hand entering from the image-left edge is the robot's left hand and the one entering from the image-right edge is the right hand, consistent with the other evidence.
+- Parquet telemetry: eef_sim_pose_state holds two end-effector poses (columns 0-5 and 6-11). The first has y = +0.17 at frame 0, drops to about +0.09 during frames 24-48 (left-hand carry), extends forward to x about 0.80 at frames 60-84 (reach to the pink cube) and returns to y about +0.20 by frame 120, then stays still. The second has y = -0.20, stays essentially still until about frame 96, then moves (x from 0.58 to 0.78, y to about -0.12) over frames 100-156 (right-hand phase) and retracts after about 170. With x forward, positive y is robot-left and negative y is robot-right.
+- Wrist cameras: cam_left_wrist_rgb at frame 20 shows the light-blue cube beside the left hand (cube appears dark blue in the dim view); cam_right_wrist_rgb at frame 130 shows the purple cube held in the right hand's fingers.
+- The Parquet column names for the poses were not available, so the pose-column to side mapping rests on the y-sign convention and its agreement with head-camera and wrist-camera content.
+
+Chronology
+frames 0–12: Initial frame: robot-left hand (image left) is open and pointing forward-right at the left edge, its thumb extended beside the light-blue (cyan) cube. Four cubes are on the dark table: pink at back left, red at back right, light-blue at front left next to the left hand, purple at front right. A white fingertip of the right hand just enters at the right edge. The left hand drifts forward and lowers beside the light-blue cube.
+frames 14–24: Left hand rolls over the light-blue cube with its palm and fingers above it and the white thumb (green light) below its near side; the fingers and thumb close on the cube, firmly gripped by frame 24-26.
+frames 26–46: Left hand lifts the light-blue cube clear of the table and carries it forward and slightly right toward the pink cube, rotating the forearm; the cube is held between thumb and fingers/palm. Right hand stays at the right edge, idle.
+frames 48–62: Left hand carries the light-blue cube up and back to the far left, over the pink cube; the forearm now fills the left of the view (blue cube above and in front of the pink cube at frames 50-56).
+frames 64–84: Left hand lowers and slides the light-blue cube onto the pink cube's top face (blue cube above pink at 64-72, seated on top by about 78-84); the thumb remains under or beside the blue cube while the fingers stay on its far side.
+frames 86–98: Thumb and fingers loosen and withdraw (thumb slides out at about 90-94); the light-blue cube remains on the pink cube. The left hand begins to retract; right hand still at the right edge.
+frames 100–106: Left hand backs away to the left, fingers open and pointing forward-right; a stable light-blue-on-pink stack is visible. Right hand's fingers appear at the right edge and begin moving inward.
+frames 108–118: Right hand enters from the lower right with fingers extended, thumb below the purple cube; it reaches the purple cube at about 110-114 and wraps fingers over its top/far side and the thumb at the near side.
+frames 120–128: Right hand closes on the purple cube (cube visible between thumb and fingers at 122-126), lifts it off the table (raised and tilted at about 126-128) and starts carrying it left toward the red cube.
+frames 130–146: Right hand carries the purple cube up and left, moving it to the red cube (cube reaches the red cube's upper left edge at about 132-136) while the hand rises toward the top right and is partly out of frame; the cube is positioned above the red cube from about 140-146.
+frames 148–154: Right hand lowers the purple cube onto the red cube's top face; the cube seated on the red cube by about 148-152 with thumb and fingers still around its sides.
+frames 156–166: Right fingers open and release (thumb and fingers slide off at about 156-164); the purple cube remains seated on the red cube. The right hand remains over the stack at the top right.
+frames 168–191: Right hand lifts away and withdraws toward the upper right, finally leaving only fingertips at the right edge; the left hand stays still, open, at the left edge. Final frames show light-blue cube on pink cube and purple cube on red cube, both stacks upright and stable.
+
+Clip selection
+Complete single-task clip retained: left hand places the light-blue cube on the pink cube, then right hand places the purple cube on the red cube. Both phases belong to one stacking task, so the full 192-frame sequence is kept without cropping or first_substep splitting.
+
+Differences from the publisher annotation
+- The dataset-wide instruction speaks of square blocks placed 'in the center' by the left hand and cylindrical blocks placed 'on top' by the right hand. In this video all four objects are cubes (no cylinder); the left hand stacks a cube on a second cube at the back left, not in the table centre, and the right hand stacks a cube on a second cube at the back right.
+- The scene annotation lists a green block, a yellow block in the centre, a blue block in the front-right and a glasses case. None of these are visible: the table holds only a pink, a red, a light-blue and a purple cube. The 'blue' block is the light-blue/cyan cube at front left (not front right); the front-right cube is purple.
+- The scene annotation places the red and purple blocks both at 'back-right'; visibly the red cube is at back right and the purple cube at front right, and the purple cube is stacked on the red one.
+- Subtask labels are otherwise consistent with the video: blue onto pink (left hand) and purple onto red (right hand). Their timing differs: 'Grasp blue' (0-38) includes approach and the lift begins from about 26; 'Place blue on pink' (39-92) covers the carry and placement, with release at about 90-98; 'Grasp purple' (93-121) mixes the left hand's withdrawal with the right hand's approach and grasp; 'Place purple on red' (122-169) starts at the lift (about 124-128) and ends at release (156-164); 'End' (170-191) is the right-hand withdrawal.
+- Source labels say 'gripper' while the hands are five-finger dexterous hands; the prompt uses hand wording.
+
+Uncertainties
+- Exact finger-level grasp of the light-blue cube by the left hand (which fingers press) is partially occluded by the hand; described as pinched between thumb and fingers/palm side.
+- The moment the left thumb stops touching the light-blue cube is estimated at about frames 90-98 because the hand covers the placement.
+- Right-hand finger positions on the purple cube at frames 112-126 are partly hidden by the hand and the table edge of the view; the lift is estimated at about frames 124-128.
+- The right hand is partly out of frame at the upper right during frames 132-166, so release of the purple cube (about 156-164) is judged from cube/hand positions.
+- Robot-relative left/right rests on head-view geometry, y-sign of the end-effector poses and wrist-camera content, not on published pose column names.
+- The light-blue cube sits slightly off-centre on the pink cube; the exact overhang is small.

@@ -27,10 +27,10 @@ cropped middle-view conditioning PNG. No first-frame PNG remains under `original
 Dataset-wide files:
 
 - `manifest.csv`: 23 rows with relative artifact paths, annotation provenance, source URLs, technical fields, SHA-256, and download/validation status. CSV unknowns are empty cells; booleans are `true`/`false`.
-- `download_dataset.py`: discovery, resumable downloads, frame extraction, metadata/manifest generation, and complete validation.
+- `scripts/download_dataset.py`: discovery, resumable downloads, frame extraction, metadata/manifest generation, and complete validation.
 - `validation_report.json`: summary, tool versions, uncertain annotations, and explicit failures from the most recent run.
 - `sources/`: pinned repository tree and HTML, live-page snapshot, repository/branch snapshots, original supplied CSV, and generated `source_catalog.json`.
-- `tests/test_download_dataset.py`: offline HTTP recovery and stable-identity regression checks.
+- `scripts/tests/test_download_dataset.py`: offline HTTP recovery and stable-identity regression checks.
 
 ## Verified dataset summary
 
@@ -73,23 +73,23 @@ Requires Python 3.9+ and FFmpeg/FFprobe on `PATH`; no third-party Python package
 ```sh
 # Download missing/corrupt originals, repair frames, regenerate prompts/metadata,
 # and validate every video and artifact. Verified originals are not downloaded again.
-python3 TAVP/download_dataset.py
+python3 TAVP/scripts/download_dataset.py
 
 # Validate existing content without repairing videos, frames, prompts, metadata,
 # catalog, or manifest. Refreshes validation_report.json with current results.
-python3 TAVP/download_dataset.py --verify-only
+python3 TAVP/scripts/download_dataset.py --verify-only
 
 # Rebuild to another directory with the bundled pinned sources and CSV annotations.
-python3 TAVP/download_dataset.py --output /path/to/new/TAVP
+python3 TAVP/scripts/download_dataset.py --output /path/to/new/TAVP
 
 # Merge additional CSVs by video URL/path. Repeat --csv for multiple inputs.
-python3 TAVP/download_dataset.py --csv /path/to/original.csv --csv /path/to/updated.csv
+python3 TAVP/scripts/download_dataset.py --csv /path/to/original.csv --csv /path/to/updated.csv
 
 # Optional controls; timeout is network socket timeout, decode-timeout is per command.
-python3 TAVP/download_dataset.py --workers 4 --retries 4 --timeout 60 --decode-timeout 300
+python3 TAVP/scripts/download_dataset.py --workers 4 --retries 4 --timeout 60 --decode-timeout 300
 
 # Run offline recovery/discovery regression checks.
-python3 -m unittest discover -s TAVP/tests -v
+python3 -m unittest discover -s TAVP/scripts/tests -v
 ```
 
 IDs and annotation sources are deterministic for the pinned HTML and input snapshots. Copy the script together with `sources/` to retain the same CSV-derived annotations during a fresh rebuild. If no CSV/catalog is available, the script retrieves the pinned official HTML/tree and uses clearly marked task-level transfers or generic inferred instructions for unpublished clips. New CSV files must contain a recognized video URL column; unmatched identities and conflicting published annotations fail explicitly, while all original columns are retained.

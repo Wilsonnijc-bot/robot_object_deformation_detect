@@ -1,0 +1,60 @@
+{
+  "dataset": "RoboCOIN_Airbot_MMK2_stack_block",
+  "task": "stack_block",
+  "episode_id": "episode_000007",
+  "source_repository_commit": "ee1901cfd4a45185b71b571d9fdd8608ab43c934",
+  "source_annotation": {
+    "episode_index": 7,
+    "tasks": [
+      "place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand."
+    ],
+    "length": 299
+  },
+  "view": "observation.images.cam_head_rgb",
+  "variant": "full_sequence",
+  "review_status": "visually_reviewed",
+  "source_video": "../../original/videos/chunk-000/observation.images.cam_head_rgb/episode_000007.mp4",
+  "relative_video_path": "../video.mp4",
+  "relative_first_frame_path": "../first_frame.png",
+  "source_frame_start": 0,
+  "source_frame_end_exclusive": 299,
+  "source_frame_count": 299,
+  "frame_count": 299,
+  "duration_seconds": 9.966666666666667,
+  "fps_rational": "30/1",
+  "fps_source": "recorded_in_source_info_json",
+  "resolution": {
+    "width": 640,
+    "height": 480
+  },
+  "spatial_resize": false,
+  "crop_rectangle": null,
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "encoding": "frame_accurate_lossless_h264_of_av1_source",
+  "source_video_sha256": "77921e20665f6135887b3bd6c249c55dc19d9f600559179f66dbfe87a9a284f7",
+  "video_sha256": "e99d86ee919f87d3feb44befcffed04490575df724eed08d7930d5f13cc12fd6",
+  "first_frame_sha256": "b85875dcddaec1cc9c44df341cf738301115278188f300bf6dd948dfbbb723b7",
+  "validation": {
+    "generation_complete_decode_passed": true,
+    "generation_frames_match_source_decode": true,
+    "generation_resolution_matches_source": true
+  },
+  "relative_prompt_path": "../actiongeneration_prompt.txt",
+  "action_review_path": "action_review.json",
+  "prompt_protocol": "humanoid_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "generation_prompt": "The robot's left hand pinches the small blue cube marked K between its thumb and fingers, lifts it, carries it over the white wooden platform, sets it down near the platform's center, then releases and draws back. Afterward the robot's right hand pinches the red cube marked 1 between its fingers and thumb, lifts it, carries it over and lowers it onto the blue cube, nudging the tilted red cube upright with its thumb before pulling away, leaving the red cube stacked on the blue cube. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "prompt_sha256": "ae4751b9ac9725dd7c917f1782904f612cf6eb6836525471a7af0f2fa05ffad8",
+  "data_quality_gate": {
+    "rule": "Variance of the Laplacian of the luma of the model-view frame (cover-resize to the nearest-aspect 720p-class bucket, center crop); pass if >= 120 third-person, >= 60 first-person.",
+    "documentation": "data_quality_gate.md (repository root)",
+    "view": "first_person",
+    "model_view_resolution": "960x704",
+    "upscale_factor": 1.5,
+    "sharpness": 22.3,
+    "threshold": 60,
+    "result": "exception",
+    "exception_reason": "Dataset-wide exception (2026-10-15), granted after visual review of the first episodes: edges of the hands and blocks were judged acceptable; the low score is driven mostly by the large untextured table."
+  }
+}

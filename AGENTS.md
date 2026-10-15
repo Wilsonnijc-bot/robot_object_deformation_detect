@@ -1,8 +1,8 @@
 # Project instructions
 
-Data quality gate: see [data_quality_gate.md](data_quality_gate.md). The gate measures the sharpness of the final upscaled conditioning frame (≥ 120 third-person, ≥ 60 first-person). Failing inputs are kept and flagged (`gate_result` in the manifests); run `quality_gate.py` after adding or changing inputs.
+Data quality gate: see [data_quality_gate.md](data_quality_gate.md). The gate measures the sharpness of the final upscaled conditioning frame (≥ 120 third-person, ≥ 60 first-person). Failing inputs are kept and flagged (`gate_result` in the manifests); run `scripts/quality_gate.py` after adding or changing inputs.
 
-Dataset viewer: `build_site.py` writes the static site to `site/`, published at https://wilsonnijc-bot.github.io/robot_object_deformation_detect/robotvideo/. Rebuild it after changing inputs, prompts or reviews. Do not recreate per-dataset `preview.html` files.
+Dataset viewer: `scripts/build_site.py` writes the static site to `site/`, published at https://wilsonnijc-bot.github.io/robot_object_deformation_detect/robotvideo/. Rebuild it after changing inputs, prompts or reviews. Do not recreate per-dataset `preview.html` files.
 
 ## How to craft world-model action-generation prompts
 
@@ -81,9 +81,11 @@ Before saving, confirm that the target is identifiable from the initial frame, t
 
 Save `prompt_protocol: "concise_action_v1"` and `prompt_provenance: "visually_authored_from_video_and_initial_frame"` in the action review. Store the usable prompt alone in `prompt.txt`. Keep downloaded source artifacts under each video's `original/` directory, preserving the media bytes; save cropped and shortened generation references under the sibling `generation input/` directory. Use frame-accurate, lossless derivatives and validate their decoding, dimensions, FPS and source-frame correspondence.
 
-Do not store a byte-identical copy of a source video under `generation input/`. Only derived references (shortened, re-encoded, cropped) are saved there as `video.mp4`; when the generation reference is the unchanged source, metadata points to the file in `original/`. `dedupe_generation_videos.py` removes identical copies and repoints metadata and manifests.
+Do not store a byte-identical copy of a source video under `generation input/`. Only derived references (shortened, re-encoded, cropped) are saved there as `video.mp4`; when the generation reference is the unchanged source, metadata points to the file in `original/`. `scripts/dedupe_generation_videos.py` removes identical copies and repoints metadata and manifests.
 
-Keep each video folder organized as `original/` and `generation input/` only. Do not export or recreate evidence-frame directories under `generation input/`; use temporary inspection images and retain frame indices/observations in `metadata/action_review.json`.
+Keep each video folder organized as `original/` and `generation input/` only.
+
+Keep code out of the data folders: each dataset's fetch/prepare/manifest scripts live in `<dataset>/scripts/`, and repository-wide tools in `scripts/` at the root; repository-wide data (gate scores, review job lists, the spreadsheet) lives in `metamanifest/`. Download and extraction work directories go under `/tmp/` (never `~/Downloads` or the repository) and are deleted after verification. Do not export or recreate evidence-frame directories under `generation input/`; use temporary inspection images and retain frame indices/observations in `metadata/action_review.json`.
 
 When a TAVP first-substep reference exists, retain `first_substep/`, the full-sequence `prompt for original multi step action(reproducing the original video).txt`, and `metadata/action_review.json` under `generation input/`, plus the distinct Dobot source frame where applicable. Do not retain or recreate an additional full-video MP4, initial PNG or derivative metadata there. For single-task videos without a shortened branch, retain the one complete generation reference directly under `generation input/`.
 

@@ -1,0 +1,176 @@
+{
+  "dataset": "RoboCOIN/Airbot_MMK2_stack_block",
+  "source_repository_commit": "ee1901cfd4a45185b71b571d9fdd8608ab43c934",
+  "license": "apache-2.0",
+  "task": "stack_block",
+  "episode_id": "episode_000007",
+  "episode_index": 7,
+  "robot_type": "Airbot_MMK2",
+  "source_annotation": {
+    "episode_index": 7,
+    "tasks": [
+      "place the square building blocks in the center with left hand and put the cylindrical building blocks on top with right hand."
+    ],
+    "length": 299
+  },
+  "scene_annotation": {
+    "scene_index": 7,
+    "scene": "The green block is in the front-left, The red block is in the front-right, The blue block is in the front-left, The yellow block is in the front-right, The purple block is not visible, The glasses case is not visible"
+  },
+  "subtask_timeline": [
+    {
+      "start_frame": 0,
+      "end_frame_inclusive": 46,
+      "indices": [
+        0,
+        19,
+        19,
+        19,
+        19
+      ],
+      "subtasks": [
+        "Grasp the blue build blocks with the left gripper",
+        "null",
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "start_frame": 47,
+      "end_frame_inclusive": 129,
+      "indices": [
+        2,
+        19,
+        19,
+        19,
+        19
+      ],
+      "subtasks": [
+        "Place the blue build blocks on the Mini table with the left gripper",
+        "null",
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "start_frame": 130,
+      "end_frame_inclusive": 170,
+      "indices": [
+        5,
+        19,
+        19,
+        19,
+        19
+      ],
+      "subtasks": [
+        "Grasp the red build blocks with the right gripper",
+        "null",
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "start_frame": 171,
+      "end_frame_inclusive": 286,
+      "indices": [
+        17,
+        19,
+        19,
+        19,
+        19
+      ],
+      "subtasks": [
+        "Place the red build blocks on the blue build block with the right gripper",
+        "null",
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "start_frame": 287,
+      "end_frame_inclusive": 298,
+      "indices": [
+        15,
+        19,
+        19,
+        19,
+        19
+      ],
+      "subtasks": [
+        "End",
+        "null",
+        "null",
+        "null",
+        "null"
+      ]
+    }
+  ],
+  "subtask_timeline_note": "Run-length encoding of the per-frame subtask_annotation index tuple in the Parquet; names come from annotations/subtask_annotations.jsonl. Index 19 is the dataset's null entry.",
+  "source_files": {
+    "parquet": {
+      "path": "../data/chunk-000/episode_000007.parquet",
+      "size_bytes": 163577,
+      "sha256": "ecfee9385fe5d8390e603541261eddcdb836bd2457b0986808d7accee31b8a41"
+    }
+  },
+  "camera_videos": {
+    "cam_front_rgb": {
+      "path": "../videos/chunk-000/observation.images.cam_front_rgb/episode_000007.mp4",
+      "size_bytes": 4756084,
+      "sha256": "d6bdaf2a18de2edb7d44ddaff3c459f6f1eb34ca522f0081ef1e1d8516ee7067",
+      "codec": "av1",
+      "pixel_format": "yuv420p",
+      "frame_count": 299,
+      "fps_rational": "30/1",
+      "resolution": {
+        "width": 640,
+        "height": 480
+      }
+    },
+    "cam_head_rgb": {
+      "path": "../videos/chunk-000/observation.images.cam_head_rgb/episode_000007.mp4",
+      "size_bytes": 3607448,
+      "sha256": "77921e20665f6135887b3bd6c249c55dc19d9f600559179f66dbfe87a9a284f7",
+      "codec": "av1",
+      "pixel_format": "yuv420p",
+      "frame_count": 299,
+      "fps_rational": "30/1",
+      "resolution": {
+        "width": 640,
+        "height": 480
+      }
+    },
+    "cam_left_wrist_rgb": {
+      "path": "../videos/chunk-000/observation.images.cam_left_wrist_rgb/episode_000007.mp4",
+      "size_bytes": 1795010,
+      "sha256": "cb67b6c4ed1c275dddaf2e1267adfb8533f2e95ab8366a504da3908015f32393",
+      "codec": "av1",
+      "pixel_format": "yuv420p",
+      "frame_count": 299,
+      "fps_rational": "30/1",
+      "resolution": {
+        "width": 640,
+        "height": 480
+      }
+    },
+    "cam_right_wrist_rgb": {
+      "path": "../videos/chunk-000/observation.images.cam_right_wrist_rgb/episode_000007.mp4",
+      "size_bytes": 2543098,
+      "sha256": "41f11f9a79c510a3ce0b9d21372437b793f8fbbb53e7d605b7ffa4331adc43f5",
+      "codec": "av1",
+      "pixel_format": "yuv420p",
+      "frame_count": 299,
+      "fps_rational": "30/1",
+      "resolution": {
+        "width": 640,
+        "height": 480
+      }
+    }
+  },
+  "parquet_rows": 299,
+  "source_bytes_preserved": true
+}

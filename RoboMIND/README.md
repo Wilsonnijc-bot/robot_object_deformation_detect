@@ -12,7 +12,7 @@ This is a convenience sample of 18 real-robot episodes: eight Franka and ten Tie
 sample; the others were added later. Six AgileX dual-arm episodes were removed on 2026-10-15;
 their provenance remains in `metamanifest/metadata/`. Six more episodes (Franka bread-on-plate,
 Tien Kung upright-cup and banana-on-plate; the first two complete episodes of each task's first
-archive part) were added on 2026-10-15 with `fetch_extra.py` (`metamanifest/metadata/download_extra.json`).
+archive part) were added on 2026-10-15 with `scripts/fetch_extra.py` (`metamanifest/metadata/download_extra.json`).
 
 | Embodiment | Task | Episode | Frames | Generation reference | Generation camera |
 | --- | --- | --- | ---: | ---: | --- |
@@ -38,7 +38,7 @@ archive part) were added on 2026-10-15 with `fetch_extra.py` (`metamanifest/meta
 All frames are 640 × 480.
 
 **Franka episodes keep only the right RGB camera** (`camera_right`, the generation camera).
-On 2026-10-15 `strip_franka_cameras.py` rewrote each Franka `trajectory.hdf5` without the left and
+On 2026-10-15 `scripts/strip_franka_cameras.py` rewrote each Franka `trajectory.hdf5` without the left and
 top RGB cameras and without all depth images, and deleted their decoded previews. Robot state,
 language fields and the `camera_right` JPEG bytes are unchanged (verified). The original source hash
 is kept as `hdf5.source_sha256` in each `original/metadata/metadata.json`.
@@ -99,7 +99,7 @@ and the task is absent from `RoboMIND_v1_2_instr.csv`), so it has no `task_promp
   Franka decodes to natural colours as stored. **Tien Kung derivatives swap red and blue back**
   (`color_args` in `robomind_common.py`): the yellow banana, yellow-green tennis ball and brown bread
   crust confirm the correction. An earlier version of this sample decoded Tien Kung without the swap;
-  on 2026-10-15 `fix_channel_order.py` and `finalize_sample.py` rebuilt every Tien Kung preview, first
+  on 2026-10-15 `scripts/fix_channel_order.py` and `scripts/finalize_sample.py` rebuilt every Tien Kung preview, first
   frame and generation video, four prompts had colour words corrected, and each Tien Kung review
   carries a `channel_order_note` (its colour terms were observed on swapped frames). The HDF5 files
   are unchanged. Tien Kung generation videos are lossless encodes of the corrected 4:2:0 decode, and
@@ -124,15 +124,15 @@ not resolve them.
 ## Reproduce
 
 ```sh
-HF_TOKEN=... ../.venv/bin/python fetch_source.py /path/to/new_work_directory
-../.venv/bin/python prepare_sample.py /path/to/new_work_directory      # first sample episodes
-HF_TOKEN=... ../.venv/bin/python fetch_more.py /path/to/new_work_directory
-../.venv/bin/python prepare_more.py /path/to/new_work_directory        # other episodes
+HF_TOKEN=... ../.venv/bin/python scripts/fetch_source.py /path/to/new_work_directory
+../.venv/bin/python scripts/prepare_sample.py /path/to/new_work_directory      # first sample episodes
+HF_TOKEN=... ../.venv/bin/python scripts/fetch_more.py /path/to/new_work_directory
+../.venv/bin/python scripts/prepare_more.py /path/to/new_work_directory        # other episodes
 # author prompts and action_review.json, then:
-../.venv/bin/python finalize_sample.py
-../.venv/bin/python strip_franka_cameras.py
-../.venv/bin/python ../quality_gate.py
-../.venv/bin/python build_manifest.py
+../.venv/bin/python scripts/finalize_sample.py
+../.venv/bin/python scripts/strip_franka_cameras.py
+../.venv/bin/python ../scripts/quality_gate.py
+../.venv/bin/python scripts/build_manifest.py
 ```
 
 Requires the project `.venv` (Pillow, h5py, NumPy) and FFmpeg. The fetch and prepare scripts

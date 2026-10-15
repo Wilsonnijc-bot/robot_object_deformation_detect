@@ -55,6 +55,6 @@
     "sharpness": 19.8,
     "threshold": 60,
     "result": "exception",
-    "exception_reason": "Visual-review exception (2026-10-15): edges of the hands and blocks are judged acceptable; the low score is driven mostly by the large untextured table."
+    "exception_reason": "Dataset-wide exception (2026-10-15), granted after visual review of the first episodes: edges of the hands and blocks were judged acceptable; the low score is driven mostly by the large untextured table."
   }
 }

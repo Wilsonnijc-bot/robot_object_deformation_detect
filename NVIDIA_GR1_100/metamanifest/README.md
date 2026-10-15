@@ -59,11 +59,11 @@ From the project root, install FFmpeg/ffprobe (`brew install ffmpeg` on macOS), 
 
 ```
 .venv/bin/python -m pip install -r requirements-robot-datasets.txt
-.venv/bin/python download_robot_datasets.py --phase discover
-.venv/bin/python download_robot_datasets.py --phase research --workers 3
-.venv/bin/python download_robot_datasets.py --phase pilot --workers 3
-.venv/bin/python download_robot_datasets.py --phase full --workers 3
-.venv/bin/python download_robot_datasets.py --phase audit
+.venv/bin/python scripts/download_robot_datasets.py --phase discover
+.venv/bin/python scripts/download_robot_datasets.py --phase research --workers 3
+.venv/bin/python scripts/download_robot_datasets.py --phase pilot --workers 3
+.venv/bin/python scripts/download_robot_datasets.py --phase full --workers 3
+.venv/bin/python scripts/download_robot_datasets.py --phase audit
 ```
 
 Use `--output <project-directory>` for another project root. Discovery pins revisions for safe resumes; use a new output directory for independent upstream versions. Downloads stream to temporary .part files with range/entity validation, exponential retry and atomic completion. Validated originals are skipped after checksum verification; corrupt originals are quarantined. Each dataset has its own `_sources/pilot_run.json` and `_sources/full_run.json`. Historical shared logs are retained as execution evidence.
