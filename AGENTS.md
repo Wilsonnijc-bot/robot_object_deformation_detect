@@ -4,6 +4,8 @@ Data quality gate: see [data_quality_gate.md](data_quality_gate.md). The gate me
 
 Dataset viewer: `scripts/build_site.py` writes the static site to `site/`, published at https://wilsonnijc-bot.github.io/robot_object_deformation_detect/robotvideo/. Rebuild it after changing inputs, prompts or reviews. Do not recreate per-dataset `preview.html` files.
 
+Generated outputs: each dataset page is the ground-truth tab; `build_site.py --generated <organized_by_generator dir>` adds one subpage per generator (`site/<dataset>/<generator>/`, reduced H.264 clips + posters). Rebuilds without `--generated` keep those pages. Originals stay on Drive/ERIS, not in this repository.
+
 ## How to craft world-model action-generation prompts
 
 Follow protocol `concise_action_v1` for first-frame-conditioned robot video generation. The reference is [RoboWM-Bench's close-drawer input](https://github.com/fffstrong/RoboWM-Bench/tree/main/wm_inputs/close_drawer): a concise action sentence plus shared physical/camera constraints. The first frame supplies the scene appearance.

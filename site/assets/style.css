@@ -249,3 +249,14 @@ main { width: min(100% - 2 * clamp(1rem, 4vw, 3rem), 82rem); margin-inline: auto
 .chrono thead th { font: 600 0.6875rem/1 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
 .chrono tbody th { font-weight: 500; white-space: nowrap; color: var(--ink-2); width: 7rem; }
 .annotation .review { margin-top: var(--s6); border-top: 1px solid var(--rule); }
+
+/* Source tabs: ground truth and each generator's output for the dataset */
+.tabs { display: flex; flex-wrap: wrap; gap: var(--s2); margin-top: var(--s5); border-bottom: 1px solid var(--rule); }
+.tabs a {
+  font: 500 0.875rem/1 var(--sans); color: var(--ink-2); text-decoration: none; padding: 0.85em 1.1em;
+  margin-bottom: -1px; border-bottom: 2px solid transparent;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.tabs a:hover { color: var(--accent); }
+.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); }
+.tabs + .intro { padding-top: var(--s6); }

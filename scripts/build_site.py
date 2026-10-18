@@ -1,11 +1,13 @@
 """Build the static dataset viewer into site/.
 
-Usage: .venv/bin/python build_site.py [--jobs N]
+Usage: .venv/bin/python build_site.py [--jobs N] [--gate quality_gate.csv] [--generated DIR]
 
 Run quality_gate.py first. One page per dataset folder and one per episode folder, mirroring
 the repository layout. Media are small browser-friendly derivatives (H.264 yuv420p, long side
 <= 854 px, JPEG posters); full-resolution files are linked on GitHub. Derivatives newer than
-their sources are reused. Links are relative, so the site works from disk and from
+their sources are reused. With --generated DIR (the organized_by_generator layout:
+<generator>/<dataset>/NN_<name>.mp4, json/, prompts.csv) every dataset also gets one subpage per generator;
+without it, generator pages already in site/ are kept. Links are relative, so the site works from disk and from
 https://wilsonnijc-bot.github.io/robot_object_deformation_detect/robotvideo/.
 """
 import argparse
@@ -60,6 +62,16 @@ DATASETS = {
         blurb="Two-handed stacking: the left hand places the base object, then the right hand stacks on top. "
               "Admitted to the gate as a documented visual-review exception. Prompts follow humanoid_action_v1."),
 }
+# World-model generators with a subpage per dataset: <dataset>/<folder>/index.html. Folder names match the
+# <generator> folders of the organized_by_generator layout.
+GENERATORS = {
+    "cosmos2.5": dict(title="Cosmos 2.5", model="NVIDIA Cosmos-Predict2.5 2B (post-trained, Diffusers)", safety=True),
+    "cosmos3": dict(title="Cosmos 3", model="NVIDIA Cosmos 3 Nano", safety=True),
+    "abot_physworld": dict(title="ABot-PhysWorld", model="ABot-PhysWorld, a full fine-tune of Wan2.1-I2V-14B-480P",
+                           safety=False),
+}
+SAFETY_NOTE = ("The Cosmos safety-checker (guardrail) models were not installed, so these samples were generated "
+               "without them.")
 # Episodes shown on the site per dataset (first N in folder order); all remain in the repository.
 SITE_LIMIT = {"NVIDIA_GR1_100": 15}
 GATE_LABEL = {"pass": "Pass", "exception": "Exception", "fail": "Fail"}
@@ -136,9 +148,9 @@ def stills(png, outdir):
             c.save(out, "JPEG", quality=q, optimize=True, progressive=True)
 
 
-def collect():
+def collect(gate_csv):
     episodes = []
-    for row in csv.DictReader(open(ROOT / "metamanifest" / "quality_gate.csv")):
+    for row in csv.DictReader(open(gate_csv)):
         ds, folder = row["dataset"], row["folder"]
         png = ROOT / row["first_frame"]
         sel = png.parent
@@ -297,6 +309,113 @@ def write_exports(directory, eps):
         for e in eps:
             w.writerow([e["dataset"], e["folder"], e["prompt"] or "", e["full_prompt"] or "", e["publisher"] or "",
                         e["gate"]["gate"], e["gate"]["sharpness"], e["gate"]["threshold"]])
+
+
+def poster_from_video(clip, out):
+    if not stale(out, clip):
+        return
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(clip), "-frames:v", "1", "-vf",
+                    "scale='min(640,iw)':'min(640,ih)':force_original_aspect_ratio=decrease", "-q:v", "4", str(out)],
+                   check=True)
+
+
+def load_generated(root, episodes):
+    """Generated videos as {(dataset, generator): [item, ...]} in dataset order, each tied to its input episode."""
+    by_frame = {e["gate"]["first_frame"]: e for e in episodes}
+    found = {}
+    for gen in GENERATORS:
+        for ds in DATASETS:
+            ddir = root / gen / ds
+            if not ddir.is_dir():
+                continue
+            for row in csv.DictReader(open(ddir / "prompts.csv", encoding="utf-8")):
+                n = int(row["number"])
+                (mp4,) = ddir.glob(f"{n:02d}_*.mp4")
+                meta = json.loads((ddir / "json" / (mp4.stem + ".json")).read_text(encoding="utf-8"))
+                ep = by_frame.get(meta["source_frame"].split("/generation input/", 1)[1])
+                found.setdefault((ds, gen), []).append(dict(
+                    ds=ds, gen=gen, n=n, stem=mp4.stem, src=mp4, prompt=row["prompt"], meta=meta, episode=ep,
+                    out=SITE / ds / gen / f"{mp4.stem}.mp4", poster=SITE / ds / gen / f"{mp4.stem}.jpg"))
+    return found
+
+
+def build_generated_media(found, jobs):
+    items = [i for v in found.values() for i in v]
+    with ThreadPoolExecutor(jobs) as pool:
+        list(pool.map(lambda i: transcode(i["src"], i["out"]), items))
+        list(pool.map(lambda i: poster_from_video(i["out"], i["poster"]), items))
+    for (ds, gen), v in found.items():  # drop clips of videos that left the source layout
+        keep = {i["out"].name for i in v} | {i["poster"].name for i in v} | {"index.html"}
+        for f in (SITE / ds / gen).iterdir():
+            if f.name not in keep:
+                f.unlink()
+
+
+PENDING = set()  # (dataset, generator) pages written by this run, so every tab bar lists all of them
+
+
+def available_generators(ds):
+    return [g for g in GENERATORS if (ds, g) in PENDING or (SITE / ds / g / "index.html").exists()]
+
+
+def tabs(ds, current, base):
+    """Ground truth / generator switcher; base is the path from the current page to the dataset folder."""
+    links = [("", "Ground truth")] + [(g, GENERATORS[g]["title"]) for g in available_generators(ds)]
+    if len(links) == 1:
+        return ""
+    current_attr = ' aria-current="page"'
+    return '<nav class="tabs" aria-label="Video source">' + "".join(
+        f'<a href="{base}{g + "/" if g else ""}index.html"{current_attr if g == current else ""}>{esc(t)}</a>'
+        for g, t in links) + "</nav>"
+
+
+def generated_card(i, d):
+    ep = i["episode"]
+    text = i["prompt"].replace(CONSTRAINT, "").strip()
+    title = ep["title"] if ep else humanize(i["stem"].split("_", 1)[1])
+    href = quote(os.path.relpath(ep["page"], d)) + "/index.html" if ep else "#"
+    base = quote(i["stem"])
+    name = esc(i["stem"])
+    link = f'<a class="card__title" href="{href}">{esc(title)}</a>' if ep else f'<span class="card__title">{esc(title)}</span>'
+    return f"""<article class="card" data-gate="generated" data-text="{esc((title + ' ' + i['stem'] + ' ' + text).lower())}"
+ data-title="{esc(title)}" data-id="{name}" data-href="{href}" data-clip="{base}.mp4"
+ data-poster="{base}.jpg" data-prompt="{esc(i['prompt'])}" data-publisher="">
+<button type="button" class="card__img" aria-label="Play {esc(title)} generated by this model"><img src="{base}.jpg" alt="" loading="lazy"><span class="card__play" aria-hidden="true"></span></button>
+<span class="card__meta">{link}</span>
+<span class="card__id">{name}</span>
+<span class="card__text">{esc(text)}</span></article>"""
+
+
+def generator_page(ds, gen, items):
+    meta, g, d = DATASETS[ds], GENERATORS[gen], SITE / ds / gen
+    groups = {}
+    for i in items:
+        key = i["episode"]["folder"].split("/")[0] if i["episode"] and "/" in i["episode"]["folder"] else ""
+        groups.setdefault(key, []).append(i)
+    sections = []
+    for name, group in groups.items():
+        head = f'<h2 class="group__title">{esc(humanize(name))}<span>{esc(name)}</span></h2>' if name else ""
+        sections.append(f'<section class="group">{head}<div class="cards">{"".join(generated_card(i, d) for i in group)}</div></section>')
+    settings = Counter((i["meta"].get("frames"), i["meta"].get("fps"), i["meta"].get("steps"), i["meta"].get("guidance"),
+                        i["meta"].get("seed")) for i in items).most_common(1)[0][0]
+    frames, fps, steps, guidance, seed = settings
+    spec = f"{frames} frames at {fps} fps · {steps} steps · guidance {guidance} · seed {seed}"
+    body = f"""{tabs(ds, gen, "../")}
+<header class="intro">
+<p class="kicker">Generated · {esc(meta['title'])} · {esc(meta['view'])}</p>
+<h1>{esc(g['title'])}</h1>
+<p class="lede">{esc(g['model'])}. Each video is generated from the first frame and the action prompt of one ground-truth episode, one sample per input.</p>
+<dl class="specs"><dt>Videos</dt><dd>{len(items)}</dd><dt>Settings</dt><dd>{esc(spec)}</dd>
+<dt>Inputs</dt><dd><a href="../index.html">Ground truth · {esc(meta['title'])}</a></dd>
+{f'<dt>Safety</dt><dd>{esc(SAFETY_NOTE)}</dd>' if g['safety'] else ''}</dl>
+</header>
+<div class="toolbar" role="search"><div class="filters"><button type="button" data-filter="all" aria-pressed="true">All <span>{len(items)}</span></button></div>
+<input type="search" placeholder="Search prompts and folders" aria-label="Search videos"><output class="count" aria-live="polite"></output></div>
+{''.join(sections)}
+<p class="empty" hidden>No videos match. Clear the search.</p>
+{PLAYER.replace("Full annotation and files →", "Input episode: annotation and files →").replace("Action generation prompt", "Generation prompt")}"""
+    (d / "index.html").write_text(page(f"{g['title']} · {meta['title']} · Robotvideo", "../../", body,
+                                       [("All datasets", "../../index.html"), (meta["title"], "../index.html")]))
 
 
 def chip(gate):
@@ -458,8 +577,9 @@ def dataset_page(ds, eps, total):
     c = Counter(e["gate"]["gate"] for e in eps)
     filters = "".join(f'<button type="button" data-filter="{g}" aria-pressed="false">{GATE_LABEL[g]} <span>{c[g]}</span></button>'
                       for g in GATE_LABEL if c[g])
-    body = f"""<header class="intro">
-<p class="kicker">{esc(meta['view'])} · {esc(meta['robot'])}</p>
+    switcher = tabs(ds, "", "")
+    body = f"""{switcher}<header class="intro">
+<p class="kicker">{"Ground truth · " if switcher else ""}{esc(meta['view'])} · {esc(meta['robot'])}</p>
 <h1>{esc(meta['title'])}</h1>
 <p class="lede">{esc(meta['blurb'])}</p>
 <dl class="specs"><dt>Episodes</dt><dd>{len(eps) if total == len(eps) else f"{len(eps)} shown of {total}; all {total} are in the repository folder"}</dd><dt>Gate</dt><dd>{gate_summary(eps)}</dd>
@@ -472,7 +592,8 @@ def dataset_page(ds, eps, total):
 {''.join(sections)}
 <p class="empty" hidden>No episodes match. Clear the search or choose another gate filter.</p>
 {PLAYER}"""
-    (d / "index.html").write_text(page(f"{meta['title']} · Robotvideo", "../", body, [("All datasets", "../index.html")]))
+    (d / "index.html").write_text(page(f"{meta['title']} · {'Ground truth · ' if switcher else ''}Robotvideo", "../", body,
+                                       [("All datasets", "../index.html")]))
 
 
 def index_page(by_ds, totals):
@@ -502,8 +623,10 @@ conditioning frame: third-person at least 120, first-person at least 60.</p>
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--gate", type=Path, default=ROOT / "metamanifest" / "quality_gate.csv")
+    ap.add_argument("--generated", type=Path, help="organized_by_generator folder; builds the generator subpages")
     args = ap.parse_args()
-    episodes = collect()
+    episodes = collect(args.gate)
     totals = Counter(e["dataset"] for e in episodes)
     everything = episodes
     episodes = [e for ds in DATASETS for e in [x for x in episodes if x["dataset"] == ds][:SITE_LIMIT.get(ds)]]
@@ -513,11 +636,19 @@ def main():
     keep = {e["page"] for e in episodes}
     for ds in DATASETS:
         for idx in list((SITE / ds).rglob("index.html")) if (SITE / ds).exists() else []:
-            if idx.parent != SITE / ds and idx.parent not in keep and idx.parent.exists():
+            if (idx.parent != SITE / ds and idx.parent not in keep and idx.parent.exists()
+                    and idx.parent.relative_to(SITE / ds).parts[0] not in GENERATORS):
                 shutil.rmtree(idx.parent)
     for stale_ds in (p for p in SITE.iterdir() if p.is_dir() and p.name not in DATASETS and p.name != "assets") if SITE.exists() else []:
         shutil.rmtree(stale_ds)
     build_media(episodes, args.jobs)
+    generated = load_generated(args.generated, episodes) if args.generated else {}
+    PENDING.update(generated)
+    for (ds, gen), items in generated.items():
+        (SITE / ds / gen).mkdir(parents=True, exist_ok=True)
+    build_generated_media(generated, args.jobs)
+    for (ds, gen), items in generated.items():
+        generator_page(ds, gen, items)
     by_ds = {ds: [e for e in episodes if e["dataset"] == ds] for ds in DATASETS if any(e["dataset"] == ds for e in episodes)}
     for eps in by_ds.values():
         for i, e in enumerate(eps):
@@ -529,7 +660,10 @@ def main():
     index_page(by_ds, totals)
     (SITE / ".nojekyll").touch()
     size = sum(p.stat().st_size for p in SITE.rglob("*") if p.is_file())
-    print(f"{len(episodes)} episode pages, {len(by_ds)} dataset pages, {size / 1e6:.1f} MB -> {SITE}")
+    unlinked = [i["stem"] for v in generated.values() for i in v if i["episode"] is None]
+    print(f"{len(episodes)} episode pages, {len(by_ds)} dataset pages, {len(generated)} generator pages "
+          f"({sum(len(v) for v in generated.values())} videos, {len(unlinked)} without an input episode), "
+          f"{size / 1e6:.1f} MB -> {SITE}")
 
 
 if __name__ == "__main__":
