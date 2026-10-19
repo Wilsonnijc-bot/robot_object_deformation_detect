@@ -1,0 +1,225 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "cable_clip",
+  "episode_id": "episode_002159",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_002159.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 632,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "source_fps": 20,
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 632,
+  "selected_frame_count": 632,
+  "selection_reason": "The episode is one continuous single task: raise the loose cable, seat it in the holder on the white block, make repeated seating adjustments, and withdraw. The approach, initial lift, corrective presses, brief block displacement and nudge, and final withdrawal are ordinary phases of that task, so the complete 632-frame sequence is retained without a shortened clip or first_substep branch.",
+  "usable_prompt": "The robotic arm lifts the black cable and presses it into the black holder on the white block with repeated downward adjustments, then withdraws, leaving the cable seated in the holder. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm lifts the black cable and presses it into the black holder on the white block with repeated downward adjustments, then withdraws, leaving the cable seated in the holder. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed",
+    "description": "The cable starts loose on the mat with the holder empty. The arm raises its middle section, brings it to the black holder, and makes several downward seating adjustments. During a later adjustment the white block briefly slides and tilts toward image right, then is nudged back upright. After the final release around frames 578-584 and through terminal frame 631, the cable remains seated across the holder and the white block remains upright. No dropped cable or incomplete terminal state is visible."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed",
+    "source_quality_label": "successful",
+    "source_quality_label_basis": "Publisher metadata records success=1 and success_class=successful; this label is retained separately from the independent visual assessment.",
+    "description": "The complete source ends with the cable retained in the holder on the upright white block. The visible outcome is consistent with, but was not inferred from, the publisher's successful label."
+  },
+  "anatomical_side_evidence": {
+    "visible_description": "One SO-101 arm enters from image left and uses its gripper to manipulate the cable and holder. No other arm or person participates.",
+    "visual_certainty": "This is a single robotic arm, not a humanoid; robot-relative left/right anatomy is not needed."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The single SO-101 arm establishes contact with the loose cable, raises and repositions it, presses it into the holder through repeated adjustments, nudges the briefly displaced white block back upright, and finally withdraws.",
+    "other_arm": "None."
+  },
+  "coordination": "The single arm acts alone. There is no second-arm coordination, handover, or human interaction; the cable and white block are passive objects.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        62
+      ],
+      "observation": "The arm is nearly stationary above the loose black cable. The cable lies in a shallow curve on the mat in front of and to the left of the white block; the black holder on top of the block is empty."
+    },
+    {
+      "source_frames_inclusive": [
+        63,
+        95
+      ],
+      "observation": "The arm lifts and reorients its gripper, then brings the gripper tip down to the cable to the left of the white block. By frames 80-96 the gripper is positioned directly at the cable."
+    },
+    {
+      "source_frames_inclusive": [
+        96,
+        125
+      ],
+      "observation": "The gripper makes contact with the cable and begins raising its middle section. The cable changes from lying flat on the mat to a rising curve; the coiled section and visible connector remain on the mat at image left."
+    },
+    {
+      "source_frames_inclusive": [
+        126,
+        188
+      ],
+      "observation": "The arm raises the cable into a broad arc and carries the held/contacted section toward the white block. The gripper remains at the cable while the left coil stays on the mat."
+    },
+    {
+      "source_frames_inclusive": [
+        189,
+        287
+      ],
+      "observation": "The arm slowly moves and aligns the arced cable with the black holder, making small position adjustments. By frame 288 the cable lies across the holder region with the gripper immediately above it."
+    },
+    {
+      "source_frames_inclusive": [
+        288,
+        307
+      ],
+      "observation": "The gripper presses downward at the cable and holder for the first clear seating pass. It then lifts away; native frames 307 and 309 show the gripper above the holder while the cable remains across the holder rather than falling back to the mat."
+    },
+    {
+      "source_frames_inclusive": [
+        308,
+        369
+      ],
+      "observation": "The arm hovers and repositions above the holder with small movements. The cable stays in place across the holder and the white block remains upright."
+    },
+    {
+      "source_frames_inclusive": [
+        370,
+        389
+      ],
+      "observation": "The gripper renews downward contact at the cable/holder for another seating adjustment. At frame 390 it has lifted clear again, with the cable still retained across the holder."
+    },
+    {
+      "source_frames_inclusive": [
+        390,
+        457
+      ],
+      "observation": "The arm returns toward the holder and continues small downward seating and alignment adjustments. The cable remains across the holder; the white block is still upright at the start of this interval."
+    },
+    {
+      "source_frames_inclusive": [
+        458,
+        477
+      ],
+      "observation": "Continued contact at the holder displaces the white block toward image right and makes it lean. The gripper then disengages from the holder and moves to the block's left; the cable remains across the holder throughout the visible displacement."
+    },
+    {
+      "source_frames_inclusive": [
+        478,
+        491
+      ],
+      "observation": "The gripper contacts the left side of the displaced white block and nudges it back toward an upright, more centered posture. The holder and cable move with the block and remain together."
+    },
+    {
+      "source_frames_inclusive": [
+        492,
+        567
+      ],
+      "observation": "The arm resumes a final small adjustment at the holder, then lifts and hovers above it. The block is upright again and the cable remains seated; no new object or independent subtask appears."
+    },
+    {
+      "source_frames_inclusive": [
+        568,
+        577
+      ],
+      "observation": "The gripper lowers for a final downward press at the holder. Native frames 568, 572, and 576 show contact at the holder, and frame 578 shows the gripper lifted clear with the cable still in place."
+    },
+    {
+      "source_frames_inclusive": [
+        578,
+        631
+      ],
+      "observation": "The arm withdraws upward and toward image left, becoming clear of the holder by about frame 584 and returning toward the left cable coil. At terminal frame 631 the white block is upright and the cable remains seated across the black holder."
+    }
+  ],
+  "uncertainties": [
+    "The holder's front face and the gripper occlude the exact internal cable/latch engagement. The outcome is described as seated in or across the holder because the cable visibly occupies the holder region and remains there after repeated releases and final withdrawal.",
+    "The exact jaw-versus-outer-finger contact during the initial cable lift is partly occluded. The prompt therefore says that the arm lifts and presses the cable without asserting a precise grasp point or gripper aperture change.",
+    "Frames around the block displacement include motion blur. The block visibly shifts and tilts, then is upright again; no stronger claim about a topple, slip, or internal holder mechanism is made.",
+    "The publisher identifies the cable as DisplayPort. The front view clearly establishes the target as a black cable but does not independently establish the connector standard with equal certainty, so the usable prompt uses the appearance-based description 'black cable'."
+  ],
+  "source_annotation_discrepancies": [
+    "No task-level discrepancy: original/task_prompt.txt says 'Push the Displayport cable into the cable holder on the white block', matching the observed cable-seating task and target block. The terse annotation omits the visible initial lift, repeated seating presses, brief block displacement and corrective nudge, and final withdrawal; those observed details are recorded here.",
+    "The usable prompt uses 'black cable' rather than relying on the publisher's more specific connector-type wording, but this is an appearance-based naming choice rather than a conflicting task annotation."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "sampling_stride": 2,
+    "sampled_decoded_frame_range_inclusive": [
+      0,
+      630
+    ],
+    "sampled_decoded_frame_count": 316,
+    "sampling_method": "Twenty temporary 4x4 contact sheets covered every second decoded frame (all even source indices 0-630) across the complete 632-frame front-camera sequence. The remaining odd frames were also decoded so transitions and terminal frame 631 could be checked without sampling gaps.",
+    "native_resolution_frame_indices": [
+      0,
+      64,
+      80,
+      96,
+      100,
+      110,
+      120,
+      126,
+      130,
+      158,
+      188,
+      288,
+      290,
+      292,
+      294,
+      306,
+      307,
+      309,
+      370,
+      372,
+      374,
+      380,
+      388,
+      390,
+      458,
+      460,
+      462,
+      466,
+      470,
+      474,
+      476,
+      477,
+      478,
+      480,
+      484,
+      488,
+      492,
+      496,
+      568,
+      572,
+      576,
+      578,
+      580,
+      584,
+      630,
+      631
+    ],
+    "native_resolution_inspection_note": "Full frames and native-resolution crops were used for the initial cable contact and lift, every holder-contact phase, releases around frames 307-309, 390, and 578-584, the block displacement/nudge around frames 458-496, and terminal frames 630-631.",
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png": "../first_frame.png",
+    "conditioning_png_pixel_matches_source_frame_0": true,
+    "temporary_evidence_location": "/tmp/armnet_review_episode_002159.9OC0QK (deleted after review; not a dataset artifact)",
+    "temporary_images_deleted": true,
+    "ancillary_camera_videos_used": false,
+    "telemetry_used": false
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 632,
+    "frame_count": 632,
+    "generation_video_is_source": true,
+    "source_video_retained_unchanged": true,
+    "generation_input_video_copy_created": false,
+    "conditioning_png_unchanged": true
+  }
+}

@@ -14,6 +14,16 @@ ActionNet,01JMCB8Z194OS4IEC5,first_person,1280,800,1280x704,1.0,410.6,60,pass,Ac
 ActionNet,01JN0Y324H2ZFDTSYD,first_person,1280,800,1280x704,1.0,486.7,60,pass,ActionNet/01JN0Y324H2ZFDTSYD/generation input/first_frame.png
 ActionNet,01JN0YDDF5ZYHXSSFO,first_person,1280,800,1280x704,1.0,511.1,60,pass,ActionNet/01JN0YDDF5ZYHXSSFO/generation input/first_frame.png
 ActionNet,01JN0YMV54BPXU4PLB,first_person,1280,800,1280x704,1.0,530.4,60,pass,ActionNet/01JN0YMV54BPXU4PLB/generation input/first_frame.png
+ArmnetBench_SO101,block_stack/episode_000560,third_person,1024,576,1280x704,1.25,18.9,120,fail,ArmnetBench_SO101/block_stack/episode_000560/generation input/first_frame.png
+ArmnetBench_SO101,block_stack/episode_000561,third_person,1024,576,1280x704,1.25,23.8,120,fail,ArmnetBench_SO101/block_stack/episode_000561/generation input/first_frame.png
+ArmnetBench_SO101,cable_clip/episode_002159,third_person,1024,576,1280x704,1.25,61.8,120,fail,ArmnetBench_SO101/cable_clip/episode_002159/generation input/first_frame.png
+ArmnetBench_SO101,cable_unclip/episode_002449,third_person,1024,576,1280x704,1.25,69.5,120,fail,ArmnetBench_SO101/cable_unclip/episode_002449/generation input/first_frame.png
+ArmnetBench_SO101,eye_drops_to_basket/episode_001839,third_person,1024,576,1280x704,1.25,53.9,120,fail,ArmnetBench_SO101/eye_drops_to_basket/episode_001839/generation input/first_frame.png
+ArmnetBench_SO101,eye_drops_to_shelf/episode_001549,third_person,1024,576,1280x704,1.25,44.3,120,fail,ArmnetBench_SO101/eye_drops_to_shelf/episode_001549/generation input/first_frame.png
+ArmnetBench_SO101,ring_insert/episode_000255,third_person,1024,576,1280x704,1.25,23.1,120,fail,ArmnetBench_SO101/ring_insert/episode_000255/generation input/first_frame.png
+ArmnetBench_SO101,ring_insert/episode_000256,third_person,1024,576,1280x704,1.25,25.3,120,fail,ArmnetBench_SO101/ring_insert/episode_000256/generation input/first_frame.png
+ArmnetBench_SO101,tool_insert/episode_000910,third_person,1024,576,1280x704,1.25,30.2,120,fail,ArmnetBench_SO101/tool_insert/episode_000910/generation input/first_frame.png
+ArmnetBench_SO101,tool_removal/episode_001200,third_person,1024,576,1280x704,1.25,24.8,120,fail,ArmnetBench_SO101/tool_removal/episode_001200/generation input/first_frame.png
 Humanoid_Everyday,articulated-1__rotate_chair,third_person,720,1280,704x1280,1.0,239.4,120,pass,Humanoid_Everyday/articulated-1__rotate_chair/third_person/generation input/first_frame.png
 Humanoid_Everyday,articulated-2__compress_liquid_hand_soap,third_person,720,1280,704x1280,1.0,139.0,120,pass,Humanoid_Everyday/articulated-2__compress_liquid_hand_soap/third_person/generation input/first_frame.png
 Humanoid_Everyday,articulated-3__unfold_multimeter_stand,third_person,720,1280,704x1280,1.0,147.9,120,pass,Humanoid_Everyday/articulated-3__unfold_multimeter_stand/third_person/generation input/first_frame.png

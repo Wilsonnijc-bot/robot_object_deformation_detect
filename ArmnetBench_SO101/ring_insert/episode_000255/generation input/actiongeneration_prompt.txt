@@ -1,0 +1,1 @@
+The robotic arm picks up the yellow ring and places it over the central wooden peg, releasing it so it slides down and rests around the peg on the round base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

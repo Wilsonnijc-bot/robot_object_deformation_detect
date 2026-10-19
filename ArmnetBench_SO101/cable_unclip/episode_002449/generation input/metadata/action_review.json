@@ -1,0 +1,287 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "cable_unclip",
+  "episode_id": "episode_002449",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_002449.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 241,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "source_fps": 20,
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 241,
+  "selected_frame_count": 241,
+  "selection_reason": "The episode is one continuous single task: remove the power cable from its holder and leave it loose on the mat. The approach, unclipping pull, cable and adapter settling, release, and withdrawal are ordinary phases of that same task, so the complete unchanged 241-frame front-camera sequence is retained without trimming or a first_substep branch.",
+  "usable_prompt": "The robotic arm grasps the power cable connected to the black adapter, pulls it free from the white cable holder, and releases it loose on the mat with the adapter upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm grasps the power cable connected to the black adapter, pulls it free from the white cable holder, and releases it loose on the mat with the adapter upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed",
+    "description": "The single arm grasps the adapter's power cable at the white stand's black clip, pulls the cable clear of the clip (about frames 100-113), and continues pulling as the attached black adapter shifts and tips (about 114-133). The arm then lowers the cable onto the mat, the adapter settles upright, and the jaws open and lift away (about 174-190). At frame 240 the holder clip is empty, the cable lies loose across the mat, and the adapter remains upright beside the holder. No missed grasp, dropped cable, or incomplete re-clipped end state is visible."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed",
+    "publisher_label": "successful",
+    "publisher_success_value": 1,
+    "description": "Independent visual review finds the complete task visibly finished: the cable is out of the holder and loose on the mat at the end. The publisher separately labels the episode successful; that label was not treated as visual evidence."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The single SO-101 arm performs the only manipulation: it positions its parallel-jaw gripper over the cable, closes on the cable beside the holder clip, pulls the cable free, lowers it onto the mat, releases it, and withdraws.",
+    "other_arm": "None."
+  },
+  "coordination": "One arm acts alone. There is no second arm, bimanual support, hand-to-hand transfer, or human interaction; the black adapter moves only because it is attached to the pulled cable.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        39
+      ],
+      "observation": "The arm begins with its gripper low near the black adapter, then lifts and repositions toward the white cable holder. The cable arrangement and adapter remain stationary."
+    },
+    {
+      "source_frames_inclusive": [
+        40,
+        69
+      ],
+      "observation": "The arm moves above the holder with the jaws open and makes small approach adjustments. By about frame 70 the open gripper straddles the cable next to the black clip on top of the white stand."
+    },
+    {
+      "source_frames_inclusive": [
+        70,
+        99
+      ],
+      "observation": "The gripper descends around the cable adjacent to the clip and closes on it. The jaws remain at the cable by frames 90-99; the adapter is still stationary and the holder remains fixed."
+    },
+    {
+      "source_frames_inclusive": [
+        100,
+        113
+      ],
+      "observation": "The closed gripper raises the cable and pulls it free from the holder clip. A raised cable loop is visible by frames 104-113, with the clip no longer holding the cable; the attached adapter begins to shift near the end of this interval."
+    },
+    {
+      "source_frames_inclusive": [
+        114,
+        133
+      ],
+      "observation": "The arm continues pulling the held cable upward and toward image right. Tension drags the attached black adapter rightward and tips it onto a side, while the white holder stays in place and empty."
+    },
+    {
+      "source_frames_inclusive": [
+        134,
+        153
+      ],
+      "observation": "The arm moves the held cable downward and back toward image left. A long loose span and the cable's free connector become visible on the left, and the adapter begins returning from its tilted position."
+    },
+    {
+      "source_frames_inclusive": [
+        154,
+        173
+      ],
+      "observation": "The gripper lowers the cable onto the mat in front of the white holder. The attached adapter settles upright, and the cable forms a loose curve between the left side of the mat and the adapter; the jaws are still close to the cable."
+    },
+    {
+      "source_frames_inclusive": [
+        174,
+        190
+      ],
+      "observation": "The jaws open and the arm lifts clear, visibly separated from the cable by about frames 180-184. The released cable stays loose on the mat, the clip stays empty, and the adapter stays upright."
+    },
+    {
+      "source_frames_inclusive": [
+        191,
+        240
+      ],
+      "observation": "The arm withdraws upward and then returns toward its initial image-left pose without re-engaging the cable. The terminal frame shows the empty holder, loose cable on the mat, and upright black adapter."
+    }
+  ],
+  "uncertainties": [
+    "The cable, gripper, and holder clip are all dark and small in the front view. The exact first frame in which the cable clears the clip is partly occluded, so the unclipping transition is bracketed at about frames 100-113 rather than assigned to one exact frame.",
+    "The exact jaw-release instant is similarly difficult to isolate against the dark mat; opening and separation are clear across about frames 174-184.",
+    "The white stand and the black clip on its top are referred to together as the white cable holder. The prompt does not infer any hidden latch mechanism."
+  ],
+  "source_annotation_discrepancies": [
+    "No action discrepancy: original/task_prompt.txt says 'Remove the power cable from cable holder', matching the observed unclipping. The annotation omits the visible secondary adapter tipping and settling and the final loose-cable placement, which the visual review records separately.",
+    "The publisher's successful label agrees with the visible terminal state but is retained as publisher metadata, not used as a substitute for inspection."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "decoded_frame_count": 241,
+    "sampling_stride": 2,
+    "sampled_decoded_frame_indices": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240
+    ],
+    "sampling_method": "All 241 frames were decoded to temporary native-resolution PNGs. Every second decoded frame from 0 through 240 was viewed in 11 temporary 4x3 contact sheets covering the complete sequence; native full frames and native crops were then inspected at approach, grasp, unclipping, adapter tipping and settling, release, and the terminal state.",
+    "contact_sheet_count": 11,
+    "native_resolution_frame_indices": [
+      0,
+      70,
+      80,
+      90,
+      96,
+      100,
+      104,
+      110,
+      114,
+      120,
+      124,
+      134,
+      144,
+      154,
+      164,
+      168,
+      172,
+      174,
+      176,
+      180,
+      184,
+      194,
+      214,
+      240
+    ],
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png_native_resolution_inspected": true,
+    "conditioning_png": "../first_frame.png",
+    "conditioning_png_matches_decoded_source_frame_0": true,
+    "conditioning_png_sha256": "10cadb9d24db6ec70fdc395ecd4040ec9e6d377beafb7ea903b505d6ae8b1ed6",
+    "temporary_evidence_location": "/tmp/armnet_so101_episode_002449_review.1eHf30 (deleted after review)",
+    "temporary_images_deleted": true,
+    "ancillary_camera_videos_used": false
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 241,
+    "frame_count": 241,
+    "fps": 20,
+    "resolution": [
+      1024,
+      576
+    ],
+    "generation_video_is_source": true,
+    "original_source_mp4_retained_unchanged": true,
+    "first_frame_png_retained_unchanged": true
+  }
+}

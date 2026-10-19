@@ -93,6 +93,8 @@ def view_of(dataset, folder):
         return "third_person"
     if dataset == "RoboMIND" and folder.startswith("franka_"):
         return "third_person"
+    if dataset == "ArmnetBench_SO101":  # fixed external `front` camera
+        return "third_person"
     return "first_person"
 
 

@@ -1,0 +1,1 @@
+The robotic arm lifts the black cable and presses it into the black holder on the white block with repeated downward adjustments, then withdraws, leaving the cable seated in the holder. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

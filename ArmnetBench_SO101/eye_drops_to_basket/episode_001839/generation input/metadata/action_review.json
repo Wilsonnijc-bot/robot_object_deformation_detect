@@ -1,0 +1,150 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "eye_drops_to_basket",
+  "episode_id": "episode_001839",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_001839.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 242,
+  "source_fps": 20,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 242,
+  "selected_frame_count": 242,
+  "selection_reason": "The episode is one continuous single task: pick up the eye-drops box and put it into the basket. Initial positioning, grasp, lift, transport, release and the post-release arm return are ordinary phases of that task, so the complete unchanged 242-frame front-camera sequence is retained with no shortened branch.",
+  "usable_prompt": "The robotic arm picks up the blue-and-white eye-drops box from the white stand and places it into the white basket, leaving the box lying on its side inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm picks up the blue-and-white eye-drops box from the white stand and places it into the white basket, leaving the box lying on its side inside. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed",
+    "description": "The arm grasps the blue-and-white box labeled 'Eye Drops' on the white stand, lifts it clear by about frame 130, and carries it left to the white basket. It lowers the box into the basket and releases it between frames 171 and 172; the box tips onto its side inside the basket rather than remaining upright. It is still inside the basket in the terminal frame 241, with no visible drop outside or placement beside the target."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed",
+    "publisher_label": "successful",
+    "publisher_success_value": 1,
+    "description": "The complete clip visibly ends with the eye-drops box lying on its side inside the basket. This visual assessment is independent of the publisher's whole-rollout teleoperated 'successful' label."
+  },
+  "anatomical_side_evidence": {
+    "visible_description": "A single SO-101 arm with a two-finger gripper is mounted to image left. It reaches from the left over the stand and basket; no other robot arm or person participates.",
+    "source_annotation": "original/task_prompt.txt: 'Put the eye drops into the basket'.",
+    "visual_certainty": "This is one SO-101 arm, so humanoid left/right anatomy is not needed. The prompt refers only to the single robotic arm."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The single arm positions its gripper above the box, closes the fingers around it, lifts and transports it to the basket, opens the gripper to release it, and withdraws without further object contact.",
+    "other_arm": "None."
+  },
+  "coordination": "One arm performs the entire pick-and-place alone; there is no second arm, handoff or human interaction.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        54
+      ],
+      "observation": "The eye-drops box stands upright on the raised white stand and the white basket to its left is empty. The arm remains near its starting pose on image left with no object contact."
+    },
+    {
+      "source_frames_inclusive": [
+        56,
+        106
+      ],
+      "observation": "The arm lifts and repositions its open gripper above the eye-drops box. The box remains on the stand and the basket remains empty."
+    },
+    {
+      "source_frames_inclusive": [
+        108,
+        128
+      ],
+      "observation": "The gripper descends around the box (frames 108-120) and closes on it; by frames 124-128 the fingers bracket the box securely. The box has not yet been lifted clear."
+    },
+    {
+      "source_frames_inclusive": [
+        130,
+        136
+      ],
+      "observation": "The arm raises the grasped box clear of the stand, whose top is empty by frame 130, and begins carrying it upward and toward image left."
+    },
+    {
+      "source_frames_inclusive": [
+        138,
+        160
+      ],
+      "observation": "The box remains between the closed gripper fingers during transport across the upper part of the view toward the basket. By frame 160 it is above the basket interior."
+    },
+    {
+      "source_frames_inclusive": [
+        162,
+        171
+      ],
+      "observation": "The arm lowers the box into the basket. At frame 171 the gripper is still around the box inside the basket, with the box roughly upright while held."
+    },
+    {
+      "source_frames_inclusive": [
+        172,
+        182
+      ],
+      "observation": "The gripper opens and releases the box between frames 171 and 172. The box tips and settles on its side inside the basket; the open gripper hovers briefly and then rises clear without moving the box out."
+    },
+    {
+      "source_frames_inclusive": [
+        184,
+        208
+      ],
+      "observation": "The arm withdraws upward and out of the central view. The box remains lying inside the basket, clearly visible in the unobstructed views around frames 190 and 198."
+    },
+    {
+      "source_frames_inclusive": [
+        210,
+        241
+      ],
+      "observation": "The arm returns toward its initial image-left pose without contacting the box or basket. The box remains in the basket through terminal frame 241, although the arm and basket wall partially occlude it near the end."
+    }
+  ],
+  "uncertainties": [
+    "The exact instant of initial finger closure is partly hidden by the dark gripper; a secure grasp is visible by frames 124-128.",
+    "The release is localized between adjacent frames 171 and 172, when the held upright box becomes free and tips onto its side.",
+    "The transparent basket walls and the returning arm partially occlude the box in some late frames, but its presence inside the basket is visible and there is no visible ejection or later contact."
+  ],
+  "source_annotation_discrepancies": [
+    "No task discrepancy: original/task_prompt.txt says 'Put the eye drops into the basket', matching the observed pick-and-place. Visual review adds that the target is a blue-and-white box labeled 'Eye Drops' and that its actual final orientation is lying on its side inside the basket; the publisher's successful label was not used as evidence."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "sampled_decoded_frame_range_inclusive": [
+      0,
+      240
+    ],
+    "sampling_stride": 2,
+    "sampled_frame_count": 121,
+    "sampling_method": "Every second decoded front-camera frame from 0 through 240 was assembled into 14 temporary 3x3 contact sheets covering the whole sequence. Terminal frame 241 and key action transitions were also decoded and inspected separately.",
+    "native_resolution_frame_indices": [
+      126,
+      130,
+      160,
+      171,
+      172,
+      241
+    ],
+    "native_resolution_inspection": "Full-resolution 1024x576 views verified the secure grasp (126), lift clear of the stand (130), transport above the basket (160), placement while still held (171), released side-lying state (172), and terminal state (241). Additional extracted frames around the approach, release and withdrawal were inspected to establish the chronology.",
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png": "../first_frame.png",
+    "conditioning_png_native_resolution": true,
+    "conditioning_png_observation": "The initial front-camera PNG shows the labeled eye-drops box on the white stand and the empty white basket to its left, so both target and destination are identifiable without relying on the publisher caption.",
+    "temporary_evidence_location": "/tmp/armnet_so101_001839_review.1gFvHd (not a dataset artifact)",
+    "temporary_images_deleted": true,
+    "ancillary_camera_videos_used": false,
+    "telemetry_used": false
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 242,
+    "frame_count": 242,
+    "generation_video_is_source": true,
+    "source_video_retained_unchanged": true,
+    "video_copy_created": false,
+    "shortened_branch_created": false
+  }
+}

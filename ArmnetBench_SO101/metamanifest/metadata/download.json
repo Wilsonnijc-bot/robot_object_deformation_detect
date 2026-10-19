@@ -1,0 +1,187 @@
+{
+  "repository": "armnet/armnetbench_v01_lerobot_so101",
+  "revision": "1db69c82b589c7172ee31a6b8f7ef58d1fc2c663",
+  "members": {
+    "README.md": {
+      "size_bytes": 13006,
+      "sha256": "783c2d3adb2e9b58a242979cb46bb25944663c919a90a0c5aea5ef26748931e9",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "meta/info.json": {
+      "size_bytes": 4878,
+      "sha256": "2bba6714747f578d6d5afe0376e6dd001e59dcdd600f2d70d8cbdd98a74a8cab",
+      "verified_against": "x-linked-etag (git blob sha1)"
+    },
+    "meta/tasks.parquet": {
+      "size_bytes": 2534,
+      "sha256": "8c9c3638070217c2181bf47ff93fda69722c7386a75eb83465ba8280c93a752f",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "meta/episodes/chunk-000/file-000.parquet": {
+      "size_bytes": 3865933,
+      "sha256": "13500b8e45ec14536dfb2a4bbe29f1be70de7bae521db094c498bb6bcd710b45",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-013.parquet": {
+      "size_bytes": 168964,
+      "sha256": "21f6b9206c92107c9e3462b3d6dccc19d67ab04e961ab17beb7faa97340a3793",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-027.parquet": {
+      "size_bytes": 212543,
+      "sha256": "62c344620ea3cceaa62a46895fd542f1bbabc2c4f473f8bf5c218a0b423764b5",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-040.parquet": {
+      "size_bytes": 322466,
+      "sha256": "e1e9cc6db2e7c7a00789821d253401acf8c244af10429827af7d519e37cafbe3",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-052.parquet": {
+      "size_bytes": 268803,
+      "sha256": "0e20903bc14ac7927b3950421894ea3e3939b56c1719ded863b051ae71883918",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-066.parquet": {
+      "size_bytes": 335315,
+      "sha256": "4b4915599acc6a54133ae69526ca4145adf02e0dfc6fb365bcc1098e938d1810",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-078.parquet": {
+      "size_bytes": 120686,
+      "sha256": "fdcb70fcd5cb3ea1619c8d159eb3abc13804aaae5e5f0102c27fd5d67fc75a2b",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-095.parquet": {
+      "size_bytes": 63747,
+      "sha256": "0cb99deb90529b2e9510d0b3580312fa826b3aa82842e4522010d322059b346e",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "data/chunk-000/file-116.parquet": {
+      "size_bytes": 92894,
+      "sha256": "ac8818b6e5fa28de86c34ae209973e826fb1a0ab486f41142fcc4e4fa334c67c",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-013.mp4": {
+      "size_bytes": 70626467,
+      "sha256": "29138d1921afb7fcef126a24f1fd29d3492636e58f4f5b8280fe4637b70bc6bf",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-027.mp4": {
+      "size_bytes": 86122880,
+      "sha256": "cb09a7dd30e9aa1c633bd6399422fc2e206b67581ef0d0d058f74d4d0a511c94",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-047.mp4": {
+      "size_bytes": 184266424,
+      "sha256": "f4e4b3b30f1636303ba9c5f8218560fb2e6d89c97095b64a23c651ff6f3c4e5d",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-064.mp4": {
+      "size_bytes": 137108635,
+      "sha256": "215e0635a242869dda4edeac9645506b63d62d33d176ba7a912bfc604f052d84",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-079.mp4": {
+      "size_bytes": 164235644,
+      "sha256": "b5e8e4c4cb6846014dd47b8f1875695423545e729fead4ed19db52ce6c71327f",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-091.mp4": {
+      "size_bytes": 52594519,
+      "sha256": "0dc9959c3f3d7888866a92f03454076cddbf7cf57c9769c3fb4fbdf8d852cd54",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-117.mp4": {
+      "size_bytes": 28129871,
+      "sha256": "c5a7b9d3a27210901aeb142dbbc874af748c1020ed5cb40eb3fc8f6bf133f1a6",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.front/chunk-000/file-139.mp4": {
+      "size_bytes": 53595968,
+      "sha256": "b0f7c127e6944211f704d2cacfeeb0a10df2ae5f9b5848468dcd94259a9c54a4",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-016.mp4": {
+      "size_bytes": 91223941,
+      "sha256": "cb4eff251f46f04774a53c01fa0130be53067250a192cc87d7de65174e139274",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-034.mp4": {
+      "size_bytes": 116098571,
+      "sha256": "d75f7b0d9a696ca2e878db4ff469bbb2b50147483c5382cc5d161044364a3a21",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-059.mp4": {
+      "size_bytes": 207814228,
+      "sha256": "6cb35a7f6ce117be251501703f3f2288c78240fd7e3d49cc182e50af21300214",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-085.mp4": {
+      "size_bytes": 208180692,
+      "sha256": "2815351afb0a6cfd5b538a4ce6d7b89f240763aed291b3888ec963be1c3b8ba7",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-105.mp4": {
+      "size_bytes": 155966937,
+      "sha256": "8cfddf52872ff7518c23e5912f9b27782cdf31351d92ab22d7d73ba863c370c0",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-120.mp4": {
+      "size_bytes": 49804870,
+      "sha256": "5fa27929e390b4dd7c822b25b830f783dc33ff2e3d19cc99f44cf53eafc83189",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-154.mp4": {
+      "size_bytes": 24389016,
+      "sha256": "f45fe140d729b0d5262463feef6a7d606673aee515f404601be884086966267d",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.top/chunk-000/file-176.mp4": {
+      "size_bytes": 47891061,
+      "sha256": "ff755b8d2d5483e795eca416a27d5d807654cb3a9a8e07ad26802202cd742c97",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-014.mp4": {
+      "size_bytes": 86028152,
+      "sha256": "d152195bd34599a6bf4d8e912311dc88b36b91f33f1934d1c3d7186428a5289a",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-033.mp4": {
+      "size_bytes": 131084680,
+      "sha256": "48edfad54b86e8b45fbf8949f06110bf71558ffc1a44ca1563825a25128a270b",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-060.mp4": {
+      "size_bytes": 207904674,
+      "sha256": "afe7a5e6f4739043086635a7b636ec53b33d5e634542302cfce34c23a0d179d8",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-087.mp4": {
+      "size_bytes": 197462390,
+      "sha256": "fc46ce476bb300939053241d58f47a59937978feb0e89ee359c47feee112c9b8",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-109.mp4": {
+      "size_bytes": 186001763,
+      "sha256": "e42a495c67fa9bcb546c6f1ba2c445d80cfaed5c8ffba476820d04c3e5177124",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-124.mp4": {
+      "size_bytes": 56487572,
+      "sha256": "c09842194794d539bf89c66fb758c4bf01834f873eecb4736573ead49b5a9ab9",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-156.mp4": {
+      "size_bytes": 20987901,
+      "sha256": "c28b6c9f9b155e8043c7cbfc25915395325ad975d1f3eb9ed7047675c005e689",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    },
+    "videos/observation.images.wrist/chunk-000/file-179.mp4": {
+      "size_bytes": 40699414,
+      "sha256": "2f2a85a5d9c5c986d06c0026b0fba1bb921d2597f46233c4f67f311f90556e92",
+      "verified_against": "x-linked-etag (LFS sha256)"
+    }
+  },
+  "note": "Every file was verified against the Hub X-Linked-Etag (LFS SHA-256, or git blob SHA-1 for small files)."
+}

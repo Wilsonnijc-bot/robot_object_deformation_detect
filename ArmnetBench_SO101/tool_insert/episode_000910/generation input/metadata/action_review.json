@@ -1,0 +1,223 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "tool_insert",
+  "episode_id": "episode_000910",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_000910.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 608,
+  "source_fps": 20,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 608,
+  "selected_frame_count": 608,
+  "selection_reason": "The episode is one continuous single task: pick up the loose tool, place it at the empty toolbox slot, adjust and press it into that slot, and withdraw. The approach, initial placement, prolonged alignment and pressing adjustments, final insertion and withdrawal are ordinary phases of the same insertion rather than independent subtasks, so the complete unchanged 608-frame front-camera clip is retained with no first_substep branch or video derivative.",
+  "usable_prompt": "The robotic arm picks up the small silver tool from the mat, places it in the empty toolbox slot, and presses it down until seated before withdrawing. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm picks up the small silver tool from the mat, places it in the empty toolbox slot, and presses it down until seated before withdrawing. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed",
+    "description": "The single arm grasps the loose silver tool from the mat (about frames 120-139), lifts and transports it to the empty front-left toolbox recess, and lays it across that recess (about 140-249). It then makes repeated small alignment and pressing adjustments (about 250-509), followed by the final insertion push (about 510-529). A small silver end remains visible at frame 526 but is no longer visible above the recess by frame 530. The gripper stays briefly at the slot, then lifts away empty (about 554-560) and withdraws. In the terminal frames the tool remains recessed in the target slot, the mat is clear of the loose tool, and no drop or tool left outside the slot is visible."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed",
+    "description": "Same as the selected action because the complete clip is one insertion task: the visible sequence ends after insertion and withdrawal, with no visible drop or failed placement outside the toolbox.",
+    "publisher_label": {
+      "success": 1,
+      "success_class": "successful",
+      "policy_type": "teleoperated"
+    },
+    "publisher_label_note": "The publisher's whole-rollout successful label is preserved separately and was not used as evidence for the visual outcome."
+  },
+  "source_annotation": {
+    "path": "../../original/task_prompt.txt",
+    "text": "Insert the missing tool into the empty slot on the toolbox"
+  },
+  "anatomical_side_evidence": {
+    "visible_description": "One SO-101 arm with a two-finger gripper operates from the image-left side of the front-camera view. No other robot arm or human hand participates.",
+    "visual_certainty": "This is a single SO-101 arm, so humanoid left/right anatomical labeling is not applicable."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The sole SO-101 arm performs the grasp, lift, transport, initial placement, repeated alignment and pressing adjustments, final insertion, release and withdrawal.",
+    "other_arm": "None."
+  },
+  "coordination": "Single-arm manipulation only; there is no second arm, hand-to-hand transfer or human interaction. After the initial placement, the gripper repositions its fingers around the tool for nudges and presses rather than lifting it off the tray for a new transport phase.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        79
+      ],
+      "observation": "The small reflective silver tool lies loose on the mat in front of the toolbox, near the bottom-center of the image. The arm starts above the toolbox, then reorients and moves toward the camera and the loose tool; the tool remains on the mat."
+    },
+    {
+      "source_frames_inclusive": [
+        80,
+        139
+      ],
+      "observation": "The gripper descends toward the loose tool, becoming large in the foreground and partly occluding it. The fingers are positioned around the tool by about frames 120-130, and the tool is grasped and begins lifting by about frame 140."
+    },
+    {
+      "source_frames_inclusive": [
+        140,
+        209
+      ],
+      "observation": "The arm lifts the silver tool clear of the mat, rotates it into an approximately horizontal orientation and carries it to the empty front-left recess in the black toolbox insert. By frames 180-209 the tool is above and then at the target recess."
+    },
+    {
+      "source_frames_inclusive": [
+        210,
+        249
+      ],
+      "observation": "The gripper lowers and aligns the tool across the target recess. The fingers gradually open and the tool is left resting on the black insert; by about frame 250 the gripper is open above it rather than carrying it."
+    },
+    {
+      "source_frames_inclusive": [
+        250,
+        349
+      ],
+      "observation": "The silver tool remains supported by the toolbox surface while the gripper makes small open-finger adjustments around it. The fingertips nudge and rotate the tool toward better alignment with the recess; there is no return to the mat and no new transport of another object."
+    },
+    {
+      "source_frames_inclusive": [
+        350,
+        449
+      ],
+      "observation": "Repeated small finger repositionings and downward/lateral presses continue at the same slot. The tool changes angle and settles progressively into the recess, with its reflective body still visible above the black insert."
+    },
+    {
+      "source_frames_inclusive": [
+        450,
+        509
+      ],
+      "observation": "The arm keeps pressing and adjusting at the target. The visible silver portion becomes shorter as the tool is worked down into the slot; the gripper remains over the same location and no drop occurs."
+    },
+    {
+      "source_frames_inclusive": [
+        510,
+        529
+      ],
+      "observation": "Final insertion presses occur. Native-resolution frames 510, 514, 518, 522 and 526 show the last visible silver portion next to the fingertips; by frame 530 that silver portion is no longer visible above the recess."
+    },
+    {
+      "source_frames_inclusive": [
+        530,
+        553
+      ],
+      "observation": "The gripper remains at the slot for brief final contact/adjustment and release. The tool stays down in the recess; the exact finger-to-tool release instant is hidden by the dark fingers and slot."
+    },
+    {
+      "source_frames_inclusive": [
+        554,
+        560
+      ],
+      "observation": "The gripper lifts clear of the slot and is visibly empty. The tool is not carried away and remains recessed in the toolbox."
+    },
+    {
+      "source_frames_inclusive": [
+        561,
+        607
+      ],
+      "observation": "The arm withdraws upward and toward image left, ending near its initial pose. The toolbox remains stationary, the loose tool is absent from the mat, and the terminal frame shows no tool outside the target slot."
+    }
+  ],
+  "uncertainties": [
+    "The exact commercial tool type cannot be identified reliably from the reflective, low-resolution front view, so the prompt uses the appearance-based description 'small silver tool'.",
+    "The dark toolbox recess and the gripper occlude the final seating depth. The completed outcome is based on the visible final press, disappearance of the remaining silver end into the recess by about frame 530, the empty withdrawing gripper, and the absence of any visible drop or tool left on the mat.",
+    "The precise release instant within approximately frames 530-554 is not visually separable from the final contact and finger repositioning."
+  ],
+  "source_annotation_discrepancies": [
+    "No task or outcome discrepancy: the publisher instruction matches the observed tool insertion. Its wording is more general than the video and omits the tool's initial position on the mat, its silver appearance, and the prolonged alignment and pressing adjustments."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "sampling_method": "Every second decoded front-camera frame was reviewed in 16 temporary 5x4 contact sheets (20 sampled frames per full sheet, four images on the last sheet), covering the complete sequence. Native-resolution full frames and crops were then inspected at the grasp, placement, adjustment, insertion, release and terminal transitions; terminal odd frame 607 was inspected separately.",
+    "sampled_decoded_frame_range_inclusive": [
+      0,
+      606
+    ],
+    "sampling_stride": 2,
+    "sampled_decoded_frame_count": 304,
+    "contact_sheet_count": 16,
+    "native_resolution_frame_indices": [
+      0,
+      40,
+      80,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      210,
+      220,
+      230,
+      240,
+      250,
+      260,
+      270,
+      290,
+      300,
+      330,
+      350,
+      370,
+      400,
+      410,
+      430,
+      450,
+      470,
+      490,
+      500,
+      510,
+      514,
+      518,
+      520,
+      522,
+      526,
+      530,
+      532,
+      535,
+      536,
+      540,
+      544,
+      545,
+      548,
+      550,
+      552,
+      555,
+      556,
+      560,
+      580,
+      607
+    ],
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png": "../first_frame.png",
+    "conditioning_png_native_resolution_inspected": true,
+    "conditioning_png_matches_source_frame_0": true,
+    "temporary_evidence_location": "/tmp/armnet_tool_insert_000910_review.D2MLLd (temporary only, not a dataset artifact)",
+    "temporary_images_deleted": true,
+    "ancillary_camera_videos_used": false
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 608,
+    "frame_count": 608,
+    "decoded_frame_count_verified": 608,
+    "fps_rational": "20/1",
+    "resolution": [
+      1024,
+      576
+    ],
+    "complete_unchanged_source_mp4_used": true,
+    "generation_video_copy_created": false,
+    "first_substep_created": false
+  }
+}

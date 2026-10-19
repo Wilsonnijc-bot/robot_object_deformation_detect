@@ -1,0 +1,276 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "block_stack",
+  "episode_id": "episode_000560",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_000560.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 228,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "source_fps": 20,
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 228,
+  "selected_frame_count": 228,
+  "selection_reason": "The episode is one continuous single task: stack the green block on the purple block. The approach, grasp, lift, transport, placement, release and withdrawal are ordinary phases of that same task, so all 228 frames are retained as the complete unchanged generation reference; no shortened clip or first_substep branch is needed.",
+  "usable_prompt": "The robotic arm picks up the green block and stacks it on top of the purple block, then releases it, leaving the two-block stack standing. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm picks up the green block and stacks it on top of the purple block, then releases it, leaving the two-block stack standing. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed",
+    "description": "The arm grasps the green block, lifts it from the mat, carries it to the purple block and lowers it onto the purple block's top. The green block is seated by about frames 140-146, the gripper releases by about frame 156, and the green block remains on top through frame 227. No drop, miss or topple is visible."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed",
+    "description": "The complete source sequence ends with an upright two-block stack, green above purple, while the arm has withdrawn toward image left. The filmed outcome is successful independently of the publisher label."
+  },
+  "publisher_outcome_label": {
+    "success": 1,
+    "success_class": "successful",
+    "policy_type": "teleoperated",
+    "note": "Publisher annotation for the whole rollout, kept separate from the visual outcome assessment and not used to infer success."
+  },
+  "anatomical_side_evidence": {
+    "visible_description": "A single SO-101 arm with a parallel-jaw gripper enters from image left and performs the entire manipulation.",
+    "visual_certainty": "Only one arm is present; humanoid left/right anatomy is not applicable."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The single SO-101 arm positions its open gripper around the green block, closes on it, lifts and transports it, lowers it onto the stationary purple block, opens to release it, and withdraws.",
+    "other_arm": "None."
+  },
+  "coordination": "One arm acts alone. The purple block remains on the mat as the base while the green block is transferred; there is no second arm, hand-to-hand transfer or human interaction.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        47
+      ],
+      "observation": "The green and purple blocks begin separately on the mat, green to image left and purple to image right. The single arm is above and to the left with its gripper open, then begins a slow approach toward the green block; neither block moves."
+    },
+    {
+      "source_frames_inclusive": [
+        48,
+        65
+      ],
+      "observation": "The arm lowers and angles the open jaws toward the green block. By frames 58-64 the gripper is immediately above it, while the purple block remains stationary."
+    },
+    {
+      "source_frames_inclusive": [
+        66,
+        87
+      ],
+      "observation": "The gripper descends around the green block and closes on opposite sides. Native-resolution frame 70 shows the jaws enclosing the block; by frames 84-88 it is held in the closed gripper, initially still close to the mat."
+    },
+    {
+      "source_frames_inclusive": [
+        88,
+        109
+      ],
+      "observation": "The arm lifts the grasped green block clear of the mat, visible by frames 88-92, and raises it without dropping or regrasping. The purple block stays in place."
+    },
+    {
+      "source_frames_inclusive": [
+        110,
+        133
+      ],
+      "observation": "The arm carries the green block upward and toward image right, positioning it above the purple block. The green block remains clamped throughout the transfer."
+    },
+    {
+      "source_frames_inclusive": [
+        134,
+        145
+      ],
+      "observation": "The green block is lowered toward the purple block. It is just above the purple block around frames 134-138, makes top contact at about frame 140, and is seated green-over-purple while the gripper continues to hold it."
+    },
+    {
+      "source_frames_inclusive": [
+        146,
+        155
+      ],
+      "observation": "The arm briefly maintains its hold on the green block in the stacked position. The purple base remains upright and there is no visible slip or fall."
+    },
+    {
+      "source_frames_inclusive": [
+        156,
+        169
+      ],
+      "observation": "The jaws open and move clear of the green block, with release visible at native-resolution frame 156. The green block stays resting on the purple block as the gripper begins to withdraw."
+    },
+    {
+      "source_frames_inclusive": [
+        170,
+        191
+      ],
+      "observation": "The open gripper withdraws upward and toward image left. The two-block stack remains standing with no visible topple or displacement."
+    },
+    {
+      "source_frames_inclusive": [
+        192,
+        227
+      ],
+      "observation": "The arm continues retracting toward its initial side of the view. The final native-resolution frame 227 shows the green block still stacked squarely enough to remain supported on the purple block, with no further manipulation."
+    }
+  ],
+  "uncertainties": [
+    "The soft front-camera image and occlusion by the jaws make the exact finger-closing and first green-to-purple contact frames approximate; the grasp, lift, placement, release and final stacked state are clear.",
+    "Only the retained front camera was reviewed, so small face-alignment offsets on the occluded far sides of the blocks cannot be measured. This does not change the visible outcome: the green block remains supported on the purple block through frame 227."
+  ],
+  "source_annotation_discrepancies": [
+    "No material action discrepancy: original/task_prompt.txt says 'Stack the colouful blocks on top of each other', and the video shows the green block stacked on the purple block. The visual review makes the annotation more specific: exactly one placement creates one two-block stack, with no additional blocks or placements."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "sampled_decoded_frame_indices": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226
+    ],
+    "sampling_method": "Every second decoded frame (even frames 0-226) was reviewed in 10 temporary 4x3 contact sheets covering the complete 228-frame source; the odd terminal frame 227 and key contact transitions were also inspected at native resolution.",
+    "sampling_stride": 2,
+    "native_resolution_frame_indices": [
+      70,
+      88,
+      140,
+      156,
+      227
+    ],
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png": "../first_frame.png",
+    "conditioning_png_native_resolution": [
+      1024,
+      576
+    ],
+    "conditioning_png_matches_decoded_source_frame_0": true,
+    "ancillary_camera_videos_used": false,
+    "temporary_evidence_location": "/tmp/armnet560-review.Fq8DCk (unique temporary directory, not a dataset artifact)",
+    "temporary_images_deleted": true
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 228,
+    "frame_count": 228,
+    "source_video_decoding_validated": true,
+    "decoded_frame_count": 228,
+    "fps_rational": "20/1",
+    "resolution": [
+      1024,
+      576
+    ],
+    "generation_video_is_source": true,
+    "original_source_video_retained_unchanged": true,
+    "first_frame_pixels_match_decoded_source_frame_0": true
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "dataset": "armnet/armnetbench_v01_lerobot_so101",
+  "source_repository_commit": "1db69c82b589c7172ee31a6b8f7ef58d1fc2c663",
+  "license": "apache-2.0",
+  "task": "cable_clip",
+  "episode_id": "episode_002159",
+  "episode_index": 2159,
+  "robot_type": "so-101",
+  "fps": 20,
+  "source_annotation": {
+    "episode_index": 2159,
+    "tasks": [
+      "Push the Displayport cable into the cable holder on the white block"
+    ],
+    "length": 632,
+    "data/chunk_index": 0,
+    "data/file_index": 95,
+    "dataset_from_index": 989495,
+    "dataset_to_index": 990127,
+    "videos/observation.images.front/chunk_index": 0,
+    "videos/observation.images.front/file_index": 117,
+    "videos/observation.images.front/from_timestamp": 0.0,
+    "videos/observation.images.front/to_timestamp": 31.6,
+    "videos/observation.images.top/chunk_index": 0,
+    "videos/observation.images.top/file_index": 154,
+    "videos/observation.images.top/from_timestamp": 0.0,
+    "videos/observation.images.top/to_timestamp": 31.6,
+    "videos/observation.images.wrist/chunk_index": 0,
+    "videos/observation.images.wrist/file_index": 156,
+    "videos/observation.images.wrist/from_timestamp": 0.0,
+    "videos/observation.images.wrist/to_timestamp": 31.6,
+    "meta/episodes/chunk_index": 0,
+    "meta/episodes/file_index": 0,
+    "success": 1,
+    "success_class": "successful",
+    "policy_repo_id": "",
+    "policy_type": "teleoperated"
+  },
+  "outcome_label": {
+    "success": 1,
+    "success_class": "successful",
+    "policy_type": "teleoperated",
+    "policy_repo_id": ""
+  },
+  "outcome_label_note": "Publisher label for the whole rollout (teleoperated episodes are always successful); it is not a visual verification.",
+  "parquet": {
+    "path": "../data/chunk-000/episode_002159.parquet",
+    "size_bytes": 34879,
+    "sha256": "70258872dafa5c404a6a0bee8afe25cb13a1e24d1fffda8fe69d3caadba2dce0",
+    "rows": 632,
+    "source_shard": "data/chunk-000/file-095.parquet",
+    "source_shard_sha256": "0cb99deb90529b2e9510d0b3580312fa826b3aa82842e4522010d322059b346e"
+  },
+  "camera_videos": {
+    "front": {
+      "path": "../videos/chunk-000/observation.images.front/episode_002159.mp4",
+      "size_bytes": 53751660,
+      "sha256": "0cb90b1e6d048dfd09aa3f3f01bc59e666ea19a0686f70eaee5b848c14872f7f",
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 632,
+      "fps_rational": "20/1",
+      "resolution": {
+        "width": 1024,
+        "height": 576
+      },
+      "source_shard": "videos/observation.images.front/chunk-000/file-117.mp4",
+      "source_shard_sha256": "c5a7b9d3a27210901aeb142dbbc874af748c1020ed5cb40eb3fc8f6bf133f1a6",
+      "source_frame_start": 0,
+      "source_frame_end_exclusive": 632,
+      "encoding": "frame_accurate_lossless_h264_of_av1_shard"
+    }
+  },
+  "source_bytes_preserved": false,
+  "derivative_note": "The source packs many episodes per AV1 shard; these files are per-episode lossless cuts (Parquet rows copied unchanged). Frame checksums equal the shard decode.",
+  "camera_videos_note": "Only the front camera is retained; the top and wrist cameras were removed from this sample (still available in the source repository)."
+}

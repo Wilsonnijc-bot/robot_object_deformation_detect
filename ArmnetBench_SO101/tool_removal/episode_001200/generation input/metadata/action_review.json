@@ -1,0 +1,185 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "tool_removal",
+  "episode_id": "episode_001200",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_001200.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 389,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "source_fps": 20,
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 389,
+  "selected_frame_count": 389,
+  "selection_reason": "The complete 389-frame front-camera clip is one continuous tool-removal task: the approach, extraction, visible drop onto the toolbox, regrasp, transfer to the mat, release and withdrawal are phases of the same manipulation. The unchanged full sequence is retained, with no shortened clip, first_substep branch or separate generation video.",
+  "usable_prompt": "The robotic arm pulls the small middle extension bar out of the toolbox, regrasps it after it drops onto the toolbox, and places it on the mat in front of the toolbox. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm pulls the small middle extension bar out of the toolbox, regrasps it after it drops onto the toolbox, and places it on the mat in front of the toolbox. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed_with_intermediate_drop",
+    "description": "The small silver extension bar is pulled completely out of its middle foam slot. It comes out of the gripper and topples onto the top of the toolbox at about frames 255-257, then the empty gripper regrasps it and carries it over the front edge. By about frames 342-346 the bar is released onto the mat directly in front of the toolbox; it remains lying there through the final frame 388, and the target slot is empty."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed_with_intermediate_drop",
+    "publisher_label": {
+      "success": 1,
+      "success_class": "successful",
+      "policy_type": "teleoperated"
+    },
+    "description": "The selected action is the entire source task, so the independently observed overall outcome is the same: the target extension bar ends outside the toolbox on the front mat after an intermediate drop and regrasp. The publisher's successful rollout label is preserved separately and was not treated as visual verification."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The single SO-101 arm positions its parallel-jaw gripper over the small middle extension bar, grasps and pulls it upward from the foam slot, repositions after the bar drops onto the toolbox, regrasps the bar, transports it to the front mat, releases it and withdraws.",
+    "other_arm": "None."
+  },
+  "coordination": "One arm acts alone; there is no second arm, handoff, human interaction or separately stabilized object.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        44
+      ],
+      "observation": "The arm starts beside the front-left part of the open red-and-black toolbox and makes small wrist and gripper adjustments. The silver tools remain seated in the foam tray; no tool has yet been removed."
+    },
+    {
+      "source_frames_inclusive": [
+        46,
+        94
+      ],
+      "observation": "The arm lifts and backs away from the front edge, rotates the wrist and opens the jaws, then moves above the small middle silver extension bar. The other tools and the toolbox remain stationary."
+    },
+    {
+      "source_frames_inclusive": [
+        96,
+        160
+      ],
+      "observation": "The gripper lowers around the exposed end of the small middle bar and closes on it. The arm makes small seated-grasp adjustments before beginning the upward extraction; the bar remains in or immediately above its original slot during this phase."
+    },
+    {
+      "source_frames_inclusive": [
+        162,
+        254
+      ],
+      "observation": "The arm pulls and levers the silver bar upward and toward image left. Native frames 170, 180, 200, 220, 240 and 250 show the bar progressively standing above and clearing the middle foam slot while the gripper holds its upper portion. By frames 252-254 the bar is out of the slot and tilted over the tray."
+    },
+    {
+      "source_frames_inclusive": [
+        255,
+        257
+      ],
+      "observation": "The bar comes out of the gripper and rapidly topples toward image left. Frame 256 catches the motion blur of the short fall, and frame 257 shows the bar lying horizontally across the top of the toolbox with the empty gripper raised above it. The images do not establish whether this was an intentional release or a slipped grasp."
+    },
+    {
+      "source_frames_inclusive": [
+        258,
+        296
+      ],
+      "observation": "The empty gripper lifts, opens and repositions over the fallen bar, then lowers to it. At frames 280 and 290 the jaws are around the bar on top of the toolbox, establishing the regrasp used for the subsequent transfer."
+    },
+    {
+      "source_frames_inclusive": [
+        298,
+        336
+      ],
+      "observation": "The arm picks up the regrasped bar near one end, tilts it and carries it toward the camera across the toolbox's red front wall. Frames 300 and 310 show the lift; frames 318, 320, 326 and 332 show the bar held beyond the front edge above the mat."
+    },
+    {
+      "source_frames_inclusive": [
+        338,
+        346
+      ],
+      "observation": "The gripper lowers the bar onto the mat directly in front of the toolbox and opens to release it. At frame 346 the bar lies diagonally on the mat and the empty jaws are lifting clear; the bar is outside, not balanced on or left inside, the toolbox."
+    },
+    {
+      "source_frames_inclusive": [
+        347,
+        388
+      ],
+      "observation": "The arm withdraws upward and back toward its starting position at image left. The released extension bar remains stationary on the front mat through frame 388, the middle slot stays empty and the other tools remain in the tray."
+    }
+  ],
+  "source_annotation_discrepancies": [
+    "No target-identity discrepancy: original/task_prompt.txt says 'Remove the small middle tool (3/8 Extension Bar 75mm) from the toolbox', and the manipulated object is visibly the small silver extension bar from the middle position, not either neighboring tool.",
+    "The publisher instruction mentions only removal. It omits the visible short drop onto the top of the toolbox, the subsequent regrasp and the final placement on the mat; the usable prompt includes those observed events and the actual end state."
+  ],
+  "uncertainties": [
+    "The front-camera images support the publisher's identification of the object as the small middle extension bar, but its 3/8-inch drive size and 75 mm length cannot be independently measured from this view.",
+    "At about frames 255-257 the bar visibly leaves the gripper and drops onto the toolbox, but the images alone do not resolve whether this was an intentional release for regrasping or an accidental slip. The prompt uses the neutral visible event 'after it drops' rather than assigning intent.",
+    "The exact first jaw-closure and initial extraction frames are partly obscured by the gripper and limited by the soft source image, so the chronology gives narrow approximate phase boundaries rather than claiming a single exact contact frame."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "decoded_frame_count_verified": 389,
+    "sampled_decoded_frame_range_inclusive": [
+      0,
+      388
+    ],
+    "sampling_stride": 2,
+    "sampled_frame_count": 195,
+    "sampling_method": "All 389 front-camera frames were decoded to temporary PNGs. Thirteen temporary contact sheets presented every second decoded frame (0, 2, 4, ..., 388), covering the complete sequence. Individual native-resolution frames and native pixel crops were then inspected at the grasp, extraction, drop, regrasp, transfer, release and terminal state.",
+    "native_resolution_frame_indices": [
+      0,
+      40,
+      60,
+      90,
+      100,
+      120,
+      140,
+      155,
+      160,
+      170,
+      180,
+      200,
+      220,
+      240,
+      250,
+      252,
+      254,
+      255,
+      256,
+      257,
+      260,
+      264,
+      268,
+      272,
+      280,
+      290,
+      300,
+      310,
+      318,
+      320,
+      326,
+      332,
+      338,
+      342,
+      346,
+      350,
+      352,
+      360,
+      388
+    ],
+    "native_resolution_crop_indices": [
+      0,
+      257,
+      346
+    ],
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png": "../first_frame.png",
+    "conditioning_png_matches_decoded_source_frame_0": true,
+    "temporary_evidence_location": "/tmp/armnet_tool_removal_episode_001200_review.uyOVpj",
+    "temporary_images_deleted": true,
+    "ancillary_camera_videos_used": false,
+    "telemetry_used": false
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 389,
+    "frame_count": 389,
+    "generation_video_is_source": true,
+    "source_mp4_retained_unchanged": true,
+    "derived_video_created": false
+  }
+}

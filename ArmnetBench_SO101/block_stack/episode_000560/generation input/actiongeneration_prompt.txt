@@ -1,0 +1,1 @@
+The robotic arm picks up the green block and stacks it on top of the purple block, then releases it, leaving the two-block stack standing. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

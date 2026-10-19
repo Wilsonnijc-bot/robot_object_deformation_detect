@@ -1,0 +1,1 @@
+The robotic arm grasps the power cable connected to the black adapter, pulls it free from the white cable holder, and releases it loose on the mat with the adapter upright. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

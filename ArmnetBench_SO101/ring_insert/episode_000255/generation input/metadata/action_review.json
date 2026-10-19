@@ -1,0 +1,169 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "ring_insert",
+  "episode_id": "episode_000255",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_000255.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 231,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "source_fps": 20,
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 231,
+  "selected_frame_count": 231,
+  "selection_reason": "The episode is one continuous single task: pick up the yellow ring and insert it onto the central wooden peg. The approach, grasp, lift, transport, reorientation, peg alignment, release and withdrawal are ordinary phases of that task, so the complete unchanged 231-frame sequence is retained with no shortened clip or first_substep branch.",
+  "usable_prompt": "The robotic arm picks up the yellow ring and places it over the central wooden peg, releasing it so it slides down and rests around the peg on the round base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm picks up the yellow ring and places it over the central wooden peg, releasing it so it slides down and rests around the peg on the round base. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed",
+    "description": "The yellow ring begins in the image-left/front recess of the round base. The arm grasps and lifts it (about frames 80-126), carries and reorients it toward the central peg (about 128-160), and holds it over the peg tip (about 162-180). The ring then moves down the peg around frames 181-185 and is seated around the peg on the round base by frame 186. It remains there through frame 230 while the arm withdraws; there is no missed insertion, drop beside the peg or displaced final ring."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed",
+    "description": "The complete source clip has the same visually observed completed outcome as the selected action: the yellow ring ends around the central peg at the round base and remains seated through the terminal frame.",
+    "publisher_label": {
+      "success": 1,
+      "success_class": "successful",
+      "policy_type": "teleoperated"
+    },
+    "publisher_label_note": "This publisher rollout label is recorded separately from the visual assessment and was not used to infer success."
+  },
+  "anatomical_side_evidence": {
+    "visible_description": "One SO-101 arm with a parallel-jaw gripper operates from image left. Only this arm manipulates the ring; no second arm or person participates.",
+    "source_annotation": "original/task_prompt.txt: 'Insert the colourful ring into the central wooden peg'.",
+    "visual_certainty": "This is a single SO-101 arm, so humanoid left/right anatomy is neither needed nor claimed."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The single arm approaches the yellow ring, secures it with the gripper, lifts and reorients it, aligns it over the central wooden peg, releases it, and withdraws after the ring reaches the base.",
+    "other_arm": "None."
+  },
+  "coordination": "The single SO-101 arm performs the entire manipulation alone; there is no bimanual coordination, hand transfer or human interaction.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        38
+      ],
+      "observation": "The arm is poised to the left of the round base with its gripper open. The yellow ring lies flat in the image-left/front recess, and the central wooden peg is empty. The arm is nearly stationary early in this interval, then begins moving toward the ring."
+    },
+    {
+      "source_frames_inclusive": [
+        40,
+        78
+      ],
+      "observation": "The arm moves down and to image right, bringing the gripper tip above the yellow ring while the ring remains flat in its recess and the peg stays unchanged."
+    },
+    {
+      "source_frames_inclusive": [
+        80,
+        118
+      ],
+      "observation": "The gripper engages the yellow ring and makes small grasp/positioning adjustments. The ring remains at the image-left/front recess through most of this interval; native frames 80, 100, 112 and 118 show the gripper tip at or within the ring opening before the clear lift."
+    },
+    {
+      "source_frames_inclusive": [
+        120,
+        126
+      ],
+      "observation": "The arm lifts the ring clear of the recess and rotates it from a mostly flat attitude to a steeply tilted attitude while maintaining its hold."
+    },
+    {
+      "source_frames_inclusive": [
+        128,
+        160
+      ],
+      "observation": "The held ring travels above the round base toward the central peg. Its orientation gradually becomes more horizontal; native frames 140, 152 and 160 show the approach from image left/above with the central peg still below the ring."
+    },
+    {
+      "source_frames_inclusive": [
+        162,
+        180
+      ],
+      "observation": "The arm centers the ring over the rounded peg tip and lowers it onto the peg. Native frames 166, 170, 176 and 180 show the ring held approximately horizontally at the top of the peg, aligned for insertion."
+    },
+    {
+      "source_frames_inclusive": [
+        181,
+        187
+      ],
+      "observation": "The gripper disengages as the ring moves rapidly down the peg, with motion blur around frames 181-185. By native frame 186 the yellow ring is around the peg at the round base, and the open gripper is lifting clear above it."
+    },
+    {
+      "source_frames_inclusive": [
+        188,
+        230
+      ],
+      "observation": "The arm withdraws upward and back toward its initial image-left pose. The yellow ring remains seated around the central peg on the round base through native terminal frame 230."
+    }
+  ],
+  "uncertainties": [
+    "The gripper partly occludes the exact finger-closing moment during pickup and the exact release instant near frames 180-182. The held transport and subsequent independent downward motion of the ring are nevertheless visible.",
+    "Motion blur during the rapid descent around frames 181-185 limits exact per-frame position estimates, but native frames 186 and 230 unambiguously show the ring seated around the peg on the round base."
+  ],
+  "source_annotation_discrepancies": [
+    "No task-level discrepancy: original/task_prompt.txt says 'Insert the colourful ring into the central wooden peg', matching the observed manipulation. The usable prompt identifies the ring visually as yellow and uses 'over' because the ring is placed over the vertical peg before sliding down; 'into' is less geometrically specific.",
+    "The publisher's successful rollout label is consistent with the visible terminal state, but it is kept distinct from this independent visual outcome assessment."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "sampled_decoded_frame_range": [
+      0,
+      230
+    ],
+    "sampling_stride": 2,
+    "sampled_decoded_frame_count": 116,
+    "sampling_method": "All 231 source frames were decoded to a unique temporary directory. Ten temporary 4x3 contact sheets covered every second decoded frame (0, 2, 4, ..., 230) across the complete sequence; action transitions and terminal frames were then inspected from the native 1024x576 decodes.",
+    "native_resolution_frame_indices": [
+      0,
+      80,
+      100,
+      112,
+      118,
+      120,
+      126,
+      140,
+      152,
+      160,
+      166,
+      170,
+      176,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      230
+    ],
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png": "../first_frame.png",
+    "conditioning_png_native_resolution": [
+      1024,
+      576
+    ],
+    "conditioning_png_matches_decoded_source_frame_0": true,
+    "temporary_evidence_location": "/tmp/armnet_ring_insert_000255_review.QmC1Jc (unique temporary review directory; not a dataset artifact)",
+    "temporary_images_deleted": true,
+    "ancillary_camera_videos_used": false,
+    "telemetry_used": false
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 231,
+    "frame_count": 231,
+    "fps": 20,
+    "resolution": [
+      1024,
+      576
+    ],
+    "unchanged_source_video_used_as_generation_reference": true,
+    "generation_video_copy_created": false,
+    "first_substep_created": false,
+    "conditioning_png_sha256": "c39d345aa5a6a7413a6b92bba02d7bcc29b1c83976df5f5762a98c7e92739807"
+  }
+}

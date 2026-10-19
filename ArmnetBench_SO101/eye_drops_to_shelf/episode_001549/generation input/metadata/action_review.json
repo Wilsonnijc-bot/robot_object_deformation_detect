@@ -1,0 +1,175 @@
+{
+  "prompt_protocol": "concise_action_v1",
+  "prompt_provenance": "visually_authored_from_video_and_initial_frame",
+  "dataset": "ArmnetBench_SO101",
+  "task": "eye_drops_to_shelf",
+  "episode_id": "episode_001549",
+  "source_video": "../../original/videos/chunk-000/observation.images.front/episode_001549.mp4",
+  "generation_camera": "observation.images.front",
+  "source_frame_count": 246,
+  "source_fps": 20,
+  "source_resolution": [
+    1024,
+    576
+  ],
+  "selected_source_frame_start": 0,
+  "selected_source_frame_end_exclusive": 246,
+  "selected_frame_count": 246,
+  "selection_reason": "The episode is one continuous single task: move one eye drops package from the plastic rack to the shelf. The approach, grasp, lift, transport, placement, release and withdrawal are ordinary phases of that task, so the complete 246-frame source is retained unchanged with no shortened reference or separate subtask selection.",
+  "usable_prompt": "The robotic arm picks up the blue-and-white eye drops package from the plastic rack and places it on the upper shelf, leaving it lying horizontally. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "full_sequence_prompt": "The robotic arm picks up the blue-and-white eye drops package from the plastic rack and places it on the upper shelf, leaving it lying horizontally. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.",
+  "selected_action_outcome": {
+    "status": "visually_completed",
+    "description": "The single blue-and-white package is lifted out of the clear plastic rack (about frames 106-113), carried to the white shelf, and supported on its upper horizontal surface by about frame 138. The gripper opens and lifts clear around frames 146-152. The package remains lying horizontally on the shelf through frame 245, with its white end toward image left; no drop, miss, fall or placement beside the shelf is visible."
+  },
+  "source_overall_outcome": {
+    "status": "visually_completed",
+    "publisher_label": {
+      "success": 1,
+      "success_class": "successful",
+      "policy_type": "teleoperated"
+    },
+    "description": "The visually observed whole-clip outcome is the same completed pick-and-place as the selected action, and agrees with the publisher's successful label. The publisher label is retained separately as source metadata and was not used as a substitute for visual verification."
+  },
+  "anatomical_side_evidence": {
+    "visible_description": "A single SO-101 arm with a parallel-jaw gripper enters from image left and performs the entire manipulation.",
+    "visual_certainty": "This is one non-humanoid arm; robot-relative left/right anatomy is not needed."
+  },
+  "arm_roles": {
+    "active_visible_arm": "The single SO-101 arm repositions over the rack, closes its jaws around the package, lifts and transports it, lowers it onto the shelf, then opens the jaws and withdraws.",
+    "other_arm": "None."
+  },
+  "coordination": "One arm acts alone; there is no second arm, handoff or human interaction. The rack and shelf remain stationary.",
+  "chronology": [
+    {
+      "source_frames_inclusive": [
+        0,
+        45
+      ],
+      "observation": "The arm holds its open gripper low over the clear plastic rack. The blue-and-white package is in the rack but is heavily occluded by the gripper initially; the white shelf is empty."
+    },
+    {
+      "source_frames_inclusive": [
+        46,
+        79
+      ],
+      "observation": "The arm lifts and reorients the open gripper above the rack. The package remains in the rack, and its elongated blue-and-white form becomes clearer as the gripper moves away."
+    },
+    {
+      "source_frames_inclusive": [
+        80,
+        105
+      ],
+      "observation": "The arm lowers the open jaws around the package. By frames 96-104 the jaws straddle it while it remains in the rack."
+    },
+    {
+      "source_frames_inclusive": [
+        106,
+        113
+      ],
+      "observation": "The jaws close around the package and lift it upward out of the rack. By frames 110-112 it is clearly held off the rack bottom, approximately horizontal with the white end toward image left; the rack is empty after the lift."
+    },
+    {
+      "source_frames_inclusive": [
+        114,
+        135
+      ],
+      "observation": "The arm carries the grasped package rightward toward the white shelf, keeping it above the shelf surface while maintaining the grasp."
+    },
+    {
+      "source_frames_inclusive": [
+        136,
+        145
+      ],
+      "observation": "The arm lowers the package onto the upper horizontal shelf. It is visibly supported by the shelf around frame 138 while the jaws are still around it; there is no uncontrolled drop or bounce."
+    },
+    {
+      "source_frames_inclusive": [
+        146,
+        153
+      ],
+      "observation": "The gripper opens and rises away from the package. The package stays lying horizontally on the shelf rather than being pulled back or toppling."
+    },
+    {
+      "source_frames_inclusive": [
+        154,
+        179
+      ],
+      "observation": "The open gripper withdraws upward and toward image left. The package remains stationary on the shelf and the emptied rack remains on the mat."
+    },
+    {
+      "source_frames_inclusive": [
+        180,
+        245
+      ],
+      "observation": "The arm settles near the rack without further object contact. The terminal frame still shows the package lying horizontally on the upper shelf, with no subsequent movement or fall."
+    }
+  ],
+  "uncertainties": [
+    "The small product label is unreadable. The publisher identifies the contents as eye drops; visually the target is a single elongated, rectangular blue-and-white package or container, so the prompt uses the neutral term 'package' rather than asserting a bottle or carton.",
+    "The target is substantially occluded by the gripper in frame 0 and is seen more clearly from about frame 50 onward.",
+    "The exact jaw-closing and first shelf-contact instants are judged from the front view at approximately frames 106-108 and 136-138, respectively; no telemetry was used."
+  ],
+  "source_annotation_discrepancies": [
+    "No task or outcome conflict: original/task_prompt.txt says 'Put the eye drops on the shelf', matching the observed transfer. The publisher text omits the visually observed source rack and horizontal final orientation, which the usable prompt adds."
+  ],
+  "inspection_coverage": {
+    "entire_sequence_reviewed": true,
+    "sampled_decoded_frame_range_inclusive": [
+      0,
+      244
+    ],
+    "sampling_stride": 2,
+    "sampled_frame_count": 123,
+    "sampling_method": "Every second decoded front-camera frame (0, 2, ..., 244) was reviewed in fourteen temporary 3x3 contact sheets covering the complete 246-frame sequence; the last sheet was partially filled. All 246 frames were also decoded to temporary native PNGs for transition checks.",
+    "native_resolution_frame_indices": [
+      0,
+      46,
+      48,
+      50,
+      52,
+      80,
+      96,
+      100,
+      104,
+      108,
+      110,
+      112,
+      118,
+      126,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      160,
+      178,
+      245
+    ],
+    "native_resolution_regions_inspected": {
+      "52": "Package in the rack.",
+      "104": "Jaws around the package before the lift.",
+      "110": "Package during the lift.",
+      "245": "Terminal package position on the shelf."
+    },
+    "conditioning_png_inspected_after_sequence": true,
+    "conditioning_png_inspected_at_native_resolution": true,
+    "conditioning_png": "../first_frame.png",
+    "temporary_evidence_location": "/tmp/armnet_eye_drops_001549_review.2a9YHh (deleted; not a dataset artifact)",
+    "temporary_images_deleted": true,
+    "ancillary_camera_videos_used": false,
+    "telemetry_used": false
+  },
+  "generation_reference_validation": {
+    "source_frame_start": 0,
+    "source_frame_end_exclusive": 246,
+    "frame_count": 246,
+    "unchanged_source_mp4_used": true,
+    "source_media_modified": false
+  }
+}

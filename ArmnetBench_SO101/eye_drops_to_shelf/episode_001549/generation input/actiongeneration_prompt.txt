@@ -1,0 +1,1 @@
+The robotic arm picks up the blue-and-white eye drops package from the plastic rack and places it on the upper shelf, leaving it lying horizontally. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.

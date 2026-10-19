@@ -17,7 +17,7 @@ Run `.venv/bin/python scripts/quality_gate.py` after adding or changing inputs. 
 
 This is the same measurement as the `Sharpness (model view)` column of `deformationdetection/documentation/reports/robotvideo_input_quality.md`; `scripts/quality_gate.py` reproduces its values exactly. Models with a 480p native size (ABot-PhysWorld, LVP) enlarge less, so passing at 720p is the stricter case.
 
-**View** is the camera's relation to the robot. Third-person: TAVP, Humanoid Everyday third-person, RoboMIND Franka `camera_right`. First-person (robot head or egocentric camera): NVIDIA GR1, ActionNet `top`, RoboCOIN `cam_head_rgb`, RoboMIND Tien Kung `camera_top`.
+**View** is the camera's relation to the robot. Third-person: TAVP, Humanoid Everyday third-person, RoboMIND Franka `camera_right`, ArmnetBench SO-101 `front`. First-person (robot head or egocentric camera): NVIDIA GR1, ActionNet `top`, RoboCOIN `cam_head_rgb`, RoboMIND Tien Kung `camera_top`.
 
 ## Limits of the metric
 

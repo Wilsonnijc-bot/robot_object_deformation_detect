@@ -1,0 +1,1 @@
+The robotic arm pulls the small middle extension bar out of the toolbox, regrasps it after it drops onto the toolbox, and places it on the mat in front of the toolbox. Keep the camera fixed; preserve robot geometry, physically valid joint motion, and normal gripper opening and closing.
