@@ -1,0 +1,30 @@
+{
+  "source": "data/test.jsonl, item_id data__droid__generated_data__wan26_flash_prefix__task_0133__episode_0001__1__task_0133_episode_0001",
+  "label_note": "Human ratings (project page: '800 human-annotated test videos'); no rationales are released. The meaning of the 0-2 sub-score codes is not published.",
+  "physical_adherence": 4,
+  "instruction_alignment": 5,
+  "physical_adherence_01": 0.75,
+  "instruction_alignment_01": 1.0,
+  "sub_scores": {
+    "agent_consistency": 2,
+    "scene_consistency": 2,
+    "interaction_realism": 1,
+    "agent_match": 2,
+    "object_correct": 2,
+    "goal_completed": 2
+  },
+  "instruction": "Close the white drawer.",
+  "test_split": "id",
+  "labels_20260916_review_repo": {
+    "source": "github.com/SiyuanMaCS/robojudge-label-review-samples @ 869bebe, data/final_20260916/test_final_800_20260916.jsonl",
+    "note": "The authors' earlier final labels; main scores mostly match the release, sub-scores often do not.",
+    "physical_adherence": 4,
+    "instruction_alignment": 5,
+    "agent_consistency": 2,
+    "scene_consistency": 2,
+    "interaction_realism": 0,
+    "agent_match": 2,
+    "object_correct": 2,
+    "goal_completed": 2
+  }
+}

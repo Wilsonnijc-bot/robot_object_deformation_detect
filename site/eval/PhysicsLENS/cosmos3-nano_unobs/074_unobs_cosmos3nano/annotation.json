@@ -1,0 +1,57 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A1",
+  "physical_plausibility_1_4": 1,
+  "hidden_property_followed_1_4": 1,
+  "action_completed": "no",
+  "observability": "unobservable",
+  "physics_category": [
+    "Contact",
+    "Deformation",
+    "Causality"
+  ],
+  "description_of_issue": "The robot arms randomly deforms and then reforms in the video and instead of picking the pool cue it pushes the floor.",
+  "task": "Hit a pool ball with a cue",
+  "hidden_property": "mass",
+  "hidden_property_value": "very heavy, filled with dense material",
+  "expected_outcome": "The pool ball, when struck, moves very sluggishly across the table or barely moves at all.",
+  "failure_signature": "The pool ball rolls easily and quickly across the table as if it were a normal ball.",
+  "raw_row": {
+    "video_file": "074_unobs_cosmos3nano.mp4",
+    "testset_id": "74",
+    "model": "cosmos3 nano",
+    "annotator": "A1",
+    "physical_plausibility_1_4": "1",
+    "description_of_issue": "The robot arms randomly deforms and then reforms in the video and instead of picking the pool cue it pushes the floor.",
+    "physics_category": "Contact, Deformation, Causality",
+    "action_completed": "no",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "1"
+  },
+  "normalized": {
+    "plausibility_1_4": 1,
+    "plausibility_01": 0.0,
+    "plausible": 0,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": 1,
+    "hidden_followed_01": 0.0,
+    "hidden_followed": 0,
+    "causality": 1,
+    "collision": 0,
+    "contact": 1,
+    "deformation": 1,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 1,
+    "n_labels": 3,
+    "label_order": [
+      "Contact",
+      "Deformation",
+      "Causality"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

@@ -166,4 +166,20 @@ details.scales { margin: 0 0 var(--s4); }
 .routes a { border-left: 5px solid var(--m); }
 .routes a[aria-current="page"] { background: var(--m); border-color: var(--m); }
 .routes a[aria-current="page"] .mdot { background: var(--paper); }
+.m-none { --m: var(--ink-3); --m-bg: var(--paper-2); --m-line: var(--rule); }
+.sm { --surface: var(--paper); --text-primary: var(--ink); --text-secondary: var(--ink-2); }
+.smcards { display: grid; grid-template-columns: 1fr; gap: var(--s5); margin-top: var(--s4); }
+.smcard { border: 1px solid var(--rule); border-radius: 10px; padding: var(--s4) var(--s5) var(--s5); background: var(--paper); }
+.smcard h3 { margin: 0; font: 500 1.5rem/1.2 var(--serif); }
+.smhead { margin: var(--s1) 0 var(--s3); color: var(--ink-2); }
+.smhead b { color: var(--ink); font-size: 1.25rem; }
+.smrow { display: grid; grid-template-columns: 15rem 1fr; gap: var(--s6); align-items: center; margin-bottom: var(--s3); }
+.smrow svg { width: 100%; height: auto; overflow: visible; }
+.smrow svg path { transition: opacity 0.15s; } .smrow svg:hover path { opacity: 0.55; } .smrow svg path:hover { opacity: 1; }
+.smrow .lbl rect { fill: var(--paper); opacity: 0.92; } .smrow .lbl text { font: 600 13px var(--sans); fill: var(--ink); }
+.smrow .lbl--out line { stroke: var(--ink-2); stroke-width: 1; }
+.smtable { font-size: 0.875rem; } .smtable tbody th { white-space: normal; width: auto; color: var(--ink); }
+.smtable td.robots { font-size: 0.8125rem; color: var(--ink-2); }
+.sw { display: inline-block; width: 0.75em; height: 0.75em; border-radius: 3px; margin-right: 0.45em; vertical-align: -0.05em; }
+@media (max-width: 640px) { .smrow { grid-template-columns: 1fr; } .smrow svg { max-width: 16rem; } }
 @media (prefers-reduced-motion: reduce) { .dscard, .tile, details.more[open] > :not(summary) { transition: none; animation: none; } .dscard:hover { transform: none; } }

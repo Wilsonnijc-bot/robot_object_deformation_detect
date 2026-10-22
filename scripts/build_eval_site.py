@@ -27,6 +27,7 @@ from urllib.parse import quote
 from PIL import Image
 
 from build_site import PLAYER, ROOT, esc, fmt_num, probe, stale, transcode
+from serial_manipulators import CLASSES as SM_CLASSES, pie_svg
 
 ERIS_PATH = "~/scratch/existing_annotations"  # on the ERIS cluster; host and user are deliberately not published
 ERIS_JSON = ROOT / "metamanifest" / "existing_annotations_eris.json"
@@ -147,7 +148,8 @@ METRIC_ROWS = [("solidity",), ("contact",), ("object_deformation", "persistence"
 # Short button labels for the error groups.
 GROUP_SHORT = {"contact_collision": "Contact & Collision", "momentum": "Momentum", "deformation": "Deformation",
                "interaction_any_d": "Interaction", "interpenetration_d": "Interpenetration", "appearance_d": "Appearance",
-               "agent_integrity_0": "Agent integrity 0", "agent_integrity_1": "Agent integrity 1"}
+               "agent_integrity_0": "Agent integrity 0", "agent_integrity_1": "Agent integrity 1",
+               "serial_arm": "Single-arm serial"}
 SEVERITY = {"A": "none", "B": "minor", "C": "clear", "D": "severe"}
 RJB_SUBS = [("agent_consistency", "physical_adherence", "Agent integrity"),
             ("scene_consistency", "physical_adherence", "Scene & object consistency"),
@@ -362,6 +364,22 @@ details.scales { margin: 0 0 var(--s4); }
 .routes a { border-left: 5px solid var(--m); }
 .routes a[aria-current="page"] { background: var(--m); border-color: var(--m); }
 .routes a[aria-current="page"] .mdot { background: var(--paper); }
+.m-none { --m: var(--ink-3); --m-bg: var(--paper-2); --m-line: var(--rule); }
+.sm { --surface: var(--paper); --text-primary: var(--ink); --text-secondary: var(--ink-2); }
+.smcards { display: grid; grid-template-columns: 1fr; gap: var(--s5); margin-top: var(--s4); }
+.smcard { border: 1px solid var(--rule); border-radius: 10px; padding: var(--s4) var(--s5) var(--s5); background: var(--paper); }
+.smcard h3 { margin: 0; font: 500 1.5rem/1.2 var(--serif); }
+.smhead { margin: var(--s1) 0 var(--s3); color: var(--ink-2); }
+.smhead b { color: var(--ink); font-size: 1.25rem; }
+.smrow { display: grid; grid-template-columns: 15rem 1fr; gap: var(--s6); align-items: center; margin-bottom: var(--s3); }
+.smrow svg { width: 100%; height: auto; overflow: visible; }
+.smrow svg path { transition: opacity 0.15s; } .smrow svg:hover path { opacity: 0.55; } .smrow svg path:hover { opacity: 1; }
+.smrow .lbl rect { fill: var(--paper); opacity: 0.92; } .smrow .lbl text { font: 600 13px var(--sans); fill: var(--ink); }
+.smrow .lbl--out line { stroke: var(--ink-2); stroke-width: 1; }
+.smtable { font-size: 0.875rem; } .smtable tbody th { white-space: normal; width: auto; color: var(--ink); }
+.smtable td.robots { font-size: 0.8125rem; color: var(--ink-2); }
+.sw { display: inline-block; width: 0.75em; height: 0.75em; border-radius: 3px; margin-right: 0.45em; vertical-align: -0.05em; }
+@media (max-width: 640px) { .smrow { grid-template-columns: 1fr; } .smrow svg { max-width: 16rem; } }
 @media (prefers-reduced-motion: reduce) { .dscard, .tile, details.more[open] > :not(summary) { transition: none; animation: none; } .dscard:hover { transform: none; } }
 """
 PLAYER_EVAL = (PLAYER.replace("Action generation prompt", "Generation prompt").replace("Publisher annotation", "Human annotation")
@@ -395,10 +413,24 @@ def eris_info():
     return summary, rows
 
 
+SERIAL = dict(group="serial_arm", group_title="Single-arm serial manipulators (examples)",
+              group_rule="Three examples whose first frame shows one standalone arm (such as Franka), one per robot where "
+                         "possible, chosen by scripts/serial_manipulators.py; not an error group.")
+
+
+def group_rows(ds):
+    """Rows of the dataset's error-group CSV, then its serial-manipulator examples as one more group."""
+    rows = list(csv.DictReader(open(ROOT / ds / "metamanifest" / EVAL_DATASETS[ds]["groups"], encoding="utf-8")))
+    extra = ROOT / ds / "metamanifest" / "serial_manipulator_examples.csv"
+    if extra.exists():
+        rows += [dict(r, **SERIAL) for r in csv.DictReader(open(extra, encoding="utf-8"))]
+    return rows
+
+
 def collect(ds, out):
-    """Error-group videos of one dataset, one item per video folder, with the groups it belongs to."""
+    """Group videos of one dataset, one item per video folder, with the groups it belongs to."""
     in_groups, order = {}, []
-    for r in csv.DictReader(open(ROOT / ds / "metamanifest" / EVAL_DATASETS[ds]["groups"], encoding="utf-8")):
+    for r in group_rows(ds):
         if r["folder"] not in in_groups:
             order.append(r)
         in_groups.setdefault(r["folder"], []).append(r)
@@ -431,8 +463,8 @@ def collect(ds, out):
             item.update(group=meta["embodiment_group"], title=instr if len(instr) <= 90 else instr[:87].rstrip() + "…",
                         full_title=instr, input=f"{meta['source_corpus']}/{meta['task']}",
                         tags=[(f"{meta['prompt_variant']} prompt", "muted")], sub=f"{meta['embodiment']} · {meta['task']}",
-                        prompt="", score=("Agent int. v2", str(sub["agent_consistency"]), "fail" if sub["agent_consistency"] == 0 else "exception"),
-                        score2=("v1", str(v1["agent_consistency"]), "fail" if v1["agent_consistency"] == 0 else "exception"),
+                        prompt="", score=("Agent int. v2", str(sub["agent_consistency"]), ("fail", "exception", "pass")[sub["agent_consistency"]]),
+                        score2=("v1", str(v1["agent_consistency"]), ("fail", "exception", "pass")[v1["agent_consistency"]]),
                         summary=f"PA {pa}/5 · IA {ia}/5 · sub-scores (0–2, v2): " + ", ".join(f"{label} {sub[key]}" for key, _, label in RJB_SUBS),
                         verdict=f"Agent integrity v2 {sub['agent_consistency']} · v1 {v1['agent_consistency']} · PA {pa}/5 · IA {ia}/5")
         else:
@@ -738,7 +770,7 @@ def group_lists(items):
     ds = items[0]["dataset"]
     by_folder = {i["folder"]: i for i in items}
     lists = {}
-    for r in csv.DictReader(open(ROOT / ds / "metamanifest" / EVAL_DATASETS[ds]["groups"], encoding="utf-8")):
+    for r in group_rows(ds):
         lists.setdefault(r["group"], []).append(by_folder[r["folder"]])
     return lists
 
@@ -781,13 +813,18 @@ def group_metrics(key):
     return " and ".join(names[k] for keys, _, groups, _, _, _ in MAPPING if key in groups for k in keys)
 
 
+def group_class(key):
+    """Metric colour class of a group; the serial-manipulator examples have no metric and stay neutral."""
+    return next((metric_class(keys) for keys, _, groups, _, _, _ in MAPPING if key in groups), "m-none")
+
+
 def route_tabs(lists, current, base):
     """Large buttons, one per error group; base is the path from the current page to the dataset folder."""
     cur = ' aria-current="page"'
     return '<nav class="tabs routes" aria-label="Error groups">' + "".join(
-        f'<a class="{metric_class(next(ks for ks, _, gs, _, _, _ in MAPPING if k in gs))}" href="{base}{k}/index.html"'
+        f'<a class="{group_class(k)}" href="{base}{k}/index.html"'
         f'{cur if k == current else ""}><b><span class="mdot"></span>{esc(GROUP_SHORT.get(k, k))}</b>'
-        f'<small>{len(v)} videos · {esc(group_metrics(k))}</small></a>' for k, v in lists.items()) + "</nav>"
+        f'<small>{len(v)} videos · {esc(group_metrics(k) or "embodiment examples")}</small></a>' for k, v in lists.items()) + "</nav>"
 
 
 def signal_page(ds, items, out, eris):
@@ -800,7 +837,9 @@ def signal_page(ds, items, out, eris):
     for key, members in lists.items():
         g, gd = info[key], d / key
         gd.mkdir(parents=True, exist_ok=True)
-        if ds == "PhysicsLENS":
+        if key == "serial_arm":
+            cards, table, defs = serial_group(ds, members, gd)
+        elif ds == "PhysicsLENS":
             cards, table, defs = physicslens_group(key, members, gd)
         elif ds == "MiraBench":
             cards, table, defs = mira_group(key, members, gd)
@@ -812,7 +851,7 @@ def signal_page(ds, items, out, eris):
         filters = "".join(f'<button type="button" data-filter="{slug(gen)}" aria-pressed="false">{esc(gen)} <span>{c[gen]}</span></button>'
                           for gen in meta["order"] if c[gen])
         body = f"""{route_tabs(lists, key, "../")}<header class="intro">
-<p class="kicker">{esc(meta['title'])} · error group · compared with {esc(group_metrics(key))}</p>
+<p class="kicker">{esc(meta['title'])} · {"error group · compared with " + esc(group_metrics(key)) if group_metrics(key) else "embodiment examples"}</p>
 <p class="scaleline">{esc(SCALE_SHORT[ds])} {direction(ds)}</p>
 <h1>{esc(g['group_title'])}</h1>
 <p class="lede">Selection: {esc(rule)}</p>{defs}
@@ -864,6 +903,26 @@ LEDES = {
                        "used, and both versions are shown: v2 = released data/test.jsonl, v1 = the authors' review-repo file "
                        "of 16 Sep 2026. No GR1 humanoid video qualifies for code 1.",
 }
+
+
+def serial_group(ds, members, d):
+    """Cards and a short table for the single-arm serial-manipulator examples of one dataset."""
+    rows_by_folder = {r["folder"]: r for r in group_rows(ds) if r["group"] == "serial_arm"}
+    summary = json.loads(SM_SUMMARY.read_text(encoding="utf-8")).get(ds) if SM_SUMMARY.exists() else None
+    share = ""
+    if summary:
+        n = summary["classes"]["Single-arm serial manipulator"]
+        share = (f'<p class="quiet">{n} of {summary["videos"]} videos ({100 * n / summary["videos"]:.1f}%) in this dataset show a '
+                 f'single-arm serial manipulator; see the <a href="../../index.html#serial">composition chart</a>.</p>')
+    cards, rows = [], []
+    for i in members:
+        robot = rows_by_folder[i["folder"]]["serial_robot"]
+        cards.append(card(dict(i, tags=[(robot, "muted")] + i.get("tags", [])[:2]), d))
+        rows.append(f'<tr><th scope="row"><a href="{quote(os.path.relpath(i["page"], d))}/index.html">{esc(i["title"][:60])}</a></th>'
+                    f'<td>{esc(robot)}</td><td>{esc(i["generator"])}</td><td>{esc(i["verdict"])}</td></tr>')
+    table = ('<div class="matrix-wrap"><table class="chrono indicators"><thead><tr><th scope="col">Video</th><th scope="col">Arm</th>'
+             f'<th scope="col">Generator</th><th scope="col">Human verdict</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
+    return cards, table, share
 
 
 def physicslens_group(key, members, d):
@@ -1054,6 +1113,38 @@ checked again there with <code>sha256sum</code>; built by <code>scripts/stage_ex
 </section>"""
 
 
+SM_SUMMARY = ROOT / "metamanifest" / "serial_manipulators" / "summary.json"
+SM_COMPOSITION = ROOT / "metamanifest" / "serial_manipulators" / "composition.csv"
+
+
+def serial_section():
+    """One pie per dataset: the embodiment of every video, single-arm serial manipulators first."""
+    if not SM_COMPOSITION.exists():
+        return ""
+    rows = list(csv.DictReader(open(SM_COMPOSITION, encoding="utf-8")))
+    blocks = []
+    for ds in ("PhysicsLENS", "RoboJudge_Bench"):
+        v = [r for r in rows if r["dataset"] == ds]
+        counts, total = Counter(r["cls"] for r in v), len(v)
+        robots = Counter((r["cls"], r["robot"]) for r in v)
+        legend = "".join(
+            f'<tr><th scope="row"><span class="sw" style="background:{c}"></span>{esc(label)}</th><td class="c">{counts.get(k, 0)}</td>'
+            f'<td class="c">{100 * counts.get(k, 0) / total:.1f}%</td><td class="robots">'
+            f'{esc(" · ".join(f"{rb} {n}" for (kk, rb), n in robots.most_common() if kk == k)) or "—"}</td></tr>'
+            for k, label, c in SM_CLASSES)
+        n = counts.get("single", 0)
+        blocks.append(f"""<article class="smcard"><h3>{esc(EVAL_DATASETS[ds]["title"])}</h3>
+<p class="smhead"><b>{n}</b> of {total} videos ({100 * n / total:.1f}%) show a single-arm serial manipulator</p>
+<div class="smrow">{pie_svg(counts, total, f"{EVAL_DATASETS[ds]['title']}: embodiment of {total} videos")}
+<table class="chrono smtable"><thead><tr><th scope="col">Embodiment</th><th scope="col">Videos</th><th scope="col">Share</th>
+<th scope="col">Robots</th></tr></thead><tbody>{legend}</tbody></table></div>
+<a class="btn" href="{quote(ds)}/serial_arm/index.html">Single-arm examples →</a></article>""")
+    return f"""<section class="home-section sm" id="serial"><h2>Serial manipulators</h2>
+<p class="quiet">Embodiment in the first frame of every video. Single-arm serial manipulator = one standalone arm such as Franka;
+dual-arm systems are also serial arms but are counted separately. MiraBench is all one humanoid and is not shown.</p>
+<div class="smcards">{"".join(blocks)}</div></section>"""
+
+
 def index_page(sets, out, eris):
     titles = group_titles(sets)
     cards = []
@@ -1063,7 +1154,7 @@ def index_page(sets, out, eris):
         strip = "".join(f'<img src="{quote(os.path.relpath(i["page"] / "poster.jpg", out))}" alt="" loading="lazy">'
                         for i in items[::step][:4])
         groups = list(dict.fromkeys(g["group"] for i in items for g in i["label_groups"]))
-        buttons = "".join(f'<a class="gbtn {metric_class(next(k for k, _, gs, _, _, _ in MAPPING if g in gs))}" '
+        buttons = "".join(f'<a class="gbtn {group_class(g)}" '
                           f'href="{quote(ds)}/{g}/index.html"><span class="mdot"></span>{esc(GROUP_SHORT.get(g, g))}</a>'
                           for g in groups if g in titles)
         staged = (eris[0] or {}).get("per_dataset", {}).get(ds)
@@ -1078,13 +1169,14 @@ def index_page(sets, out, eris):
 <p class="lede">Five metrics on our side, three human-annotated benchmarks on the other: which annotation compares with which
 metric, on what scale, and the clips where annotators marked a violation.</p>
 <nav class="jump" aria-label="On this page"><a href="#glance">At a glance</a><a href="#mapping">Mapping in detail</a>
-<a href="#sets">Signal pages</a><a href="#eris">Data on ERIS</a></nav>
+<a href="#sets">Signal pages</a><a href="#serial">Serial manipulators</a><a href="#eris">Data on ERIS</a></nav>
 </header>
 <section class="home-section" id="glance"><h2>At a glance</h2>{glance_html(sets)}</section>
 <section class="home-section" id="mapping"><h2>Mapping in detail</h2>
 <div class="dirs">{"".join(f'<span class="dirs__item"><b>{esc(m["title"])}</b> {esc(SCALE_SHORT[ds])} {direction(ds)}</span>' for ds, m in EVAL_DATASETS.items())}</div>
 {mapping_html(sets)}</section>
 <section class="home-section" id="sets"><h2>Signal pages</h2><div class="dscards">{''.join(cards)}</div></section>
+{serial_section()}
 {server_section(eris)}"""
     (out / "index.html").write_text(page("Robotvideo evaluation review", "", body))
 
@@ -1130,7 +1222,7 @@ def main():
         sets[ds] = items
     index_page(sets, out, eris)
     size = sum(p.stat().st_size for p in out.rglob("*") if p.is_file())
-    print(f"{sum(len(v) for v in sets.values())} error-group videos in {len(sets)} sets, {size / 1e6:.1f} MB -> {out / 'index.html'}")
+    print(f"{sum(len(v) for v in sets.values())} videos in {len(sets)} sets, {size / 1e6:.1f} MB -> {out / 'index.html'}")
 
 
 if __name__ == "__main__":

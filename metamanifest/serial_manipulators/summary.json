@@ -1,0 +1,50 @@
+{
+ "PhysicsLENS": {
+  "videos": 439,
+  "first_frames": 80,
+  "classes": {
+   "Single-arm serial manipulator": 24,
+   "Dual-arm, fixed base": 8,
+   "Dual-arm, mobile base": 104,
+   "Humanoid": 291,
+   "Human hands": 12
+  },
+  "robots": {
+   "Humanoid Everyday (Unitree)": 120,
+   "Unitree G1 · Dex1": 116,
+   "AI2 AlphaBot 2": 44,
+   "AgiBot G1": 28,
+   "Unitree G1 · Dex3": 24,
+   "Fourier GR1": 23,
+   "Mobile ALOHA": 16,
+   "RH20T cfg 1 arm": 16,
+   "Galbot G1": 16,
+   "EgoDex human hands": 12,
+   "Unitree G1 EDU": 8,
+   "DLR SARA arm": 8,
+   "ALOHA (static)": 8
+  }
+ },
+ "RoboJudge_Bench": {
+  "videos": 800,
+  "first_frames": 558,
+  "classes": {
+   "Single-arm serial manipulator": 179,
+   "Dual-arm, fixed base": 131,
+   "Dual-arm, mobile base": 154,
+   "Humanoid": 121,
+   "Human hands": 215
+  },
+  "robots": {
+   "AgiBot G1 (AgiBot World)": 154,
+   "AgileX dual arms (RoboTwin, simulated)": 131,
+   "Fourier GR1 (in-lab)": 121,
+   "EgoDex": 100,
+   "Franka (DROID)": 78,
+   "White single arm, model not identified": 74,
+   "EgoScaler": 65,
+   "EPIC-KITCHENS": 50,
+   "WidowX-type arm (Bridge toy kitchen)": 27
+  }
+ }
+}

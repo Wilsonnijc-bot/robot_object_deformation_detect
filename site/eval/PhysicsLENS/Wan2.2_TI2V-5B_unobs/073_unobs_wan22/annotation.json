@@ -1,0 +1,57 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A4",
+  "physical_plausibility_1_4": 1,
+  "hidden_property_followed_1_4": 1,
+  "action_completed": "no",
+  "observability": "unobservable",
+  "physics_category": [
+    "Causality",
+    "Collision",
+    "Contact"
+  ],
+  "description_of_issue": "cue moves on its own",
+  "task": "Hit a pool ball with a cue",
+  "hidden_property": "mass",
+  "hidden_property_value": "much heavier than typical pool balls",
+  "expected_outcome": "The red ball barely moves or moves very sluggishly after being hit by the cue.",
+  "failure_signature": "The red ball rolls away at a normal speed despite its increased mass.",
+  "raw_row": {
+    "video_file": "073_unobs_wan22.mp4",
+    "testset_id": "73",
+    "model": "Wan2.2",
+    "annotator": "A4",
+    "physical_plausibility_1_4": "1",
+    "description_of_issue": "cue moves on its own",
+    "physics_category": "Causality, Collision, Contact",
+    "action_completed": "no",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "1"
+  },
+  "normalized": {
+    "plausibility_1_4": 1,
+    "plausibility_01": 0.0,
+    "plausible": 0,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": 1,
+    "hidden_followed_01": 0.0,
+    "hidden_followed": 0,
+    "causality": 1,
+    "collision": 1,
+    "contact": 1,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 1,
+    "n_labels": 3,
+    "label_order": [
+      "Causality",
+      "Collision",
+      "Contact"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}
