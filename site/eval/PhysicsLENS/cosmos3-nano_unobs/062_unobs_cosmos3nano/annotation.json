@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A5",
+  "physical_plausibility_1_4": 2,
+  "hidden_property_followed_1_4": 2,
+  "action_completed": "no",
+  "observability": "unobservable",
+  "physics_category": [
+    "Deformation"
+  ],
+  "description_of_issue": "bottle deformed; the medicine flows into the box as freely as a thin liquid despite stated high viscosity.",
+  "task": "Pour the medicine from the bottle into the box.",
+  "hidden_property": "viscosity",
+  "hidden_property_value": "high viscosity, syrup-like consistency",
+  "expected_outcome": "The medicine pours slowly and thickly, with only a small amount reaching the box despite the bottle being tipped.",
+  "failure_signature": "The medicine flows into the box as freely as a thin liquid despite stated high viscosity.",
+  "raw_row": {
+    "video_file": "062_unobs_cosmos3nano.mp4",
+    "testset_id": "62",
+    "model": "cosmos3 nano",
+    "annotator": "A5",
+    "physical_plausibility_1_4": "2",
+    "description_of_issue": "bottle deformed; the medicine flows into the box as freely as a thin liquid despite stated high viscosity.",
+    "physics_category": "Deformation",
+    "action_completed": "no",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "2"
+  },
+  "normalized": {
+    "plausibility_1_4": 2,
+    "plausibility_01": 0.3333,
+    "plausible": 0,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": 2,
+    "hidden_followed_01": 0.3333,
+    "hidden_followed": 0,
+    "causality": 0,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 1,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 0,
+    "n_labels": 1,
+    "label_order": [
+      "Deformation"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

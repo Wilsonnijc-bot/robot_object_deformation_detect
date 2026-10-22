@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A1",
+  "physical_plausibility_1_4": 3,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "no",
+  "observability": "observable",
+  "physics_category": [
+    "Contact"
+  ],
+  "description_of_issue": "The robot picked 2 cups together without properly closing the gripper.",
+  "task": "Stack the three plastic cups sequentially using one hand.",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "053_ai2_alphabot_2_stack_cups_ep0.mp4",
+    "testset_id": "53",
+    "model": "Wan2.2",
+    "annotator": "A1",
+    "physical_plausibility_1_4": "3",
+    "description_of_issue": "The robot picked 2 cups together without properly closing the gripper.",
+    "physics_category": "Contact",
+    "action_completed": "no",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 3,
+    "plausibility_01": 0.6667,
+    "plausible": 1,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 0,
+    "collision": 0,
+    "contact": 1,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 1,
+    "n_labels": 1,
+    "label_order": [
+      "Contact"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

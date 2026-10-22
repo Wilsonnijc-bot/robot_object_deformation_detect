@@ -1,0 +1,30 @@
+{
+  "source": "data/test.jsonl, item_id data__droid__generated_data__cogvideo_i2v_f113_rewrite__task_0181__episode_0001__1__task_0181_episode_0001",
+  "label_note": "Human ratings (project page: '800 human-annotated test videos'); no rationales are released. The meaning of the 0-2 sub-score codes is not published.",
+  "physical_adherence": 1,
+  "instruction_alignment": 2,
+  "physical_adherence_01": 0.0,
+  "instruction_alignment_01": 0.25,
+  "sub_scores": {
+    "agent_consistency": 0,
+    "scene_consistency": 2,
+    "interaction_realism": 0,
+    "agent_match": 2,
+    "object_correct": 2,
+    "goal_completed": 0
+  },
+  "instruction": "Take the beige cloth near the sink and put it on the white countertop.",
+  "test_split": "id",
+  "labels_20260916_review_repo": {
+    "source": "github.com/SiyuanMaCS/robojudge-label-review-samples @ 869bebe, data/final_20260916/test_final_800_20260916.jsonl",
+    "note": "The authors' earlier final labels; main scores mostly match the release, sub-scores often do not.",
+    "physical_adherence": 1,
+    "instruction_alignment": 2,
+    "agent_consistency": 0,
+    "scene_consistency": 0,
+    "interaction_realism": 0,
+    "agent_match": 0,
+    "object_correct": 0,
+    "goal_completed": 0
+  }
+}

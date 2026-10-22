@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhysicsLENS error groups · evaluation review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/eval.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../index.html">Robotvideo<span>evaluation review</span></a>
+<nav class="crumbs"><a href="../index.html">All sets</a></nav></header>
+<main>
+<header class="intro">
+<p class="kicker">Signal page · Physical plausibility of image-to-video generation</p>
+<h1>PhysicsLENS error groups</h1>
+<p class="lede">Ten videos per violation label, from all 442 upstream annotations, for the labels that map to our metrics: Contact &amp; Collision (rigid manipulated objects only), Momentum and Deformation. Annotations with P = 4 that still carry labels are skipped, and so are first frames without a robot (EgoDex). Within a group, annotations with the fewest other labels come first, spread across generators and first frames. Choose a group:</p>
+</header>
+<nav class="tabs routes" aria-label="Error groups"><a class="m-contact" href="contact_collision/index.html"><b><span class="mdot"></span>Contact &amp; Collision</b><small>10 videos · Contact-mediated interaction</small></a><a class="m-contact" href="momentum/index.html"><b><span class="mdot"></span>Momentum</b><small>10 videos · Contact-mediated interaction</small></a><a class="m-object_deformation" href="deformation/index.html"><b><span class="mdot"></span>Deformation</b><small>10 videos · Object deformation</small></a></nav>
+<dl class="specs">
+<dt>Videos here</dt><dd>30 in 3 groups</dd>
+<dt>Full set on ERIS</dt><dd><code>~/scratch/existing_annotations/PhysicsLENS/</code> · 439 videos (Wan2.2_TI2V-5B 110 · cosmos3-nano 110 · hunyuan15 109 · magi 110)</dd><dt>Filter</dt><dd>Every generated video that has a human annotation (observable and hidden-property prompts); the real source videos, the upscaled_720p copies and unannotated videos are left out.</dd><dt>Annotations on ERIS</dt><dd>Per video <code>&lt;generator&gt;/annotations/NNN_&lt;id&gt;.json</code>; publisher tables and a flat per-video table in <code>~/scratch/existing_annotations/PhysicsLENS/annotations/</code></dd>
+<dt>Selection</dt><dd><code>PhysicsLENS/scripts/fetch_label_groups.py</code> → <code>metamanifest/label_groups.csv</code></dd>
+<dt>Annotations</dt><dd><a href="annotations.jsonl">JSONL</a> (the 30 videos here)</dd>
+<dt>Source</dt><dd><a href="https://huggingface.co/datasets/swiftrando/PhysicsLENS">huggingface.co/datasets/swiftrando/PhysicsLENS</a> · Prompts and annotations CC BY-NC-SA 4.0; frames keep their source licenses</dd></dl>
+<details class="review codebook"><summary>Annotation codebook <span>quoted from arXiv:2610.01162, Appendix B, Tables 8–9</span></summary>
+<p class="quiet">Official definitions from the <a href="https://arxiv.org/abs/2610.01162">PhysicsLENS paper</a>. The benchmark is organised into seven physical
+domains (collision, gravity, momentum, friction, deformation, fluid, causality), which the paper names but does not define
+separately; annotators used the eight labels below, which add Contact.</p>
+<h3>Form fields</h3><dl class="kv"><dt>Physical plausibility (P), 1–4, all clips</dt><dd><ol><li>clearly breaks physics, including clipping, floating, objects appearing or disappearing, or impossible motion.</li><li>mostly implausible, with one clear issue or several smaller issues.</li><li>mostly plausible, with minor oddities only.</li><li>physically realistic.</li></ol><p class="quiet">The physical-plausibility score P∈{1,2,3,4} assesses only the visible consistency of contact, motion, deformation, and object persistence. It is a human judgment rather than a measurement against a physical simulator. Task incompletion alone does not imply physical implausibility.</p></dd><dt>Action completion (A), yes/no, all clips</dt><dd><p>Judge whether the requested task is completed by the end of the clip, even if the process is physically unrealistic.</p><p class="quiet">The action-completion score A∈{0,1} assesses the final task outcome rather than the physical correctness of the process. A clip may therefore receive A=1 while exhibiting severe physical violations, or A=0 despite otherwise plausible motion.</p></dd><dt>Hidden-property adherence (H), 1–4, unobservable clips</dt><dd><ol><li>property completely ignored; the outcome resembles a generic response.</li><li>mostly ignored, with only a faint or inconsistent indication.</li><li>mostly followed, but with incorrect magnitude, timing, or degree.</li><li>fully and correctly reflected.</li></ol><p class="quiet">It is not collected for observable scenarios, and missing values in those scenarios are not interpreted as zero or as failures. Importantly, a low adherence score does not distinguish between two cases: the video may visibly contradict the stated property, or it may fail to perform an interaction that would reveal the property.</p></dd><dt>Issue description, clips with P&lt;4</dt><dd><p>Briefly describe what is physically incorrect. Leave blank when P=4.</p></dd><dt>Violation labels, multi-select, clips with P&lt;4</dt><dd><p>Select at least one applicable violation category, choosing the most obvious issue first. Leave blank when P=4.</p></dd></dl><h3>Violation labels</h3><dl class="kv"><dt>Causality</dt><dd><p>An effect occurs without a visible cause, or events occur in an impossible order.</p></dd><dt>Collision</dt><dd><p>Objects pass through one another or fail to exhibit an expected response after impact.</p></dd><dt>Contact</dt><dd><p>An object floats without support, rests at an incorrect contact point, or fails to maintain visible contact.</p></dd><dt>Deformation</dt><dd><p>A rigid object warps or melts, or a soft object fails to deform under an interaction that should alter its shape.</p></dd><dt>Fluid</dt><dd><p>Pouring, splashing, containment, or other liquid behavior is physically inconsistent.</p></dd><dt>Friction</dt><dd><p>Sliding, sticking, or gripping behavior is inconsistent with the visible interaction or stated surface condition.</p></dd><dt>Gravity</dt><dd><p>An object floats, falls incorrectly, or otherwise fails to respond plausibly to gravity.</p></dd><dt>Momentum</dt><dd><p>An object accelerates or changes motion without a supporting interaction, including apparent creation or loss of energy.</p></dd></dl><p class="quiet">These eight human labels are distinct from the seven physical domains used to organize the benchmark and the tool’s specialists (Section 3.4). In particular, the human codebook includes both Contact and Collision, whereas the domain taxonomy has a single collision family. We preserve the human labels as recorded and merge Contact into Collision in all analyses.</p><p class="quiet">A blank category field indicates only that no label was recorded; it is not independent confirmation that the clip is physically correct.</p><p class="quiet">Some violations may reasonably receive more than one label. For example, an object passing through a supporting surface may involve both Contact and Collision, while unsupported floating may involve both Contact and Gravity.</p>
+<p class="quiet">Annotations were produced by members of the research team, mainly graduate students in computer science, rather than by externally recruited participants. Clips were assigned to annotators at random. [...] Each clip received one final annotation rather than independent ratings from multiple annotators. Consequently, the dataset does not support an estimate of inter-annotator reliability.</p></details>
+</main>
+<footer class="foot"><p>Error groups of three published world-model evaluation sets, compared with our physics metrics.
+Previews are reduced H.264 copies; the unchanged videos are on Hugging Face (linked from each video page) and the full
+filtered sets with every annotation are on ERIS scratch. Videos keep their source licenses.
+<a href="../../index.html">Dataset viewer</a></p></footer>
+</body>
+</html>

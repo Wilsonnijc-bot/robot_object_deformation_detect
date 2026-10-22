@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A4",
+  "physical_plausibility_1_4": 1,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "yes",
+  "observability": "observable",
+  "physics_category": [
+    "Contact"
+  ],
+  "description_of_issue": "the cup is not in grip of the robot",
+  "task": "gr1_unified.pour_items_into_basket_robot",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "057_gr00t_gr1_pour_items_into_basket_ep0.mp4",
+    "testset_id": "57",
+    "model": "Wan2.2",
+    "annotator": "A4",
+    "physical_plausibility_1_4": "1",
+    "description_of_issue": "the cup is not in grip of the robot",
+    "physics_category": "Contact",
+    "action_completed": "yes",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 1,
+    "plausibility_01": 0.0,
+    "plausible": 0,
+    "action_completed": 1,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 0,
+    "collision": 0,
+    "contact": 1,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 1,
+    "n_labels": 1,
+    "label_order": [
+      "Contact"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

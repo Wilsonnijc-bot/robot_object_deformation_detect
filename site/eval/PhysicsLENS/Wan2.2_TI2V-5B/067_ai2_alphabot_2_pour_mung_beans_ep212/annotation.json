@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A5",
+  "physical_plausibility_1_4": 3,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "yes",
+  "observability": "observable",
+  "physics_category": [
+    "Collision"
+  ],
+  "description_of_issue": "how the beans landed is a bit unnatural",
+  "task": "Pick up the cup and pour the mung beans from the cup into the bowl.",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "067_ai2_alphabot_2_pour_mung_beans_ep212.mp4",
+    "testset_id": "67",
+    "model": "Wan2.2",
+    "annotator": "A5",
+    "physical_plausibility_1_4": "3",
+    "description_of_issue": "how the beans landed is a bit unnatural",
+    "physics_category": "Collision",
+    "action_completed": "yes",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 3,
+    "plausibility_01": 0.6667,
+    "plausible": 1,
+    "action_completed": 1,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 0,
+    "collision": 1,
+    "contact": 0,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 1,
+    "n_labels": 1,
+    "label_order": [
+      "Collision"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

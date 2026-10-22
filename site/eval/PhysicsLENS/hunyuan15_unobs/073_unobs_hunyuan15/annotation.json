@@ -1,0 +1,55 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A4",
+  "physical_plausibility_1_4": 1,
+  "hidden_property_followed_1_4": 2,
+  "action_completed": "yes",
+  "observability": "unobservable",
+  "physics_category": [
+    "Causality",
+    "Momentum"
+  ],
+  "description_of_issue": "pool ball appears out of no where",
+  "task": "Hit a pool ball with a cue",
+  "hidden_property": "mass",
+  "hidden_property_value": "much heavier than typical pool balls",
+  "expected_outcome": "The red ball barely moves or moves very sluggishly after being hit by the cue.",
+  "failure_signature": "The red ball rolls away at a normal speed despite its increased mass.",
+  "raw_row": {
+    "video_file": "073_unobs_hunyuan15.mp4",
+    "testset_id": "73",
+    "model": "Hunyuan 1.5",
+    "annotator": "A4",
+    "physical_plausibility_1_4": "1",
+    "description_of_issue": "pool ball appears out of no where",
+    "physics_category": "Causality, Momentum",
+    "action_completed": "yes",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "2"
+  },
+  "normalized": {
+    "plausibility_1_4": 1,
+    "plausibility_01": 0.0,
+    "plausible": 0,
+    "action_completed": 1,
+    "hidden_property_followed_1_4": 2,
+    "hidden_followed_01": 0.3333,
+    "hidden_followed": 0,
+    "causality": 1,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 1,
+    "collision_or_contact": 0,
+    "n_labels": 2,
+    "label_order": [
+      "Causality",
+      "Momentum"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

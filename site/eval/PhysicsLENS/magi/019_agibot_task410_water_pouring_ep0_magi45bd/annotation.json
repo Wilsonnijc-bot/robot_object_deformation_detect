@@ -1,0 +1,55 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A3",
+  "physical_plausibility_1_4": 2,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "no",
+  "observability": "observable",
+  "physics_category": [
+    "Causality",
+    "Momentum"
+  ],
+  "description_of_issue": "The robot doesn't do much movement. The kattle and cups floated a little bit by themselves.",
+  "task": "Water Pouring in Restaurant - teapot with colored tea into an empty cup",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "019_agibot_task410_water_pouring_ep0_magi45bd.mp4",
+    "testset_id": "19",
+    "model": "MAGI 4.5B distill",
+    "annotator": "A3",
+    "physical_plausibility_1_4": "2",
+    "description_of_issue": "The robot doesn't do much movement. The kattle and cups floated a little bit by themselves.",
+    "physics_category": "Causality, Momentum",
+    "action_completed": "no",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 2,
+    "plausibility_01": 0.3333,
+    "plausible": 0,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 1,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 1,
+    "collision_or_contact": 0,
+    "n_labels": 2,
+    "label_order": [
+      "Causality",
+      "Momentum"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

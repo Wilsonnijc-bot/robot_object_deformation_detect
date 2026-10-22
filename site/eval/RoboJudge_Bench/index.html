@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoboJudge-Bench error groups · evaluation review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/eval.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../index.html">Robotvideo<span>evaluation review</span></a>
+<nav class="crumbs"><a href="../index.html">All sets</a></nav></header>
+<main>
+<header class="intro">
+<p class="kicker">Signal page · Human-rated benchmark for embodied-video judges</p>
+<h1>RoboJudge-Bench error groups</h1>
+<p class="lede">Ten robot videos with agent integrity (agent_consistency) = 0 and ten with = 1, the failures and partial failures (higher is better). Only videos whose agent integrity is the same in both label versions are used, and both versions are shown: v2 = released data/test.jsonl, v1 = the authors&#x27; review-repo file of 16 Sep 2026. No GR1 humanoid video qualifies for code 1. Choose a group:</p>
+</header>
+<nav class="tabs routes" aria-label="Error groups"><a class="m-robot_deformation" href="agent_integrity_0/index.html"><b><span class="mdot"></span>Agent integrity 0</b><small>10 videos · Robot deformation</small></a><a class="m-robot_deformation" href="agent_integrity_1/index.html"><b><span class="mdot"></span>Agent integrity 1</b><small>10 videos · Robot deformation</small></a></nav>
+<dl class="specs">
+<dt>Videos here</dt><dd>20 in 2 groups</dd>
+<dt>Full set on ERIS</dt><dd><code>~/scratch/existing_annotations/RoboJudge_Bench/</code> · 585 videos (abot_physworld_f113 68 · cogvideo_i2v_f113 73 · cosmos3 73 · gigaworld_gr1_2b_f113 82 · happyhorse 28 · kling 17 · veo31_lite 26 · wan22_ti2v5b_1280x704_f169 81 · wan26_flash 46 · wow_wan14b_f105 91)</dd><dt>Filter</dt><dd>Robot first frames only: AgiBot World, RoboTwin, GR1 in-lab, Open X-Embodiment and DROID. The human-hand corpora (EgoDex-human, EgoScaler, EPIC-KITCHENS) are left out.</dd><dt>Annotations on ERIS</dt><dd>Per video <code>&lt;generator&gt;/annotations/NNN_&lt;id&gt;.json</code>; publisher tables and a flat per-video table in <code>~/scratch/existing_annotations/RoboJudge_Bench/annotations/</code></dd>
+<dt>Selection</dt><dd><code>RoboJudge_Bench/scripts/fetch_agent_integrity_groups.py</code> → <code>metamanifest/agent_integrity_groups.csv</code></dd>
+<dt>Annotations</dt><dd><a href="annotations.jsonl">JSONL</a> (the 20 videos here)</dd>
+<dt>Source</dt><dd><a href="https://huggingface.co/datasets/HuggingFriends/RoboJudge-Bench">huggingface.co/datasets/HuggingFriends/RoboJudge-Bench</a> · CC BY-NC 4.0 (dataset card); videos keep their source and generator terms</dd></dl>
+
+</main>
+<footer class="foot"><p>Error groups of three published world-model evaluation sets, compared with our physics metrics.
+Previews are reduced H.264 copies; the unchanged videos are on Hugging Face (linked from each video page) and the full
+filtered sets with every annotation are on ERIS scratch. Videos keep their source licenses.
+<a href="../../index.html">Dataset viewer</a></p></footer>
+</body>
+</html>

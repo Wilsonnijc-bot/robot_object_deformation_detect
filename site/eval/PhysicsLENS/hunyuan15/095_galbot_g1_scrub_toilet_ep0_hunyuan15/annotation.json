@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A5",
+  "physical_plausibility_1_4": 2,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "no",
+  "observability": "observable",
+  "physics_category": [
+    "Deformation"
+  ],
+  "description_of_issue": "hand deformed",
+  "task": "Open the toilet lid, clean the bowl with a brush, close the lid, and flush.",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "095_galbot_g1_scrub_toilet_ep0_hunyuan15.mp4",
+    "testset_id": "95",
+    "model": "Hunyuan 1.5",
+    "annotator": "A5",
+    "physical_plausibility_1_4": "2",
+    "description_of_issue": "hand deformed",
+    "physics_category": "Deformation",
+    "action_completed": "no",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 2,
+    "plausibility_01": 0.3333,
+    "plausible": 0,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 0,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 1,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 0,
+    "n_labels": 1,
+    "label_order": [
+      "Deformation"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

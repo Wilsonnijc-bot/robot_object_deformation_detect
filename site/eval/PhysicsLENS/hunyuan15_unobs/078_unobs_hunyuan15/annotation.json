@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A3",
+  "physical_plausibility_1_4": 2,
+  "hidden_property_followed_1_4": 1,
+  "action_completed": "yes",
+  "observability": "unobservable",
+  "physics_category": [
+    "Momentum"
+  ],
+  "description_of_issue": "The eraser moves before being touched by the robot hand.",
+  "task": "Tool_use/wipe_a_table_with_an_eraser",
+  "hidden_property": "surface_condition",
+  "hidden_property_value": "sticky adhesive, increased friction",
+  "expected_outcome": "The eraser sticks slightly to the surface and moves with difficulty across the plastic sheet.",
+  "failure_signature": "The eraser slides smoothly across the plastic sheet as if encountering no resistance.",
+  "raw_row": {
+    "video_file": "078_unobs_hunyuan15.mp4",
+    "testset_id": "78",
+    "model": "Hunyuan 1.5",
+    "annotator": "A3",
+    "physical_plausibility_1_4": "2",
+    "description_of_issue": "The eraser moves before being touched by the robot hand.",
+    "physics_category": "Momentum",
+    "action_completed": "yes",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "1"
+  },
+  "normalized": {
+    "plausibility_1_4": 2,
+    "plausibility_01": 0.3333,
+    "plausible": 0,
+    "action_completed": 1,
+    "hidden_property_followed_1_4": 1,
+    "hidden_followed_01": 0.0,
+    "hidden_followed": 0,
+    "causality": 0,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 1,
+    "collision_or_contact": 0,
+    "n_labels": 1,
+    "label_order": [
+      "Momentum"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

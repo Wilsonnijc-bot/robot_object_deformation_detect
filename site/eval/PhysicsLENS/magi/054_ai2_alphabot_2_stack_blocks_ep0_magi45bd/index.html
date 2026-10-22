@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pick the topmost block from the stack and place it on the table · MAGI-1 4.5B distill · PhysicsLENS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/eval.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>evaluation review</span></a>
+<nav class="crumbs"><a href="../../../index.html">All sets</a><span aria-hidden="true">/</span><a href="../../../PhysicsLENS/index.html">PhysicsLENS</a><span aria-hidden="true">/</span><a href="../../../PhysicsLENS/contact_collision/index.html">Contact &amp; Collision</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">PhysicsLENS · Contact and Collision only, rigid object</p>
+<h1>Pick the topmost block from the stack and place it on the table</h1><p class="quiet">MAGI-1 4.5B distill · AI2 AlphaBot 2 · RoboCOIN · #054</p></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generated video · 120 frames · 5 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="First frame" loading="lazy">
+<figcaption>First frame of the generated video</figcaption></figure>
+</div>
+<aside class="episode__side"><section class="field"><h2>Generator</h2><p>MAGI-1 4.5B distill</p><p class="quiet">sand-ai/MAGI-1 ckpt/magi/4.5B_distill</p></section><section class="field"><h2>Error group</h2><p><a href="../../../PhysicsLENS/contact_collision/index.html">Contact and Collision only, rigid object</a></p></section><section class="field"><h2>Generation prompt</h2><p class="prompt">Scene: A purple block and a green block, both rectangular and each approximately 5 inches tall, are lying separately on a smooth, black, dry table surface. The purple block is closer to the left robot arm, while the green block is nearer to the right robot arm. The left robot arm is positioned near the purple block, and the right robot arm is near the green block. The table is stable and provides a non-porous surface for manipulation.
+Action: The robot grips the purple block with its left arm and moves it to the table surface.</p></section><section class="field"><h2>Human verdict</h2><div class="gate"><span class="chips"><span class="chip chip--exception">Plausibility<b>3/4</b></span></span><p>Plausibility 3/4 · action not completed · Contact</p></div><p class="quiet">Gripper does not grab block while it move.</p></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Resolution</dt><dd>960 × 720</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>24 fps</dd><dt>Duration</dt><dd>5 s</dd><dt>Codec</dt><dd>h264</dd><dt>First frame</dt><dd>AI2 AlphaBot 2 · RoboCOIN</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="annotation.json">Human annotation (JSON)</a></li><li><a href="https://huggingface.co/datasets/swiftrando/PhysicsLENS/blob/7e1f9036f699365bad7bd9509c67847621d2bcd8/physicslens_robot_data/magi/054_ai2_alphabot_2_stack_blocks_ep0_magi45bd.mp4">Original video on Hugging Face (unchanged)</a></li></ul><p class="quiet">On ERIS: <code>~/scratch/existing_annotations/PhysicsLENS/magi/057_054_ai2_alphabot_2_stack_blocks_ep0_magi45bd.mp4</code>, annotation <code>PhysicsLENS/magi/annotations/057_054_ai2_alphabot_2_stack_blocks_ep0_magi45bd.json</code>, record <code>PhysicsLENS/magi/json/057_054_ai2_alphabot_2_stack_blocks_ep0_magi45bd.json</code></p></section></aside>
+</div>
+<section class="annotation"><h2>Human annotation</h2>
+<p class="quiet">One annotator's final record from the publisher's consolidated_annotations.csv (one annotation per clip; no inter-annotator agreement exists). Scales and label definitions are quoted from the <a href="https://arxiv.org/abs/2610.01162">PhysicsLENS paper</a>, Appendix B, Tables 8–9. <a href="annotation.json">JSON</a></p>
+<div class="annotation__grid"><section class="anno anno--wide"><h3>Scores</h3><div class="scores"><div class="score"><h4>Physical plausibility (P)<b>3 / 4</b></h4><ol class="scale"><li class="lvl-lo">1 — clearly breaks physics, including clipping, floating, objects appearing or disappearing, or impossible motion.</li><li class="lvl-lo">2 — mostly implausible, with one clear issue or several smaller issues.</li><li class="" aria-current="true">3 — mostly plausible, with minor oddities only.</li><li class="lvl-hi">4 — physically realistic.</li></ol><p class="norm">P01 = 0.6667 · plausible (P≥3) = 1</p></div><div class="score"><h4>Action completion (A)<b>no</b></h4><p class="quiet">Judge whether the requested task is completed by the end of the clip, even if the process is physically unrealistic.</p><p class="norm">A = 0</p></div><div class="score"><h4>Hidden-property adherence (H)<b>—</b></h4><p class="quiet">Not collected: observable prompt. The paper does not treat the missing value as 0.</p></div></div></section><section class="anno anno--wide"><h3>Violation labels · multi-select, 8 labels</h3><table class="chrono labels"><thead><tr><th scope="col">Label</th><th scope="col">Selected</th><th scope="col">Definition (paper, Table 9)</th></tr></thead><tbody><tr class=""><th scope="row">Causality</th><td><span class="flag">0</span></td><td>An effect occurs without a visible cause, or events occur in an impossible order.</td></tr><tr class=""><th scope="row">Collision</th><td><span class="flag">0</span></td><td>Objects pass through one another or fail to exhibit an expected response after impact.</td></tr><tr class="on"><th scope="row">Contact</th><td><span class="flag flag--on">1</span> · listed 1st</td><td>An object floats without support, rests at an incorrect contact point, or fails to maintain visible contact.</td></tr><tr class=""><th scope="row">Deformation</th><td><span class="flag">0</span></td><td>A rigid object warps or melts, or a soft object fails to deform under an interaction that should alter its shape.</td></tr><tr class=""><th scope="row">Fluid</th><td><span class="flag">0</span></td><td>Pouring, splashing, containment, or other liquid behavior is physically inconsistent.</td></tr><tr class=""><th scope="row">Friction</th><td><span class="flag">0</span></td><td>Sliding, sticking, or gripping behavior is inconsistent with the visible interaction or stated surface condition.</td></tr><tr class=""><th scope="row">Gravity</th><td><span class="flag">0</span></td><td>An object floats, falls incorrectly, or otherwise fails to respond plausibly to gravity.</td></tr><tr class=""><th scope="row">Momentum</th><td><span class="flag">0</span></td><td>An object accelerates or changes motion without a supporting interaction, including apparent creation or loss of energy.</td></tr><tr class="merged on"><th scope="row">Collision ∪ Contact</th><td><span class="flag flag--on">1</span></td><td>The paper merges Contact into Collision in all analyses (its seven domains have one collision family).</td></tr></tbody></table></section><section class="anno"><h3>Issue description</h3><p>Gripper does not grab block while it move.</p><dl class="kv"><dt>Annotator</dt><dd>A2</dd><dt>Prompt set</dt><dd>observable</dd></dl></section><section class="anno anno--wide"><h3>Normalized record</h3><div class="matrix-wrap"><table class="chrono matrix"><thead><tr><th scope="col">P</th><th scope="col">P01</th><th scope="col">P≥3</th><th scope="col">A</th><th scope="col">H</th><th scope="col">H01</th><th scope="col">H≥3</th><th scope="col">Causality</th><th scope="col">Collision</th><th scope="col">Contact</th><th scope="col">Deformation</th><th scope="col">Fluid</th><th scope="col">Friction</th><th scope="col">Gravity</th><th scope="col">Momentum</th><th scope="col">Coll∪Cont</th></tr></thead><tbody><tr><td class="c">3</td><td class="c">0.6667</td><td class="c">1</td><td class="c">0</td><td class="c">—</td><td class="c">—</td><td class="c">—</td><td class="c">0</td><td class="c">0</td><td class="c">1</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">1</td></tr></tbody></table></div><p class="quiet">P01 = (P−1)/3, H01 = (H−1)/3; thresholds P≥3 and H≥3 are the paper's. Label columns: 1 = selected by the annotator, 0 = not selected (not a confirmation of correctness).</p></section></div>
+<details class="review"><summary>Publisher record <span>054_ai2_alphabot_2_stack_blocks_ep0_magi45bd.json</span></summary><pre>{
+  &quot;family&quot;: &quot;magi&quot;,
+  &quot;conditioning&quot;: &quot;text+image&quot;,
+  &quot;checkpoint&quot;: &quot;4.5B_distill&quot;,
+  &quot;params&quot;: &quot;4.5B&quot;,
+  &quot;model&quot;: &quot;sand-ai/MAGI-1 ckpt/magi/4.5B_distill&quot;,
+  &quot;distill&quot;: true,
+  &quot;shortcut_mode&quot;: &quot;8,16,16&quot;,
+  &quot;seconds&quot;: 5.0,
+  &quot;prompt&quot;: &quot;Scene: A purple block and a green block, both rectangular and each approximately 5 inches tall, are lying separately on a smooth, black, dry table surface. The purple block is closer to the left robot arm, while the green block is nearer to the right robot arm. The left robot arm is positioned near the purple block, and the right robot arm is near the green block. The table is stable and provides a non-porous surface for manipulation.\nAction: The robot grips the purple block with its left arm and moves it to the table surface.&quot;,
+  &quot;negative_prompt&quot;: null,
+  &quot;seed&quot;: 0,
+  &quot;steps&quot;: 16,
+  &quot;cfg_number&quot;: 1,
+  &quot;text_scales&quot;: [
+    7.5,
+    7.5,
+    7.5,
+    0.0,
+    0.0
+  ],
+  &quot;gen_seconds&quot;: 225.3,
+  &quot;requested_num_frames&quot;: 116,
+  &quot;requested_height&quot;: 720,
+  &quot;requested_width&quot;: 960,
+  &quot;width&quot;: 960,
+  &quot;height&quot;: 720,
+  &quot;num_frames&quot;: 120,
+  &quot;fps&quot;: 24.0,
+  &quot;peak_vram_gib&quot;: 27.9,
+  &quot;testset_id&quot;: &quot;54&quot;,
+  &quot;source_video&quot;: &quot;054_ai2_alphabot_2_stack_blocks_ep0.mp4&quot;,
+  &quot;source_frame_idx&quot;: 0,
+  &quot;start_frame&quot;: &quot;data/start_frames/054_ai2_alphabot_2_stack_blocks_ep0_frame0.png&quot;,
+  &quot;source_size&quot;: &quot;640x480&quot;,
+  &quot;task&quot;: &quot;Pick the topmost block from the stack and place it on the table.&quot;,
+  &quot;out_name&quot;: &quot;054_ai2_alphabot_2_stack_blocks_ep0_magi45bd.mp4&quot;,
+  &quot;model_tag&quot;: &quot;magi45bd&quot;
+}</pre></details></section>
+<nav class="pager"><a rel="prev" href="../../../PhysicsLENS/Wan2.2_TI2V-5B/017_ai2_alphabot_2_shake_bottle_ep0/index.html">← Grasp the erlenmeyer flask, shake it three times, then place it back · Wan2.2 TI2V-5B</a><a rel="next" href="../../../PhysicsLENS/Wan2.2_TI2V-5B_unobs/070_unobs_wan22/index.html">Push the tape towards the notebook · Wan2.2 TI2V-5B →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Error groups of three published world-model evaluation sets, compared with our physics metrics.
+Previews are reduced H.264 copies; the unchanged videos are on Hugging Face (linked from each video page) and the full
+filtered sets with every annotation are on ERIS scratch. Videos keep their source licenses.
+<a href="../../../../index.html">Dataset viewer</a></p></footer>
+</body>
+</html>

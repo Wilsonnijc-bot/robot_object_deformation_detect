@@ -1,0 +1,32 @@
+{
+ "remote": "~/scratch/existing_annotations",
+ "videos": 1112,
+ "per_dataset": {
+  "MiraBench": 88,
+  "PhysicsLENS": 439,
+  "RoboJudge_Bench": 585
+ },
+ "per_generator": {
+  "MiraBench/dreamdojo_14b": 28,
+  "MiraBench/happy_horse": 30,
+  "MiraBench/wan2.1_14b": 30,
+  "PhysicsLENS/Wan2.2_TI2V-5B": 110,
+  "PhysicsLENS/cosmos3-nano": 110,
+  "PhysicsLENS/hunyuan15": 109,
+  "PhysicsLENS/magi": 110,
+  "RoboJudge_Bench/abot_physworld_f113": 68,
+  "RoboJudge_Bench/cogvideo_i2v_f113": 73,
+  "RoboJudge_Bench/cosmos3": 73,
+  "RoboJudge_Bench/gigaworld_gr1_2b_f113": 82,
+  "RoboJudge_Bench/happyhorse": 28,
+  "RoboJudge_Bench/kling": 17,
+  "RoboJudge_Bench/veo31_lite": 26,
+  "RoboJudge_Bench/wan22_ti2v5b_1280x704_f169": 81,
+  "RoboJudge_Bench/wan26_flash": 46,
+  "RoboJudge_Bench/wow_wan14b_f105": 91
+ },
+ "notes": {
+  "PhysicsLENS annotation rows without a video": 3,
+  "PhysicsLENS generated videos without an annotation (not staged)": 1
+ }
+}

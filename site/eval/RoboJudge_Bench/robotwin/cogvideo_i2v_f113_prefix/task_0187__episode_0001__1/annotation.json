@@ -1,0 +1,30 @@
+{
+  "source": "data/test.jsonl, item_id data__robotwin__generated_data__cogvideo_i2v_f113_prefix__task_0187__episode_0001__1__task_0187_episode_0001",
+  "label_note": "Human ratings (project page: '800 human-annotated test videos'); no rationales are released. The meaning of the 0-2 sub-score codes is not published.",
+  "physical_adherence": 1,
+  "instruction_alignment": 3,
+  "physical_adherence_01": 0.0,
+  "instruction_alignment_01": 0.5,
+  "sub_scores": {
+    "agent_consistency": 1,
+    "scene_consistency": 2,
+    "interaction_realism": 0,
+    "agent_match": 2,
+    "object_correct": 2,
+    "goal_completed": 0
+  },
+  "instruction": "Hold and raise the grey and white cylindrical kitchenpot together with both black grippers from the grey patterned surface.",
+  "test_split": "id",
+  "labels_20260916_review_repo": {
+    "source": "github.com/SiyuanMaCS/robojudge-label-review-samples @ 869bebe, data/final_20260916/test_final_800_20260916.jsonl",
+    "note": "The authors' earlier final labels; main scores mostly match the release, sub-scores often do not.",
+    "physical_adherence": 1,
+    "instruction_alignment": 3,
+    "agent_consistency": 1,
+    "scene_consistency": 0,
+    "interaction_realism": 0,
+    "agent_match": 2,
+    "object_correct": 1,
+    "goal_completed": 0
+  }
+}

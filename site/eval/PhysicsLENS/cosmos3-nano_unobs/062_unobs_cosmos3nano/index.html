@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pour the medicine from the bottle into the box · Cosmos3 Nano · PhysicsLENS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/eval.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>evaluation review</span></a>
+<nav class="crumbs"><a href="../../../index.html">All sets</a><span aria-hidden="true">/</span><a href="../../../PhysicsLENS/index.html">PhysicsLENS</a><span aria-hidden="true">/</span><a href="../../../PhysicsLENS/deformation/index.html">Deformation</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">PhysicsLENS · Deformation</p>
+<h1>Pour the medicine from the bottle into the box</h1><p class="quiet">Cosmos3 Nano · Unitree G1 · Dex1 grippers · #062 · hidden-property prompt</p></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generated video · 121 frames · 5.04 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="First frame" loading="lazy">
+<figcaption>First frame of the generated video</figcaption></figure>
+</div>
+<aside class="episode__side"><section class="field"><h2>Generator</h2><p>Cosmos3 Nano</p><p class="quiet">nvidia/Cosmos3-Nano</p></section><section class="field"><h2>Error group</h2><p><a href="../../../PhysicsLENS/deformation/index.html">Deformation</a></p></section><section class="field"><h2>Generation prompt</h2><p class="prompt">Scene: A rectangular table with a smooth surface has a medicine bottle and a plastic box on it. The medicine bottle is cylindrical and stands upright near the center of the table. The plastic box is open and placed a short distance from the bottle. Two robotic arms with metallic and white components are positioned on either side of the bottle. The bottle cap is closed, and the surface of the table appears dry and flat. The liquid in the bottle is highly viscous, similar to thick syrup, making it pour very slowly.
+Action: The robot grips the medicine bottle, unscrews the cap, and tips the bottle over the box.</p></section><section class="field"><h2>Human verdict</h2><div class="gate"><span class="chips"><span class="chip chip--fail">Plausibility<b>2/4</b></span></span><p>Plausibility 2/4 · action not completed · Deformation</p></div><p class="quiet">bottle deformed; the medicine flows into the box as freely as a thin liquid despite stated high viscosity.</p></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Resolution</dt><dd>960 × 720</dd><dt>Frames</dt><dd>121</dd><dt>Frame rate</dt><dd>24 fps</dd><dt>Duration</dt><dd>5.04 s</dd><dt>Codec</dt><dd>h264</dd><dt>First frame</dt><dd>Unitree G1 · Dex1 grippers</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="annotation.json">Human annotation (JSON)</a></li><li><a href="https://huggingface.co/datasets/swiftrando/PhysicsLENS/blob/7e1f9036f699365bad7bd9509c67847621d2bcd8/physicslens_robot_data/cosmos3-nano_unobs/062_unobs_cosmos3nano.mp4">Original video on Hugging Face (unchanged)</a></li></ul><p class="quiet">On ERIS: <code>~/scratch/existing_annotations/PhysicsLENS/cosmos3-nano/067_062_unobs_cosmos3nano.mp4</code>, annotation <code>PhysicsLENS/cosmos3-nano/annotations/067_062_unobs_cosmos3nano.json</code>, record <code>PhysicsLENS/cosmos3-nano/json/067_062_unobs_cosmos3nano.json</code></p></section></aside>
+</div>
+<section class="annotation"><h2>Human annotation</h2>
+<p class="quiet">One annotator's final record from the publisher's consolidated_annotations.csv (one annotation per clip; no inter-annotator agreement exists). Scales and label definitions are quoted from the <a href="https://arxiv.org/abs/2610.01162">PhysicsLENS paper</a>, Appendix B, Tables 8–9. <a href="annotation.json">JSON</a></p>
+<div class="annotation__grid"><section class="anno anno--wide"><h3>Scores</h3><div class="scores"><div class="score"><h4>Physical plausibility (P)<b>2 / 4</b></h4><ol class="scale"><li class="lvl-lo">1 — clearly breaks physics, including clipping, floating, objects appearing or disappearing, or impossible motion.</li><li class="lvl-lo" aria-current="true">2 — mostly implausible, with one clear issue or several smaller issues.</li><li class="">3 — mostly plausible, with minor oddities only.</li><li class="lvl-hi">4 — physically realistic.</li></ol><p class="norm">P01 = 0.3333 · plausible (P≥3) = 0</p></div><div class="score"><h4>Action completion (A)<b>no</b></h4><p class="quiet">Judge whether the requested task is completed by the end of the clip, even if the process is physically unrealistic.</p><p class="norm">A = 0</p></div><div class="score"><h4>Hidden-property adherence (H)<b>2 / 4</b></h4><ol class="scale"><li class="lvl-lo">1 — property completely ignored; the outcome resembles a generic response.</li><li class="lvl-lo" aria-current="true">2 — mostly ignored, with only a faint or inconsistent indication.</li><li class="">3 — mostly followed, but with incorrect magnitude, timing, or degree.</li><li class="lvl-hi">4 — fully and correctly reflected.</li></ol><p class="norm">H01 = 0.3333 · followed (H≥3) = 0</p></div></div></section><section class="anno anno--wide"><h3>Violation labels · multi-select, 8 labels</h3><table class="chrono labels"><thead><tr><th scope="col">Label</th><th scope="col">Selected</th><th scope="col">Definition (paper, Table 9)</th></tr></thead><tbody><tr class=""><th scope="row">Causality</th><td><span class="flag">0</span></td><td>An effect occurs without a visible cause, or events occur in an impossible order.</td></tr><tr class=""><th scope="row">Collision</th><td><span class="flag">0</span></td><td>Objects pass through one another or fail to exhibit an expected response after impact.</td></tr><tr class=""><th scope="row">Contact</th><td><span class="flag">0</span></td><td>An object floats without support, rests at an incorrect contact point, or fails to maintain visible contact.</td></tr><tr class="on"><th scope="row">Deformation</th><td><span class="flag flag--on">1</span> · listed 1st</td><td>A rigid object warps or melts, or a soft object fails to deform under an interaction that should alter its shape.</td></tr><tr class=""><th scope="row">Fluid</th><td><span class="flag">0</span></td><td>Pouring, splashing, containment, or other liquid behavior is physically inconsistent.</td></tr><tr class=""><th scope="row">Friction</th><td><span class="flag">0</span></td><td>Sliding, sticking, or gripping behavior is inconsistent with the visible interaction or stated surface condition.</td></tr><tr class=""><th scope="row">Gravity</th><td><span class="flag">0</span></td><td>An object floats, falls incorrectly, or otherwise fails to respond plausibly to gravity.</td></tr><tr class=""><th scope="row">Momentum</th><td><span class="flag">0</span></td><td>An object accelerates or changes motion without a supporting interaction, including apparent creation or loss of energy.</td></tr><tr class="merged"><th scope="row">Collision ∪ Contact</th><td><span class="flag">0</span></td><td>The paper merges Contact into Collision in all analyses (its seven domains have one collision family).</td></tr></tbody></table></section><section class="anno"><h3>Issue description</h3><p>bottle deformed; the medicine flows into the box as freely as a thin liquid despite stated high viscosity.</p><dl class="kv"><dt>Annotator</dt><dd>A5</dd><dt>Prompt set</dt><dd>unobservable</dd></dl></section><section class="anno"><h3>Hidden-property prompt</h3><dl class="kv"><dt>Hidden property</dt><dd>viscosity: high viscosity, syrup-like consistency</dd><dt>Expected outcome</dt><dd>The medicine pours slowly and thickly, with only a small amount reaching the box despite the bottle being tipped.</dd><dt>Failure signature</dt><dd>The medicine flows into the box as freely as a thin liquid despite stated high viscosity.</dd></dl></section><section class="anno anno--wide"><h3>Normalized record</h3><div class="matrix-wrap"><table class="chrono matrix"><thead><tr><th scope="col">P</th><th scope="col">P01</th><th scope="col">P≥3</th><th scope="col">A</th><th scope="col">H</th><th scope="col">H01</th><th scope="col">H≥3</th><th scope="col">Causality</th><th scope="col">Collision</th><th scope="col">Contact</th><th scope="col">Deformation</th><th scope="col">Fluid</th><th scope="col">Friction</th><th scope="col">Gravity</th><th scope="col">Momentum</th><th scope="col">Coll∪Cont</th></tr></thead><tbody><tr><td class="c">2</td><td class="c">0.3333</td><td class="c">0</td><td class="c">0</td><td class="c">2</td><td class="c">0.3333</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">1</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td></tr></tbody></table></div><p class="quiet">P01 = (P−1)/3, H01 = (H−1)/3; thresholds P≥3 and H≥3 are the paper's. Label columns: 1 = selected by the annotator, 0 = not selected (not a confirmation of correctness).</p></section></div>
+<details class="review"><summary>Publisher record <span>062_unobs_cosmos3nano.json</span></summary><pre>{
+  &quot;family&quot;: &quot;cosmos3&quot;,
+  &quot;conditioning&quot;: &quot;text+image&quot;,
+  &quot;checkpoint&quot;: &quot;nano&quot;,
+  &quot;params&quot;: &quot;15.8B&quot;,
+  &quot;model&quot;: &quot;nvidia/Cosmos3-Nano&quot;,
+  &quot;seconds&quot;: 5.04,
+  &quot;prompt&quot;: &quot;Scene: A rectangular table with a smooth surface has a medicine bottle and a plastic box on it. The medicine bottle is cylindrical and stands upright near the center of the table. The plastic box is open and placed a short distance from the bottle. Two robotic arms with metallic and white components are positioned on either side of the bottle. The bottle cap is closed, and the surface of the table appears dry and flat. The liquid in the bottle is highly viscous, similar to thick syrup, making it pour very slowly.\nAction: The robot grips the medicine bottle, unscrews the cap, and tips the bottle over the box.&quot;,
+  &quot;negative_prompt&quot;: null,
+  &quot;seed&quot;: 0,
+  &quot;steps&quot;: 35,
+  &quot;gen_seconds&quot;: 119.1,
+  &quot;num_frames&quot;: 121,
+  &quot;fps&quot;: 24,
+  &quot;guidance_scale&quot;: 6.0,
+  &quot;height&quot;: 720,
+  &quot;width&quot;: 960,
+  &quot;testset_id&quot;: &quot;62&quot;,
+  &quot;source_video&quot;: &quot;062_unitree_g1dex1_pour_medicine_ep199.mp4&quot;,
+  &quot;source_frame_idx&quot;: 0,
+  &quot;start_frame&quot;: &quot;data/start_frames/062_unitree_g1dex1_pour_medicine_ep199_frame0.png&quot;,
+  &quot;source_size&quot;: &quot;640x480&quot;,
+  &quot;task&quot;: &quot;Pour the medicine from the bottle into the box.&quot;,
+  &quot;prompt_set&quot;: &quot;unobservable&quot;,
+  &quot;prompt_id&quot;: &quot;062_unobs&quot;,
+  &quot;task_group&quot;: &quot;pouring&quot;,
+  &quot;observability&quot;: &quot;unobservable&quot;,
+  &quot;hidden_property&quot;: &quot;viscosity&quot;,
+  &quot;hidden_property_value&quot;: &quot;high viscosity, syrup-like consistency&quot;,
+  &quot;expected_outcome&quot;: &quot;The medicine pours slowly and thickly, with only a small amount reaching the box despite the bottle being tipped.&quot;,
+  &quot;failure_signature&quot;: &quot;The medicine flows into the box as freely as a thin liquid despite stated high viscosity.&quot;,
+  &quot;out_name&quot;: &quot;062_unobs_cosmos3nano.mp4&quot;,
+  &quot;model_tag&quot;: &quot;cosmos3nano&quot;
+}</pre></details></section>
+<nav class="pager"><span></span><a rel="next" href="../../../PhysicsLENS/magi_unobs/080_unobs_magi45bd/index.html">Clean the blackboard with the eraser · MAGI-1 4.5B distill →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Error groups of three published world-model evaluation sets, compared with our physics metrics.
+Previews are reduced H.264 copies; the unchanged videos are on Hugging Face (linked from each video page) and the full
+filtered sets with every annotation are on ERIS scratch. Videos keep their source licenses.
+<a href="../../../../index.html">Dataset viewer</a></p></footer>
+</body>
+</html>

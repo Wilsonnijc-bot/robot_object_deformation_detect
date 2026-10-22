@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A3",
+  "physical_plausibility_1_4": 3,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "no",
+  "observability": "observable",
+  "physics_category": [
+    "Contact"
+  ],
+  "description_of_issue": "The electric kettle is initially resting on its base; the base moves with it when the kettle is lifted. The robot also fails to turn on the kettle.",
+  "task": "Locomanip/pick_up_a_kettle_place_it_on_base_and_turn_on",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "094_humanoid_everyday_pick_up_kettle_place_base_turn_ep7022_hunyuan15.mp4",
+    "testset_id": "94",
+    "model": "Hunyuan 1.5",
+    "annotator": "A3",
+    "physical_plausibility_1_4": "3",
+    "description_of_issue": "The electric kettle is initially resting on its base; the base moves with it when the kettle is lifted. The robot also fails to turn on the kettle.",
+    "physics_category": "Contact",
+    "action_completed": "no",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 3,
+    "plausibility_01": 0.6667,
+    "plausible": 1,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 0,
+    "collision": 0,
+    "contact": 1,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 1,
+    "n_labels": 1,
+    "label_order": [
+      "Contact"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

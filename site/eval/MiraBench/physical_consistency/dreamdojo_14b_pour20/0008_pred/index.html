@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pour20 0008 · DreamDojo-14B · MiraBench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../../assets/style.css">
+<link rel="stylesheet" href="../../../../assets/eval.css">
+<script src="../../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../../index.html">Robotvideo<span>evaluation review</span></a>
+<nav class="crumbs"><a href="../../../../index.html">All sets</a><span aria-hidden="true">/</span><a href="../../../../MiraBench/index.html">MiraBench</a><span aria-hidden="true">/</span><a href="../../../../MiraBench/appearance_d/index.html">Appearance</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">MiraBench · Appearance of the manipulated object: an item graded D</p>
+<h1>pour20 0008</h1><p class="quiet">DreamDojo-14B · Physical consistency · subset pour20</p></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generated video · 97 frames · 12.12 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="First frame" loading="lazy">
+<figcaption>First frame of the generated video</figcaption></figure>
+</div>
+<aside class="episode__side"><section class="field"><h2>Generator</h2><p>DreamDojo-14B</p><p class="quiet">Physical consistency</p></section><section class="field"><h2>Error group</h2><p><a href="../../../../MiraBench/appearance_d/index.html">Appearance of the manipulated object: an item graded D</a></p></section><section class="field"><h2>Conditioning</h2><p>First frame and robot action sequence (no text prompt published).</p></section><section class="field"><h2>Human verdict</h2><div class="gate"><span class="chips"><span class="chip chip--fail">Overall<b>2/5</b></span></span><p>Overall physical consistency (1–5): 2 — several severe violations, poor consistency</p></div><p class="quiet">Clear or severe: Shape plausibility for the material (severe); Size stability (clear); Material behaviour consistency (severe); Partial-occlusion consistency (severe); Reappearance after full occlusion (severe)</p></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Resolution</dt><dd>640 × 480</dd><dt>Frames</dt><dd>97</dd><dt>Frame rate</dt><dd>8 fps</dd><dt>Duration</dt><dd>12.12 s</dd><dt>Codec</dt><dd>h264</dd><dt>First frame</dt><dd>Fixed head camera over a wooden table in front of a white curtain</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="annotation.json">Human annotation (JSON)</a></li><li><a href="https://huggingface.co/datasets/Anonymous-nips-submissions/Anonymous-nips-submissions/blob/a02884987be0f8a29ceaeb1be09f922f1f5ffdcd/MiraBench_dataset/physical_consistency/0421/pour20/0008_pred.mp4">Original video on Hugging Face (unchanged)</a></li></ul><p class="quiet">On ERIS: <code>~/scratch/existing_annotations/MiraBench/dreamdojo_14b/017_pour20_0008.mp4</code>, annotation <code>MiraBench/dreamdojo_14b/annotations/017_pour20_0008.json</code>, record <code>MiraBench/dreamdojo_14b/json/017_pour20_0008.json</code></p></section></aside>
+</div>
+<section class="annotation"><h2>Human annotation</h2>
+<p class="quiet">Physical consistency questionnaire (物理一致性). The Chinese text is the annotation; English labels and answers are this repository's gloss. Grades and scores come from the publisher's parsed CSV (A 1 · B 0.67 · C 0.33 · D 0: higher score, lower error). Indicator scopes follow the <a href="https://arxiv.org/abs/2605.29360">MiraBench paper</a>, Appendix G.1 (Protocol A). <a href="annotation.json">JSON</a></p>
+<div class="annotation__grid"><section class="anno anno--wide"><h3>Appearance</h3><p class="family-note">Scope: the manipulated (primary) object, not the robot. The colour item asks about “主要物体（被操作物）” (the main, manipulated object); Protocol A asks whether “the primary object” keeps its colour, shape, size and material behaviour, and the paper&#x27;s automated version says “the item being grasped or moved by the robot arm (not the arm itself)”. No item rates the robot&#x27;s own appearance.</p><table class="chrono indicators"><thead><tr><th scope="col">Indicator</th><th scope="col">Answer</th><th scope="col">Grade · score</th></tr></thead><tbody><tr><th scope="row">Colour stability<span class="zh">颜色稳定性</span></th><td>No violation: colour stable throughout<span class="zh">是（无违规）：颜色全程稳定一致</span></td><td class="grade">A · 1</td></tr><tr><th scope="row">Shape plausibility for the material<span class="zh">形状/材质合理性</span></th><td>Severe: deformation violates the material (metal squashed like rubber, cloth moves rigidly)<span class="zh">严重违规：形变严重违反材质性质（如金属被压扁橡皮化、布料像刚体一样运动）</span></td><td class="grade">D · 0</td></tr><tr><th scope="row">Size stability<span class="zh">尺寸稳定性</span></th><td>Clear: unexplained area change of 30–60%<span class="zh">明显违规：面积变化 30-60%，标注者能明确感知到不合理缩放</span></td><td class="grade">C · 0.33</td></tr><tr><th scope="row">Material behaviour consistency<span class="zh">材质行为一致性</span></th><td>Severe: behaviour violates the material (solid liquefies, cloth does not deform on contact)<span class="zh">严重违规：行为完全违反材质性质（如固体液化、布料碰撞后完全无形变）</span></td><td class="grade">D · 0</td></tr></tbody></table></section><section class="anno anno--wide"><h3>Material</h3><table class="chrono indicators"><thead><tr><th scope="col">Indicator</th><th scope="col">Answer</th><th scope="col">Grade · score</th></tr></thead><tbody><tr><th scope="row">Material type (object A)<span class="zh">材质类型</span></th><td>Rigid (metal, wood, plastic …)<span class="zh">刚体（金属木材塑料等）</span></td><td class="grade"></td></tr><tr><th scope="row">Material type (object B)<span class="zh">材质类型</span></th><td>Rigid (metal, wood, plastic …)<span class="zh">刚体（金属木材塑料等）</span></td><td class="grade"></td></tr></tbody></table></section><section class="anno anno--wide"><h3>Motion</h3><p class="family-note">Scope: the manipulated object&#x27;s speed and direction (“Is the object&#x27;s velocity smooth…”), not the robot&#x27;s motion.</p><table class="chrono indicators"><thead><tr><th scope="col">Indicator</th><th scope="col">Answer</th><th scope="col">Grade · score</th></tr></thead><tbody><tr><th scope="row">Speed smoothness<span class="zh">速度平滑性</span></th><td>Minor: one speed jump of about 2–3×, then smooth<span class="zh">轻微违规：单次速度跳变，幅度约 2-3 倍，之后恢复平滑</span></td><td class="grade">B · 0.67</td></tr><tr><th scope="row">Motion-direction plausibility<span class="zh">运动方向合理性</span></th><td>Minor: one 45–75° direction jump; overall path still plausible<span class="zh">轻微违规：单次方向突变，角度 45-75°，整体轨迹大方向仍合理</span></td><td class="grade">B · 0.67</td></tr></tbody></table></section><section class="anno anno--wide"><h3>Occlusion</h3><p class="family-note">Scope: the manipulated object&#x27;s identity and path when hidden by the robot arm or another object.</p><table class="chrono indicators"><thead><tr><th scope="col">Indicator</th><th scope="col">Answer</th><th scope="col">Grade · score</th></tr></thead><tbody><tr><th scope="row">Partial-occlusion consistency<span class="zh">部分遮挡一致性</span></th><td>Severe: offset &gt; 1 object diameter, or appearance clearly differs<span class="zh">严重违规：位置偏移 &gt; 1 个物体直径，或外观明显不同</span></td><td class="grade">D · 0</td></tr><tr><th scope="row">Reappearance after full occlusion<span class="zh">完全遮挡重现一致性</span></th><td>Severe: looks like a different object (colour, shape, size all change)<span class="zh">严重违规：明显像换了一个物体（颜色形状大小全变）</span></td><td class="grade">D · 0</td></tr></tbody></table></section><section class="anno anno--wide"><h3>Interaction</h3><p class="family-note">Robot–object interaction: whether the robot&#x27;s action moves the target, contact precedes motion, response direction, and interpenetration of any two solid objects.</p><table class="chrono indicators"><thead><tr><th scope="col">Indicator</th><th scope="col">Answer</th><th scope="col">Grade · score</th></tr></thead><tbody><tr><th scope="row">Action has a visible effect<span class="zh">动作效果存在性</span></th><td>Yes: clear physical response matching the action<span class="zh">是（动作有明显效果）：被操作物有清晰可见的物理响应，符合动作力度</span></td><td class="grade">A · 1</td></tr><tr><th scope="row">Contact precedes motion (causality)<span class="zh">接触时序因果性</span></th><td>No violation: object moves only after contact<span class="zh">是（无违规）：接触后才开始运动，因果时序正确</span></td><td class="grade">A · 1</td></tr><tr><th scope="row">Response direction matches applied force<span class="zh">响应方向合理性</span></th><td>Minor: 30–60° off, broadly right<span class="zh">轻微违规：方向偏差 30-60°，大方向基本正确</span></td><td class="grade">B · 0.67</td></tr><tr><th scope="row">Interpenetration (objects passing through each other)<span class="zh">穿模检测</span></th><td>None — objects stay separate<span class="zh">否（无穿模）← 1.0：两物体始终保持独立，无重叠</span></td><td class="grade">A · 1</td></tr></tbody></table></section><section class="anno anno--wide"><h3>Environment</h3><p class="family-note">Background, lighting and the non-manipulated objects in the scene.</p><table class="chrono indicators"><thead><tr><th scope="col">Indicator</th><th scope="col">Answer</th><th scope="col">Grade · score</th></tr></thead><tbody><tr><th scope="row">Background stability<span class="zh">背景稳定性</span></th><td>No violation: background stable<span class="zh">是（无违规）：背景全程稳定，无异常变化</span></td><td class="grade">A · 1</td></tr><tr><th scope="row">Lighting and shadow consistency<span class="zh">光照阴影一致性</span></th><td>No violation: lighting and shadows consistent<span class="zh">是（无违规）：光照方向和阴影全程一致</span></td><td class="grade">A · 1</td></tr><tr><th scope="row">Non-manipulated objects stay still<span class="zh">非操作物体静止性</span></th><td>Minor: jitter &lt; 10% of object width<span class="zh">轻微违规：轻微抖动，幅度 &lt; 物体宽度的 10%（可能是相机轻微振动）</span></td><td class="grade">B · 0.67</td></tr><tr><th scope="row">Response of accidentally touched objects<span class="zh">间接影响响应合理性</span></th><td>N/A: no accidental contact<span class="zh">NA：无意外碰撞</span></td><td class="grade">NA</td></tr></tbody></table></section><section class="anno anno--wide"><h3>Overall</h3><table class="chrono indicators"><thead><tr><th scope="col">Indicator</th><th scope="col">Answer</th><th scope="col">Grade · score</th></tr></thead><tbody><tr><th scope="row">Overall physical consistency (1–5)<span class="zh">总体物理一致性（1–5 分）</span></th><td>2 — several severe violations, poor consistency<span class="zh">| 2 | 多处严重违规，物理一致性较差 |</span></td><td class="grade">2 · 2</td></tr></tbody></table></section></div>
+<details class="review"><summary>Publisher record <span>0008_pred.json</span></summary><pre>{
+  &quot;markData&quot;: {
+    &quot;undo&quot;: 0,
+    &quot;annotations&quot;: [],
+    &quot;notes&quot;: [],
+    &quot;videoQuality&quot;: {
+      &quot;name&quot;: &quot;物理一致性&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;颜色稳定性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19872,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;主要物体（被操作物）的颜色在整个视频中是否保持稳定？&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：颜色全程稳定一致\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：1-2 帧有轻微色偏，或偏移幅度小，整体印象颜色不变\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：多帧持续偏色，或偏移幅度中等，已能明确感知\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：颜色完全改变（如红变蓝），或全段持续色偏幅度 &gt;45°\&quot;}]&quot;,
+          &quot;order&quot;: 0,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;材质类型&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19874,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;材质类型&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;刚体（金属木材塑料等）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;柔性体（布料绳索海绵等）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;其他\&quot;}]&quot;,
+          &quot;order&quot;: 1,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;形状/材质合理性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19873,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;物体是否出现了与其材质类型不符的形变？（柔性体如手套、布料的正常弯曲合理；刚体被压扁、橡皮化为违规）&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：形变完全符合材质类型\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：形变略有异常，标注者有疑虑但不确定是否真的违规\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：形变明显不符合材质（如刚体出现弹性形变），持续 2-3 秒\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：形变严重违反材质性质（如金属被压扁橡皮化、布料像刚体一样运动）\&quot;}]&quot;,
+          &quot;order&quot;: 2,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;尺寸稳定性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19875,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;物体大小是否始终合理一致？（无法用远近透视解释的突然缩放视为违规）&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：大小全程合理（摄像机移动引起的远近变化不算违规）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：面积变化约 10-30%，且无视角变化可解释\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：面积变化 30-60%，标注者能明确感知到不合理缩放\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：面积变化 &gt;60%，或物体突然从大变小再变大\&quot;}]&quot;,
+          &quot;order&quot;: 3,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;材质类型&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19876,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;材质类型&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;刚体（金属木材塑料等）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;柔性体（布料绳索海绵等）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;其他\&quot;}]&quot;,
+          &quot;order&quot;: 4,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;材质行为一致性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19877,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;材质行为一致性&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：行为完全符合该材质的物理性质\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：行为略有奇怪，但尚可在该材质范围内解释\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：行为明显不符合材质（如金属被推后明显弹跳），且持续发生\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：行为完全违反材质性质（如固体液化、布料碰撞后完全无形变）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;NA：无法识别物体材质类型\&quot;}]&quot;,
+          &quot;order&quot;: 5,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;速度平滑性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19878,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;物体运动速度是否平滑，无突兀的速度大幅跳变？（方向改变不算违规，此项仅检测速度大小的异常跳变）&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：速度全程平滑，无突兀跳变\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：单次速度跳变，幅度约 2-3 倍，之后恢复平滑\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：跳变幅度 3-5 倍，或出现 2 次及以上跳变\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：跳变幅度 &gt;5 倍，或持续不平滑（多次连续跳变）\&quot;}]&quot;,
+          &quot;order&quot;: 6,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;运动方向合理性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19879,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;物体运动方向是否连贯，无无故的方向突变（超过 75°）？若物体在视频中基本静止，填 N/A。&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：方向全程连贯合理\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：单次方向突变，角度 45-75°，整体轨迹大方向仍合理\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：单次突变 &gt;75°，或出现两次 45-75° 的方向突变\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：多次方向突变，或出现完全逆向运动\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;NA：物体基本静止，无有效运动\&quot;}]&quot;,
+          &quot;order&quot;: 7,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;部分遮挡一致性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19880,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;物体被部分遮挡前后，位置/轨迹是否连贯，无跳变？若视频中无部分遮挡事件，填 NA。&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：遮挡前后轨迹连贯，无跳变\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：遮挡前后位置偏移 &lt; 物体直径的 1 2\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：位置偏移 1 2-1 个物体直径，有明确跳变感\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：位置偏移 &gt; 1 个物体直径，或外观明显不同\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;NA：无部分遮挡\&quot;}]&quot;,
+          &quot;order&quot;: 8,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;完全遮挡重现一致性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19881,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;物体完全消失在视野中后重新出现，外观和位置是否与之前一致？若视频中无完全遮挡事件，填 NA。&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：重现后外观和位置与之前一致\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：外观或位置有轻微差异，但基本可认为是同一物体\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：位置或外观明显不同，重现前后感觉不对\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：明显像换了一个物体（颜色形状大小全变）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;NA：无完全遮挡\&quot;}]&quot;,
+          &quot;order&quot;: 9,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;动作效果存在性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19882,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;机器人执行操作（抓取推移等）后，被操作的目标物体是否产生了可见的物理响应？&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（动作有明显效果）：被操作物有清晰可见的物理响应，符合动作力度\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：有响应但效果不足，物体移动幅度明显小于动作力度预期\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：响应极弱，几乎难以察觉，令人怀疑是否真的发生了交互\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：假动作，目标物完全无任何响应\&quot;}]&quot;,
+          &quot;order&quot;: 10,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;接触时序因果性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19883,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;目标物体是否在机器人**确实接触**后才开始运动（先接触后响应）？若视频中无明显接触事件，填 NA&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：接触后才开始运动，因果时序正确\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：运动比接触提前 1-2 帧，在标注误差范围内\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：提前 3-5 帧就开始运动，因果顺序明显错误\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：提前 &gt;5 帧，或接触后物体仍完全无响应\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;NA：无明显接触事件\&quot;}]&quot;,
+          &quot;order&quot;: 11,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;响应方向合理性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19884,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;被推/被碰物体的运动方向是否与施力方向基本一致？若视频中无明显推/碰动作，填 NA&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;是（无违规）：运动方向与施力方向基本一致（偏差 &lt;30°）\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;轻微违规：方向偏差 30-60°，大方向基本正确\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显违规：方向偏差 60-90°，方向明显不对\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重违规：偏差 &gt;90°，或完全反向运动\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;NA：无明显推碰\&quot;}]&quot;,
+          &quot;order&quot;: 12,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;穿模检测&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19885,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;此题逻辑与其他题相反,视频中**是否**出现了物体互相穿透的现象（两个实体物体重叠、穿模）？&quot;,
+          &quot;option&quot;: &quot;[{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;否（无穿模）← 1.0：两物体始终保持独立，无重叠\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;微穿模 ← 0.67：1-2 帧极短暂的表面级重叠，可能是插值问题\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;明显穿模 ← 0.33：持续 2-4 帧的肉眼可见穿透\&quot;},{\&quot;image\&quot;:\&quot;\&quot;,\&quot;value\&quot;:\&quot;严重穿模 ← 0.0：长时间穿模，或一个物体大部分穿入另一个物体\&quot;}]&quot;,
+          &quot;order&quot;: 13,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;背景稳定性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19886,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;背景区域（非主要运动区域）是否保持稳定，无无故变化或闪烁？&quot;,
+          &quot;option&quot;: &quot;[{\&quot;value\&quot;:\&quot;是（无违规）：背景全程稳定，无异常变化\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;轻微违规：背景有轻微纹理噪点或轻微闪烁，整体结构不变\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;明显违规：背景局部区域有明显变化，标注者能清楚感知\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;严重违规：背景结构改变（物体消失出现），或持续大面积闪烁\&quot;,\&quot;image\&quot;:\&quot;\&quot;}]&quot;,
+          &quot;order&quot;: 14,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;光照阴影一致性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19887,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;场景中的光照方向和阴影在整个视频过程中是否保持一致？ &gt; （无光源方向突变、无阴影突然出现/消失/翻转）&quot;,
+          &quot;option&quot;: &quot;[{\&quot;value\&quot;:\&quot;是（无违规）：光照方向和阴影全程一致\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;轻微违规：亮度有轻微波动，但光源方向未改变\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;明显违规：阴影有明显移动，但未发生方向翻转\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;严重违规：光照方向突变，或阴影突然消失翻转从无到有出现\&quot;,\&quot;image\&quot;:\&quot;\&quot;}]&quot;,
+          &quot;order&quot;: 15,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;非操作物体静止性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19888,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;场景中未被直接操作的背景物体是否保持静止？&quot;,
+          &quot;option&quot;: &quot;[{\&quot;value\&quot;:\&quot;是（无违规）：未被操作的物体全程保持静止\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;轻微违规：轻微抖动，幅度 &lt; 物体宽度的 10%（可能是相机轻微振动）\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;明显违规：位移 10-20% 物体宽度，有明显异常移动\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;严重违规：位移 &gt;20% 物体宽度，或物体消失出现\&quot;,\&quot;image\&quot;:\&quot;\&quot;}]&quot;,
+          &quot;order&quot;: 16,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;间接影响响应合理性&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19889,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;若操作过程中意外碰到了旁边其他物体，该物体的响应是否符合物理预期？若无意外碰撞，填 NA。&quot;,
+          &quot;option&quot;: &quot;[{\&quot;value\&quot;:\&quot;是（无违规）：响应方向和幅度符合物理预期\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;轻微违规：响应幅度略有异常（如弹得稍远），但方向正确\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;明显违规：响应方向有明显偏差，或响应幅度严重不合比例\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;严重违规：完全不响应（纹丝不动），或响应完全不合理（如飞出画面）\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;NA：无意外碰撞\&quot;,\&quot;image\&quot;:\&quot;\&quot;}]&quot;,
+          &quot;order&quot;: 17,
+          &quot;status&quot;: 1
+        },
+        {
+          &quot;image&quot;: &quot;&quot;,
+          &quot;title&quot;: &quot;总体物理一致性（1–5 分）&quot;,
+          &quot;type&quot;: 1,
+          &quot;must&quot;: 1,
+          &quot;step&quot;: 1,
+          &quot;id&quot;: 19890,
+          &quot;visual_icon&quot;: &quot;&quot;,
+          &quot;desc&quot;: &quot;总体物理一致性&quot;,
+          &quot;option&quot;: &quot;[{\&quot;value\&quot;:\&quot;| 5 | 完全符合物理预期，无任何可察觉违规 |\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;| 4 | 总体合理，有轻微不自然但不影响整体 |\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;| 3 | 存在明显物理违规，但核心动作基本正确 |\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;| 2 | 多处严重违规，物理一致性较差 |\&quot;,\&quot;image\&quot;:\&quot;\&quot;},{\&quot;value\&quot;:\&quot;| 1 | 严重物理违规，视频几乎不符合现实物理规律 |\&quot;,\&quot;image\&quot;:\&quot;\&quot;}]&quot;,
+          &quot;order&quot;: 18,
+          &quot;status&quot;: 1
+        }
+      ],
+      &quot;status&quot;: 1,
+      &quot;question&quot;: {
+        &quot;19872&quot;: &quot;是（无违规）：颜色全程稳定一致&quot;,
+        &quot;19873&quot;: &quot;严重违规：形变严重违反材质性质（如金属被压扁橡皮化、布料像刚体一样运动）&quot;,
+        &quot;19874&quot;: &quot;刚体（金属木材塑料等）&quot;,
+        &quot;19875&quot;: &quot;明显违规：面积变化 30-60%，标注者能明确感知到不合理缩放&quot;,
+        &quot;19876&quot;: &quot;刚体（金属木材塑料等）&quot;,
+        &quot;19877&quot;: &quot;严重违规：行为完全违反材质性质（如固体液化、布料碰撞后完全无形变）&quot;,
+        &quot;19878&quot;: &quot;轻微违规：单次速度跳变，幅度约 2-3 倍，之后恢复平滑&quot;,
+        &quot;19879&quot;: &quot;轻微违规：单次方向突变，角度 45-75°，整体轨迹大方向仍合理&quot;,
+        &quot;19880&quot;: &quot;严重违规：位置偏移 &gt; 1 个物体直径，或外观明显不同&quot;,
+        &quot;19881&quot;: &quot;严重违规：明显像换了一个物体（颜色形状大小全变）&quot;,
+        &quot;19882&quot;: &quot;是（动作有明显效果）：被操作物有清晰可见的物理响应，符合动作力度&quot;,
+        &quot;19883&quot;: &quot;是（无违规）：接触后才开始运动，因果时序正确&quot;,
+        &quot;19884&quot;: &quot;轻微违规：方向偏差 30-60°，大方向基本正确&quot;,
+        &quot;19885&quot;: &quot;否（无穿模）← 1.0：两物体始终保持独立，无重叠&quot;,
+        &quot;19886&quot;: &quot;是（无违规）：背景全程稳定，无异常变化&quot;,
+        &quot;19887&quot;: &quot;是（无违规）：光照方向和阴影全程一致&quot;,
+        &quot;19888&quot;: &quot;轻微违规：轻微抖动，幅度 &lt; 物体宽度的 10%（可能是相机轻微振动）&quot;,
+        &quot;19889&quot;: &quot;NA：无意外碰撞&quot;,
+        &quot;19890&quot;: &quot;| 2 | 多处严重违规，物理一致性较差 |&quot;
+      }
+    },
+    &quot;tagsItems&quot;: []
+  }
+}</pre></details></section>
+<nav class="pager"><span></span><a rel="next" href="../../../../MiraBench/physical_consistency/happy_horse_occ68/occ68_0019/index.html">occ68 0019 · Happy Horse (i2v) →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Error groups of three published world-model evaluation sets, compared with our physics metrics.
+Previews are reduced H.264 copies; the unchanged videos are on Hugging Face (linked from each video page) and the full
+filtered sets with every annotation are on ERIS scratch. Videos keep their source licenses.
+<a href="../../../../../index.html">Dataset viewer</a></p></footer>
+</body>
+</html>

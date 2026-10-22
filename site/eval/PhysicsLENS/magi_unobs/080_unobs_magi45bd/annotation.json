@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A5",
+  "physical_plausibility_1_4": 3,
+  "hidden_property_followed_1_4": 1,
+  "action_completed": "no",
+  "observability": "unobservable",
+  "physics_category": [
+    "Deformation"
+  ],
+  "description_of_issue": "hands moved a bit unnaturally",
+  "task": "Clean the blackboard with the eraser.",
+  "hidden_property": "surface_condition",
+  "hidden_property_value": "extremely slippery, eraser has little effect",
+  "expected_outcome": "The eraser slides across the board with minimal removal of the marker scribbles.",
+  "failure_signature": "The eraser effectively wipes the board, removing marker scribbles completely as if the surface were not extremely slippery.",
+  "raw_row": {
+    "video_file": "080_unobs_magi45bd.mp4",
+    "testset_id": "80",
+    "model": "MAGI 4.5B distill",
+    "annotator": "A5",
+    "physical_plausibility_1_4": "3",
+    "description_of_issue": "hands moved a bit unnaturally",
+    "physics_category": "Deformation",
+    "action_completed": "no",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "1"
+  },
+  "normalized": {
+    "plausibility_1_4": 3,
+    "plausibility_01": 0.6667,
+    "plausible": 1,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": 1,
+    "hidden_followed_01": 0.0,
+    "hidden_followed": 0,
+    "causality": 0,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 1,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 0,
+    "n_labels": 1,
+    "label_order": [
+      "Deformation"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

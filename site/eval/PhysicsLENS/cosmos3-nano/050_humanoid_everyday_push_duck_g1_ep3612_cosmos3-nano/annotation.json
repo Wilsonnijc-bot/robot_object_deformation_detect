@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A3",
+  "physical_plausibility_1_4": 1,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "yes",
+  "observability": "observable",
+  "physics_category": [
+    "Momentum"
+  ],
+  "description_of_issue": "The duck doesn't contact with the robot finger properly but still changes location.",
+  "task": "Basic/push_duck_g1",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "050_humanoid_everyday_push_duck_g1_ep3612.mp4",
+    "testset_id": "50",
+    "model": "cosmos3 nano",
+    "annotator": "A3",
+    "physical_plausibility_1_4": "1",
+    "description_of_issue": "The duck doesn't contact with the robot finger properly but still changes location.",
+    "physics_category": "Momentum",
+    "action_completed": "yes",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 1,
+    "plausibility_01": 0.0,
+    "plausible": 0,
+    "action_completed": 1,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 0,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 1,
+    "collision_or_contact": 0,
+    "n_labels": 1,
+    "label_order": [
+      "Momentum"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A2",
+  "physical_plausibility_1_4": 1,
+  "hidden_property_followed_1_4": 1,
+  "action_completed": "no",
+  "observability": "unobservable",
+  "physics_category": [
+    "Deformation"
+  ],
+  "description_of_issue": "Grippers drastically grow in size.",
+  "task": "deformable/squeeze_a_toy",
+  "hidden_property": "elasticity",
+  "hidden_property_value": "extremely resistant to deformation",
+  "expected_outcome": "The toy barely compresses and quickly returns to its original shape after any applied pressure.",
+  "failure_signature": "The toy visibly compresses and deforms under pressure as if it were a typical soft object.",
+  "raw_row": {
+    "video_file": "028_unobs_wan22.mp4",
+    "testset_id": "28",
+    "model": "Wan2.2",
+    "annotator": "A2",
+    "physical_plausibility_1_4": "1",
+    "description_of_issue": "Grippers drastically grow in size.",
+    "physics_category": "Deformation",
+    "action_completed": "no",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "1"
+  },
+  "normalized": {
+    "plausibility_1_4": 1,
+    "plausibility_01": 0.0,
+    "plausible": 0,
+    "action_completed": 0,
+    "hidden_property_followed_1_4": 1,
+    "hidden_followed_01": 0.0,
+    "hidden_followed": 0,
+    "causality": 0,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 1,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 0,
+    "n_labels": 1,
+    "label_order": [
+      "Deformation"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

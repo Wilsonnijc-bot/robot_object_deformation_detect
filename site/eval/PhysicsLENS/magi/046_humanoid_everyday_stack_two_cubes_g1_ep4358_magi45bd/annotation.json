@@ -1,0 +1,55 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A5",
+  "physical_plausibility_1_4": 3,
+  "hidden_property_followed_1_4": null,
+  "action_completed": "yes",
+  "observability": "observable",
+  "physics_category": [
+    "Deformation",
+    "Momentum"
+  ],
+  "description_of_issue": "the cube at the bottom deformed too much",
+  "task": "Basic/stack_two_cubes_g1",
+  "hidden_property": null,
+  "hidden_property_value": null,
+  "expected_outcome": null,
+  "failure_signature": null,
+  "raw_row": {
+    "video_file": "046_humanoid_everyday_stack_two_cubes_g1_ep4358_magi45bd.mp4",
+    "testset_id": "46",
+    "model": "MAGI 4.5B distill",
+    "annotator": "A5",
+    "physical_plausibility_1_4": "3",
+    "description_of_issue": "the cube at the bottom deformed too much",
+    "physics_category": "Deformation, Momentum",
+    "action_completed": "yes",
+    "observability": "observable",
+    "hidden_property_followed_1_4": ""
+  },
+  "normalized": {
+    "plausibility_1_4": 3,
+    "plausibility_01": 0.6667,
+    "plausible": 1,
+    "action_completed": 1,
+    "hidden_property_followed_1_4": null,
+    "hidden_followed_01": null,
+    "hidden_followed": null,
+    "causality": 0,
+    "collision": 0,
+    "contact": 0,
+    "deformation": 1,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 1,
+    "collision_or_contact": 0,
+    "n_labels": 2,
+    "label_order": [
+      "Deformation",
+      "Momentum"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

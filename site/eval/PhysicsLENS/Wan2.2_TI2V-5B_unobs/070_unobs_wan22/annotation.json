@@ -1,0 +1,53 @@
+{
+  "source": "consolidated_annotations.csv",
+  "annotator": "A3",
+  "physical_plausibility_1_4": 1,
+  "hidden_property_followed_1_4": 4,
+  "action_completed": "yes",
+  "observability": "unobservable",
+  "physics_category": [
+    "Contact"
+  ],
+  "description_of_issue": "The tape offers no resistance, and the robot’s hand passes through it.",
+  "task": "Basic/push_the_tape_towards_the_notebook",
+  "hidden_property": "mass",
+  "hidden_property_value": "extremely heavy",
+  "expected_outcome": "The tape dispenser barely moves or does not move at all despite the robot pushing it.",
+  "failure_signature": "The tape dispenser slides easily across the table as if it were light.",
+  "raw_row": {
+    "video_file": "070_unobs_wan22.mp4",
+    "testset_id": "70",
+    "model": "Wan2.2",
+    "annotator": "A3",
+    "physical_plausibility_1_4": "1",
+    "description_of_issue": "The tape offers no resistance, and the robot’s hand passes through it.",
+    "physics_category": "Contact",
+    "action_completed": "yes",
+    "observability": "unobservable",
+    "hidden_property_followed_1_4": "4"
+  },
+  "normalized": {
+    "plausibility_1_4": 1,
+    "plausibility_01": 0.0,
+    "plausible": 0,
+    "action_completed": 1,
+    "hidden_property_followed_1_4": 4,
+    "hidden_followed_01": 1.0,
+    "hidden_followed": 1,
+    "causality": 0,
+    "collision": 0,
+    "contact": 1,
+    "deformation": 0,
+    "fluid": 0,
+    "friction": 0,
+    "gravity": 0,
+    "momentum": 0,
+    "collision_or_contact": 1,
+    "n_labels": 1,
+    "label_order": [
+      "Contact"
+    ],
+    "note": null
+  },
+  "codebook": "metamanifest/annotation_codebook.json (quoted from arXiv:2610.01162, Tables 8 and 9)"
+}

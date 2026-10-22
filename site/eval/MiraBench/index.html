@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiraBench error groups · evaluation review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/eval.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../index.html">Robotvideo<span>evaluation review</span></a>
+<nav class="crumbs"><a href="../index.html">All sets</a></nav></header>
+<main>
+<header class="intro">
+<p class="kicker">Signal page · Action-conditioned humanoid world models</p>
+<h1>MiraBench error groups</h1>
+<p class="lede">Physical-consistency videos of at most 12.1 s whose items are graded D, the most severe answer (score 0), from the publisher&#x27;s parsed CSV. Interaction: every in-scope video with action effect, contact causality or response direction at D (12; the 3 with all three at D first). Interpenetration D: 10 of 15. Appearance D (colour, shape for the material, size or material behaviour of the manipulated object): 10 of 40. All are humanoid head-camera clips; the publisher does not name the robot. Choose a group:</p>
+</header>
+<nav class="tabs routes" aria-label="Error groups"><a class="m-contact" href="interaction_any_d/index.html"><b><span class="mdot"></span>Interaction</b><small>12 videos · Contact-mediated interaction</small></a><a class="m-solidity" href="interpenetration_d/index.html"><b><span class="mdot"></span>Interpenetration</b><small>10 videos · Solidity</small></a><a class="m-object_deformation" href="appearance_d/index.html"><b><span class="mdot"></span>Appearance</b><small>10 videos · Object deformation and Object persistence</small></a></nav>
+<dl class="specs">
+<dt>Videos here</dt><dd>31 in 3 groups</dd>
+<dt>Full set on ERIS</dt><dd><code>~/scratch/existing_annotations/MiraBench/</code> · 88 videos (dreamdojo_14b 28 · happy_horse 30 · wan2.1_14b 30)</dd><dt>Filter</dt><dd>Physical-consistency videos only (not action-following), duration ≤ 12.1 s: the 12.1 s (12.125 s) DreamDojo-14B pour20 videos are kept; the 24.1 s DreamDojo-14B/2B occ68 videos are not.</dd><dt>Annotations on ERIS</dt><dd>Per video <code>&lt;generator&gt;/annotations/NNN_&lt;id&gt;.json</code>; publisher tables and a flat per-video table in <code>~/scratch/existing_annotations/MiraBench/annotations/</code></dd>
+<dt>Selection</dt><dd><code>MiraBench/scripts/fetch_label_groups.py</code> → <code>metamanifest/label_groups.csv</code></dd>
+<dt>Annotations</dt><dd><a href="annotations.jsonl">JSONL</a> (the 31 videos here)</dd>
+<dt>Source</dt><dd><a href="https://huggingface.co/datasets/Anonymous-nips-submissions/Anonymous-nips-submissions">huggingface.co/datasets/Anonymous-nips-submissions/Anonymous-nips-submissions</a> · Annotations CC BY 4.0; videos are third-party model outputs</dd></dl>
+
+</main>
+<footer class="foot"><p>Error groups of three published world-model evaluation sets, compared with our physics metrics.
+Previews are reduced H.264 copies; the unchanged videos are on Hugging Face (linked from each video page) and the full
+filtered sets with every annotation are on ERIS scratch. Videos keep their source licenses.
+<a href="../../index.html">Dataset viewer</a></p></footer>
+</body>
+</html>

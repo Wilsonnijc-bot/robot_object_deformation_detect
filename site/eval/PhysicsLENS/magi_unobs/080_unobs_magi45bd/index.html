@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean the blackboard with the eraser · MAGI-1 4.5B distill · PhysicsLENS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/eval.css">
+<script src="../../../assets/app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../index.html">Robotvideo<span>evaluation review</span></a>
+<nav class="crumbs"><a href="../../../index.html">All sets</a><span aria-hidden="true">/</span><a href="../../../PhysicsLENS/index.html">PhysicsLENS</a><span aria-hidden="true">/</span><a href="../../../PhysicsLENS/deformation/index.html">Deformation</a></nav></header>
+<main>
+<article class="episode">
+<header class="episode__head"><p class="kicker">PhysicsLENS · Deformation</p>
+<h1>Clean the blackboard with the eraser</h1><p class="quiet">MAGI-1 4.5B distill · Unitree G1 · Dex1 grippers · #080 · hidden-property prompt</p></header>
+<div class="episode__grid">
+<div class="episode__media">
+<figure class="media"><video controls playsinline preload="metadata" poster="frame.jpg" src="clip.mp4"></video>
+<figcaption>Generated video · 120 frames · 5 s</figcaption></figure>
+<figure class="media media--still"><img src="frame.jpg" alt="First frame" loading="lazy">
+<figcaption>First frame of the generated video</figcaption></figure>
+</div>
+<aside class="episode__side"><section class="field"><h2>Generator</h2><p>MAGI-1 4.5B distill</p><p class="quiet">sand-ai/MAGI-1 ckpt/magi/4.5B_distill</p></section><section class="field"><h2>Error group</h2><p><a href="../../../PhysicsLENS/deformation/index.html">Deformation</a></p></section><section class="field"><h2>Generation prompt</h2><p class="prompt">Scene: A rectangular wooden table holds a white dry-erase board in its center. The board has marker scribbles on it. Nearby, to the right of the board, a small eraser is placed. The robot has two metallic arms: the left arm is positioned slightly toward the board and the right arm is close to the eraser. The dry-erase board is extremely slippery, making it difficult for the eraser to effectively wipe away marks.
+Action: The robot grasps the eraser with its right hand and wipes it across the board.</p></section><section class="field"><h2>Human verdict</h2><div class="gate"><span class="chips"><span class="chip chip--exception">Plausibility<b>3/4</b></span></span><p>Plausibility 3/4 · action not completed · Deformation</p></div><p class="quiet">hands moved a bit unnaturally</p></section><section class="field"><h2>Clip</h2><dl class="facts"><dt>Resolution</dt><dd>960 × 720</dd><dt>Frames</dt><dd>120</dd><dt>Frame rate</dt><dd>24 fps</dd><dt>Duration</dt><dd>5 s</dd><dt>Codec</dt><dd>h264</dd><dt>First frame</dt><dd>Unitree G1 · Dex1 grippers</dd></dl></section><section class="field"><h2>Files</h2><ul class="links"><li><a href="annotation.json">Human annotation (JSON)</a></li><li><a href="https://huggingface.co/datasets/swiftrando/PhysicsLENS/blob/7e1f9036f699365bad7bd9509c67847621d2bcd8/physicslens_robot_data/magi_unobs/080_unobs_magi45bd.mp4">Original video on Hugging Face (unchanged)</a></li></ul><p class="quiet">On ERIS: <code>~/scratch/existing_annotations/PhysicsLENS/magi/093_080_unobs_magi45bd.mp4</code>, annotation <code>PhysicsLENS/magi/annotations/093_080_unobs_magi45bd.json</code>, record <code>PhysicsLENS/magi/json/093_080_unobs_magi45bd.json</code></p></section></aside>
+</div>
+<section class="annotation"><h2>Human annotation</h2>
+<p class="quiet">One annotator's final record from the publisher's consolidated_annotations.csv (one annotation per clip; no inter-annotator agreement exists). Scales and label definitions are quoted from the <a href="https://arxiv.org/abs/2610.01162">PhysicsLENS paper</a>, Appendix B, Tables 8–9. <a href="annotation.json">JSON</a></p>
+<div class="annotation__grid"><section class="anno anno--wide"><h3>Scores</h3><div class="scores"><div class="score"><h4>Physical plausibility (P)<b>3 / 4</b></h4><ol class="scale"><li class="lvl-lo">1 — clearly breaks physics, including clipping, floating, objects appearing or disappearing, or impossible motion.</li><li class="lvl-lo">2 — mostly implausible, with one clear issue or several smaller issues.</li><li class="" aria-current="true">3 — mostly plausible, with minor oddities only.</li><li class="lvl-hi">4 — physically realistic.</li></ol><p class="norm">P01 = 0.6667 · plausible (P≥3) = 1</p></div><div class="score"><h4>Action completion (A)<b>no</b></h4><p class="quiet">Judge whether the requested task is completed by the end of the clip, even if the process is physically unrealistic.</p><p class="norm">A = 0</p></div><div class="score"><h4>Hidden-property adherence (H)<b>1 / 4</b></h4><ol class="scale"><li class="lvl-lo" aria-current="true">1 — property completely ignored; the outcome resembles a generic response.</li><li class="lvl-lo">2 — mostly ignored, with only a faint or inconsistent indication.</li><li class="">3 — mostly followed, but with incorrect magnitude, timing, or degree.</li><li class="lvl-hi">4 — fully and correctly reflected.</li></ol><p class="norm">H01 = 0 · followed (H≥3) = 0</p></div></div></section><section class="anno anno--wide"><h3>Violation labels · multi-select, 8 labels</h3><table class="chrono labels"><thead><tr><th scope="col">Label</th><th scope="col">Selected</th><th scope="col">Definition (paper, Table 9)</th></tr></thead><tbody><tr class=""><th scope="row">Causality</th><td><span class="flag">0</span></td><td>An effect occurs without a visible cause, or events occur in an impossible order.</td></tr><tr class=""><th scope="row">Collision</th><td><span class="flag">0</span></td><td>Objects pass through one another or fail to exhibit an expected response after impact.</td></tr><tr class=""><th scope="row">Contact</th><td><span class="flag">0</span></td><td>An object floats without support, rests at an incorrect contact point, or fails to maintain visible contact.</td></tr><tr class="on"><th scope="row">Deformation</th><td><span class="flag flag--on">1</span> · listed 1st</td><td>A rigid object warps or melts, or a soft object fails to deform under an interaction that should alter its shape.</td></tr><tr class=""><th scope="row">Fluid</th><td><span class="flag">0</span></td><td>Pouring, splashing, containment, or other liquid behavior is physically inconsistent.</td></tr><tr class=""><th scope="row">Friction</th><td><span class="flag">0</span></td><td>Sliding, sticking, or gripping behavior is inconsistent with the visible interaction or stated surface condition.</td></tr><tr class=""><th scope="row">Gravity</th><td><span class="flag">0</span></td><td>An object floats, falls incorrectly, or otherwise fails to respond plausibly to gravity.</td></tr><tr class=""><th scope="row">Momentum</th><td><span class="flag">0</span></td><td>An object accelerates or changes motion without a supporting interaction, including apparent creation or loss of energy.</td></tr><tr class="merged"><th scope="row">Collision ∪ Contact</th><td><span class="flag">0</span></td><td>The paper merges Contact into Collision in all analyses (its seven domains have one collision family).</td></tr></tbody></table></section><section class="anno"><h3>Issue description</h3><p>hands moved a bit unnaturally</p><dl class="kv"><dt>Annotator</dt><dd>A5</dd><dt>Prompt set</dt><dd>unobservable</dd></dl></section><section class="anno"><h3>Hidden-property prompt</h3><dl class="kv"><dt>Hidden property</dt><dd>surface_condition: extremely slippery, eraser has little effect</dd><dt>Expected outcome</dt><dd>The eraser slides across the board with minimal removal of the marker scribbles.</dd><dt>Failure signature</dt><dd>The eraser effectively wipes the board, removing marker scribbles completely as if the surface were not extremely slippery.</dd></dl></section><section class="anno anno--wide"><h3>Normalized record</h3><div class="matrix-wrap"><table class="chrono matrix"><thead><tr><th scope="col">P</th><th scope="col">P01</th><th scope="col">P≥3</th><th scope="col">A</th><th scope="col">H</th><th scope="col">H01</th><th scope="col">H≥3</th><th scope="col">Causality</th><th scope="col">Collision</th><th scope="col">Contact</th><th scope="col">Deformation</th><th scope="col">Fluid</th><th scope="col">Friction</th><th scope="col">Gravity</th><th scope="col">Momentum</th><th scope="col">Coll∪Cont</th></tr></thead><tbody><tr><td class="c">3</td><td class="c">0.6667</td><td class="c">1</td><td class="c">0</td><td class="c">1</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">1</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td><td class="c">0</td></tr></tbody></table></div><p class="quiet">P01 = (P−1)/3, H01 = (H−1)/3; thresholds P≥3 and H≥3 are the paper's. Label columns: 1 = selected by the annotator, 0 = not selected (not a confirmation of correctness).</p></section></div>
+<details class="review"><summary>Publisher record <span>080_unobs_magi45bd.json</span></summary><pre>{
+  &quot;family&quot;: &quot;magi&quot;,
+  &quot;conditioning&quot;: &quot;text+image&quot;,
+  &quot;checkpoint&quot;: &quot;4.5B_distill&quot;,
+  &quot;params&quot;: &quot;4.5B&quot;,
+  &quot;model&quot;: &quot;sand-ai/MAGI-1 ckpt/magi/4.5B_distill&quot;,
+  &quot;distill&quot;: true,
+  &quot;shortcut_mode&quot;: &quot;8,16,16&quot;,
+  &quot;seconds&quot;: 5.0,
+  &quot;prompt&quot;: &quot;Scene: A rectangular wooden table holds a white dry-erase board in its center. The board has marker scribbles on it. Nearby, to the right of the board, a small eraser is placed. The robot has two metallic arms: the left arm is positioned slightly toward the board and the right arm is close to the eraser. The dry-erase board is extremely slippery, making it difficult for the eraser to effectively wipe away marks.\nAction: The robot grasps the eraser with its right hand and wipes it across the board.&quot;,
+  &quot;negative_prompt&quot;: null,
+  &quot;seed&quot;: 0,
+  &quot;steps&quot;: 16,
+  &quot;cfg_number&quot;: 1,
+  &quot;text_scales&quot;: [
+    7.5,
+    7.5,
+    7.5,
+    0.0,
+    0.0
+  ],
+  &quot;gen_seconds&quot;: 227.0,
+  &quot;requested_num_frames&quot;: 116,
+  &quot;requested_height&quot;: 720,
+  &quot;requested_width&quot;: 960,
+  &quot;width&quot;: 960,
+  &quot;height&quot;: 720,
+  &quot;num_frames&quot;: 120,
+  &quot;fps&quot;: 24.0,
+  &quot;peak_vram_gib&quot;: 27.9,
+  &quot;testset_id&quot;: &quot;80&quot;,
+  &quot;source_video&quot;: &quot;080_unitree_g1dex1_erase_board_ep0.mp4&quot;,
+  &quot;source_frame_idx&quot;: 0,
+  &quot;start_frame&quot;: &quot;data/start_frames/080_unitree_g1dex1_erase_board_ep0_frame0.png&quot;,
+  &quot;source_size&quot;: &quot;640x480&quot;,
+  &quot;task&quot;: &quot;Clean the blackboard with the eraser.&quot;,
+  &quot;out_name&quot;: &quot;080_unobs_magi45bd.mp4&quot;,
+  &quot;model_tag&quot;: &quot;magi45bd&quot;,
+  &quot;prompt_set&quot;: &quot;unobservable&quot;,
+  &quot;prompt_id&quot;: &quot;080_unobs&quot;,
+  &quot;task_group&quot;: &quot;wiping&quot;,
+  &quot;observability&quot;: &quot;unobservable&quot;,
+  &quot;hidden_property&quot;: &quot;surface_condition&quot;,
+  &quot;hidden_property_value&quot;: &quot;extremely slippery, eraser has little effect&quot;,
+  &quot;expected_outcome&quot;: &quot;The eraser slides across the board with minimal removal of the marker scribbles.&quot;,
+  &quot;failure_signature&quot;: &quot;The eraser effectively wipes the board, removing marker scribbles completely as if the surface were not extremely slippery.&quot;
+}</pre></details></section>
+<nav class="pager"><a rel="prev" href="../../../PhysicsLENS/cosmos3-nano_unobs/062_unobs_cosmos3nano/index.html">← Pour the medicine from the bottle into the box · Cosmos3 Nano</a><a rel="next" href="../../../PhysicsLENS/hunyuan15/086_aloha_static_ziploc_slide_ep0_hunyuan15/index.html">Slide open the ziploc bag · HunyuanVideo 1.5 →</a></nav>
+</article>
+</main>
+<footer class="foot"><p>Error groups of three published world-model evaluation sets, compared with our physics metrics.
+Previews are reduced H.264 copies; the unchanged videos are on Hugging Face (linked from each video page) and the full
+filtered sets with every annotation are on ERIS scratch. Videos keep their source licenses.
+<a href="../../../../index.html">Dataset viewer</a></p></footer>
+</body>
+</html>
