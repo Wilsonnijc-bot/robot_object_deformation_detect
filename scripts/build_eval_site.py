@@ -78,20 +78,18 @@ MAPPING = [
      [("Interpenetration (objects passing through each other)", "穿模检测",
        "Example answer: Slight — surface overlap for 1–2 frames (微穿模：1-2 帧极短暂的表面级重叠，可能是插值问题) → B · 0.67")],
      "Graded A–D: A 1 · B 0.67 · C 0.33 · D 0. Higher score, lower error.",
-     "General, not a clean solidity label: it covers any two solid objects, so robot–object (R-O) and "
-     "object–environment (O-E) penetration are mixed together."),
+     ""),
     (["contact"], "PhysicsLENS", ("momentum",),
      [("Momentum", "", "An object accelerates or changes motion without a supporting interaction, including apparent "
                        "creation or loss of energy.")],
      "Binary per video: 1 = label selected (a violation).",
-     "Primary comparison for the contact score: it asks whether the object's motion is supported by an interaction."),
+     ""),
     (["contact"], "PhysicsLENS", ("contact_collision",),
      [("Collision", "", "Objects pass through one another or fail to exhibit an expected response after impact."),
       ("Contact", "", "An object floats without support, rests at an incorrect contact point, or fails to maintain "
                       "visible contact.")],
      "Binary per video: 1 = label selected (a violation). An unselected label is not a confirmation of correctness.",
-     "The paper merges Contact into Collision in all analyses. The local group keeps only rigid manipulated objects "
-     "(no cloth), matching the picking scope of the contact metric."),
+     ""),
     (["contact"], "MiraBench", ("interaction_any_d",),
      [("Action has a visible effect", "动作效果存在性",
        "Example answer: Yes — clear physical response matching the action (是：被操作物有清晰可见的物理响应，符合动作力度) → A · 1"),
@@ -100,12 +98,12 @@ MAPPING = [
       ("Response direction matches applied force", "响应方向合理性",
        "Example answer: Clear — 60–90° off (明显违规：方向偏差 60-90°，方向明显不对) → C · 0.33")],
      "Graded A–D: A 1 · B 0.67 · C 0.33 · D 0. Higher score, lower error.",
-     "Compare the three items with the contact score together (for example their mean) or each separately."),
+     ""),
     (["object_deformation"], "PhysicsLENS", ("deformation",),
      [("Deformation", "", "A rigid object warps or melts, or a soft object fails to deform under an interaction that "
                           "should alter its shape.")],
      "Binary per video: 1 = label selected (a violation).",
-     "The label does not say which object deformed; check that it is the manipulated object, not the robot."),
+     ""),
     (["object_deformation", "persistence"], "MiraBench", ("appearance_d",),
      [("Colour stability", "颜色稳定性", "Severe: colour changes completely (e.g. red to blue) or hue shift >45° throughout "
                                        "(严重违规：颜色完全改变（如红变蓝），或全段持续色偏幅度 >45°) → D · 0"),
@@ -118,14 +116,12 @@ MAPPING = [
        "Severe: behaviour violates the material — solid liquefies, cloth does not deform on contact "
        "(严重违规：行为完全违反材质性质（如固体液化、布料碰撞后完全无形变）) → D · 0")],
      "Graded A–D: A 1 · B 0.67 · C 0.33 · D 0. Higher score, lower error.",
-     "These items rate the manipulated (primary) object, not the robot (MiraBench Protocol A)."),
+     ""),
     (["robot_deformation"], "RoboJudge_Bench", ("agent_integrity_0", "agent_integrity_1"),
      [("Agent integrity (agent_consistency)", "主体一致性",
        "The arm/gripper/hand stays structurally complete and consistent (no melting, fused/extra fingers, warping).")],
      "0–2 per video: 2 fully met, 1 partly met / minor problem, 0 clear violation. Higher score, lower error.",
-     "Both label versions are kept in the annotation data: v1 = the authors' review-repo file "
-     "test_final_800_20260916.jsonl, v2 = the released data/test.jsonl (2026-09-29). They agree on agent integrity "
-     "for 443 of 800 videos."),
+     ""),
 ]
 METRIC_HUE = {"solidity": 205, "contact": 158, "persistence": 182, "robot_deformation": 235, "object_deformation": 128}  # muted, around the site accent
 ITEM_SHORT = {"Interpenetration (objects passing through each other)": "Interpenetration",
@@ -134,7 +130,17 @@ ITEM_SHORT = {"Interpenetration (objects passing through each other)": "Interpen
               "Shape plausibility for the material": "Shape for material", "Size stability": "Size",
               "Material behaviour consistency": "Material behaviour", "Agent integrity (agent_consistency)": "Agent integrity"}
 SCALE_SHORT = {"PhysicsLENS": "0/1 flag · 1 = violation", "MiraBench": "A–D → 1 · 0.67 · 0.33 · 0",
-               "RoboJudge_Bench": "0–2 · higher is better"}
+               "RoboJudge_Bench": "0–2 · v1 and v2"}
+# Direction of each dataset's annotation score.
+DIRECTION = {"PhysicsLENS": "worse", "MiraBench": "better", "RoboJudge_Bench": "better"}
+# Items to read with care, shown beside the item.
+ITEM_NOTE = {"Contact precedes motion (causality)": "Causality is very general: it only asks whether the object starts "
+                                                    "moving after contact, so treat it as a coarse signal."}
+
+
+def direction(ds):
+    d = DIRECTION[ds]
+    return f'<span class="dir dir--{d}" title="Higher score = {d}">Higher = {d}</span>'
 PRIMARY = {"momentum": "Primary comparison for our contact score"}
 # Rows of the home-page mapping table: one row per metric, holding every dataset compared with it.
 METRIC_ROWS = [("solidity",), ("contact",), ("object_deformation", "persistence"), ("robot_deformation",)]
@@ -284,6 +290,17 @@ table.glance { width: 100%; border-collapse: separate; border-spacing: 0 6px; fo
 a.ichip:hover { border-color: var(--m, var(--ink)); background: var(--paper-2); }
 .ichip--primary { background: var(--m, var(--ink)); border-color: var(--m, var(--ink)); color: var(--paper); font-weight: 600; }
 a.ichip--primary:hover { background: var(--m); color: var(--paper); filter: brightness(1.08); }
+.dir { display: inline-block; margin-left: 0.4em; padding: 0.25em 0.55em; border-radius: 4px; font: 600 0.75rem/1.1 var(--sans); letter-spacing: 0; text-transform: none; vertical-align: 0.05em; white-space: nowrap; }
+.dir--better { background: var(--pass-bg); color: var(--pass); }
+.dir--worse { background: var(--fail-bg); color: var(--fail); }
+.glance thead th span.dir { display: inline-block; margin: 6px 0 0; font: 600 0.75rem/1.1 var(--sans); color: inherit; }
+.glance thead th span.dir--better { color: var(--pass); }
+.glance thead th span.dir--worse { color: var(--fail); }
+.dirs { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); margin: 0 0 var(--s5); font-size: 0.875rem; color: var(--ink-2); }
+.dirs__item b { color: var(--ink); margin-right: 0.3em; }
+.ichip--general { border-style: dashed; }
+.gnote { display: block; margin: 0; font-size: 0.8125rem; color: var(--ink-2); border-left: 3px solid var(--exception); padding-left: var(--s2); }
+.scaleline { margin: var(--s2) 0 0; font: 400 0.875rem var(--mono); color: var(--ink-2); }
 .legend { margin-top: var(--s2); font-size: 0.875rem; color: var(--ink-3); }
 .legend .ichip--primary { background: var(--accent); border-color: var(--accent); }
 details.more { margin-top: var(--s3); }
@@ -297,7 +314,6 @@ details.more dl { margin: var(--s3) 0 0; font-size: 0.875rem; }
 details.more dt { font-weight: 600; color: var(--ink); }
 details.more dd { margin: 0 0 var(--s2); color: var(--ink-2); }
 details.more p { font-size: 0.875rem; color: var(--ink-2); max-width: 75ch; }
-details.more .caveat { color: var(--ink); border-left: 3px solid var(--m, var(--exception)); padding-left: var(--s2); }
 details.scales { margin: 0 0 var(--s4); }
 @keyframes reveal { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
 .panel { border: 1px solid var(--m-line); border-top: 4px solid var(--m); border-radius: 8px; padding: var(--s4) var(--s5) var(--s5); margin-bottom: var(--s5); background: linear-gradient(180deg, var(--m-bg), var(--paper) 7rem); }
@@ -797,6 +813,7 @@ def signal_page(ds, items, out, eris):
                           for gen in meta["order"] if c[gen])
         body = f"""{route_tabs(lists, key, "../")}<header class="intro">
 <p class="kicker">{esc(meta['title'])} · error group · compared with {esc(group_metrics(key))}</p>
+<p class="scaleline">{esc(SCALE_SHORT[ds])} {direction(ds)}</p>
 <h1>{esc(g['group_title'])}</h1>
 <p class="lede">Selection: {esc(rule)}</p>{defs}
 </header>
@@ -817,6 +834,7 @@ def signal_page(ds, items, out, eris):
 </header>
 {route_tabs(lists, None, "")}
 <dl class="specs">
+<dt>Score direction</dt><dd>{esc(SCALE_SHORT[ds])} {direction(ds)}</dd>
 <dt>Videos here</dt><dd>{len(items)} in {len(lists)} groups</dd>
 {server_specs(ds, eris)}
 <dt>Selection</dt><dd><code>{esc(meta['selection'])}</code> → <code>metamanifest/{esc(meta['groups'])}</code></dd>
@@ -876,7 +894,9 @@ def mira_group(key, members, d):
     codes = MIRA_GROUP_CODES[key]
     by_code = {it["code"]: it for it in members[0]["human"]["items"] if it["code"]}
     defs = '<dl class="kv">' + "".join(f'<dt>{esc(by_code[c]["label"])}<span class="zh">{esc(by_code[c]["title_zh"])}</span></dt>'
-                                       f'<dd>{esc(by_code[c]["question_zh"])}</dd>' for c in codes) + "</dl>"
+                                       f'<dd>{esc(by_code[c]["question_zh"])}'
+                                       + (f'<span class="gnote">{esc(ITEM_NOTE[by_code[c]["label"]])}</span>' if by_code[c]["label"] in ITEM_NOTE else "")
+                                       + '</dd>' for c in codes) + "</dl>"
     cards, rows = [], []
     for i in members:
         its = {it["code"]: it for it in i["human"]["items"]}
@@ -928,7 +948,8 @@ def group_titles(sets):
 
 def glance_html(sets):
     """Compact matrix: our metrics down, datasets across, annotation items as chips linking to the examples."""
-    head = "".join(f'<th scope="col">{esc(meta["title"])}<span>{esc(SCALE_SHORT[ds])}</span></th>' for ds, meta in EVAL_DATASETS.items())
+    head = "".join(f'<th scope="col">{esc(meta["title"])}<span>{esc(SCALE_SHORT[ds])}</span>{direction(ds)}</th>'
+                   for ds, meta in EVAL_DATASETS.items())
     rows = []
     for key, title, text in METRICS:
         cells = []
@@ -940,8 +961,10 @@ def glance_html(sets):
                 star = groups[0] in PRIMARY and key == "contact"
                 href = f"{quote(ds)}/{groups[0]}/index.html"
                 tip = f' title="{esc(PRIMARY[groups[0]])}"' if star else ""
-                chips_ += [f'<a class="ichip{" ichip--primary" if star else ""}" href="{href}"{tip}>'
-                           f'{"★ " if star else ""}{esc(ITEM_SHORT.get(n, n))}</a>' for n, _, _ in items]
+                chips_ += [f'<a class="ichip{" ichip--primary" if star else ""}{" ichip--general" if n in ITEM_NOTE else ""}" '
+                           f'href="{href}"{tip if star else (" title=" + chr(34) + esc(ITEM_NOTE[n]) + chr(34) if n in ITEM_NOTE else "")}>'
+                           f'{"★ " if star else ""}{esc(ITEM_SHORT.get(n, n))}{" · very general" if n in ITEM_NOTE else ""}</a>'
+                           for n, _, _ in items]
             cells.append("<td>" + ("".join(chips_) or '<span class="none">—</span>') + "</td>")
         rows.append(f'<tr class="m-{key}"><th scope="row"><span class="mdot"></span>{esc(title)}<small>{esc(text)}</small></th>{"".join(cells)}</tr>')
     return (f'<div class="matrix-wrap"><table class="glance"><thead><tr><th scope="col">Our metric</th>{head}</tr></thead>'
@@ -964,8 +987,9 @@ def mapping_html(sets):
             primary = groups[0] in PRIMARY and "contact" in metric_keys
             target = (f'<span class="tile__target">→ {esc(" + ".join(names[k] for k in keys))}</span>'
                       if len(metric_keys) > 1 else "")
-            chips_ = "".join(f'<span class="ichip">{esc(ITEM_SHORT.get(n, n))}</span>' for n, _, _ in items)
-            caveat = f'<p class="caveat">{esc(note)}</p>' if note else ""
+            chips_ = "".join(f'<span class="ichip{" ichip--general" if n in ITEM_NOTE else ""}">{esc(ITEM_SHORT.get(n, n))}'
+                             f'{" · very general" if n in ITEM_NOTE else ""}</span>' for n, _, _ in items)
+            general = "".join(f'<p class="gnote">{esc(ITEM_NOTE[n])}</p>' for n, _, _ in items if n in ITEM_NOTE)
             defs = "".join(f"<dt>{esc(n)}" + (f'<span class="zh">{esc(z)}</span>' if z else "") + f"</dt><dd>{esc(t)}</dd>"
                            for n, z, t in items)
             links = "".join(f'<a class="btn" href="{quote(ds)}/{g}/index.html">{esc(GROUP_SHORT.get(g, g))} examples →</a>'
@@ -973,8 +997,8 @@ def mapping_html(sets):
             tiles.append(f"""<article class="tile{" tile--primary" if primary else ""}">
 <header class="tile__head"><span class="dsbadge">{esc(EVAL_DATASETS[ds]["title"])}</span>{'<span class="pbadge">★ Primary</span>' if primary else ""}{target}</header>
 <div class="tile__chips">{chips_}</div>
-<p class="tile__scale">{esc(SCALE_SHORT[ds])}</p>
-<details class="more"><summary>Definitions &amp; caveats</summary><dl>{defs}</dl><p>{esc(scale)}</p>{caveat}</details>
+<p class="tile__scale">{esc(SCALE_SHORT[ds])} {direction(ds)}</p>{general}
+<details class="more"><summary>Definitions</summary><dl>{defs}</dl><p>{esc(scale)}</p></details>
 <div class="tile__links">{links}</div></article>""")
         title = " + ".join(names[k] for k in metric_keys)
         sub = " · ".join(texts[k] for k in metric_keys)
@@ -1058,10 +1082,7 @@ metric, on what scale, and the clips where annotators marked a violation.</p>
 </header>
 <section class="home-section" id="glance"><h2>At a glance</h2>{glance_html(sets)}</section>
 <section class="home-section" id="mapping"><h2>Mapping in detail</h2>
-<details class="more scales"><summary>How to read the scales</summary><p>A violation on their side should line up with a low score on
-ours. PhysicsLENS labels are 0/1 flags (1 = the annotator selected the violation; 0 is not a confirmation of correctness).
-MiraBench grades A–D score 1, 0.67, 0.33 and 0: higher score, lower error. RoboJudge-Bench sub-scores are 0–2, higher is
-better, kept in two label versions (v1 review repo, v2 release).</p></details>
+<div class="dirs">{"".join(f'<span class="dirs__item"><b>{esc(m["title"])}</b> {esc(SCALE_SHORT[ds])} {direction(ds)}</span>' for ds, m in EVAL_DATASETS.items())}</div>
 {mapping_html(sets)}</section>
 <section class="home-section" id="sets"><h2>Signal pages</h2><div class="dscards">{''.join(cards)}</div></section>
 {server_section(eris)}"""

@@ -94,6 +94,17 @@ table.glance { width: 100%; border-collapse: separate; border-spacing: 0 6px; fo
 a.ichip:hover { border-color: var(--m, var(--ink)); background: var(--paper-2); }
 .ichip--primary { background: var(--m, var(--ink)); border-color: var(--m, var(--ink)); color: var(--paper); font-weight: 600; }
 a.ichip--primary:hover { background: var(--m); color: var(--paper); filter: brightness(1.08); }
+.dir { display: inline-block; margin-left: 0.4em; padding: 0.25em 0.55em; border-radius: 4px; font: 600 0.75rem/1.1 var(--sans); letter-spacing: 0; text-transform: none; vertical-align: 0.05em; white-space: nowrap; }
+.dir--better { background: var(--pass-bg); color: var(--pass); }
+.dir--worse { background: var(--fail-bg); color: var(--fail); }
+.glance thead th span.dir { display: inline-block; margin: 6px 0 0; font: 600 0.75rem/1.1 var(--sans); color: inherit; }
+.glance thead th span.dir--better { color: var(--pass); }
+.glance thead th span.dir--worse { color: var(--fail); }
+.dirs { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); margin: 0 0 var(--s5); font-size: 0.875rem; color: var(--ink-2); }
+.dirs__item b { color: var(--ink); margin-right: 0.3em; }
+.ichip--general { border-style: dashed; }
+.gnote { display: block; margin: 0; font-size: 0.8125rem; color: var(--ink-2); border-left: 3px solid var(--exception); padding-left: var(--s2); }
+.scaleline { margin: var(--s2) 0 0; font: 400 0.875rem var(--mono); color: var(--ink-2); }
 .legend { margin-top: var(--s2); font-size: 0.875rem; color: var(--ink-3); }
 .legend .ichip--primary { background: var(--accent); border-color: var(--accent); }
 details.more { margin-top: var(--s3); }
@@ -107,7 +118,6 @@ details.more dl { margin: var(--s3) 0 0; font-size: 0.875rem; }
 details.more dt { font-weight: 600; color: var(--ink); }
 details.more dd { margin: 0 0 var(--s2); color: var(--ink-2); }
 details.more p { font-size: 0.875rem; color: var(--ink-2); max-width: 75ch; }
-details.more .caveat { color: var(--ink); border-left: 3px solid var(--m, var(--exception)); padding-left: var(--s2); }
 details.scales { margin: 0 0 var(--s4); }
 @keyframes reveal { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
 .panel { border: 1px solid var(--m-line); border-top: 4px solid var(--m); border-radius: 8px; padding: var(--s4) var(--s5) var(--s5); margin-bottom: var(--s5); background: linear-gradient(180deg, var(--m-bg), var(--paper) 7rem); }
